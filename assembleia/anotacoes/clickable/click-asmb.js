@@ -1,4 +1,7 @@
 (function () {
+  const editingEditors = new WeakSet();
+  const composingEditors = new WeakSet();
+
   function slug(text) {
     return (text || '')
       .normalize('NFD')
@@ -9,31 +12,8 @@
       .slice(0, 48);
   }
 
-  function getCurrentWatchtowerWeek() {
-    const fromWindow = String(window.semanaAtual || '').trim();
-    if (/^\d{2}-\d{2}$/.test(fromWindow)) return fromWindow;
-
-    const hoje = new Date();
-    const diaDaSemana = hoje.getDay();
-    const diasParaSegunda = diaDaSemana === 0 ? -6 : 1 - diaDaSemana;
-
-    const segundaFeira = new Date(hoje);
-    segundaFeira.setDate(hoje.getDate() + diasParaSegunda);
-    segundaFeira.setHours(0, 0, 0, 0);
-
-    const dia = String(segundaFeira.getDate()).padStart(2, '0');
-    const mes = String(segundaFeira.getMonth() + 1).padStart(2, '0');
-    const semana = `${dia}-${mes}`;
-
-    try { window.semanaAtual = semana; } catch {}
-    return semana;
-  }
-
   function buildCurrentWatchtowerUrl() {
-    const semana = getCurrentWatchtowerWeek();
-    const url = new URL('./sentinela/artigos/estudo.html', location.href);
-    url.searchParams.set('semana', semana);
-    return url.toString();
+    return window.AssemblyCurrentStudy.url();
   }
 
   function getSpecialNoteConfig(trigger) {
@@ -43,7 +23,7 @@
     if (trigger.dataset.action === 'sentinela' || (pageKey === 'dom' && text.startsWith('resumo de a sentinela'))) {
       return {
         kind: 'watchtower-shortcut',
-        url: buildCurrentWatchtowerUrl(),
+        get url() { return buildCurrentWatchtowerUrl(); },
         handleLabel: 'Abrir o artigo de A Sentinela',
         messageHtml: '<div class="asmb-shortcut-message">Clique para abrir o artigo de <em>A Sentinela</em>.</div>'
       };
@@ -138,11 +118,122 @@
 
   function blurEditor(editor) {
     if (!editor) return;
-    try { editor.blur(); } catch {}
+    try {
+      if (editor.contains(document.activeElement)) document.activeElement.blur();
+    } catch {}
     try {
       const sel = window.getSelection?.();
-      if (sel && sel.rangeCount) sel.removeAllRanges();
+      if (sel?.rangeCount && editor.contains(sel.anchorNode) && editor.contains(sel.focusNode)) sel.removeAllRanges();
     } catch {}
+  }
+
+  function isEditing(editor) {
+    return editor.getAttribute('contenteditable') === 'true' && (
+      editingEditors.has(editor) || composingEditors.has(editor) || editor.contains(document.activeElement)
+    );
+  }
+
+  function setupInlineCaretVisibility() {
+    const viewport = window.visualViewport;
+    if (!viewport) return;
+    let timer = 0;
+    let pointer = null;
+    let suspendRevealForGesture = false;
+    let lastNode = null;
+    let lastOffset = -1;
+
+    const activeEditor = () => document.activeElement?.closest?.('.clickable-asmb[contenteditable="true"]');
+    const schedule = () => {
+      clearTimeout(timer);
+      if (!activeEditor()) return;
+      // Let the native focus scroll, keyboard animation and viewport pan finish.
+      // No focus(), scrollIntoView() or selection replacement is needed here.
+      timer = setTimeout(() => requestAnimationFrame(revealCaret), 180);
+    };
+    const caretRect = (editor, selection) => {
+      const range = selection.getRangeAt(0).cloneRange();
+      const rect = range.getBoundingClientRect();
+      if (rect.height > 0) return rect;
+      const node = selection.focusNode;
+      const element = node?.nodeType === Node.ELEMENT_NODE ? node : node?.parentElement;
+      if (!element || element.closest('[hidden], [contenteditable="false"]')) return null;
+      // Empty lines sometimes have no Range rectangle in WebKit. Measure the
+      // existing line box instead of inserting a marker into the editable DOM.
+      const line = element.closest('.paragraph-content, .text-content, .toggle-title, p, div');
+      if (!line || !editor.contains(line)) return null;
+      const box = line.getBoundingClientRect();
+      if (!box.height) return null;
+      const style = getComputedStyle(line);
+      const top = box.top + parseFloat(style.paddingTop || 0) + parseFloat(style.borderTopWidth || 0);
+      const height = parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.45;
+      return { top, bottom: top + height, height };
+    };
+    const revealCaret = () => {
+      const editor = activeEditor();
+      if (!editor || pointer || composingEditors.has(editor) || suspendRevealForGesture) return;
+      if (Math.abs(viewport.scale - 1) > 0.02 || !editor.closest('.anotacao-asmb.ativa')) return;
+      const selection = window.getSelection();
+      // Keep native range selection and its drag handles entirely native.
+      if (!selection?.rangeCount || !selection.isCollapsed || !editor.contains(selection.focusNode)) return;
+      const caret = caretRect(editor, selection);
+      if (!caret) return;
+      const visualTop = viewport.offsetTop;
+      const bottom = visualTop + viewport.height - 12;
+      let top = visualTop + 12;
+      const tabs = document.querySelector('.session-nav');
+      if (tabs) {
+        const bounds = tabs.getBoundingClientRect();
+        const style = getComputedStyle(tabs);
+        const stickyInset = /^(sticky|fixed)$/.test(style.position) ? Math.max(0, parseFloat(style.top) || 0) : 0;
+        // A pinned tab bar can start below the safe area (e.g. top: 59px),
+        // while still covering the caret. Include that inset in its top limit.
+        const pinnedTop = Math.max(top, visualTop + stickyInset + 1);
+        if (bounds.height && bounds.top <= pinnedTop && bounds.bottom > visualTop) top = bounds.bottom + 12;
+      }
+      if (bottom <= top || caret.height > bottom - top) return;
+      const delta = caret.bottom > bottom ? caret.bottom - bottom : (caret.top < top ? caret.top - top : 0);
+      // Move only the obscured line, never the entire (possibly long) note.
+      if (Math.abs(delta) > 1) window.scrollBy({ top: delta, left: 0, behavior: 'instant' });
+    };
+
+    viewport.addEventListener('resize', schedule, { passive: true });
+    viewport.addEventListener('scroll', schedule, { passive: true });
+    document.addEventListener('focusin', () => { suspendRevealForGesture = false; schedule(); });
+    document.addEventListener('focusout', () => clearTimeout(timer));
+    document.addEventListener('input', () => { suspendRevealForGesture = false; schedule(); });
+    document.addEventListener('compositionend', schedule);
+    document.addEventListener('selectionchange', () => {
+      const selection = window.getSelection();
+      if (selection?.focusNode === lastNode && selection?.focusOffset === lastOffset) return;
+      lastNode = selection?.focusNode;
+      lastOffset = selection?.focusOffset;
+      schedule();
+    });
+    document.addEventListener('pointerdown', event => {
+      clearTimeout(timer);
+      pointer = { x: event.clientX, y: event.clientY, at: Date.now(), moved: false };
+    }, { passive: true });
+    document.addEventListener('pointermove', event => {
+      if (pointer && (Math.abs(event.clientX - pointer.x) > 6 || Math.abs(event.clientY - pointer.y) > 6)) pointer.moved = true;
+    }, { passive: true });
+    document.addEventListener('pointerup', event => {
+      const selecting = pointer && (pointer.moved || Date.now() - pointer.at > 450);
+      pointer = null;
+      if (selecting) { suspendRevealForGesture = true; return; }
+      if (!activeEditor()?.contains(event.target) || event.target.closest?.('button, a, [contenteditable="false"]')) return;
+      suspendRevealForGesture = false;
+      schedule();
+    }, { passive: true });
+    document.addEventListener('pointercancel', () => {
+      pointer = null;
+      // A manual scroll can keep panning after pointercancel. Leave it alone
+      // until another deliberate caret tap, edit or focus, not just a timeout.
+      suspendRevealForGesture = true;
+      clearTimeout(timer);
+    }, { passive: true });
+    document.addEventListener('transitionend', event => {
+      if (event.propertyName === 'grid-template-rows' && event.target.contains(activeEditor())) schedule();
+    });
   }
 
   function readRecord(id) {
@@ -208,9 +299,8 @@
       if (expanded) children.setAttribute('hidden', '');
       else children.removeAttribute('hidden');
     }
-    pruneGhostRichNodes(editor);
     markEditableEmpties(editor);
-    saveInlineDraft(id, editor.innerHTML);
+    saveEditorDraft(editor, id);
     setEmptyState(editor);
     return true;
   }
@@ -218,7 +308,7 @@
   function getMeaningfulText(root) {
     if (!root) return '';
     const clone = root.cloneNode(true);
-    clone.querySelectorAll('.toggle-arrow, .text-plus, .expand-handle-asmb, .asmb-status-badge, [hidden], script, style').forEach((n) => n.remove());
+    clone.querySelectorAll('.toggle-arrow, .text-plus, .expand-handle-asmb, .asmb-status-badge, script, style').forEach((n) => n.remove());
     return (clone.textContent || '')
       .replace(/\u200B/g, '')
       .replace(/\u00A0/g, ' ')
@@ -276,17 +366,12 @@
     return true;
   }
 
-  function placeCaretAtEnd(editor) {
-    try {
-      editor.focus({ preventScroll: true });
-      const sel = window.getSelection();
-      if (!sel) return;
-      const range = document.createRange();
-      range.selectNodeContents(editor);
-      range.collapse(false);
-      sel.removeAllRanges();
-      sel.addRange(range);
-    } catch {}
+  function saveEditorDraft(editor, id) {
+    // Normalize a copy: deleting/recreating live rich nodes during input loses
+    // WebKit's caret, native undo history and the current IME composition.
+    const snapshot = editor.cloneNode(true);
+    pruneGhostRichNodes(snapshot);
+    return saveInlineDraft(id, isEffectivelyEmpty(snapshot) ? '' : snapshot.innerHTML);
   }
 
   function getStatusMarkup(status) {
@@ -327,6 +412,9 @@
   }
 
   function applyRecordToEditor(editor, note, record) {
+    // Covers nested editable paragraphs and the focus transition around the
+    // virtual keyboard, including recordchange events from background work.
+    if (isEditing(editor)) return;
     const status = getRecordStatus(record);
     const summaryMode = status === 'summarized';
     const pendingMode = status === 'pending';
@@ -558,35 +646,30 @@
     applyRecordToEditor(editor, note, readRecord(id));
     bindHandle(note);
 
-    editor.addEventListener('input', () => {
+    const persistEditor = () => {
       if (editor.classList.contains('is-summary') || editor.classList.contains('is-pending')) return;
-
+      if (composingEditors.has(editor)) return;
       const isEmpty = isEffectivelyEmpty(editor);
-
       if (isEmpty) {
-        editor.innerHTML = '';
         editor.dataset.virgin = '1';
         editor.classList.remove('is-not-virgin', 'is-rich-inline');
-
-        const record = readRecord(id);
-        record.isVirgin = true;
-        record.fullHtml = '';
-        record.fullText = '';
-        try { window.AssembleiaIA.writeRecord(id, record); } catch (_) { return; }
       }
-
-      pruneGhostRichNodes(editor);
       markEditableEmpties(editor);
       setEmptyState(editor);
+      saveEditorDraft(editor, id);
+    };
 
-      const saved = saveInlineDraft(id, editor.innerHTML);
-      if (saved && saved.isVirgin && isEmpty) {
-        applyRecordToEditor(editor, note, saved);
-      }
+    editor.addEventListener('input', event => {
+      if (!event.isComposing) persistEditor();
+    });
+    editor.addEventListener('compositionstart', () => composingEditors.add(editor));
+    editor.addEventListener('compositionend', () => {
+      composingEditors.delete(editor);
+      persistEditor();
     });
 
     editor.addEventListener('keydown', (e) => {
-      if (e.key !== 'Enter' || e.isComposing) return;
+      if (e.key !== 'Enter' || e.isComposing || e.keyCode === 229 || composingEditors.has(editor)) return;
       if (editor.classList.contains('is-summary') || editor.classList.contains('is-pending')) {
         e.preventDefault();
         return;
@@ -606,18 +689,18 @@
       }
     });
 
-    editor.addEventListener('blur', () => {
-      if (editor.classList.contains('is-summary') || editor.classList.contains('is-pending')) return;
-      cleanEditorIfEmpty(editor);
-      const saved = saveInlineDraft(id, editor.innerHTML);
-      if (saved && saved.isVirgin && isEffectivelyEmpty(editor)) {
-        applyRecordToEditor(editor, note, saved);
-        return;
-      }
-      setEmptyState(editor);
+    editor.addEventListener('focusout', () => {
+      // Focus can move between the root editor and a rich paragraph inside it.
+      // Do not replace the DOM in either case, including keyboard dismissal.
+      setTimeout(() => {
+        if (editor.contains(document.activeElement)) return;
+        editingEditors.delete(editor);
+        persistEditor();
+      }, 0);
     });
 
-    editor.addEventListener('focus', () => {
+    editor.addEventListener('focusin', () => {
+      editingEditors.add(editor);
       setEmptyState(editor);
     });
 
@@ -639,7 +722,6 @@
         blurEditor(editor);
         return;
       }
-      if (isEffectivelyEmpty(editor)) placeCaretAtEnd(editor);
     });
 
     trigger.classList.add('click-trigger-asmb');
@@ -702,8 +784,6 @@
       if (isShortcutNoteEditor(editor)) return;
       const id = editor.dataset.id;
       const note = editor.closest('.anotacao-asmb');
-      // Background cloud refresh must not replace the focused editable DOM/caret.
-      if (document.activeElement === editor && editor.getAttribute('contenteditable') === 'true') return;
       applyRecordToEditor(editor, note, readRecord(id));
     });
     triggerPendingSummaries();
@@ -740,6 +820,7 @@
   }
 
   window.AssembleiaClickables = { init, refresh: refreshAnnotationsFromStorage };
+  setupInlineCaretVisibility();
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => init(document), { once: true });

@@ -79,6 +79,22 @@ function joinProjectPath(relativePath) {
     return new URL(relativePath.replace(/^\/+/, ''), getProjectRootURL()).href;
 }
 
+// The Assembly always opens the current study, independently of the article or
+// notes week that is still in memory. Resolve on each click, including PWA resumes.
+window.AssemblyCurrentStudy = Object.freeze({
+    date(now = new Date()) {
+        // Calendar arithmetic at local noon also works across DST and year changes.
+        const monday = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12);
+        monday.setDate(monday.getDate() - (monday.getDay() + 6) % 7);
+        return `${monday.getFullYear()}-${String(monday.getMonth() + 1).padStart(2, '0')}-${String(monday.getDate()).padStart(2, '0')}`;
+    },
+    url(now = new Date()) {
+        const target = new URL('sentinela/artigos/estudo.html', getProjectRootURL());
+        target.searchParams.set('d', this.date(now));
+        return target.href;
+    }
+});
+
 // Older directly opened article documents may predate the shared head include.
 (function loadSharedStatusBar() {
     const scriptUrl = new URL('shared/statusbar.js', getProjectRootURL());
@@ -102,7 +118,7 @@ function joinProjectPath(relativePath) {
 
 (function initSharedAppIcons() {
     // Change this only when the artwork changes, independently of app releases.
-    const ICON_REVISION = 'ass26-1';
+    const ICON_REVISION = 'ass26-2';
     for (const [rel, file, sizes] of [
         ['icon', 'favicon-32.png', '32x32'],
         ['apple-touch-icon', 'apple-touch-icon.png', '180x180']
@@ -607,68 +623,26 @@ async function irParaAnotacoes(event) {
     window.location.href = joinProjectPath(`richtext/container.html?semana=${window.getGlobalWeek()}`);
 }
 
-function ddmmParaISO(ddmm) {
-    const m = String(ddmm || "").match(/(\d{2})-(\d{2})/);
-    if (!m) return "";
-    const dia = parseInt(m[1], 10);
-    const mes = parseInt(m[2], 10) - 1;
-    const hoje = new Date();
-    hoje.setHours(0, 0, 0, 0);
-    let melhor = null;
-    let menor = Infinity;
-    for (let dy = -1; dy <= 1; dy++) {
-        const d = new Date(hoje.getFullYear() + dy, mes, dia);
-        const diff = Math.abs(d.getTime() - hoje.getTime());
-        if (diff < menor) { menor = diff; melhor = d; }
-    }
-    const yyyy = melhor.getFullYear();
-    const mm = String(mes + 1).padStart(2, "0");
-    const dd = String(dia).padStart(2, "0");
-    return yyyy + "-" + mm + "-" + dd;
-}
-
 async function irParaSentinela(event) {
     if (event) {
         event.preventDefault();
         event.stopPropagation();
     }
-    if (document.body.dataset.studyReferenceContext === 'article') {
-        document.dispatchEvent(new Event('sentinela:return-to-article'));
+    const target = new URL(window.AssemblyCurrentStudy.url());
+    const current = new URL(window.location.href);
+    if (document.body.dataset.studyReferenceContext !== 'article' &&
+        current.pathname === target.pathname && current.searchParams.get('d') === target.searchParams.get('d')) {
         return false;
     }
 
-    if (event && !window.carousel) {
-        window.location.href = joinProjectPath('estudos.html');
-        return false;
-    }
-
-    let semana = window.getGlobalWeek();
-
-    if (isIndexPageNavbar() && window.carousel) {
-        semana = window.carousel.getVisibleWeek();
-    }
-
-    window.semanaAtual = semana;
-
-    const iso = ddmmParaISO(semana);
-    if (!iso) {
-        window.location.href = joinProjectPath("index.html");
-        return false;
-    }
-
-    if (window.location.pathname.toLowerCase().endsWith("/estudo.html") && window.location.search.indexOf("d=" + iso) !== -1) {
-        return false;
-    }
-
-    window.location.href = joinProjectPath("sentinela/artigos/estudo.html?d=" + iso);
+    // A reference screen still has its own Back action for its source article.
+    // This navbar destination instead opens this week's article, cache-first.
+    window.location.href = target.href;
     return false;
 }
 
-window.irParaSentinelaAcao = function(semanaParam) {
-    if (semanaParam) {
-        window.semanaAtual = semanaParam;
-    }
-    irParaSentinela(null);
+window.irParaSentinelaAcao = function() {
+    return irParaSentinela(null);
 };
 
 async function irParaSalvar(event) {
@@ -720,7 +694,7 @@ document.addEventListener('touchend', function (event) {
 // Reopening an installed iPhone app may resume the page without another load event.
 (function manageAppUpdates() {
     if (!('serviceWorker' in navigator)) return;
-    const release = 'ass26-2026.11.07.2';
+    const release = 'ass26-2026.11.07.3';
     const root = getProjectRootURL();
     let registration, checking, lastCheck = 0, refreshing = false, navigating = false;
     const pageRelease = document.querySelector('meta[name="app-version"]')?.content || (isIndexPageNavbar() ? 'legacy' : release);
