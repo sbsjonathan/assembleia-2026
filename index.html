@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-program-year="2026" data-program-day="sex" data-font-scope="interface">
+<html lang="pt-BR" data-program-year="2026" data-program-day="unico" data-program-id="ca-copgm27" data-font-scope="interface">
 <head>
 <script id="assembleia-app-scope" src="shared/app-scope.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover, user-scalable=no">
   <title>Assembleia 2026</title>
-  <meta name="app-version" content="2026.11.07.2">
+  <meta name="app-version" content="ass26-2026.11.07.1">
 
   <meta name="theme-color" content="#ffffff">
   <meta name="application-name" content="Assembleia 2026">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Assembleia 2026">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png?v=ass26-1">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png?v=ass26-1">
   <link rel="manifest" href="manifest.json">
 
   <script>
@@ -39,15 +39,80 @@
   <link rel="stylesheet" href="assembleia/anotacoes/clickable/click-asmb.css">
   <link rel="stylesheet" href="richtext/biblia/stylebbl.css">
   <link rel="stylesheet" href="programacao/programacao.css">
+  <link rel="stylesheet" href="programacao/assembleia.css">
 </head>
 <body class="assembly-home">
 
-  <div id="img-topo"></div>
-  <div class="programacao">
-    <div class="dia" id="programacao-dia">Sexta-feira</div>
-    <div id="menu-container"></div>
-    <div id="programacao-container" aria-live="polite"></div>
+<header class="assembly-heading">
+  <div class="assembly-edition"><button type="button" class="dia" id="programacao-dia" aria-label="Configurações da assembleia" aria-expanded="false">ASSEMBLEIA DE CIRCUITO</button><span>2026–2027</span></div>
+  <h1>“Feliz é aquele que confia em Jeová”</h1>
+  <p class="assembly-subtitle">Com o superintendente de circuito</p>
+  <span class="bbl assembly-theme-reference">Provérbios 16:20</span>
+</header>
+<div id="menu-container"></div>
+<nav class="session-nav" role="tablist" aria-label="Programa da assembleia">
+  <button type="button" role="tab" id="tab-manha" aria-controls="manha" aria-selected="true" class="selected" data-session="manha">Manhã</button>
+  <button type="button" role="tab" id="tab-tarde" aria-controls="tarde" aria-selected="false" tabindex="-1" data-session="tarde">Tarde</button>
+  <button type="button" role="tab" id="tab-perguntas" aria-controls="perguntas" aria-selected="false" tabindex="-1" data-session="perguntas">Perguntas</button>
+</nav>
+<main class="programacao" id="programacao-container">
+<div class="program-fragment">
+<section id="manha" role="tabpanel" aria-labelledby="tab-manha">
+<div class="session-heading"><h2 id="titulo-manha">Manhã</h2></div>
+<p class="routine"><span class="hora">9:40</span> Música</p>
+<p class="routine"><span class="hora">9:50</span> <span class="cantico-ref">Cântico 31</span> e oração</p>
+<p data-note-id="ca-copgm27:nota:confiar-de-todo-coracao"><span class="hora">10:00</span> Por que ‘confiar em Jeová de todo o seu coração’?</p>
+<p class="series"><span class="hora">10:15</span> <strong>SÉRIE DE DISCURSOS:</strong> Imite aqueles que confiaram em Jeová!</p>
+<ul>
+<li data-note-id="ca-copgm27:nota:baraque">Baraque</li>
+<li data-note-id="ca-copgm27:nota:mulher-sunamita">A mulher sunamita</li>
+<li data-note-id="ca-copgm27:nota:daniel-e-companheiros">Daniel, Hananias, Misael e Azarias</li>
+</ul>
+<p class="routine"><span class="hora">11:05</span> <span class="cantico-ref">Cântico 57</span> e anúncios</p>
+<p data-note-id="ca-copgm27:nota:deus-vivente"><span class="hora">11:15</span> Ajude as pessoas a confiar no “Deus vivente e verdadeiro”</p>
+<p data-note-id="ca-copgm27:nota:batismo"><span class="hora">11:35</span> <strong>Batismo:</strong> “Seu Pai, que observa em secreto, o recompensará”</p>
+<p class="routine"><span class="hora">12:05</span> <span class="cantico-ref">Cântico 29</span></p>
+</section>
+<section id="tarde" role="tabpanel" aria-labelledby="tab-tarde" hidden>
+<div class="session-heading"><h2 id="titulo-tarde">Tarde</h2></div>
+<p class="routine"><span class="hora">13:20</span> Música</p>
+<p class="routine"><span class="hora">13:30</span> <span class="cantico-ref">Cântico 8</span> e oração</p>
+<p data-note-id="ca-copgm27:nota:em-quem-confiar"><span class="hora">13:35</span> <strong>DISCURSO PARA O PÚBLICO:</strong> Em quem você realmente pode confiar?</p>
+<p data-note-id="ca-copgm27:atalho:sentinela" data-action="sentinela"><span class="hora">14:05</span> Resumo de <em>A Sentinela</em></p>
+<p class="routine"><span class="hora">14:35</span> <span class="cantico-ref">Cântico 135</span> e anúncios</p>
+<p class="series"><span class="hora">14:45</span> <strong>SÉRIE DE DISCURSOS:</strong> Confie na sabedoria de Jeová</p>
+<ul>
+<li data-note-id="ca-copgm27:nota:orientar-filhos">Ao orientar seus filhos</li>
+<li data-note-id="ca-copgm27:nota:planos-futuro">Ao fazer planos para o futuro</li>
+<li data-note-id="ca-copgm27:nota:tentacoes">Ao enfrentar tentações</li>
+</ul>
+<p data-note-id="ca-copgm27:nota:feliz-quem-confia"><span class="hora">15:30</span> “Feliz é aquele que confia em Jeová”</p>
+<p class="routine"><span class="hora">16:00</span> <span class="cantico-ref">Cântico 54</span> e oração</p>
+</section>
+<section id="perguntas" role="tabpanel" aria-labelledby="tab-perguntas" hidden>
+<h2 class="sec">Perguntas de revisão</h2>
+<div class="questions-intro">Preste atenção às respostas para as seguintes perguntas:</div>
+<p data-note-id="ca-copgm27:pergunta:confiar-de-todo-coracao" data-question="1"><strong>1.</strong> Como mostramos que ‘confiamos em Jeová de todo o nosso coração’? (<span class="bbl">Pro. 3:5, 6</span>)</p>
+<p data-note-id="ca-copgm27:pergunta:imitar-exemplos" data-question="2"><strong>2.</strong> Como podemos imitar Baraque, a mulher sunamita, e Daniel, Hananias, Misael e Azarias? (<span class="bbl">Luc. 16:10</span>; <span class="bbl">Sal. 50:15; 119:112</span>)</p>
+<p data-note-id="ca-copgm27:pergunta:comecar-conversas" data-question="3"><strong>3.</strong> Como podemos começar conversas com pessoas que têm uma criação ou um modo de pensar bem diferentes dos nossos? (<span class="bbl">1 Cor. 9:19-23</span>)</p>
+<p data-note-id="ca-copgm27:pergunta:confiar-na-sabedoria" data-question="4"><strong>4.</strong> Por que podemos confiar na sabedoria de Jeová? (<span class="bbl">Pro. 3:13, 18; 16:3; 22:6</span>; <span class="bbl">1 Cor. 10:13</span>)</p>
+<p data-note-id="ca-copgm27:pergunta:sempre-confiar" data-question="5"><strong>5.</strong> Por que devemos sempre confiar em Jeová? (<span class="bbl">Pro. 16:20</span>)</p>
+</section>
+<details class="assembly-info">
+<summary>Assistência e pontos altos</summary>
+<div class="assembly-info-content">
+  <div class="assistencia-row"><label class="assistencia-label" for="ca-copgm27:assistencia:manha">Manhã</label><input class="assistencia-input" id="ca-copgm27:assistencia:manha" inputmode="numeric" placeholder="Assistência da manhã"></div>
+  <div class="assistencia-row"><label class="assistencia-label" for="ca-copgm27:assistencia:tarde">Tarde</label><input class="assistencia-input" id="ca-copgm27:assistencia:tarde" inputmode="numeric" placeholder="Assistência da tarde"></div>
+  <div class="pontos-altos-header">Pontos altos da assembleia</div>
+  <div class="pontos-altos-wrapper" id="wrapper-ca-copgm27:pontos-altos">
+    <div class="pontos-altos-content" id="ca-copgm27:pontos-altos"><span class="pontos-altos-empty">Suas anotações podem virar um resumo dos pontos altos.</span></div>
+    <button type="button" class="btn-gerar-pontos-altos" aria-label="Gerar pontos altos da assembleia">✨</button>
   </div>
+</div>
+</details>
+</div>
+</main>
+
 
   <script src="assembleia/menu/menu.js"></script>
   <script src="assembleia/export/export.js"></script>

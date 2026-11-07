@@ -16,7 +16,7 @@
   }
   try { console.log('[Conexao] versao carregada:', window.CONEXAO_VERSAO); } catch (e) {}
 
-  const NOME_CANAL = 'assembleia-2026-presenca-global';
+  const NOME_CANAL = 'ass26-presenca-global';
   const CHAVE_PAR = 'sentinela-par-conexao';
   const CHAVE_ATIVO = 'sentinela-conexao-ativa';
   const CHAVE_VER = 'sentinela-ver-online';

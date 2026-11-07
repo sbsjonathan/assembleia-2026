@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
     button.classList.toggle('btn-danger', isDownloaded);
     button.classList.toggle('btn-secondary', !isDownloaded);
     if (hint) hint.textContent = isDownloaded
-      ? 'Aplicativo e Bíblia disponíveis offline. Os estudos de A Sentinela são baixados pelo botão Baixar no Início.'
+      ? 'Aplicativo e Bíblia disponíveis offline. Os estudos de A Sentinela são baixados pelo botão Baixar na aba A Sentinela.'
       : bibleComplete
-        ? 'A Bíblia já está disponível offline. Baixe também as outras telas do aplicativo. Os estudos são baixados no Início.'
+        ? 'A Bíblia já está disponível offline. Baixe também as outras telas do aplicativo. Os estudos são baixados na aba A Sentinela.'
         : 'Baixe o aplicativo e a Bíblia de Estudo completa, com imagens e apêndices. Áudios e vídeos precisam de internet.';
   }
   function setDownloaded(value) {

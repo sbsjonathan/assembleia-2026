@@ -194,7 +194,7 @@
     }
     async function cacheAudit(worker) {
         const shell = worker?.version?.shell;
-        if (!/^assembleia-2026-integrado-shell-v\d+$/.test(shell || '')) return { status: 'active-shell-unavailable' };
+        if (!/^ass26-shell-v\d+$/.test(shell || '')) return { status: 'active-shell-unavailable' };
         if (!window.caches || !crypto.subtle) return { status: 'unsupported' };
         const source = [...document.scripts].find(script => /\/shared\/statusbar-diagnostics-data\.js(?:[?#]|$)/.test(script.src))?.src;
         if (!source) return { status: 'project-root-unavailable' };

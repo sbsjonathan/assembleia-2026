@@ -9,35 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const FONTE_MIN = 1;
     const FONTE_MAX = 11;
     const GLOW_CINZA = 'rgba(180,180,185,0.15)';
-    const DEFAULT_DAY_COLORS = { sex: '#4f73c3', sab: '#c63d3d', dom: '#7b4bb3' };
-    const DAY_NAMES = { sex: 'Sexta-feira', sab: 'Sábado', dom: 'Domingo' };
+    const PROGRAM_ID = 'ca-copgm27';
+    const PROGRAM_PREFIX = `${PROGRAM_ID}:`;
+    const DEFAULT_DAY_COLORS = { unico: '#604184' };
 
     function isPerfLowMode() {
         return document.documentElement.classList.contains('perf-low');
     }
 
-    function systemProgramDay() {
-        const hoje = new Date().getDay();
-        if (hoje === 6) return 'sab';
-        if (hoje === 0) return 'dom';
-        return 'sex';
-    }
-
-    function getHashDay() {
-        const raw = (location.hash || '').replace('#', '').trim().toLowerCase();
-        return ['sex', 'sab', 'dom'].includes(raw) ? raw : null;
-    }
-
     function getActiveDay() {
-        return getHashDay() || systemProgramDay();
+        return 'unico';
     }
 
-    function getColorStorageKey(day) {
-        return `cor-${day}`;
+    function getColorStorageKey() {
+        return 'cor-assembleia';
     }
 
     function getDefaultColor(day) {
-        return DEFAULT_DAY_COLORS[day] || DEFAULT_DAY_COLORS.sex;
+        return DEFAULT_DAY_COLORS[day] || DEFAULT_DAY_COLORS.unico;
     }
 
     function getSavedColor(day) {
@@ -64,15 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
         updateDynamicDayTexts(day);
     }
 
-    function updateDynamicDayTexts(day) {
-        const dayName = DAY_NAMES[day] || 'Hoje';
-        const labelUploadDay = document.getElementById('label-upload-day');
-        const labelDeleteDay = document.getElementById('label-delete-day');
-        const labelLocalDeleteDay = document.getElementById('label-local-delete-day');
-        
-        if (labelUploadDay) labelUploadDay.textContent = `Salvar apenas o dia de hoje (${dayName})`;
-        if (labelDeleteDay) labelDeleteDay.textContent = `Apagar apenas ${dayName}`;
-        if (labelLocalDeleteDay) labelLocalDeleteDay.textContent = `Apagar anotações de hoje (${dayName})`;
+    function updateDynamicDayTexts() {
+        // One assembly owns all three panels; no calendar/day-dependent actions.
     }
 
     document.documentElement.style.setProperty('--cor-glow', GLOW_CINZA);
@@ -82,9 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="controle-grupo controle-grupo-ajustes">
           <div class="linha-top linha-top-ajustes">
             <div class="cor-bloco">
-              <label for="cor-picker">Cor do Dia</label>
+              <label for="cor-picker">Cor de destaque</label>
               <div class="controle-acoes">
-                <input type="color" id="cor-picker" title="Escolha a cor de destaque do dia">
+                <input type="color" id="cor-picker" title="Escolha a cor de destaque">
               </div>
             </div>
           </div>
@@ -151,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="sync-sheet__handle"></div>
           <div class="sync-sheet__inner">
             <div class="sync-sheet__topbar">
-              <div class="sync-sheet__title">Nuvem do Congresso</div>
+              <div class="sync-sheet__title">Nuvem da Assembleia</div>
               <button type="button" class="sync-sheet__close" id="asmbSyncClose">×</button>
             </div>
             
@@ -172,13 +154,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     </span>
                   </label>
                   <label class="sync-choice">
-                    <input type="radio" name="sync-enviar" value="day">
-                    <span class="sync-choice__body">
-                      <span class="sync-choice__title" id="label-upload-day">Salvar apenas o dia de hoje</span>
-                      <span class="sync-choice__desc">Atualiza a nuvem só com as anotações do dia atual. O resto fica intacto.</span>
-                    </span>
-                  </label>
-                  <label class="sync-choice">
                     <input type="radio" name="sync-enviar" value="overwrite">
                     <span class="sync-choice__body">
                       <span class="sync-choice__title">Cópia exata (Substituir nuvem)</span>
@@ -196,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <input type="radio" name="sync-baixar" value="merge" checked>
                     <span class="sync-choice__body">
                       <span class="sync-choice__title">Baixar e misturar</span>
-                      <span class="sync-choice__desc">Traz da nuvem e soma com o que você já fez hoje. Nenhuma nota local é apagada.</span>
+                      <span class="sync-choice__desc">Traz da nuvem e soma com suas anotações desta assembleia. Nenhuma nota local é apagada.</span>
                     </span>
                   </label>
                   <label class="sync-choice">
@@ -214,17 +189,10 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="sync-card">
                 <div class="sync-options">
                   <label class="sync-choice sync-choice--danger">
-                    <input type="radio" name="sync-apagar" value="day" checked>
+                    <input type="radio" name="sync-apagar" value="all" checked>
                     <span class="sync-choice__body">
-                      <span class="sync-choice__title" id="label-delete-day">Apagar dia atual</span>
-                      <span class="sync-choice__desc">Remove apenas as anotações deste dia da nuvem. O resto continua a salvo.</span>
-                    </span>
-                  </label>
-                  <label class="sync-choice sync-choice--danger">
-                    <input type="radio" name="sync-apagar" value="all">
-                    <span class="sync-choice__body">
-                      <span class="sync-choice__title">Apagar todo o Congresso</span>
-                      <span class="sync-choice__desc">Esvazia completamente a nuvem. (Suas notas no aparelho não serão afetadas).</span>
+                      <span class="sync-choice__title">Apagar anotações da Assembleia</span>
+                      <span class="sync-choice__desc">Remove as notas e respostas desta assembleia da nuvem e deste aparelho.</span>
                     </span>
                   </label>
                 </div>
@@ -252,23 +220,16 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="sync-card">
               <div class="sync-options">
                 <label class="sync-choice sync-choice--danger">
-                  <input type="radio" name="local-delete-opt" value="day" checked>
+                  <input type="radio" name="local-delete-opt" value="all-notes" checked>
                   <span class="sync-choice__body">
-                    <span class="sync-choice__title" id="label-local-delete-day">Apagar anotações de hoje</span>
-                    <span class="sync-choice__desc">Remove apenas o que você escreveu no dia selecionado.</span>
-                  </span>
-                </label>
-                <label class="sync-choice sync-choice--danger">
-                  <input type="radio" name="local-delete-opt" value="all-notes">
-                  <span class="sync-choice__body">
-                    <span class="sync-choice__title">Apagar todo o Congresso</span>
-                    <span class="sync-choice__desc">Esvazia o caderno de todos os dias do Congresso neste aparelho.</span>
+                    <span class="sync-choice__title">Apagar anotações da Assembleia</span>
+                    <span class="sync-choice__desc">Remove as notas e respostas desta assembleia neste aparelho.</span>
                   </span>
                 </label>
                 <label class="sync-choice sync-choice--danger">
                   <input type="radio" name="local-delete-opt" value="reset">
                   <span class="sync-choice__body">
-                    <span class="sync-choice__title">Restaurar Padrões do Congresso</span>
+                    <span class="sync-choice__title">Restaurar Padrões da Assembleia</span>
                     <span class="sync-choice__desc">Apaga as anotações e reseta tamanho de fonte, cores e tema ao original.</span>
                   </span>
                 </label>
@@ -492,7 +453,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     async function executeSyncCall(tab, option, day) {
-       const year = document.documentElement.dataset.programYear || '2026';
+       const year = PROGRAM_ID;
        const sync = window.assembleiaSync;
 
        const autorizado = await pedirSenha();
@@ -504,13 +465,9 @@ document.addEventListener("DOMContentLoaded", () => {
            return;
          }
          let result;
-         if (option === 'all') {
-           result = await window.SupabaseSync.apagarAssembleiaCompleto(year);
-         } else {
-           result = await window.SupabaseSync.apagarAssembleiaDia(year, day);
-         }
+         result = await window.SupabaseSync.apagarAssembleiaCompleto(year);
          if (result && result.success) {
-           apagarLocalAssembleia(year, option === 'all' ? null : day);
+           apagarLocalAssembleia();
            if (sync) sync.lastSavedDataJSON = '{}';
            if (window.AssembleiaClickables && typeof window.AssembleiaClickables.refresh === 'function') {
              window.AssembleiaClickables.refresh();
@@ -530,7 +487,7 @@ document.addEventListener("DOMContentLoaded", () => {
          return;
        }
        if (!localStorage.getItem('supabase_user')) {
-         alert('Você precisa estar logado para usar a nuvem do congresso.');
+         alert('Você precisa estar logado para usar a nuvem da assembleia.');
          return;
        }
        if (!navigator.onLine) {
@@ -542,7 +499,6 @@ document.addEventListener("DOMContentLoaded", () => {
        try {
          if (tab === 'enviar') {
            if (option === 'overwrite') result = await sync.pushOverwrite();
-           else if (option === 'day') result = await sync.pushDay(day);
            else result = await sync.pushMerge();
          } else if (tab === 'baixar') {
            if (option === 'overwrite') {
@@ -567,8 +523,8 @@ document.addEventListener("DOMContentLoaded", () => {
        }
     }
 
-    function apagarLocalAssembleia(year, dia) {
-       const prefixo = dia ? `${year}-${dia}-` : `${year}-`;
+    function apagarLocalAssembleia() {
+       const prefixo = PROGRAM_PREFIX;
        const remover = [];
        for (let i = 0; i < localStorage.length; i++) {
          const key = localStorage.key(i);
@@ -592,15 +548,13 @@ document.addEventListener("DOMContentLoaded", () => {
       deleteOverlay.classList.remove('is-open');
       const opt = document.querySelector('input[name="local-delete-opt"]:checked').value;
       const day = getActiveDay();
-      const year = document.documentElement.dataset.programYear || '2026';
+      const year = PROGRAM_ID;
       
       let msg = "";
-      if (opt === 'day') {
-        msg = `Apagar todas as anotações feitas hoje (${DAY_NAMES[day]})?\n\nIsso não afetará os outros dias do congresso.`;
-      } else if (opt === 'all-notes') {
-        msg = "Apagar todas as anotações do Congresso?\n\nSuas configurações visuais serão mantidas.";
+      if (opt === 'all-notes') {
+        msg = "Apagar todas as anotações da Assembleia?\n\nSuas configurações visuais serão mantidas.";
       } else if (opt === 'reset') {
-        msg = "Restaurar Padrões do Congresso?\n\nIsso apagará todas as anotações e resetará fontes, cores e temas.\n(A Sentinela não será afetada).";
+        msg = "Restaurar Padrões da Assembleia?\n\nIsso apagará as notas e respostas desta assembleia e restaurará as preferências visuais deste aplicativo.\nO aplicativo separado da Sentinela não será afetado.";
       } else if (opt === 'nuclear') {
         msg = "Apagar todos os dados deste aplicativo?\n\nIsso remove suas anotações e downloads da Assembleia neste aparelho e sai da conta.";
       }
@@ -614,30 +568,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     async function executarLimpezaLocal(opt, day, year) {
-      if (opt === 'day') {
-        const prefix = `${year}-${day}-`;
-        Object.keys(localStorage).forEach(key => {
-          if (key.startsWith(prefix)) localStorage.removeItem(key);
-        });
-        location.reload();
-      } 
-      else if (opt === 'all-notes') {
-        const prefixes = [`${year}-sex-`, `${year}-sab-`, `${year}-dom-`];
+      if (opt === 'all-notes') {
+        const prefixes = [PROGRAM_PREFIX];
         Object.keys(localStorage).forEach(key => {
           if (prefixes.some(p => key.startsWith(p))) localStorage.removeItem(key);
         });
-        sessionStorage.removeItem(`asmb_loaded_${year}`);
+        sessionStorage.removeItem('ass26_loaded_ca-copgm27');
         location.reload();
       }
       else if (opt === 'reset') {
-        const prefixes = [`${year}-sex-`, `${year}-sab-`, `${year}-dom-`];
-        const settings = ['tamanho-fonte-global', 'tema-interface', 'editor-performance-mode', 'cor-sex', 'cor-sab', 'cor-dom'];
+        const prefixes = [PROGRAM_PREFIX];
+        const settings = ['tamanho-fonte-global', 'tema-interface', 'editor-performance-mode', 'cor-assembleia'];
         Object.keys(localStorage).forEach(key => {
           if (prefixes.some(p => key.startsWith(p)) || settings.includes(key) || key.startsWith('asmb-')) {
             localStorage.removeItem(key);
           }
         });
-        sessionStorage.removeItem(`asmb_loaded_${year}`);
+        sessionStorage.removeItem('ass26_loaded_ca-copgm27');
         location.reload();
       }
       else if (opt === 'nuclear') {
@@ -655,7 +602,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
           if ('caches' in window) {
             const names = await caches.keys();
-            await Promise.all(names.filter(name => name.startsWith('assembleia-2026-')).map(name => caches.delete(name)));
+            await Promise.all(names.filter(name => name.startsWith('ass26-')).map(name => caches.delete(name)));
           }
         } catch (e) {}
 
@@ -807,11 +754,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function toggleMenu() {
         menuVisivel = !menuVisivel;
+        diaElemento.setAttribute('aria-expanded', String(menuVisivel));
         menuControles.style.display = menuVisivel ? 'block' : 'none';
         if (menuVisivel) aplicarGlowDaCorGlobal();
         else resetarGlowPadrao();
     }
 
+    diaElemento.setAttribute('aria-expanded', 'false');
+    diaElemento.setAttribute('aria-controls', 'controles');
     diaElemento.addEventListener('click', toggleMenu);
     
     if (corPicker) {

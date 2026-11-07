@@ -1,7 +1,7 @@
 /* Notes stay local first; cloud reads never erase local drafts on failure. */
 class AssembleiaSync {
     constructor() {
-        this.ano = document.documentElement.dataset.programYear || '2026';
+        this.ano = document.documentElement.dataset.programId || 'ca-copgm27';
         this.isLoggedIn = false;
         this.isSyncing = false;
         this.initialLoadComplete = false;
@@ -10,7 +10,7 @@ class AssembleiaSync {
         this.SAVE_DELAY = 2500;
         this.dirty = false;
         this.lastError = '';
-        this.prefs = ['tema-interface', 'tamanho-fonte-global', 'editor-performance-mode', 'cor-sex', 'cor-sab', 'cor-dom'];
+        this.prefs = ['tema-interface', 'tamanho-fonte-global', 'editor-performance-mode', 'cor-assembleia'];
         if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => this.setup(), { once: true });
         else this.setup();
     }
@@ -34,7 +34,7 @@ class AssembleiaSync {
 
     account() { try { return JSON.parse(localStorage.getItem('supabase_user'))?.id || null; } catch (_) { return null; } }
     checkLoginStatus() { this.isLoggedIn = !!this.account(); return this.isLoggedIn; }
-    validKey(key) { return key.startsWith(`${this.ano}-`) || this.prefs.includes(key); }
+    validKey(key) { return key.startsWith(`${this.ano}:`) || this.prefs.includes(key); }
     stable(value) { return JSON.stringify(Object.fromEntries(Object.entries(value || {}).sort(([a], [b]) => a.localeCompare(b)))); }
     fail(error) {
         this.lastError = error?.message || String(error || 'Não foi possível sincronizar.');
@@ -97,7 +97,7 @@ class AssembleiaSync {
     }
     backup(values, reason) {
         if (!Object.keys(values).length) return;
-        const key = `asmb_recovery_${this.ano}_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+        const key = `ass26_recovery_${this.ano}_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
         // A failed backup aborts the replacement instead of risking the only copy.
         localStorage.setItem(key, JSON.stringify({ at: new Date().toISOString(), reason, values }));
     }
@@ -105,7 +105,7 @@ class AssembleiaSync {
         const copies = [];
         for (let i = 0; i < localStorage.length; i++) {
             const key = localStorage.key(i);
-            if (key?.startsWith(`asmb_recovery_${this.ano}_`)) {
+            if (key?.startsWith(`ass26_recovery_${this.ano}_`)) {
                 try { copies.push({ key, ...JSON.parse(localStorage.getItem(key)) }); } catch (_) {}
             }
         }
@@ -180,13 +180,13 @@ class AssembleiaSync {
     async push(mode, day) {
         if (this.isSyncing) return this.fail('Aguarde o salvamento em andamento.');
         if (this.notReady()) return this.fail('Nuvem indisponível.');
-        if (mode === 'day' && !['sex', 'sab', 'dom'].includes(day)) return this.fail('Dia inválido.');
+        if (mode === 'day' && day !== 'unico') return this.fail('Dia inválido.');
         this.isSyncing = true;
         try {
             const account = this.account();
             const { raw, values: remote } = await this.readRemote(account);
             const local = this.collectAnnotationsFromLocalStorage();
-            const selected = mode === 'day' ? Object.fromEntries(Object.entries(local).filter(([key]) => key.startsWith(`${this.ano}-${day}-`) || this.prefs.includes(key))) : local;
+            const selected = mode === 'day' ? Object.fromEntries(Object.entries(local).filter(([key]) => key.startsWith(`${this.ano}:`) || this.prefs.includes(key))) : local;
             const merged = mode === 'overwrite' ? local : { ...remote, ...selected };
             this.backup(remote, 'Antes do envio manual para a nuvem');
             const result = await window.SupabaseSync.salvarAssembleiaAnotacoes(this.ano, merged, { expectedRemote: raw });

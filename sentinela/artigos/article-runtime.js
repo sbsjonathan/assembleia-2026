@@ -3,7 +3,7 @@
 
   // Shared by the navigation worker and the first-load fallback page. Older
   // downloads keep their original cache name and URL, so no download is lost.
-  const CACHE_NAME = 'assembleia-2026-artigo-offline-v1';
+  const CACHE_NAME = 'ass26-artigos-v1';
   const PROXY_URL = 'https://hope2.momentaneo2021.workers.dev/';
   const pad = value => String(value).padStart(2, '0');
   const iso = date => `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;

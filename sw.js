@@ -1,12 +1,13 @@
-/* One worker owns Sentinela's offline shell and included Bible. */
-const PREFIX = 'assembleia-2026-integrado-';
-const APP_VERSION = '2026.11.07.2';
+/* Assembleia has its own release and offline stores on the shared Pages origin. */
+const PREFIX = 'ass26-';
+const APP_VERSION = 'ass26-2026.11.07.1';
 importScripts('./sentinela/artigos/article-runtime.js?appVersion=' + APP_VERSION);
 // Bump the shell version when application code changes. The large Bible cache is independent.
-const SHELL_CACHE = PREFIX + 'shell-v2';
+const SHELL_CACHE = PREFIX + 'shell-v1';
 const BIBLE_CACHE = PREFIX + 'bible-v1';
 const RUNTIME_CACHE = PREFIX + 'runtime-v1';
-const OWN_CACHES = [SHELL_CACHE, BIBLE_CACHE, RUNTIME_CACHE];
+const ARTICLE_CACHE = self.SentinelaArticleRuntime.CACHE_NAME;
+const OWN_CACHES = [SHELL_CACHE, BIBLE_CACHE, RUNTIME_CACHE, ARTICLE_CACHE];
 const SCOPE = self.registration.scope;
 const absolute = path => new URL(path, SCOPE).href;
 const ASSET_URL = absolute('offline-assets.json');
@@ -154,9 +155,48 @@ async function migratePreviousShells(names) {
       if(validResponse(await cache.match(absolute(path))))continue;
       const old=await previous.match(absolute(path));if(!validResponse(old))continue;
       try{await verifyStatic(cache,path,assets,old.clone());}
-      catch(_){await cache.put(absolute(path),old);}
+      catch(_){/* Changed assets must be downloaded for this release, never reused blindly. */}
     }
   }
+}
+async function migrateAssemblyDownloads(names) {
+  // Only the previous Assembly app is eligible. Sentinela's caches are untouched.
+  const articles=await caches.open(ARTICLE_CACHE), receipt=absolute('.ass26-downloads-migrated-v1');
+  if(validResponse(await articles.match(receipt))) return true;
+  let complete=true;
+  const oldBibleName='assembleia-2026-integrado-bible-v1';
+  if(names.includes(oldBibleName)) {
+    const previous=await caches.open(oldBibleName), next=await caches.open(BIBLE_CACHE);
+    const oldManifest=await previous.match(BUNDLE_URL);
+    if(validResponse(oldManifest)) {
+      try {
+        const currentManifest=await next.match(BUNDLE_URL);
+        const manifest=parseBundle(await (validResponse(currentManifest)?currentManifest:oldManifest).clone().json());
+        for(const entry of manifest.entries) {
+          if(validResponse(await next.match(entry.url))) continue;
+          const response=await previous.match(entry.url);
+          if(validResponse(response)) {
+            try { await verifyAndStore(next,entry,response); }
+            catch(_) { complete=false; /* A damaged old download must not stop the new app opening. */ }
+          }
+        }
+        if(!validResponse(currentManifest)) await next.put(BUNDLE_URL,oldManifest);
+      } catch(_) { complete=false; }
+    }
+  }
+  const oldArticles='assembleia-2026-artigo-offline-v1';
+  if(names.includes(oldArticles)) {
+    const previous=await caches.open(oldArticles), next=articles;
+    for(const request of await previous.keys()) {
+      if(validResponse(await next.match(request))) continue;
+      const response=await previous.match(request);
+      if(validResponse(response)&&self.SentinelaArticleRuntime.isArticle(await response.clone().text())) await next.put(request,response);
+    }
+  }
+  // Article cache survives "clear application offline files", so old downloads
+  // are not resurrected repeatedly after a successful migration.
+  if(complete) await articles.put(receipt,new Response('complete'));
+  return complete;
 }
 function refreshApp(send=()=>{}) {
   if(refreshJob){refreshJob.listeners.add(send);if(refreshJob.last)send(refreshJob.last);return refreshJob.promise;}
@@ -258,11 +298,16 @@ self.addEventListener('install',event=>event.waitUntil((async()=>{
 self.addEventListener('activate',event=>event.waitUntil((async()=>{
   const names=await caches.keys();
   const oldShells=names.filter(name=>name.startsWith(PREFIX+'shell-')&&name!==SHELL_CACHE);
-  const legacyShells=[]; // Never import another application's cache.
+  const legacyShells=names.filter(name=>/^assembleia-2026-integrado-shell-v\d+$/.test(name));
   const upgrading=oldShells.length>0||legacyShells.length>0;
   await migratePreviousShells([...oldShells,...legacyShells]);
+  let downloadsMigrated=true;
+  try { downloadsMigrated=await migrateAssemblyDownloads(names); }
+  catch(_) { downloadsMigrated=false; /* Keep the legacy caches for a retry; the verified new UI can still open. */ }
   // Bible, article caches, personal data and unrelated applications survive.
   for(const name of names)if(name.startsWith(PREFIX)&&!OWN_CACHES.includes(name))await caches.delete(name);
+  // Leaving the old personal stores intact does not require retaining their old UI.
+  if(downloadsMigrated) for(const name of legacyShells) await caches.delete(name);
   await self.clients.claim();
   const clients=await self.clients.matchAll({type:'window',includeUncontrolled:true});
   const rootPath=new URL(SCOPE).pathname,indexPath=new URL('index.html',SCOPE).pathname;
@@ -293,7 +338,7 @@ self.addEventListener('message',event=>{
   else if(action==='CACHE_STATUS')event.waitUntil(getCacheStatus({fast:event.data.fast===true}).then(status=>send({type:'CACHE_STATUS',...status})).catch(error=>send({type:'CACHE_STATUS',complete:false,bibleComplete:false,message:errorMessage(error)})));
   else if(action==='CLEAR_CACHE')event.waitUntil((async()=>{
     generation++;await Promise.allSettled([bibleJob&&bibleJob.promise,fullJob&&fullJob.promise,refreshJob&&refreshJob.promise].filter(Boolean));
-    for(const name of await caches.keys())if(name.startsWith(PREFIX))await caches.delete(name);
+    for(const name of await caches.keys())if(name.startsWith(PREFIX)&&name!==ARTICLE_CACHE)await caches.delete(name);
     assetMemo=undefined;manifestMemo=undefined;send({type:'CACHE_CLEARED'});
   })());
 });

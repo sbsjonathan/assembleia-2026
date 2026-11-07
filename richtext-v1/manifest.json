@@ -139,8 +139,9 @@
     {
       "source": "save/supabase.js",
       "snapshot": "save-v1/supabase.js",
-      "sha256": "68c7555a245a093dd5a030ce4c736f8628096b045357500c08b659b514b0300b",
-      "upstreamSha256": "327d772a767d8d92734ac237bcbf28eee76e46ec8d8b02381bdac19f800bb3fe"
+      "sha256": "011b5e1f26ad22ab2abee6f1c78bb334a1422fc4427697c41227720838bf82ea",
+      "upstreamSha256": "327d772a767d8d92734ac237bcbf28eee76e46ec8d8b02381bdac19f800bb3fe",
+      "assemblyPreviousSha256": "68c7555a245a093dd5a030ce4c736f8628096b045357500c08b659b514b0300b"
     },
     {
       "source": "save/unified-load.js",
@@ -149,5 +150,6 @@
     }
   ],
   "adaptedFor": "assembleia-2026",
-  "adaptation": "Separate browser storage bootstrap and cloud document types; upstream editor retained."
+  "adaptation": "Separate browser storage bootstrap and cloud document types; upstream editor retained.",
+  "assemblyAdaptation": "Assembly bootstrap and cloud namespaces only; original v1 editor remains unchanged."
 }

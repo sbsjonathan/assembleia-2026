@@ -371,7 +371,7 @@
         temaSimposio = kicker.textContent.replace(/\s+/g, ' ').trim();
       }
     } else {
-      const temaEl = document.querySelector('.tema');
+      const temaEl = document.querySelector('.assembly-heading h1, .tema');
       if (temaEl) {
         temaDia = temaEl.textContent.replace(/\s+/g, ' ').trim();
       }
@@ -868,6 +868,7 @@ Use exatamente este modelo: "A anotação menciona que [assunto aleatório], mas
       // Lê a raiz pura de todos os editores do dia usando readRecord (ignora a interface gráfica)
       document.querySelectorAll('.clickable-asmb[data-id]').forEach(editor => {
           const id = editor.dataset.id;
+          if (document.documentElement.dataset.programId && !id.startsWith('ca-copgm27:nota:')) return;
           const record = readRecord(id);
           
           if (record && record.fullText && record.fullText.length > 5) {
@@ -876,12 +877,12 @@ Use exatamente este modelo: "A anotação menciona que [assunto aleatório], mas
       });
 
       if (textoTotal.trim().length < 15) {
-          respostaDiv.innerHTML = '<span style="color: var(--text-muted, #9ca3af);">Aguardando suas anotações do dia para gerar os pontos altos.</span>';
+          respostaDiv.innerHTML = '<span style="color: var(--text-muted, #9ca3af);">Aguardando suas anotações da assembleia para gerar os pontos altos.</span>';
           return;
       }
 
       wrapperElement.classList.add('ia-loading');
-      respostaDiv.innerHTML = '<span style="color: var(--text-muted, #6b7280);">✨ Analisando suas anotações do dia...</span>';
+      respostaDiv.innerHTML = '<span style="color: var(--text-muted, #6b7280);">✨ Analisando suas anotações da assembleia...</span>';
 
       try {
           let nomeIrmao = '';
@@ -901,12 +902,11 @@ Use exatamente este modelo: "A anotação menciona que [assunto aleatório], mas
               console.error("Erro ao ler usuário:", e);
           }
 
-          const rotulos = { 'sex': 'Sexta-feira', 'sab': 'Sábado', 'dom': 'Domingo' };
-          const nomeDia = rotulos[dia] || 'hoje';
-          const saudacao = nomeIrmao ? `Comece com uma saudação calorosa chamando o usuário pelo nome (${nomeIrmao}) (ex: "A ${nomeDia} foi um dia incrível, ${nomeIrmao}!").` : `Comece com uma saudação calorosa sobre a ${nomeDia}.`;
+          const nomeDia = 'assembleia';
+          const saudacao = nomeIrmao ? `Comece com uma saudação calorosa chamando o usuário pelo nome (${nomeIrmao}) (ex: "A ${nomeDia} trouxe bons lembretes, ${nomeIrmao}!").` : `Comece com uma saudação calorosa sobre a ${nomeDia}.`;
 
           const prompt = [
-              `Você é um amigo cristão conversando no fim da ${nomeDia} de congresso.`,
+              `Você é um amigo cristão conversando no fim da ${nomeDia}.`,
               `Com base APENAS nas anotações feitas pelo usuário abaixo, faça um resumo de 1 ou 2 parágrafos com os pontos altos do dia.`,
               saudacao,
               `Use linguagem natural, amorosa, clara e edificante. Retorne APENAS um JSON válido.`,

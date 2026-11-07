@@ -113,7 +113,7 @@
         const version = response?.headers.get('x-sentinela-app-version');
         modules.push({path, present:!!response, receiptHash:response?.headers.get('x-sentinela-sha256') || null, version:version && /^\d{4}\.\d{2}\.\d{2}\.\d+$/.test(version) ? version : null});
       }
-      cache = {status:'read-existing', shells:names.filter(name => /^assembleia-2026-integrado-shell-v\d+$/.test(name)), modules};
+      cache = {status:'read-existing', shells:names.filter(name => /^ass26-shell-v\d+$/.test(name)), modules};
     } catch (_) { cache = {status:'unavailable'}; }
   }
   function report() {

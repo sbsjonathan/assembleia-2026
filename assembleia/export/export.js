@@ -1,15 +1,9 @@
 (function () {
-  const DAYS = ['sex', 'sab', 'dom'];
-  const DAY_NAMES = {
-    sex: 'Sexta-feira',
-    sab: 'Sábado',
-    dom: 'Domingo'
-  };
-  const DEFAULT_DAY_COLORS = {
-    sex: '#4f73c3',
-    sab: '#c63d3d',
-    dom: '#7b4bb3'
-  };
+  const PROGRAM_ID = 'ca-copgm27';
+  const PROGRAM_PREFIX = `${PROGRAM_ID}:`;
+  const PANELS = ['manha', 'tarde', 'perguntas'];
+  const PANEL_NAMES = { manha: 'Manhã', tarde: 'Tarde', perguntas: 'Perguntas de revisão' };
+  const PREFERENCE_KEYS = ['tema-interface', 'tamanho-fonte-global', 'editor-performance-mode', 'cor-assembleia'];
 
   function qs(selector, root = document) {
     return root.querySelector(selector);
@@ -23,15 +17,9 @@
     return String(document.documentElement.dataset.programYear || '2026').trim();
   }
 
-  function getDisplayedDay() {
-    const explicit = String(document.documentElement.dataset.programDay || '').trim().toLowerCase();
-    if (DAYS.includes(explicit)) return explicit;
-    const hash = String(location.hash || '').replace('#', '').trim().toLowerCase();
-    if (DAYS.includes(hash)) return hash;
-    const dow = new Date().getDay();
-    if (dow === 6) return 'sab';
-    if (dow === 0) return 'dom';
-    return 'sex';
+  function getDisplayedPanel() {
+    const selected = document.querySelector('[role="tab"][aria-selected="true"][data-session]')?.dataset.session;
+    return PANELS.includes(selected) ? selected : 'manha';
   }
 
   function escapeHTML(text) {
@@ -94,41 +82,37 @@
 
   // Pega o texto ÍNTEGRO, ignorando resumos da IA
   function getRecordExportText(id) {
+    if (!id) return '';
     const record = readRecord(id);
     if (!record) return '';
     return normalizeText(record.fullText || '');
   }
 
   function getLocalExportPayload() {
-    const year = getProgramYear();
+    if (window.AssembleiaIA?.flushPendingWrites?.() === false) {
+      throw new Error('Não foi possível salvar a última edição. Tente novamente antes de exportar.');
+    }
     const preferences = {};
-    
-    // Coleta as preferências de design atuais
-    ['tema-interface', 'tamanho-fonte-global', 'cor-sex', 'cor-sab', 'cor-dom'].forEach((key) => {
+    PREFERENCE_KEYS.forEach((key) => {
       const value = localStorage.getItem(key);
       if (value !== null) preferences[key] = value;
     });
-
     const annotations = {};
-    const yearPrefix = `${year}-`;
-    
-    // Varre o LocalStorage em busca de todas as anotações do ano letivo do Congresso
+    const archives = {};
     for (let i = 0; i < localStorage.length; i += 1) {
       const key = localStorage.key(i);
-      if (!key) continue;
-      // Regex garante que vai pegar "2026-sex-XXX", "2026-sab-XXX", etc.
-      if (key.startsWith(yearPrefix) && /^20\d{2}-(sex|sab|dom)-/.test(key)) {
-        annotations[key] = localStorage.getItem(key);
-      }
+      if (key?.startsWith(PROGRAM_PREFIX)) annotations[key] = localStorage.getItem(key);
+      if (key?.startsWith('legacy-congresso:')) archives[key] = localStorage.getItem(key);
     }
-
     return {
-      format: 'assembleia-bin-v1',
+      format: 'ass26-bin-v1',
+      programId: PROGRAM_ID,
       exportedAt: new Date().toISOString(),
-      year,
+      year: getProgramYear(),
       preferences,
       recoveries: window.assembleiaSync?.getRecoveries?.() || [],
-      annotations
+      annotations,
+      archives
     };
   }
 
@@ -147,7 +131,7 @@
   async function exportBin() {
     const payload = getLocalExportPayload();
     const stamp = new Date().toISOString().slice(0, 10);
-    const filename = `Backup_Congresso_${payload.year}_${stamp}.bin`;
+    const filename = `ass26-backup-${stamp}.bin`;
     
     // Transforma o JSON do Backup num Arquivo Real
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/octet-stream' });
@@ -172,25 +156,41 @@
   }
 
   async function importBinFile(file) {
-    const text = await file.text();
-    const parsed = JSON.parse(text);
-    if (!parsed || parsed.format !== 'assembleia-bin-v1' || typeof parsed !== 'object') {
-      throw new Error('Arquivo BIN inválido ou corrompido.');
+    const parsed = JSON.parse(await file.text());
+    if (!parsed || typeof parsed !== 'object') throw new Error('Arquivo BIN inválido ou corrompido.');
+    const legacy = parsed.format === 'assembleia-bin-v1';
+    if (!legacy && (parsed.format !== 'ass26-bin-v1' || parsed.programId !== PROGRAM_ID)) {
+      throw new Error('Este backup não pertence a esta assembleia.');
     }
-
-    const preferences = parsed.preferences && typeof parsed.preferences === 'object' ? parsed.preferences : {};
     const annotations = parsed.annotations && typeof parsed.annotations === 'object' ? parsed.annotations : {};
-
-    // Injeta silenciosamente no dispositivo e restaura a sessão
-    Object.entries(preferences).forEach(([key, value]) => {
-      if (value == null) return;
-      localStorage.setItem(key, String(value));
-    });
-
-    Object.entries(annotations).forEach(([key, value]) => {
-      if (value == null) return;
-      localStorage.setItem(key, String(value));
-    });
+    const writes = [];
+    if (legacy) {
+      // Congress notes retain their original identities and never become assembly answers.
+      Object.entries(annotations).forEach(([key, value]) => {
+        if (/^20\d{2}-(sex|sab|dom)-/.test(key) && typeof value === 'string') {
+          writes.push([`legacy-congresso:${key}`, value]);
+        }
+      });
+      if (!writes.length) throw new Error('O backup não contém anotações de congresso válidas.');
+    } else {
+      const preferences = parsed.preferences && typeof parsed.preferences === 'object' ? parsed.preferences : {};
+      Object.entries(preferences).forEach(([key, value]) => {
+        if (PREFERENCE_KEYS.includes(key) && typeof value === 'string') writes.push([key, value]);
+      });
+      Object.entries(annotations).forEach(([key, value]) => {
+        if (key.startsWith(PROGRAM_PREFIX) && typeof value === 'string') writes.push([key, value]);
+      });
+      Object.entries(parsed.archives || {}).forEach(([key, value]) => {
+        if (key.startsWith('legacy-congresso:') && typeof value === 'string') writes.push([key, value]);
+      });
+    }
+    // Preserve an explicit recovery copy before replacing matching programme records.
+    const stamp = new Date().toISOString();
+    const replaced = Object.fromEntries(writes.filter(([key, value]) => localStorage.getItem(key) !== null && localStorage.getItem(key) !== value)
+      .map(([key]) => [key, localStorage.getItem(key)]));
+    if (Object.keys(replaced).length) localStorage.setItem(`ass26-import-recovery:${stamp}`, JSON.stringify(replaced));
+    writes.forEach(([key, value]) => localStorage.setItem(key, value));
+    if (legacy) alert('As notas do congresso foram preservadas no arquivo histórico. As notas desta assembleia não foram alteradas.');
   }
 
   function getTextWithoutHour(el) {
@@ -237,18 +237,12 @@
     );
   }
 
-  function buildParagraphId(day, el, idx) {
-    const year = getProgramYear();
-    const hour = el.querySelector('.hora')?.textContent.replace(/:/g, '');
-    if (hour) return `${year}-${day}-${hour}`;
-    return `${year}-${day}-item${idx + 1}`;
+  function buildParagraphId(panel, el) {
+    return el.dataset.noteId || '';
   }
 
-  function buildListId(day, headingEl, li) {
-    const year = getProgramYear();
-    const groupHour = headingEl?.querySelector('.hora')?.textContent.replace(/:/g, '') || 'symp';
-    const liIndex = Array.from(li.parentElement.children).filter(node => node.tagName === 'LI').indexOf(li) * 2 + 1;
-    return `${year}-${day}-${groupHour}-b${liIndex}`;
+  function buildListId(panel, headingEl, li) {
+    return li.dataset.noteId || '';
   }
 
   function stripHourSpan(html) {
@@ -286,7 +280,7 @@
     const note = isExcludedTrigger(el) ? '' : getRecordExportText(buildParagraphId(day, el, idx));
     return `
       <article class="pdf-item">
-        <div class="pdf-item-time">${escapeHTML(hour)}</div>
+        ${hour ? `<div class="pdf-item-time">${escapeHTML(hour)}</div>` : ''}
         <div class="pdf-item-main">
           <div class="pdf-item-content">${body}</div>
           ${renderNote(note)}
@@ -311,67 +305,38 @@
       </div>`;
   }
 
-  async function fetchDayFragment(day) {
-    const response = await fetch(`programacao/${day}.html`, { cache: 'no-store' });
-    if (!response.ok) throw new Error(`Falha ao carregar ${day}.html`);
-    const html = await response.text();
-    const doc = new DOMParser().parseFromString(html, 'text/html');
-    const fragment = qs('.program-fragment', doc);
-    if (!fragment) throw new Error(`Estrutura inválida em ${day}.html`);
-    return fragment;
-  }
-
-  function getAccentForDay(day) {
-    return String(localStorage.getItem(`cor-${day}`) || DEFAULT_DAY_COLORS[day] || '#2a7d7d').trim();
-  }
-
-  async function buildPdfSections(dayList) {
-    const sections = [];
-
-    for (const day of dayList) {
-      const fragment = await fetchDayFragment(day);
-      const accent = getAccentForDay(day);
-      const themeEl = qs('.tema', fragment);
-      const themeHtml = themeEl ? themeEl.innerHTML : '';
-
+  async function buildPdfSections(panelList) {
+    if (window.AssembleiaIA?.flushPendingWrites?.() === false) {
+      throw new Error('Não foi possível salvar a última edição. Tente novamente antes de exportar.');
+    }
+    const accentCandidate = localStorage.getItem('cor-assembleia') || '#604184';
+    const accent = /^#[0-9a-f]{6}$/i.test(accentCandidate) ? accentCandidate : '#604184';
+    return panelList.map((panel) => {
+      const original = document.getElementById(panel);
+      if (!original) throw new Error('A programação ainda não está pronta. Tente novamente.');
+      const fragment = original.cloneNode(true);
+      fragment.querySelectorAll('.anotacao-asmb, script, style').forEach(node => node.remove());
       const bodyParts = [];
       let paragraphIndex = 0;
       let lastSymposiumHeading = null;
-
       Array.from(fragment.children).forEach((child) => {
-        if (child.classList.contains('tema')) return;
-
-        if (child.classList.contains('sec')) {
-          bodyParts.push(`<h2 class="pdf-section-title">${escapeHTML(child.textContent || '')}</h2>`);
-          lastSymposiumHeading = null;
-          return;
-        }
-
         if (child.tagName === 'P') {
-          bodyParts.push(renderParagraphItem(day, child, paragraphIndex));
-          paragraphIndex += 1;
+          bodyParts.push(renderParagraphItem(panel, child, paragraphIndex++));
           lastSymposiumHeading = isSymposiumTitle(child) ? child : null;
-          return;
-        }
-
-        if ((child.tagName === 'UL' || child.tagName === 'OL') && lastSymposiumHeading) {
-          bodyParts.push(renderList(child, day, lastSymposiumHeading));
-          return;
+        } else if ((child.tagName === 'UL' || child.tagName === 'OL') && lastSymposiumHeading) {
+          bodyParts.push(renderList(child, panel, lastSymposiumHeading));
         }
       });
-
-      sections.push(`
-        <section class="pdf-day" style="--pdf-accent:${escapeHTML(accent)};">
+      return `
+        <section class="pdf-day" style="--pdf-accent:${accent};">
           <header class="pdf-day-header">
-            <div class="pdf-day-eyebrow">CONGRESSO 2026: FELICIDADE ETERNA</div>
-            <h1>${escapeHTML(DAY_NAMES[day] || day)}</h1>
-            ${themeHtml ? `<div class="pdf-day-theme">${themeHtml}</div>` : ''}
+            <div class="pdf-day-eyebrow">ASSEMBLEIA DE CIRCUITO 2026–2027</div>
+            <h1>${PANEL_NAMES[panel]}</h1>
+            <div class="pdf-day-theme">“Feliz é aquele que confia em Jeová” — Provérbios 16:20</div>
           </header>
           <div class="pdf-day-body">${bodyParts.join('')}</div>
-        </section>`);
-    }
-
-    return sections.join('');
+        </section>`;
+    }).join('');
   }
 
   function getPdfStyles() {
@@ -420,7 +385,7 @@
         --note-line: rgba(23, 32, 51, 0.08);
         background: #fff;
         color: var(--ink);
-        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Noto Sans', sans-serif;
+        font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, sans-serif;
         width: 100%;
         max-width: 210mm;
         margin: 0 auto;
@@ -542,9 +507,9 @@
   }
 
   async function previewAndExportPdf(scope) {
-    const dayList = scope === 'all' ? DAYS : [getDisplayedDay()];
-    const scopeLabel = scope === 'all' ? 'Todos os dias' : (DAY_NAMES[dayList[0]] || dayList[0]);
-    const sections = await buildPdfSections(dayList);
+    const panelList = scope === 'all' ? PANELS : [getDisplayedPanel()];
+    const scopeLabel = scope === 'all' ? 'assembleia-completa' : panelList[0];
+    const sections = await buildPdfSections(panelList);
 
     const overlay = document.createElement('div');
     overlay.className = 'pdf-preview-overlay';
@@ -593,7 +558,7 @@
           </html>
         `;
 
-        const filename = `Congresso_2026_${slug(scopeLabel)}.pdf`;
+        const filename = `ass26-${slug(scopeLabel)}.pdf`;
 
         const opt = {
           margin: [15, 0, 15, 0], 
@@ -675,17 +640,17 @@
                 <div class="asmb-card__title">Escopo do PDF</div>
                 <div class="asmb-inline-options">
                   <label class="asmb-choice">
-                    <input type="radio" name="asmb-pdf-scope" value="current" checked>
+                    <input type="radio" name="asmb-pdf-scope" value="current">
                     <span class="asmb-choice__body">
-                      <span class="asmb-choice__title">Dia corrente</span>
-                      <span class="asmb-choice__desc">Exporta só o dia que está aberto agora.</span>
+                      <span class="asmb-choice__title">Aba atual</span>
+                      <span class="asmb-choice__desc">Exporta a aba que está aberta agora, com suas anotações.</span>
                     </span>
                   </label>
                   <label class="asmb-choice">
-                    <input type="radio" name="asmb-pdf-scope" value="all">
+                    <input type="radio" name="asmb-pdf-scope" value="all" checked>
                     <span class="asmb-choice__body">
-                      <span class="asmb-choice__title">Todos os dias</span>
-                      <span class="asmb-choice__desc">Gera um PDF único com todos os dias.</span>
+                      <span class="asmb-choice__title">Assembleia completa</span>
+                      <span class="asmb-choice__desc">Inclui Manhã, Tarde e Perguntas, com suas anotações.</span>
                     </span>
                   </label>
                 </div>
@@ -693,7 +658,7 @@
 
               <div class="asmb-card" data-format-panel="bin" hidden>
                 <div class="asmb-card__title">Conteúdo do BIN</div>
-                <p class="asmb-sheet__meta">O BIN inclui preferências do menu e as anotações locais do congresso do ano atual. Depois você pode importar manualmente e restaurar tudo no aparelho.</p>
+                <p class="asmb-sheet__meta">O BIN inclui as preferências, anotações e respostas desta assembleia, além das notas arquivadas do congresso. Você pode importar o arquivo depois.</p>
               </div>
 
               <div class="asmb-sheet__actions">
@@ -802,7 +767,7 @@
         if (selected === 'bin') {
           await exportBin();
         } else {
-          const scope = qs('input[name="asmb-pdf-scope"]:checked', overlay)?.value || 'current';
+          const scope = qs('input[name="asmb-pdf-scope"]:checked', overlay)?.value || 'all';
           await previewAndExportPdf(scope);
         }
         closeSheet();

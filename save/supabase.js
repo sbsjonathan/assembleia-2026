@@ -115,16 +115,29 @@ class SupabaseSync {
         return this.currentUser;
     }
 
-    async carregarRichtextAnotacoes(semana) {
+    async readAssemblyDocument(semana, tipo, legacyTipo) {
         const initialized = await this.ensureInitialized();
         this.checkExistingSession();
-        // null means a successful query with no document, never a failed read.
         if (!initialized || !this.currentUser || !this.isOnline) throw new Error('Não foi possível consultar a nuvem.');
-        const { data, error } = await this.supabase.from('richtext_anotacoes').select('conteudo_html').eq('usuario_id', this.currentUser.id).eq('semana', semana).eq('tipo', 'assembleia2026:richtext').maybeSingle();
-        if (error) throw error;
-        return data?.conteudo_html || null;
+        const userId = this.currentUser.id;
+        const read = async name => {
+            const { data, error } = await this.supabase.from('richtext_anotacoes').select('conteudo_html').eq('usuario_id', userId).eq('semana', semana).eq('tipo', name).maybeSingle();
+            if (error) throw error;
+            this.checkExistingSession();
+            if (this.currentUser?.id !== userId) throw new Error('A conta mudou durante a consulta.');
+            return data;
+        };
+        // A stored empty document is authoritative. Only an absent new document
+        // can read the former Assembly copy; writes always use the new identity.
+        const current = await read(tipo);
+        return current === null && legacyTipo ? await read(legacyTipo) : current;
     }
-    
+
+    async carregarRichtextAnotacoes(semana) {
+        const data = await this.readAssemblyDocument(semana, 'ass26:richtext', 'assembleia2026:richtext');
+        return data?.conteudo_html ?? null;
+    }
+
     async salvarRichtextAnotacoes(semana, conteudo) {
         await this.ensureInitialized();
         this.checkExistingSession();
@@ -132,14 +145,14 @@ class SupabaseSync {
 
         const userId = this.currentUser.id;
         try {
-            const { data: existing, error: readError } = await this.supabase.from('richtext_anotacoes').select('id').eq('usuario_id', userId).eq('semana', semana).eq('tipo', 'assembleia2026:richtext').maybeSingle();
+            const { data: existing, error: readError } = await this.supabase.from('richtext_anotacoes').select('id').eq('usuario_id', userId).eq('semana', semana).eq('tipo', 'ass26:richtext').maybeSingle();
             if (readError) throw readError;
             this.checkExistingSession();
             if (this.currentUser?.id !== userId) throw new Error('A conta mudou durante o salvamento.');
             
             const { data, error } = existing
                 ? await this.supabase.from('richtext_anotacoes').update({ conteudo_html: conteudo }).eq('id', existing.id).eq('usuario_id', userId).select().single()
-                : await this.supabase.from('richtext_anotacoes').insert({ usuario_id: userId, semana, tipo: 'assembleia2026:richtext', conteudo_html: conteudo }).select().single();
+                : await this.supabase.from('richtext_anotacoes').insert({ usuario_id: userId, semana, tipo: 'ass26:richtext', conteudo_html: conteudo }).select().single();
 
             if (error) throw error;
             return { success: true, data };
@@ -154,8 +167,7 @@ class SupabaseSync {
         if (!this.currentUser || !this.isOnline) return null;
 
         try {
-            const { data, error } = await this.supabase.from('richtext_anotacoes').select('conteudo_html').eq('usuario_id', this.currentUser.id).eq('semana', semana).eq('tipo', 'assembleia2026:sentinela_anotacoes').maybeSingle();
-            if (error && error.code !== 'PGRST116') throw error;
+            const data = await this.readAssemblyDocument(semana, 'ass26:sentinela_anotacoes', 'assembleia2026:sentinela_anotacoes');
 
             if (data?.conteudo_html) {
                 const wrapper = JSON.parse(data.conteudo_html);
@@ -174,11 +186,11 @@ class SupabaseSync {
 
         try {
             const conteudoJSON = JSON.stringify({ estudo: estudoId, anotacoes, timestamp: new Date().toISOString() });
-            const { data: existing } = await this.supabase.from('richtext_anotacoes').select('id').eq('usuario_id', this.currentUser.id).eq('semana', semana).eq('tipo', 'assembleia2026:sentinela_anotacoes').maybeSingle();
+            const { data: existing } = await this.supabase.from('richtext_anotacoes').select('id').eq('usuario_id', this.currentUser.id).eq('semana', semana).eq('tipo', 'ass26:sentinela_anotacoes').maybeSingle();
 
             const { data, error } = existing
                 ? await this.supabase.from('richtext_anotacoes').update({ conteudo_html: conteudoJSON }).eq('id', existing.id).select().single()
-                : await this.supabase.from('richtext_anotacoes').insert({ usuario_id: this.currentUser.id, semana, tipo: 'assembleia2026:sentinela_anotacoes', conteudo_html: conteudoJSON }).select().single();
+                : await this.supabase.from('richtext_anotacoes').insert({ usuario_id: this.currentUser.id, semana, tipo: 'ass26:sentinela_anotacoes', conteudo_html: conteudoJSON }).select().single();
 
             if (error) throw error;
             return { success: true, data };
@@ -188,11 +200,12 @@ class SupabaseSync {
     }
 
     async carregarAssembleiaAnotacoes(ano) {
+        if (ano !== 'ca-copgm27') throw new Error('Programa da assembleia incompatível. Atualize a página.');
         const initialized = await this.ensureInitialized();
         this.checkExistingSession();
         if (!initialized || !this.currentUser || !this.isOnline) throw new Error('Não foi possível consultar a nuvem.');
         const userId = this.currentUser.id;
-        const tipo = `assembleia2026:programacao:${ano}`;
+        const tipo = `ass26:programacao:${ano}`;
         const { data, error } = await this.supabase.from('richtext_anotacoes').select('conteudo_html').eq('usuario_id', userId).eq('tipo', tipo).maybeSingle();
         if (error) throw error;
         this.checkExistingSession();
@@ -206,11 +219,12 @@ class SupabaseSync {
 
     async salvarAssembleiaAnotacoes(ano, anotacoesObj, options = {}) {
         try {
+            if (ano !== 'ca-copgm27') throw new Error('Programa da assembleia incompatível. Atualize a página.');
             const initialized = await this.ensureInitialized();
             this.checkExistingSession();
             if (!initialized || !this.currentUser || !this.isOnline) throw new Error('Não conectado');
             const userId = this.currentUser.id;
-            const tipo = `assembleia2026:programacao:${ano}`;
+            const tipo = `ass26:programacao:${ano}`;
             const { data: existing, error: readError } = await this.supabase.from('richtext_anotacoes').select('id, conteudo_html').eq('usuario_id', userId).eq('tipo', tipo).maybeSingle();
             if (readError) throw readError;
             if (Object.prototype.hasOwnProperty.call(options, 'expectedRemote')) {
@@ -237,10 +251,11 @@ class SupabaseSync {
 
     async apagarAssembleiaCompleto(ano) {
         try {
+            if (ano !== 'ca-copgm27') throw new Error('Programa da assembleia incompatível. Atualize a página.');
             const initialized = await this.ensureInitialized();
             this.checkExistingSession();
             if (!initialized || !this.currentUser || !this.isOnline) throw new Error('Não conectado');
-            const { error } = await this.supabase.from('richtext_anotacoes').delete().eq('usuario_id', this.currentUser.id).eq('tipo', `assembleia2026:programacao:${ano}`);
+            const { error } = await this.supabase.from('richtext_anotacoes').delete().eq('usuario_id', this.currentUser.id).eq('tipo', `ass26:programacao:${ano}`);
             if (error) throw error;
             return { success: true };
         } catch (error) { return { success: false, error: error.message }; }
@@ -248,11 +263,11 @@ class SupabaseSync {
 
     async apagarAssembleiaDia(ano, dia) {
         try {
-            if (!['sex', 'sab', 'dom'].includes(dia)) throw new Error('Dia inválido');
+            if (dia !== 'unico') throw new Error('Dia inválido');
             const remote = await this.carregarAssembleiaAnotacoes(ano);
             if (!remote) return { success: true, removidos: 0 };
             const next = { ...remote };
-            const keys = Object.keys(next).filter(key => key.startsWith(`${ano}-${dia}-`));
+            const keys = Object.keys(next).filter(key => key.startsWith(`${ano}:`));
             keys.forEach(key => delete next[key]);
             const result = await this.salvarAssembleiaAnotacoes(ano, next, { expectedRemote: remote });
             return { ...result, removidos: result.success ? keys.length : 0 };

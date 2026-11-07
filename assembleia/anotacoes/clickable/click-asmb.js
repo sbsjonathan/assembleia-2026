@@ -40,7 +40,7 @@
     if (!trigger) return null;
     const pageKey = getPageKey();
     const text = normalizeText(getTextWithoutHour(trigger));
-    if (pageKey === 'dom' && text.startsWith('resumo de a sentinela')) {
+    if (trigger.dataset.action === 'sentinela' || (pageKey === 'dom' && text.startsWith('resumo de a sentinela'))) {
       return {
         kind: 'watchtower-shortcut',
         url: buildCurrentWatchtowerUrl(),
@@ -114,6 +114,7 @@
   }
 
   function buildId(el, idx) {
+    if (el.dataset.noteId) return el.dataset.noteId;
     const year = document.documentElement?.dataset?.programYear || '2026';
     const pageKey = getPageKey();
     if (el.matches('li')) {
@@ -550,6 +551,10 @@
     `;
 
     const editor = note.querySelector('.clickable-asmb');
+    editor.setAttribute('role', 'textbox');
+    editor.setAttribute('aria-multiline', 'true');
+    editor.setAttribute('aria-label', trigger.dataset.question ? 'Sua resposta' : 'Sua anotação');
+    if (trigger.dataset.question) editor.dataset.placeholder = 'Digite sua resposta';
     applyRecordToEditor(editor, note, readRecord(id));
     bindHandle(note);
 
@@ -673,6 +678,7 @@
     const scope = root && root.querySelectorAll ? root : document;
     const triggers =[];
     scope.querySelectorAll('p, li').forEach((el) => {
+      if (el.dataset.question && el.dataset.noteId) { triggers.push(el); return; }
       if (el.matches('li')) {
         if (getSymposiumGroup(el)) triggers.push(el);
         return;

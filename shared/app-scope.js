@@ -4,14 +4,15 @@
  */
 (function installAssemblyScope(global) {
     'use strict';
-    if (global.AssemblyScope?.version === 1) {
+    if (global.AssemblyScope) {
         // document.open() keeps the facades but removes Window event listeners.
         // Downloaded articles run this bootstrap again after replacing the page.
         global.AssemblyScope.refresh?.();
         return;
     }
 
-    const prefix = 'assembleia-2026:';
+    const prefix = 'ass26:';
+    const previousPrefix = 'assembleia-2026:';
     const storageAreas = [];
     const isPage = typeof document !== 'undefined';
 
@@ -88,9 +89,29 @@
             installGlobal(name, () => { throw error; });
             return;
         }
+        migrateStorage(native, name);
         const scoped = storageProxy(native);
         installGlobal(name, () => scoped);
         storageAreas.push({ native, scoped });
+    }
+
+    function migrateStorage(native, area) {
+        // Keep this receipt outside the public namespace. Clearing this app's
+        // notes must not make the next launch restore an intentionally deleted note.
+        const receipt = 'ass26-migration:' + area + ':v1';
+        if (native.getItem(receipt) === 'complete') return;
+        const source = [];
+        for (let i = 0; i < native.length; i++) {
+            const key = native.key(i);
+            if (key?.startsWith(previousPrefix)) source.push(key);
+        }
+        for (const key of source) {
+            const logical = key.slice(previousPrefix.length);
+            const congress = /^\d{4}-(sex|sab|dom)-/.test(logical) || /^asmb_recovery_\d{4}_/.test(logical);
+            const destination = prefix + (congress ? 'legacy-congresso:' : '') + logical;
+            if (native.getItem(destination) === null) native.setItem(destination, native.getItem(key));
+        }
+        native.setItem(receipt, 'complete');
     }
 
     function onStorageChange(event) {
@@ -118,9 +139,154 @@
         if (!native) return;
         const open = native.open.bind(native);
         const remove = native.deleteDatabase.bind(native);
+        const migrations = new Map();
+        const completed = new Set();
+        let receiptDatabase;
+
+        function receiptStore() {
+            if (!receiptDatabase) receiptDatabase = new Promise((resolve, reject) => {
+                const request = open('ass26-migration-v1', 1);
+                request.onupgradeneeded = () => request.result.createObjectStore('databases');
+                request.onerror = () => reject(request.error);
+                request.onsuccess = () => {
+                    request.result.onversionchange = () => { request.result.close(); receiptDatabase = null; };
+                    resolve(request.result);
+                };
+            }).catch(error => { receiptDatabase = null; throw error; });
+            return receiptDatabase;
+        }
+
+        async function receipt(name, write = false) {
+            const db = await receiptStore();
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction('databases', write ? 'readwrite' : 'readonly');
+                const request = write ? tx.objectStore('databases').put(true, name) : tx.objectStore('databases').get(name);
+                tx.oncomplete = () => resolve(write || request.result === true);
+                tx.onabort = tx.onerror = () => reject(tx.error);
+            });
+        }
+
+        function existing(name) {
+            return new Promise((resolve, reject) => {
+                const request = open(name);
+                let absent = false;
+                request.onupgradeneeded = event => {
+                    if (event.oldVersion === 0) { absent = true; request.transaction.abort(); }
+                };
+                request.onerror = event => {
+                    if (absent) { event.preventDefault(); resolve(null); }
+                    else reject(request.error);
+                };
+                request.onsuccess = () => resolve(request.result);
+            });
+        }
+
+        function snapshot(db) {
+            const names = Array.from(db.objectStoreNames);
+            if (!names.length) return Promise.resolve({ version: db.version, stores: [] });
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction(names, 'readonly');
+                const stores = names.map(name => {
+                    const store = tx.objectStore(name);
+                    return {
+                        name, keyPath: store.keyPath, autoIncrement: store.autoIncrement,
+                        indexes: Array.from(store.indexNames, indexName => {
+                            const index = store.index(indexName);
+                            return { name: indexName, keyPath: index.keyPath, unique: index.unique, multiEntry: index.multiEntry };
+                        }),
+                        keys: store.getAllKeys(), values: store.getAll()
+                    };
+                });
+                tx.oncomplete = () => resolve({ version: db.version, stores: stores.map(store => ({ ...store, keys: store.keys.result, values: store.values.result })) });
+                tx.onerror = tx.onabort = () => reject(tx.error);
+            });
+        }
+
+        function installSnapshot(name, data) {
+            return new Promise((resolve, reject) => {
+                const request = open(prefix + name, data.version);
+                request.onupgradeneeded = event => {
+                    // Database creation and every copied record commit together.
+                    // If another tab already created the destination, leave it alone.
+                    if (event.oldVersion !== 0) return;
+                    for (const item of data.stores) {
+                        const store = request.result.createObjectStore(item.name, { keyPath: item.keyPath, autoIncrement: item.autoIncrement });
+                        item.indexes.forEach(index => store.createIndex(index.name, index.keyPath, { unique: index.unique, multiEntry: index.multiEntry }));
+                        item.values.forEach((value, index) => item.keyPath === null ? store.put(value, item.keys[index]) : store.put(value));
+                    }
+                };
+                request.onerror = () => reject(request.error);
+                request.onsuccess = () => { request.result.close(); resolve(); };
+            });
+        }
+
+        async function migrateDatabase(name) {
+            if (await receipt(name)) return;
+            const target = await existing(prefix + name);
+            if (target) { target.close(); await receipt(name, true); return; }
+            const old = await existing(previousPrefix + name);
+            if (old) {
+                try { await installSnapshot(name, await snapshot(old)); }
+                finally { old.close(); }
+            }
+            await receipt(name, true);
+        }
+
+        function prepare(name) {
+            if (!migrations.has(name)) {
+                const work = () => migrateDatabase(name);
+                // Workers and tabs share this lock; old source databases stay intact.
+                const task = global.navigator?.locks?.request
+                    ? global.navigator.locks.request('ass26-database-migration:' + name, work) : work();
+                migrations.set(name, task.then(() => { completed.add(name); }).catch(error => { migrations.delete(name); throw error; }));
+            }
+            return migrations.get(name);
+        }
+
+        function delayedRequest(task) {
+            // Preserve the synchronous open()->request API while migration runs.
+            const target = new EventTarget();
+            const add = target.addEventListener.bind(target), discard = target.removeEventListener.bind(target), dispatch = target.dispatchEvent.bind(target);
+            Object.setPrototypeOf(target, global.IDBOpenDBRequest.prototype);
+            let active = null, failure = null, failed = false;
+            Object.defineProperties(target, {
+                addEventListener: { value: add }, removeEventListener: { value: discard }, dispatchEvent: { value: dispatch },
+                result: { get: () => active ? active.result : undefined },
+                error: { get: () => active ? active.error : failure },
+                readyState: { get: () => active ? active.readyState : failed ? 'done' : 'pending' },
+                source: { get: () => null }, transaction: { get: () => active?.transaction || null }
+            });
+            for (const type of ['success', 'error', 'upgradeneeded', 'blocked']) {
+                let handler = null;
+                Object.defineProperty(target, 'on' + type, {
+                    get: () => handler,
+                    set(value) { if (handler) discard(type, handler); handler = typeof value === 'function' ? value : null; if (handler) add(type, handler); }
+                });
+            }
+            Promise.resolve().then(task).then(request => {
+                active = request;
+                for (const type of ['success', 'error', 'upgradeneeded', 'blocked']) request.addEventListener(type, event => {
+                    const forwarded = type === 'upgradeneeded' || type === 'blocked'
+                        ? new IDBVersionChangeEvent(type, { oldVersion: event.oldVersion, newVersion: event.newVersion })
+                        : new Event(type, { cancelable: event.cancelable });
+                    if (!dispatch(forwarded)) event.preventDefault();
+                });
+            }).catch(error => { failure = error; failed = true; dispatch(new Event('error', { cancelable: true })); });
+            return target;
+        }
+
         const methods = {
-            open(name, ...args) { return arguments.length ? open(prefix + String(name), ...args) : open(); },
-            deleteDatabase(name) { return arguments.length ? remove(prefix + String(name)) : remove(); }
+            open(name, ...args) {
+                if (!arguments.length) return open();
+                name = String(name);
+                return completed.has(name) ? open(prefix + name, ...args)
+                    : delayedRequest(async () => { await prepare(name); return open(prefix + name, ...args); });
+            },
+            deleteDatabase(name) {
+                if (!arguments.length) return remove();
+                name = String(name);
+                return delayedRequest(async () => { await prepare(name); return remove(prefix + name); });
+            }
         };
         if (typeof native.databases === 'function') {
             const list = native.databases.bind(native);
@@ -173,7 +339,7 @@
         }
         scopeDatabases();
         Object.defineProperty(global, 'AssemblyScope', {
-            value: Object.freeze({ version: 1, prefix, refresh }), configurable: false
+            value: Object.freeze({ version: 2, prefix, previousPrefix, refresh }), configurable: false
         });
     } catch (error) { failClosed(error); }
 })(globalThis);
