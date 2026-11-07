@@ -117,11 +117,35 @@ def check(browser, origin):
     sibling.evaluate("localStorage.setItem('assembleia-2026:same-key', 'updated')")
     page.wait_for_function("received.length === 1")
     assert page.evaluate("received") == [{"key": "same-key", "oldValue": "assembly", "newValue": "updated", "local": True}]
+
+    # The article fallback replaces the document, which removes Window listeners
+    # but leaves the scoped facades in place. Its bootstrap must restore capture.
+    page.evaluate("""() => {
+        window.originalStorage = localStorage;
+        window.originalIndexedDB = indexedDB;
+        document.open();
+        document.write('<!doctype html><script src="/shared/app-scope.js"><\\/script><body id="replacement">Downloaded article</body>');
+        document.close();
+    }""")
+    page.wait_for_selector('#replacement')
+    assert page.evaluate("localStorage === originalStorage && indexedDB === originalIndexedDB")
+    page.evaluate("""() => {
+        window.received = [];
+        addEventListener('storage', event => received.push({key:event.key,
+            oldValue:event.oldValue, newValue:event.newValue,
+            local:event.storageArea === localStorage}));
+        // Refreshing an existing page must not duplicate the listener either.
+        AssemblyScope.refresh();
+    }""")
+    sibling.evaluate("localStorage.setItem('other-app-change', 'after-write')")
+    sibling.evaluate("localStorage.setItem('assembleia-2026:same-key', 'after-write')")
+    page.wait_for_function("received.length === 1")
+    assert page.evaluate("received") == [{"key": "same-key", "oldValue": "updated", "newValue": "after-write", "local": True}]
     page.evaluate("localStorage.clear()")
     assert page.evaluate("localStorage.length") == 0
     assert sibling.evaluate("localStorage.getItem('sentinela-note')") == "keep"
     assert sibling.evaluate("localStorage.getItem('same-key')") == "sibling"
-    assert sibling.evaluate("localStorage.getItem('other-app-change')") == "ignore"
+    assert sibling.evaluate("localStorage.getItem('other-app-change')") == "after-write"
 
     page.evaluate(OPEN_DB, "jwpub-iphone-library")
     assert page.evaluate("indexedDB instanceof IDBFactory")

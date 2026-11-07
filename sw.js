@@ -1,9 +1,9 @@
 /* One worker owns Sentinela's offline shell and included Bible. */
 const PREFIX = 'assembleia-2026-integrado-';
-const APP_VERSION = '2026.11.07.1';
+const APP_VERSION = '2026.11.07.2';
 importScripts('./sentinela/artigos/article-runtime.js?appVersion=' + APP_VERSION);
 // Bump the shell version when application code changes. The large Bible cache is independent.
-const SHELL_CACHE = PREFIX + 'shell-v1';
+const SHELL_CACHE = PREFIX + 'shell-v2';
 const BIBLE_CACHE = PREFIX + 'bible-v1';
 const RUNTIME_CACHE = PREFIX + 'runtime-v1';
 const OWN_CACHES = [SHELL_CACHE, BIBLE_CACHE, RUNTIME_CACHE];

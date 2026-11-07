@@ -4,7 +4,12 @@
  */
 (function installAssemblyScope(global) {
     'use strict';
-    if (global.AssemblyScope?.version === 1) return;
+    if (global.AssemblyScope?.version === 1) {
+        // document.open() keeps the facades but removes Window event listeners.
+        // Downloaded articles run this bootstrap again after replacing the page.
+        global.AssemblyScope.refresh?.();
+        return;
+    }
 
     const prefix = 'assembleia-2026:';
     const storageAreas = [];
@@ -88,6 +93,26 @@
         storageAreas.push({ native, scoped });
     }
 
+    function onStorageChange(event) {
+        const area = storageAreas.find(item => item.native === event.storageArea);
+        if (!area) return;
+        if (event.key !== null && !event.key.startsWith(prefix)) {
+            event.stopImmediatePropagation();
+            return;
+        }
+        Object.defineProperties(event, {
+            key: { value: event.key === null ? null : event.key.slice(prefix.length) },
+            storageArea: { value: area.scoped }
+        });
+    }
+
+    function refresh() {
+        if (!isPage) return;
+        // addEventListener deduplicates this function/capture pair. Keeping its
+        // position also preserves filtering before listeners already on the page.
+        global.addEventListener('storage', onStorageChange, true);
+    }
+
     function scopeDatabases() {
         const native = global.indexedDB;
         if (!native) return;
@@ -144,22 +169,11 @@
             scopeStorage('sessionStorage');
             // Installed first, this capture listener rewrites the native event
             // before existing app listeners inspect its key or storageArea.
-            global.addEventListener('storage', event => {
-                const area = storageAreas.find(item => item.native === event.storageArea);
-                if (!area) return;
-                if (event.key !== null && !event.key.startsWith(prefix)) {
-                    event.stopImmediatePropagation();
-                    return;
-                }
-                Object.defineProperties(event, {
-                    key: { value: event.key === null ? null : event.key.slice(prefix.length) },
-                    storageArea: { value: area.scoped }
-                });
-            }, true);
+            refresh();
         }
         scopeDatabases();
         Object.defineProperty(global, 'AssemblyScope', {
-            value: Object.freeze({ version: 1, prefix }), configurable: false
+            value: Object.freeze({ version: 1, prefix, refresh }), configurable: false
         });
     } catch (error) { failClosed(error); }
 })(globalThis);
