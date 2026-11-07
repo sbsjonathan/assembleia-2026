@@ -4,8 +4,8 @@
   "description": "Assembleia de circuito 2026–2027: programação, perguntas, Bíblia e anotações.",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#faf9fb",
+  "theme_color": "#faf9fb",
   "orientation": "portrait",
   "icons": [
     {

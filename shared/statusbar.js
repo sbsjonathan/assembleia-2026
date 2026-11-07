@@ -20,11 +20,36 @@
         path.startsWith('richtext/') ? 'notes' :
         path.startsWith('save/') ? 'save' :
         path.startsWith('sentinela/artigos/') ? 'article' :
-        path === 'atualizar.html' ? 'recovery' : 'default';
+        path === 'atualizar.html' ? 'recovery' :
+        (path === '' || path === 'index.html') ? 'assembly' : 'default';
     const ios = /iPhone|iPad|iPod/.test(navigator.userAgent) ||
         (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
     const standalone = window.matchMedia('(display-mode: standalone)');
     let bodyObserver;
+
+    function syncAssemblyChrome() {
+        if (surface !== 'assembly' || document.documentElement !== root) return;
+        const heading = document.querySelector('.assembly-heading');
+        if (!heading) return;
+        // Use the painted header colour for native browser/PWA chrome too.
+        // Convert color-mix() to a plain hex colour for older iOS metadata parsers.
+        const canvas = document.createElement('canvas');
+        canvas.width = canvas.height = 1;
+        const context = canvas.getContext('2d');
+        if (!context) return;
+        context.fillStyle = getComputedStyle(heading).backgroundColor;
+        context.fillRect(0, 0, 1, 1);
+        const rgba = context.getImageData(0, 0, 1, 1).data;
+        if (rgba[3] !== 255) return;
+        const colour = '#' + Array.from(rgba.slice(0, 3), value => value.toString(16).padStart(2, '0')).join('');
+        let meta = document.querySelector('meta[name="theme-color"]');
+        if (!meta) {
+            meta = document.createElement('meta');
+            meta.name = 'theme-color';
+            document.head.append(meta);
+        }
+        if (meta.content !== colour) meta.content = colour;
+    }
 
     function mount() {
         if (document.documentElement !== root || !document.body) return;
@@ -61,12 +86,19 @@
             delete root.dataset.nativeStatusbar;
             document.getElementById('app-solid-statusbar')?.remove();
         }
+        syncAssemblyChrome();
     }
 
-    window.AppStatusBar = { documentRoot: root, revision: '2026.11.03.14', refresh };
+    window.AppStatusBar = { documentRoot: root, revision: 'ass26-2026.11.07.2', refresh };
     refresh();
     window.addEventListener('pageshow', refresh);
     standalone.addEventListener('change', refresh);
+    if (surface === 'assembly') {
+        const appearanceObserver = new MutationObserver(syncAssemblyChrome);
+        appearanceObserver.observe(root, { attributes: true, attributeFilter: ['style', 'data-theme'] });
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', syncAssemblyChrome, { once: true });
+        else syncAssemblyChrome();
+    }
 
     // Opt-in measurements run on the affected page, inside the same installed app.
     if (new URLSearchParams(location.search).get('diagnostico') === 'statusbar') {

@@ -1,11 +1,15 @@
 /* Programme reading follows the shared eleven levels; menus and the dock stay fixed. */
-:root { --cor-global: #604184; --link-color: #604184; }
+:root {
+  --cor-global: #604184;
+  --link-color: #604184;
+  --assembly-chrome: color-mix(in srgb, var(--cor-global) 3%, var(--bg-body));
+}
 html, body { overflow-x: clip; }
 .assembly-home { --accent: var(--cor-global); font-family: 'Noto Sans', sans-serif; }
 .assembly-heading {
   padding: 20px;
   border-bottom: 1px solid var(--border-color);
-  background: color-mix(in srgb, var(--cor-global) 3%, var(--bg-body));
+  background: var(--assembly-chrome);
 }
 .assembly-edition { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: var(--text-muted); font-size: 14px; }
 .assembly-edition .dia {
@@ -39,9 +43,14 @@ html, body { overflow-x: clip; }
 
 /* A closed note consumes no height. The open field fits one text line plus padding. */
 .program-fragment .anotacao-asmb { font-size: inherit; margin-top: 0; margin-bottom: 0; grid-template-rows: minmax(0, 0fr); }
-.program-fragment .anotacao-asmb.ativa { margin-bottom: .65em; grid-template-rows: minmax(0, 1fr); }
-.program-fragment .anotacao-asmb-inner { padding: 4px; margin: -4px; }
+.program-fragment .anotacao-asmb.ativa { margin-bottom: max(12px, .65em); grid-template-rows: minmax(0, 1fr); }
+.program-fragment .anotacao-asmb-inner { padding: 4px 19px 13px 4px; margin: -4px -19px -13px -4px; }
 .program-fragment .clickable-asmb-wrap { padding-bottom: 0; }
+/* The compact wrapper has no bottom padding. Keep the original diagonal marks
+   at the field corner, with the whole 44px target clear of the following topic. */
+.program-fragment .expand-handle-asmb { bottom: -9px; }
+.program-fragment .expand-handle-asmb::before { bottom: 19px; }
+.program-fragment .expand-handle-asmb::after { bottom: 15.1px; }
 html[data-font-scope="interface"] .program-fragment .clickable-asmb {
   font: inherit; line-height: 1.45;
   min-height: max(44px, calc(2.15em + 2px)); padding: .35em 1.4em .35em .6em;

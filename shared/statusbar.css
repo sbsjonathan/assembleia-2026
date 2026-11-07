@@ -2,7 +2,7 @@
  * Keep it taller than 10px: env(safe-area-inset-top) may legitimately be zero.
  * The home page keeps its existing translucent treatment without this strip.
  */
-:root { --statusbar-build: "2026.11.03.14"; }
+:root { --statusbar-build: "ass26-2026.11.07.2"; }
 #app-solid-statusbar { display: none; }
 html[data-native-statusbar="solid"] {
     --app-statusbar-height: max(12px, env(safe-area-inset-top, 0px));
@@ -36,6 +36,11 @@ html[data-statusbar-surface="save"] #app-solid-statusbar {
 }
 html[data-statusbar-surface="recovery"] #app-solid-statusbar {
     background-color: #f4f3f6;
+}
+html[data-statusbar-surface="assembly"],
+html[data-statusbar-surface="assembly"] #app-solid-statusbar,
+html[data-statusbar-surface="assembly"] body::before {
+    background-color: var(--assembly-chrome, #faf9fb);
 }
 
 /* Reserve the painted area above the header's text and controls. No changes to

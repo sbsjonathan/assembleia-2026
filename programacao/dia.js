@@ -5,6 +5,7 @@
   const TABS = ['manha', 'tarde', 'perguntas'];
   let currentTab = 'manha';
   let initialized = false;
+  let userIsWorking = false;
 
   function tabFromHash() {
     const value = location.hash.slice(1);
@@ -14,6 +15,7 @@
   function selectTab(name, options = {}) {
     if (!TABS.includes(name)) return false;
     if (window.AssembleiaIA?.flushPendingWrites?.() === false) return false;
+    if (options.automatic !== true) userIsWorking = true;
     const focused = document.activeElement;
     if (focused?.closest('[role="tabpanel"]') && focused.closest('[role="tabpanel"]').id !== name) focused.blur();
     currentTab = name;
@@ -95,8 +97,27 @@
     window.ProgramacaoBbl?.normalizeBbl(document.getElementById('programacao-container'));
     window.AssembleiaClickables?.init(document.getElementById('programacao-container'));
     restoreExtras();
-    selectTab(tabFromHash(), { updateHash: false, scroll: false });
+    // A restored #manha must not hide the current afternoon marker on a new opening.
+    const scheduledTab = window.AssemblySchedule?.current()?.tab;
+    selectTab(scheduledTab || tabFromHash(), { automatic: true, updateHash: !!scheduledTab, scroll: false });
     window.addEventListener('hashchange', () => selectTab(tabFromHash(), { updateHash: false }));
+    const container = document.getElementById('programacao-container');
+    const markWorking = event => {
+      if (event.target.closest('[data-note-id], .anotacao-asmb, input, .assembly-info')) userIsWorking = true;
+    };
+    container.addEventListener('pointerdown', markWorking);
+    container.addEventListener('focusin', markWorking);
+    function followOnResume() {
+      if (userIsWorking || document.activeElement?.isContentEditable) return;
+      const tab = window.AssemblySchedule?.current()?.tab;
+      if (tab && tab !== currentTab) selectTab(tab, { automatic: true, scroll: false });
+    }
+    // iOS may resume the existing PWA document. Follow the schedule only until
+    // the user chooses a tab or starts working, never on the minute timer.
+    window.addEventListener('pageshow', event => { if (event.persisted) followOnResume(); });
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') followOnResume();
+    });
   }
 
   window.AssemblyProgram = Object.freeze({ id: PROGRAM_ID, selectTab, activeTab: () => currentTab });
