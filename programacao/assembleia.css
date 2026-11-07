@@ -38,8 +38,8 @@ html, body { overflow-x: clip; }
 .program-fragment .click-trigger-asmb.ativo { margin-bottom: .3em; }
 
 /* A closed note consumes no height. The open field fits one text line plus padding. */
-.program-fragment .anotacao-asmb { font-size: inherit; margin-top: 0; margin-bottom: 0; }
-.program-fragment .anotacao-asmb.ativa { margin-bottom: .65em; }
+.program-fragment .anotacao-asmb { font-size: inherit; margin-top: 0; margin-bottom: 0; grid-template-rows: minmax(0, 0fr); }
+.program-fragment .anotacao-asmb.ativa { margin-bottom: .65em; grid-template-rows: minmax(0, 1fr); }
 .program-fragment .anotacao-asmb-inner { padding: 4px; margin: -4px; }
 .program-fragment .clickable-asmb-wrap { padding-bottom: 0; }
 html[data-font-scope="interface"] .program-fragment .clickable-asmb {
