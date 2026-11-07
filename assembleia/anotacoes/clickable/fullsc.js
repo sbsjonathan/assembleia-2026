@@ -194,19 +194,31 @@
     else location.href = target.href;
   }
 
-  function queueSummaryAndLeave() {
-    if (leaving || !editorRef) return;
+  function prepareExit() {
+    if (leaving || !editorRef) return true;
     clearTimeout(saveTimer);
     const agent = getAgent();
     try {
+      // Persist the job before navigation; the programme runs it after return.
+      // This also covers the iPhone Back gesture and browser history buttons.
       const result = agent?.queueSummaryFromFull
         ? agent.queueSummaryFromFull(getStorageKey(), exportHTML(editorRef))
         : agent?.saveFullDraft?.(getStorageKey(), exportHTML(editorRef));
       if (!result) throw new Error('Gravação indisponível');
+      try {
+        sessionStorage.setItem('assembleia-fullsc-return', JSON.stringify({
+          id: getStorageKey(), from: qs('from'), at: Date.now()
+        }));
+      } catch (_) { /* The saved note is independent of optional return position. */ }
       clearSaveError();
-      leaving = true;
-      goBack();
-    } catch (error) { showSaveError(error); }
+      return true;
+    } catch (error) { showSaveError(error); return false; }
+  }
+
+  function queueSummaryAndLeave() {
+    if (leaving || !editorRef || !prepareExit()) return;
+    leaving = true;
+    goBack();
   }
 
   function setupBack() {
@@ -437,9 +449,10 @@
     editor.addEventListener('cut', queueSave);
     editor.addEventListener('blur', saveDraft, true);
     window.addEventListener('beforeunload', event => {
-      if (!saveDraft()) { event.preventDefault(); event.returnValue = ''; }
+      if (!prepareExit()) { event.preventDefault(); event.returnValue = ''; }
     });
-    window.addEventListener('pagehide', saveDraft);
+    window.addEventListener('pagehide', prepareExit);
+    window.addEventListener('pageshow', () => { leaving = false; });
 
   }
 

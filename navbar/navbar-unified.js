@@ -118,7 +118,7 @@ window.AssemblyCurrentStudy = Object.freeze({
 
 (function initSharedAppIcons() {
     // Change this only when the artwork changes, independently of app releases.
-    const ICON_REVISION = 'ass26-2';
+    const ICON_REVISION = 'ass26-3';
     for (const [rel, file, sizes] of [
         ['icon', 'favicon-32.png', '32x32'],
         ['apple-touch-icon', 'apple-touch-icon.png', '180x180']
@@ -694,7 +694,7 @@ document.addEventListener('touchend', function (event) {
 // Reopening an installed iPhone app may resume the page without another load event.
 (function manageAppUpdates() {
     if (!('serviceWorker' in navigator)) return;
-    const release = 'ass26-2026.11.07.3';
+    const release = 'ass26-2026.11.07.4';
     const root = getProjectRootURL();
     let registration, checking, lastCheck = 0, refreshing = false, navigating = false;
     const pageRelease = document.querySelector('meta[name="app-version"]')?.content || (isIndexPageNavbar() ? 'legacy' : release);

@@ -1,6 +1,8 @@
 (function () {
   const editingEditors = new WeakSet();
   const composingEditors = new WeakSet();
+  const departingEditors = new WeakSet();
+  const editingSessions = new WeakMap();
 
   function slug(text) {
     return (text || '')
@@ -128,7 +130,7 @@
   }
 
   function isEditing(editor) {
-    return editor.getAttribute('contenteditable') === 'true' && (
+    return !departingEditors.has(editor) && editor.getAttribute('contenteditable') === 'true' && (
       editingEditors.has(editor) || composingEditors.has(editor) || editor.contains(document.activeElement)
     );
   }
@@ -472,6 +474,21 @@
     const trigger = note.__trigger || note.previousElementSibling || null;
     const editor = note.querySelector('.clickable-asmb[data-id]');
     const id = editor?.dataset.id || '';
+    if (editor) {
+      // iOS keeps an editable focused when the handle cancels touchstart. End
+      // that session before leaving, so a BFCache return accepts the new full
+      // note/resume and cannot flush the old inline DOM over it afterwards.
+      const wasEditing = isEditing(editor);
+      departingEditors.add(editor);
+      editingSessions.set(editor, (editingSessions.get(editor) || 0) + 1);
+      editingEditors.delete(editor);
+      blurEditor(editor);
+      composingEditors.delete(editor);
+      if (wasEditing && !saveEditorDraft(editor, id)) {
+        departingEditors.delete(editor);
+        return;
+      }
+    }
     const title = getTriggerLabel(trigger) || 'Anotação';
     const { isSymposium, symposiumTitle } = getSymposiumMeta(trigger);
     const from = location.pathname + location.search + location.hash;
@@ -647,6 +664,7 @@
     bindHandle(note);
 
     const persistEditor = () => {
+      if (departingEditors.has(editor)) return;
       if (editor.classList.contains('is-summary') || editor.classList.contains('is-pending')) return;
       if (composingEditors.has(editor)) return;
       const isEmpty = isEffectivelyEmpty(editor);
@@ -690,16 +708,19 @@
     });
 
     editor.addEventListener('focusout', () => {
+      const session = editingSessions.get(editor);
       // Focus can move between the root editor and a rich paragraph inside it.
       // Do not replace the DOM in either case, including keyboard dismissal.
       setTimeout(() => {
-        if (editor.contains(document.activeElement)) return;
+        if (departingEditors.has(editor) || editingSessions.get(editor) !== session || editor.contains(document.activeElement)) return;
         editingEditors.delete(editor);
         persistEditor();
       }, 0);
     });
 
     editor.addEventListener('focusin', () => {
+      departingEditors.delete(editor);
+      editingSessions.set(editor, (editingSessions.get(editor) || 0) + 1);
       editingEditors.add(editor);
       setEmptyState(editor);
     });
@@ -789,6 +810,37 @@
     triggerPendingSummaries();
   }
 
+  function restoreFullScreenReturn() {
+    let marker;
+    try { marker = JSON.parse(sessionStorage.getItem('assembleia-fullsc-return') || 'null'); }
+    catch (_) { return; }
+    if (!marker?.id) return;
+    const clearMarker = () => { try { sessionStorage.removeItem('assembleia-fullsc-return'); } catch (_) {} };
+    if (!Number.isFinite(marker.at) || Date.now() - marker.at > 30 * 60 * 1000) { clearMarker(); return; }
+    try {
+      const from = new URL(marker.from || './index.html', location.href);
+      const path = value => value.endsWith('/') ? value + 'index.html' : value;
+      if (from.origin !== location.origin || path(from.pathname) !== path(location.pathname)) return;
+    } catch (_) { clearMarker(); return; }
+    const editor = document.querySelector(`.clickable-asmb[data-id="${CSS.escape(marker.id)}"]`);
+    const note = editor?.closest('.anotacao-asmb');
+    const trigger = note?.__trigger;
+    const panel = note?.closest('[role="tabpanel"]');
+    if (!editor || !note || !trigger || !panel || isShortcutNoteEditor(editor)) { clearMarker(); return; }
+    if (window.AssemblyProgram?.selectTab(panel.id, { scroll: false }) === false) return;
+    clearMarker();
+    note.classList.add('ativa');
+    trigger.classList.add('ativo');
+    updateBodyOpenState();
+    requestAnimationFrame(() => {
+      if (!note.isConnected || panel.hidden) return;
+      const tabs = document.querySelector('.session-nav');
+      const inset = tabs ? Math.max(0, parseFloat(getComputedStyle(tabs).top) || 0) + tabs.offsetHeight : 0;
+      const target = Math.max(0, scrollY + trigger.getBoundingClientRect().top - inset - 16);
+      window.scrollTo({ top: target, behavior: 'instant' });
+    });
+  }
+
   function triggerPendingSummaries() {
     document.querySelectorAll('.clickable-asmb[data-id]').forEach((editor) => {
       if (isShortcutNoteEditor(editor)) return;
@@ -828,7 +880,10 @@
     init(document);
   }
 
-  window.addEventListener('pageshow', refreshAnnotationsFromStorage);
+  window.addEventListener('pageshow', () => {
+    refreshAnnotationsFromStorage();
+    restoreFullScreenReturn();
+  });
   window.addEventListener('focus', refreshAnnotationsFromStorage);
   window.addEventListener('assembleia:recordchange', syncRecordChange);
 })();

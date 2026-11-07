@@ -73,57 +73,15 @@
 
     const root = document.createElement('div');
     root.innerHTML = markup;
-    root.querySelectorAll('br').forEach((br) => br.replaceWith('\n'));
-
-    const blockSelector = [
-      '.node-paragraph',
-      '.node-text',
-      '.node-toggle',
-      '.toggle-title',
-      '.toggle-children',
-      '.toggle-child-slot',
-      '.paragraph-content',
-      '.text-content',
-      'p',
-      'li',
-      'ul',
-      'ol',
-      'div'
-    ].join(',');
-
-    const blocks = Array.from(root.children);
-    if (!blocks.length) return normalizeSpaces(root.textContent || '');
-
-    const lines = [];
-    const collectFromNode = (node) => {
-      if (!(node instanceof Element)) {
-        const raw = normalizeSpaces(node.textContent || '');
-        if (raw) lines.push(raw);
-        return;
-      }
-
-      if (node.matches('.node-toggle')) {
-        const title = normalizeSpaces(node.querySelector('.toggle-title, .toggle-label, .toggle-header')?.textContent || '');
-        const childTexts = Array.from(node.querySelectorAll('.toggle-children .node-paragraph, .toggle-children .node-text, .toggle-child-slot .node-paragraph, .toggle-child-slot .node-text'))
-          .map((el) => normalizeSpaces(el.textContent || ''))
-          .filter(Boolean);
-        if (title) lines.push(title);
-        childTexts.forEach((t) => lines.push(t));
-        return;
-      }
-
-      if (node.matches(blockSelector)) {
-        const raw = normalizeSpaces(node.textContent || '');
-        if (raw) lines.push(raw);
-        return;
-      }
-
-      const raw = normalizeSpaces(node.textContent || '');
-      if (raw) lines.push(raw);
-    };
-
-    blocks.forEach(collectFromNode);
-    return normalizeSpaces(lines.join('\n'));
+    // Collapsed branches remain part of the annotation. Strip only editor UI,
+    // then read every text node, including the current rich editor's .children.
+    root.querySelectorAll('script, style, .toggle-arrow, .text-plus, .expand-handle-asmb, .asmb-status-badge').forEach(node => node.remove());
+    root.querySelectorAll('br').forEach(br => br.replaceWith('\n'));
+    root.querySelectorAll('p, div, li, ul, ol, h1, h2, h3, h4, h5, h6, blockquote, .toggle-title, .paragraph-content, .text-content').forEach(block => {
+      block.prepend('\n');
+      block.append('\n');
+    });
+    return normalizeSpaces(root.textContent || '');
   }
 
   function clampSummary(text) {
@@ -421,7 +379,7 @@
     }
 
     const contexto = extractContext(id);
-    let systemInstruction = `Você é um assistente focado APENAS em resumir anotações de congresso de uma Testemunha de Jeová. Escreva de forma impessoal (sem usar primeira pessoa), vá direto ao ponto e não use aspas, prefixos ou saudações.
+    let systemInstruction = `Você é um assistente focado APENAS em resumir anotações da assembleia de circuito de uma Testemunha de Jeová. Escreva de forma impessoal (sem usar primeira pessoa), vá direto ao ponto e não use aspas, prefixos ou saudações.
 
 HIERARQUIA E LIMITES OBRIGATÓRIOS:
 1. VOCÊ É UM RESUMIDOR: Seu trabalho é destilar a essência do que o usuário anotou. O resumo DEVE ser obrigatoriamente e visivelmente mais curto que a anotação original.
@@ -670,6 +628,7 @@ Use exatamente este modelo: "A anotação menciona que [assunto aleatório], mas
 
   function saveFullDraft(id, fullHtml) {
     const record = readRecord(id);
+    const previousText = normalizeSpaces(record.fullText);
     record.fullHtml = String(fullHtml || '').trim();
     record.fullText = htmlToText(record.fullHtml);
     if (isRecordMeaningfullyEmpty(record)) {
@@ -678,6 +637,11 @@ Use exatamente este modelo: "A anotação menciona que [assunto aleatório], mas
       return written;
     }
     maybeMarkNotVirgin(record);
+    if (record.status === 'pending' && normalizeSpaces(record.fullText) !== previousText) {
+      record.status = 'idle';
+      record.pendingToken = '';
+      record.pendingStartedAt = 0;
+    }
     if (record.status !== 'pending') {
       record.errorMessage = '';
       if (!record.hasSummary) record.summaryModel = '';
@@ -713,6 +677,7 @@ Use exatamente este modelo: "A anotação menciona que [assunto aleatório], mas
 
   function queueSummaryFromFull(id, fullHtml) {
     const record = readRecord(id);
+    const previousText = normalizeSpaces(record.fullText);
     record.fullHtml = String(fullHtml || '').trim();
     record.fullText = htmlToText(record.fullHtml);
 
@@ -735,6 +700,12 @@ Use exatamente este modelo: "A anotação menciona que [assunto aleatório], mas
       return written;
     }
 
+    if (record.status === 'pending' && record.pendingToken && normalizeSpaces(record.fullText) === previousText) {
+      const written = writeRecord(id, record);
+      dispatchRecordChange(id, written);
+      return written;
+    }
+
     const comparison = compareAgainstLastAgent(record);
     dbg.log('ia:compareText', {
       id,
@@ -745,7 +716,7 @@ Use exatamente este modelo: "A anotação menciona que [assunto aleatório], mas
       threshold: comparison.threshold
     });
 
-    if (comparison.hasBaseline && comparison.smallChange) {
+    if (record.hasSummary && comparison.hasBaseline && comparison.smallChange) {
       record.status = record.hasSummary ? 'summarized' : 'idle';
       record.errorMessage = '';
       if (!record.hasSummary) record.summaryModel = '';
@@ -785,17 +756,17 @@ Use exatamente este modelo: "A anotação menciona que [assunto aleatório], mas
 
   async function processPendingSummary(id) {
     if (!id) return createRecord();
-    if (inflightPending.has(id)) return inflightPending.get(id);
-
     const record = readRecord(id);
     if (getRecordStatus(record) !== 'pending' || !normalizeSpaces(record.fullText || '')) return record;
     const token = record.pendingToken || '';
+    const inflight = inflightPending.get(id);
+    if (inflight?.token === token) return inflight.promise;
 
     const job = (async () => {
       try {
         const result = await callGemini(record.fullText, id);
         const latest = readRecord(id);
-        if (getRecordStatus(latest) !== 'pending' || latest.pendingToken !== token) return latest;
+        if (getRecordStatus(latest) !== 'pending' || latest.pendingToken !== token || normalizeSpaces(latest.fullText) !== normalizeSpaces(record.fullText)) return latest;
         latest.summaryText = clampSummary(result.summary);
         latest.hasSummary = !!latest.summaryText;
         latest.status = latest.hasSummary ? 'summarized' : 'idle';
@@ -807,22 +778,23 @@ Use exatamente este modelo: "A anotação menciona que [assunto aleatório], mas
         return written;
       } catch (error) {
         const latest = readRecord(id);
-        if (getRecordStatus(latest) !== 'pending' || latest.pendingToken !== token) return latest;
+        if (getRecordStatus(latest) !== 'pending' || latest.pendingToken !== token || normalizeSpaces(latest.fullText) !== normalizeSpaces(record.fullText)) return latest;
         latest.summaryText = '';
         latest.hasSummary = false;
         latest.status = classifySummaryError(error);
         latest.errorMessage = String(error?.message || '').trim();
         latest.summaryModel = '';
-        latest.lastAgentText = normalizeSpaces(latest.fullText || '');
+        // A failed request is not a completed summary. Keep the last successful
+        // baseline so reopening the same note can actually retry.
         const written = writeRecord(id, latest);
         dispatchRecordChange(id, written);
         return written;
       } finally {
-        inflightPending.delete(id);
+        if (inflightPending.get(id)?.token === token) inflightPending.delete(id);
       }
     })();
 
-    inflightPending.set(id, job);
+    inflightPending.set(id, { token, promise: job });
     return job;
   }
 
