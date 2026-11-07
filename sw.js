@@ -1,9 +1,9 @@
 /* Assembleia has its own release and offline stores on the shared Pages origin. */
 const PREFIX = 'ass26-';
-const APP_VERSION = 'ass26-2026.11.07.4';
+const APP_VERSION = 'ass26-2026.11.07.5';
 importScripts('./sentinela/artigos/article-runtime.js?appVersion=' + APP_VERSION);
 // Bump the shell version when application code changes. The large Bible cache is independent.
-const SHELL_CACHE = PREFIX + 'shell-v4';
+const SHELL_CACHE = PREFIX + 'shell-v5';
 const BIBLE_CACHE = PREFIX + 'bible-v1';
 const RUNTIME_CACHE = PREFIX + 'runtime-v1';
 const ARTICLE_CACHE = self.SentinelaArticleRuntime.CACHE_NAME;

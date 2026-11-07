@@ -1,4 +1,4 @@
-"""Inline-editor DOM/selection and visual-viewport regression checks.
+"""Native inline-editor focus, selection and visual-viewport regression checks.
 
 Run: python tests/test_program_caret.py
 Set WEBKIT_EXECUTABLE to also run WebKit. Viewport changes are simulated;
@@ -46,9 +46,11 @@ VIEWPORT = """(() => {
         Object.assign(viewport, {height, offsetTop:top});
         viewport.dispatchEvent(new Event(event));
     };
-    const scroll = window.scrollBy.bind(window);
+    const scrollBy = window.scrollBy.bind(window), scrollTo = window.scrollTo.bind(window);
     window.caretScrolls = [];
-    window.scrollBy = options => { caretScrolls.push(options.top); scroll(options); };
+    window.positionTestScroll = scrollTo;
+    window.scrollBy = (...args) => { caretScrolls.push({method:'by', args}); scrollBy(...args); };
+    window.scrollTo = (...args) => { caretScrolls.push({method:'to', args}); scrollTo(...args); };
     const focus = HTMLElement.prototype.focus;
     window.scriptFocusCalls = 0;
     HTMLElement.prototype.focus = function(...args) { scriptFocusCalls++; return focus.apply(this, args); };
@@ -67,7 +69,7 @@ SETUP = """() => {
     };
     window.positionCaret = top => {
         const rect = getSelection().getRangeAt(0).getBoundingClientRect();
-        scrollTo({top:scrollY + rect.top - top, behavior:'instant'});
+        positionTestScroll({top:scrollY + rect.top - top, behavior:'instant'});
         caretScrolls.length = 0;
     };
     window.caretState = () => {
@@ -160,60 +162,52 @@ def check(engine, executable, origin):
     }""")
     assert 'Guardar este texto recolhido' in page.evaluate('AssembleiaIA.readRecord(editor.dataset.id).fullHtml')
 
-    # Long notes: reveal the selected middle line after keyboard settling, not
-    # the bottom of the editor. Preserve the range and avoid repeated scrolls.
+    # The native browser handles the tapped line and keyboard. The application
+    # must not add delayed corrective scrolls on top of its own scroll/pan.
     page.evaluate("""() => {
         editor.innerHTML=Array.from({length:40},(_,i)=>'<div>Linha '+i+' de uma anotação longa</div>').join('');
         editor.classList.remove('is-empty'); editor.focus({preventScroll:true});
         selectIn(editor.children[18].firstChild, 8); positionCaret(520);
         testViewport(500); testViewport(450); testViewport(400);
     }""")
-    page.wait_for_timeout(80)
-    assert page.evaluate('caretScrolls.length') == 0, 'Do not race a moving keyboard.'
+    before = page.evaluate('caretState()')
+    page.wait_for_timeout(400)
+    state = page.evaluate('caretState()')
+    assert state['sameNode'] and state['sameOffset'] and state['y'] == before['y'], state
+    assert not state['scrolls'], 'The app must not add a second scroll after keyboard resize.'
+
+    # Simulate a stream of native viewport pans and repeated caret movement.
+    # This used to schedule another instant scroll after each quiet interval.
+    for top in (20, 70, 45, 90, 0):
+        page.evaluate('(top) => { testViewport(400,top,"scroll"); document.dispatchEvent(new Event("selectionchange")); }', top)
+        page.wait_for_timeout(220)
+    state = page.evaluate('caretState()')
+    assert state['sameNode'] and state['sameOffset'] and state['y'] == before['y'] and not state['scrolls'], state
+    page.evaluate('testViewport(873)')
     page.wait_for_timeout(250)
-    state = page.evaluate('caretState()')
-    assert state['sameNode'] and state['sameOffset'] and state['bottom'] <= 389, state
-    assert len(state['scrolls']) == 1 and 100 < state['scrolls'][0] < 200, state
-    page.evaluate('caretScrolls.length=0; testViewport(400,0,"scroll")')
-    page.wait_for_timeout(300)
-    assert page.evaluate('caretScrolls.length') == 0, 'Visible caret must not scroll again.'
+    assert not page.evaluate('caretScrolls'), 'Keyboard close must not restore an earlier scroll position.'
 
-    # WebKit can pan the visual viewport as well as shrink it.
-    page.evaluate('positionCaret(500); testViewport(400,70)')
-    page.wait_for_timeout(300)
-    state = page.evaluate('caretState()')
-    assert state['sameNode'] and state['sameOffset'] and 445 < state['bottom'] <= 459, state
-    page.evaluate('caretScrolls.length=0; testViewport(873)')
-    page.wait_for_timeout(300)
-    assert page.evaluate('caretScrolls.length') == 0, 'Closing the keyboard must not restore old scroll positions.'
-
-    # Safe-area padding moves pinned tabs below y=0 without making their
-    # overlapping text visible. Test both an unpanned and a panned viewport.
+    # Neither safe-area tabs nor a large font can start an upper-edge correction.
     page.evaluate("document.querySelector('.session-nav').style.top='59px'")
     for visual_top in (0, 70):
         page.evaluate('(top) => { positionCaret(80); testViewport(400,top); }', visual_top)
-        before = page.evaluate('({caret:caretState(), tabs:document.querySelector(".session-nav").getBoundingClientRect().toJSON()})')
-        assert abs(before['tabs']['top'] - 59) < 1, before
-        assert before['tabs']['top'] < before['caret']['top'] < before['tabs']['bottom'], before
-        page.wait_for_timeout(300)
+        before = page.evaluate('caretState()')
+        page.wait_for_timeout(250)
         state = page.evaluate('caretState()')
-        tabs_bottom = page.evaluate('document.querySelector(".session-nav").getBoundingClientRect().bottom')
-        assert state['sameNode'] and state['sameOffset'] and state['top'] >= tabs_bottom + 11, state
-        assert len(state['scrolls']) == 1 and state['scrolls'][0] < 0, state
+        assert state['sameNode'] and state['sameOffset'] and state['y'] == before['y'] and not state['scrolls'], state
     page.evaluate("document.querySelector('.session-nav').style.removeProperty('top'); testViewport(873)")
-
-    # Expanded font uses the same caret-line bounds.
     page.evaluate("document.documentElement.style.setProperty('--read-size','30px'); positionCaret(580); testViewport(450)")
-    page.wait_for_timeout(300)
+    before = page.evaluate('caretState()')
+    page.wait_for_timeout(250)
     state = page.evaluate('caretState()')
-    assert state['sameNode'] and state['sameOffset'] and state['bottom'] <= 439, state
+    assert state['sameNode'] and state['sameOffset'] and state['y'] == before['y'] and not state['scrolls'], state
 
-    # Long selections/native handles and momentum scrolling are user-controlled.
+    # Range selection, inertia, typing and a collapsed caret tap are also native.
     page.evaluate("""() => {
         selectIn(editor.children[18].firstChild, 2, editor.children[24].firstChild, 8);
         caretScrolls.length=0; testViewport(150);
     }""")
-    page.wait_for_timeout(300)
+    page.wait_for_timeout(250)
     state = page.evaluate('caretState()')
     assert not state['collapsed'] and not state['scrolls'], state
     page.evaluate("""() => {
@@ -224,20 +218,26 @@ def check(engine, executable, origin):
     }""")
     for _ in range(5):
         page.evaluate('testViewport(400,0,"scroll")')
-        page.wait_for_timeout(200)
-    page.wait_for_timeout(250)
+        page.wait_for_timeout(220)
     state = page.evaluate('caretState()')
     assert not state['scrolls'] and state['top'] > 500, state
-    page.evaluate("editor.dispatchEvent(new InputEvent('input',{bubbles:true}))")
-    page.wait_for_timeout(300)
+    page.evaluate("""() => {
+        editor.dispatchEvent(new InputEvent('input',{bubbles:true}));
+        editor.dispatchEvent(new PointerEvent('pointerdown',{bubbles:true,clientX:90,clientY:580}));
+        editor.dispatchEvent(new PointerEvent('pointerup',{bubbles:true,clientX:90,clientY:580}));
+        document.dispatchEvent(new Event('selectionchange'));
+    }""")
+    before = page.evaluate('caretState()')
+    page.wait_for_timeout(350)
     state = page.evaluate('caretState()')
-    assert len(state['scrolls']) == 1 and state['bottom'] <= 389, state
+    assert state['sameNode'] and state['sameOffset'] and state['y'] == before['y'] and not state['scrolls'], state
+    assert 'Linha 18' in page.evaluate('AssembleiaIA.readRecord(editor.dataset.id).fullText')
 
     assert not errors, errors
     browser.close()
     return {'engine': engine.name, 'nativeTapNoRefocus': True, 'blankLinePreserved': True,
             'compositionPreserved': True, 'nestedFocusPreserved': True, 'collapsedTextSaved': True,
-            'keyboardSettling': True, 'pannedViewport': True, 'safeAreaStickyTabs': True, 'largeFont': True,
+            'keyboardUsesNativeScroll': True, 'viewportPanNoCorrection': True, 'safeAreaNoCorrection': True, 'largeFont': True,
             'longSelectionPreserved': True, 'momentumScrollPreserved': True, 'errors': errors}
 
 

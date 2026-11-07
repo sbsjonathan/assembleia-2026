@@ -230,6 +230,7 @@
   background: transparent;
   border: none;
   font-size: 1.35rem;
+  padding: 0;
   cursor: pointer;
   color: var(--cor-global);
   border-radius: 50%;
@@ -246,10 +247,35 @@
 }
 
 .pontos-altos-wrapper.ia-loading .btn-gerar-pontos-altos {
-  animation: spin 1s linear infinite;
   pointer-events: none;
-  transform-origin: center center;
-  will-change: transform;
+}
+
+.btn-gerar-pontos-altos:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.btn-gerar-pontos-altos .ia-sparkle {
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex: none;
+  pointer-events: none;
+  transform-box: view-box;
+  transform-origin: 50% 50%;
+}
+
+.pontos-altos-wrapper.ia-loading .ia-sparkle {
+  animation: assembly-sparkle-spin 1.6s linear infinite;
+}
+
+@keyframes assembly-sparkle-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pontos-altos-wrapper.ia-loading .ia-sparkle { animation: none; }
 }
 
 .ref-head,

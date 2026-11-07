@@ -21,7 +21,7 @@
     const modal = document.createElement('div');
     modal.id = 'modal-biblia'; modal.hidden = true;
     modal.innerHTML = `<section class="modal-biblia-content" role="dialog" aria-modal="true" aria-labelledby="modal-biblia-heading" tabindex="-1">
-      <header class="modal-biblia-toolbar"><span id="modal-biblia-heading">Texto bíblico</span><div>
+      <header class="modal-biblia-toolbar"><h2 id="modal-biblia-heading">Referência</h2><div>
         <button id="modal-biblia-expandir" type="button" aria-label="Ajustar versículos" aria-controls="modal-biblia-ajustes" aria-expanded="false">+</button>
         <button id="modal-biblia-transcrever" type="button" title="Transcrever a prévia" aria-label="Transcrever a prévia">T</button>
         <button id="modal-biblia-fechar" type="button" aria-label="Fechar prévia">×</button>
@@ -84,6 +84,12 @@
     const error = byId('modal-biblia-erro'); error.textContent = message; error.hidden = !message;
     updateControls();
   }
+  function setHeading(reference) {
+    const heading = byId('modal-biblia-heading');
+    const title = String(reference || '').replace(/\s+/g, ' ').trim() || 'Referência';
+    heading.textContent = title;
+    heading.title = title;
+  }
   function updateControls() {
     const model = current?.model;
     const writable = !!current?.trigger?.isConnected && !!editableOf(current.trigger);
@@ -116,9 +122,9 @@
   function renderPreview() {
     if (!current?.model) return;
     const model = current.model, version = ++previewVersion, openSession = session;
-    const body = byId('modal-biblia-corpo'), heading = document.createElement('h3');
-    heading.textContent = model.title;
-    body.replaceChildren(heading, verseContent(model)); body.scrollTop = 0;
+    const body = byId('modal-biblia-corpo');
+    setHeading(model.title);
+    body.replaceChildren(verseContent(model)); body.scrollTop = 0;
     body.dataset.reference = model.title; setError('');
     readerRoutes.then(routes => {
       if (routes && current && session === openSession && previewVersion === version)
@@ -137,6 +143,7 @@
     const modal = byId('modal-biblia'); modal.hidden = false; modal.classList.remove('is-closing');
     byId('modal-biblia-ajustes').hidden = true; byId('modal-biblia-expandir').setAttribute('aria-expanded', 'false');
     byId('modal-biblia-campo').value = ''; byId('modal-biblia-erro').hidden = true;
+    setHeading(reference); delete byId('modal-biblia-corpo').dataset.reference;
     byId('modal-biblia-corpo').textContent = 'Carregando o texto…'; updateControls(); syncViewport();
     requestAnimationFrame(() => { if (current && session === openSession) modal.classList.add('is-open'); });
     modal.querySelector('.modal-biblia-content').focus({ preventScroll: true });

@@ -59,7 +59,19 @@
   border-bottom: 1px solid var(--notes-bible-line);
   flex: 0 0 auto;
 }
-#modal-biblia-heading { font-weight: 600; font-size: .875em; }
+#modal-biblia-heading {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
 #modal-biblia .modal-biblia-toolbar > div { display: flex; gap: 2px; flex-shrink: 0; }
 #modal-biblia button {
   appearance: none;
@@ -118,7 +130,6 @@
   -webkit-user-select: text;
   user-select: text;
 }
-#modal-biblia-corpo h3 { margin: 0 0 10px; font: inherit; font-weight: 700; }
 #modal-biblia-corpo p { margin: 0 0 .8em; font-family: 'WTClearText', Georgia, serif; font-size: var(--font-base-global, 19.36px); line-height: 1.7; color: inherit; }
 #modal-biblia-corpo p strong { font-family: 'Noto Sans', sans-serif; font-weight: 700; color: #4a6da7; }
 #modal-biblia-corpo .bible-reader-link { min-height: 36px !important; margin-top: 6px !important; padding-inline: 10px !important; font-size: .875em !important; color: var(--notes-bible-accent) !important; }

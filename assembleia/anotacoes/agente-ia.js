@@ -9,7 +9,8 @@
       'gemini-2.5-flash-lite'
     ],
     timeoutMs: 18000,
-    thresholdChars: 10,
+    thresholdChars: 50,
+    changeThresholdChars: 10,
     maxSummaryChars: 700,
     maxInputChars: 5000,
     maxOutputTokens: 256,
@@ -148,7 +149,7 @@
   function compareAgainstLastAgent(record) {
     const current = normalizeSpaces(record?.fullText || '');
     const baseline = normalizeSpaces(record?.lastAgentText || '');
-    const threshold = Math.max(0, Number(CONFIG.thresholdChars || 10));
+    const threshold = Math.max(0, Number(CONFIG.changeThresholdChars ?? 10));
     if (!baseline) {
       return { hasBaseline: false, same: false, smallChange: false, distance: null, threshold };
     }
@@ -200,8 +201,9 @@
 
   function shouldSummarize(text) {
     const clean = normalizeSpaces(text);
-    const result = clean.length > Number(CONFIG.thresholdChars || 10);
-    dbg.log('ia:shouldSummarize', { length: clean.length, threshold: Number(CONFIG.thresholdChars || 10), result, preview: clean.slice(0, 160) });
+    const threshold = Math.max(0, Number(CONFIG.thresholdChars ?? 50));
+    const result = clean.length > threshold;
+    dbg.log('ia:shouldSummarize', { length: clean.length, threshold, result, preview: clean.slice(0, 160) });
     return result;
   }
 
@@ -854,7 +856,7 @@ Use exatamente este modelo: "A anotação menciona que [assunto aleatório], mas
       }
 
       wrapperElement.classList.add('ia-loading');
-      respostaDiv.innerHTML = '<span style="color: var(--text-muted, #6b7280);">✨ Analisando suas anotações da assembleia...</span>';
+      respostaDiv.innerHTML = '<span style="color: var(--text-muted, #6b7280);">Analisando suas anotações da assembleia...</span>';
 
       try {
           let nomeIrmao = '';
@@ -941,6 +943,7 @@ Use exatamente este modelo: "A anotação menciona que [assunto aleatório], mas
     model: CONFIG.model,
     modelFallbacks: getModelQueue(),
     thresholdChars: CONFIG.thresholdChars,
+    changeThresholdChars: CONFIG.changeThresholdChars,
     configured: isConfigured(),
     workerUrl: CONFIG.workerUrl,
     maxInputChars: CONFIG.maxInputChars,

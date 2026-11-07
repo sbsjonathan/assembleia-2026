@@ -135,108 +135,9 @@
     );
   }
 
-  function setupInlineCaretVisibility() {
-    const viewport = window.visualViewport;
-    if (!viewport) return;
-    let timer = 0;
-    let pointer = null;
-    let suspendRevealForGesture = false;
-    let lastNode = null;
-    let lastOffset = -1;
-
-    const activeEditor = () => document.activeElement?.closest?.('.clickable-asmb[contenteditable="true"]');
-    const schedule = () => {
-      clearTimeout(timer);
-      if (!activeEditor()) return;
-      // Let the native focus scroll, keyboard animation and viewport pan finish.
-      // No focus(), scrollIntoView() or selection replacement is needed here.
-      timer = setTimeout(() => requestAnimationFrame(revealCaret), 180);
-    };
-    const caretRect = (editor, selection) => {
-      const range = selection.getRangeAt(0).cloneRange();
-      const rect = range.getBoundingClientRect();
-      if (rect.height > 0) return rect;
-      const node = selection.focusNode;
-      const element = node?.nodeType === Node.ELEMENT_NODE ? node : node?.parentElement;
-      if (!element || element.closest('[hidden], [contenteditable="false"]')) return null;
-      // Empty lines sometimes have no Range rectangle in WebKit. Measure the
-      // existing line box instead of inserting a marker into the editable DOM.
-      const line = element.closest('.paragraph-content, .text-content, .toggle-title, p, div');
-      if (!line || !editor.contains(line)) return null;
-      const box = line.getBoundingClientRect();
-      if (!box.height) return null;
-      const style = getComputedStyle(line);
-      const top = box.top + parseFloat(style.paddingTop || 0) + parseFloat(style.borderTopWidth || 0);
-      const height = parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 1.45;
-      return { top, bottom: top + height, height };
-    };
-    const revealCaret = () => {
-      const editor = activeEditor();
-      if (!editor || pointer || composingEditors.has(editor) || suspendRevealForGesture) return;
-      if (Math.abs(viewport.scale - 1) > 0.02 || !editor.closest('.anotacao-asmb.ativa')) return;
-      const selection = window.getSelection();
-      // Keep native range selection and its drag handles entirely native.
-      if (!selection?.rangeCount || !selection.isCollapsed || !editor.contains(selection.focusNode)) return;
-      const caret = caretRect(editor, selection);
-      if (!caret) return;
-      const visualTop = viewport.offsetTop;
-      const bottom = visualTop + viewport.height - 12;
-      let top = visualTop + 12;
-      const tabs = document.querySelector('.session-nav');
-      if (tabs) {
-        const bounds = tabs.getBoundingClientRect();
-        const style = getComputedStyle(tabs);
-        const stickyInset = /^(sticky|fixed)$/.test(style.position) ? Math.max(0, parseFloat(style.top) || 0) : 0;
-        // A pinned tab bar can start below the safe area (e.g. top: 59px),
-        // while still covering the caret. Include that inset in its top limit.
-        const pinnedTop = Math.max(top, visualTop + stickyInset + 1);
-        if (bounds.height && bounds.top <= pinnedTop && bounds.bottom > visualTop) top = bounds.bottom + 12;
-      }
-      if (bottom <= top || caret.height > bottom - top) return;
-      const delta = caret.bottom > bottom ? caret.bottom - bottom : (caret.top < top ? caret.top - top : 0);
-      // Move only the obscured line, never the entire (possibly long) note.
-      if (Math.abs(delta) > 1) window.scrollBy({ top: delta, left: 0, behavior: 'instant' });
-    };
-
-    viewport.addEventListener('resize', schedule, { passive: true });
-    viewport.addEventListener('scroll', schedule, { passive: true });
-    document.addEventListener('focusin', () => { suspendRevealForGesture = false; schedule(); });
-    document.addEventListener('focusout', () => clearTimeout(timer));
-    document.addEventListener('input', () => { suspendRevealForGesture = false; schedule(); });
-    document.addEventListener('compositionend', schedule);
-    document.addEventListener('selectionchange', () => {
-      const selection = window.getSelection();
-      if (selection?.focusNode === lastNode && selection?.focusOffset === lastOffset) return;
-      lastNode = selection?.focusNode;
-      lastOffset = selection?.focusOffset;
-      schedule();
-    });
-    document.addEventListener('pointerdown', event => {
-      clearTimeout(timer);
-      pointer = { x: event.clientX, y: event.clientY, at: Date.now(), moved: false };
-    }, { passive: true });
-    document.addEventListener('pointermove', event => {
-      if (pointer && (Math.abs(event.clientX - pointer.x) > 6 || Math.abs(event.clientY - pointer.y) > 6)) pointer.moved = true;
-    }, { passive: true });
-    document.addEventListener('pointerup', event => {
-      const selecting = pointer && (pointer.moved || Date.now() - pointer.at > 450);
-      pointer = null;
-      if (selecting) { suspendRevealForGesture = true; return; }
-      if (!activeEditor()?.contains(event.target) || event.target.closest?.('button, a, [contenteditable="false"]')) return;
-      suspendRevealForGesture = false;
-      schedule();
-    }, { passive: true });
-    document.addEventListener('pointercancel', () => {
-      pointer = null;
-      // A manual scroll can keep panning after pointercancel. Leave it alone
-      // until another deliberate caret tap, edit or focus, not just a timeout.
-      suspendRevealForGesture = true;
-      clearTimeout(timer);
-    }, { passive: true });
-    document.addEventListener('transitionend', event => {
-      if (event.propertyName === 'grid-template-rows' && event.target.contains(activeEditor())) schedule();
-    });
-  }
+  // Let the browser own caret reveal and keyboard panning. Reacting to focus,
+  // selection or visualViewport changes with another scroll causes a second
+  // jump after iOS has already positioned the tapped line.
 
   function readRecord(id) {
     if (window.AssembleiaIA?.readRecord) return window.AssembleiaIA.readRecord(id);
@@ -872,7 +773,6 @@
   }
 
   window.AssembleiaClickables = { init, refresh: refreshAnnotationsFromStorage };
-  setupInlineCaretVisibility();
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => init(document), { once: true });

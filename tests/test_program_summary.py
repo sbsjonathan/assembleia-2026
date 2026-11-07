@@ -79,6 +79,9 @@ def check(engine, executable, origin):
         if not inline.is_visible():
             trigger.click(position={'x': 4, 'y': 4})
         page.wait_for_timeout(300)
+        # Plain notes reveal their handle on focus; summaries keep it visible.
+        if note.locator('.expand-handle-asmb').evaluate('(el)=>getComputedStyle(el).pointerEvents==="none"'):
+            inline.tap()
         note.locator('.expand-handle-asmb').tap()
         page.wait_for_url('**/fullsc.html?*')
         page.wait_for_selector('#editor .editable')
@@ -165,6 +168,21 @@ def check(engine, executable, origin):
     page.locator('#fullscBack').click()
     assert wait_inline('idle')['fullText'] == 'Fé.'
     assert inline.inner_text() == 'Fé.' and len(service['requests']) == 5
+
+    # The full-screen return must not call the service at/below 50 characters,
+    # including when a previously summarized note is shortened again.
+    expected_requests = len(service['requests'])
+    for length, summarize in [(49, False), (50, False), (51, True), (50, False)]:
+        text = 'Anotação de teste: ' + 'a' * (length - len('Anotação de teste: '))
+        open_full()
+        page.locator('#editor .editable').first.fill(text)
+        page.locator('#fullscBack').click()
+        saved = wait_inline('summarized' if summarize else 'idle')
+        assert saved['fullText'] == text and len(saved['fullText']) == length
+        expected_requests += int(summarize)
+        assert len(service['requests']) == expected_requests, (length, service['requests'])
+        if not summarize:
+            assert not saved['hasSummary'] and inline.inner_text() == text
     extracted = page.evaluate('''()=>{
         const html='Antes <b>negrito</b> e depois<div class="node-toggle"><button class="toggle-arrow">▶</button><span class="toggle-title">Fé</span><div class="children" hidden><div class="node-paragraph"><span class="paragraph-content">Conteúdo recolhido completo.</span></div><div class="node-toggle"><span class="toggle-title">Filho</span><div class="children" hidden>Outra lição.</div></div></div></div><button class="text-plus">+</button>';
         return AssembleiaIA.htmlToText(html);
@@ -177,7 +195,7 @@ def check(engine, executable, origin):
     service['mode'] = 'held'
     page.evaluate('''()=>{
         const id='ca-copgm27:qa:summary-race';
-        window.qaFirstText='Primeira versão de uma anotação longa para resumo.';
+        window.qaFirstText='Primeira versão de uma anotação longa para resumo, com detalhes suficientes.';
         window.qaSecondText='Segunda versão completamente diferente, com novos detalhes importantes.';
         AssembleiaIA.queueSummaryFromFull(id,qaFirstText);
         window.qaFirstJob=AssembleiaIA.processPendingSummary(id);
@@ -229,7 +247,7 @@ def check(engine, executable, origin):
     browser.close()
     return {'engine': engine.name, 'touchHandoff': True, 'fullTextPreserved': True,
             'summaryDisplayed': True, 'unchangedSuccessReused': True, 'failedRequestRetried': True,
-            'nativeHistoryExit': True, 'forwardRestore': True, 'shortTranscription': True,
+            'nativeHistoryExit': True, 'forwardRestore': True, 'shortTranscription': True, 'summaryThreshold50': True,
             'collapsedAndMixedText': True, 'staleResponseIgnored': True, 'oneShotTabReturn': True, 'errors': errors}
 
 
