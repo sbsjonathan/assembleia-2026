@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-font-scope="interface">
+<head>
+<script id="assembleia-app-scope" src="shared/app-scope.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link id="sentinela-statusbar-style" rel="stylesheet" href="shared/statusbar.css">
+    <script id="sentinela-statusbar-script" src="shared/statusbar.js"></script>
+    <meta name="app-version" content="2026.11.07.1">
+    <title>A Sentinela · Assembleia 2026</title>
+    <meta name="apple-mobile-web-app-title" content="Assembleia">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png?v=2026.11.07.1">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png?v=2026.11.07.1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar/navbar-unified.css">
+<script id="sentinela-typography-script" src="shared/typography.js"></script>
+<link id="sentinela-typography-style" rel="stylesheet" href="shared/typography.css">
+</head>
+<body class="home-screen">
+    <div class="home-statusbar" aria-hidden="true"></div>
+    <main class="deck" id="deck"></main>
+
+    <div class="dock">
+        <div class="head recolhido" id="head">
+            <div class="meta-l">
+                <div class="m-date" id="semana-display">Carregando…</div>
+                <div class="m-sub">A Sentinela · Estudos semanais</div>
+            </div>
+            <div class="head-chev" aria-label="Calendário">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
+        </div>
+        <nav class="rail colapsada" id="rail" aria-label="Semanas"></nav>
+        <div class="actions">
+            <button class="act act-primary" data-act="estudo" data-estado="baixar">
+                <span class="act-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-.5-7.97 5.5 5.5 0 0 1 10.65-1.32A3.5 3.5 0 0 1 17.5 18"/><path d="M12 11.5v6"/><path d="M9.5 15l2.5 2.5 2.5-2.5"/></svg></span>
+                <span class="act-label">Baixar</span>
+            </button>
+            <button class="act act-secondary" data-act="notas">
+                <span class="act-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 4.5l3 3L8 19l-4 1 1-4Z"/><path d="M14.5 6.5l3 3"/></svg></span>
+                <span>Anotações</span>
+            </button>
+        </div>
+        <div class="dots" id="dots"></div>
+    </div>
+
+    <script src="navbar/navbar-unified.js"></script>
+    <script src="sentinela/artigos/article-runtime.js"></script>
+    <script src="main.js"></script>
+    <script src="home-layout.js"></script>
+</body>
+</html>

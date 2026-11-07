@@ -1,0 +1,255 @@
+{
+  "nome_do_livro": "Naum",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Proclamação contra Nínive. Livro da visão de Naum, o elcosita:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Jeová é um Deus que exige devoção exclusiva e que se vinga; Jeová se vinga e está pronto para demonstrar o seu furor. Jeová se vinga dos seus adversários E reserva o furor para os seus inimigos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Jeová é paciente e grande em poder, Mas de modo algum Jeová deixará de dar a devida punição. Seu caminho está no vendaval e na tempestade, E as nuvens são o pó dos seus pés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Ele censura o mar e o seca; E faz todos os rios secar. Basã e o Carmelo murcham, E as flores do Líbano murcham.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Os montes tremem por causa dele, E as colinas derretem. A terra estremecerá diante da sua face, A terra e todos os que moram nela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Quem pode ficar de pé diante da sua indignação? E quem pode resistir à sua ira ardente? Seu furor será derramado como fogo, E as rochas serão despedaçadas por causa dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Jeová é bom, uma fortaleza no dia da aflição. Ele se lembra dos que procuram se refugiar nele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Com uma inundação devastadora, ele exterminará completamente o lugar onde ela está, E a escuridão perseguirá os inimigos dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "O que vocês tramarão contra Jeová? Ele causará uma completa exterminação. A aflição não virá pela segunda vez.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Eles são como espinhos entrelaçados E como os que se embriagam com cerveja, Mas serão consumidos como palha seca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "De você sairá alguém que trama o mal contra Jeová, Alguém que dá conselhos que não têm valor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Assim diz Jeová: “Embora as fileiras deles estejam completas e eles sejam numerosos, Mesmo assim serão eliminados; deixarão de existir. Eu afligi você, mas não a afligirei mais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "E agora quebrarei o jugo dele e o tirarei de você, E romperei as suas correntes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Jeová ordenou a respeito de você: ‘Não haverá mais descendentes que levem o seu nome. Eliminarei as imagens esculpidas e as estátuas de metal da casa dos seus deuses. Prepararei uma sepultura para você, porque você é desprezível.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Vejam sobre os montes os pés daquele que traz boas novas, Do proclamador de paz. Celebre as suas festividades, ó Judá, cumpra os seus votos, Pois nunca mais passará por você alguém imprestável. Ele será completamente destruído.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Subiu contra você alguém que a espalhará. Defenda as fortificações. Vigie as estradas. Preparem-se e reúnam todas as suas forças.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois Jeová restaurará a glória de Jacó, Assim como a glória de Israel, Pois os devastadores os devastaram E arruinaram seus ramos novos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Os escudos dos homens valentes dele estão tingidos de vermelho, Seus guerreiros estão vestidos de escarlate. As partes de ferro do seu carro de guerra brilham como fogo No dia em que ele se prepara para a batalha, E as lanças de junípero são agitadas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Os carros de guerra correm loucamente pelas ruas. Correm para cima e para baixo nas praças. Brilham como tochas acesas e reluzem como relâmpagos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Ele convocará seus oficiais. Eles avançarão tropeçando. Correrão até a muralha dela; Eles erguerão uma barricada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "As portas dos rios serão abertas, E o palácio será destruído.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Foi decretado: Ela está exposta, Será levada embora, e suas escravas lamentarão; Elas gemerão como pombas e baterão no peito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Nínive sempre foi como um reservatório de águas, Mas agora elas estão escapando. “Parem! Parem!” Mas ninguém volta atrás.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Saqueiem a prata, saqueiem o ouro! Não há fim dos tesouros. Ela está repleta de todo tipo de coisas preciosas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "A cidade está vazia, desolada, devastada! Os corações derretem de medo, os joelhos vacilam, e os quadris tremem; Todos os rostos expressam angústia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Onde está o esconderijo dos leões, o lugar onde os leões novos se alimentam, De onde o leão sai com o seu filhote, Sem que ninguém os faça ter medo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "O leão dilacerava presas suficientes para os seus filhotes E estrangulava animais para as suas leoas. Ele mantinha os seus covis cheios de presas, Seus esconderijos cheios de animais dilacerados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "“Veja! Eu estou contra você”, diz Jeová dos exércitos. “Reduzirei os seus carros de guerra a fumaça, E a espada devorará os seus leões novos. Eu acabarei com as suas caçadas na terra, E não se ouvirão mais os seus mensageiros.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Ai da cidade de derramamento de sangue! Ela está repleta de falsidade e de roubo. Ela nunca fica sem presa.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O estalo dos chicotes, o barulho das rodas, Cavalos galopando, carros de guerra sacudindo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Cavaleiros montados, espadas brilhantes, lanças reluzentes, Inúmeros mortos, pilhas de cadáveres — Não há fim dos corpos. Tropeça-se nos mortos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Isso se deve aos muitos atos de prostituição da prostituta; Ela é atraente e sedutora, senhora de feitiçarias, Ela enlaça nações com a sua prostituição e famílias com as suas feitiçarias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "“Veja! Eu estou contra você”, diz Jeová dos exércitos. “Levantarei a sua saia até cobrir o seu rosto. Farei as nações ver a sua nudez; E os reinos, a sua desonra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E jogarei imundície sobre você, E a tornarei desprezível; Farei de você um espetáculo público.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Todos que virem você fugirão e dirão: ‘Nínive foi devastada! Quem terá compaixão dela?’ Onde encontrarei consoladores para você?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Será que você é melhor do que Nô-Amom, que ficava junto aos canais do Nilo? Havia águas ao redor dela; Sua riqueza era o mar, e sua muralha era o mar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "A Etiópia era a sua fonte de força ilimitada, também o Egito. Pute e os líbios eram os seus ajudadores.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Mas até ela foi exilada; Ela foi para o cativeiro. Suas crianças também foram despedaçadas em todas as esquinas. Lançaram sortes sobre os seus homens de destaque, E todos os seus homens importantes foram presos com correntes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Você também ficará bêbada; Você terá de se esconder. Você procurará refúgio contra o inimigo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Todas as suas fortificações são como figueiras com os primeiros frutos maduros; Basta sacudi-las, e os frutos caem na boca dos devoradores.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Veja! Suas tropas são como mulheres no seu meio. Os portões da sua terra ficarão totalmente abertos para os seus inimigos. O fogo consumirá as trancas dos seus portões.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Tire água para quando for sitiada. Reforce as suas fortificações. Entre na lama e pise a argila; Segure a fôrma para fazer tijolos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Até mesmo ali o fogo consumirá você. A espada a eliminará. Ela a devorará como fazem os gafanhotos jovens. Torne-se tão numerosa como os gafanhotos jovens! Sim, torne-se tão numerosa como os gafanhotos!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Você multiplicou os seus comerciantes, tornando-os mais numerosos do que as estrelas dos céus. Os gafanhotos jovens trocam de pele e saem voando.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Seus guardas são como gafanhotos, E seus oficiais são como um enxame de gafanhotos. Em dias de frio, eles se refugiam nas brechas dos muros, Mas, quando o sol brilha, eles saem voando; Ninguém sabe para onde eles vão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Seus pastores estão sonolentos, ó rei da Assíria; Seus nobres permanecem nas residências deles. Seu povo foi espalhado sobre os montes, E não há quem o reúna.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Não há alívio para a sua catástrofe. Seu ferimento é incurável. Todos os que ouvirem as notícias a seu respeito baterão palmas, Pois quem não sofreu por causa da sua implacável crueldade?”",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

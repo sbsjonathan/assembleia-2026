@@ -1,0 +1,135 @@
+{
+  "nome_do_livro": "Judas",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Judas, escravo de Jesus Cristo, mas irmão de Tiago, aos chamados que são amados por Deus, o Pai, e guardados para Jesus Cristo:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Que vocês tenham cada vez mais misericórdia, paz e amor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Amados, embora eu estivesse fazendo todo o possível para lhes escrever a respeito da salvação que temos em comum, achei necessário escrever para exortá-los a travar uma luta árdua pela fé que de uma vez para sempre foi entregue aos santos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "A razão é que se infiltraram entre vocês certos homens que há muito tempo foram designados pelas Escrituras para este julgamento; eles são homens ímpios, que transformam a bondade imerecida de nosso Deus numa desculpa para conduta insolente e que se mostram falsos para com o nosso único dono e Senhor, Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Embora vocês estejam plenamente cientes de tudo isso, quero lembrar-lhes que Jeová salvou um povo da terra do Egito, mas depois destruiu os que não mostraram fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E os anjos que não mantiveram sua posição original, mas abandonaram sua própria morada correta, ele reservou, em correntes eternas e em densa escuridão, para o julgamento do grande dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Da mesma maneira, Sodoma e Gomorra e as cidades em volta delas também se entregaram a crassa imoralidade sexual e foram atrás de desejos carnais desnaturais; elas estão diante de nós como exemplo de aviso por terem sofrido a punição judicial do fogo eterno.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Apesar disso, esses homens também estão se entregando a sonhos, aviltando a carne, desprezando a autoridade e falando mal dos gloriosos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas, quando Miguel, o arcanjo, teve um desacordo com o Diabo e disputava a respeito do corpo de Moisés, não se atreveu a proferir um julgamento contra ele com insultos, mas disse: “Jeová o censure.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "No entanto, esses homens falam mal de tudo que na verdade não entendem. E, em todas as coisas que eles entendem por instinto como animais irracionais, eles continuam se corrompendo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Ai deles, porque seguiram o caminho de Caim e se lançaram no proceder errado de Balaão por uma recompensa, e foram destruídos na conversa rebelde de Corá!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Esses homens são rochedos escondidos sob a água nas festas de confraternização de vocês, enquanto se banqueteiam com vocês; pastores que alimentam a si mesmos sem temor; nuvens sem água, levadas para lá e para cá pelos ventos; árvores do fim do outono, sem frutos, duas vezes mortas, arrancadas pela raiz;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "ondas furiosas do mar, que lançam a espuma da sua própria vergonha; estrelas sem rumo fixo, para as quais está reservada para sempre a mais profunda escuridão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "O sétimo homem na linhagem de Adão, Enoque, também profetizou a respeito deles quando disse: “Vejam! Jeová veio com as suas santas miríades",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "para executar julgamento contra todos, e para condenar todos os ímpios por todas as ações ímpias que fizeram de modo ímpio e por todas as coisas chocantes que os pecadores ímpios falaram contra ele.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Esses homens são queixosos, reclamam de sua sorte na vida, seguem seus próprios desejos; sua boca se gaba de coisas grandiosas, ao passo que bajulam outros para tirar vantagem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Quanto a vocês, amados, lembrem-se das declarações feitas anteriormente pelos apóstolos do nosso Senhor Jesus Cristo,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 18,
+          "texto": "que lhes diziam: “Nos últimos tempos, haverá zombadores, que agirão segundo seus próprios desejos de coisas ímpias.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Esses são os que causam divisões, homens que agem como animais, sem espiritualidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Mas vocês, amados, edifiquem-se na sua santíssima fé e orem com espírito santo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "a fim de se manterem no amor de Deus, ao passo que aguardam a misericórdia do nosso Senhor Jesus Cristo, visando a vida eterna.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Também, continuem a mostrar misericórdia a alguns que têm dúvidas;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "salvem a eles, arrancando-os do fogo. A outros, continuem a mostrar misericórdia, mas com temor, odiando até mesmo a roupa que tiver sido manchada pela carne.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Àquele que é capaz de proteger vocês para que não tropecem e de fazê-los ficar de pé, sem defeito, à vista da sua glória, com grande alegria,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 25,
+          "texto": "ao único Deus, nosso Salvador, por meio de Jesus Cristo, nosso Senhor, seja a glória, a majestade, o poder e a autoridade desde toda a eternidade, agora e por toda a eternidade. Amém.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

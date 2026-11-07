@@ -1,0 +1,600 @@
+{
+  "nome_do_livro": "1 Timóteo",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Paulo, apóstolo de Cristo Jesus por ordem de Deus, nosso Salvador, e de Cristo Jesus, nossa esperança,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "a Timóteo, filho genuíno na fé: Que você tenha bondade imerecida, misericórdia e paz da parte de Deus, o Pai, e de Cristo Jesus, nosso Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Assim como o incentivei a ficar em Éfeso quando eu estava para ir à Macedônia, assim faço agora, para que você ordene a certas pessoas que não ensinem outras doutrinas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "nem prestem atenção a histórias falsas e a genealogias. Essas coisas não levam a nada, mas apenas provocam especulações, em vez de fornecer algo da parte de Deus no que se refere à fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Realmente, o objetivo dessa instrução é o amor que vem de um coração puro, de uma boa consciência e de uma fé sem hipocrisia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Alguns se desviaram dessas coisas e foram desencaminhados para discussões inúteis.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Querem ser instrutores de lei, mas não entendem nem as coisas que dizem, nem as coisas em que insistem tão fortemente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Ora, sabemos que a Lei é boa, se for aplicada corretamente,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "reconhecendo-se que as leis são feitas não para o justo, mas para os transgressores e rebeldes, ímpios e pecadores, desleais e profanadores, para os que matam pai ou mãe, assassinos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "para os que praticam imoralidade sexual, homens que praticam o homossexualismo, raptores, mentirosos, para os que juram falsamente, e para tudo que é contrário ao ensinamento sadio,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "o qual está de acordo com as gloriosas boas novas do Deus feliz, que foram confiadas a mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Sou grato a Cristo Jesus, nosso Senhor, que me deu poder, porque ele me considerou fiel, designando-me para um ministério,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "embora antes eu fosse blasfemador, perseguidor e insolente. Contudo me foi concedida misericórdia porque eu agia em ignorância e não tinha fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas a bondade imerecida do nosso Senhor foi extremamente abundante junto com a fé e o amor que está em Cristo Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Esta declaração é digna de confiança e merece total aceitação: Cristo Jesus veio ao mundo para salvar pecadores. Desses, eu sou o principal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mas me foi concedida misericórdia para que, por meio de mim como o principal caso, Cristo Jesus pudesse demonstrar toda a sua paciência, fazendo de mim um exemplo para os que vão depositar fé nele para obter vida eterna.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Ao Rei da eternidade, imortal, invisível, o único Deus, seja dada a honra e a glória para todo o sempre. Amém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Confio a você essa instrução, Timóteo, meu filho, em harmonia com as profecias que foram feitas a respeito de você, a fim de que, em conformidade com elas, você continue travando o bom combate,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "mantendo a fé e uma boa consciência, a qual alguns rejeitaram, o que os levou a naufragar na fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Himeneu e Alexandre estão entre esses, e eu os entreguei a Satanás, para que sejam ensinados pela disciplina a não blasfemar.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Portanto, em primeiro lugar, recomendo fortemente que se façam súplicas, orações, intercessões e agradecimentos com respeito a todo tipo de pessoas,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "com respeito a reis e a todos os que estão em altos postos, a fim de que continuemos a levar uma vida calma e sossegada, com plena devoção a Deus e seriedade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Isso é bom e agradável à vista do nosso Salvador, Deus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "que deseja que todo tipo de pessoas sejam salvas e venham a ter um conhecimento exato da verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois há um só Deus e um só mediador entre Deus e os homens: um homem, Cristo Jesus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "que se entregou como resgate correspondente por todos. Sobre isso se dará testemunho no tempo devido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Para dar esse testemunho fui designado pregador e apóstolo — estou dizendo a verdade, não estou mentindo —, instrutor de nações quanto à fé e à verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Desejo, portanto, que em todo lugar os homens persistam em orar, erguendo mãos leais, sem ira e sem debates.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Da mesma forma, as mulheres devem usar roupa decente, adornando-se com modéstia e bom critério, não com estilos de tranças, nem com ouro ou pérolas, nem com roupa muito cara,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "mas do modo próprio das mulheres que professam devoção a Deus, isto é, com boas obras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Que a mulher aprenda em silêncio, com plena submissão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Não permito que a mulher ensine nem que exerça autoridade sobre o homem, mas ela deve ficar em silêncio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Pois Adão foi formado primeiro, depois Eva.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Também, Adão não foi enganado, mas a mulher foi totalmente enganada e se tornou transgressora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "No entanto, ela ficará a salvo tornando-se mãe, desde que ela continue na fé, no amor e na santidade, tendo bom senso.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Esta declaração é digna de confiança: Se um homem está se esforçando para ser superintendente, deseja uma obra excelente.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O superintendente, portanto, deve ser irrepreensível, marido de uma só esposa, moderado nos hábitos, sensato, ordeiro, hospitaleiro, qualificado para ensinar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Não deve ser beberrão nem violento, mas deve ser razoável, não briguento. Não deve amar o dinheiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Deve presidir bem à sua própria família, tendo os filhos em sujeição com toda a seriedade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "(Pois, se um homem não souber presidir à sua própria família, como cuidará da congregação de Deus?)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Não deve ser recém-convertido, para que não se encha de orgulho e caia no julgamento aplicado ao Diabo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Além disso, deve ter também um bom testemunho de pessoas de fora, a fim de que não caia em desonra e num laço do Diabo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Os servos ministeriais devem igualmente ser sérios e homens de uma só palavra; não devem beber muito vinho, nem ser ávidos de ganho desonesto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Devem se apegar ao segredo sagrado da fé com a consciência limpa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Também, que esses sejam primeiro examinados quanto à aptidão; depois sirvam como ministros, se estiverem livres de acusação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "As mulheres devem igualmente ser sérias, não caluniadoras, moderadas nos hábitos, fiéis em todas as coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Que os servos ministeriais sejam maridos de uma só esposa e presidam bem aos seus filhos e à sua própria família.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Pois os homens que servem bem adquirem para si uma boa reputação e podem falar com grande confiança sobre a fé em Cristo Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Embora eu espere ir encontrá-lo em breve, estou lhe escrevendo estas coisas",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "para que, caso eu demore, você saiba como deve se comportar na família de Deus, que é a congregação do Deus vivente, coluna e amparo da verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "De fato, não há dúvida de que é grande o segredo sagrado da devoção a Deus: ‘Ele foi manifestado em carne, foi declarado justo em espírito, apareceu a anjos, foi pregado às nações, foi crido no mundo, foi recebido no céu em glória.’",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No entanto, a palavra inspirada diz claramente que em tempos posteriores alguns se desviarão da fé, prestando atenção a enganosas declarações inspiradas e a ensinamentos de demônios,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "levados pela hipocrisia de homens que falam mentiras e que têm a consciência marcada como que com ferro quente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Eles proíbem o casamento e ordenam que as pessoas se abstenham de alimentos que Deus criou para serem tomados com agradecimentos pelos que têm fé e conhecem a verdade de modo exato.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Pois tudo que Deus criou é bom, e nada deve ser rejeitado se for recebido com agradecimento,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "porque é santificado pela palavra de Deus e pela oração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Se der esses conselhos aos irmãos, você será bom ministro de Cristo Jesus, nutrido com as palavras da fé e do bom ensinamento que você tem seguido fielmente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas rejeite as histórias falsas que violam o que é santo, como as que são contadas por mulheres velhas. Por outro lado, treine-se com a devoção a Deus por alvo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pois o treinamento físico traz algum benefício, mas a devoção a Deus é benéfica para todas as coisas, visto que tem a promessa da vida presente e da vida que virá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Essa declaração é digna de confiança e merece total aceitação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "É por isso que nós trabalhamos arduamente e nos esforçamos, porque baseamos a nossa esperança num Deus vivente, que é Salvador de todo tipo de pessoas, especialmente de quem é fiel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Persista em dar essas ordens e em ensiná-las.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Nunca deixe que ninguém o menospreze por você ser jovem. Em vez disso, torne-se exemplo para os fiéis no falar, na conduta, no amor, na fé, na castidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Até eu chegar, continue a se aplicar à leitura pública, à exortação, ao ensino.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Não negligencie o dom que há em você, que lhe foi dado por meio de uma profecia quando o corpo de anciãos lhe impôs as mãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Medite nessas coisas; concentre-se totalmente nelas, para que o seu progresso seja claramente visto por todos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Preste constante atenção a si mesmo e ao seu ensino. Persevere nessas coisas, pois fazendo isso você salvará tanto a si mesmo como aos que o escutam.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Não repreenda severamente um homem idoso. Ao contrário, aconselhe-o bondosamente como a um pai; aos jovens, como a irmãos;",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "às mulheres idosas, como a mães; às jovens, como a irmãs, com toda a castidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mostre consideração pelas viúvas que são realmente viúvas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas, se alguma viúva tiver filhos ou netos, que esses aprendam primeiro a praticar a devoção a Deus na sua própria família e a pagar a seus pais e avós o que lhes é devido, pois isso é agradável à vista de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "A viúva que é realmente viúva e desamparada deposita a sua esperança em Deus e persiste em súplicas e orações, noite e dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas a que se entrega aos prazeres já está morta, embora esteja viva.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Portanto, continue a dar essas instruções, para que elas sejam irrepreensíveis.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Certamente, se alguém não provê o necessário para os seus, e especialmente para os membros de sua família, renega a fé e é pior do que alguém sem fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Deve ser colocada na lista a viúva que tenha pelo menos 60 anos de idade, que tenha sido esposa de um só marido,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "que seja conhecida por suas boas obras, que tenha criado filhos, sido hospitaleira, lavado os pés dos santos, ajudado os que estavam em dificuldades e que tenha se dedicado a toda boa obra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Mas não coloque na lista as viúvas mais jovens, pois, quando os seus desejos sexuais ficam entre elas e o Cristo, querem se casar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E elas trazem sobre si condenação por abandonarem a sua primeira expressão de fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Ao mesmo tempo, também se acostumam a ficar desocupadas, perambulando pelas casas; e não se tornam apenas desocupadas, mas também tagarelas e intrometidas nos assuntos dos outros, falando coisas que não devem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Portanto, desejo que as viúvas mais jovens se casem, tenham filhos e cuidem de uma casa, não dando ao opositor oportunidade para criticar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Na verdade, algumas já se desviaram para seguir a Satanás.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Se alguma mulher crente tem viúvas na família, que ela as ajude, para que não se ponha esse fardo sobre a congregação. Esta poderá então ajudar as viúvas que são realmente viúvas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Os anciãos, que presidem bem, sejam considerados dignos de dupla honra, especialmente os que trabalham arduamente no falar e no ensinar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Pois as Escrituras dizem: “Não amordace o touro quando ele debulha o grão”, e também: “O trabalhador é digno do seu salário.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Não aceite acusação contra um ancião, a não ser com base no testemunho de duas ou três pessoas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Repreenda perante todos os observadores aqueles que praticam pecado, como um aviso para os outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Eu lhe ordeno solenemente, perante Deus, Cristo Jesus e os anjos escolhidos, que siga essas instruções sem preconceito nem parcialidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Nunca imponha as mãos sobre nenhum homem precipitadamente, nem participe dos pecados de outros; mantenha-se casto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Não beba mais água, mas tome um pouco de vinho por causa do seu estômago e porque você adoece frequentemente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Os pecados de alguns homens são conhecidos por todos e os levam diretamente a julgamento; mas os de outros homens se tornam evidentes mais tarde.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Do mesmo modo, também as boas obras são conhecidas por todos e, mesmo quando não são, não podem continuar escondidas.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Aqueles que estão debaixo do jugo da escravidão considerem os seus donos dignos de toda a honra, para que nunca se fale mal do nome de Deus e do ensinamento dele.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Além disso, os que têm donos crentes não os desrespeitem por eles serem irmãos. Ao contrário, devem servir com ainda mais prontidão, porque os que se beneficiam do seu bom serviço são crentes e amados. Persista em ensinar essas coisas e em dar essas exortações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Se alguém ensina outra doutrina e não concorda com a instrução sadia, que vem do nosso Senhor Jesus Cristo, nem com o ensinamento que está de acordo com a devoção a Deus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "está cheio de orgulho e não entende nada. Está obcecado por controvérsias e debates sobre palavras. Essas coisas produzem inveja, brigas, calúnias, suspeitas maldosas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "constantes discussões sobre questões insignificantes entre homens corrompidos na mente e desprovidos da verdade, que pensam que a devoção a Deus é meio de ganho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "De fato, há grande ganho na devoção a Deus junto com o contentamento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois não trouxemos nada ao mundo, nem podemos levar nada embora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim, tendo o que comer e o que vestir, estaremos contentes com isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas os que estão decididos a ficar ricos caem em tentação, em laço e em muitos desejos insensatos e prejudiciais, que afundam os homens na destruição e na ruína.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Porque o amor ao dinheiro é raiz de todo tipo de coisas prejudiciais, e alguns, empenhando-se por esse amor, foram desviados da fé e causaram a si mesmos muitos sofrimentos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "No entanto, você, homem de Deus, fuja dessas coisas. Mas empenhe-se pela justiça, pela devoção a Deus, pela fé, pelo amor, pela perseverança e pela brandura.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Trave a boa luta da fé; apegue-se firmemente à vida eterna para a qual você foi chamado e fez a bela declaração pública diante de muitas testemunhas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Diante de Deus, que preserva vivas todas as coisas, e de Cristo Jesus, que, como testemunha, fez a bela declaração pública perante Pôncio Pilatos, eu lhe ordeno",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "que obedeça ao mandamento de um modo imaculado e irrepreensível, até a manifestação do nosso Senhor Jesus Cristo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "a qual o feliz e único Poderoso Senhor fará no tempo determinado para isso. Ele é o Rei dos que reinam e Senhor dos que dominam,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "o único que tem imortalidade, que mora em luz inacessível, a quem nenhum homem viu nem pode ver. A ele seja dada a honra e o poder eterno. Amém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Dê instruções aos que são ricos no mundo atual: que eles não sejam arrogantes e que não baseiem a sua esperança nas riquezas incertas, mas em Deus, que nos proporciona ricamente todas as coisas que nos dão satisfação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Diga-lhes que pratiquem o bem, que sejam ricos em boas obras, que sejam generosos, prontos para partilhar,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "armazenando um tesouro para si, um bom alicerce para o futuro; fazendo isso, eles se apegarão firmemente à verdadeira vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Timóteo, guarde o que lhe foi confiado, afastando-se das conversas vãs que violam o que é santo e das contradições do falsamente chamado “conhecimento”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Por ostentarem esse conhecimento, alguns se desviaram da fé. Que a bondade imerecida esteja com vocês.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

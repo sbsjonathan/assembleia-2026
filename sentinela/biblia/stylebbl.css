@@ -1,0 +1,255 @@
+/* stylebbl.css - Código completo com os ajustes de espaço e cor */
+
+/* Local fonts are available in downloaded/offline articles too. */
+@import url('../../biblia/fonts/fonts.css');
+
+/* --- Estilo para as referências clicáveis na página --- */
+.bbl {
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+  font-weight: 500;
+  display: inline-block;
+  transform-origin: center;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+/* --- O Fundo do Modal (Overlay) --- */
+#modal-biblia {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* --- A Janela do Modal (a caixa de conteúdo) --- */
+.modal-biblia-content {
+  background-color: #fefefe;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100dvh - max(16px, env(safe-area-inset-top)) - max(16px, env(safe-area-inset-bottom)));
+  padding: calc(25px * var(--font-scale-global)) calc(35px * var(--font-scale-global));
+  border-radius: calc(12px * var(--font-scale-global));
+  box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+  width: 90%;
+  max-width: 650px;
+  position: relative;
+  animation: zoomIn 0.3s ease-out;
+}
+
+/* --- O Botão de Fechar (X) --- */
+#modal-biblia-fechar {
+  color: #aaa;
+  position: absolute;
+  top: calc(10px * var(--font-scale-global));
+  right: calc(15px * var(--font-scale-global));
+  font-size: calc(28px * var(--font-scale-global));
+  font-weight: bold;
+  transition: color 0.2s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+}
+
+/* --- O Corpo do Modal (onde o texto aparece) --- */
+#modal-biblia-corpo {
+  min-height: 0;
+  max-height: 70vh;
+  max-height: 70dvh;
+  padding-bottom: 12px;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+  padding-right: calc(15px * var(--font-scale-global));
+  margin-right: calc(-15px * var(--font-scale-global));
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* A block-sized link and real scroll padding keep its entire border in the
+   scrollable area, including WebKit's final line-box rounding. */
+#modal-biblia-corpo > .bible-reader-link {
+  display: flex !important;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* --- Estilo do Título do Livro --- */
+#modal-biblia-corpo h3 {
+  font-family: 'Noto Sans', sans-serif;
+  margin-top: 0;
+  margin-bottom: calc(15px * var(--font-scale-global));
+  padding-bottom: calc(10px * var(--font-scale-global));
+  font-size: 1.5em;
+  color: #333;
+  border-bottom: 2px solid #626262;
+}
+
+/* --- Estilo do parágrafo de "Carregando..." --- */
+#modal-biblia-corpo h3:only-child {
+  border-bottom: none;
+  text-align: center;
+}
+
+/* --- Estilo dos Parágrafos com os Versículos --- */
+#modal-biblia-corpo p {
+  font-family: 'WTClearText', serif;
+  font-size: var(--font-base-global, 19.36px);
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: calc(12px * var(--font-scale-global));
+}
+
+/* --- Estilo do Número do Versículo --- */
+#modal-biblia-corpo p strong {
+  font-family: 'Noto Sans', sans-serif;
+  color: #4A6DA7; /* ALTERADO: Sua nova cor */
+  font-weight: 700;
+  margin-right: calc(3px * var(--font-scale-global)); /* ALTERADO: Espaço entre número e texto (ajuste conforme preferir) */
+}
+
+/* --- Animações do Modal --- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* --- Scrollbar customizada --- */
+#modal-biblia-corpo::-webkit-scrollbar {
+  width: 8px;
+}
+#modal-biblia-corpo::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+#modal-biblia-corpo::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+#modal-biblia-corpo::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* --- ANIMAÇÕES PARA O LONG PRESS INTERATIVO --- */
+@keyframes press-loading {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+}
+
+@keyframes press-success {
+  0% { transform: scale(1.3); opacity: 0.6; }
+  50% { transform: scale(1.4); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+.bbl.pressionando {
+  animation: press-loading 150ms ease-out forwards;
+  animation-play-state: running;
+}
+
+.bbl.ref-aberta {
+  animation: press-success 100ms ease-out forwards;
+}
+
+/* --- PROTEÇÃO CONTRA SELEÇÃO DE TEXTO --- */
+.no-select-global,
+.no-select-global * {
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.no-select-global *::selection {
+  background: transparent !important;
+}
+
+.no-select-global *::-moz-selection {
+  background: transparent !important;
+}
+
+#modal-biblia,
+#modal-biblia * {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* --- Modo escuro do modal bíblico --- */
+html[data-theme="dark"] .modal-biblia-content {
+  background-color: #1c1c1e;
+  color: #f2f2f7;
+  border: 1px solid #3a3a3c;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.45);
+}
+html[data-theme="dark"] #modal-biblia-fechar {
+  color: #b3b3bb;
+}
+html[data-theme="dark"] #modal-biblia-corpo h3 {
+  color: #f2f2f7;
+  border-bottom-color: #6b7280;
+}
+html[data-theme="dark"] #modal-biblia-corpo p {
+  color: #e5e5ea;
+}
+html[data-theme="dark"] #modal-biblia-corpo p strong {
+  color: #7db2ff;
+}
+html[data-theme="dark"] #modal-biblia-corpo::-webkit-scrollbar-track {
+  background: #1c1c1e;
+}
+html[data-theme="dark"] #modal-biblia-corpo::-webkit-scrollbar-thumb {
+  background: #48484a;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .modal-biblia-content {
+    background-color: #1c1c1e;
+    color: #f2f2f7;
+    border: 1px solid #3a3a3c;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.45);
+  }
+  html:not([data-theme="light"]) #modal-biblia-fechar {
+    color: #b3b3bb;
+  }
+  html:not([data-theme="light"]) #modal-biblia-corpo h3 {
+    color: #f2f2f7;
+    border-bottom-color: #6b7280;
+  }
+  html:not([data-theme="light"]) #modal-biblia-corpo p {
+    color: #e5e5ea;
+  }
+  html:not([data-theme="light"]) #modal-biblia-corpo p strong {
+    color: #7db2ff;
+  }
+  html:not([data-theme="light"]) #modal-biblia-corpo::-webkit-scrollbar-track {
+    background: #1c1c1e;
+  }
+  html:not([data-theme="light"]) #modal-biblia-corpo::-webkit-scrollbar-thumb {
+    background: #48484a;
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "nome_do_livro": "Joel",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Esta é a palavra de Jeová que Joel, filho de Petuel, recebeu:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“Ouçam isto, anciãos, E prestem atenção, todos vocês habitantes desta terra. Será que aconteceu algo assim nos seus dias Ou nos dias dos seus antepassados?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Contem isso aos seus filhos, E que os seus filhos contem isso aos filhos deles, E os filhos deles à geração seguinte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "O que o gafanhoto devorador deixou sobrar, a nuvem de gafanhotos comeu; O que a nuvem de gafanhotos deixou sobrar, o gafanhoto sem asas comeu; E o que o gafanhoto sem asas deixou sobrar, o gafanhoto voraz comeu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Acordem, beberrões, e chorem! Lamentem, todos vocês bebedores de vinho, Porque o vinho novo foi tirado da sua boca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Pois uma nação subiu à minha terra, poderosa e numerosa demais para ser contada. Seus dentes são dentes de leão, e suas mandíbulas são as de um leão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Ela devastou a minha videira e transformou a minha figueira num toco. Desnudou-as completamente e as lançou fora, Deixando brancos os seus ramos novos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Lamente, como faz a virgem vestida de pano de saco Pela perda do noivo da sua juventude.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Na casa de Jeová, a oferta de cereais e a oferta de bebida acabaram; Os sacerdotes, servos de Jeová, estão de luto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O campo foi devastado, o solo está de luto; Pois o cereal foi arruinado, o vinho novo secou, o azeite acabou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Lavradores estão desalentados, vinhateiros lamentam, Por causa do trigo e da cevada; Pois a colheita do campo foi arruinada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "A videira secou, A figueira definhou. A romãzeira, a palmeira e a macieira, Todas as árvores do campo secaram; Pois a alegria se transformou em vergonha entre o povo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Vistam-se de pano de saco e fiquem de luto, sacerdotes. Lamentem, servos do altar. Entrem e passem a noite vestidos de pano de saco, servos do meu Deus; Pois ninguém mais traz ofertas de cereais e ofertas de bebida para a casa do seu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Proclamem um jejum; convoquem uma assembleia solene. Reúnam os anciãos e todos os habitantes desta terra Na casa de Jeová, seu Deus, e clamem a Jeová por ajuda.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Ai por causa daquele dia! Pois o dia de Jeová está próximo E virá como destruição da parte do Todo-Poderoso!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Não foi o alimento tirado de diante dos nossos próprios olhos; E a alegria e a exultação, da casa do nosso Deus?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "As sementes murcharam sob as suas pás. Depósitos estão desolados. Celeiros foram derrubados, pois o cereal secou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Até mesmo os rebanhos gemem! Os bois vagueiam em confusão, porque não têm pasto! E as ovelhas sofrem a punição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Clamarei a ti, ó Jeová; Pois o fogo devorou as pastagens do deserto, E as chamas consumiram todas as árvores do campo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Até mesmo os animais selvagens te anseiam, Porque as correntes de água secaram, E o fogo devorou as pastagens do deserto.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Toquem a buzina em Sião! Deem um grito de guerra no meu santo monte. Que todos os habitantes desta terra tremam, Pois o dia de Jeová está chegando! Está próximo!",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "É um dia de escuridão e de trevas, Um dia de nuvens e de densas trevas. É como a luz da aurora se espalhando sobre os montes. Há um povo numeroso e poderoso; Nunca existiu um povo como ele, E nunca mais haverá outro, Pelos anos de todas as gerações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "À frente dele um fogo devora, E atrás dele as chamas consomem. A terra à sua frente é como o jardim do Éden, Mas atrás dele é um deserto desolado, E nada pode escapar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Sua aparência é como a aparência de cavalos, E eles correm como cavalos de guerra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O som deles é como o de carros de guerra quando saltam no cume dos montes, Como o estalo de um fogo ardente que consome a palha. São como um povo forte posto em formação de batalha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Por causa deles, povos ficarão aflitos. Todos os rostos expressarão angústia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Eles atacam como guerreiros, Escalam a muralha como soldados, Cada um se mantém no seu próprio curso, E eles não se desviam do seu caminho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Não empurram uns aos outros; Cada homem avança no seu rumo. Se as armas fazem alguns cair, Os outros não desfazem a formação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Invadem a cidade, correm sobre a muralha. Sobem às casas, entram pelas janelas como ladrões.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Diante deles a terra treme e os céus se abalam. O sol e a lua ficaram escuros, E as estrelas perderam o brilho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Jeová levantará a sua voz perante o seu exército, pois o seu acampamento é muito numeroso. Pois aquele que cumpre a Sua palavra é forte; Pois o dia de Jeová é grande e muito atemorizante. Quem poderá suportá-lo?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "“Por isso, enquanto é tempo”, diz Jeová, “voltem para mim de todo o coração, Com jejum, choro e lamento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Rasguem o seu coração, e não as suas roupas, E voltem para Jeová, seu Deus, Pois ele é compassivo e misericordioso, paciente e cheio de amor leal, E reconsiderará a calamidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Quem sabe ele não voltará atrás e reconsiderará, E deixará sobrar uma bênção, Uma oferta de cereais e uma oferta de bebida para Jeová, seu Deus?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Toquem a buzina em Sião! Proclamem um jejum; convoquem uma assembleia solene.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Reúnam o povo, santifiquem a congregação. Convoquem os homens idosos, reúnam as crianças e os bebês. Que o noivo saia do seu aposento interno, e a noiva da sua câmara nupcial.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Entre o pórtico e o altar, Que chorem os sacerdotes, os servos de Jeová, e digam: ‘Tem pena do teu povo, ó Jeová, Não faças da tua herança um objeto de zombaria, Deixando as nações dominar sobre eles. Por que os povos deveriam dizer: “Onde está o Deus deles?”’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Então Jeová será zeloso para com a sua terra E terá compaixão do seu povo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Jeová responderá ao seu povo: ‘Estou lhes enviando cereal, vinho novo e azeite, E vocês ficarão plenamente satisfeitos; Não farei mais de vocês um alvo de insultos entre as nações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Afastarei para longe de vocês aquele que vem do norte; Eu o dispersarei por um deserto árido e desolado, Com a vanguarda dele voltada para o mar oriental E a retaguarda para o mar ocidental. O mau cheiro dele subirá, O fedor dele continuará a subir, Pois Ele fará coisas grandiosas.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Não tenha medo, ó terra. Exulte e alegre-se, pois Jeová fará coisas grandiosas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Não tenham medo, animais selvagens, Pois as pastagens do deserto ficarão verdes, E as árvores darão frutos; A figueira e a videira produzirão abundantemente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Exultem e alegrem-se em Jeová, seu Deus, filhos de Sião; Pois ele lhes dará a chuva do outono na medida certa E fará cair sobre vocês chuvas abundantes, A chuva do outono e a chuva da primavera, assim como antes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "As eiras ficarão cheias de cereal puro, E os lagares transbordarão de vinho novo e de azeite.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "E vou compensar-lhes os anos Que foram comidos pela nuvem de gafanhotos, pelo gafanhoto sem asas, pelo gafanhoto voraz e pelo gafanhoto devorador, Meu grande exército que enviei entre vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Vocês certamente comerão até ficar satisfeitos E louvarão o nome de Jeová, seu Deus, Que fez maravilhas por vocês; Meu povo nunca mais será envergonhado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "E vocês terão de saber que eu estou no meio de Israel E que eu sou Jeová, seu Deus — não há outro! Meu povo nunca mais será envergonhado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Depois disso, derramarei meu espírito sobre todo tipo de pessoas, E os filhos e as filhas de vocês profetizarão, Os homens idosos entre vocês terão sonhos, E os jovens entre vocês terão visões.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "E até mesmo sobre meus escravos e minhas escravas Derramarei meu espírito naqueles dias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "E realizarei milagres nos céus e na terra: Sangue, fogo e colunas de fumaça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "O sol será transformado em escuridão e a lua em sangue, Antes de chegar o grande e atemorizante dia de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "E todo aquele que invocar o nome de Jeová será salvo; Pois no monte Sião e em Jerusalém estarão os que escaparem, assim como Jeová disse, Os sobreviventes que Jeová está chamando.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Vejam! Naqueles dias e naquele tempo, Quando eu trouxer os cativos de volta a Judá e a Jerusalém,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Vou reunir também todas as nações E fazê-las descer ao vale de Jeosafá. Ali vou entrar em juízo com elas Em favor do meu povo e da minha herança, Israel, Pois elas os espalharam entre as nações, E repartiram a minha terra entre si.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Lançaram sortes sobre o meu povo; Vendiam um menino para contratar uma prostituta, E vendiam uma menina por vinho, para beberem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "E vocês, o que têm contra mim, Ó Tiro e Sídon, e todas as regiões da Filístia? Estão me retribuindo alguma coisa que fiz? Se vocês estão me retribuindo, Veloz e rapidamente trarei, sobre as suas cabeças, a sua retribuição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Visto que vocês tomaram a minha prata e o meu ouro, E levaram para os seus templos os meus tesouros mais preciosos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E venderam o povo de Judá e de Jerusalém aos gregos, A fim de levá-los para longe do seu território,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Estou despertando a eles para que venham do lugar para onde vocês os venderam, E trarei, sobre as cabeças de vocês, a sua retribuição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Vou entregar seus filhos e suas filhas nas mãos do povo de Judá, E eles os entregarão aos homens de Sabá, a uma nação distante; Pois o próprio Jeová disse isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Proclamem isto entre as nações: ‘Preparem-se para a guerra! Despertem os poderosos! Que todos os soldados se aproximem, que eles avancem!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Transformem os seus arados em espadas e as suas podadeiras em lanças. Que o fraco diga: “Sou poderoso.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Venham e ajudem umas às outras, vocês, todas as nações ao redor, reúnam-se!’” Ó Jeová, faz com que os teus poderosos desçam para lá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "“Que as nações despertem e venham ao vale de Jeosafá, Pois ali me sentarei para julgar todas as nações ao redor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Metam a foice, pois a colheita está madura. Venham e pisem, pois o lagar de vinho está cheio. Os lagares estão transbordando, pois a maldade das nações é muito grande.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Multidões, multidões estão no vale da decisão, Pois está próximo o dia de Jeová no vale da decisão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O sol e a lua ficarão escuros, E as estrelas perderão o brilho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "E Jeová rugirá de Sião, De Jerusalém ele levantará a sua voz. O céu e a terra tremerão; Mas Jeová será um refúgio para o seu povo, Uma fortaleza para o povo de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "E vocês terão de saber que eu sou Jeová, seu Deus, que reside em Sião, meu santo monte. Jerusalém se tornará um lugar santo, E estranhos não passarão mais por ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Naquele dia os montes gotejarão vinho novo, As colinas manarão leite, E os riachos de Judá fluirão cheios de água. Da casa de Jeová brotará uma fonte, E ela irrigará o vale das Acácias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Mas o Egito ficará desolado, E Edom se tornará um deserto desolado, Por causa da violência feita contra o povo de Judá, Em cuja terra derramaram sangue inocente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Mas Judá sempre será habitada; E Jerusalém, por geração após geração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Vou considerar inocente o sangue deles, que eu não tinha considerado inocente; E Jeová residirá em Sião.”",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

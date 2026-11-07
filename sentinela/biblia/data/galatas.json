@@ -1,0 +1,780 @@
+{
+  "nome_do_livro": "Gálatas",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Paulo, apóstolo não da parte de homens nem por homem algum, mas por Jesus Cristo e por Deus, o Pai, que o levantou dentre os mortos,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "e todos os irmãos comigo, às congregações da Galácia:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Que vocês tenham bondade imerecida e paz da parte de Deus, nosso Pai, e do Senhor Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Ele se entregou pelos nossos pecados a fim de nos livrar deste mundo mau, segundo a vontade do nosso Deus e Pai;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "a Ele seja dada a glória para todo o sempre. Amém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Estou admirado de que vocês estejam se afastando tão depressa Daquele que os chamou com a bondade imerecida de Cristo, para seguirem outro tipo de boas novas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Não que haja outras boas novas, mas há alguns que estão perturbando vocês e querendo distorcer as boas novas a respeito do Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "No entanto, mesmo que um de nós ou um anjo do céu lhes declare como boas novas algo além das boas novas que lhes declaramos, que ele seja amaldiçoado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Como acabamos de dizer, digo agora novamente: Quem quer que esteja lhes declarando como boas novas algo além daquilo que vocês aceitaram, seja amaldiçoado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "É, de fato, a homens que estou buscando persuadir agora, ou é a Deus? Ou estou tentando agradar a homens? Se eu ainda estivesse agradando a homens, não seria escravo de Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois quero que saibam, irmãos, que as boas novas que eu declarei a vocês não são de origem humana;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "porque não as recebi de um homem, e ninguém as ensinou a mim, mas elas me foram reveladas por Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Vocês, naturalmente, ouviram falar da minha conduta anterior no judaísmo, que eu perseguia intensamente a congregação de Deus e a devastava,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "e que eu fazia mais progresso no judaísmo do que muitos da minha nação que tinham a minha idade, visto que eu era muito mais zeloso das tradições de meus pais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Mas, quando Deus, que causou o meu nascimento e me chamou por meio da Sua bondade imerecida, achou bom",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "revelar o seu Filho por meu intermédio, para que eu declarasse às nações as boas novas a respeito dele, não fui imediatamente consultar homem algum;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "nem fui a Jerusalém, aos que eram apóstolos antes de mim, mas fui para a Arábia e depois voltei a Damasco.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Então, três anos depois, subi a Jerusalém para visitar Cefas e fiquei com ele 15 dias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Mas não vi nenhum dos outros apóstolos, a não ser Tiago, o irmão do Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Quanto às coisas que estou escrevendo a vocês, eu lhes garanto, perante Deus, que não estou mentindo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Depois disso, fui para as regiões da Síria e da Cilícia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Mas as congregações da Judeia, que estavam em união com Cristo, não me conheciam pessoalmente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Apenas ouviam dizer: “O homem que antes nos perseguia está agora declarando as boas novas a respeito da fé que antes devastava.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "De modo que começaram a glorificar a Deus por minha causa.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então, 14 anos depois, subi novamente a Jerusalém, com Barnabé, levando também Tito comigo.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Subi por causa de uma revelação, e eu apresentei aos irmãos as boas novas que estou pregando entre as nações. Mas fiz isso em particular, diante dos homens que eram bem-conceituados, para ter certeza de que eu não estava correndo, ou não tivesse corrido, em vão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Contudo, nem mesmo Tito, que estava comigo, foi obrigado a ser circuncidado, embora fosse grego.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas essa questão surgiu por causa dos falsos irmãos introduzidos sorrateiramente, que se infiltraram para espionar a liberdade que desfrutamos em união com Cristo Jesus, a fim de nos escravizar completamente;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "não cedemos a eles, não, nem por um momento, para que a verdade das boas novas continuasse com vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas, quanto aos que pareciam importantes — o que eles eram não faz diferença para mim, pois Deus não julga o homem pela aparência —, esses homens bem-conceituados não me transmitiram nada de novo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pelo contrário, quando viram que eu tinha sido incumbido das boas novas aos incircuncisos, assim como Pedro tinha sido aos circuncisos",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "— pois aquele que deu a Pedro os poderes necessários para um apostolado aos circuncisos deu também a mim poderes para com os que são das nações —,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "e quando reconheceram a bondade imerecida que me tinha sido concedida, Tiago, Cefas e João, os que pareciam colunas, estenderam a mim e a Barnabé a mão direita em sinal de parceria, para que nós fôssemos às nações, mas eles aos circuncisos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pediram apenas que nos lembrássemos dos pobres, e isso eu também tenho me esforçado muito para fazer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "No entanto, quando Cefas chegou a Antioquia, eu me opus a ele face a face, porque ele estava claramente errado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois, antes da chegada de certos homens da parte de Tiago, ele comia com pessoas das nações; mas, quando eles chegaram, parou de fazer isso e se separou dessas pessoas, temendo os da classe circuncisa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Os outros judeus também se juntaram a ele nesse fingimento, de modo que até mesmo Barnabé se deixou levar pelo fingimento deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas, quando vi que eles não estavam andando de acordo com a verdade das boas novas, eu disse a Cefas na frente de todos eles: “Se você, embora seja judeu, vive como as nações, e não como os judeus, como pode obrigar as pessoas das nações a viver segundo as práticas judaicas?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Nós, os que somos judeus de nascimento, e não pecadores das nações,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "reconhecemos que o homem é declarado justo, não por obras exigidas por lei, mas apenas por meio da fé em Jesus Cristo. Portanto, depositamos a nossa fé em Cristo Jesus, para sermos declarados justos pela fé em Cristo, e não por obras exigidas por lei, pois ninguém será declarado justo por obras exigidas por lei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Mas, se nós também somos achados pecadores ao buscarmos ser declarados justos por meio de Cristo, será que Cristo está então a serviço do pecado? De modo algum!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Se eu edifico novamente as mesmas coisas que já derrubei, demonstro ser um transgressor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Pois por meio da Lei eu morri para a Lei, a fim de viver para Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Estou agora pregado na estaca com Cristo. Quem vive não sou mais eu, mas é Cristo que vive em união comigo. De fato, a vida que agora vivo na carne, eu vivo pela fé no Filho de Deus, que me amou e se entregou por mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Eu não rejeito a bondade imerecida de Deus; pois, se a justiça vem por meio de lei, Cristo realmente morreu em vão.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Ó gálatas insensatos! Quem foi que sujeitou vocês a essa má influência, vocês que receberam uma explicação tão clara sobre a morte de Jesus Cristo na estaca?",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Há uma coisa que eu quero lhes perguntar: Foi por meio de obras exigidas por lei que vocês receberam o espírito, ou foi por causa da fé no que ouviram?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Será que vocês são tão insensatos? Depois de terem começado num caminho espiritual, estão terminando num caminho carnal?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Será que foi em vão que vocês sofreram tantas coisas? Tenho certeza de que não foi em vão!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Portanto, será que aquele que lhes fornece o espírito e realiza obras poderosas entre vocês faz isso por causa das suas obras exigidas por lei, ou por causa da sua fé no que ouviram?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "É como aconteceu com Abraão: ele “depositou fé em Jeová, e isso lhe foi creditado como justiça”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Certamente vocês sabem que os que têm fé é que são filhos de Abraão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Certa passagem das Escrituras, prevendo que Deus declararia justas a pessoas das nações por meio da fé, declarou com antecedência as boas novas a Abraão, dizendo: “Por meio de você todas as nações serão abençoadas.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Portanto, os que têm fé são abençoados junto com Abraão, que tinha fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Todos os que confiam em obras exigidas por lei estão sob maldição, pois está escrito: “Maldito é todo aquele que não continua em todas as coisas escritas no rolo da Lei, deixando de fazê-las.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Além disso, é evidente que por lei ninguém é declarado justo diante de Deus, pois “o justo viverá em razão da fé”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ora, a Lei não se baseia em fé. Em vez disso, “quem fizer estas coisas viverá por meio delas”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Cristo nos comprou, livrando-nos da maldição da Lei por se tornar maldição em nosso lugar, pois está escrito: “Maldito é todo aquele pendurado num madeiro.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Isso aconteceu para que a bênção de Abraão se estendesse às nações por meio de Cristo Jesus, a fim de que recebêssemos o espírito prometido por meio da nossa fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Irmãos, falo usando uma ilustração humana: uma vez que um pacto é validado, mesmo que por um simples homem, ninguém o anula nem faz acréscimos a ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Ora, as promessas foram feitas a Abraão e ao seu descendente. As Escrituras não dizem “e aos seus descendentes”, como se fossem muitos. Em vez disso, dizem “e ao seu descendente”, indicando um só, que é Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Além disso, digo o seguinte: A Lei, que veio à existência 430 anos depois, não invalida o pacto anteriormente feito por Deus, de modo a anular a promessa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Pois, se a herança se baseia numa lei, não se baseia mais numa promessa; mas Deus a deu bondosamente a Abraão por meio de uma promessa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Por que, então, a Lei? Ela foi acrescentada para tornar conhecidas as transgressões, até que chegasse o descendente a quem a promessa havia sido feita; e ela foi transmitida por meio de anjos, pela mão de um mediador.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Ora, não há mediador quando apenas uma pessoa está envolvida, mas Deus é apenas um.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Será que a Lei, então, é contra as promessas de Deus? De modo algum! Pois, se tivesse sido dada uma lei que fosse capaz de dar vida, a justiça teria realmente vindo por meio de lei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Mas as Escrituras entregaram tudo à custódia do pecado, para que a promessa resultante da fé em Jesus Cristo fosse dada aos que exercessem fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "No entanto, antes de chegar a fé, estávamos sendo guardados debaixo de lei, entregues à custódia, aguardando a fé que estava para ser revelada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "A Lei, portanto, tornou-se o nosso tutor, conduzindo a Cristo, para que fôssemos declarados justos por meio da fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Mas, agora que chegou a fé, não estamos mais debaixo de um tutor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Todos vocês são, de fato, filhos de Deus, por meio da sua fé em Cristo Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Pois todos vocês, que foram batizados em Cristo, se revestiram de Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Não há nem judeu nem grego, nem escravo nem homem livre, nem homem nem mulher; pois todos vocês são um só em união com Cristo Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Além disso, se vocês pertencem a Cristo, são realmente a descendência de Abraão, herdeiros segundo uma promessa.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Digo porém que, enquanto o herdeiro é uma criancinha, não difere em nada de um escravo, embora seja senhor de tudo,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "mas está debaixo de supervisores e administradores até o dia marcado com antecedência por seu pai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Da mesma forma, quando éramos crianças, nós também estávamos escravizados às coisas elementares do mundo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas, quando se completou o tempo, Deus enviou o seu Filho, que nasceu de uma mulher e estava debaixo de lei,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "para livrar por meio de uma compra os debaixo de lei, para que nós recebêssemos a adoção como filhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Assim, visto que vocês são filhos, Deus enviou o espírito do seu Filho aos nossos corações, e o espírito clama: “Aba, Pai!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "De modo que você não é mais escravo, mas filho; e, se é filho, então Deus também o fez herdeiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Contudo, quando vocês não conheciam a Deus, eram escravos dos que não são realmente deuses.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas, agora que vocês conhecem a Deus, ou melhor, são conhecidos por Deus, como é que voltam novamente às coisas elementares, fracas e mesquinhas, e querem novamente ser escravos delas?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Vocês guardam rigorosamente dias, meses, épocas e anos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Temo por vocês, que de algum modo os meus esforços por vocês tenham sido em vão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Irmãos, eu lhes suplico: Tornem-se como eu, porque eu também era como vocês. Vocês não me fizeram nenhum mal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mas vocês sabem que foi por causa de uma doença que eu pude lhes declarar as boas novas pela primeira vez.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E, embora a minha condição física lhes tenha sido uma provação, vocês não me trataram com desprezo nem com repugnância; mas me receberam como a um anjo de Deus, como a Cristo Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Onde está aquela felicidade de vocês? Pois eu tenho certeza de que, se tivesse sido possível, vocês teriam até arrancado os próprios olhos e os teriam dado a mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Será então que eu me tornei seu inimigo por lhes dizer a verdade?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Eles buscam zelosamente ganhar vocês, mas não com boas intenções; querem afastá-los de mim, para que vocês se dediquem a seguir a eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Na verdade, é sempre bom que alguém procure ganhá-los com boas intenções, e não somente quando estou presente entre vocês,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "que são meus filhinhos, pelos quais estou novamente em dores de parto até que Cristo seja formado em vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Eu queria estar agora presente entre vocês e lhes falar de modo diferente, pois estou perplexo por sua causa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Digam-me, vocês que querem estar debaixo de lei: Não dão ouvidos à Lei?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Por exemplo, está escrito que Abraão teve dois filhos, um com a serva e o outro com a livre;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "mas o filho da serva foi gerado de maneira natural, e o outro, o filho da livre, por meio de uma promessa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Essas coisas são um drama simbólico; pois essas mulheres representam dois pactos, um do monte Sinai, que gera filhos para a escravidão, e que é Agar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Agar representa o Sinai, um monte na Arábia, e corresponde à Jerusalém atual, pois está em escravidão com os seus filhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Mas a Jerusalém de cima é livre, e ela é a nossa mãe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Pois está escrito: “Alegre-se, ó mulher estéril, que não dá à luz; grite de alegria, ó mulher que não tem dores de parto; pois os filhos da mulher abandonada são mais numerosos do que os daquela que tem marido.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Vocês, irmãos, são filhos da promessa, assim como Isaque foi.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Mas, assim como naquele tempo o gerado de maneira natural começou a perseguir o gerado por meio do espírito, assim acontece agora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Contudo, o que dizem as Escrituras? “Expulse a serva e o filho dela, pois o filho da serva de modo algum será herdeiro com o filho da livre.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Portanto, irmãos, não somos filhos de uma serva, mas da livre.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Para tal liberdade é que Cristo nos libertou. Portanto, mantenham-se firmes e não se deixem submeter novamente a um jugo de escravidão.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Prestem atenção! Eu, Paulo, digo-lhes que, se vocês forem circuncidados, Cristo não terá nenhum valor para vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "A todo homem que se submete à circuncisão, declaro novamente que ele está sob a obrigação de cumprir toda a Lei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Vocês que tentam ser declarados justos por meio de lei estão separados de Cristo; excluíram-se da bondade imerecida dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quanto a nós, por espírito aguardamos ansiosamente a esperada justiça que resulta da fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Pois, em união com Cristo Jesus, nem a circuncisão nem a incircuncisão são de valor algum, mas sim a fé que age por meio do amor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Vocês estavam correndo bem. Quem os impediu de continuar obedecendo à verdade?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Esse tipo de persuasão não vem Daquele que os chama.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Um pouco de fermento leveda a massa toda.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Estou confiante em que vocês que estão em união com o Senhor não pensarão de outro modo; mas aquele que os perturba, não importa quem seja, terá o julgamento que merece.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Quanto a mim, irmãos, se eu ainda prego a circuncisão, por que ainda estou sendo perseguido? Nesse caso, a pedra de tropeço da estaca foi eliminada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Eu queria que os homens que estão perturbando vocês castrassem a si mesmos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Vocês foram chamados à liberdade, irmãos. Somente não usem essa liberdade como uma oportunidade para buscar os desejos da carne; ao contrário, por meio do amor, trabalhem como escravos uns para os outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Pois a Lei inteira se cumpre num só mandamento: “Ame o seu próximo como a si mesmo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Se vocês, porém, continuarem mordendo e devorando uns aos outros, cuidado para não serem destruídos uns pelos outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mas eu digo: Continuem andando por espírito, e não executarão nenhum desejo carnal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Pois a carne é contra o espírito no seu desejo, e o espírito contra a carne; eles se opõem um ao outro, de modo que vocês não fazem as coisas que querem fazer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Além disso, se vocês estão sendo conduzidos por espírito, não estão debaixo de lei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "As obras da carne são claramente vistas. Elas são: imoralidade sexual, impureza, conduta insolente,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "idolatria, ocultismo, inimizades, brigas, ciúme, acessos de ira, discórdias, divisões, formação de seitas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "inveja, embriaguez, festas descontroladas e coisas como essas. Eu estou advertindo vocês a respeito dessas coisas, do mesmo modo como já os adverti: os que praticam tais coisas não herdarão o Reino de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Por outro lado, o fruto do espírito é: amor, alegria, paz, paciência, bondade, benignidade, fé,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "brandura, autodomínio. Contra tais coisas não há lei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Além disso, os que pertencem a Cristo Jesus pregaram na estaca a carne com as suas paixões e desejos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Se vivemos por espírito, continuemos também andando de acordo com o espírito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Não nos tornemos presunçosos, atiçando competição uns contra os outros, invejando uns aos outros.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Irmãos, mesmo que um homem, sem perceber, dê um passo em falso, vocês que têm qualificações espirituais tentem reajustar esse homem num espírito de brandura. Mas olhe cada um para si mesmo, para que não seja tentado também.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Continuem levando os fardos uns dos outros e, dessa maneira, vocês cumprirão a lei do Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois, se alguém acha que é alguma coisa, quando não é nada, está enganando a si mesmo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas examine cada um suas próprias ações, e então terá motivo para se alegrar apenas com respeito a si mesmo, e não em comparação com outra pessoa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois cada um levará a sua própria carga.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Além disso, todo aquele a quem a palavra estiver sendo ensinada, partilhe todas as coisas boas com quem lhe ensina.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Não se enganem: de Deus não se zomba. Pois o que a pessoa semear, isso também colherá;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "porque aquele que semeia visando a sua carne colherá da carne destruição, mas aquele que semeia visando o espírito colherá do espírito vida eterna.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Assim, não desistamos de fazer o que é bom, pois colheremos no tempo devido, se não desanimarmos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então, enquanto tivermos oportunidade, façamos o bem a todos, mas especialmente aos que fazem parte da nossa família na fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Vejam com que grandes letras lhes escrevi com a minha própria mão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Aqueles que querem causar uma boa impressão segundo padrões humanos são os que tentam obrigar vocês a ser circuncidados, e eles fazem isso só para não serem perseguidos por causa da estaca do Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Pois mesmo os que se submetem à circuncisão não cumprem a Lei, mas querem que vocês sejam circuncidados para que eles tenham motivo para se gabar do corpo de vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "No entanto, que eu nunca me orgulhe de nada, a não ser da estaca do nosso Senhor Jesus Cristo; por meio dele o mundo, para mim, está morto, e eu estou morto para o mundo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Pois o que importa não é a circuncisão nem a incircuncisão, mas ser uma nova criação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Que haja paz e misericórdia sobre todos os que vivem de acordo com essa regra, sim, sobre o Israel de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "De agora em diante, que ninguém me cause dificuldades, pois trago no corpo as marcas de um escravo de Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Que a bondade imerecida do nosso Senhor Jesus Cristo esteja com o espírito que vocês mostram, irmãos. Amém.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

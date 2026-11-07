@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-font-scope="interface">
+<head>
+<script id="assembleia-app-scope" src="../shared/app-scope.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#f5f7fa">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link id="sentinela-statusbar-style" rel="stylesheet" href="../shared/statusbar.css">
+    <script id="sentinela-statusbar-script" src="../shared/statusbar.js"></script>
+    <title>Login - Sincronização</title>
+    
+    <script>
+      (function() {
+        try {
+          var root = document.documentElement;
+
+          var theme = localStorage.getItem('tema-interface') || 'system';
+          var isDark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          root.setAttribute('data-theme', isDark ? 'dark' : 'light');
+          root.dataset.themeChoice = theme;
+        } catch(e) {}
+      })();
+    </script>
+    
+    <link rel="stylesheet" href="../navbar/navbar-unified.css">
+    
+    <style>
+        :root {
+            --cor-principal: #3F3C6D;
+            --cor-sucesso: #10b981;
+            --cor-erro: #ef4444;
+            --bg-gradient-start: #f5f7fa;
+            --bg-gradient-end: #c3cfe2;
+            --bg-container: #ffffff;
+            --text-title: #375255;
+            --text-subtitle: #6b7280;
+            --text-label: #374151;
+            --bg-input: #fafafa;
+            --border-input: #e5e7eb;
+            --text-input: #1a1a1a;
+            --bg-success: #d1fae5;
+            --text-success: #065f46;
+            --border-success: #10b981;
+            --bg-error: #fee2e2;
+            --text-error: #991b1b;
+            --border-error: #ef4444;
+        }
+
+        [data-theme="dark"] {
+            --cor-principal: #6c66b8;
+            --bg-gradient-start: #1a1a24;
+            --bg-gradient-end: #121212;
+            --bg-container: #1c1c1e;
+            --text-title: #f2f2f7;
+            --text-subtitle: #98989d;
+            --text-label: #ebebf5;
+            --bg-input: #2c2c2e;
+            --border-input: #3a3a3c;
+            --text-input: #f2f2f7;
+            --bg-success: rgba(16, 185, 129, 0.15);
+            --text-success: #34d399;
+            --border-success: rgba(16, 185, 129, 0.3);
+            --bg-error: rgba(239, 68, 68, 0.15);
+            --text-error: #f87171;
+            --border-error: rgba(239, 68, 68, 0.3);
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overscroll-behavior: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+            transition: background 0.3s ease;
+        }
+
+        .page-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100%;
+            min-height: 100dvh;
+            padding: calc(20px + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-right)) calc(90px + env(safe-area-inset-bottom)) calc(20px + env(safe-area-inset-left));
+            box-sizing: border-box;
+        }
+
+        .sync-status-badge {
+            position: fixed;
+            top: calc(50px + env(safe-area-inset-top, 0px));
+            right: calc(15px + env(safe-area-inset-right, 0px));
+            background: #10b981;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            z-index: 999;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
+        }
+
+        .sync-status-badge.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .sync-status-badge.logged-out {
+            background: #6b7280;
+        }
+
+        .auth-container {
+            background: var(--bg-container);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            padding: 28px 24px;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Account controls keep a comfortable, fixed UI scale at every reading level. */
+        .save-screen .auth-container {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .auth-container h2 {
+            font-size: 22px;
+            line-height: 1.3;
+        }
+
+        .auth-container p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        [data-theme="dark"] .auth-container {
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .auth-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--cor-principal), var(--text-title));
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .logo-icon {
+            font-size: 36px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .logo-title {
+            font-size: 24px;
+            line-height: 1.25;
+            font-weight: 700;
+            color: var(--text-title);
+            margin: 0 0 6px;
+            transition: color 0.3s ease;
+        }
+
+        .logo-subtitle {
+            font-size: 14px;
+            margin: 0;
+            color: var(--text-subtitle);
+            transition: color 0.3s ease;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-label);
+            margin-bottom: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .form-input {
+            width: 100%;
+            min-height: 48px;
+            padding: 12px 14px;
+            border: 2px solid var(--border-input);
+            border-radius: 12px;
+            font-size: 16px;
+            line-height: 1.4;
+            transition: all 0.3s ease;
+            background: var(--bg-input);
+            color: var(--text-input);
+            box-sizing: border-box;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--cor-principal);
+            background: var(--bg-container);
+            box-shadow: 0 0 0 3px rgba(108, 102, 184, 0.15);
+        }
+
+        .form-input.error {
+            border-color: var(--cor-erro);
+            background: var(--bg-error);
+        }
+
+        .form-input.success {
+            border-color: var(--cor-sucesso);
+            background: var(--bg-success);
+        }
+
+        .btn {
+            width: 100%;
+            min-height: 48px;
+            padding: 12px 14px;
+            border-radius: 12px;
+            font-family: inherit;
+            font-size: 16px;
+            line-height: 1.35;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            touch-action: manipulation;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .btn-primary {
+            background: var(--cor-principal);
+            color: white;
+            box-shadow: 0 4px 15px rgba(63, 60, 109, 0.3);
+        }
+
+        .btn-primary:active {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(63, 60, 109, 0.4);
+        }
+
+        .btn-secondary {
+            background: #6b7280;
+            color: white;
+        }
+        
+        [data-theme="dark"] .btn-secondary {
+            background: #48484a;
+        }
+
+        .btn-secondary:active {
+            background: #4b5563;
+        }
+
+        .btn-load {
+            background: #17a2b8;
+            color: white;
+        }
+        
+        [data-theme="dark"] .btn-load {
+            background: #0c7489;
+        }
+
+        .btn-load:active {
+            background: #138496;
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+
+        .auth-switch {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: var(--text-subtitle);
+        }
+
+        .auth-switch button {
+            background: none;
+            border: none;
+            color: var(--cor-principal);
+            font: inherit;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .message {
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .message.success {
+            background: var(--bg-success);
+            color: var(--text-success);
+            border: 1px solid var(--border-success);
+        }
+
+        .message.error {
+            background: var(--bg-error);
+            color: var(--text-error);
+            border: 1px solid var(--border-error);
+        }
+
+        .screen {
+            display: none;
+        }
+
+        .screen.active {
+            display: block;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .loading::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 16px;
+            height: 16px;
+            margin: -8px 0 0 -8px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .offline-section {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border-input);
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 6px;
+            background: var(--border-input);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 12px 0;
+            display: none;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            width: 0%;
+            background: var(--cor-sucesso);
+            transition: width 0.2s ease;
+        }
+
+        .progress-text {
+            font-size: 13px;
+            color: var(--text-subtitle);
+            text-align: center;
+            margin-bottom: 12px;
+            display: none;
+        }
+
+        .btn-danger {
+            background: var(--cor-erro);
+            color: white;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.2);
+        }
+
+        .btn-danger:active {
+            background: #dc2626;
+        }
+    </style>
+<script id="sentinela-typography-script" src="../shared/typography.js"></script>
+<link id="sentinela-typography-style" rel="stylesheet" href="../shared/typography.css">
+</head>
+<body class="save-screen">
+    <div class="page-wrapper">
+        <div class="auth-container">
+            <div class="logo">
+                <div class="logo-icon">💾</div>
+                <h1 class="logo-title">Sincronização</h1>
+                <p class="logo-subtitle">Suas anotações em todos os dispositivos</p>
+            </div>
+
+            <div class="screen active" id="login-screen">
+                <div class="form-group">
+                    <label class="form-label" for="login-usuario">Nome de usuário</label>
+                    <input type="text" id="login-usuario" class="form-input" placeholder="Digite seu nome de usuário" autocomplete="username">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="login-senha">Senha</label>
+                    <input type="password" id="login-senha" class="form-input" placeholder="Digite sua senha" autocomplete="current-password">
+                </div>
+                
+                <button class="btn btn-primary" id="btn-login">
+                    Entrar
+                </button>
+                
+                <button class="btn btn-secondary" id="btn-voltar">
+                    Voltar sem Sincronizar
+                </button>
+                
+                <div class="auth-switch">
+                    Primeira vez aqui? 
+                    <button id="switch-to-register">Criar conta</button>
+                </div>
+            </div>
+
+            <div class="screen" id="register-screen">
+                <div class="form-group">
+                    <label class="form-label" for="register-usuario">Nome de usuário</label>
+                    <input type="text" id="register-usuario" class="form-input" placeholder="Escolha um nome único" autocomplete="username">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="register-senha">Senha</label>
+                    <input type="password" id="register-senha" class="form-input" placeholder="Crie uma senha" autocomplete="new-password">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="register-nome">Nome completo</label>
+                    <input type="text" id="register-nome" class="form-input" placeholder="Como você gostaria de ser chamado?">
+                </div>
+                
+                <button class="btn btn-primary" id="btn-register">
+                    Criar Conta
+                </button>
+                
+                <button class="btn btn-secondary" id="btn-voltar-register">
+                    Voltar sem Sincronizar
+                </button>
+                
+                <div class="auth-switch">
+                    Já tem uma conta? 
+                    <button id="switch-to-login">Fazer login</button>
+                </div>
+            </div>
+
+            <div class="screen" id="logged-screen">
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <div style="font-size: 36px; margin-bottom: 15px;">👤</div>
+                    <h2 style="color: var(--text-title); margin-bottom: 10px;" id="logged-user-name">Usuário Logado</h2>
+                    <p style="color: var(--text-subtitle);" id="logged-user-info">Suas anotações estão sincronizadas</p>
+                </div>
+
+                <div class="message success">
+                    ✅ Você já está logado e sincronizando suas anotações automaticamente
+                </div>
+                
+                <button class="btn btn-load" id="btn-carregar-conteudo">
+                    📥 Carregar Conteúdo Salvo
+                </button>
+                
+                <button class="btn btn-primary" id="btn-continuar-logged">
+                    Continuar
+                </button>
+                
+                <button class="btn btn-secondary" id="btn-logout">
+                    Fazer Logout
+                </button>
+            </div>
+
+            <div class="screen" id="success-screen">
+                <div class="message success" id="success-message">
+                    Login realizado com sucesso!
+                </div>
+                
+                <div style="text-align: center; margin: 30px 0;">
+                    <div style="font-size: 32px; margin-bottom: 15px;">✅</div>
+                    <h2 style="color: var(--text-title); margin-bottom: 10px;">Bem-vindo!</h2>
+                    <p style="color: var(--text-subtitle);" id="welcome-text">Suas anotações estão sincronizadas</p>
+                </div>
+                
+                <button class="btn btn-load" id="btn-carregar-sucesso">
+                    📥 Carregar Conteúdo Salvo
+                </button>
+                
+                <button class="btn btn-primary" id="btn-continuar">
+                    Continuar
+                </button>
+            </div>
+
+            <div class="message error" id="error-message" style="display: none;">
+                <span id="error-text"></span>
+            </div>
+
+            <div class="offline-section">
+                <div style="text-align: center; margin-bottom: 15px;">
+                    <div style="font-size: 28px; margin-bottom: 5px;">✈️</div>
+                    <h3 style="color: var(--text-title); margin: 0; font-size: 18px;">Modo Offline</h3>
+                    <p style="color: var(--text-subtitle); margin-top: 5px;">Baixe a programação, o aplicativo e a Bíblia para usar sem internet. Os estudos são baixados pela aba A Sentinela.</p>
+                </div>
+                
+                <div class="progress-bar-container" id="offline-progress-container">
+                    <div class="progress-bar-fill" id="offline-progress-fill"></div>
+                </div>
+                <div class="progress-text" id="offline-progress-text">0%</div>
+
+                <button class="btn btn-secondary" id="btn-offline-toggle">
+                    ⬇️ Baixar App para Modo Offline
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sync-status-badge" id="sync-status-badge">
+        <span id="sync-status-text">Não logado</span>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="supabase.js"></script>
+    <script src="../navbar/navbar-unified.js"></script>
+    <script src="../navbar/network-sensor.js"></script>
+    <script src="offline-manager.js"></script>
+    
+    <script>
+        class AuthUI {
+            constructor() {
+                this.currentScreen = 'login';
+                this.statusBadge = document.getElementById('sync-status-badge');
+                this.init();
+            }
+
+            init() {
+                this.setupEventListeners();
+                this.checkExistingLogin(); 
+            }
+
+            checkExistingLogin() {
+                const savedUser = localStorage.getItem('supabase_user');
+                if (savedUser) {
+                    try {
+                        const userData = JSON.parse(savedUser);
+                        this.showStatusBadge(`Logado: ${userData.nome || userData.usuario}`, 'success');
+                        this.showLoggedUserScreen(userData);
+                        this.validateUserInBackground(userData);
+                    } catch (e) {
+                        localStorage.removeItem('supabase_user');
+                        this.showStatusBadge('Login corrompido removido', 'logged-out');
+                    }
+                } else {
+                    this.showStatusBadge('Não logado', 'logged-out');
+                }
+            }
+
+            async validateUserInBackground(userData) {
+                if (!navigator.onLine) return;
+                try {
+                    const { data: validUser, error } = await window.SupabaseSync.supabase
+                        .from('usuarios')
+                        .select('*')
+                        .eq('id', userData.id)
+                        .single();
+                    
+                    if (error) {
+                        if (error.code === 'PGRST301' || error.message.includes('network') || error.message.includes('fetch')) {
+                            return;
+                        }
+                        if (error.code === 'PGRST116') {
+                            localStorage.removeItem('supabase_user');
+                            this.checkExistingLogin();
+                        }
+                    }
+                } catch (networkError) {}
+            }
+
+            showLoggedUserScreen(userData) {
+                document.getElementById('logged-user-name').textContent = userData.nome || userData.usuario;
+                document.getElementById('logged-user-info').textContent = `Logado como: ${userData.usuario}`;
+                this.showScreen('logged');
+            }
+
+            async handleLogout() {
+                const btn = document.getElementById('btn-logout');
+                btn.classList.add('loading');
+                btn.disabled = true;
+
+                try {
+                    if (window.SupabaseSync) window.SupabaseSync.logout();
+                    localStorage.removeItem('supabase_user');
+                    localStorage.removeItem('last_login');
+                    this.showStatusBadge('👋 Logout realizado', 'logged-out');
+                    
+                    setTimeout(() => {
+                        this.showScreen('login');
+                        document.getElementById('login-usuario').value = '';
+                        document.getElementById('login-senha').value = '';
+                        setTimeout(() => { this.showStatusBadge('Não logado', 'logged-out'); }, 500);
+                    }, 1500);
+                } catch (error) {
+                    this.showStatusBadge('❌ Erro no logout', 'error');
+                }
+                btn.classList.remove('loading');
+                btn.disabled = false;
+            }
+
+            async handleLoadContent() {
+                const btn = event.target;
+                btn.classList.add('loading');
+                btn.disabled = true;
+                btn.textContent = 'Carregando...';
+
+                try {
+                    this.showStatusBadge('📥 Carregando conteúdo...', 'loading');
+                    if (window.SyncBridge) {
+                        window.SyncBridge.forceLoadAllPages();
+                        this.showStatusBadge('✅ Conteúdo carregado em todas as páginas!', 'success');
+                        setTimeout(() => { this.redirectToNotes(); }, 2000);
+                    } else {
+                        this.showStatusBadge('❌ Sistema indisponível', 'error');
+                    }
+                } catch (error) {
+                    this.showStatusBadge('❌ Erro ao carregar', 'error');
+                }
+                btn.classList.remove('loading');
+                btn.disabled = false;
+                btn.textContent = '📥 Carregar Conteúdo Salvo';
+            }
+
+            redirectToNotes() {
+                const semanaAtual = this.detectCurrentWeek();
+                window.location.href = `../richtext/container.html${semanaAtual ? '?semana=' + semanaAtual : ''}`;
+            }
+
+            detectCurrentWeek() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const semana = urlParams.get('semana');
+                if (semana) return semana;
+                
+                const hoje = new Date();
+                const dia = hoje.getDay();
+                const diff = dia === 0 ? -6 : 1 - dia;
+                const segunda = new Date(hoje);
+                segunda.setDate(hoje.getDate() + diff);
+                const dd = String(segunda.getDate()).padStart(2, '0');
+                const mm = String(segunda.getMonth() + 1).padStart(2, '0');
+                return `${dd}-${mm}`;
+            }
+
+            showStatusBadge(message, type) {
+                if (!this.statusBadge) return;
+                document.getElementById('sync-status-text').textContent = message;
+                this.statusBadge.classList.remove('logged-out', 'show');
+                if (type === 'success' || type === 'loading') {
+                    this.statusBadge.classList.add('show');
+                } else if (type === 'logged-out') {
+                    this.statusBadge.classList.add('logged-out');
+                }
+            }
+
+            setupEventListeners() {
+                document.getElementById('switch-to-register').onclick = () => this.showScreen('register');
+                document.getElementById('switch-to-login').onclick = () => this.showScreen('login');
+                document.getElementById('btn-login').onclick = () => this.handleLogin();
+                document.getElementById('btn-register').onclick = () => this.handleRegister();
+                document.getElementById('btn-continuar').onclick = () => this.redirectToApp();
+                document.getElementById('btn-continuar-logged').onclick = () => this.redirectToApp();
+                document.getElementById('btn-logout').onclick = () => this.handleLogout();
+                document.getElementById('btn-carregar-conteudo').onclick = () => this.handleLoadContent();
+                document.getElementById('btn-carregar-sucesso').onclick = () => this.handleLoadContent();
+                document.getElementById('btn-voltar').onclick = () => this.redirectToApp();
+                document.getElementById('btn-voltar-register').onclick = () => this.redirectToApp();
+
+                document.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        if (this.currentScreen === 'login') this.handleLogin();
+                        else if (this.currentScreen === 'register') this.handleRegister();
+                    }
+                });
+
+                document.querySelectorAll('.form-input').forEach(input => {
+                    input.addEventListener('blur', () => { window.scrollTo(0, 0); });
+                });
+            }
+
+            async handleLogin() {
+                if (!navigator.onLine) {
+                    this.showError('Sem conexão com a internet.');
+                    return;
+                }
+                const usuario = document.getElementById('login-usuario').value.trim();
+                const senha = document.getElementById('login-senha').value;
+
+                if (!this.validateInput(usuario, senha)) return;
+
+                const btn = document.getElementById('btn-login');
+                btn.classList.add('loading');
+                btn.disabled = true;
+
+                try {
+                    const result = await window.SupabaseSync.logarUsuario(usuario, senha);
+                    if (result.success) {
+                        this.showSuccess(`Bem-vindo, ${result.userData.nome_completo || usuario}!`);
+                        if (window.UnifiedNavbar && window.UnifiedNavbar.get()) {
+                            window.UnifiedNavbar.get().onLoginSuccess(result.userData);
+                        }
+                        setTimeout(() => {
+                            if (window.SyncBridge) window.SyncBridge.forceLoadAllPages();
+                        }, 1000);
+                    } else {
+                        this.showError(result.error);
+                    }
+                } catch (error) {
+                    this.showError('Erro de conexão');
+                }
+
+                btn.classList.remove('loading');
+                btn.disabled = false;
+            }
+
+            async handleRegister() {
+                if (!navigator.onLine) {
+                    this.showError('Sem conexão com a internet.');
+                    return;
+                }
+                const usuario = document.getElementById('register-usuario').value.trim();
+                const senha = document.getElementById('register-senha').value;
+                const nome = document.getElementById('register-nome').value.trim();
+
+                if (!this.validateInput(usuario, senha)) return;
+
+                const btn = document.getElementById('btn-register');
+                btn.classList.add('loading');
+                btn.disabled = true;
+
+                try {
+                    const result = await window.SupabaseSync.cadastrarUsuario(usuario, senha, nome);
+                    if (result.success) {
+                        const loginResult = await window.SupabaseSync.logarUsuario(usuario, senha);
+                        if (loginResult.success) {
+                            this.showSuccess(`Conta criada! Bem-vindo, ${nome || usuario}!`);
+                            if (window.UnifiedNavbar && window.UnifiedNavbar.get()) {
+                                window.UnifiedNavbar.get().onLoginSuccess(loginResult.userData);
+                            }
+                        }
+                    } else {
+                        this.showError(result.error);
+                    }
+                } catch (error) {
+                    this.showError('Erro de conexão');
+                }
+
+                btn.classList.remove('loading');
+                btn.disabled = false;
+            }
+
+            validateInput(usuario, senha) {
+                document.querySelectorAll('.form-input').forEach(i => i.classList.remove('error', 'success'));
+                let valid = true;
+                if (!usuario || usuario.length < 3) {
+                    this.showError('Nome de usuário deve ter pelo menos 3 caracteres');
+                    document.getElementById(this.currentScreen + '-usuario').classList.add('error');
+                    valid = false;
+                }
+                if (!senha || senha.length < 4) {
+                    this.showError('Senha deve ter pelo menos 4 caracteres');
+                    document.getElementById(this.currentScreen + '-senha').classList.add('error');
+                    valid = false;
+                }
+                if (usuario && !/^[a-zA-Z0-9_-]+$/.test(usuario)) {
+                    this.showError('Nome deve ter apenas letras, números, _ ou -');
+                    document.getElementById(this.currentScreen + '-usuario').classList.add('error');
+                    valid = false;
+                }
+                return valid;
+            }
+
+            showScreen(screenName) {
+                document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+                document.getElementById(`${screenName}-screen`).classList.add('active');
+                this.currentScreen = screenName;
+                this.hideError();
+            }
+
+            showError(message) {
+                const error = document.getElementById('error-message');
+                document.getElementById('error-text').textContent = message;
+                error.style.display = 'block';
+                setTimeout(() => this.hideError(), 5000);
+            }
+
+            hideError() {
+                document.getElementById('error-message').style.display = 'none';
+            }
+
+            showSuccess(message) {
+                document.getElementById('success-message').textContent = message;
+                const user = window.SupabaseSync.getCurrentUser();
+                document.getElementById('welcome-text').textContent = `Logado como: ${user.usuario}`;
+                this.showScreen('success');
+            }
+
+            redirectToApp() {
+                const returnUrl = new URLSearchParams(window.location.search).get('return') || '../index.html';
+                window.location.href = returnUrl;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new AuthUI();
+            setTimeout(() => {
+                if (window.UnifiedNavbar && window.UnifiedNavbar.get()) {
+                    window.UnifiedNavbar.setActivePage('save');
+                }
+            }, 200);
+        });
+    </script>
+</body>
+</html>

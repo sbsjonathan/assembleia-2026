@@ -1,0 +1,72 @@
+/* A fixed, full-width, solid surface is also sampled by native WebKit chrome.
+ * Keep it taller than 10px: env(safe-area-inset-top) may legitimately be zero.
+ * The home page keeps its existing translucent treatment without this strip.
+ */
+:root { --statusbar-build: "2026.11.03.14"; }
+#app-solid-statusbar { display: none; }
+html[data-native-statusbar="solid"] {
+    --app-statusbar-height: max(12px, env(safe-area-inset-top, 0px));
+}
+html[data-native-statusbar="solid"] #app-solid-statusbar {
+    display: block;
+    position: fixed;
+    inset: 0 0 auto;
+    height: var(--app-statusbar-height);
+    z-index: 12050;
+    pointer-events: none;
+    opacity: 1;
+    background: #fff;
+    filter: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    transform: none;
+    transition: none;
+}
+html[data-statusbar-surface="article"] #app-solid-statusbar {
+    background-color: var(--cor-principal-estudo, #f4f4f7);
+}
+html[data-statusbar-surface="bible"] #app-solid-statusbar {
+    background-color: var(--chrome, #d8d8d8);
+}
+html[data-statusbar-surface="notes"] #app-solid-statusbar {
+    background-color: var(--bg-color, #fbfbfa);
+}
+html[data-statusbar-surface="save"] #app-solid-statusbar {
+    background-color: var(--bg-gradient-start, #f5f7fa);
+}
+html[data-statusbar-surface="recovery"] #app-solid-statusbar {
+    background-color: #f4f3f6;
+}
+
+/* Reserve the painted area above the header's text and controls. No changes to
+ * the document's scroll owner, viewport height or bottom navigation geometry. */
+html[data-native-statusbar="solid"][data-statusbar-surface="article"] {
+    --safe-top: var(--app-statusbar-height);
+}
+html[data-native-statusbar="solid"] .app-header {
+    height: calc(var(--header) + var(--app-statusbar-height));
+    padding-top: var(--app-statusbar-height);
+}
+html[data-native-statusbar="solid"] .section-tabs {
+    top: calc(var(--header) + var(--app-statusbar-height));
+}
+html[data-native-statusbar="solid"] .sentinela-bible .reader {
+    min-height: calc(100dvh - var(--header) - var(--bible-menu-height) - var(--app-statusbar-height));
+}
+html[data-native-statusbar="solid"] .study-article-header {
+    min-height: calc(44px + var(--app-statusbar-height));
+    padding-top: var(--app-statusbar-height);
+}
+html[data-native-statusbar="solid"] .study-reference {
+    min-height: calc(100dvh - 44px - var(--bible-menu-height) - var(--app-statusbar-height));
+}
+html[data-native-statusbar="solid"] #search-dialog.bible-search-dialog {
+    padding-top: var(--app-statusbar-height);
+}
+html[data-native-statusbar="solid"] .editor-scroll {
+    padding-top: max(calc(18px * var(--font-scale-global, 1)), var(--app-statusbar-height));
+}
+html[data-native-statusbar="solid"].zoom-viewer-open #app-solid-statusbar,
+html[data-native-statusbar="solid"].zoom-viewer-closing #app-solid-statusbar {
+    background-color: #000;
+}

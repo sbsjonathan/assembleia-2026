@@ -1,0 +1,265 @@
+{
+  "nome_do_livro": "Jonas",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Jonas, filho de Amitai, recebeu a seguinte palavra de Jeová:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“Vá agora a Nínive, a grande cidade, e profira uma sentença contra ela, pois tomei conhecimento da maldade deles.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mas Jonas resolveu fugir de Jeová e ir para Társis; ele desceu a Jope e encontrou um navio que ia para Társis. Pagou então a passagem e embarcou, a fim de ir com os que estavam no navio para Társis, para longe de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Então Jeová lançou um forte vento sobre o mar, e houve uma tempestade tão violenta no mar que o navio estava prestes a naufragar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Os marinheiros ficaram com tanto medo que cada um começou a clamar ao seu deus por socorro. E começaram a jogar no mar os objetos que havia no navio, para deixá-lo mais leve. Mas Jonas tinha descido ao porão do navio, onde se deitou e dormiu profundamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "O capitão do navio se aproximou dele e disse: “Por que você está dormindo? Levante-se, clame ao seu deus! Talvez o verdadeiro Deus mostre que se importa conosco, e não morreremos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Então disseram uns aos outros: “Venham, vamos lançar sortes para descobrir quem é o culpado por esta calamidade.” Assim lançaram sortes, e a sorte caiu para Jonas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Eles lhe disseram: “Diga-nos, por favor, de quem é a culpa por esta calamidade que veio sobre nós? Qual é o seu trabalho, e de onde você vem? Qual é o seu país, e de que povo você é?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Ele respondeu: “Sou hebreu e temo a Jeová, o Deus dos céus, aquele que fez o mar e a terra seca.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então os homens ficaram com mais medo ainda e lhe perguntaram: “O que você fez?” (Os homens ficaram sabendo que ele estava fugindo de Jeová, porque ele havia contado isso a eles.)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E lhe perguntaram: “O que devemos fazer com você para que o mar se acalme?” Pois o mar estava ficando cada vez mais agitado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ele respondeu: “Peguem-me e joguem-me no mar, e o mar ficará calmo; porque sei que é por minha causa que esta violenta tempestade veio sobre vocês.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Contudo, os homens remaram com força para levar o navio de volta a terra seca, mas não conseguiram, porque o mar ficava cada vez mais agitado em volta deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Então eles clamaram a Jeová: “Ó Jeová, por favor, não nos deixes morrer por causa deste homem! Não nos consideres responsáveis por derramar sangue inocente, visto que fizeste conforme a tua vontade, ó Jeová!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Então pegaram Jonas e o jogaram no mar, e o mar se acalmou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Em vista disso, os homens ficaram cheios de temor de Jeová, e ofereceram um sacrifício a Jeová e fizeram votos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "E Jeová enviou um grande peixe para engolir Jonas, de modo que Jonas ficou três dias e três noites no ventre do peixe.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então Jonas orou a Jeová, seu Deus, do ventre do peixe,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "dizendo: “Na minha aflição clamei a Jeová, e ele me respondeu. Das profundezas da Sepultura clamei por ajuda. Ouviste a minha voz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Quando me lançaste nas profundezas, no coração do alto-mar, As correntezas me engoliram. Todas as tuas ondas poderosas passaram sobre mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "E eu disse: ‘Fui expulso de diante dos teus olhos! Como olharei novamente para o teu santo templo?’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "As águas me engoliram e ameaçaram a minha vida; Águas profundas me cercaram. Algas se enrolaram na minha cabeça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Afundei até a base dos montes. As trancas da terra estavam se fechando sobre mim para sempre. Mas fizeste a minha vida subir da cova, ó Jeová, meu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Quando a minha vida estava se desvanecendo, foi de Jeová que me lembrei. Então a minha oração chegou a ti, dentro do teu santo templo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Os que dão devoção a ídolos que nada valem abandonam a Fonte do amor leal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas, quanto a mim, com expressões de agradecimento oferecerei sacrifícios a ti. O que votei, vou cumprir. A salvação vem de Jeová.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então Jeová deu ordem ao peixe, e ele vomitou Jonas em terra seca.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então Jonas recebeu pela segunda vez a palavra de Jeová:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“Vá agora a Nínive, a grande cidade, e transmita-lhe a mensagem que eu lhe disser.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Assim, Jonas foi imediatamente a Nínive, em obediência à palavra de Jeová. Nínive era uma cidade muito grande — levava-se três dias para percorrê-la.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Então Jonas entrou na cidade e percorreu a distância de um dia, proclamando: “Em apenas mais 40 dias, Nínive será destruída.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "E os homens de Nínive, desde o maior até o menor deles, depositaram fé em Deus; eles proclamaram um jejum e se vestiram com pano de saco.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Quando a mensagem chegou ao rei de Nínive, ele se levantou do trono, tirou seu manto real, cobriu-se com pano de saco e sentou-se nas cinzas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Além disso, fez uma proclamação em toda a Nínive: “Por decreto do rei e dos seus nobres: Nenhum homem nem animal, bois ou ovelhas, deve comer coisa alguma. Não devem comer, nem beber água.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Que sejam cobertos com pano de saco, tanto homem como animal; que clamem a Deus fervorosamente, e que abandonem seus maus caminhos e a violência que praticam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Quem sabe se o verdadeiro Deus não reconsiderará o que pretende fazer e abandonará sua ira ardente, para que não morramos?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Quando o verdadeiro Deus viu o que eles fizeram, que tinham recuado dos seus maus caminhos, reconsiderou a calamidade que tinha dito que traria sobre eles, e não a trouxe.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Mas isso desagradou muito a Jonas, e ele ficou muito irado.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Então ele orou a Jeová: “Ó Jeová, não era essa a minha preocupação quando eu estava na minha terra? É por isso que eu tentei fugir para Társis na primeira vez, pois sabia que és um Deus compassivo e misericordioso, paciente e cheio de amor leal, e que fica muito triste com a calamidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Agora, ó Jeová, por favor, tira a minha vida, pois para mim é melhor morrer do que viver.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Jeová perguntou: “Você acha certo ficar tão irado?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Jonas saiu então da cidade e se sentou ao leste da cidade. Ali ele fez para si um abrigo e se sentou à sua sombra para ver o que aconteceria à cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Então Jeová Deus fez com que um cabaceiro crescesse sobre Jonas para fazer sombra sobre a sua cabeça e para aliviar a sua aflição. E Jonas ficou muito contente com o cabaceiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas, ao raiar o dia seguinte, o verdadeiro Deus fez com que um verme atacasse o cabaceiro, e este secou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quando o sol começou a brilhar, Deus também fez soprar um vento leste abrasador, e o sol castigava a cabeça de Jonas, e ele estava quase desmaiando. Ele pedia para morrer e dizia: “Para mim é melhor morrer do que viver.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Deus perguntou a Jonas: “Você acha certo ficar tão irado por causa do cabaceiro?” E ele respondeu: “Eu tenho razão para ficar irado, tão irado que quero morrer.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Mas Jeová disse: “Você teve pena do cabaceiro, que você não cultivou nem fez crescer; ele cresceu numa noite e morreu numa noite.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Será que eu também não deveria ter pena de Nínive, a grande cidade, em que há mais de 120. 000 homens que não sabem nem mesmo a diferença entre o certo e o errado, além de seus muitos animais?”",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

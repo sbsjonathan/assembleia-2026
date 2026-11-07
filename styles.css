@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap');
+
+@property --c {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #6c5ce7;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { height: 100%; background: var(--bg); }
+
+:root {
+  --c: #6c5ce7;
+  --bg: transparent;
+  --ink: #f6f6f8;
+  --ink-2: rgba(235, 236, 245, 0.6);
+  --dock: color-mix(in srgb, var(--c) 16%, #0d0d10);
+  --hair: rgba(255, 255, 255, 0.12);
+  --btn-2: rgba(255, 255, 255, 0.09);
+  transition: --c 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: transparent;
+    --ink: #16161b;
+    --ink-2: rgba(40, 42, 54, 0.6);
+    --dock: color-mix(in srgb, var(--c) 8%, #ffffff);
+    --hair: rgba(0, 0, 0, 0.09);
+    --btn-2: rgba(0, 0, 0, 0.05);
+  }
+}
+
+body {
+  font-family: 'Noto Sans', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* O iOS pode sobrepor a barra de status (safe-top > 0) ou reservá-la fora da página.
+   No primeiro caso, dvh pode omitir esse inset até o documento ocupar a tela.
+   No segundo, 100vh pode incluir uma área que a página não pode usar. Somamos
+   somente o inset superior a dvh e limitamos a vh, inclusive após essa expansão.
+   O inset inferior já pertence ao padding do menu; não deve ser somado aqui. */
+body.home-screen.is-pwa.with-bottom-navbar {
+  position: relative;
+  inset: auto;
+  height: 100vh;
+  height: min(100vh, calc(100dvh + env(safe-area-inset-top, 0px)));
+  padding-bottom: 0 !important;
+}
+
+/* Material fosco atrás do relógio e dos indicadores nativos do iPhone. */
+.home-statusbar { display: none; }
+body.home-screen.is-pwa > .home-statusbar {
+  --statusbar-material: rgba(255, 255, 255, 0.30);
+  --statusbar-solid: #f2f2f7;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: env(safe-area-inset-top, 0px);
+  z-index: 1100;
+  pointer-events: none;
+  background: var(--statusbar-solid);
+}
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  body.home-screen.is-pwa > .home-statusbar {
+    background: var(--statusbar-material);
+    -webkit-backdrop-filter: blur(26px) saturate(180%);
+    backdrop-filter: blur(26px) saturate(180%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body.home-screen.is-pwa > .home-statusbar {
+    --statusbar-material: rgba(28, 28, 30, 0.48);
+    --statusbar-solid: #1c1c1e;
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  body.home-screen.is-pwa > .home-statusbar {
+    background: var(--statusbar-solid);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+body.home-screen.is-pwa > .dock {
+  flex: 0 0 auto;
+}
+
+body.home-screen.is-pwa > .bottom-navbar {
+  position: relative !important;
+  inset: auto !important;
+  flex: 0 0 auto;
+  /* O padding de safe-area do menu continua protegendo o gesto do iPhone. */
+}
+
+.deck {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.deck::-webkit-scrollbar { display: none; }
+
+.issue {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  display: flex;
+  position: relative;
+}
+.cover {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: calc(env(safe-area-inset-top) + 26px) 26px 46px;
+  background:
+    radial-gradient(135% 80% at 22% 14%, color-mix(in srgb, var(--cc) 60%, white) 0%, transparent 52%),
+    radial-gradient(120% 92% at 86% 6%, color-mix(in srgb, var(--cc) 40%, white) 0%, transparent 44%),
+    linear-gradient(164deg, var(--cc) 0%, color-mix(in srgb, var(--cc) 50%, black) 100%);
+}
+.cover-img {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position: center 28%;
+  background-repeat: no-repeat;
+}
+.glow {
+  position: absolute;
+  z-index: 1;
+  top: -20%;
+  left: 8%;
+  width: 70%;
+  height: 60%;
+  background: radial-gradient(closest-side, rgba(255,255,255,0.42), transparent);
+  opacity: 0.3;
+  filter: blur(8px);
+  pointer-events: none;
+  animation: drift 16s ease-in-out infinite alternate;
+}
+.cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.18) 30%, transparent 54%);
+  pointer-events: none;
+}
+.cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+  opacity: 0.08;
+  pointer-events: none;
+}
+.cover-top {
+  position: absolute;
+  z-index: 3;
+  top: calc(env(safe-area-inset-top) + 20px);
+  left: 26px;
+  right: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.pill {
+  font: 600 12.5px/1 'Noto Sans';
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  padding: 8px 13px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+.badge {
+  font: 700 11px/1 'Noto Sans';
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 7px 11px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+.cover-foot { position: relative; z-index: 3; }
+.kicker {
+  font: 700 11.5px/1 'Noto Sans';
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 12px;
+  animation: rise 0.6s 0.12s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+}
+.title {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
+  font-size: clamp(28px, 7.6vw, 40px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fff;
+  max-width: 16ch;
+  text-wrap: balance;
+  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.22);
+  animation: rise 0.7s 0.2s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+}
+
+.dock {
+  position: relative;
+  z-index: 5;
+  background: var(--dock);
+  border-top: 1px solid var(--hair);
+  border-radius: 28px 28px 0 0;
+  margin-top: -28px;
+  padding: 16px 22px 18px;
+  box-shadow: 0 -16px 38px rgba(0, 0, 0, 0.24);
+  animation: dockUp 0.7s 0.1s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.head h1 { display: none; }
+.meta-l { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.m-date { font: 700 16px 'Noto Sans'; letter-spacing: -0.2px; color: var(--ink); white-space: nowrap; }
+.m-sub { font: 500 12.5px 'Noto Sans'; color: var(--ink-2); }
+.head-chev {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 100px;
+  background: var(--btn-2);
+  color: var(--ink-2);
+  transition: transform 0.36s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.head.recolhido .head-chev { transform: rotate(180deg); }
+.head-chev svg { width: 17px; height: 17px; }
+
+.rail {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-height: 64px;
+  margin-top: 14px;
+  padding: 2px 1px 0;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.rail::-webkit-scrollbar { display: none; }
+.rail.anima { transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, margin-top 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding-top 0.4s ease; }
+.rail.colapsada { max-height: 0; opacity: 0; margin-top: 0; padding-top: 0; pointer-events: none; }
+
+.chip {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  min-width: 50px;
+  font-family: 'Noto Sans';
+  color: var(--ink-2);
+  background: var(--btn-2);
+  border: 1px solid transparent;
+  padding: 8px 12px;
+  border-radius: 14px;
+  transition: color 0.25s, border-color 0.25s, background 0.25s;
+}
+.chip .m { font-size: 10px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; }
+.chip .d { font-size: 15px; font-weight: 700; }
+.chip.active {
+  color: var(--c);
+  border-color: color-mix(in srgb, var(--c) 45%, transparent);
+  background: color-mix(in srgb, var(--c) 12%, transparent);
+}
+
+.actions { display: flex; gap: 10px; margin-top: 16px; }
+.act {
+  flex: 1;
+  height: 53px;
+  border: none;
+  border-radius: 16px;
+  font: 700 15px 'Noto Sans';
+  letter-spacing: -0.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  cursor: pointer;
+  transition: transform 0.12s ease, filter 0.18s ease;
+}
+.act:active { transform: scale(0.97); }
+.act svg { width: 19px; height: 19px; }
+.act-ico { display: inline-flex; }
+.act .ring { width: 19px; height: 19px; }
+.act .ring-fg { transition: stroke-dashoffset 0.25s linear; }
+.act-primary { background: var(--c); color: #fff; }
+.act-primary:active { filter: brightness(1.08); }
+.act-secondary { background: var(--btn-2); color: var(--ink); }
+
+.dots { display: flex; gap: 6px; justify-content: center; margin-top: 16px; height: 7px; }
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+  background: var(--ink-2);
+  opacity: 0.4;
+  cursor: pointer;
+  transition: width 0.32s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s, background 0.4s;
+}
+.dot.on { width: 22px; opacity: 1; background: var(--c); }
+
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes dockUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+@keyframes drift { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(26%, 14%) scale(1.18); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after { animation: none !important; transition: none !important; }
+  .glow { display: none; }
+}

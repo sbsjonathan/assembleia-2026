@@ -1,0 +1,4735 @@
+{
+  "nome_do_livro": "Provérbios",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Provérbios de Salomão, filho de Davi, rei de Israel:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Para aprender sabedoria e disciplina; Para entender declarações profundas;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Para obter a disciplina que dá entendimento, Justiça, bom critério e retidão;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Para dar prudência aos inexperientes; Para dar conhecimento e raciocínio aos jovens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O sábio escuta e assimila mais instrução; O homem que tem entendimento obtém orientação perita",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Para entender provérbios e declarações intrigantes, As palavras dos sábios e os seus enigmas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "O temor de Jeová é o princípio do conhecimento. Apenas os tolos desprezam a sabedoria e a disciplina.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Escute, meu filho, a disciplina do seu pai E não abandone a instrução da sua mãe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Pois são uma linda coroa de flores para a sua cabeça E um belo adorno para o seu pescoço.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Meu filho, se pecadores tentarem seduzi-lo, não se deixe levar por eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Se disserem: “Venha conosco. Vamos armar uma emboscada para derramar sangue. Fiquemos escondidos à espera de vítimas inocentes, só para nos divertir.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Vamos devorá-los vivos, como faz a Sepultura, Inteiros, como os que descem à cova.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Vamos tomar todos os seus preciosos tesouros; Encheremos as nossas casas com despojo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Você devia se juntar a nós, E todos repartiremos por igual o que roubarmos”,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Não vá atrás deles, meu filho. Mantenha seus pés longe do caminho deles,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Pois os pés deles correm para fazer o mal; Eles se apressam em derramar sangue.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Com certeza é inútil estender uma rede quando o pássaro está olhando.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "É por isso que eles ficam de emboscada para derramar sangue; Ficam escondidos para tirar a vida de outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Esses são os caminhos dos que procuram lucro desonesto, Que acaba tirando a vida dos que o obtêm.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "A verdadeira sabedoria grita nas ruas. Ergue a sua voz nas praças.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Clama na esquina das ruas movimentadas. Na entrada dos portões da cidade, ela diz:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "“Até quando vocês, inexperientes, amarão a inexperiência? Até quando vocês, zombadores, terão prazer na zombaria? Até quando vocês, tolos, odiarão o conhecimento?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Acatem a minha repreensão, Então derramarei o meu espírito em seu benefício; Vou fazê-los conhecer as minhas palavras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Eu chamei, mas vocês se negaram a ouvir; Estendi a mão, mas ninguém deu atenção.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Vocês desconsideraram todos os meus conselhos E rejeitaram a minha repreensão;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Por isso, vou rir da sua desgraça, Vou zombar quando acontecer aquilo que vocês temem,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Quando aquilo que vocês temem vier como uma tempestade, E a sua desgraça chegar como um vendaval, Quando vierem sobre vocês aflição e dificuldades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Naquele tempo eles me chamarão, mas eu não responderei; Procurarão ansiosamente por mim, mas não me acharão,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Porque odiaram o conhecimento E não quiseram temer a Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Não aceitaram os meus conselhos; Eles desconsideraram todas as minhas repreensões.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Portanto, sofrerão as consequências do seu proceder E ficarão empanturrados com os seus próprios planos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Pois a rebeldia dos inexperientes os matará, E a despreocupação dos tolos os destruirá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Mas quem me escuta residirá em segurança E ficará tranquilo, sem temer nenhuma calamidade.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Meu filho, se você aceitar as minhas declarações E guardar no coração os meus mandamentos,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Ouvindo atentamente a sabedoria E inclinando o seu coração ao discernimento;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Além disso, se você clamar pelo entendimento E erguer a voz pedindo discernimento;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Se você persistir em procurar essas coisas como a prata E continuar a buscá-las como a tesouros escondidos;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Então você entenderá o que significa temer a Jeová E achará o conhecimento de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Pois é Jeová quem dá sabedoria; Da sua boca procedem conhecimento e discernimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Ele reserva a sabedoria prática para os justos; É um escudo para os que andam em integridade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Ele protege as veredas da justiça E guarda o caminho dos que lhe são leais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Assim você entenderá o que é certo, justo e direito, Todo o caminho do bem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Quando a sabedoria entrar no seu coração E o conhecimento se tornar agradável para a sua alma,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "O raciocínio o guardará E o discernimento o protegerá,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Para salvá-lo do mau caminho, Dos homens que falam perversidades,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Dos que abandonam as veredas retas Para andar nos caminhos da escuridão,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Dos que se alegram em fazer o que é mau E se agradam de coisas más e perversas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Aqueles cujos caminhos são tortuosos, E cujas veredas são sempre sinuosas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "A sabedoria o salvará da mulher devassa, Das palavras macias da mulher imoral,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Que abandona o companheiro da sua juventude E se esquece do pacto com o seu Deus;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Pois a casa da mulher imoral conduz à morte; E seus caminhos, aos impotentes na morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Ninguém que se envolve com ela voltará, Nem retornará às veredas da vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Por isso, siga o caminho das pessoas de bem E mantenha-se nas veredas dos justos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Pois apenas os justos morarão na terra, E os irrepreensíveis permanecerão nela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Quanto aos maus, serão eliminados da terra; E os traiçoeiros serão arrancados dela.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Meu filho, não se esqueça dos meus ensinamentos, E que o seu coração obedeça aos meus mandamentos,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Porque eles lhe acrescentarão muitos dias E anos de vida e paz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Que o amor leal e a fidelidade não o abandonem. Coloque-os em volta do pescoço; Escreva-os na tábua do seu coração;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Então você ganhará favor e terá grande entendimento Aos olhos de Deus e dos homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Confie em Jeová de todo o seu coração; Não confie no seu próprio entendimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Lembre-se dele em todos os seus caminhos, E ele endireitará as suas veredas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Não se torne sábio aos seus próprios olhos. Tema a Jeová e afaste-se do mal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Isso será uma cura para o seu corpo E revigoramento para os seus ossos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Honre a Jeová com as suas coisas valiosas, Com as primícias de todas as suas colheitas;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então os seus celeiros ficarão completamente cheios, E os seus tanques de vinho novo transbordarão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Meu filho, não rejeite a disciplina de Jeová, E não abomine a sua repreensão,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois Jeová repreende aqueles a quem ama, Assim como o pai faz com um filho querido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Feliz o homem que acha sabedoria E o homem que obtém discernimento;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Ganhar sabedoria é melhor do que ganhar prata, E obtê-la é melhor do que obter ouro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Ela é mais preciosa do que corais; Nada do que você deseja pode se comparar a ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Na sua mão direita há vida longa; Na esquerda, riquezas e glória.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Seus caminhos são agradáveis, E todas as suas veredas são pacíficas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Ela é árvore de vida para os que se apegam a ela, E os que a agarram serão considerados felizes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Jeová lançou os alicerces da terra com sabedoria. Estabeleceu firmemente os céus com discernimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Pelo seu conhecimento as águas profundas se partiram, E as nuvens destilaram orvalho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Meu filho, não perca essas coisas de vista. Resguarde a sabedoria prática e o raciocínio;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Eles lhe darão vida E serão um adorno para o seu pescoço.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Assim você andará em segurança no seu caminho, E o seu pé nunca tropeçará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Quando você se deitar, não terá medo; Você se deitará, e o seu sono será agradável.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Você não terá medo de nenhum terror repentino, Nem da tempestade que está vindo sobre os maus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Pois Jeová será a sua fonte de confiança, Ele protegerá o seu pé da armadilha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Não deixe de fazer o bem a quem você deve fazê-lo, Se estiver ao seu alcance ajudar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Não diga ao seu próximo: “Vá embora, volte depois! Eu lhe darei algo amanhã”, Se você pode dar algo agora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Não planeje prejudicar o seu próximo, Que mora ao seu lado e confia em você.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Não entre em conflito com um homem sem motivo, Se ele não lhe fez nada de mau.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Não fique com inveja do homem violento, Nem escolha nenhum dos seus caminhos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Pois Jeová detesta a pessoa falsa, Mas tem amizade íntima com os íntegros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "A maldição de Jeová está sobre a casa dos maus, Mas ele abençoa o lar dos justos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Pois ele zomba dos zombadores, Mas mostra favor aos mansos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Os sábios herdarão a honra, Mas os tolos exaltam a desonra.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Escutem, meus filhos, a disciplina de um pai; Prestem atenção para obter entendimento,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois lhes darei boa instrução; Não abandonem os meus ensinamentos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Eu fui um bom filho para o meu pai, E o filho que minha mãe amava muito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Ele me ensinava, dizendo: “Que o seu coração se apegue às minhas palavras. Guarde os meus mandamentos e você viverá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Adquira sabedoria, adquira entendimento. Não se esqueça nem se afaste do que eu digo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Não abandone a sabedoria, e ela o protegerá. Ame-a, e ela o guardará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Sabedoria é a coisa mais importante, então adquira sabedoria; E, além de tudo que você adquirir, adquira entendimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Preze-a muito, e ela o enaltecerá. Se você a abraçar, ela o honrará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Porá na sua cabeça uma linda grinalda; Adornará você com uma coroa de beleza.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Escute, meu filho, e aceite as minhas declarações, E os anos da sua vida serão muitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Vou instruí-lo no caminho da sabedoria; Vou conduzi-lo nas trilhas da retidão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ao andar, nada atrapalhará os seus passos; E, se você correr, não tropeçará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Apegue-se à disciplina; não a largue. Resguarde-a, pois ela significa a sua vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Não entre na vereda dos maus E não ande no caminho dos perversos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Evite-o, não passe por ele; Afaste-se dele e siga em frente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Pois eles não conseguem dormir enquanto não fazem o que é mau. Perdem o sono se não fizerem alguém cair.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Eles comem o pão da maldade E bebem o vinho da violência.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Mas a vereda dos justos é como a brilhante luz da manhã, Que clareia mais e mais até a plena luz do dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "O caminho dos maus é como a escuridão; Eles nem sabem o que os faz tropeçar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Meu filho, preste atenção às minhas palavras; Escute atentamente as minhas declarações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Não as perca de vista; Guarde-as no fundo do coração,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Pois elas são vida para aqueles que as encontram E saúde para todo o seu corpo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Proteja, acima de tudo, o seu coração, Pois dele procedem as fontes da vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Afaste de você a mentira, E ponha longe de si as palavras falsas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Seus olhos devem olhar diretamente para a frente, Sim, fixe o olhar diretamente na sua frente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Torne plana a vereda para os seus pés, E todos os seus caminhos serão seguros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Não se desvie nem para a direita nem para a esquerda. Afaste os seus pés do que é mau.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Meu filho, preste atenção à minha sabedoria. Escute atentamente o meu discernimento,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Para que você proteja o seu raciocínio E resguarde o conhecimento com os seus lábios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois os lábios da mulher imoral gotejam como um favo de mel, E sua boca é mais suave do que o azeite.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas no fim ela é amarga como o absinto E afiada como uma espada de dois gumes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Os pés dela descem para a morte. Seus passos levam diretamente para a Sepultura.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ela não dá atenção ao caminho da vida. Anda sem rumo, sem saber para onde vai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Agora, meus filhos, escutem-me, E não se desviem do que eu digo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Fique longe dela; Não se aproxime da entrada da sua casa,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Para que você não dê a sua dignidade a outros, Nem tenha anos de sofrimento;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Para que estranhos não esgotem os seus recursos, E o fruto do seu trabalho árduo não acabe na casa de um estrangeiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Caso contrário, você vai gemer no fim da sua vida, Quando a sua carne e o seu corpo definharem,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E você disser: “Como eu odiei a disciplina! Como o meu coração desprezou a repreensão!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Não escutei a voz dos meus instrutores, Nem prestei atenção aos meus mestres.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Quase caí em completa ruína À vista de toda a congregação.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Beba a água da sua própria cisterna E a água que brota do seu próprio poço.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Deveriam suas fontes se derramar pelas ruas, Suas correntes de água nas praças?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Que elas sejam somente para você E não repartidas com estranhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Seja abençoada a sua própria fonte, E alegre-se com a esposa da sua juventude,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Amável corça, graciosa cabra-montesa. Que os seus seios o satisfaçam todo o tempo. Que o amor dela sempre o extasie.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Então, meu filho, por que você se deixaria extasiar por uma mulher devassa, Ou abraçaria o seio de uma mulher imoral?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Pois os caminhos do homem estão diante dos olhos de Jeová; Ele examina todas as suas veredas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Quem é mau é enlaçado pelos seus próprios erros, E será apanhado nas cordas do seu próprio pecado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Morrerá por falta de disciplina E se perderá na sua imensa tolice.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Meu filho, se você se tornou fiador do seu próximo, Se apertou a mão de um estranho,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Se foi enlaçado pela sua própria promessa, Se foi apanhado pelas palavras da sua própria boca,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Meu filho, faça o seguinte para se livrar, Pois você caiu nas mãos do seu próximo: Vá se humilhar e suplique logo ao seu próximo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Não feche os olhos para dormir, Nem deixe suas pálpebras descansar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Livre-se como a gazela se livra das mãos do caçador, Como o pássaro das mãos do passarinheiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Vá aprender com a formiga, preguiçoso; Observe os seus caminhos e torne-se sábio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Embora ela não tenha comandante, chefe ou governante,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Prepara suas provisões no verão; Recolhe seu alimento durante a colheita.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Até quando você vai ficar deitado aí, preguiçoso? Quando é que se levantará do seu sono?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Um pouco de sono, um pouco de cochilo, Um pouco de cruzar os braços para descansar,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E a sua pobreza chegará como um ladrão, E a sua carência como um homem armado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "O homem que é mau e imprestável vive falando mentiras;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Pisca o olho, faz sinais com o pé e gesticula com os dedos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Com um coração perverso, Está sempre tramando o mal e semeando discórdias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Por isso, sua desgraça chegará de repente; Num instante ele será arruinado, e não haverá remédio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Há seis coisas que Jeová odeia, Sim, sete coisas que ele detesta:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Olhos arrogantes, língua mentirosa, mãos que derramam sangue inocente,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "O coração que planeja tramas perversas, pés que rapidamente correm para a maldade,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "A testemunha falsa que só fala mentiras E todo aquele que semeia discórdias entre irmãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Meu filho, obedeça ao mandamento do seu pai E não abandone a instrução da sua mãe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Amarre-os sempre no coração; Coloque-os em volta do pescoço.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Quando você andar, eles o guiarão; Quando se deitar, vigiarão sobre você; E, quando acordar, falarão com você.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Pois o mandamento é uma lâmpada, E a lei é uma luz, E as repreensões da disciplina são o caminho para a vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Eles o protegerão da mulher má, Da língua sedutora da mulher imoral.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Não deseje no coração a sua beleza, Nem se deixe seduzir pelos seus olhos provocantes,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Pois a prostituta deixa o homem reduzido a um pedaço de pão, Ao passo que a adúltera caça uma vida preciosa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Será que um homem pode juntar brasas no seu peito sem queimar a roupa?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Será que alguém pode andar sobre brasas sem queimar os pés?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "O mesmo acontece com aquele que tem relações com a esposa do seu próximo; Ninguém que tocar nela ficará impune.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "As pessoas não tratam o ladrão com desprezo Se ele rouba para se satisfazer quando está com fome.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Mesmo assim, quando descoberto, ele devolverá sete vezes mais; Entregará todas as coisas valiosas da sua casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Quem comete adultério com uma mulher não tem bom senso; Aquele que faz isso arruína a si mesmo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Só achará ferimentos e desonra; Sua humilhação nunca se apagará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Pois o ciúme deixa o marido furioso; Ele não terá compaixão quando se vingar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Não aceitará nenhuma compensação; Não se conformará, por mais valioso que seja o presente que você oferecer.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 7,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Meu filho, obedeça às minhas declarações E guarde no coração os meus mandamentos.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Obedeça aos meus mandamentos e você viverá; Guarde a minha instrução como a menina dos seus olhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Amarre-os nos seus dedos; Escreva-os na tábua do seu coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Diga à sabedoria: “Você é minha irmã”, E chame o entendimento de “meu parente”,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Para que o protejam da mulher devassa, Da mulher imoral e de suas palavras macias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Da janela da minha casa, Olhei para baixo através da treliça",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "E, ao observar os ingênuos, Vi entre os jovens um rapaz que não tinha bom senso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Ele passou pela rua perto da esquina dela E foi em direção à casa dela",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "No cair da tarde, quando estava anoitecendo, Ao se aproximar a noite e a escuridão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então vi uma mulher se encontrar com ele, Vestida como prostituta, com astúcia no coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Ela é escandalosa e insolente. Ela nunca fica em casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ora está na rua, ora está nas praças; Fica de emboscada perto de cada esquina.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Ela o agarra e lhe dá um beijo; Com um olhar atrevido, diz a ele:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "“Eu tinha de oferecer sacrifícios de participação em comum; Hoje cumpri os meus votos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Por isso saí para encontrá-lo, Para procurar por você, e o achei!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Arrumei a minha cama com colchas finas, De linho colorido do Egito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Borrifei a minha cama com mirra, aloés e canela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Venha, vamos nos embriagar de amor até o amanhecer; Vamos desfrutar juntos das delícias do amor,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Pois o meu marido não está em casa; Ele viajou para um lugar distante.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Levou uma bolsa de dinheiro E não voltará antes do dia da lua cheia.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Ela o engana com grande persuasão. Ela o seduz com sua conversa suave.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Num instante ele vai atrás dela, como um touro levado ao abate, Como um tolo que vai ser punido no tronco,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Até que uma flecha lhe atravessa o fígado. Assim como um pássaro que voa para a armadilha, ele não sabe que isso lhe custará a vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Agora, meus filhos, escutem-me; Prestem atenção ao que eu digo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Não deixe o seu coração se desviar para os caminhos dela. Não se afaste para as suas veredas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Pois ela já tirou a vida de muitos, E os que ela matou são numerosos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Sua casa leva à Sepultura, Desce aos aposentos da morte.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 8,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "A sabedoria não está clamando? O discernimento não está erguendo a sua voz?",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Nos lugares altos ao longo do caminho, Nos cruzamentos das estradas, ela toma sua posição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Junto aos portões que dão para a cidade, Na entrada dos portões, Ela continua a gritar bem alto:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“Estou chamando a vocês, ó povo; A todos ergo a minha voz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Inexperientes, aprendam a ser prudentes; Tolos, adquiram um coração sábio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Escutem, pois o que eu digo é importante, Meus lábios falam o que é certo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Minha boca fala a verdade em voz baixa, E meus lábios detestam o que é mau.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Todas as declarações da minha boca são justas. Nenhuma delas é deturpada ou enganosa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Todas elas são claras para quem tem discernimento E corretas para os que encontraram conhecimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Aceitem a minha disciplina em vez de prata, E o conhecimento em lugar do ouro da melhor qualidade,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois a sabedoria é melhor do que corais; Nenhuma outra coisa preciosa pode se comparar a ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Eu, a sabedoria, moro com a prudência; Encontrei conhecimento e raciocínio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "O temor de Jeová significa odiar o mal. Eu odeio a arrogância, o orgulho, o caminho mau e declarações perversas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Tenho bons conselhos e sabedoria prática. O entendimento e o poder pertencem a mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Por meio de mim os reis governam, E as autoridades decretam leis justas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Por meio de mim os príncipes governam, E os nobres julgam com justiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Eu amo os que me amam, E os que me procuram me acharão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Comigo há coisas valiosas e glória, Riquezas permanentes e justiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Meu fruto é melhor do que o ouro, sim, do que o ouro refinado, E o que eu produzo é melhor do que a prata da melhor qualidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Eu ando na vereda da retidão, No meio dos caminhos da justiça;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Dou uma valiosa herança aos que me amam, E encho os seus depósitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Jeová me produziu como o princípio do seu caminho, A primeira das suas realizações mais antigas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Fui estabelecida nos tempos antigos, No começo, antes de existir a terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Quando não havia águas profundas, fui produzida, Quando não havia mananciais transbordando de água.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Antes de serem assentadas as montanhas, Antes de haver montes, fui produzida,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Quando ele ainda não havia feito a terra e os seus campos, Nem o primeiro punhado de solo da terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Quando ele preparou os céus, eu estava lá; Quando traçou o horizonte sobre a superfície das águas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Quando ele colocou as nuvens no alto, Quando estabeleceu as fontes das águas profundas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Quando ele decretou ao mar Que suas águas não fossem além do que ele havia ordenado, Quando lançou os alicerces da terra,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Eu estava ao seu lado como trabalhador perito. Eu era a sua maior alegria dia após dia, Alegrava-me diante dele todo o tempo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Eu me alegrava com a terra que ele criou para ser habitada, E minha maior alegria eram os filhos dos homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "E agora, meus filhos, escutem-me, Pois felizes são os que guardam os meus caminhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Escutem a disciplina e tornem-se sábios; Nunca a rejeitem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Feliz o homem que me escuta, Chegando cedo à minha porta dia após dia, Esperando junto à entrada da minha casa;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Pois quem me achar, achará a vida E terá a aprovação de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Mas quem me ignora, prejudica a si mesmo; E os que me odeiam, amam a morte.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 9,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "A verdadeira sabedoria construiu a sua casa; Talhou as suas sete colunas.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Providenciou muita carne, Misturou o seu vinho E também pôs a mesa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Enviou as suas servas Para que clamassem dos lugares altos da cidade:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“Todos os inexperientes, venham para cá!” Ela diz aos que não têm bom senso:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "“Venham, comam o meu pão E bebam o meu vinho misturado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Deixem para trás sua inexperiência e vocês viverão; Sigam em frente no caminho do entendimento.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Quem corrige o zombador procura desonra, E quem repreende aquele que é mau prejudica a si mesmo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Não repreenda o zombador, senão ele o odiará. Repreenda o sábio, e ele o amará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Dê instrução ao sábio, e ele se tornará mais sábio. Ensine o justo, e ele aumentará em conhecimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O temor de Jeová é o início da sabedoria, E conhecer o Santíssimo é entendimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois, por meu intermédio, seus dias serão muitos, E anos serão acrescentados à sua vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Se você for sábio, isso será para o seu próprio bem; Mas, se você for zombador, só você sofrerá as consequências.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "A mulher tola é escandalosa. É ignorante e não sabe absolutamente nada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Ela se senta à entrada da sua casa, Numa cadeira, num lugar alto da cidade,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "E chama os que passam pela estrada, Os que estão seguindo o seu caminho:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "“Todos os inexperientes, venham para cá!” Ela diz aos que não têm bom senso:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "“As águas roubadas são doces, E o pão comido às escondidas é saboroso.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Mas eles não sabem que os impotentes na morte estão ali, Que os convidados dela estão nas profundezas da Sepultura.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 10,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Provérbios de Salomão. O filho sábio alegra o pai, Mas o filho tolo é a tristeza da mãe.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Tesouros obtidos por meios desonestos não servirão para nada, Mas é a retidão que livra da morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Jeová não fará o justo passar fome, Mas negará aos maus o que eles cobiçam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mãos preguiçosas levam à pobreza, Mas mãos diligentes trazem riquezas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O filho que age com perspicácia colhe durante o verão, Mas o filho que age vergonhosamente dorme durante a colheita.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Sobre a cabeça dos justos há bênçãos, Mas a boca dos maus esconde violência.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "O justo será lembrado e abençoado, Mas o nome dos maus apodrecerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quem tem coração sábio aceitará instruções, Mas quem fala de modo tolo cairá na ruína.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Quem anda em integridade andará em segurança, Mas quem perverte os seus caminhos será descoberto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Quem pisca maliciosamente o olho causa sofrimento, E quem fala de modo tolo cairá na ruína.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "A boca dos justos é fonte de vida, Mas a boca dos maus esconde violência.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "O ódio causa brigas, Mas o amor cobre todas as transgressões.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "A sabedoria se encontra nos lábios de quem tem discernimento, Mas a vara é para as costas de quem não tem bom senso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Os sábios guardam conhecimento no coração, Mas a boca do tolo está perto da ruína.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "A riqueza do rico é a sua cidade fortificada. A ruína do pobre é a sua pobreza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "As obras dos justos levam à vida; Mas o fruto do trabalho dos maus leva ao pecado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Quem aceita a disciplina mostra o caminho para a vida, Mas quem ignora a repreensão desencaminha outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Quem esconde seu ódio fala mentiras, E quem espalha calúnias é tolo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Quando as palavras são muitas, a transgressão é inevitável, Mas quem controla a língua age com prudência.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "A língua dos justos é como a prata da melhor qualidade, Mas o coração dos maus é de pouco valor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "As palavras do justo alimentam a muitos, Mas os tolos morrem por não ter bom senso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "É a bênção de Jeová que enriquece, E ele não acrescenta a ela nenhuma dor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Para o tolo, envolver-se em conduta vergonhosa é uma diversão, Mas o homem de discernimento tem sabedoria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Aquilo que os maus temem virá sobre eles, Mas o desejo dos justos lhes será concedido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Quando a tempestade passar, os maus deixarão de existir; Mas o justo é como um alicerce que dura para sempre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Como vinagre nos dentes e fumaça nos olhos, Assim é o preguiçoso para quem o envia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "O temor de Jeová prolonga a vida, Mas os anos dos maus serão abreviados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "A expectativa dos justos traz alegria, Mas a esperança dos maus acabará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "O caminho de Jeová é uma fortaleza para o íntegro, Mas significa ruína para os malfeitores.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Os justos nunca serão derrubados, Mas os maus não morarão mais na terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "A boca dos justos produz sabedoria, Mas a língua perversa será decepada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Os lábios dos justos sabem o que é agradável, Mas a boca dos maus é perversa.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 11,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "A balança desonesta é detestável para Jeová, Mas o peso exato é um prazer para ele.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Quando a presunção vem, a desonra vem em seguida, Mas a sabedoria está com os modestos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "A integridade dos justos é o que os guia, Mas a falsidade dos traiçoeiros os destruirá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "As riquezas não servirão para nada no dia da fúria, Mas é a justiça que livrará da morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "A justiça de quem é íntegro endireita o seu caminho, Mas aquele que é mau cairá por causa da sua própria maldade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "A justiça dos justos os livrará, Mas os traiçoeiros serão apanhados pelos seus próprios desejos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Quando morre alguém mau, sua esperança acaba; E as expectativas baseadas no seu poder também acabam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "O justo é livrado da aflição, E quem é mau fica no lugar dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Com a boca o apóstata arruína seu próximo, Mas pelo conhecimento os justos são salvos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "A bondade dos justos alegra a cidade, E, quando os maus morrem, há gritos de alegria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pela bênção dos justos, a cidade é enaltecida, Mas a boca dos maus a derruba.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quem não tem bom senso trata seu próximo com desprezo, Mas o homem que tem verdadeiro discernimento se mantém calado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "O caluniador espalha segredos, Mas quem é confiável guarda confidência.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Sem orientação perita, o povo cai, Mas com muitos conselheiros há bons resultados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Quem se torna fiador de um estranho certamente terá problemas, Mas quem evita o aperto de mão ficará seguro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "A mulher amável obtém glória, Mas homens impiedosos se apoderam de riquezas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "O homem bondoso faz bem a si mesmo, Mas a pessoa cruel faz mal a si própria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Quem é mau recebe um salário ilusório, Mas quem semeia justiça obtém verdadeira recompensa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Quem toma firme posição a favor da justiça caminha para a vida, Mas quem corre atrás do que é mau caminha para a morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Os que têm o coração tortuoso são detestáveis para Jeová, Mas os que têm um proceder irrepreensível são um prazer para ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Tenha certeza do seguinte: os maus não ficarão impunes, Mas os filhos dos justos escaparão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Como uma argola de ouro no focinho de um porco É a mulher bonita que despreza o bom senso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "O desejo dos justos resulta em bem, Mas aquilo que os maus esperam resulta em fúria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Há quem dá generosamente e acaba com mais; Outro se nega a dar o que deveria e acaba na pobreza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "A pessoa generosa prosperará, E quem reanima outros será ele mesmo reanimado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "O povo vai amaldiçoar quem retém os cereais, Mas vai abençoar aquele que os vende.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Quem procura diligentemente fazer o bem, procura o favor; Mas quem busca o mal, o mal certamente virá sobre ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Quem confia nas suas riquezas cairá, Mas os justos florescerão como a folhagem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Aquele que causa dificuldades à sua casa herdará o vento, E o tolo será servo daquele que tem coração sábio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "O fruto do justo é árvore de vida, E quem ganha almas é sábio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Se, de fato, o justo na terra recebe sua retribuição, Quanto mais o perverso e o pecador!",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 12,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quem ama a disciplina ama o conhecimento, Mas quem odeia a repreensão é insensato.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "A pessoa boa obtém a aprovação de Jeová, Mas ele condena o homem que planeja o mal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Ninguém consegue segurança por meio da maldade, Mas os justos nunca serão desarraigados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "A esposa capaz é uma coroa para o seu marido, Mas a esposa que age de modo vergonhoso é como podridão nos ossos dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Os pensamentos dos justos são corretos, Mas as orientações dos maus são enganosas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "As palavras dos maus são uma emboscada mortal, Mas a boca dos justos os salva.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Quando os maus são derrubados, deixam de existir, Mas a casa dos justos permanecerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "O homem que fala com prudência é elogiado, Mas o de coração tortuoso será tratado com desprezo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Melhor ser uma pessoa comum e ter um servo Do que glorificar a si mesmo e não ter o que comer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O justo cuida dos seus animais domésticos, Mas até a misericórdia dos maus é cruel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Quem cultiva a sua terra terá fartura de alimento, Mas quem se empenha por coisas sem valor não tem bom senso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "O perverso tem inveja do que outros homens maus caçam, Mas a raiz dos justos produz frutos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "A pessoa má é enlaçada pela sua própria conversa pecaminosa, Mas o justo escapa da aflição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Dos frutos das suas palavras o homem se satisfaz com o que é bom, E pelo trabalho das suas mãos ele será recompensado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O caminho do tolo é certo aos seus próprios olhos, Mas o sábio aceita conselho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "O tolo demonstra a sua irritação imediatamente, Mas o homem prudente deixa passar o insulto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "A testemunha fiel fala a verdade, Mas a testemunha falsa fala mentiras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Palavras impensadas são como os golpes de uma espada, Mas a língua dos sábios é uma cura.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Os lábios que dizem a verdade permanecerão para sempre, Mas a língua mentirosa durará apenas um instante.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Há engano no coração dos que tramam a maldade, Mas os que promovem a paz têm alegria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Nenhum mal atingirá o justo, Mas os maus sofrerão muitas calamidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Lábios mentirosos são detestáveis para Jeová, Mas quem age fielmente é um prazer para ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "O homem prudente esconde o que sabe, Mas o coração dos tolos deixa escapar sua tolice.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "A mão diligente governará, Mas a mão preguiçosa fará trabalhos forçados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "A ansiedade sobrecarrega o coração do homem, Mas a boa palavra alegra o coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "O justo explora seus pastos, Mas o proceder dos maus os desencaminha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "O preguiçoso não vai atrás da caça, Mas a diligência é um tesouro precioso para o homem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "O caminho da justiça conduz à vida; Nessa vereda não há morte.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 13,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "O filho sábio aceita a disciplina do pai, Mas o zombador não dá ouvidos à repreensão.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Dos frutos das suas palavras o homem comerá o que é bom, Mas o desejo dos traiçoeiros é a violência.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Quem vigia a boca protege sua vida. Quem não fecha os lábios será arruinado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "O preguiçoso muito deseja e nada tem, Mas o diligente será plenamente satisfeito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O justo odeia mentiras, Mas as ações de quem é mau causam vergonha e desonra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "A justiça protege quem anda no caminho da inocência, Mas a maldade arruína o pecador.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Alguns fingem ser ricos, mas não têm nada; Outros fingem ser pobres, mas têm muitas riquezas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "As riquezas servem de resgate pela vida de um homem, Mas os pobres nem são ameaçados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "A luz dos justos brilha intensamente, Mas a lâmpada dos maus será apagada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "A presunção só causa briga, Mas a sabedoria está com os que buscam conselho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "A riqueza obtida rapidamente vai diminuir, Mas a riqueza de quem ajunta aos poucos vai aumentar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "A expectativa adiada faz adoecer o coração, Mas o desejo realizado é árvore de vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Quem despreza instrução será punido, Mas quem respeita o mandamento será recompensado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "O ensinamento do sábio é fonte de vida E desvia dos laços da morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O profundo entendimento traz favor, Mas o caminho dos traiçoeiros é difícil.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "O homem prudente age com conhecimento, Mas o tolo expõe sua própria tolice.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "O mensageiro perverso cai em desgraça, Mas o enviado fiel traz cura.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Quem rejeita a disciplina acaba em pobreza e desonra, Mas aquele que aceita correção será glorificado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "O desejo realizado é doce para a alma, Mas o tolo odeia se desviar do mal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Quem anda com sábios se tornará sábio, Mas quem se junta com tolos acabará mal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "A calamidade persegue os pecadores, Mas a prosperidade recompensa os justos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "A pessoa boa deixa uma herança para os netos, Mas a riqueza do pecador está reservada para o justo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "A lavoura do pobre produz muito alimento, Mas ela pode ser arrasada pela injustiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Quem refreia a vara odeia seu filho, Mas aquele que o ama não deixa de discipliná-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "O justo come e fica satisfeito, Mas a barriga dos maus fica vazia.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 14,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "A mulher realmente sábia edifica a sua casa, Mas a tola a derruba com as próprias mãos.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Quem anda na sua retidão teme a Jeová, Mas quem segue caminhos sinuosos o despreza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "A vara da arrogância está na boca dos tolos, Mas os lábios dos sábios os protegerão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Onde não há bois, a manjedoura fica limpa; Mas a força do touro produz uma colheita abundante.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "A testemunha fiel não mente, Mas a testemunha falsa só fala mentiras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "O zombador procura sabedoria, e não acha nenhuma, Mas o conhecimento vem facilmente para quem tem entendimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Fique longe do homem tolo, Pois em seus lábios você não encontrará conhecimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "A sabedoria faz o homem prudente entender seu caminho, Mas os insensatos são enganados pela sua tolice.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Os tolos riem da culpa, Mas entre os justos há disposição de fazer as pazes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Cada coração conhece sua própria amargura, E mais ninguém pode participar da sua alegria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "A casa dos maus será destruída, Mas a tenda dos justos florescerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Há um caminho que parece certo ao homem, Mas por fim leva à morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mesmo no riso, o coração talvez sinta dor; E a alegria pode acabar em tristeza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Quem é rebelde no coração colherá as consequências dos seus caminhos, Mas o homem bom colhe a recompensa das suas ações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "A pessoa ingênua acredita em qualquer palavra, Mas quem é prudente pensa bem antes de cada passo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "O sábio é cauteloso e se afasta do mal, Mas o tolo é imprudente e autoconfiante.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Quem se ira facilmente comete tolices, Mas o homem de reflexão é odiado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Os ingênuos herdarão a tolice, Mas os prudentes são coroados com o conhecimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Os maus terão de se curvar diante dos bons, E os perversos se curvarão diante dos portões dos justos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "O pobre é odiado até pelo seu próximo, Mas muitos são os amigos do rico.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Quem despreza o seu próximo comete um pecado, Mas quem tem compaixão dos humildes é feliz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Por acaso não se perderão os que tramam a maldade? Mas os que estão decididos a fazer o bem encontrarão amor leal e fidelidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Há proveito em todo tipo de trabalho árduo, Mas ficar só falando leva à pobreza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "A coroa dos sábios é a sua riqueza, Mas a tolice dos tolos não passa de tolice.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "A testemunha verdadeira salva vidas, Mas a falsa só fala mentiras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "No temor de Jeová o homem encontra forte confiança E um refúgio para os seus filhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "O temor de Jeová é fonte de vida E desvia dos laços da morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Um povo numeroso é a glória do rei, Mas um governante sem súditos está arruinado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Quem não se ira facilmente tem muito discernimento, Mas quem é impaciente demonstra sua tolice.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "O coração calmo é vida para o corpo, Mas o ciúme é podridão para os ossos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Quem defrauda o humilde insulta Aquele que o fez, Mas quem tem compaixão do pobre O glorifica.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Quem é mau será derrubado pela sua própria maldade, Mas o justo se refugiará na sua integridade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "A sabedoria descansa sem alarde no coração dos que têm entendimento, Mas os tolos têm de exibi-la.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "A justiça enaltece uma nação, Mas o pecado é uma vergonha para um povo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "O rei tem prazer no servo que age com perspicácia, Mas fica furioso com aquele que age vergonhosamente.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 15,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Uma resposta branda acalma o furor, Mas uma palavra dura atiça a ira.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "A língua dos sábios faz bom uso do conhecimento, Mas a boca dos tolos jorra tolice.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Os olhos de Jeová estão em todo lugar, Vigiando tanto os maus como os bons.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "A língua calma é árvore de vida, Mas a palavra perversa causa profunda tristeza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O tolo desrespeita a disciplina do pai, Mas quem é prudente aceita correção.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Na casa do justo há muitos tesouros, Mas o fruto do trabalho de quem é mau lhe causa dificuldades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Os lábios dos sábios espalham conhecimento, Mas o coração dos tolos não é assim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "O sacrifício dos maus é detestável para Jeová, Mas a oração dos justos é um prazer para ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Jeová detesta o caminho de quem é mau, Mas ama quem se empenha pela justiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "A disciplina parece ruim para quem abandona o caminho, Mas quem odeia a repreensão morrerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "A Sepultura e o lugar de destruição estão diante dos olhos de Jeová. Quanto mais o coração dos homens!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "O zombador não gosta daquele que o corrige; Ele não consulta os sábios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "O coração alegre ilumina o rosto, Mas o coração angustiado deixa o espírito abatido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "O coração sábio busca conhecimento, Mas a boca dos tolos se alimenta de tolice.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Para o aflito, todos os dias são maus, Mas quem é alegre de coração tem sempre um banquete.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Melhor o pouco com o temor de Jeová Do que muita riqueza com ansiedade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Melhor um prato de verduras onde há amor Do que um boi gordo onde há ódio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "O homem que se irrita facilmente provoca briga, Mas quem é paciente acalma a discussão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "O caminho do preguiçoso é cheio de espinhos, Mas a vereda dos justos é uma estrada plana.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "O filho sábio alegra seu pai, Mas o homem tolo despreza sua mãe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "A tolice alegra quem não tem bom senso, Mas o homem de discernimento caminha direito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Os planos fracassam quando não há comunicação, Mas com muitos conselheiros há bons resultados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "O homem se alegra ao dar uma resposta certa, E como é boa uma palavra no tempo certo!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "O caminho da vida conduz para cima quem tem perspicácia, Para afastá-lo da Sepultura lá embaixo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Jeová derrubará a casa dos arrogantes, Mas protegerá os limites da propriedade da viúva.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Jeová detesta as tramas de quem é mau, Mas declarações agradáveis são puras para Ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Quem obtém lucro desonesto causa dificuldades à sua própria casa, Mas quem odeia o suborno continuará vivo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "O coração do justo medita antes de responder, Mas a boca dos maus jorra coisas más.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Jeová está longe dos maus, Mas ouve a oração dos justos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Olhos radiantes alegram o coração; Uma boa notícia revigora os ossos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Quem escuta a repreensão que dá vida Habita entre os sábios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Quem rejeita a disciplina despreza a sua vida, Mas quem escuta a repreensão obtém entendimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "O temor de Jeová ensina a pessoa a ser sábia, E antes da glória vem a humildade.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 16,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "O homem prepara os pensamentos do seu coração, Mas a resposta que ele dá vem de Jeová.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O homem pensa que todos os seus caminhos são certos, Mas Jeová examina as motivações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Confie a Jeová tudo que você faz, E os seus planos serão bem-sucedidos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Jeová faz que tudo contribua para o seu propósito, Até mesmo os maus para o dia da calamidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Todos os de coração orgulhoso são detestáveis para Jeová. Tenha certeza de que eles não ficarão impunes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Por meio do amor leal e da fidelidade expia-se o erro, E por temer a Jeová a pessoa se afasta do mal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Quando Jeová se agrada dos caminhos de um homem, Faz com que até os seus inimigos fiquem em paz com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Melhor o pouco com justiça Do que muita renda com injustiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "O homem pode traçar no coração o seu caminho, Mas é Jeová quem orienta os seus passos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Os lábios do rei devem proferir decisões inspiradas; Ele nunca deve trair a justiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Balanças e pesos honestos são da parte de Jeová; Todos os pesos da bolsa são feitos por ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Práticas más são detestáveis para os reis, Pois é por meio da justiça que se estabelece firmemente o trono.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "As palavras dos justos são um prazer para os reis; Eles amam quem fala a verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "A fúria do rei é um mensageiro da morte, Mas o homem sábio a acalma.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Quando o rosto do rei se ilumina, há vida; Seu favor é como uma nuvem de chuva na primavera.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "É muito melhor obter sabedoria do que ouro! Mais vale ganhar entendimento do que prata.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "A estrada dos justos se desvia do mal. Quem vigia seu caminho preserva sua vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "O orgulho vem antes da queda, E o espírito arrogante antes do tropeço.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Melhor ser humilde entre os mansos Do que repartir despojo com os arrogantes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Quem mostra entendimento num assunto será bem-sucedido, E feliz é aquele que confia em Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Quem tem coração sábio será chamado de entendido, E quem fala palavras bondosas é mais persuasivo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "O entendimento é fonte de vida para os que o possuem, Mas os tolos são disciplinados pela sua própria tolice.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "O coração do sábio dá entendimento à sua boca E acrescenta persuasão às suas palavras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Declarações agradáveis são como um favo de mel, Doces para a alma e uma cura para os ossos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Há um caminho que parece certo ao homem, Mas por fim leva à morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "O apetite do trabalhador o faz trabalhar arduamente, Pois a fome o impele a fazer isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "O homem imprestável traz à tona o que é mau; Suas palavras são como um fogo abrasador.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "O homem briguento provoca discórdias, E o caluniador separa bons amigos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "O homem violento instiga seu próximo E o leva para o mau caminho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Ele pisca o olho ao tramar perversidades. Aperta os lábios ao praticar o mal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Os cabelos brancos são uma coroa de beleza Quando se acham no caminho da justiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Quem não se ira facilmente é melhor do que o homem valente, E quem controla a si mesmo é melhor do que quem conquista uma cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "A sorte é lançada no colo, Mas toda decisão indicada por ela vem de Jeová.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 17,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Melhor um pedaço de pão seco onde há paz Do que uma casa cheia de banquetes junto com discussões.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O servo que tem perspicácia terá autoridade sobre o filho que age de modo vergonhoso E receberá parte da herança como um dos irmãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "O cadinho é para a prata e o forno de fundição para o ouro, Mas é Jeová quem examina os corações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Os maus prestam atenção em palavras que ferem, E os mentirosos escutam a língua maldosa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quem zomba do pobre insulta Aquele que o fez, Quem se alegra com a desgraça dos outros não ficará impune.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Os netos são uma coroa para os idosos, E os pais são a glória dos filhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Palavras corretas não são próprias para o tolo. Quanto menos, então, palavras falsas para um governante!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Um presente é como uma pedra preciosa para o seu dono; Torna-o bem-sucedido aonde quer que ele vá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Quem perdoa uma transgressão promove o amor, Mas aquele que insiste em falar sobre um assunto separa bons amigos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Uma repreensão tem efeito mais profundo em quem tem entendimento Do que bater cem vezes em quem é tolo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Os maus só buscam a rebeldia, Mas um mensageiro cruel será enviado para puni-los.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Melhor encontrar uma ursa que perdeu seus filhotes Do que se deparar com um tolo em sua tolice.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Se alguém paga o bem com o mal, O mal não se afastará da sua casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Começar uma briga é como abrir uma comporta; Retire-se antes de estourar a discussão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Quem absolve o culpado e quem condena o inocente, Tanto um como o outro são detestáveis para Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "De que adianta o tolo ter recursos para adquirir sabedoria, Se não tem o desejo de adquiri-la?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "O verdadeiro amigo ama em todos os momentos E se torna um irmão em tempos de aflição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "O homem que não tem bom senso dá um aperto de mão E concorda em ser fiador na presença do seu próximo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Quem ama a briga ama a transgressão. Quem faz alta a sua porta procura a ruína.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Quem tem coração tortuoso não será bem-sucedido, E quem fala mentiras cairá na desgraça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Quem é pai de um filho tolo terá tristeza; E o pai de um filho insensato não tem alegria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "O coração alegre é um bom remédio, Mas o espírito abatido consome as energias da pessoa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Quem é mau aceita suborno às escondidas Para perverter o caminho da justiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "A sabedoria está bem diante de quem tem discernimento, Mas os olhos do tolo vagueiam até os confins da terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "O filho tolo causa tristeza ao seu pai E amargura àquela que o deu à luz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Não é bom punir o justo, E açoitar pessoas honradas vai contra o que é certo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "O homem de conhecimento controla as suas palavras, E o homem de discernimento mantém a calma.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Até o tolo é considerado sábio quando fica calado, E quem fecha os lábios é considerado alguém de discernimento.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 18,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quem se isola busca seus desejos egoístas; Rejeita toda a sabedoria prática.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O tolo não tem prazer no entendimento; Prefere divulgar o que tem no coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Com os maus vem o desprezo, E com a desonra vem a humilhação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "As palavras da boca do homem são como águas profundas. A fonte da sabedoria é como um riacho transbordante.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Não é bom mostrar parcialidade a favor de quem é mau, Nem privar o justo da justiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "As palavras do tolo provocam discussões, E sua boca atrai uma surra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "A boca do tolo é sua ruína, E seus lábios são uma armadilha para sua vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "As palavras do caluniador são como petiscos saborosos, Que são engolidos com facilidade e descem direto para o estômago.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Quem é preguiçoso no seu trabalho É irmão de quem causa destruição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O nome de Jeová é uma torre forte. O justo corre para dentro dela e recebe proteção.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "A riqueza do rico é a sua cidade fortificada; Na sua imaginação ela é como uma muralha protetora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Antes da queda, o coração do homem é arrogante; E antes da glória há humildade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Responder antes de ouvir os fatos É tolice e resulta em humilhação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "O espírito do homem pode sustentá-lo na sua doença, Mas quem pode suportar o espírito abatido?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O coração de quem tem entendimento adquire conhecimento, E o ouvido dos sábios busca o conhecimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Um presente abre as portas para quem o dá E lhe permite ter acesso a pessoas importantes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "O primeiro a apresentar a sua causa parece estar certo, Até que vem a outra parte e o interroga.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Lançar sortes acaba com as disputas E decide questões entre adversários poderosos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Um irmão ofendido é mais inacessível do que uma cidade fortificada, E há disputas que são como as trancas de uma fortaleza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Dos frutos das suas palavras o homem encherá o seu estômago; Ele se fartará com o produto dos seus lábios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Morte e vida estão no poder da língua; Os que gostam de usá-la comerão os seus frutos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Quem encontra uma boa esposa encontra algo bom, E recebe o favor de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "O pobre fala suplicando, Mas o rico responde de modo duro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Alguns amigos estão prontos para acabar um com o outro, Mas há um amigo que se apega mais do que um irmão.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 19,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Melhor ser pobre e andar em integridade Do que ser tolo e falar mentiras.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Não é bom a pessoa não ter conhecimento, E quem age precipitadamente peca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "É a tolice do homem que distorce o seu caminho, E o seu coração fica furioso com Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "A riqueza atrai muitos amigos, Mas o pobre até pelo amigo será abandonado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "A testemunha falsa não ficará impune, E quem só fala mentiras não escapará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Muitos buscam o favor de um nobre, E todos são amigos de quem dá presentes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Se todos os irmãos do pobre o odeiam, Quanto mais os seus amigos se afastarão dele! Ele vai atrás deles com pedidos, mas ninguém responde.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quem obtém bom senso ama a si mesmo. Quem preza o discernimento será bem-sucedido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "A testemunha falsa não ficará impune, E quem só fala mentiras morrerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Não é próprio para o tolo viver em luxo, E muito menos para um servo governar príncipes!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "A perspicácia do homem faz com que ele não se ire facilmente, E é bonito da sua parte deixar passar a ofensa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "A fúria do rei é como o rugido de um leão, Mas seu favor é como o orvalho sobre a vegetação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "O filho tolo causa dificuldades ao seu pai, E a esposa briguenta é como uma goteira que não para de pingar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Casa e riquezas são herdadas dos pais, Mas a esposa prudente vem de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "A preguiça causa sono profundo, E a pessoa preguiçosa passará fome.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Quem guarda os mandamentos preserva a sua vida; Quem descuida da própria conduta morrerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Quem mostra favor ao pobre empresta a Jeová, E Ele o recompensará por isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Discipline o seu filho enquanto há esperança; Não se torne responsável pela morte dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "O homem que se irrita facilmente será punido; Se você tentar poupá-lo, terá de fazer isso vez após vez.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Escute o conselho e aceite a disciplina, Para se tornar sábio no futuro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Muitos são os planos no coração do homem, Mas é a vontade de Jeová que prevalecerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "O que se deseja num homem é seu amor leal; Melhor ser pobre do que mentiroso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "O temor de Jeová conduz à vida; Quem o tem descansará tranquilo, livre de perigo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "O preguiçoso enfia a mão na tigela, Mas nem se esforça em levá-la de volta à boca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Golpeie o zombador para que o inexperiente se torne prudente; Repreenda quem tem entendimento, e ele aumentará em conhecimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Quem maltrata o pai e manda embora a mãe É um filho que causa vergonha e desonra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Meu filho, se você deixar de escutar a disciplina, Você se desviará das declarações de conhecimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "A testemunha imprestável zomba da justiça, E a boca dos perversos devora o que é mau.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "A condenação está reservada para os zombadores; E os golpes, para as costas dos tolos.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 20,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "O vinho é zombador, e o álcool é indisciplinado; Quem se perde por causa deles não é sábio.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O pavor de um rei é como o rugido de um leão; Quem provoca sua ira arrisca a própria vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "É honroso para o homem evitar discussões, Mas qualquer tolo se envolve nelas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "O preguiçoso não ara a terra no inverno; Por isso mendigará durante a colheita, quando não tiver nada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Os pensamentos do coração de um homem são como águas profundas, Mas o homem de discernimento os puxa para fora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Muitos homens proclamam o seu próprio amor leal, Mas quem pode encontrar um homem fiel?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "O justo está andando na sua integridade. Felizes os filhos que vierem depois dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quando o rei se senta no trono para julgar, Elimina todos os maus com o seu olhar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Quem pode dizer: “Purifiquei meu coração, Estou limpo do meu pecado”?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pesos desonestos e medidas falsificadas São detestáveis para Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Até mesmo uma criança mostra o que é pelas suas ações, Se o seu comportamento é puro e correto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "O ouvido que ouve e o olho que vê, Foi Jeová que fez a ambos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Não ame o sono, senão você ficará pobre. Abra os olhos, e terá fartura de pão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "“Não é bom, não é bom!” diz o comprador, Então vai embora e se gaba do negócio que fez.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Há ouro e grande quantidade de corais, Mas os lábios que transmitem conhecimento são mais preciosos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Tome a roupa do homem que se tornou fiador de um estranho, E tome dele uma garantia caso ele seja fiador de uma mulher estrangeira.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Saboroso para o homem é o pão ganho por meio de mentiras, Mas depois sua boca ficará cheia de cascalho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Quando há comunicação, os planos são bem-sucedidos; Trave a sua guerra com orientação perita.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "O caluniador espalha segredos; Não se junte com quem gosta de tagarelar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Quem amaldiçoa seu pai e sua mãe Terá sua lâmpada apagada quando chegar a escuridão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Uma fortuna iniciada com ganância Não será uma bênção no fim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Não diga: “Vou me vingar!” Espere em Jeová, e ele o salvará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Pesos desonestos são detestáveis para Jeová, E uma balança enganosa não é boa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Os passos de um homem são dirigidos por Jeová. Como pode um homem entender seu próprio caminho?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "É uma armadilha para o homem dizer precipitadamente: “É sagrado!” E só depois pensar no voto que fez.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "O rei sábio separa os maus E passa sobre eles uma roda de debulhar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "O fôlego do homem é a lâmpada de Jeová; Ela examina o mais íntimo do seu ser.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "O amor leal e a fidelidade protegem o rei; Por meio do amor leal ele sustenta seu trono.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "A glória dos jovens é a sua força, E o esplendor dos idosos são os seus cabelos brancos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Ferimentos e contusões removem o mal, E os golpes purificam o mais íntimo do ser.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 21,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "O coração do rei é como correntes de água nas mãos de Jeová. Ele o direciona para onde quiser.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O homem pensa que todos os seus caminhos são certos, Mas Jeová examina os corações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Fazer o que é correto e justo É mais agradável a Jeová do que um sacrifício.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Olhos arrogantes e um coração orgulhoso; A lâmpada que guia os maus é o pecado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Os planos do diligente certamente dão bons resultados, Mas todos os precipitados acabarão na pobreza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Tesouros obtidos com uma língua mentirosa São como uma neblina passageira, uma armadilha mortal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "A violência dos maus os destruirá, Pois eles se negam a praticar a justiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "O caminho do homem culpado é tortuoso, Mas as ações do homem puro são retas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Melhor morar num canto do terraço Do que com uma esposa briguenta, na mesma casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O homem perverso anseia o que é mau; Ele não mostra favor ao seu próximo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Quando o zombador é punido, o inexperiente obtém sabedoria; Quando o sábio recebe instrução, obtém conhecimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "O Justo observa a casa de quem é mau, E faz os maus cair na ruína.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Quem tapa o ouvido ao clamor do pobre, Também clamará e não terá resposta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Um presente dado em segredo abranda a ira; E o suborno dado às escondidas, o forte furor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Agir com justiça é uma alegria para o justo, Mas é algo terrível para os que praticam a maldade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "O homem que se desvia do caminho do entendimento Descansará na companhia dos impotentes na morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Quem ama a diversão ficará pobre; Quem ama o vinho e o azeite não ficará rico.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "O perverso serve de resgate para o justo; E o traiçoeiro, para os íntegros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Melhor morar no deserto Do que com uma esposa briguenta e geniosa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Há tesouro precioso e azeite na casa do sábio, Mas o tolo desperdiça o que tem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Quem se empenha pela justiça e pelo amor leal Achará vida, justiça e glória.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "O sábio pode escalar a muralha da cidade dos valentes E minar a força em que eles confiam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Quem vigia sua boca e sua língua Fica livre de problemas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Chama-se de zombador presunçoso e arrogante Quem age com excessiva presunção.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "O desejo do preguiçoso o matará, Pois suas mãos se negam a trabalhar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Ele passa o dia desejando avidamente, Mas o justo dá sem reservas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "O sacrifício dos maus é detestável. Quanto mais quando o oferecem com más intenções!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "A testemunha mentirosa morrerá, Mas o homem que sabe escutar será bem-sucedido em seu testemunho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "O perverso mostra no rosto a sua insolência, Mas é o justo que tem o caminho seguro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Não há sabedoria, nem discernimento, nem conselho que possam se opor a Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "O cavalo é preparado para o dia da batalha, Mas a salvação pertence a Jeová.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 22,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Mais vale um bom nome do que muitas riquezas; Ser estimado é melhor do que prata e ouro.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O rico e o pobre têm isto em comum: Jeová fez os dois.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Quem é prudente vê o perigo e se esconde, Mas os inexperientes vão em frente e sofrem as consequências.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "A humildade e o temor de Jeová resultam Em riquezas, glória e vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Há espinhos e armadilhas no caminho do perverso, Mas quem dá valor à vida fica longe deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Eduque a criança no caminho em que ela deve andar; Mesmo quando ela envelhecer, não se desviará dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "O rico domina o pobre, E quem toma emprestado é escravo de quem empresta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quem semeia injustiça colherá desgraça, E a vara da sua fúria chegará ao fim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "A pessoa generosa será abençoada, Pois reparte seu alimento com o pobre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Expulse o zombador, E as brigas desaparecerão; As disputas e os insultos acabarão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Quem ama a pureza de coração e fala palavras agradáveis Terá o rei como seu amigo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Os olhos de Jeová resguardam o conhecimento, Mas ele faz fracassar as palavras do traiçoeiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "O preguiçoso diz: “Há um leão lá fora! Serei morto no meio da rua!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "A boca da mulher imoral é uma cova funda. Quem é condenado por Jeová cairá nela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "A tolice está ligada ao coração das crianças, Mas a vara da disciplina a afastará delas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Tanto quem defrauda o pobre para enriquecer Como quem dá presentes ao rico Acabarão na pobreza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Preste atenção e escute as palavras dos sábios, Para aplicar seu coração ao meu conhecimento;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Pois será agradável guardá-las no seu íntimo, Para que todas elas estejam sempre nos seus lábios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "A fim de que a sua confiança esteja em Jeová, Dou-lhe hoje conhecimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Já não lhe escrevi Para dar conselhos e conhecimento,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Para lhe ensinar palavras verdadeiras e confiáveis, A fim de que você possa voltar com um relatório exato a quem o enviou?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Não roube o pobre por ele ser pobre, E não oprima o humilde no portão da cidade,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Pois o próprio Jeová defenderá a causa deles E tirará a vida dos que os defraudam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Não ande com quem se irrita facilmente, Nem se envolva com quem é propenso à ira,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Para que você nunca aprenda seus caminhos E arme um laço para si mesmo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Não seja daqueles que dão um aperto de mão, Que se tornam fiadores de empréstimos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Se não tiver como pagar, Até a sua cama será tirada de debaixo de você!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Não mude de lugar os antigos marcos divisórios Que foram colocados pelos seus antepassados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Você já viu um homem que é habilidoso no seu trabalho? Ele tomará posição diante de reis, Não diante de homens comuns.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 23,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quando você se sentar com um rei para comer, Considere cuidadosamente o que está diante de você;",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Ponha uma faca na sua própria garganta, Se você tiver um grande apetite.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Não deseje suas iguarias, Pois são alimentos enganosos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Não se esgote para obter riquezas. Pare e mostre entendimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Assim que você põe os olhos nelas, elas desaparecem, Pois certamente criam asas como uma águia e saem voando para o céu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Não coma a comida de alguém mesquinho; Não deseje suas iguarias,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois ele é como alguém que fica calculando os gastos. Ele lhe diz: “Coma e beba”, mas não está sendo sincero.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Você vomitará o pouco que comeu E terá desperdiçado seus elogios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Não fale aos ouvidos do tolo, Pois ele desprezará a sabedoria das suas palavras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Não mude de lugar os antigos marcos divisórios, Nem entre no campo dos órfãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois o Defensor deles é forte; Ele defenderá a causa deles contra você.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Aplique seu coração à disciplina E seu ouvido às declarações de conhecimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Não deixe de disciplinar o menino. Se você bater nele com a vara, ele não morrerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Você deve bater nele com a vara, Para salvá-lo da Sepultura.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Meu filho, se o seu coração se tornar sábio, Meu coração se alegrará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Meu íntimo sentirá alegria Quando seus lábios falarem o que é certo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Que o seu coração não inveje os pecadores, Mas que tema a Jeová o dia inteiro,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Pois então você terá um bom futuro, E a sua esperança não lhe será tirada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Meu filho, ouça e torne-se sábio, E guie seu coração no caminho certo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Não esteja entre os que bebem muito vinho, Entre os que se empanturram de carne,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Pois o beberrão e o glutão ficarão pobres, E a sonolência os vestirá de trapos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Escute seu pai, que causou o seu nascimento, E não despreze a sua mãe só porque ela envelheceu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Compre a verdade e nunca a venda, Também a sabedoria, a disciplina e o entendimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "O pai de um justo com certeza exultará; Quem é pai de um filho sábio se alegrará por causa dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Seu pai e sua mãe se alegrarão, E aquela que o deu à luz exultará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Meu filho, dê-me o seu coração, E que os seus olhos se agradem dos meus caminhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Pois a prostituta é uma cova funda, E a mulher imoral é um poço estreito;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Igual a um assaltante, ela fica de emboscada, E aumenta o número de homens infiéis.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Quem tem ais? Quem tem ansiedades? Quem tem discussões? Quem tem queixas? Quem tem ferimentos sem nenhum motivo? Quem tem olhos vermelhos?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Os que passam muito tempo bebendo vinho, Os que procuram vinho misturado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Não fique olhando para a cor vermelha do vinho, Quando ele cintila no copo e desce suavemente,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Pois no fim ele morde igual a uma serpente E libera veneno igual a uma víbora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Seus olhos verão coisas estranhas, E seu coração falará coisas perversas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Você ficará como quem se deita no meio do mar, Como quem se deita no topo do mastro de um navio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Você dirá: “Bateram em mim, mas não senti nada; Deram uma surra em mim, mas não percebi. Quando é que acordarei? Preciso de mais uma bebida.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 24,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Não inveje os maus, Nem deseje a companhia deles,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois o coração deles trama violência, E seus lábios falam de coisas ruins.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pela sabedoria se edifica uma casa, E pelo discernimento ela é firmada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Pelo conhecimento seus aposentos ficam cheios De todo tipo de tesouros preciosos e agradáveis.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O homem sábio é forte, E com o conhecimento o homem aumenta a sua força.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "É com orientação perita que você travará a sua guerra, E com muitos conselheiros há vitória.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "A verdadeira sabedoria é inalcançável para o tolo; Ele não tem nada a dizer no portão da cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quem trama o mal Será chamado de mestre em intrigas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Tramas tolas são pecado, E as pessoas detestam o zombador.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Se você ficar desanimado no dia da aflição, Sua força será escassa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Livre os que estão sendo levados para a morte; Salve os que estão cambaleando para a matança.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Se você disser: “Mas não sabíamos de nada”, Será que Aquele que examina os corações não discernirá isso? Sim, Aquele que observa você saberá E retribuirá a cada homem segundo as suas ações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Meu filho, coma mel, porque é bom; O mel dos favos é doce para o paladar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Do mesmo modo, saiba que a sabedoria é boa para você. Se a achar, você terá um bom futuro, E a sua esperança não lhe será tirada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Não fique de emboscada, como um homem perverso, perto da casa do justo; Não destrua seu lugar de descanso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Pois, mesmo que o justo caia sete vezes, ele se levantará de novo; Mas os maus tropeçarão por causa da calamidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Quando o seu inimigo cair, não se alegre; E, quando ele tropeçar, seu coração não deve exultar;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Senão, Jeová verá isso e não ficará satisfeito, E fará sua ira recuar dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Não fique aborrecido por causa dos malfeitores; Não inveje os maus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Pois não há futuro para os malfeitores; A lâmpada dos maus será apagada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Meu filho, tema a Jeová e ao rei, E não se envolva com dissidentes,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Pois o desastre deles ocorrerá repentinamente. Quem sabe que ruína os dois trarão sobre eles?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Estas declarações também são dos sábios: Não é bom mostrar parcialidade no julgamento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Quem disser àquele que é mau: “Você é justo”, Será amaldiçoado pelos povos e condenado pelas nações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Mas os que o repreendem se sairão bem E serão abençoados com coisas boas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "As pessoas beijarão os lábios daquele que dá uma resposta sincera.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Prepare o seu trabalho lá fora e deixe tudo pronto no campo; Depois construa a sua casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Não testemunhe contra o seu próximo se não tiver base, Não use os seus lábios para enganar outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Não diga: “Farei com ele o mesmo que ele fez comigo; Eu lhe retribuirei o que ele fez.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Passei pelo campo do preguiçoso, Pelo vinhedo do homem que não tem bom senso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Vi que estava cheio de ervas daninhas; O solo estava coberto de urtigas, E seu muro de pedras estava em ruínas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Observei isso e fiquei pensando; Vi e aprendi a seguinte lição:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Um pouco de sono, um pouco de cochilo, Um pouco de cruzar os braços para descansar,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "E a sua pobreza chegará como um ladrão, E a sua carência como um homem armado.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 25,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Estes também são provérbios de Salomão e foram transcritos pelos homens de Ezequias, rei de Judá:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "A glória de Deus é manter um assunto em segredo, E a glória dos reis é examinar um assunto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Assim como os céus são elevados e a terra é profunda, Assim o coração dos reis é insondável.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Remova a escória da prata, E ela ficará completamente refinada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Retire aquele que é mau da presença do rei, E seu trono ficará firmemente estabelecido na justiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Não honre a si mesmo diante do rei, Nem ocupe um lugar entre homens importantes,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois é melhor que ele lhe diga: “Suba para cá”, Do que ele humilhar você na presença de um nobre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Não se apresse para entrar numa disputa judicial, Pois o que você fará depois, se o seu próximo o humilhar?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Resolva a sua causa com o seu próximo, Mas não revele o que lhe confidenciaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Caso contrário, quem escuta o envergonhará, E você não poderá retirar o mau relato que espalhou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Como maçãs de ouro em esculturas de prata É a palavra falada no tempo certo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Como brincos de ouro e um enfeite de ouro puro É a repreensão do sábio para o ouvido atento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Como a neve refrescante no dia da colheita É o mensageiro fiel para os que o enviam, Pois ele reanima o seu senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Como nuvens e vento que não trazem chuva É o homem que se gaba de um presente que nunca deu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Com paciência pode-se convencer um governante, E a língua suave pode quebrar um osso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Se você encontrar mel, coma apenas o necessário; Pois, se comer demais, acabará vomitando.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Ponha raramente o pé na casa do seu próximo, Para que ele não se canse de você e passe a odiá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Como uma clava de guerra, uma espada ou uma flecha afiada É o homem que dá falso testemunho contra o seu próximo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Como um dente quebrado e um pé sem firmeza É confiar, em tempos de aflição, em quem não merece crédito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Como quem tira a roupa num dia frio E como vinagre derramado na soda É aquele que canta canções para um coração triste.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Se o seu inimigo estiver com fome, dê-lhe pão para comer; Se estiver com sede, dê-lhe água para beber;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Pois assim você amontoará brasas sobre a cabeça dele, E Jeová recompensará você.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "O vento norte traz chuva; E a língua tagarela, rostos irados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Melhor morar num canto do terraço Do que com uma esposa briguenta, na mesma casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Como água fresca para a alma cansada, Assim é a notícia boa de uma terra distante.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Como uma nascente barrenta e uma fonte poluída É o justo que cede diante de quem é mau.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Não é bom comer mel demais, Nem é glorioso buscar a própria glória.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Como uma cidade arrombada, sem muralhas, É o homem que não consegue se controlar.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 26,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Como a neve no verão e a chuva na colheita, Assim a honra não é própria para o tolo.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Assim como o pássaro tem motivo para fugir e a andorinha para voar, Assim a maldição não vem sem nenhum motivo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "O chicote é para o cavalo, o freio é para o jumento, E a vara é para as costas dos tolos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Não responda ao tolo de acordo com a tolice dele, Para que você não se iguale a ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Responda ao tolo de acordo com a tolice dele, Para que ele não pense que é sábio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Como alguém que mutila os próprios pés e prejudica a si mesmo, Assim é quem confia seus assuntos ao tolo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Como as pernas fracas de um manco, Assim é um provérbio na boca dos tolos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Como amarrar uma pedra na funda, Assim é dar glória a um tolo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Como uma planta espinhosa na mão do bêbado, Assim é um provérbio na boca dos tolos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Como um arqueiro que fere ao acaso, Assim é quem contrata o tolo ou qualquer um que passa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Assim como o cão que volta ao seu vômito, Assim o tolo repete a sua tolice.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Você já viu um homem que pensa que é sábio? Há mais esperança para um tolo do que para ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "O preguiçoso diz: “Há um leão jovem na estrada, Há um leão no meio da rua!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "A porta gira em suas dobradiças, E o preguiçoso em sua cama.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O preguiçoso enfia a mão na tigela, Mas fica cansado demais para levá-la de volta à boca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "O preguiçoso pensa que é mais sábio Do que sete pessoas que respondem de modo sensato.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Como alguém que agarra as orelhas de um cão É quem passa e fica furioso por causa da discussão dos outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Como um louco que atira dardos ardentes e flechas mortais,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Assim é o homem que engana seu próximo e diz: “Eu só estava brincando!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Onde não há lenha, apaga-se o fogo; E onde não há caluniador, acaba-se a discussão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Como o carvão para as brasas e a lenha para o fogo, Assim é o homem briguento para atiçar uma discussão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "As palavras do caluniador são como petiscos saborosos, Que são engolidos com facilidade e descem direto para o estômago.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Como a prata que reveste um caco de barro, Assim são as palavras carinhosas vindas de um coração mau.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Quem odeia outros disfarça isso com os lábios, Mas abriga falsidade dentro de si.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Apesar de ele falar de modo gentil, não acredite nele, Pois há sete coisas detestáveis no seu coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Embora seu ódio seja escondido pela falsidade, Sua maldade será exposta na congregação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Quem cava um buraco cairá nele, E quem rola uma pedra será atingido por ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "A língua mentirosa odeia aqueles a quem ela oprime, E a boca bajuladora causa ruína.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 27,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Não se gabe do amanhã, Pois você não sabe o que cada dia trará.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Que outros, não a sua própria boca, façam elogios a você; Que outra pessoa faça isso, não os seus próprios lábios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "A pedra é pesada, e a areia é uma carga, Mas a irritação causada por um tolo é mais pesada do que as duas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "O furor é cruel, e a ira é como uma enxurrada, Mas quem pode resistir ao ciúme?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Melhor a repreensão feita abertamente do que o amor escondido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Leais são os ferimentos causados por um amigo, Mas muitos são os beijos do inimigo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Quem está com o apetite saciado recusa o mel dos favos; Mas, para quem está faminto, até o amargo é doce.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Como um pássaro afastado do ninho É o homem afastado do seu lar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Óleo e incenso alegram o coração, Bem como a doce amizade que nasce de um conselho sincero.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Não abandone o seu amigo ou o amigo do seu pai, E não vá à casa do seu irmão quando você sofrer uma calamidade; Melhor um vizinho perto do que um irmão longe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Seja sábio, meu filho, e alegre meu coração, Para que eu possa dar uma resposta àquele que me desafia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "A pessoa prudente vê o perigo e se esconde, Mas os inexperientes vão em frente e sofrem as consequências.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Tome a roupa do homem que se tornou fiador de um estranho, E tome dele uma garantia caso ele seja fiador de uma mulher estrangeira.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Quando alguém abençoa seu próximo com voz bem alta, de manhã cedo, Isso é encarado por ele como maldição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "A esposa briguenta é como uma goteira que pinga sem parar num dia de chuva.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Quem consegue detê-la, consegue deter o vento E consegue pegar óleo com a mão direita.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Assim como o ferro afia o ferro, Assim o homem afia o seu amigo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Quem cuida da figueira comerá do seu fruto, E quem cuida do seu senhor será honrado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Assim como a água reflete o rosto de um homem, Assim o coração de um homem reflete o de outro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "A Sepultura e o lugar de destruição nunca se saciam, Assim também os olhos do homem são insaciáveis.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Assim como o cadinho é para a prata e o forno de fundição para o ouro, Assim a pessoa é testada pelo elogio que recebe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Mesmo que você triture o tolo Como grãos no pilão, Sua tolice não se afastará dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Você deve conhecer bem a aparência do seu rebanho. Cuide bem das suas ovelhas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Pois as riquezas não duram para sempre, Nem a coroa por todas as gerações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "A relva verde desaparece, e aparece a relva nova, E é recolhida a vegetação dos montes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Os carneirinhos fornecem a sua roupa, E os bodes fornecem o preço de um campo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Também há bastante leite de cabra para alimentar você, Para alimentar os da sua casa e para sustentar as suas servas.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 28,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Os maus fogem mesmo quando ninguém os persegue, Mas os justos são tão confiantes como um leão.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Quando há transgressão no país, há uma sucessão de príncipes; Mas, com a ajuda de um homem de discernimento e conhecimento, o príncipe permanecerá por muito tempo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "O pobre que defrauda os humildes É como a chuva devastadora que acaba com todo o alimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Os que abandonam a lei elogiam quem é mau, Mas os que obedecem à lei ficam indignados com eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Os maus não podem entender a justiça, Mas os que buscam a Jeová podem entender tudo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Melhor o pobre que anda na sua integridade Do que o rico que segue caminhos corruptos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "O filho que tem entendimento obedece à lei, Mas quem é amigo de glutões desonra seu pai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quem aumenta a sua riqueza por meio de juros ou lucros injustos Acumula-a para aquele que mostra favor aos pobres.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Quem se recusa a dar ouvidos à lei, Até mesmo sua oração é detestável.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Quem desvia o justo para o mau caminho cairá na sua própria armadilha, Mas os íntegros herdarão o que é bom.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "O rico é sábio aos seus próprios olhos, Mas o pobre que tem discernimento o vê como ele realmente é.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quando os justos triunfam, há grande glória; Mas, quando os maus sobem ao poder, as pessoas se escondem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Quem encobre as suas transgressões não será bem-sucedido, Mas aquele que as confessa e abandona será tratado com misericórdia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Feliz o homem que sempre está vigilante, Mas quem endurece seu coração sofrerá calamidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Como o leão que ruge e o urso que ataca É o governante perverso que domina sobre um povo indefeso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "O líder que não tem discernimento abusa do poder, Mas quem odeia o lucro desonesto prolongará sua vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "O homem atormentado pela culpa de sangue, por ter tirado uma vida, será fugitivo até a sepultura. Que ninguém o ajude!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Quem anda de modo íntegro será salvo, Mas quem segue caminhos tortuosos cairá repentinamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Quem cultiva seu solo se fartará de pão, Mas quem se empenha por coisas sem valor se fartará de pobreza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "O homem fiel receberá muitas bênçãos, Mas quem se apressa para enriquecer não continuará inocente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Não é bom mostrar parcialidade, Mas talvez um homem faça o que é errado por um pedaço de pão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "O homem invejoso corre atrás de riquezas, Sem saber que a pobreza virá sobre ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Quem repreende um homem achará por fim mais favor Do que alguém que usa a língua para bajular.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Quem rouba o pai e a mãe, e diz: “Isso não é errado”, É parceiro do homem que causa ruína.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "A pessoa gananciosa provoca discórdias, Mas quem confia em Jeová prosperará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Quem confia no seu próprio coração é tolo, Mas quem anda em sabedoria escapará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Quem dá aos pobres não terá falta de nada, Mas quem fecha os olhos para eles receberá muitas maldições.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Quando os maus sobem ao poder, o homem se esconde; Mas, quando eles morrem, os justos se tornam muitos.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 29,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "O homem que continua obstinado depois de muita repreensão Será arruinado de repente, e não haverá remédio.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Quando os justos são muitos, o povo se alegra; Mas, quando os maus governam, o povo geme.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Quem ama a sabedoria alegra seu pai, Mas quem anda com prostitutas desperdiça sua riqueza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Por meio da justiça o rei dá estabilidade ao país, Mas o homem que procura suborno leva o país à ruína.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O homem que bajula seu próximo Arma uma rede para os pés dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "A transgressão do perverso é um laço para ele, Mas o justo grita de alegria e exulta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "O justo se preocupa com os direitos dos pobres, Mas os maus não se importam com isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Homens que se gabam incendeiam a cidade, Mas os sábios acalmam a ira.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Quando um sábio entra numa controvérsia com um tolo, Há exaltação e zombaria, mas nada é resolvido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Homens sanguinários odeiam quem é inocente, E procuram tirar a vida do justo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "O tolo dá vazão a toda a sua ira, Mas o sábio continua calmo e a mantém sob controle.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quando o governante dá atenção a mentiras, Todos os seus servos são maus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "O pobre e o opressor têm isto em comum: Jeová dá luz aos olhos dos dois.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Se um rei julgar os pobres de modo imparcial, Seu trono estará sempre seguro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "A vara e a repreensão dão sabedoria, Mas a criança deixada solta causa vergonha à sua mãe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Quando os maus se multiplicam, multiplicam-se as transgressões; Mas os justos verão a queda deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Discipline seu filho, e ele lhe trará descanso E dará grande prazer a você.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Quando não há visão, o povo fica sem controle, Mas os que obedecem à lei são felizes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Um servo não se deixará corrigir só com palavras, Pois, embora ele compreenda, não obedece.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Você já observou um homem que fala de modo precipitado? Há mais esperança para um tolo do que para ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Se um servo é mimado desde jovem, Ele acabará se tornando um ingrato.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "O homem que facilmente se ira provoca brigas, E quem é propenso à ira comete muitas transgressões.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "A arrogância do homem o humilhará, Mas quem é humilde de espírito terá glória.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Quem é parceiro de um ladrão odeia a si mesmo. Ele ouve a convocação para testemunhar, mas não relata nada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Tremer diante de homens é uma armadilha, Mas quem confia em Jeová será protegido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Muitos buscam uma audiência com um governante, Mas é de Jeová que se obtém justiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "O homem injusto é detestável para os justos, E quem anda no caminho reto é detestável para quem é mau.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 30,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Palavras de Agur, filho de Jaque. A mensagem importante que ele transmitiu a Itiel; a Itiel e a Ucal.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Sou mais ignorante do que qualquer outro, E não tenho o entendimento que um homem deveria ter.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Não aprendi a sabedoria, E não tenho o conhecimento do Santíssimo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Quem subiu ao céu e depois desceu? Quem ajuntou o vento na palma das mãos? Quem embrulhou as águas em sua roupa? Quem estabeleceu os confins da terra? Qual é o nome dele e o nome do seu filho, se é que você sabe?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Toda declaração de Deus é pura. Ele é um escudo para os que se refugiam nele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Não acrescente nada às palavras dele, Senão ele o repreenderá, E ficará claro que você é um mentiroso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Duas coisas eu te peço; Não me negues isto antes de eu morrer:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Afasta de mim a falsidade e a mentira, E não me dês nem pobreza nem riquezas. Dá-me apenas a minha porção de alimento,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Para que eu não me farte e te negue, e diga: “Quem é Jeová?” Nem fique pobre e roube, e desonre o nome do meu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Não calunie um servo diante do senhor dele, Senão ele amaldiçoará você, e você será considerado culpado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Há uma geração que amaldiçoa o pai E não abençoa a mãe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Há uma geração que é pura aos seus próprios olhos, Mas que não foi purificada da sua imundície.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Há uma geração que tem olhos tão arrogantes E um olhar tão orgulhoso!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Há uma geração cujos dentes são espadas E cujos maxilares são facas; Eles devoram os humildes da terra E eliminam os pobres do meio da humanidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "As sanguessugas têm duas filhas que gritam: “Mais! Mais!” Há três coisas que não ficam satisfeitas, Quatro que nunca dizem “Chega”:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "A Sepultura e o ventre estéril, A terra sedenta de água, E o fogo, que nunca diz: “Chega!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Os olhos que zombam do pai e desprezam a obediência à mãe Serão arrancados pelos corvos do vale E devorados pelos filhotes de águia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Há três coisas que estão além da minha compreensão, Quatro que eu não entendo:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "O caminho da águia nos céus, O caminho da serpente sobre uma rocha, O caminho do navio em alto-mar, E o caminho do homem com uma moça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Este é o caminho de uma mulher adúltera: Ela come, limpa a boca E diz: “Não fiz nada de errado.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Há três coisas que fazem a terra tremer, Quatro coisas que ela não pode suportar:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Um escravo que se torna rei, Um tolo empanturrado de comida,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Uma mulher odiada que é tomada como esposa, E uma serva que toma o lugar da sua senhora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Há quatro criaturas que estão entre as menores da terra, Mas são instintivamente sábias:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "As formigas não são criaturas fortes, Ainda assim, preparam seu alimento no verão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Os procávias não são criaturas poderosas, Mas fazem sua casa nos rochedos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Os gafanhotos não têm rei, Mas todos eles avançam em fileiras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "A lagartixa gruda em tudo com as suas patas, E entra no palácio do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Há três coisas que andam de modo impressionante, Quatro coisas que são impressionantes ao se mover:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "O leão, que é o mais valente dos animais E não recua diante de ninguém,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "O galgo, o bode E o rei acompanhado de seu exército.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Se você foi tolo e enalteceu a si mesmo, Ou se planejou fazer isso, Ponha a mão sobre a boca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Pois assim como bater o leite produz manteiga E apertar o nariz faz sair sangue, Assim também atiçar a ira provoca discussões.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 31,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Palavras do rei Lemuel. As palavras importantes que sua mãe falou para o instruir:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O que devo lhe dizer, meu filho? O quê, filho do meu ventre? O quê, filho dos meus votos?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Não entregue o seu vigor às mulheres, Nem siga caminhos que destroem reis.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Não é apropriado para os reis, ó Lemuel, Não é apropriado para os reis beber vinho, Nem para os governantes dizer: “Onde está a minha bebida?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Para que não bebam e se esqueçam do que foi decretado, E neguem os direitos dos humildes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Dê álcool aos que estão morrendo E vinho aos que estão amargurados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Que eles bebam e se esqueçam da sua pobreza, Que não se lembrem mais da sua desgraça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Fale a favor de quem não pode falar; Defenda os direitos de todos os que estão morrendo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Fale por eles e julgue com justiça; Defenda os direitos dos humildes e dos pobres. [álefe]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Quem pode encontrar uma esposa capaz? Seu valor é muito maior do que o de corais. [bete]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Seu marido confia nela de coração, E a ele não falta nada de valor. [guímel]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ela o recompensa com o bem, não com o mal, Todos os dias da sua vida. [dálete]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Ela obtém lã e linho, E tem prazer em trabalhar com as mãos. [hê]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Ela é como os navios de um mercador; De longe traz o seu alimento. [vau]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Também se levanta enquanto ainda é noite, Para dar comida aos da sua casa E porções às suas servas. [zaine]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Ela decide obter um campo e o compra; Planta um vinhedo com o resultado do seu trabalho. [hete]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Ela se prepara para o trabalho árduo, E fortalece seus braços. [tete]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Ela vê que seus negócios são lucrativos; Sua lâmpada não se apaga à noite. [iode]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Suas mãos seguram a roca de fiar; Suas mãos pegam o fuso. [cafe]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Ela estende a mão ao humilde, E abre as mãos ao pobre. [lâmede]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Ela não se preocupa com os da sua casa quando neva, Pois todos eles usam roupas quentes. [meme]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Ela faz as suas próprias colchas. Sua roupa é de linho e de lã roxa. [nune]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Seu marido é bem conhecido nos portões da cidade, Onde se senta entre os anciãos do país. [sâmeque]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Ela faz roupas de linho e as vende, E fornece cintos aos mercadores. [aine]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Ela se veste de força e esplendor, E olha para o futuro com confiança. [pê]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Ela abre a boca com sabedoria; A lei da bondade está na sua língua. [tsadê]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Ela vigia as atividades da sua casa, E não come o pão da preguiça. [cofe]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Seus filhos se levantam e a elogiam; Seu marido se levanta e também a elogia. [rexe]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Há muitas esposas capazes, Mas você supera a todas elas. [chim]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "O encanto talvez seja falso, e a beleza talvez seja passageira, Mas a mulher que teme a Jeová receberá elogios. [tau]",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Que ela seja recompensada pelo que faz, E que seja elogiada nos portões da cidade pelas suas obras.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+:root {
+    --navbar-real-height: 70px;
+    --navbar-occupied-bottom: var(--navbar-real-height);
+    --navbar-layout-bottom: var(--navbar-occupied-bottom);
+    --kbd-toolbar-real-height: 68px;
+    --navbar-bg: #ffffff;
+    --navbar-border: rgba(0, 0, 0, 0.1);
+    --navbar-active: #6B46C1;
+    --navbar-inactive: #8E8E93;
+    --navbar-hover-bg: rgba(0, 0, 0, 0.05);
+    --navbar-shadow: 0 -2px 20px rgba(0, 0, 0, 0.1);
+    --navbar-bottom-padding: 8px;
+    --navbar-safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* The home status material must never cover an internal page's heading. */
+html[data-app-statusbar="solid"] .home-statusbar {
+    display: none !important;
+}
+
+[data-theme="dark"] {
+    --navbar-bg: #1c1c1e;
+    --navbar-border: rgba(255, 255, 255, 0.1);
+    --navbar-inactive: #8E8E93;
+    --navbar-hover-bg: rgba(255, 255, 255, 0.05);
+    --navbar-shadow: 0 -2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.bottom-navbar {
+    /* The dock is interface chrome, independent of the selected reading level. */
+    --font-base-global: 16px;
+    --font-scale-global: 1;
+    --tamanho-fonte: 16px;
+    font-size: 16px;
+    --navbar-active: #6B46C1 !important;
+    --navbar-inactive: #8E8E93 !important;
+}
+
+.bottom-navbar,
+.bottom-navbar * {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    box-sizing: border-box !important;
+}
+
+.bottom-navbar {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    background: var(--navbar-bg);
+    border-top: 1px solid var(--navbar-border);
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    padding: 8px 0 !important;
+    padding-bottom: calc(var(--navbar-bottom-padding) + var(--navbar-safe-bottom)) !important;
+    z-index: 1000 !important;
+    box-shadow: var(--navbar-shadow);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                opacity 0.3s ease, background 0.3s ease;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    margin: 0 !important;
+}
+
+.bottom-navbar.booting,
+.bottom-navbar.booting *,
+.bottom-navbar.booting::before,
+.bottom-navbar.booting::after {
+    transition: none !important;
+    animation: none !important;
+}
+
+.bottom-navbar.hidden {
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+    pointer-events: none !important;
+}
+
+/* Full-screen images cover the dock without translating it or changing the
+   article's reserved bottom space. Its previous position is restored under
+   the opaque image overlay before that overlay fades away. */
+body.zoom-active .bottom-navbar,
+.bottom-navbar.image-viewer-suspended {
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: none !important;
+}
+
+body.leitor-keep-toolbar.with-bottom-navbar,
+body.zombie-toolbar-active.with-bottom-navbar {
+    --navbar-occupied-bottom: 0px;
+    --navbar-layout-bottom: 0px;
+    padding-bottom: 0 !important;
+}
+
+body.leitor-keep-toolbar .bottom-navbar,
+body.zombie-toolbar-active .bottom-navbar {
+    transform: translate3d(0, 100%, 0) !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+.bottom-navbar.transitioning {
+    transition: transform 0.2s ease-out;
+}
+
+.navbar-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    color: var(--navbar-inactive);
+    transition: all 0.2s ease;
+    padding: 6px 12px !important;
+    border-radius: 8px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    min-width: 60px !important;
+    max-width: 60px !important;
+    position: relative;
+    cursor: pointer;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
+    flex-basis: auto !important;
+}
+
+.navbar-item:active {
+    transform: scale(0.92);
+    background: var(--navbar-hover-bg);
+}
+
+.navbar-item.active {
+    color: var(--navbar-active);
+}
+
+.navbar-item.active::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background: var(--navbar-active);
+    border-radius: 50%;
+    animation: activeIndicator 0.3s ease-out;
+}
+
+@keyframes activeIndicator {
+    0% { opacity: 0; transform: translateX(-50%) scale(0); }
+    100% { opacity: 1; transform: translateX(-50%) scale(1); }
+}
+
+.navbar-icon {
+    width: 24px !important;
+    height: 24px !important;
+    margin-bottom: 4px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    transition: filter 0.2s ease;
+    flex-shrink: 0 !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.navbar-item.active .navbar-icon {
+    filter: brightness(0) saturate(100%) invert(35%) sepia(95%) saturate(1347%) hue-rotate(248deg) brightness(89%) contrast(90%) !important;
+}
+
+.navbar-label {
+    font-size: 10px !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    transition: color 0.2s ease;
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 60px !important;
+}
+
+.icon-home { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238E8E93' stroke-width='2'%3E%3Cpath d='M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'/%3E%3Cpolyline points='9,22 9,12 15,12 15,22'/%3E%3C/svg%3E"); }
+.icon-bible { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238E8E93' stroke-width='2'%3E%3Cpath d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'/%3E%3Cpath d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'/%3E%3C/svg%3E"); }
+.icon-notes { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238E8E93' stroke-width='2'%3E%3Cpath d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'/%3E%3Cpolyline points='14,2 14,8 20,8'/%3E%3Cline x1='16' y1='13' x2='8' y2='13'/%3E%3Cline x1='16' y1='17' x2='8' y2='17'/%3E%3Cpolyline points='10,9 9,9 8,9'/%3E%3C/svg%3E"); }
+.icon-watchtower { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238E8E93' stroke-width='2'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5z'/%3E%3Cpath d='M2 17l10 5 10-5'/%3E%3Cpath d='M2 12l10 5 10-5'/%3E%3C/svg%3E"); }
+.icon-save { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238E8E93' stroke-width='2'%3E%3Cpath d='M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z'/%3E%3Cpolyline points='17,21 17,13 7,13 7,21'/%3E%3Cpolyline points='7,3 7,8 15,8'/%3E%3C/svg%3E"); }
+
+.navbar-item.loading { pointer-events: none; opacity: 0.7; }
+.navbar-item.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    margin: -6px 0 0 -6px;
+    border: 2px solid var(--navbar-inactive);
+    border-radius: 50%;
+    border-top-color: var(--navbar-active);
+    animation: navbarSpin 1s linear infinite;
+}
+
+.navbar-item[data-page="save"].logged-in::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    width: 8px;
+    height: 8px;
+    background: #10b981;
+    border: 2px solid white;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+[data-theme="dark"] .navbar-item[data-page="save"].logged-in::before { border-color: #000; }
+
+.page-save .sync-status-badge {
+    position: fixed; top: 50px; right: 15px; background: #10b981; color: white;
+    padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 600;
+    z-index: 999; opacity: 0; transform: translateX(100%); transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
+}
+.page-save .sync-status-badge.show { opacity: 1; transform: translateX(0); }
+.page-save .sync-status-badge.logged-out { background: #6b7280; box-shadow: 0 2px 10px rgba(107, 114, 128, 0.3); }
+.page-save .sync-status-badge.error { background: #ef4444; box-shadow: 0 2px 10px rgba(239, 68, 68, 0.3); }
+
+/* Maintenance links need their own row, including when the label wraps on iPhone. */
+.offline-section > a.btn {
+    display: block;
+    box-sizing: border-box;
+    min-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.4;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+@keyframes navbarSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.navbar-item.success { animation: successPulse 0.3s ease-out; }
+@keyframes successPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); background: rgba(34, 197, 94, 0.1); }
+    100% { transform: scale(1); }
+}
+
+.navbar-item.error { animation: errorShake 0.4s ease-out; }
+@keyframes errorShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    75% { transform: translateX(3px); }
+}
+
+@media (max-width: 390px) {
+    .navbar-item { min-width: 50px; padding: 6px 8px !important; }
+    .navbar-icon { width: 20px !important; height: 20px !important; }
+    .navbar-label { font-size: 9px !important; }
+}
+
+.with-bottom-navbar { padding-bottom: var(--navbar-layout-bottom, calc(70px + var(--navbar-safe-bottom))) !important; }
+
+.navbar-context-home .navbar-item[data-page="home"] { color: var(--navbar-active); }
+.navbar-context-bible .navbar-item[data-page="bible"] { color: var(--navbar-active); }
+.navbar-context-notes .navbar-item[data-page="notes"] { color: var(--navbar-active); }
+.navbar-context-watchtower .navbar-item[data-page="watchtower"] { color: var(--navbar-active); }
+.navbar-context-save .navbar-item[data-page="save"] { color: var(--navbar-active); }
+
+@media (display-mode: standalone) {
+    :root {
+        --navbar-bottom-padding: 0px;
+    }
+    .bottom-navbar {
+        padding: 4px 0 !important;
+        padding-bottom: calc(var(--navbar-bottom-padding) + var(--navbar-safe-bottom)) !important;
+    }
+    .navbar-item { padding: 4px 10px !important; }
+    .navbar-icon { width: 24px !important; height: 24px !important; margin-bottom: 2px !important; }
+    .navbar-item.active::before { top: -4px; }
+    .with-bottom-navbar { padding-bottom: var(--navbar-layout-bottom, calc(52px + var(--navbar-safe-bottom))) !important; }
+}
+
+body.is-pwa { --navbar-bottom-padding: 0px; }
+body.is-pwa .bottom-navbar {
+    padding: 4px 0 !important;
+    padding-bottom: calc(var(--navbar-bottom-padding) + var(--navbar-safe-bottom)) !important;
+}
+body.is-pwa .navbar-item { padding: 4px 10px !important; }
+body.is-pwa .navbar-icon { width: 24px !important; height: 24px !important; margin-bottom: 2px !important; }
+body.is-pwa .navbar-item.active::before { top: -4px; }
+body.is-pwa.with-bottom-navbar { padding-bottom: var(--navbar-layout-bottom, calc(52px + var(--navbar-safe-bottom))) !important; }

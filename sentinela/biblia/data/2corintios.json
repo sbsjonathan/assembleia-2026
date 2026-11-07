@@ -1,0 +1,1355 @@
+{
+  "nome_do_livro": "2 Coríntios",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Paulo, apóstolo de Cristo Jesus pela vontade de Deus, e Timóteo, nosso irmão, à congregação de Deus em Corinto, incluindo todos os santos que estão em toda a Acaia:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Que vocês tenham bondade imerecida e paz da parte de Deus, nosso Pai, e do Senhor Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Louvado seja o Deus e Pai do nosso Senhor Jesus Cristo, o Pai de ternas misericórdias e o Deus de todo o consolo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "que nos consola em todas as nossas provações, para que, com o consolo que recebemos de Deus, possamos consolar outros em qualquer tipo de provação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois, assim como os nossos sofrimentos pelo Cristo são abundantes, também é abundante o consolo que recebemos por meio do Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ora, se enfrentamos provações, é para o consolo e a salvação de vocês; e, se estamos sendo consolados, é para o seu consolo, que age para ajudá-los a suportar os mesmos sofrimentos que nós também passamos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "E a nossa esperança a respeito de vocês é firme, pois sabemos que, assim como vocês participam dos sofrimentos, também participarão do consolo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pois não queremos, irmãos, que vocês fiquem sem saber da tribulação que passamos na província da Ásia. Nós estivemos sob extrema pressão, além das nossas forças, de modo que ficamos muito apreensivos até mesmo quanto à nossa vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "De fato, sentimos que tínhamos recebido a sentença de morte. Isso aconteceu para que confiássemos não em nós mesmos, mas no Deus que levanta os mortos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "De um perigo de morte tão grande ele nos livrou e nos livrará, e temos esperança nele de que continuará a nos livrar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Vocês também podem nos ajudar com as suas súplicas por nós; assim, muitos darão graças por nossa causa, pelo favor que recebemos em resposta às orações de muitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois nós nos orgulhamos do seguinte: a nossa consciência dá testemunho de que temos nos comportado no mundo, e especialmente em relação a vocês, com santidade e também com a sinceridade que vem de Deus, não com a sabedoria humana, mas com a bondade imerecida de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Pois nós realmente não estamos escrevendo a vocês nada que não sejam capazes de ler e entender, e eu espero que continuem a entender plenamente essas coisas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "assim como também entenderam, até certo ponto, que nós somos motivo de orgulho para vocês, como vocês também serão para nós no dia do nosso Senhor Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Assim, com essa confiança, eu pretendia ir visitá-los primeiro, para que vocês tivessem um segundo motivo de alegria;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "pois eu pretendia visitá-los a caminho da Macedônia, e da Macedônia voltar a vocês, e então ser acompanhado por vocês parte do caminho para a Judeia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Pois bem, quando planejei isso, será que encarei o assunto levianamente? Ou será que me proponho a fazer as coisas de maneira humana, e por isso digo “sim, sim” e depois “não, não”?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Mas, assim como Deus é fiel, o que dizemos a vocês não é “sim” e ao mesmo tempo “não”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Pois o Filho de Deus, Jesus Cristo, que nós, isto é, eu, Silvano e Timóteo, pregamos entre vocês, não se tornou “sim” e ao mesmo tempo “não”, mas o “sim” se tornou “sim” no caso dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Pois, não importa quantas sejam as promessas de Deus, elas se tornaram “sim” por meio dele. Portanto, também é por meio dele que se diz o “amém” a Deus, e isso dá glória a ele por nosso intermédio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Mas aquele que garante que nós e vocês pertencemos a Cristo, e quem nos ungiu, é Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Ele pôs também o seu selo sobre nós e nos deu a garantia daquilo que virá, isto é, o espírito, em nosso coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Chamo a Deus por testemunha contra mim de que é para poupar vocês que ainda não fui a Corinto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Não é que sejamos os donos da sua fé, mas somos colaboradores para a sua alegria, pois é pela sua fé que vocês estão de pé.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Pois eu decidi que a minha próxima visita a vocês não será triste.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Porque, se eu os entristecer, quem haverá para me alegrar, a não ser aqueles que eu tiver entristecido?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Escrevi o que escrevi para que, quando eu for aí, não fique triste por causa daqueles que deveriam me alegrar; porque tenho confiança de que o que me traz alegria traz a mesma alegria a todos vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Pois eu lhes escrevi com muita aflição e angústia de coração, com muitas lágrimas, não para entristecê-los, mas para que soubessem do profundo amor que tenho por vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Ora, se alguém causou tristeza, ele entristeceu não a mim, mas a todos vocês, até certo ponto — para não ser severo demais no que digo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Essa censura da parte da maioria é suficiente para esse homem;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "agora, ao contrário, vocês devem perdoá-lo bondosamente e consolá-lo, para que ele não seja vencido pela excessiva tristeza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Eu os exorto, portanto, a reafirmar o seu amor por ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Pois é também por isso que lhes escrevi: para ver se vocês dariam provas de que são obedientes em todas as coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Se vocês perdoarem alguém por alguma coisa, eu também perdoo. De fato, o que perdoei (se eu tiver perdoado alguma coisa), foi para o bem de vocês, à vista de Cristo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "para que não sejamos vencidos por Satanás, pois não desconhecemos as suas tramas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quando cheguei a Trôade para declarar as boas novas a respeito do Cristo, e foi aberta para mim uma porta na obra do Senhor,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "meu espírito não teve alívio porque não achei Tito, meu irmão. Então me despedi dos irmãos dali e parti para a Macedônia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas graças sejam dadas a Deus, que sempre nos conduz num desfile triunfal em companhia do Cristo e, por nosso intermédio, espalha o aroma do conhecimento dele por toda a parte!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Pois para Deus somos aroma agradável de Cristo, entre os que estão a caminho da salvação e entre os que estão a caminho da destruição",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "— para estes últimos, cheiro de morte que leva à morte; para os primeiros, aroma de vida que leva à vida. E quem está qualificado para isso?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Nós estamos, pois não somos vendedores ambulantes da palavra de Deus, como muitos são, mas falamos com toda a sinceridade como enviados por Deus, sim, à vista de Deus e na companhia de Cristo.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Estamos começando a recomendar a nós mesmos novamente? Ou será que precisamos, como alguns, de cartas de recomendação para vocês ou da parte de vocês?",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Vocês mesmos são a nossa carta, escrita no nosso coração, conhecida e lida por toda a humanidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Porque é evidente que vocês são carta de Cristo, escrita por nós como ministros, não com tinta, mas com o espírito de um Deus vivente; não em tábuas de pedra, mas em tábuas carnais, em corações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Temos tal confiança em Deus por meio do Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Não que estejamos qualificados por nós mesmos para considerar que qualquer coisa venha de nós, mas a nossa qualificação vem de Deus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "que de fato nos habilitou para sermos servos de um novo pacto, não de um código escrito, mas do espírito; pois o código escrito condena à morte, mas o espírito dá vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Ora, se o código que ministra a morte e que foi gravado com letras em pedras veio com tal glória que os filhos de Israel não podiam olhar para o rosto de Moisés por causa da glória do seu rosto, glória que seria eliminada,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "não deveria a ministração do espírito ter uma glória ainda maior?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Pois, se o código que ministrava a condenação era glorioso, quanto mais gloriosa seria a ministração da justiça!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "De fato, mesmo aquilo que no passado havia sido feito glorioso perdeu a glória por causa da glória que lhe é superior.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois, se aquilo que seria eliminado foi introduzido com glória, quanto maior seria a glória daquilo que permanece!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Visto que temos tal esperança, falamos com muita confiança,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "e não fazemos como Moisés, que colocava um véu sobre o rosto para que os filhos de Israel não fixassem os olhos no fim daquilo que seria eliminado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas a mente deles ficou insensível. Pois até hoje, quando o antigo pacto é lido, o mesmo véu permanece sem ser levantado, visto que ele só é removido por meio de Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "De fato, até hoje, sempre que Moisés é lido, um véu cobre o coração deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mas, quando alguém se volta para Jeová, o véu é retirado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Ora, Jeová é o Espírito, e onde está o espírito de Jeová, ali há liberdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "E todos nós, ao passo que com o rosto descoberto refletimos como um espelho a glória de Jeová, somos transformados nessa mesma imagem, com mais e mais glória, exatamente como Jeová, o Espírito, o faz.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Portanto, visto que temos este ministério por meio da misericórdia que se teve conosco, não desistimos.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pelo contrário, renunciamos às coisas vergonhosas, feitas em segredo, e não andamos com astúcia nem adulteramos a palavra de Deus; mas, tornando conhecida a verdade, nós nos recomendamos a toda consciência humana diante de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Se, de fato, as boas novas que declaramos estão ocultas, estão ocultas entre os que estão a caminho da destruição,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "entre os quais o deus deste mundo cegou a mente dos descrentes, para que não brilhe sobre eles a luz das gloriosas boas novas a respeito do Cristo, que é a imagem de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois não estamos pregando a respeito de nós mesmos, mas a respeito de Jesus Cristo como Senhor, e a respeito de nós mesmos como escravos de vocês por causa de Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Porque foi Deus quem disse: “Da escuridão brilhe a luz”, e ele tem brilhado sobre os nossos corações, para iluminá-los com o glorioso conhecimento de Deus por meio do rosto de Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "No entanto, temos esse tesouro em vasos de barro, para que o poder além do normal seja o de Deus, e não o de nós mesmos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Somos pressionados de todos os modos, mas não apertados sem poder nos mover; ficamos perplexos, mas não inteiramente sem saída;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "somos perseguidos, mas não abandonados; somos derrubados, mas não destruídos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Sempre suportamos em nosso corpo o tratamento mortífero que Jesus sofreu, para que a vida de Jesus também se revele em nosso corpo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois nós, que estamos vivos, somos sempre confrontados com a morte por causa de Jesus, para que a vida de Jesus também se revele em nossa carne mortal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Assim, em nós atua a morte, mas em vocês a vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Agora, visto que temos o mesmo espírito de fé a respeito do qual está escrito: “Exerci fé, por isso falei”, nós também exercemos fé e por isso falamos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "sabendo que Aquele que levantou a Jesus também nos levantará com Jesus, e nos apresentará junto com vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Pois tudo isso é por causa de vocês, a fim de que a bondade imerecida aumente cada vez mais porque muito mais pessoas estão dando graças para a glória de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Por isso não desistimos; porém, ainda que o homem que somos por fora definhe, certamente o homem que somos por dentro está sendo renovado a cada dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Pois, embora o sofrimento seja momentâneo e leve, produz para nós uma glória de grandeza extraordinária, uma glória eterna,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "ao passo que fixamos os olhos não nas coisas vistas, mas nas coisas não vistas. Porque as coisas vistas são temporárias, mas as coisas não vistas são eternas.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Pois nós sabemos que, se a nossa casa terrena, esta tenda, for destruída, teremos um edifício da parte de Deus, uma casa eterna nos céus, não feita por mãos humanas.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois de fato gememos nesta casa, desejando ansiosamente nos revestir daquela que é para nós, do céu,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "de modo que, quando nos revestirmos dela, não seremos achados nus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Na verdade, nós, que estamos nesta tenda, gememos oprimidos, pois não queremos nos despir dela, mas queremos nos revestir da outra, para que aquilo que é mortal seja consumido pela vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quem nos preparou para isso foi Deus, que nos deu o espírito como garantia daquilo que virá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Assim, estamos sempre confiantes e sabemos que, enquanto moramos no corpo, estamos longe do Senhor,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "pois estamos andando pela fé, não pela vista.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Mas estamos cheios de confiança e preferimos estar longe do corpo e morar com o Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Assim, quer moremos com ele, quer estejamos longe dele, temos por alvo agradar a ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pois todos nós compareceremos perante o tribunal do Cristo, para que cada um receba a sua retribuição de acordo com as coisas que fez enquanto no corpo, sejam boas sejam más.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Portanto, visto que conhecemos o temor do Senhor, continuamos persuadindo a homens, mas somos plenamente conhecidos por Deus. E espero que também sejamos plenamente conhecidos pela consciência de vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Não estamos nos recomendando novamente a vocês, mas estamos lhes dando um incentivo para que falem de nós com orgulho, a fim de que possam responder aos que se orgulham da aparência, e não do que há no coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Pois, se perdemos o juízo, foi para Deus; se temos juízo são, é para vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Pois o amor do Cristo nos impele, porque nós concluímos o seguinte: um só homem morreu por todos — de fato, todos tinham morrido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "E ele morreu por todos para que os que vivem não vivessem mais para si mesmos, mas para aquele que morreu por eles e foi levantado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Assim, de agora em diante não conhecemos mais a ninguém de um ponto de vista carnal. Mesmo que antes tenhamos conhecido a Cristo segundo a carne, certamente não o conhecemos mais assim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Portanto, se alguém está em união com Cristo, é uma nova criação. As coisas antigas passaram. Vejam! Coisas novas vieram à existência.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Mas tudo isso vem de Deus, que nos reconciliou consigo mesmo por meio de Cristo e nos deu o ministério da reconciliação",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "— isto é, que Deus, por meio de Cristo, estava reconciliando um mundo consigo mesmo, sem levar em conta contra eles os seus pecados; e ele nos confiou a mensagem da reconciliação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Somos, portanto, embaixadores, substituindo a Cristo, como se Deus fizesse um apelo por nosso intermédio. Suplicamos, como substitutos de Cristo: “Sejam reconciliados com Deus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Àquele que não conheceu pecado, ele tornou pecado por nós, para que, por meio dele, nós nos tornássemos justiça de Deus.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Cooperando com ele, também exortamos vocês a não aceitar a bondade imerecida de Deus e perder de vista o objetivo dela.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois ele diz: “Num tempo aceitável ouvi você e num dia de salvação o ajudei.” Vejam, agora é o tempo especialmente aceitável. Vejam, agora é o dia de salvação!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "De modo algum damos motivo para tropeço, para que o nosso ministério não seja criticado;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "mas nós nos recomendamos de todos os modos como ministros de Deus, por perseverar em muitas provações, em tribulações, em tempos de privações, em dificuldades,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "em espancamentos, em prisões, em tumultos, em trabalho árduo, em noites sem dormir, em ocasiões sem comer;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "pela pureza, pelo conhecimento, pela paciência, pela bondade, pelo espírito santo, pelo amor sem hipocrisia,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "por palavras verdadeiras, pelo poder de Deus; por meio das armas da justiça na mão direita e na esquerda,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "por meio de glória e de desonra, por meio de difamação e de boa fama. Somos considerados como enganadores, embora sejamos verdadeiros;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "como desconhecidos, embora reconhecidos; como prestes a morrer, mas, vejam, estamos vivos; como castigados, embora não entregues à morte;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "como tristes, mas sempre alegres; como pobres, mas enriquecendo a muitos; como não tendo nada, e ainda assim possuindo tudo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Nós abrimos a nossa boca para falar com vocês, coríntios, e abrimos amplamente o nosso coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Não estamos limitando nossos sentimentos por vocês, mas vocês estão limitando seus ternos sentimentos por nós.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Assim, como retribuição — falo como a meus filhos —, abram também amplamente o seu coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Não se ponham em jugo desigual com descrentes. Pois que afinidade a justiça tem com o que é contra a lei? Ou o que a luz tem em comum com a escuridão?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Além disso, que harmonia há entre Cristo e Belial? Ou o que o crente tem em comum com o descrente?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "E que acordo há entre o templo de Deus e os ídolos? Pois nós somos templo de um Deus vivente, como Deus disse: “Residirei entre eles e andarei entre eles, e eu serei o seu Deus, e eles serão o meu povo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "“‘Portanto, saiam do meio deles e separem-se’, diz Jeová, ‘e parem de tocar em coisa impura’”; “‘e eu os acolherei’”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "“‘E eu me tornarei pai para vocês, e vocês se tornarão filhos e filhas para mim’, diz Jeová, o Todo-Poderoso.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 7,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Portanto, amados, visto que temos essas promessas, purifiquemo-nos de toda imundície da carne e do espírito, aperfeiçoando a santidade no temor de Deus.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Deem lugar a nós no seu coração. Não fizemos injustiça a ninguém, não corrompemos a ninguém, não nos aproveitamos de ninguém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Não digo isso para condenar vocês. Pois eu já disse que vocês estão no nosso coração, para morrer conosco e para viver conosco.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Uso de muita franqueza ao falar com vocês. Tenho muito orgulho de vocês. Estou plenamente consolado; estou transbordando de alegria em toda a nossa aflição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "De fato, quando chegamos à Macedônia, não tivemos alívio, mas continuamos a ser afligidos de todos os modos — havia lutas por fora, temores por dentro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas Deus, que consola os desanimados, nos consolou com a presença de Tito;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "e não somente com a presença dele, mas também com o consolo que ele recebeu por causa de vocês, pois ele nos contou do seu desejo de me ver, da sua profunda tristeza, da sua sincera preocupação por mim; de modo que me alegrei ainda mais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pois, mesmo que eu os tenha entristecido com a minha carta, não lamento isso. Embora a princípio eu tenha lamentado (porque vejo que a carta os entristeceu, ainda que por pouco tempo),",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "agora me alegro, não porque vocês foram entristecidos, mas porque a sua tristeza os levou ao arrependimento. Pois vocês foram entristecidos segundo a vontade de Deus, e assim não foram prejudicados em nada por nossa causa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Porque a tristeza segundo a vontade de Deus produz o arrependimento que leva à salvação, e disso ninguém se lamentará; mas a tristeza do mundo produz a morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois vejam que diligência a sua tristeza segundo a vontade de Deus produziu em vocês: fez com que se reabilitassem, que ficassem indignados, que tivessem temor, desejo sincero e zelo, que corrigissem o erro! Vocês demonstraram em todos os sentidos que são puros nesse assunto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Embora eu tenha escrito a vocês, não fiz isso por causa daquele que cometeu o erro, nem daquele contra quem se cometeu o erro, mas para que ficasse clara entre vocês, à vista de Deus, a sua diligência em nos obedecer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "É por isso que fomos consolados. Mas, além do consolo que recebemos, nós nos alegramos ainda mais por causa da alegria de Tito, porque todos vocês reanimaram o espírito dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Pois, se eu falei de vocês para ele com orgulho, não fui envergonhado; mas, assim como tudo o que dissemos a vocês era verdade, também se mostrou verdadeiro aquilo que falamos a Tito com orgulho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Além disso, os ternos sentimentos dele por vocês aumentam quando ele se lembra da obediência de todos vocês, de como o receberam com temor e tremor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Eu me alegro porque em tudo posso ter confiança em vocês.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 8,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Agora, irmãos, queremos que vocês saibam da bondade imerecida de Deus que foi concedida às congregações da Macedônia.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Mesmo sob aflição durante uma grande prova, a imensa alegria e a extrema pobreza deles fizeram transbordar as riquezas de sua generosidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois o que eles fizeram foi segundo seus recursos, sim, sou testemunha de que foi até mesmo além de seus recursos;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "eles nos suplicavam insistentemente, de sua própria iniciativa, pelo privilégio de dar bondosamente, para participar no serviço de ajuda aos santos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "E fizeram mais do que esperávamos, visto que se entregaram primeiramente ao Senhor e a nós, pela vontade de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Assim, incentivamos Tito a terminar a coleta da bondosa dádiva de vocês, visto que ele havia iniciado esse trabalho no seu meio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Portanto, assim como vocês são ricos em tudo — em fé, em palavra, em conhecimento, em toda a diligência e em nosso amor por vocês —, sejam ricos também no que se refere a essa bondosa dádiva.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Não digo isso como uma ordem, mas para informá-los da diligência de outros e para pôr à prova a sinceridade do amor de vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Pois vocês conhecem a bondade imerecida do nosso Senhor Jesus Cristo: embora fosse rico, tornou-se pobre por causa de vocês, para que vocês se tornassem ricos por meio da pobreza dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "E a esse respeito dou a minha opinião: cuidar disso é para o seu próprio bem, visto que já faz um ano que vocês não somente iniciaram essa obra, mas também mostraram o desejo de fazê-la.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Agora, então, terminem o que começaram, de modo que a sua prontidão para agir seja completada segundo os recursos que têm à disposição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois, se já existe a prontidão, a dádiva é especialmente aceitável segundo o que a pessoa tem, não segundo o que a pessoa não tem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Porque não quero aliviar outros e sobrecarregar vocês;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "mas, por meio de uma compensação, que o excedente que agora vocês têm supra a necessidade deles, a fim de que o excedente deles também supra a carência de vocês, e desse modo haja uma compensação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Assim como está escrito: “Quem tinha muito não teve demais, e quem tinha pouco não teve de menos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Graças sejam dadas a Deus por ter colocado no coração de Tito a mesma preocupação sincera que temos por vocês,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "porque ele não só correspondeu ao nosso incentivo, mas, como tem muito boa vontade, está indo visitá-los por iniciativa própria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Nós, porém, estamos enviando junto com ele o irmão que tem sido elogiado em todas as congregações por causa do que está fazendo pelas boas novas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Não só isso, mas ele também foi designado pelas congregações para ser nosso companheiro de viagem ao cuidarmos dessa bondosa dádiva para a glória do Senhor e como prova da nossa prontidão em ajudar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Estamos assim evitando que alguém nos critique com relação a essa contribuição generosa da qual estamos cuidando.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Pois ‘cuidamos de tudo honestamente, não somente à vista de Jeová, mas também à vista dos homens’.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Além disso, estamos enviando com eles o nosso irmão, cuja diligência comprovamos muitas vezes e em muitos assuntos; mas ele agora se mostra ainda mais diligente por causa da grande confiança que tem em vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "No entanto, se houver qualquer dúvida quanto a Tito, ele é meu companheiro e colaborador a favor dos interesses de vocês; ou, se houver dúvidas quanto aos nossos irmãos, eles são enviados das congregações e uma glória para Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Portanto, deem a eles provas do seu amor e mostrem às congregações o motivo de falarmos com orgulho a respeito de vocês.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 9,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "A respeito do serviço em favor dos santos, não é de todo necessário que eu lhes escreva,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "pois conheço a sua prontidão e dela falo com orgulho aos macedônios, dizendo que a Acaia já está pronta há um ano, e o zelo de vocês estimulou a maioria deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mas estou enviando os irmãos, para que o orgulho que temos de vocês nesse respeito não se mostre infundado, e para que vocês estejam realmente prontos, assim como eu disse que estariam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Senão, se os macedônios fossem comigo e não os achassem prontos, nós — para não mencionar vocês — ficaríamos envergonhados por ter tido confiança em vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Por isso achei necessário incentivar os irmãos a ir visitá-los antes e a aprontar com antecedência a sua prometida dádiva generosa, para que estivesse pronta como algo dado com generosidade, e não à força.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas, quanto a isso, quem semear parcimoniosamente colherá também parcimoniosamente, e quem semear generosamente colherá também generosamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Faça cada um conforme resolveu no coração, não a contragosto nem por obrigação, pois Deus ama quem dá com alegria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Além do mais, Deus é capaz de tornar abundante para vocês toda a Sua bondade imerecida, para que sempre sejam plenamente autossuficientes em tudo, e também tenham bastante para toda boa obra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "(Assim como está escrito: “Ele distribui amplamente; dá aos pobres. Sua justiça permanece para sempre.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Aquele que fornece abundantemente semente ao semeador e pão como alimento também fornecerá e multiplicará a semente para vocês semearem e aumentará a colheita da justiça de vocês.)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Em tudo vocês estão sendo enriquecidos para praticar todo tipo de generosidade, a qual, por nosso intermédio, produz agradecimentos a Deus;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "porque esse serviço que estão prestando não somente suprirá adequadamente as necessidades dos santos, mas também se tornará uma abundante fonte de agradecimentos a Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Eles glorificam a Deus, pois esse serviço de ajuda prova que vocês são submissos às boas novas a respeito do Cristo, conforme declararam publicamente, e que são generosos na sua contribuição para eles e para todos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E, com súplicas a favor de vocês, eles expressam que os amam, por causa da extraordinária bondade imerecida de Deus para com vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Graças sejam dadas a Deus por Sua indescritível dádiva.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 10,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Eu mesmo, Paulo, suplico-lhes pela brandura e bondade do Cristo, eu que sou humilde quando estou pessoalmente entre vocês, mas ousado com vocês quando ausente.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Rogo que, quando eu estiver presente, não tenha de ser ousado e tomar medidas fortes, como penso que tomarei, contra alguns que nos encaram como se andássemos de acordo com a carne.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois, embora vivamos na carne, não travamos combate de acordo com o que somos na carne.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Porque as armas do nosso combate não são carnais, mas poderosas em Deus para demolir fortalezas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois demolimos raciocínios e toda barreira que se ergue contra o conhecimento de Deus, e levamos todo pensamento ao cativeiro, para fazê-lo obediente ao Cristo;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "e estamos preparados para punir toda desobediência, uma vez que a obediência de vocês esteja completa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Vocês julgam as coisas pela aparência. Se alguém estiver convencido de que pertence a Cristo, que ele reflita novamente no seguinte fato: assim como ele pertence a Cristo, nós também pertencemos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pois, mesmo que eu me orgulhasse um pouco demais da autoridade que o Senhor nos deu para edificar vocês, e não para os derrubar, eu não me envergonharia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas não quero dar a impressão de que estou tentando amedrontá-los com as minhas cartas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pois eles dizem: “As cartas dele têm peso e força, mas a presença dele é fraca, e a palavra dele desprezível.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Que tal homem saiba que aquilo que dizemos por cartas quando estamos ausentes, nós faremos quando estivermos presentes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois não nos atrevemos a nos igualar ou a nos comparar com alguns que recomendam a si mesmos. Mas, quando eles se avaliam pelos seus próprios critérios e se comparam consigo mesmos, mostram que não têm entendimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "No entanto, nós não nos orgulharemos de algo feito fora dos nossos limites designados, mas somente do que fazemos dentro dos limites do território que Deus demarcou para nós, o qual inclui vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Realmente, não estamos indo além dos nossos limites, como se o nosso território não os incluísse, pois fomos os primeiros a chegar até vocês com as boas novas a respeito do Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Não, não nos orgulhamos fora dos nossos limites designados, isto é, do trabalho árduo de outros, mas esperamos que, ao passo que a sua fé continuar crescendo, o trabalho que realizamos continue a crescer, dentro do nosso território. Então aumentaremos ainda mais,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "para que declaremos as boas novas às regiões que ficam além de vocês, a fim de não nos orgulharmos de algo já feito em território de outro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "“Mas quem se orgulhar, orgulhe-se em Jeová.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Pois o aprovado não é aquele que recomenda a si mesmo, mas sim aquele a quem Jeová recomenda.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 11,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Eu gostaria que vocês me suportassem numa pequena insensatez. Mas, de fato, vocês estão me suportando!",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois tenho ciúme de vocês, um ciúme semelhante ao de Deus, porque eu pessoalmente os prometi em casamento a um só marido, ao Cristo, a fim de apresentá-los como virgem casta a ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mas tenho medo de que, assim como a serpente seduziu Eva pela sua astúcia, a mente de vocês seja de algum modo corrompida, afastando-se da sinceridade e da castidade que devemos ao Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Pois, de fato, se alguém chega e prega um Jesus diferente do que nós pregamos, ou se vocês recebem um espírito diferente do que receberam, ou boas novas diferentes das que aceitaram, vocês facilmente o suportam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois eu não me considero inferior aos seus superapóstolos em coisa alguma.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas, mesmo que eu seja imperito no falar, certamente não o sou no conhecimento; de fato, deixamos isso claro a vocês de todos os modos e em todas as coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Ou será que cometi um pecado por me humilhar para que vocês fossem enaltecidos, ao declarar-lhes de boa vontade as boas novas de Deus sem custo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "A outras congregações despojei, aceitando provisões delas a fim de servir a vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Contudo, quando estive presente entre vocês e passei necessidade, não me tornei um fardo para ninguém, pois os irmãos vindos da Macedônia supriram abundantemente as minhas necessidades. Sim, tomei cuidado para não me tornar um fardo para vocês em nenhum sentido, e continuarei fazendo isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Tão certo como a verdade de Cristo está em mim, não deixarei de falar com orgulho sobre isso nas regiões da Acaia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Por quê? Porque não amo vocês? Deus sabe que os amo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Mas o que estou fazendo continuarei fazendo, a fim de eliminar o pretexto daqueles que estão procurando um motivo para ser considerados iguais a nós nas coisas das quais se gabam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Pois esses homens são falsos apóstolos, trabalhadores enganosos, disfarçados de apóstolos de Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E isso não é de admirar, pois o próprio Satanás se disfarça de anjo de luz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Portanto, não surpreende que os servos dele também se disfarcem de servos da justiça. Mas o fim deles será segundo as suas obras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Digo novamente: Que ninguém pense que sou insensato. Mas, se vocês pensam isso, então aceitem-me como um insensato, para que eu também me gabe um pouco.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Estou falando agora, não seguindo o exemplo do Senhor, mas como alguém insensato, com a autoconfiança de quem se gaba.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Já que muitos se gabam segundo a carne, eu também me gabarei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Vocês, que são tão “sensatos”, suportam de boa vontade os insensatos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "De fato, suportam a quem quer que os escravize, a quem quer que devore os seus bens, a quem quer que tome o que vocês têm, a quem quer que se enalteça sobre vocês, a quem quer que lhes bata no rosto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "É uma desonra para nós dizer isso, pois pode parecer que fomos fracos. Mas, se outros agem com ousadia — estou falando como insensato —, eu também ajo com ousadia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Eles são hebreus? Eu também sou. São israelitas? Eu também sou. São descendência de Abraão? Eu também sou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "São ministros de Cristo? Respondo como louco: eu o sou ainda mais destacadamente — eu trabalhei mais, fui preso mais vezes, sofri incontáveis golpes e muitas vezes corri perigo de morte;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "cinco vezes recebi dos judeus 40 golpes menos um,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "três vezes fui espancado com varas, uma vez fui apedrejado, três vezes sofri naufrágio, uma noite e um dia passei em alto-mar;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "em muitas viagens, em perigos de rios, em perigos de ladrões, em perigos por parte do meu próprio povo, em perigos por parte das nações, em perigos na cidade, em perigos no deserto, em perigos no mar, em perigos entre falsos irmãos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "em grande esforço e trabalho árduo, em muitas noites sem dormir, em fome e sede, frequentemente sem ter o que comer, em frio e sem ter o que vestir.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Além dessas coisas exteriores, há o que diariamente pesa sobre mim: a ansiedade por todas as congregações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Quem está fraco, sem que eu também me sinta fraco? Quem tropeça, sem que eu fique enfurecido?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Se é preciso que me gabe, eu me gabarei das coisas que mostram a minha fraqueza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "O Deus e Pai do Senhor Jesus, Aquele que deve ser louvado para sempre, sabe que não estou mentindo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Em Damasco, o governador sob o rei Aretas pôs guardas na cidade dos damascenos para me prender,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "mas me fizeram descer num cesto por uma janela na muralha da cidade, e eu escapei das mãos dele.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 12,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Tenho de me gabar. Não há nada a ganhar com isso, mas passarei às visões sobrenaturais e revelações da parte do Senhor.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Conheço um homem em união com Cristo que, há 14 anos — quer no corpo, quer fora do corpo, não sei; Deus sabe —, foi arrebatado ao terceiro céu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Sim, conheço esse homem que — quer no corpo, quer separado do corpo, não sei; Deus sabe —",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "foi arrebatado para o paraíso e ouviu palavras que não podem ser ditas e que não se permite ao homem falar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Eu me gabarei desse homem, mas não me gabarei de mim mesmo, a não ser das minhas fraquezas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Pois, mesmo que eu quisesse me gabar, eu não seria insensato, porque diria a verdade. Mas evito fazer isso para que ninguém me dê crédito por algo além do que vê em mim ou do que ouve de mim,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "só porque recebo essas revelações extraordinárias. Para impedir que eu ficasse enaltecido demais, foi-me dado um espinho na carne, um anjo de Satanás, para me esbofetear continuamente, a fim de que eu não me enaltecesse demais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Três vezes supliquei ao Senhor, pedindo que isso se afastasse de mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas ele me disse: “A minha bondade imerecida é suficiente para você, pois o meu poder está sendo aperfeiçoado na fraqueza.” Com muita alegria, então, eu me gabarei das minhas fraquezas, para que o poder do Cristo permaneça sobre mim como uma tenda.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Assim, tenho prazer em fraquezas, em insultos, em privações, em perseguições e dificuldades, por Cristo. Pois, quando estou fraco, então é que sou poderoso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Tornei-me insensato. Vocês me obrigaram a isso, porque deveriam ter me recomendado. Pois não me mostrei em coisa alguma inferior aos seus superapóstolos, embora eu não seja nada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "De fato, os sinais que identificam um apóstolo foram produzidos entre vocês com grande perseverança, e por sinais, milagres e obras poderosas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Pois em que é que vocês foram menos favorecidos do que as outras congregações, a não ser no fato de que eu mesmo não me tornei um fardo para vocês? Perdoem-me bondosamente essa injustiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Vejam, esta é a terceira vez que estou pronto para ir visitá-los, e não me tornarei um fardo. Pois estou buscando não os seus bens, mas a vocês; porque não se espera que os filhos acumulem para os pais, mas sim os pais para os filhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Quanto a mim, de muito boa vontade gastarei e serei completamente gasto a favor de vocês. Se os amo tanto, deveria eu ser amado menos?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mas, seja como for, não os sobrecarreguei. No entanto, vocês dizem que fui “ardiloso” e que os apanhei “com astúcia”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Será que me aproveitei de vocês por meio de algum daqueles que lhes enviei?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Insisti com Tito para que visitasse vocês e enviei o irmão com ele. Será que Tito se aproveitou de vocês? Por acaso não andamos no mesmo espírito, nas mesmas pisadas?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Vocês pensaram durante todo esse tempo que estávamos fazendo a nossa defesa perante vocês? É perante Deus que estamos falando, em união com Cristo. Mas, amados, tudo o que fazemos é para edificar vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Pois receio que, quando eu chegar aí, talvez não os encontre como eu queria, e eu não seja como vocês queriam, mas, em vez disso, que eu encontre brigas, ciúme, acessos de ira, discórdias, calúnias, cochichos, demonstrações de orgulho e desordens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Talvez, quando eu for novamente, meu Deus me humilhe diante de vocês, e eu tenha de chorar por muitos que anteriormente pecaram e não se arrependeram da impureza, da imoralidade sexual e da conduta insolente que praticaram.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 13,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Esta é a terceira vez que estou para ir visitá-los. “Toda questão deve ficar estabelecida com base no depoimento de duas ou três testemunhas.”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Embora eu esteja ausente agora, é como se eu estivesse presente pela segunda vez, e eu previno os que pecaram no passado, e a todos os outros, que não os pouparei se eu for aí outra vez,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "visto que vocês estão querendo provas de que Cristo, que não é fraco ao lidar com vocês, mas é poderoso entre vocês, fala realmente por meio de mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Pois, de fato, ele foi morto na estaca em razão de sua fraqueza, mas está vivo por causa do poder de Deus. É verdade que nós também somos fracos com ele, mas viveremos junto com ele por causa do poder de Deus em vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Persistam em examinar se estão na fé; persistam em pôr à prova o que vocês mesmos são. Ou não reconhecem que Jesus Cristo está em união com vocês? A menos que estejam reprovados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Eu realmente espero que vocês reconheçam que nós não estamos reprovados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Oramos a Deus que vocês não façam nada de errado, não para que nós pareçamos aprovados, mas para que vocês façam o que é bom, mesmo que nós pareçamos reprovados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pois não podemos fazer nada contra a verdade, mas somente a favor da verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Nós certamente nos alegramos sempre que estamos fracos e vocês poderosos. E o que pedimos em oração é que vocês sejam reajustados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "É por isso que escrevo estas coisas enquanto estou ausente, para que, quando estiver presente, não tenha de ser severo ao usar a autoridade que o Senhor me deu, que é para edificar, e não para derrubar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Finalmente, irmãos, continuem a se alegrar, a ser reajustados, a ser consolados, a pensar do mesmo modo, a viver pacificamente; e o Deus de amor e de paz estará com vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Cumprimentem uns aos outros com beijo santo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Todos os santos lhes mandam saudações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "A bondade imerecida do Senhor Jesus Cristo, o amor de Deus e a participação no espírito santo estejam com todos vocês.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

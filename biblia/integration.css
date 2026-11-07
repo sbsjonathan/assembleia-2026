@@ -1,0 +1,63 @@
+/* The Bible shares A Sentinela's menu and its measured iPhone safe area. */
+body.sentinela-bible{--bible-menu-height:var(--navbar-layout-bottom,70px);--navbar-bg:#fff;--navbar-shadow:0 -1px 8px #00000008}
+body.sentinela-bible.with-bottom-navbar{padding-bottom:var(--bible-menu-height)!important}
+body.sentinela-bible.audio-open.with-bottom-navbar{padding-bottom:calc(var(--bible-menu-height) + 116px)!important}
+.sentinela-bible .bottom-navbar,.sentinela-bible .bottom-navbar *{font-family:"Noto Sans",-apple-system,BlinkMacSystemFont,sans-serif!important}
+.sentinela-bible .audio-player{bottom:var(--bible-menu-height);z-index:1001}
+.sentinela-bible #audio-follow{bottom:calc(var(--bible-menu-height) + 122px);z-index:1002}
+.sentinela-bible #action-status{bottom:calc(var(--bible-menu-height) + 15px);z-index:1100}
+.sentinela-bible.audio-open #action-status{bottom:calc(var(--bible-menu-height) + 130px)}
+.sentinela-bible .text-actions{z-index:1003}
+.sentinela-bible .reader{min-height:calc(100dvh - var(--header) - var(--bible-menu-height) - env(safe-area-inset-top))}
+.offline-notice{padding:9px 15px;background:#eae6f0;color:#604184;font-size:12px;line-height:1.5}
+.offline-notice.offline-error{background:#fff0dd;color:#714817}
+#offline-status{gap:12px}
+#offline-status span{flex-shrink:0}
+.sentinela-bible .welcome .button{margin-top:12px}
+
+/* Avoid flashing the first-install welcome screen on an already prepared reader. */
+.bible-restoring #empty,.bible-restoring #status:not(.error){display:none!important}
+
+/* Study references opened from an article are a reading screen, with their
+   original verse and return path, rather than a sheet over another chapter. */
+.study-article-header{position:sticky;top:0;z-index:31;display:flex;align-items:center;min-height:calc(44px + env(safe-area-inset-top));padding:env(safe-area-inset-top) max(8px,env(safe-area-inset-right)) 0 max(8px,env(safe-area-inset-left));background:var(--chrome);border-bottom:1px solid #bcbcbc}
+.study-article-header button{display:flex;align-items:center;gap:4px;width:100%;min-width:0;min-height:44px;border:0;background:none;padding:6px 0;color:var(--purple);text-align:left;font-size:var(--font-base-global,16px)}
+.study-article-header svg{width:21px;flex-shrink:0}
+.study-article-header span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.reference-reading .app-header,.article-study-opening .app-header{display:none!important}
+.article-study-opening #study-article-header[hidden]{display:flex!important}
+.article-study-opening #section-tabs,.article-study-opening main> :not(#study-reference){display:none!important}
+.article-study-opening #study-reference[hidden]{display:block!important}
+body.reference-reading,html.article-study-opening body{background:#fafafa}
+.study-reference{background:#fafafa;min-height:calc(100dvh - 44px - env(safe-area-inset-top) - var(--bible-menu-height));font-family:"Noto Sans",-apple-system,BlinkMacSystemFont,sans-serif;font-size:var(--read-size);line-height:1.55}
+.study-reference-toolbar{position:relative;display:flex;align-items:center;justify-content:center;min-height:48px;border-bottom:1px solid #eee;background:#fafafa}
+.study-reference-toolbar h2{margin:0;padding:10px 48px;font-size:calc(14px * var(--font-scale-global,1));font-weight:400;line-height:1.4}
+.study-reference-toolbar button{position:absolute;left:8px;top:50%;transform:translateY(-50%)}
+.study-publication{display:flex;align-items:center;gap:10px;width:100%;min-height:52px;padding:0 10px 0 0;background:#efefef;color:#262626;border:0;text-align:left;font-size:var(--font-base-global,16px);line-height:1.3}
+.study-publication>img{width:48px;height:48px;object-fit:cover;flex-shrink:0}
+.study-publication>span:nth-child(2){flex:1;min-width:0;padding:8px 0}
+.study-publication small{display:block;font-size:.78em;padding-top:3px}
+.study-publication-arrow{color:#777;font-size:25px;font-weight:300}
+.study-reference-body{padding:18px clamp(20px,5.6vw,28px) 30px;overflow-wrap:anywhere}
+.study-reference-verse{margin:0 0 22px}
+.study-reference-number{font-weight:700}
+.study-reference-note{white-space:pre-line;margin:0 0 22px}
+.study-reference-note strong{font-weight:700}
+.study-reference-note .inline-reference{font:inherit;line-height:inherit}
+.study-reference-status{font-size:var(--font-base-global,16px);line-height:1.5;margin:0 0 18px}
+.study-reference-body>.button{max-width:100%;white-space:normal}
+@media(min-width:760px){.study-article-header{padding-left:max(12px,calc((100vw - 760px)/2));padding-right:max(12px,calc((100vw - 760px)/2))}.study-reference-body{padding:24px 32px 40px}}
+
+/* Cross references open directly as passages, with one heading per citation. */
+.note-dialog .eyebrow[hidden],.note-links:empty{display:none}
+.reference-preview{padding:0 0 16px;margin:0 0 20px;border-bottom:1px solid var(--line,#ddd);white-space:normal}
+.reference-preview:last-child{padding-bottom:0;margin-bottom:0;border-bottom:0}
+.reference-preview-title{margin:0 0 10px;color:var(--blue);font:600 1em/1.4 "Noto Sans",-apple-system,BlinkMacSystemFont,sans-serif;overflow-wrap:anywhere}
+.reference-preview-body p:last-child{margin-bottom:0}
+.reference-preview-open{display:block;min-height:44px;margin:8px 0 0;padding:6px 0;border:0;background:transparent;color:var(--purple);font:500 14px/1.4 "Noto Sans",-apple-system,BlinkMacSystemFont,sans-serif;text-align:left}
+.reference-preview-open:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.reference-preview-open:active{text-decoration:underline}
+
+/* The source quote scrolls above the sticky title/close row, keeping long
+   verses readable without taking over the sheet or adding another scroller. */
+.note-origin{margin:12px 0 2px;color:var(--purple);font-family:"WTClearText",Georgia,serif;font-size:clamp(12px,calc(12px * var(--font-scale-global,1)),16px);font-weight:500;font-style:italic;line-height:1.45;overflow-wrap:anywhere}

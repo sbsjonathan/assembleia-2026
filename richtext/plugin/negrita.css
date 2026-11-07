@@ -1,0 +1,14 @@
+.tool-slot--type .tool-btn[aria-label="Negrito"].is-active,
+.tool-slot--type .tool-btn[aria-label="Itálico"].is-active {
+  background: linear-gradient(180deg, rgba(255,255,255,0.34) 0%, rgba(255,255,255,0.14) 100%);
+  color: rgba(16, 18, 31, 0.96);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.42),
+    inset 0 -1px 0 rgba(0,0,0,0.06),
+    0 1px 6px rgba(0,0,0,0.08);
+}
+
+.tool-slot--type .tool-btn[aria-label="Negrito"].is-active:active,
+.tool-slot--type .tool-btn[aria-label="Itálico"].is-active:active {
+  background: linear-gradient(180deg, rgba(255,255,255,0.40) 0%, rgba(255,255,255,0.18) 100%);
+}

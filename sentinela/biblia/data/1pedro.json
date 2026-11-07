@@ -1,0 +1,555 @@
+{
+  "nome_do_livro": "1 Pedro",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Pedro, apóstolo de Jesus Cristo, aos residentes temporários espalhados por Ponto, Galácia, Capadócia, Ásia e Bitínia, aos escolhidos",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "segundo a presciência de Deus, o Pai, santificados pelo espírito, com o objetivo de serem obedientes e receberem a aspersão do sangue de Jesus Cristo. Que vocês tenham cada vez mais bondade imerecida e paz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Louvado seja o Deus e Pai do nosso Senhor Jesus Cristo, pois, segundo a sua grande misericórdia, ele nos deu um novo nascimento para uma esperança viva por meio da ressurreição de Jesus Cristo dentre os mortos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "para uma herança imperecível, sem mancha e que não se apaga. Ela está reservada nos céus para vocês,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "que estão sendo resguardados pelo poder de Deus, por meio da fé, para uma salvação pronta para ser revelada no tempo do fim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Por causa disso vocês se alegram muito, embora seja necessário, por algum tempo, que fiquem aflitos por causa de várias provações,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "a fim de que a qualidade provada da sua fé, que tem muito mais valor do que o ouro que perece, apesar de ter sido provado por fogo, seja considerada razão para louvor, glória e honra na revelação de Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Embora nunca o tenham visto, vocês o amam. Embora não o vejam agora, exercem fé nele e se alegram muito com uma alegria indescritível e gloriosa,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "à medida que alcançam o alvo da sua fé: a sua salvação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Sobre essa salvação, os profetas que profetizaram a respeito da bondade imerecida destinada a vocês fizeram diligente investigação e cuidadosa pesquisa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Eles procuravam saber o tempo específico e as circunstâncias que o espírito neles indicava a respeito de Cristo, quando o espírito dava testemunho antecipado sobre os sofrimentos que Cristo teria de suportar e sobre a glória que se seguiria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Foi-lhes revelado que estavam servindo não a si mesmos, mas a vocês, no que diz respeito às coisas que agora foram anunciadas a vocês por aqueles que lhes declararam as boas novas com espírito santo enviado do céu. São essas coisas que os anjos têm grande desejo de entender.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Por isso, preparem a mente para atividade; mantenham inteiramente os sentidos; fixem a esperança na bondade imerecida que lhes será trazida na revelação de Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Como filhos obedientes, parem de se amoldar aos desejos que tinham antes na sua ignorância,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "mas, assim como o Santo que os chamou, tornem-se santos em toda a sua conduta,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "pois está escrito: “Sejam santos, porque eu sou santo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "E se vocês invocam o Pai, que julga imparcialmente segundo a obra de cada um, comportem-se com temor durante o tempo em que são residentes temporários.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Pois vocês sabem que não foi com coisas perecíveis, com prata ou ouro, que foram libertados do seu modo de vida fútil, transmitido a vocês pelos seus antepassados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Mas foi com sangue precioso, como o de um cordeiro sem defeito e sem mancha, o de Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "É verdade que ele foi conhecido antes da fundação do mundo, mas foi manifestado no fim dos tempos por causa de vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Por meio dele vocês creem em Deus, aquele que o levantou dentre os mortos e lhe deu glória, para que a fé e a esperança de vocês estejam em Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Agora que vocês se purificaram pela sua obediência à verdade, tendo como resultado o amor fraternal sem hipocrisia, amem uns aos outros intensamente, de coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Pois foi dado a vocês um novo nascimento, não por semente perecível, mas por semente imperecível, por meio da palavra do Deus vivente, o qual permanece para sempre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Pois “todos os homens são como a relva, e toda a sua glória é como a flor do campo; a relva seca e a flor cai,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "mas a declaração de Jeová permanece para sempre”. E essa “declaração” são as boas novas que foram anunciadas a vocês.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Assim, livrem-se de toda maldade, do engano, da hipocrisia, da inveja e de toda calúnia.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Como bebês recém-nascidos, desenvolvam forte desejo pelo leite não adulterado da palavra, para que, por meio dele, cresçam para a salvação,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "já que tiveram provas de que o Senhor é bondoso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "À medida que se aproximam dele, uma pedra vivente rejeitada pelos homens, mas escolhida e preciosa para Deus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "vocês mesmos, como pedras viventes, estão sendo edificados como casa espiritual para ser um sacerdócio santo, a fim de oferecer sacrifícios espirituais, aceitáveis a Deus, por meio de Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Pois certa passagem das Escrituras diz: “Vejam! Eu ponho em Sião uma pedra escolhida, uma preciosa pedra angular de alicerce, e ninguém que nela exercer fé ficará decepcionado, jamais.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Portanto, é para vocês que ele é precioso, porque vocês são crentes; mas, para os que não creem, “a pedra que os construtores rejeitaram, essa se tornou a principal pedra angular”,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "e “uma pedra de tropeço e uma rocha que faz cair”. Eles tropeçam porque são desobedientes à palavra. Foram designados para esse fim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas vocês são “raça escolhida, sacerdócio real, nação santa, povo para propriedade especial, para que divulguem as qualidades excelentes” Daquele que os chamou da escuridão para a Sua maravilhosa luz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Porque antes vocês não eram povo, mas agora são povo de Deus; antes vocês não haviam sido tratados com misericórdia, mas agora receberam misericórdia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Amados, eu os exorto como a estrangeiros e residentes temporários que continuem se abstendo dos desejos carnais, que guerreiam contra vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Mantenham uma boa conduta entre as pessoas das nações, para que, quando os acusarem de ser malfeitores, elas sejam testemunhas oculares das boas obras de vocês e, em resultado disso, glorifiquem a Deus no dia da Sua inspeção.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Por causa do Senhor, sujeitem-se a toda criação humana, quer a um rei, como superior,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "quer a governadores, como enviados por ele para punir malfeitores e louvar os que fazem o bem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Pois é da vontade de Deus que, por fazer o bem, vocês silenciem a conversa ignorante de homens insensatos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Sejam como pessoas livres, usando a sua liberdade não como disfarce para fazer o que é errado, mas para serem escravos de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Honrem a homens de todo tipo, tenham amor pela inteira fraternidade, tenham temor de Deus, honrem o rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Que os servos estejam sujeitos aos seus senhores com todo o temor que lhes é devido, não somente aos bons e razoáveis, mas também aos que são difíceis de agradar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Pois, quando alguém suporta dificuldades e sofre injustamente por causa da sua consciência diante de Deus, isso é agradável.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Pois que mérito vocês têm se são espancados por pecarem e suportam isso? Mas, se vocês suportam sofrimento porque estão fazendo o bem, isso é agradável a Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "De fato, para isso vocês foram chamados, porque o próprio Cristo sofreu por vocês, deixando um modelo para seguirem fielmente os seus passos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Ele não cometeu pecado, nem se achou falsidade na sua boca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Quando estava sendo insultado, não respondia com insultos. Quando estava sofrendo, não ameaçava, mas confiava-se Àquele que julga com justiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Ele mesmo levou os nossos pecados no seu próprio corpo, no madeiro, para que morrêssemos para os pecados e vivêssemos para a justiça. E “pelos ferimentos dele vocês foram curados”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Porque vocês eram como ovelhas desgarradas, mas agora voltaram para o pastor e superintendente das suas almas.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Da mesma maneira, você, esposa, esteja sujeita ao seu marido, de modo que, se ele não for obediente à palavra, seja ganho sem palavras, por meio da conduta de sua esposa,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "por ter sido testemunha ocular de sua conduta casta junto com profundo respeito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Que o seu adorno não sejam as coisas externas — cabelos trançados, o uso de enfeites de ouro ou de roupas finas —",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "mas seja a pessoa secreta do coração com o adorno imperecível do espírito calmo e brando, que é de grande valor aos olhos de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois era assim que as santas mulheres do passado que esperavam em Deus se adornavam, sujeitando-se ao marido,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "como Sara, que obedecia a Abraão, chamando-o de senhor. Você será filha dela, desde que continue a fazer o bem e não se deixe dominar pelo medo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Da mesma maneira, você, marido, continue a morar com a sua esposa segundo o conhecimento. Dê-lhe honra como a um vaso mais frágil, o feminino, visto que ela também é herdeira com você do favor imerecido da vida, a fim de que as suas orações não sejam impedidas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Por fim, sejam todos unidos na mente, tenham empatia, amor fraternal, terna compaixão e humildade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Não paguem mal com mal, nem insulto com insulto. Em vez disso, retribuam com uma bênção, pois vocês foram chamados para esse proceder, a fim de herdar uma bênção.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pois “aquele que ama a vida e quer ver dias felizes deve resguardar a sua língua do mal e os seus lábios de falar mentiras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Que ele se desvie do mal e faça o bem; que ele busque a paz e se empenhe por ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Porque os olhos de Jeová estão sobre os justos, e os seus ouvidos escutam as súplicas deles, mas a face de Jeová se volta contra os que fazem coisas más”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Realmente, quem prejudicará vocês, se forem zelosos do que é bom?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Porém, mesmo que sofram por causa da justiça, vocês serão felizes. No entanto, não temam o que eles temem nem fiquem perturbados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Mas santifiquem o Cristo como Senhor no seu coração, sempre prontos para fazer uma defesa perante todo aquele que lhes exigir uma razão para a esperança que vocês têm, fazendo isso, porém, com brandura e profundo respeito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mantenham uma boa consciência, de modo que, sempre que falarem contra vocês, aqueles que falam contra vocês fiquem envergonhados por causa da sua boa conduta como seguidores de Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Pois é melhor vocês sofrerem por fazer o bem, se for da vontade de Deus permitir isso, do que por fazer o mal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Pois Cristo morreu de uma vez para sempre pelos pecados, um justo pelos injustos, a fim de conduzir vocês a Deus. Ele foi morto na carne, mas recebeu vida no espírito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "E assim ele foi e pregou aos espíritos em prisão,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "que tinham sido desobedientes quando Deus esperava pacientemente nos dias de Noé, enquanto se construía a arca, na qual poucas pessoas, isto é, oito, foram levadas a salvo através da água.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "O batismo, que corresponde a isso, também salva vocês agora (não pela remoção da sujeira da carne, mas pela solicitação de uma boa consciência a Deus), por meio da ressurreição de Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Ele está à direita de Deus, pois foi para o céu; e anjos, autoridades e poderes foram sujeitos a ele.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Visto que Cristo sofreu na carne, armem-se também da mesma disposição; porque a pessoa que sofre na carne abandonou os pecados,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "a fim de viver o resto do seu tempo na carne não mais para os desejos dos homens, mas para a vontade de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois no passado vocês gastaram tempo suficiente fazendo a vontade das nações, quando vocês viviam em conduta insolente, em paixões desenfreadas, em embriaguez, em festas descontroladas, em bebedeiras e em idolatrias ilícitas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Eles ficam intrigados porque vocês não continuam a correr com eles no mesmo proceder decadente de devassidão, e por isso falam mal de vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Mas essas pessoas prestarão contas àquele que está pronto para julgar os vivos e os mortos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "De fato, é por isso que as boas novas foram declaradas também aos mortos, para que, embora sejam julgados na carne do ponto de vista dos homens, eles vivam em harmonia com o espírito do ponto de vista de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas está próximo o fim de todas as coisas. Portanto, sejam sensatos e sejam vigilantes no que se refere às orações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Acima de tudo, tenham intenso amor uns pelos outros, porque o amor cobre uma multidão de pecados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Sejam hospitaleiros uns com os outros, sem resmungar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Conforme cada um recebeu um dom, use-o ao servir os outros como bom administrador da bondade imerecida de Deus, que é expressa de vários modos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Se alguém fala, faça isso como quem fala as proclamações de Deus; se alguém serve, faça isso na força que Deus fornece; para que, em todas as coisas, Deus seja glorificado por meio de Jesus Cristo. A glória e o poder são dele para todo o sempre. Amém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Amados, não se surpreendam com as duras provações que vocês estão passando, como se algo estranho estivesse lhes acontecendo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Ao contrário, continuem a se alegrar na medida em que participam dos sofrimentos do Cristo, para que vocês também se alegrem e fiquem cheios de alegria durante a revelação da glória dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Se estão sendo desonrados por causa do nome de Cristo, vocês são felizes, porque o espírito de glória, sim, o espírito de Deus, está repousando sobre vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "No entanto, que nenhum de vocês sofra como assassino, ladrão, malfeitor ou intrometido nos assuntos dos outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mas, se alguém sofre como cristão, não se envergonhe, mas continue glorificando a Deus ao levar esse nome.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Pois este é o tempo determinado para o julgamento começar com a casa de Deus. Ora, se começa primeiro conosco, qual será o fim daqueles que não são obedientes às boas novas de Deus?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "“E, se o justo está sendo salvo com dificuldade, o que acontecerá com o ímpio e com o pecador?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Assim, que aqueles que estão sofrendo em harmonia com a vontade de Deus se entreguem aos cuidados de um Criador fiel, ao passo que praticam o bem.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Portanto eu, que também sou ancião, testemunha dos sofrimentos do Cristo e participante na glória que será revelada, faço este apelo aos anciãos entre vocês:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "pastoreiem o rebanho de Deus, que está aos seus cuidados, servindo como superintendentes não por obrigação, mas de boa vontade perante Deus; não por amor ao ganho desonesto, mas com entusiasmo;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "não dominando sobre os que são a herança de Deus, mas tornando-se exemplos para o rebanho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "E, quando o pastor principal tiver sido manifestado, vocês receberão a imperecível coroa de glória.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Da mesma maneira, vocês, homens mais jovens, sujeitem-se aos homens mais velhos. Todos vocês, porém, revistam-se de humildade uns para com os outros, porque Deus se opõe aos arrogantes, mas concede bondade imerecida aos humildes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Portanto, humilhem-se sob a mão poderosa de Deus, para que ele os enalteça no tempo devido,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "ao passo que lançam sobre ele toda a sua ansiedade, porque ele cuida de vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Mantenham os sentidos, sejam vigilantes! Seu adversário, o Diabo, anda em volta como um leão que ruge, procurando a quem devorar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas tomem posição contra ele, firmes na fé, sabendo que a inteira fraternidade dos seus irmãos no mundo está passando pelos mesmos sofrimentos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Porém, depois de vocês terem sofrido por um pouco, o próprio Deus de toda a bondade imerecida, que os chamou à Sua eterna glória em união com Cristo, completará o treinamento de vocês. Ele os fará firmes, ele os fará fortes, ele os porá sobre firmes alicerces.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Dele seja o poder para sempre. Amém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Por meio de Silvano, que considero um irmão fiel, eu lhes escrevi em poucas palavras para os encorajar e lhes assegurar de que essa é a verdadeira bondade imerecida de Deus. Mantenham-se firmes nela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Aquela que está em Babilônia, e que foi escolhida como vocês, lhes manda saudações, e também Marcos, meu filho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Cumprimentem uns aos outros com beijo fraterno. Que todos vocês, que estão em união com Cristo, tenham paz.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

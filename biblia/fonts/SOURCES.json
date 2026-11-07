@@ -1,0 +1,156 @@
+[
+  {
+    "family": "Noto Sans",
+    "weight": "100 900",
+    "subset": "latin-ext",
+    "file": "noto-sans-variable-latin-ext.woff2",
+    "url": "https://fonts.gstatic.com/s/notosans/v42/o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc5aDdu2ui.woff2"
+  },
+  {
+    "family": "Noto Sans",
+    "weight": "100 900",
+    "subset": "latin",
+    "file": "noto-sans-variable-latin.woff2",
+    "url": "https://fonts.gstatic.com/s/notosans/v42/o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc5a7duw.woff2"
+  },
+  {
+    "family": "Sumana",
+    "weight": "400",
+    "subset": "latin-ext",
+    "file": "sumana-400-latin-ext.woff2",
+    "url": "https://fonts.gstatic.com/s/sumana/v12/4UaDrE5TqRBjGj-2-RLj36w.woff2",
+    "upstreamSha256": "130dbe32f0480d036248e701762570a2ce1c90d18e4f642eff0c5c4f119a8763",
+    "upstreamMetrics": {
+      "ascent": 1922,
+      "descent": -1005,
+      "lineGap": 0
+    },
+    "license": "SIL Open Font License 1.1; see Sumana-OFL.txt",
+    "localModification": {
+      "description": "Normalized Latin vertical metrics; letterforms, advances and positioning unchanged.",
+      "script": "scripts/normalize-bible-fonts.py",
+      "unitsPerEm": 1000,
+      "ascent": 1000,
+      "descent": -300,
+      "lineGap": 0
+    }
+  },
+  {
+    "family": "Sumana",
+    "weight": "400",
+    "subset": "latin",
+    "file": "sumana-400-latin.woff2",
+    "url": "https://fonts.gstatic.com/s/sumana/v12/4UaDrE5TqRBjGj-29xLj.woff2",
+    "upstreamSha256": "afa74ead98a39eb8dd902f03b6823a6ce68836c55daef17cb172313d6a204512",
+    "upstreamMetrics": {
+      "ascent": 1922,
+      "descent": -1005,
+      "lineGap": 0
+    },
+    "license": "SIL Open Font License 1.1; see Sumana-OFL.txt",
+    "localModification": {
+      "description": "Normalized Latin vertical metrics; letterforms, advances and positioning unchanged.",
+      "script": "scripts/normalize-bible-fonts.py",
+      "unitsPerEm": 1000,
+      "ascent": 1000,
+      "descent": -300,
+      "lineGap": 0
+    }
+  },
+  {
+    "family": "Sumana",
+    "weight": "700",
+    "subset": "latin-ext",
+    "file": "sumana-700-latin-ext.woff2",
+    "url": "https://fonts.gstatic.com/s/sumana/v12/4UaArE5TqRBjGj--TDf27o3M2po.woff2",
+    "upstreamSha256": "a2fb4b144d4a0bf10e13f1fa23a79ddc100b3c1c89e4b5dde4c034577ec80eb3",
+    "upstreamMetrics": {
+      "ascent": 1922,
+      "descent": -1005,
+      "lineGap": 0
+    },
+    "license": "SIL Open Font License 1.1; see Sumana-OFL.txt",
+    "localModification": {
+      "description": "Normalized Latin vertical metrics; letterforms, advances and positioning unchanged.",
+      "script": "scripts/normalize-bible-fonts.py",
+      "unitsPerEm": 1000,
+      "ascent": 1000,
+      "descent": -300,
+      "lineGap": 0
+    }
+  },
+  {
+    "family": "Sumana",
+    "weight": "700",
+    "subset": "latin",
+    "file": "sumana-700-latin.woff2",
+    "url": "https://fonts.gstatic.com/s/sumana/v12/4UaArE5TqRBjGj--TDf24I3M.woff2",
+    "upstreamSha256": "90227da1da6bf7116a9c505bde27a1103dd3aac072a65aadd2bbddfe074b6c99",
+    "upstreamMetrics": {
+      "ascent": 1922,
+      "descent": -1005,
+      "lineGap": 0
+    },
+    "license": "SIL Open Font License 1.1; see Sumana-OFL.txt",
+    "localModification": {
+      "description": "Normalized Latin vertical metrics; letterforms, advances and positioning unchanged.",
+      "script": "scripts/normalize-bible-fonts.py",
+      "unitsPerEm": 1000,
+      "ascent": 1000,
+      "descent": -300,
+      "lineGap": 0
+    }
+  },
+  {
+    "family": "WTClearText",
+    "weight": "500",
+    "style": "normal",
+    "file": "wt-cleartext-medium.woff2",
+    "source": "User-provided JW Library Android 15.9.1 APK",
+    "sourcePath": "assets/webapp/fonts/Wt-ClearText-Medium.ttf",
+    "upstreamSha256": "b7f87006a6b3364621535c3974831dfcf4e432dfcc00fdfeeb067d66e47bd4ca",
+    "copyright": "Notice Copyright (c) 2026 Watch Tower Bible and Tract Society of Pennsylvania. All rights reserved.",
+    "localModification": {
+      "description": "Converted full TrueType face to WOFF2 without subsetting; names, copyright and glyph coverage preserved."
+    }
+  },
+  {
+    "family": "WTClearText",
+    "weight": "500",
+    "style": "italic",
+    "file": "wt-cleartext-medium-italic.woff2",
+    "source": "User-provided JW Library Android 15.9.1 APK",
+    "sourcePath": "assets/webapp/fonts/Wt-ClearText-MediumItalic.ttf",
+    "upstreamSha256": "db2e6737f1c402696c0540d33d1677a4fd72c9587691f93405407bb132c902b8",
+    "copyright": "Notice Copyright (c) 2026 Watch Tower Bible and Tract Society of Pennsylvania. All rights reserved.",
+    "localModification": {
+      "description": "Converted full TrueType face to WOFF2 without subsetting; names, copyright and glyph coverage preserved."
+    }
+  },
+  {
+    "family": "WTClearText",
+    "weight": "700",
+    "style": "normal",
+    "file": "wt-cleartext-bold.woff2",
+    "source": "User-provided JW Library Android 15.9.1 APK",
+    "sourcePath": "assets/webapp/fonts/Wt-ClearText-Bold.ttf",
+    "upstreamSha256": "0a184f389c25f13b2b5ed4f1724dea2c2c1d82c04a48b6c3970482347bdfff43",
+    "copyright": "Notice Copyright (c) 2026 Watch Tower Bible and Tract Society of Pennsylvania. All rights reserved.",
+    "localModification": {
+      "description": "Converted full TrueType face to WOFF2 without subsetting; names, copyright and glyph coverage preserved."
+    }
+  },
+  {
+    "family": "WTClearText",
+    "weight": "700",
+    "style": "italic",
+    "file": "wt-cleartext-bold-italic.woff2",
+    "source": "User-provided JW Library Android 15.9.1 APK",
+    "sourcePath": "assets/webapp/fonts/Wt-ClearText-BoldItalic.ttf",
+    "upstreamSha256": "d80b30d665d5546bda75cf3b291631e472235afc189cc3bf7effca26825f2416",
+    "copyright": "Notice Copyright (c) 2026 Watch Tower Bible and Tract Society of Pennsylvania. All rights reserved.",
+    "localModification": {
+      "description": "Converted full TrueType face to WOFF2 without subsetting; names, copyright and glyph coverage preserved."
+    }
+  }
+]

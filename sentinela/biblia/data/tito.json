@@ -1,0 +1,250 @@
+{
+  "nome_do_livro": "Tito",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Paulo, escravo de Deus e apóstolo de Jesus Cristo em harmonia com a fé dos escolhidos de Deus e o conhecimento exato da verdade, que está de acordo com a devoção a Deus",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "e se baseia numa esperança de vida eterna que Deus, que não pode mentir, prometeu muito tempo atrás",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "— mas, no tempo devido dele, tornou conhecida a sua palavra por meio da pregação confiada a mim, de acordo com a ordem do nosso Salvador, Deus —,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "a Tito, filho genuíno segundo a fé que temos em comum: Que você tenha bondade imerecida e paz da parte de Deus, o Pai, e de Cristo Jesus, nosso Salvador.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Eu deixei você em Creta para que corrigisse as coisas que precisavam ser endireitadas e fizesse designações de anciãos em cada cidade, conforme as instruções que lhe dei:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "o ancião deve estar livre de acusação, ser marido de uma só esposa e ter filhos crentes que não sejam acusados de devassidão nem de rebeldia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Porque, como administrador designado por Deus, o superintendente tem de estar livre de acusação, não deve ser obstinado, nem alguém que se ire com facilidade, nem beberrão, nem violento, nem ávido de ganho desonesto,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "mas deve ser hospitaleiro, amar o que é bom, ser sensato, justo, leal, ter autodomínio,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "apegar-se firmemente à palavra fiel com respeito à sua arte de ensino, para que possa tanto encorajar por meio do ensinamento sadio como repreender os que o contradizem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pois há muitos homens rebeldes, faladores fúteis e enganadores, especialmente os que se apegam à circuncisão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "É preciso calar a boca deles, porque esses homens persistem em arruinar famílias inteiras, ensinando coisas que não devem, visando ganho desonesto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Um deles, seu próprio profeta, disse: “Os cretenses são sempre mentirosos, animais ferozes, glutões preguiçosos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Esse testemunho é verdadeiro. Por essa razão, continue a repreendê-los com severidade, para que sejam sãos na fé",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "e não prestem atenção a fábulas judaicas e a mandamentos de homens que se desviam da verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Todas as coisas são puras para os puros; mas, para os impuros e sem fé, nada é puro, pois tanto a sua mente como a sua consciência estão contaminadas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Eles declaram publicamente que conhecem a Deus, mas o negam pelas suas obras, porque são detestáveis, desobedientes e não são aprovados para nenhum tipo de boa obra.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Você, porém, persista em falar o que está de acordo com o ensinamento sadio.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Os homens idosos devem ser moderados nos hábitos, sérios, sensatos, sãos na fé, no amor, na perseverança.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Igualmente, as mulheres idosas devem ser reverentes no comportamento, não caluniadoras, não escravizadas a muito vinho, instrutoras do que é bom,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "para que aconselhem as mulheres mais jovens a amar o marido, a amar os filhos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "a ser sensatas, castas, diligentes nos afazeres domésticos, bondosas, sujeitas ao marido, a fim de que não se fale mal da palavra de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Do mesmo modo, persista em exortar os homens mais jovens a serem sensatos",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "e seja exemplo de boas obras em tudo. Ensine o que é puro, com toda a seriedade,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "usando palavras sadias que não possam ser criticadas, para que os opositores fiquem envergonhados, não tendo nada negativo a dizer sobre nós.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Que os escravos estejam sujeitos aos seus donos em todas as coisas, procurando agradá-los, não respondendo mal,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "não roubando deles, mas demonstrando que são completamente dignos de confiança, para que, em tudo, adornem o ensinamento do nosso Salvador, Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Porque a bondade imerecida de Deus foi manifestada, trazendo salvação a todo tipo de pessoas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ela nos treina para rejeitarmos a impiedade e os desejos mundanos e para vivermos com bom senso, justiça e devoção a Deus no meio deste mundo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "ao passo que aguardamos a feliz esperança e a gloriosa manifestação do grande Deus e do nosso Salvador, Jesus Cristo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "que se entregou por nós para nos libertar de todo tipo de coisa que é contra a lei e purificar para si mesmo um povo que seja sua propriedade especial, zeloso de boas obras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Continue a falar essas coisas, a exortar e a repreender, com plena autoridade. Não deixe que ninguém o menospreze.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Continue a lembrar-lhes que estejam sujeitos e sejam obedientes a governos e autoridades, que estejam prontos para toda boa obra,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "que não falem mal de ninguém, que não sejam briguentos, mas que sejam razoáveis, demonstrando toda brandura para com todos os homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois antes nós também éramos insensatos, desobedientes, tínhamos sido desviados, éramos escravos de vários desejos e prazeres, vivíamos em maldade e inveja, éramos detestáveis, odiávamos uns aos outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "No entanto, quando foi manifestada a bondade do nosso Salvador, Deus, e seu amor à humanidade,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "ele nos salvou (não por causa de obras justas que tivéssemos realizado, mas por causa da sua misericórdia) por meio do banho que nos trouxe à vida e por nos renovar pelo espírito santo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ele derramou esse espírito ricamente sobre nós por meio de Jesus Cristo, nosso Salvador,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "a fim de que, depois de sermos declarados justos por meio da sua bondade imerecida, nos tornássemos herdeiros segundo uma esperança de vida eterna.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Essas palavras são dignas de confiança, e eu desejo que você continue a enfatizar essas coisas, a fim de que aqueles que creram em Deus mantenham a mente concentrada em praticar boas obras. Essas coisas são excelentes e benéficas para os homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas não se envolva de modo algum em controvérsias tolas, genealogias, brigas e discussões sobre a Lei, porque são inúteis e vãs.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Quanto ao homem que promove uma seita, rejeite-o depois de aconselhá-lo com firmeza uma primeira e uma segunda vez,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "sabendo que ele se desviou do caminho, está pecando e condena a si mesmo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quando eu lhe enviar Ártemas ou Tíquico, faça o máximo para me visitar em Nicópolis, pois é ali que decidi passar o inverno.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Providencie tudo o que for necessário para a viagem de Zenas, que é perito na Lei, e de Apolo, de modo que não lhes falte nada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E que os nossos também aprendam a se ocupar em boas obras, a fim de ajudar em casos de urgente necessidade, para que não sejam improdutivos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Todos os que estão comigo lhe mandam saudações. Transmita minhas saudações aos que nos amam na fé. Que a bondade imerecida esteja com todos vocês.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

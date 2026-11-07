@@ -1,0 +1,156 @@
+/* Notes Bible previews use the same reading size as the rest of the app. */
+.bbl {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+#modal-biblia[hidden], #modal-biblia [hidden] { display: none !important; }
+#modal-biblia {
+  --notes-bible-paper: #fff;
+  --notes-bible-ink: #27252d;
+  --notes-bible-line: #e5e2e9;
+  --notes-bible-soft: #f3f0f7;
+  --notes-bible-accent: #67468b;
+  position: fixed;
+  z-index: 12000;
+  inset-inline: 0;
+  top: var(--notes-bible-viewport-top, 0px);
+  width: 100%;
+  height: var(--notes-bible-viewport-height, 100dvh);
+  box-sizing: border-box;
+  padding: max(12px, env(safe-area-inset-top)) 14px max(12px, env(safe-area-inset-bottom));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0 0 0 / 45%);
+  opacity: 0;
+  transition: opacity 200ms ease;
+  overscroll-behavior: contain;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: var(--font-base-global, 19.36px);
+  color: var(--notes-bible-ink);
+  -webkit-text-size-adjust: 100%;
+}
+#modal-biblia.is-open { opacity: 1; }
+#modal-biblia.is-closing { pointer-events: none; }
+#modal-biblia .modal-biblia-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  width: 100%;
+  max-width: 650px;
+  max-height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: var(--notes-bible-paper);
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgb(0 0 0 / 18%);
+  transform: translateY(18px) scale(.985);
+  transition: transform 220ms cubic-bezier(.2,.8,.2,1);
+  outline: none;
+}
+#modal-biblia.is-open .modal-biblia-content { transform: translateY(0) scale(1); }
+#modal-biblia .modal-biblia-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 4px 10px 4px 14px;
+  border-bottom: 1px solid var(--notes-bible-line);
+  flex: 0 0 auto;
+}
+#modal-biblia-heading { font-weight: 600; font-size: .875em; }
+#modal-biblia .modal-biblia-toolbar > div { display: flex; gap: 2px; flex-shrink: 0; }
+#modal-biblia button {
+  appearance: none;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--notes-bible-accent);
+  font: inherit;
+  font-weight: 600;
+  min-width: 36px;
+  min-height: 36px;
+  padding: 6px 8px;
+  line-height: 1;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+#modal-biblia button:active { background: var(--notes-bible-soft); }
+#modal-biblia-expandir[aria-expanded="true"] { background: var(--notes-bible-soft); }
+#modal-biblia button:disabled { opacity: .35; cursor: default; }
+#modal-biblia button:focus-visible, #modal-biblia input:focus-visible {
+  outline: 2px solid var(--notes-bible-accent); outline-offset: 2px;
+}
+#modal-biblia-fechar { font-size: 1.25em !important; }
+#modal-biblia-ajustes { display: flex; align-items: center; gap: 8px; padding: 6px 14px; border-bottom: 1px solid var(--notes-bible-line); flex-shrink: 0; }
+#modal-biblia .modal-biblia-stepper { display: flex; align-items: center; gap: 2px; flex-shrink: 0; }
+#modal-biblia-form { flex: 1; min-width: 0; margin: 0; }
+#modal-biblia .modal-biblia-label { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+#modal-biblia-form > div { display: flex; align-items: center; gap: 4px; }
+#modal-biblia-campo {
+  box-sizing: border-box;
+  min-width: 0;
+  width: 100%;
+  flex: 1;
+  min-height: 36px;
+  margin: 0;
+  padding: 6px 8px;
+  border: 1px solid var(--notes-bible-line);
+  border-radius: 6px;
+  background: var(--notes-bible-paper);
+  color: var(--notes-bible-ink);
+  font: inherit;
+  font-size: max(16px, var(--font-base-global, 19.36px));
+  -webkit-user-select: text;
+  user-select: text;
+}
+#modal-biblia-erro { margin: 6px 14px 0; color: #a73540; flex-shrink: 0; }
+#modal-biblia-corpo {
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding: 14px;
+  overflow-wrap: anywhere;
+  -webkit-user-select: text;
+  user-select: text;
+}
+#modal-biblia-corpo h3 { margin: 0 0 10px; font: inherit; font-weight: 700; }
+#modal-biblia-corpo p { margin: 0 0 .8em; font-family: 'WTClearText', Georgia, serif; font-size: var(--font-base-global, 19.36px); line-height: 1.7; color: inherit; }
+#modal-biblia-corpo p strong { font-family: 'Noto Sans', sans-serif; font-weight: 700; color: #4a6da7; }
+#modal-biblia-corpo .bible-reader-link { min-height: 36px !important; margin-top: 6px !important; padding-inline: 10px !important; font-size: .875em !important; color: var(--notes-bible-accent) !important; }
+#editor .versiculo-ref, #editor .versiculo-ref-toggle { color: #4a6da7; font-weight: 700; }
+#editor .versiculo-transc { font-style: italic; }
+/* Folding a transcription remains available while browsing references. */
+#editor.is-read-only .toggle-arrow { pointer-events: auto; opacity: 1; }
+html[data-theme="dark"] #modal-biblia {
+  --notes-bible-paper: #1c1c1e; --notes-bible-ink: #f2f2f7;
+  --notes-bible-line: #3a3a3c; --notes-bible-soft: #302b38; --notes-bible-accent: #c5a5e4;
+}
+html[data-theme="dark"] #modal-biblia-erro { color: #ff9a9f; }
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) #modal-biblia {
+    --notes-bible-paper: #1c1c1e; --notes-bible-ink: #f2f2f7;
+    --notes-bible-line: #3a3a3c; --notes-bible-soft: #302b38; --notes-bible-accent: #c5a5e4;
+  }
+  html:not([data-theme="light"]) #modal-biblia-erro { color: #ff9a9f; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #modal-biblia, #modal-biblia .modal-biblia-content { transition: none; }
+}
+@media (max-height: 420px) {
+  #modal-biblia { padding-block: 6px; }
+  #modal-biblia .modal-biblia-toolbar { padding-block: 4px; }
+  #modal-biblia-ajustes { padding-block: 6px; }
+}
+
+/* iOS keeps the layout viewport tall when the keyboard opens. Use the
+   measured visual viewport to let the whole sheet scroll on small heights. */
+#modal-biblia.is-compact { padding-block: 6px; }
+#modal-biblia.is-compact .modal-biblia-content { overflow-y: auto; overscroll-behavior: contain; }
+#modal-biblia.is-compact .modal-biblia-toolbar { position: sticky; top: 0; z-index: 2; background: var(--notes-bible-paper); padding-block: 4px; }
+#modal-biblia.is-compact #modal-biblia-ajustes { padding-block: 6px; }
+#modal-biblia.is-compact #modal-biblia-corpo { flex: 0 0 auto; overflow: visible; }

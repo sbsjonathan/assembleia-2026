@@ -1,0 +1,890 @@
+{
+  "nome_do_livro": "Ester",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Nos dias de Assuero, isto é, o Assuero que reinava sobre 127 províncias desde a Índia até a Etiópia,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "nos dias em que o rei Assuero ocupava o trono real na fortaleza de Susã,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "no terceiro ano do seu reinado, ele deu um banquete a todos os seus príncipes e servos. Estavam presentes perante ele os comandantes militares da Pérsia e da Média, os nobres e os príncipes das províncias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "E durante muitos dias, 180 dias, ele lhes mostrou as riquezas do seu glorioso reino, e a grandeza e o esplendor da sua majestade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Terminados esses dias, o rei deu um banquete no pátio do jardim do seu palácio durante sete dias a todos os que estavam na fortaleza de Susã, desde o maior até o menor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Havia cortinas de linho, de algodão fino e de tecido azul presas com cordões de tecido fino. Havia também cordões de lã roxa presas a argolas de prata, bem como colunas de mármore. E, sobre um piso de pórfiro, mármore branco, madrepérola e mármore negro, havia divãs de ouro e prata.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "O vinho era servido em cálices de ouro; cada cálice era diferente do outro. O vinho do rei foi servido em grande quantidade, como só o rei tinha condições de fazer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Ninguém era obrigado a beber; essa foi a regra seguida na ocasião, pois o rei havia decidido com os oficiais do seu palácio que cada um faria conforme lhe agradasse.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "A rainha Vasti também deu um banquete às mulheres na casa real do rei Assuero.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "No sétimo dia, quando o coração do rei estava alegre por causa do vinho, ele ordenou a Meumã, Bizta, Harbona, Bigtá, Abagta, Zetar e Carcas, os sete oficiais da corte que eram assistentes pessoais do rei Assuero,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "que trouxessem à presença do rei a rainha Vasti usando o turbante real, para mostrar aos povos e aos príncipes a sua beleza, pois ela era muito bela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Mas a rainha Vasti se recusava a obedecer à ordem do rei transmitida pelos oficiais da corte. Em vista disso, o rei ficou muito irado e se acendeu o seu furor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Então o rei consultou os sábios que conheciam bem os precedentes legais, pois os assuntos do rei eram levados a todos os peritos em leis e causas jurídicas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Seus conselheiros mais próximos eram Carsena, Setar, Admata, Társis, Meres, Marsena e Memucã. Esses sete príncipes da Pérsia e da Média tinham acesso ao rei e ocupavam as posições mais elevadas no reino.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O rei perguntou: “Segundo a lei, o que se deve fazer com a rainha Vasti por ela não ter obedecido à ordem do rei Assuero transmitida pelos oficiais da corte?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então Memucã respondeu perante o rei e os príncipes: “Não foi apenas contra o rei que a rainha Vasti cometeu uma ofensa, mas também contra todos os príncipes e todos os povos das províncias do rei Assuero.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Pois todas as esposas ouvirão falar do que a rainha fez e desprezarão seus maridos, dizendo: ‘O rei Assuero mandou trazer a rainha Vasti à presença dele, mas ela se recusou a ir.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Nesse dia, todas as princesas da Pérsia e da Média que ficarem sabendo do que a rainha fez falarão do mesmo modo com seus maridos, os príncipes do rei, e isso resultará em muito desprezo e indignação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Se for do agrado do rei, que se emita um decreto real em seu nome, e que seja registrado o seguinte nas leis da Pérsia e da Média, que não podem ser anuladas: Vasti nunca mais poderá comparecer perante o rei Assuero. Que o rei dê a posição dela de rainha a uma mulher melhor do que ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "E, quando o decreto do rei for conhecido em todo o seu vasto reino, todas as esposas darão honra aos seus maridos, desde o maior até o menor.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "A proposta agradou ao rei e aos príncipes, de modo que o rei fez o que Memucã sugeriu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Assim, o rei enviou cartas a todas as províncias reais, na escrita de cada província e na língua de cada povo, decretando que todo marido fosse senhor em sua casa e que nela se falasse a língua nativa dele.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Depois desses acontecimentos, quando o rei Assuero já havia se acalmado do seu furor, ele se lembrou do que Vasti havia feito e do que ele havia decidido contra ela.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Então os assistentes pessoais do rei disseram: “Sejam procuradas para o rei moças virgens e belas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Que o rei designe representantes em todas as províncias do seu reino, para que tragam todas as moças virgens e belas à fortaleza de Susã, à casa das mulheres. Elas ficarão aos cuidados de Hegai, eunuco do rei e responsável pelas mulheres, e receberão tratamentos de beleza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Então a moça que mais agradar ao rei será rainha no lugar de Vasti.” A sugestão agradou ao rei, e foi isso o que ele fez.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Havia na fortaleza de Susã um judeu chamado Mordecai, filho de Jair, filho de Simei, filho de Quis, benjaminita.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ele tinha sido exilado de Jerusalém junto com o povo que foi deportado com Jeconias, rei de Judá, o qual foi levado para o exílio por Nabucodonosor, rei de Babilônia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Ele criou Hadassa, isto é, Ester, filha do seu tio paterno, porque ela não tinha nem pai nem mãe. Ela era uma moça bonita e atraente, e Mordecai a havia adotado como filha depois que o pai e a mãe dela morreram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quando a ordem do rei e o seu decreto foram proclamados, e muitas moças foram trazidas à fortaleza de Susã e deixadas aos cuidados de Hegai, Ester também foi levada à casa do rei e ficou aos cuidados de Hegai, o responsável pelas mulheres.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "A moça agradou a Hegai e ganhou o seu favor, e ele logo providenciou que ela recebesse tratamentos de beleza e alimentação especial, e designou-lhe sete das melhores criadas da casa do rei. Além disso, transferiu tanto a ela como as criadas para o melhor lugar na casa das mulheres.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Ester não falou nada sobre seu povo e seus parentes, pois Mordecai lhe havia ordenado que não comentasse isso com ninguém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Todos os dias Mordecai passava em frente ao pátio da casa das mulheres para saber como Ester estava e o que acontecia com ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Antes de chegar a sua vez de se apresentar ao rei Assuero, toda moça recebia o tratamento de 12 meses prescrito para as mulheres. E o tratamento de beleza que elas tinham de fazer era o seguinte: seis meses com óleo de mirra e seis meses com óleo de bálsamo e outros óleos para tratamento de beleza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Então a moça estava pronta para se apresentar ao rei, e ela recebia tudo o que pedisse para levar consigo da casa das mulheres à casa do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Ela entrava na casa do rei ao anoitecer, e na manhã seguinte ia para a segunda casa das mulheres, aos cuidados de Saasgaz, eunuco do rei, responsável pelas concubinas. Ela não voltava mais à presença do rei a menos que o rei se tivesse agradado especialmente dela e a mandasse chamar por nome.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Quando chegou a sua vez de se apresentar ao rei, Ester — filha de Abiail, tio de Mordecai, que a tinha tomado como filha — não solicitou nada além do que foi recomendado por Hegai, eunuco do rei e responsável pelas mulheres. (Durante todo aquele tempo, Ester ganhava o favor de todos os que a viam.)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Ester foi levada ao rei Assuero na sua casa real no décimo mês, isto é, no mês de tebete, no sétimo ano do seu reinado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "E o rei amou Ester mais do que a todas as outras mulheres, e ela ganhou seu favor e sua aprovação mais do que qualquer outra das virgens. Então ele colocou o turbante real na cabeça dela e a fez rainha no lugar de Vasti.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "O rei deu então um grande banquete — o banquete de Ester — a todos os seus príncipes e servos. Ele também concedeu anistia às províncias e distribuiu presentes conforme só o rei tinha condições de fazer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Quando virgens foram trazidas pela segunda vez, Mordecai estava sentado no portão do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Ester não falava nada sobre seus parentes e seu povo, conforme Mordecai havia lhe orientado. Ester continuava a obedecer às instruções de Mordecai, assim como fazia quando estava aos cuidados dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Naquele tempo, quando Mordecai se sentava no portão do rei, Bigtã e Teres, dois oficiais da corte do rei, porteiros, ficaram furiosos e planejaram matar o rei Assuero.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Mas Mordecai soube da trama e imediatamente informou a rainha Ester. Ela então contou isso ao rei em nome de Mordecai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "O assunto foi investigado e comprovado, de modo que os dois homens foram pendurados num madeiro, e tudo isso foi escrito perante o rei no livro dos registros históricos.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Algum tempo depois, o rei Assuero promoveu Hamã, filho de Hamedata, o agagita, e o engrandeceu, colocando-o numa posição mais elevada do que a de todos os outros príncipes.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E todos os servos do rei que estavam no portão do rei se curvavam e se prostravam diante de Hamã, assim como o rei havia ordenado. Mas Mordecai se recusava a curvar-se e prostrar-se diante dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Então os servos do rei que estavam no portão do rei perguntaram a Mordecai: “Por que você não obedece à ordem do rei?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Eles perguntavam isso dia após dia, mas ele não lhes dava ouvidos. Então informaram Hamã para ver se a conduta de Mordecai seria tolerada, pois lhes tinha dito que era judeu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quando Hamã viu que Mordecai se recusava a curvar-se e prostrar-se diante dele, ficou muito furioso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas ele achava pouco matar apenas Mordecai, pois tinha sido informado sobre o povo de Mordecai. Assim, Hamã procurou uma forma de exterminar o povo de Mordecai, isto é, todos os judeus em todo o reino de Assuero.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "No décimo segundo ano do rei Assuero, no primeiro mês, o mês de nisã, lançou-se “pur” (isto é, a sorte) diante de Hamã, para se determinar o dia e o mês, e a sorte caiu no décimo segundo mês, o mês de adar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Então Hamã disse ao rei Assuero: “Há um povo espalhado e disperso entre os povos de todas as províncias do seu reino. Suas leis são diferentes das de todos os outros povos, e eles não obedecem às leis do rei. Não convém aos interesses do rei tolerá-los.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Se for do agrado do rei, seja emitido um decreto ordenando a destruição deles. Eu pagarei 10. 000 talentos de prata aos oficiais, que os depositarão no tesouro real.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O rei tirou então o anel de selar que usava na mão e o deu a Hamã, inimigo dos judeus, filho de Hamedata, o agagita.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "O rei disse a Hamã: “A prata e o povo estão nas suas mãos. Faça com eles o que achar melhor.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Assim, no dia",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "do primeiro mês, os secretários do rei foram convocados. Eles escreveram tudo o que Hamã ordenou aos sátrapas do rei, aos governadores das províncias e aos príncipes dos diversos povos, na escrita de cada província e na língua de cada povo. As cartas foram escritas em nome do rei Assuero e seladas com o anel de selar do rei. 13 As cartas foram enviadas por meio de mensageiros a todas as províncias do rei, com a ordem de exterminar, matar e destruir todos os judeus — jovens e idosos, mulheres e crianças — num só dia, o dia 13 do décimo segundo mês, isto é, o mês de adar, e de tomar os seus bens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "O texto do decreto deveria ser proclamado como lei em cada província e anunciado a todos os povos, a fim de que se preparassem para aquele dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Os mensageiros saíram velozmente por ordem do rei; o decreto foi proclamado na fortaleza de Susã. Então o rei e Hamã se sentaram para beber, mas a cidade de Susã estava em confusão.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quando Mordecai soube de tudo o que havia acontecido, rasgou a roupa, vestiu-se com pano de saco e cobriu-se de cinzas; então saiu pela cidade clamando amargamente.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Ele só foi até o portão do rei, pois ninguém podia entrar pelo portão do rei vestido com pano de saco.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Em todas as províncias aonde chegava a ordem do rei e o seu decreto, havia grande luto entre os judeus, com jejum, choro e lamentação. Muitos se deitavam em pano de saco e cinzas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Quando as criadas e os eunucos da rainha Ester foram lhe contar sobre a situação, ela ficou muito aflita. Então enviou roupas para que Mordecai tirasse o pano de saco e as vestisse, mas ele não as aceitou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Em vista disso, Ester mandou chamar Hataque, um dos eunucos do rei designados por ele para servi-la, e ordenou-lhe que perguntasse a Mordecai por que ele estava agindo assim e o que estava acontecendo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Portanto, Hataque foi falar com Mordecai na praça da cidade que ficava em frente ao portão do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mordecai lhe contou tudo o que tinha acontecido com ele e disse a quantia exata que Hamã havia prometido pagar ao tesouro do rei para destruir os judeus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Entregou-lhe também uma cópia do decreto proclamado em Susã que determinava o extermínio deles. Ele devia mostrá-lo e explicá-lo a Ester, e dizer a ela que comparecesse perante o rei para implorar o favor dele e interceder pessoalmente pelo seu povo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Hataque voltou e contou a Ester o que Mordecai tinha dito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Ester mandou Hataque dar a seguinte resposta a Mordecai:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "“Todos os servos do rei e o povo das províncias do rei sabem que, se algum homem ou mulher se apresentar ao rei no pátio interno sem ter sido convocado, há uma só lei que se aplica: a pessoa deve ser morta. Ela só continuará viva se o rei lhe estender o cetro de ouro. E já faz 30 dias que não sou convocada à presença do rei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quando Mordecai foi informado do que Ester disse,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "ele mandou responder a Ester: “Não pense que, só por estar na casa do rei, você terá mais chance de escapar do que todos os outros judeus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Se você ficar calada agora, o alívio e o livramento para os judeus virão de outra parte, mas você e os da casa do seu pai morrerão. E quem sabe se não foi para uma ocasião como essa que você se tornou rainha?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Então Ester mandou responder a Mordecai:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "“Vá, reúna todos os judeus que estão em Susã e jejuem por mim. Não comam nem bebam nada durante três dias, dia e noite, e eu e as minhas criadas também jejuaremos. Eu me apresentarei ao rei, apesar de isso ser contra a lei. E, se eu tiver de morrer, morrerei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Então Mordecai foi e cumpriu todas as instruções de Ester.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No terceiro dia, Ester vestiu seus trajes reais, foi ao pátio interno da casa do rei e ficou esperando em frente à casa do rei. O rei estava na casa real, sentado no seu trono real, de frente para a entrada.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Assim que o rei viu a rainha Ester parada no pátio, ela achou favor aos seus olhos, de modo que o rei estendeu a Ester o cetro de ouro que tinha na mão. Ester então se aproximou e tocou a ponta do cetro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "O rei lhe perguntou: “O que houve, rainha Ester? Qual é a sua solicitação? Até a metade do meu reino eu lhe darei!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Ester respondeu: “Se for do agrado do rei, que o rei venha hoje com Hamã ao banquete que lhe preparei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Então o rei disse: “Digam a Hamã que venha depressa, conforme Ester pediu.” De modo que o rei e Hamã foram ao banquete preparado por Ester.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E, quando bebiam o vinho, o rei disse a Ester: “Qual é o seu pedido? Ele será concedido! Qual é a sua solicitação? Até a metade do meu reino eu lhe darei!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Ester respondeu: “Este é o meu pedido e a minha solicitação:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Se eu achei favor aos olhos do rei, e se for do agrado do rei conceder o meu pedido e atender à minha solicitação, então que o rei venha com Hamã ao banquete que lhes darei amanhã, e amanhã responderei à pergunta do rei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Naquele dia, Hamã saiu de lá contente e com o coração alegre. Mas, quando viu Mordecai no portão do rei e notou que ele não se levantou nem tremeu diante dele, Hamã ficou muito furioso com Mordecai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "No entanto, Hamã se controlou e foi para casa. Então mandou chamar seus amigos e Zeres, sua esposa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Hamã se gabou da sua gloriosa riqueza, dos seus muitos filhos e de como o rei o havia promovido e engrandecido, colocando-o acima dos príncipes e dos servos do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Hamã acrescentou: “Além disso, a rainha Ester convidou somente a mim para acompanhar o rei ao banquete que ela havia preparado. E eu fui convidado para estar com ela e com o rei novamente amanhã.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mas nada disso me satisfaz enquanto eu continuar vendo Mordecai, o judeu, sentado no portão do rei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Então Zeres, sua esposa, e todos os seus amigos lhe disseram: “Mande preparar um madeiro de 50 côvados de altura. E peça ao rei logo pela manhã que Mordecai seja pendurado nele. Assim você poderá se alegrar no banquete com o rei.” A sugestão agradou a Hamã, e ele mandou preparar o madeiro.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Naquela noite o rei perdeu o sono. Por isso, ele mandou trazer o livro dos registros históricos daqueles tempos, e o leram para o rei.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E viram que ali estava escrito que Mordecai havia denunciado Bigtana e Teres, dois oficiais da corte do rei, porteiros, que haviam planejado matar o rei Assuero.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "O rei perguntou: “Que honra e reconhecimento Mordecai recebeu por isso?” Os assistentes pessoais do rei responderam: “Nada foi feito por ele.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mais tarde o rei perguntou: “Quem está no pátio?” Era Hamã quem tinha entrado no pátio externo da casa do rei, para lhe pedir que Mordecai fosse pendurado no madeiro que havia preparado para ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Os assistentes do rei responderam: “É Hamã que está no pátio.” O rei disse então: “Mandem-no entrar.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Quando Hamã entrou, o rei lhe perguntou: “O que se deve fazer ao homem a quem o rei deseja honrar?” Hamã disse no coração: “A quem o rei desejaria honrar mais do que a mim?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Portanto, Hamã respondeu ao rei: “Para o homem a quem o rei deseja honrar,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "devem-se trazer vestes reais, que o próprio rei usa, e um cavalo em que o rei cavalga, e colocar na cabeça do cavalo um ornamento régio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "As vestes e o cavalo devem ser entregues aos cuidados de um dos príncipes mais destacados do rei, e terão de vestir o homem a quem o rei deseja honrar e fazê-lo cavalgar na praça da cidade. Deverão proclamar diante dele: ‘Assim se faz ao homem a quem o rei deseja honrar!’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Imediatamente o rei disse a Hamã: “Vá depressa pegar as vestes e o cavalo, e faça a Mordecai, o judeu, que está sentado no portão do rei, tudo o que você acabou de falar. Não deixe de fazer nada do que você falou.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Então Hamã pegou as vestes e o cavalo, vestiu Mordecai e o fez cavalgar na praça da cidade, proclamando diante dele: “Assim se faz ao homem a quem o rei deseja honrar!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Depois Mordecai voltou ao portão do rei, mas Hamã foi depressa para casa, chorando e cobrindo a cabeça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Hamã contou a Zeres, sua esposa, e a todos os seus amigos tudo o que havia acontecido com ele. Então seus sábios e Zeres, sua esposa, lhe disseram: “Se Mordecai, diante de quem você começou a cair, é de descendência judaica, você não poderá vencê-lo. Você certamente cairá diante dele.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Enquanto ainda estavam falando com ele, chegaram os oficiais da corte do rei e imediatamente levaram Hamã ao banquete preparado por Ester.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 7,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "O rei e Hamã foram então ao banquete da rainha Ester.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Nesse segundo dia de banquete, quando bebiam o vinho, o rei disse novamente a Ester: “Qual é o seu pedido, rainha Ester? Ele será concedido. Qual é a sua solicitação? Até a metade do meu reino eu lhe darei!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "A rainha Ester respondeu: “Se eu achei favor aos seus olhos, ó rei, e se for do agrado do rei, o meu pedido é que poupe a minha vida, e a minha solicitação é que salve o meu povo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Pois eu e o meu povo fomos vendidos para ser exterminados, mortos e destruídos. Se apenas tivéssemos sido vendidos para ser escravos e escravas, eu teria ficado calada. Mas essa desgraça não deve ser permitida, pois causará prejuízo para o rei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O rei Assuero perguntou então à rainha Ester: “Quem fez isso? Onde está o homem que se atreveu a fazer uma coisa dessas?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ester respondeu: “O adversário e inimigo é Hamã, este homem perverso.” Nisto Hamã ficou apavorado por causa do rei e da rainha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "O rei se levantou furioso e deixou o banquete, indo ao jardim do palácio. Mas Hamã se levantou para implorar à rainha Ester por sua vida, pois ele viu que o rei já tinha decidido condená-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "O rei voltou do jardim do palácio à casa do banquete e viu que Hamã tinha se jogado sobre o divã em que Ester se encontrava. O rei exclamou: “E ele ainda quer violentar a rainha na minha própria casa?!” Assim que o rei terminou de falar, cobriram o rosto de Hamã.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "E Harbona, um dos oficiais da corte do rei, disse: “Hamã também preparou um madeiro para Mordecai, o homem que salvou a vida do rei com a sua denúncia. O madeiro está junto à casa de Hamã e mede 50 côvados de altura.” Então o rei disse: “Pendurem Hamã nele.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Assim penduraram Hamã no madeiro que ele tinha preparado para Mordecai, e o rei se acalmou do seu furor.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 8,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Naquele dia o rei Assuero deu à rainha Ester a casa de Hamã, inimigo dos judeus. E Mordecai compareceu perante o rei, pois Ester lhe havia revelado que eles eram parentes.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Então o rei tirou seu anel de selar, que havia tomado de volta de Hamã, e o deu a Mordecai. E Ester deixou Mordecai encarregado da casa que era de Hamã.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Depois Ester foi novamente falar com o rei. Ela se lançou aos pés dele, chorando e implorando que ele desfizesse o mal causado por Hamã, o agagita, e anulasse o seu plano contra os judeus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "O rei estendeu o cetro de ouro a Ester, e ela se levantou e ficou de pé diante do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Ela disse: “Se for do agrado do rei, se eu achei favor aos seus olhos, se parecer justo ao rei, e se o rei se agrada de mim, que se emita uma ordem para anular as cartas de Hamã, filho de Hamedata, o agagita, que ele escreveu na sua trama para destruir os judeus em todas as províncias do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Pois como eu poderia ver a desgraça que atingirá o meu povo? Como eu poderia ver a destruição dos meus parentes?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Então o rei Assuero disse à rainha Ester e a Mordecai, o judeu: “Já dei a Ester a casa de Hamã, e o mandei pendurar no madeiro por causa da sua trama para atacar os judeus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Escrevam agora um decreto em nome do rei a favor dos judeus, conforme acharem melhor, e selem-no com o anel de selar do rei. Pois um decreto escrito em nome do rei e selado com o anel de selar do rei não pode ser anulado.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então, no dia 23 do terceiro mês, isto é, o mês de sivã, os secretários do rei foram convocados, e eles escreveram tudo o que Mordecai ordenou aos judeus, bem como aos sátrapas, aos governadores e aos príncipes das províncias, desde a Índia até a Etiópia, 127 províncias, na escrita de cada província e na língua de cada povo, e também na escrita e na língua dos judeus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Mordecai escreveu as cartas em nome do rei Assuero e as selou com o anel de selar do rei. Ele as enviou por meio de mensageiros a cavalo, que montavam cavalos velozes criados para o serviço real.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Nessas cartas o rei concedia permissão aos judeus em todas as cidades para se reunir e defender suas vidas. Podiam também exterminar, matar e destruir qualquer grupo armado de qualquer povo ou província que os atacasse, e também suas mulheres e crianças, e tomar os seus bens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Isso deveria ocorrer no mesmo dia em todas as províncias do rei Assuero, no dia",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "do décimo segundo mês, isto é, o mês de adar. 13 O texto do decreto deveria ser proclamado como lei em todas as províncias. Deveria ser anunciado a todos os povos, a fim de que os judeus estivessem preparados naquele dia para se vingar dos seus inimigos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Por ordem do rei, os mensageiros partiram com urgência, velozmente, montados em cavalos do serviço real. O decreto também foi proclamado na fortaleza de Susã.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Então Mordecai se retirou da presença do rei em trajes reais de tecido azul e branco, usando uma grande coroa de ouro e um manto de lã roxa de excelente qualidade; e a cidade de Susã gritava de alegria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Para os judeus houve alívio, alegria, exultação e honra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Em todas as províncias e em todas as cidades, aonde quer que chegassem a ordem do rei e o seu decreto, os judeus se alegravam, exultavam, realizavam banquetes e comemoravam. E muitas pessoas de outras nações se declaravam judeus, pois tinham ficado com muito medo dos judeus.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 9,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No dia 13 do décimo segundo mês, isto é, o mês de adar, quando a ordem do rei e o seu decreto deveriam ser cumpridos, no dia em que os inimigos dos judeus esperavam dominá-los, aconteceu o contrário: foram os judeus que derrotaram os que os odiavam.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Os judeus se reuniram em suas cidades em todas as províncias do rei Assuero para atacar os que procuravam lhes fazer mal. Ninguém conseguiu se manter firme contra eles, pois todos os povos tinham ficado com muito medo deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E todos os príncipes das províncias, os sátrapas, os governadores e os que cuidavam dos negócios do rei apoiaram os judeus, pois tinham ficado com medo de Mordecai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mordecai tinha se tornado poderoso na casa do rei, e sua fama se espalhava por todas as províncias, visto que ele se tornava cada vez mais poderoso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Os judeus golpearam com a espada todos os seus inimigos, matando-os e destruindo-os; fizeram o que quiseram com os que os odiavam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E na fortaleza de Susã os judeus mataram e destruíram 500 homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mataram também Parsandata, Dalfom, Aspata,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Porata, Adalia, Aridata,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Parmasta, Arisai, Aridai e Vaizata,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "os dez filhos de Hamã, inimigo dos judeus, filho de Hamedata. Mas não saquearam seus bens depois de matá-los.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Naquele mesmo dia foi relatado ao rei o número de mortos na fortaleza de Susã.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "O rei disse à rainha Ester: “Se só na fortaleza de Susã os judeus mataram e destruíram 500 homens e os dez filhos de Hamã, o que será que fizeram nas outras províncias do rei? E agora, você tem mais algum pedido? Ele será concedido. Tem mais alguma solicitação? Ela será atendida.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Ester respondeu: “Se for do agrado do rei, que os judeus em Susã recebam autorização para agir novamente amanhã conforme o decreto emitido para hoje, e que os dez filhos de Hamã sejam pendurados no madeiro.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Portanto, o rei ordenou que isso fosse feito. O decreto foi proclamado em Susã, e os dez filhos de Hamã foram pendurados no madeiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Os judeus em Susã se reuniram novamente no dia 14 do mês de adar e mataram 300 homens em Susã, mas não saquearam seus bens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Os outros judeus, que moravam nas províncias do rei, também se reuniram e defenderam suas vidas. Eles se livraram dos seus inimigos e mataram 75. 000 dos que os odiavam, mas não saquearam seus bens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Isso aconteceu no dia 13 do mês de adar. No dia 14 eles descansaram, e fizeram dessa data um dia de banquetes e de alegria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Quanto aos judeus em Susã, eles se reuniram no dia 13 e no dia 14 do mês de adar. No dia 15 eles descansaram, e fizeram dessa data um dia de banquetes e de alegria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "É por isso que os judeus que moravam nas cidades dos distritos ao redor fizeram do dia 14 do mês de adar um dia de alegria, de banquetes e de comemoração, uma ocasião para enviar porções de alimento uns aos outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Mordecai registrou esses eventos e enviou cartas oficiais a todos os judeus em todas as províncias do rei Assuero, tanto às próximas como às distantes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Ele lhes ordenou que celebrassem anualmente os dias 14 e 15 do mês de adar,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "pois nesses dias os judeus descansaram dos seus inimigos, e nesse mês sua tristeza se transformou em alegria, e seu luto em comemoração. Eles deveriam celebrar essas datas como dias de banquetes e de alegria, como ocasião para enviar porções de alimento uns aos outros e dar presentes aos pobres.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Os judeus concordaram em adotar como costume a comemoração que haviam começado e em fazer o que Mordecai lhes escreveu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Pois Hamã, inimigo de todos os judeus, filho de Hamedata, o agagita, tinha tramado destruir os judeus e lançado “pur”, isto é, a sorte, para deixá-los em pânico e destruí-los.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Mas, quando Ester compareceu perante o rei, ele ordenou por escrito: “Que seu plano maligno contra os judeus recaia sobre a sua própria cabeça.” Então ele e seus filhos foram pendurados no madeiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "É por isso que chamaram esses dias de Purim, que vem da palavra “pur”. Assim, em vista de tudo o que estava escrito na carta, do que tinham visto e do que lhes tinha acontecido,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "os judeus impuseram a si mesmos, a seus descendentes e a todos os que se juntassem a eles a obrigação de comemorar esses dois dias e de fazer o que estava escrito a respeito deles, na época determinada, todo ano.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Esses eram dias para ser lembrados e celebrados por todas as gerações, por todas as famílias, em todas as províncias e em todas as cidades. Esses dias de Purim não deveriam ser descontinuados entre os judeus, e essa comemoração não deveria ter fim entre os seus descendentes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Mais tarde, uma segunda carta foi escrita a respeito dos dias de Purim, e a rainha Ester, filha de Abiail, e Mordecai, o judeu, a confirmaram com toda a autoridade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Ele enviou cartas oficiais a todos os judeus nas 127 províncias do reino de Assuero, com palavras de paz e fidelidade,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "confirmando a celebração dos dias de Purim na época determinada, assim como Mordecai, o judeu, e a rainha Ester lhes tinham ordenado, e assim como eles tinham imposto a si mesmos e a seus descendentes, incluindo jejuns e súplicas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "E a ordem de Ester confirmou esses assuntos referentes aos dias de Purim, e isso foi registrado num livro.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 10,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "O rei Assuero impôs trabalhos forçados no continente e nas ilhas do mar.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Quanto a todas as suas grandes e poderosas realizações, assim como o relato detalhado da grandeza com que o rei exaltou a Mordecai, não estão escritos no livro da história da época dos reis da Média e da Pérsia?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois Mordecai, o judeu, era o segundo no reino, abaixo apenas do rei Assuero. Ele era considerado grande entre os judeus e era respeitado por todos os seus irmãos. Trabalhava para o bem do seu povo e promovia o bem-estar de todos os descendentes deles.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

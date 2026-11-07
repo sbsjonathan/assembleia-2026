@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-notes-version="2">
+<head>
+<script id="assembleia-app-scope" src="../../../shared/app-scope.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+    <title>Anotação — Assembleia 2026</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Assembleia">
+    <link rel="manifest" href="../../../manifest.json">
+    <link rel="apple-touch-icon" href="../../../assets/icons/apple-touch-icon.png">
+    <link id="sentinela-statusbar-style" rel="stylesheet" href="../../../shared/statusbar.css">
+    <script id="sentinela-statusbar-script" src="../../../shared/statusbar.js"></script>
+
+    <script>
+        (function() {
+            try {
+                var root = document.documentElement;
+
+                var theme = localStorage.getItem('tema-interface') || 'system';
+                var isDark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+                root.setAttribute('data-theme', isDark ? 'dark' : 'light');
+                root.dataset.themeChoice = theme;
+            } catch(e) {}
+        })();
+    </script>
+
+    <link rel="stylesheet" href="../../../richtext/editor.css">
+    <link rel="stylesheet" href="../../../richtext/barra.css">
+    <link rel="stylesheet" href="../../../richtext/perf-low.css">
+    <link rel="stylesheet" href="../../../richtext/plugin/negrita.css">
+    <link rel="stylesheet" href="../../../richtext/plugin/bullet.css">
+    <link rel="stylesheet" href="../../../richtext/plugin/cores.css">
+    <link rel="stylesheet" href="../../../richtext/plugin/font.css">
+    <link rel="stylesheet" href="../../../richtext/plugin/leitor.css">
+    <link rel="stylesheet" href="../../../richtext/biblia/stylebbl.css">
+    <link rel="stylesheet" href="../../../richtext/viewport.css">
+    <script id="sentinela-typography-script" src="../../../shared/typography.js"></script>
+    <link id="sentinela-typography-style" rel="stylesheet" href="../../../shared/typography.css">
+    <link rel="stylesheet" href="./fullsc.css">
+    <script>
+        (function() {
+            try {
+                var perf = localStorage.getItem('editor-performance-mode') || 'low';
+                var root = document.documentElement;
+                root.dataset.performanceMode = perf;
+                root.classList.toggle('perf-low', perf === 'low');
+                root.classList.toggle('perf-normal', perf !== 'low');
+                window.__EDITOR_PERF_BOOT__ = perf;
+            } catch(e) {}
+        })();
+    </script>
+</head>
+<body class="fullsc-boot">
+    <div class="app fullsc-app">
+        <header class="fullsc-topbar">
+            <div class="fullsc-headings">
+                <div class="fullsc-kicker" id="fullscKicker">Anotação expandida</div>
+                <h1 class="fullsc-title" id="fullscTitle">Anotação</h1>
+                <div class="fullsc-status" id="fullscStatus" aria-live="polite" hidden></div>
+            </div>
+            <button class="fullsc-back" id="fullscBack" type="button" aria-label="Fechar">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </header>
+        <div class="editor-scroll" id="editorScroll">
+            <div class="page">
+                <div class="editor" id="editor" contenteditable="true" spellcheck="false" autocapitalize="sentences"></div>
+            </div>
+        </div>
+
+    <canvas class="glass-fx" id="glassFx" aria-hidden="true"></canvas>
+
+    <div class="kbd-toolbar" id="kbdToolbar">
+        <div class="pill-container">
+            <div class="tool-slot tool-slot--undo">
+                <div class="tool-group">
+                    <button class="tool-btn is-muted" type="button" aria-label="Desfazer">
+                        <svg class="icon-fill" viewBox="0 0 24 24"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"></path></svg>
+                    </button>
+                    <button class="tool-btn is-muted" type="button" aria-label="Refazer">
+                        <svg class="icon-fill" viewBox="0 0 24 24"><path d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.65 0-8.58 3.03-9.96 7.22L3.9 16c1.05-3.19 4.05-5.5 7.6-5.5 1.95 0 3.73.72 5.12 1.88L13 16h9V7l-3.6 3.6z"></path></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="tool-slot tool-slot--type">
+                <div class="tool-group">
+                    <button class="tool-btn" type="button" aria-label="Negrito">
+                        <svg class="icon-fill" viewBox="0 0 24 24"><path d="M15.6 10.79c.97-.67 1.65-1.77 1.65-2.79 0-2.26-1.75-4-4-4H7v14h7.04c2.09 0 3.71-1.7 3.71-3.79 0-1.52-.86-2.82-2.15-3.42zM10 6.5h3c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-3v-3zm3.5 9H10v-3h3.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z"></path></svg>
+                    </button>
+                    <button class="tool-btn" type="button" aria-label="Itálico">
+                        <svg class="icon-fill" viewBox="0 0 24 24"><path d="M10 4v3h2.21l-3.42 8H6v3h8v-3h-2.21l3.42-8H18V4z"></path></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="tool-slot tool-slot--combo">
+                <div class="tool-combo-wrap">
+                    <div class="tool-subgroup">
+                        <button class="tool-btn" type="button" aria-label="Lista">
+                            <svg class="icon-fill" viewBox="0 0 24 24"><path d="M4 18h16v-2H4v2zm0-5h16v-2H4v2zm0-7v2h16V6H4z"/></svg>
+                        </button>
+                    </div>
+                    <div class="tool-subgroup">
+                        <button class="tool-btn" id="addToggleBtn" type="button" aria-label="Inserir Bloco de Toggle">
+                            <svg class="icon-mix" viewBox="0 0 24 24"><polygon points="4,9 10,12 4,15" fill="currentColor" stroke-width="0"></polygon><line x1="12" y1="12" x2="20" y2="12"></line><line x1="12" y1="16" x2="17" y2="16"></line></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="tool-slot tool-slot--font">
+                <div class="tool-group">
+                    <button class="tool-btn font-btn" type="button" aria-label="Tamanho da Fonte">
+                        <span class="font-label">Aa</span>
+                        <svg class="font-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="tool-slot tool-slot--colors">
+                <div class="tool-group">
+                    <button class="tool-btn color-btn" type="button" aria-label="Cor do texto"><span class="color-indicator text">A</span></button>
+                    <button class="tool-btn color-btn" type="button" aria-label="Cor de fundo"><span class="color-indicator bg">A</span></button>
+                    <button class="tool-btn color-btn" type="button" aria-label="Resetar formatação"><span class="reset-indicator">A<svg class="reset-prohibition-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="#ff0000" stroke-width="2" opacity="0.8"/><line x1="6" y1="6" x2="18" y2="18" stroke="#ff0000" stroke-width="2" opacity="0.8"/></svg></span></button>
+                </div>
+            </div>
+            <div class="tool-slot tool-slot--book">
+                <div class="tool-group">
+                    <button class="tool-btn" type="button" aria-label="Modo Bíblia">
+                        <svg class="icon-stroke" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+ 
+<div class="picker-overlay" id="color-picker-overlay">
+            <div class="picker-sheet">
+                <div class="picker-card">
+                    <div class="picker-header">
+                        <div style="width:24px"></div>
+                        <div class="picker-title">Cores</div>
+                        <div class="picker-close" id="picker-close">✕</div>
+                    </div>
+                    <div class="picker-tabs">
+                        <div class="picker-tab active" data-target="picker-view-grid">Grade</div>
+                        <div class="picker-tab" data-target="picker-view-spectrum">Espectro</div>
+                        <div class="picker-tab" data-target="picker-view-controls">Controles</div>
+                    </div>
+                    <div class="picker-views">
+                        <div id="picker-view-grid" class="picker-view active">
+                            <div class="color-grid" id="picker-color-grid"></div>
+                        </div>
+                        <div id="picker-view-spectrum" class="picker-view">
+                            <canvas id="picker-spec-canvas"></canvas>
+                            <div class="picker-dot" id="picker-dot"></div>
+                        </div>
+                        <div id="picker-view-controls" class="picker-view">
+                            <div class="slider-row">
+                                <div class="slider-label">Vermelho</div>
+                                <div class="slider-control">
+                                    <div class="track-wrapper">
+                                        <div class="track-bg" id="picker-bg-r"></div>
+                                        <input type="range" id="picker-slider-r" min="0" max="255" value="255">
+                                    </div>
+                                    <input type="number" class="num-input" id="picker-num-r" min="0" max="255" value="255">
+                                </div>
+                            </div>
+                            <div class="slider-row">
+                                <div class="slider-label">Verde</div>
+                                <div class="slider-control">
+                                    <div class="track-wrapper">
+                                        <div class="track-bg" id="picker-bg-g"></div>
+                                        <input type="range" id="picker-slider-g" min="0" max="255" value="59">
+                                    </div>
+                                    <input type="number" class="num-input" id="picker-num-g" min="0" max="255" value="59">
+                                </div>
+                            </div>
+                            <div class="slider-row">
+                                <div class="slider-label">Azul</div>
+                                <div class="slider-control">
+                                    <div class="track-wrapper">
+                                        <div class="track-bg" id="picker-bg-b"></div>
+                                        <input type="range" id="picker-slider-b" min="0" max="255" value="48">
+                                    </div>
+                                    <input type="number" class="num-input" id="picker-num-b" min="0" max="255" value="48">
+                                </div>
+                            </div>
+                            <div class="hex-row">
+                                <span class="hex-label">Hex sRGB</span>
+                                <input type="text" class="hex-input" id="picker-hex-input" maxlength="6" value="FF3B30">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="picker-footer">
+                        <div class="picker-preview" id="picker-preview"></div>
+                        <div class="picker-swatches" id="picker-swatches"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <script src="../../../richtext/viewport.js"></script>
+  <script src="../../../richtext/perf-profile.js"></script>
+  <script src="../../../richtext/editor.js"></script>
+  <script src="../../../richtext/plugin/undo.js"></script>
+  <script src="../../../richtext/plugin/negrita.js"></script>
+  <script src="../../../richtext/plugin/bullet.js"></script>
+  <script src="../../../richtext/plugin/cores.js"></script>
+  <script src="../../../richtext/plugin/font.js"></script>
+  <script src="../../../richtext/biblia/abrev.js"></script>
+  <script src="../../../richtext/biblia/reference-model.js"></script>
+  <script src="../../../richtext/biblia/scriptbbl-container.js"></script>
+  <script src="../../../richtext/plugin/leitor.js"></script>
+  <script src="../../../richtext/barra.js"></script>
+  <script src="../../../richtext/liquid-glass.js"></script>
+  <script src="../agente-ia.js"></script>
+  <script src="./fullsc.js"></script>
+  <script src="../../../save/config.js"></script>
+  <script src="../../../save/supabase.js"></script>
+  <script src="../../conexao.js"></script>
+  <script src="../../../save/asmb-sync.js"></script>
+  <script src="./envio-texto.js"></script>
+
+</body>
+</html>

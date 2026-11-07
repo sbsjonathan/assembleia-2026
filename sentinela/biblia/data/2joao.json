@@ -1,0 +1,75 @@
+{
+  "nome_do_livro": "2 João",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "O homem idoso, à senhora escolhida e aos filhos dela, a quem eu amo verdadeiramente — não somente eu, mas também todos os que conhecem a verdade —",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "por causa da verdade que permanece em nós e estará conosco para sempre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "A bondade imerecida, a misericórdia e a paz da parte de Deus, o Pai, e da parte de Jesus Cristo, o Filho do Pai, com a verdade e o amor, estarão conosco.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Fiquei muito feliz de saber que alguns dos seus filhos estão andando na verdade, assim como recebemos o mandamento da parte do Pai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "E agora, senhora, eu lhe peço que nos amemos uns aos outros. (Não estou lhe escrevendo um novo mandamento, mas um que temos desde o princípio.)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E o amor significa o seguinte: que continuemos andando segundo os mandamentos dele. Este é o mandamento, assim como vocês ouviram desde o princípio: vocês devem continuar andando no amor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois muitos enganadores saíram pelo mundo afora, aqueles que não reconhecem que Jesus Cristo veio na carne. Eles são o enganador e o anticristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Tenham cuidado para que vocês não percam as coisas que trabalhamos para produzir; em vez disso, que possam obter uma plena recompensa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Todo aquele que vai além dos ensinamentos do Cristo e não permanece neles não tem Deus. Quem permanece nesses ensinamentos é quem tem tanto o Pai como o Filho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Se alguém vier a vocês e não trouxer esses ensinamentos, não o recebam na sua casa, nem o cumprimentem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois quem o cumprimenta participa das suas obras más.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Embora eu tenha muitas coisas para lhes escrever, não quero fazer isso com papel e tinta, mas espero visitá-los e falar com vocês pessoalmente, para que a sua alegria seja plena.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Os filhos da sua irmã, a escolhida, mandam-lhe saudações.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

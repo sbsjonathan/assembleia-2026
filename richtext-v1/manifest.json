@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "baselineCommit": "5d2c4c3b452d862304c3becf46578e138ef3d973",
+  "createdAt": "2026-11-06",
+  "entry": "richtext/container-v1.html",
+  "files": [
+    {
+      "source": "richtext/barra.css",
+      "snapshot": "richtext-v1/barra.css",
+      "sha256": "bfeb7e8237eaad82ac64e37b3171550f06f95ff55c202e815a2dc5f44e0d0d46"
+    },
+    {
+      "source": "richtext/barra.js",
+      "snapshot": "richtext-v1/barra.js",
+      "sha256": "0122f55bbaa2e1d58866370899a6651348c02c3c9e070cff110ab4e75d1b3907"
+    },
+    {
+      "source": "richtext/biblia/abrev.js",
+      "snapshot": "richtext-v1/biblia/abrev.js",
+      "sha256": "30e15a243c60e159ac8bcae3f3eee8111d62ea65965fd20133cb27e1fd6efd7f"
+    },
+    {
+      "source": "richtext/biblia/reference-model.js",
+      "snapshot": "richtext-v1/biblia/reference-model.js",
+      "sha256": "275c4f924c700873de812e77f55d7a6468cd4e990e582ddb92b9229e454e1f17"
+    },
+    {
+      "source": "richtext/biblia/scriptbbl-container.js",
+      "snapshot": "richtext-v1/biblia/scriptbbl-container.js",
+      "sha256": "674c3083d30d736e5e44147c611981d10d5fcdda308b69825415bcd91274fe15"
+    },
+    {
+      "source": "richtext/biblia/stylebbl.css",
+      "snapshot": "richtext-v1/biblia/stylebbl.css",
+      "sha256": "b46f3784bae8b7627fe9fce4efa35a66645d1da50ea2c34827d6e5b6d457acf8"
+    },
+    {
+      "source": "richtext/cache-r.js",
+      "snapshot": "richtext-v1/cache-r.js",
+      "sha256": "4833132182179f605b442cb736200724396dd6609b9f9460830ad42ae7ecbcee"
+    },
+    {
+      "source": "richtext/container.html",
+      "snapshot": "richtext-v1/container.html",
+      "sha256": "d96fefb7f2d5b8db6fddb5a09cd6d559377c2e907b7af96b1fb1312099d86263",
+      "upstreamSha256": "bca6e5a5c3a94a67770400752e0a5f8df21ffa2859817eabdc38c3cf35163470"
+    },
+    {
+      "source": "richtext/editor.css",
+      "snapshot": "richtext-v1/editor.css",
+      "sha256": "875924dafb724bda7935f0485c345657e62c4e5c5ed737571cb02454d7f72d2e"
+    },
+    {
+      "source": "richtext/editor.js",
+      "snapshot": "richtext-v1/editor.js",
+      "sha256": "f2fc784a5ebcf67b26e6c0d51c43eeb3c930a97d07450f8ced37abfc4aa0ad1e"
+    },
+    {
+      "source": "richtext/liquid-glass.js",
+      "snapshot": "richtext-v1/liquid-glass.js",
+      "sha256": "c1d557ee60342f15959dd97ddfa9c673145bb576aed05e264b9bd7c1e6dd0ca9"
+    },
+    {
+      "source": "richtext/perf-low.css",
+      "snapshot": "richtext-v1/perf-low.css",
+      "sha256": "da8c7d0f35629e0c6e44eb19bf9b16a9ddc19033dd4e05777484bebe130629e4"
+    },
+    {
+      "source": "richtext/perf-profile.js",
+      "snapshot": "richtext-v1/perf-profile.js",
+      "sha256": "3019e49c7abe92a37752581d757a76e24cb74419f1c19afa7bc0f3ae36d2b853"
+    },
+    {
+      "source": "richtext/plugin/bullet.css",
+      "snapshot": "richtext-v1/plugin/bullet.css",
+      "sha256": "e88e6dc69bdb2073b60c309aa141c2586d28074ec2db0eabaa47270d4b232f08"
+    },
+    {
+      "source": "richtext/plugin/bullet.js",
+      "snapshot": "richtext-v1/plugin/bullet.js",
+      "sha256": "b74fa5cc1adfcd6c0cee3b670b81484969f65c443e5add1744cf883b1c043d63"
+    },
+    {
+      "source": "richtext/plugin/cores.css",
+      "snapshot": "richtext-v1/plugin/cores.css",
+      "sha256": "f4fc4c41b36143a4a37384cc052a757b1d906da59dc463e604eb0e825b01d799"
+    },
+    {
+      "source": "richtext/plugin/cores.js",
+      "snapshot": "richtext-v1/plugin/cores.js",
+      "sha256": "0b27cf20bb67a28d88542b66f8b4169de9b1b77c2d2e6a352ca5ba4ccd6435d8"
+    },
+    {
+      "source": "richtext/plugin/font.css",
+      "snapshot": "richtext-v1/plugin/font.css",
+      "sha256": "092ce06256850ec4784955ec4ae9e1a91ba84121ee447f7985db97b8433ad0d6"
+    },
+    {
+      "source": "richtext/plugin/font.js",
+      "snapshot": "richtext-v1/plugin/font.js",
+      "sha256": "cf3cd7aa455cc2ab62eb9dfac49b0fdbc507aad42e1011dcbd932268c0d0fa2e"
+    },
+    {
+      "source": "richtext/plugin/leitor.css",
+      "snapshot": "richtext-v1/plugin/leitor.css",
+      "sha256": "dde522caed423a47323173bea13a32a59e426139f2d18beaed3262594f172348"
+    },
+    {
+      "source": "richtext/plugin/leitor.js",
+      "snapshot": "richtext-v1/plugin/leitor.js",
+      "sha256": "19472b582bbe7f7e0aacd11a0f0b53698ad39c43923c18cfcc2012ee441ca7a4"
+    },
+    {
+      "source": "richtext/plugin/negrita.css",
+      "snapshot": "richtext-v1/plugin/negrita.css",
+      "sha256": "2a1969e774be84d4ff70b9c7647f44ae0a1648e5c83f018359d7694249f510a5"
+    },
+    {
+      "source": "richtext/plugin/negrita.js",
+      "snapshot": "richtext-v1/plugin/negrita.js",
+      "sha256": "4ac27eaf2682e6cefd3233e4a68efee85c8c719126191bcd80d3e6a556091e37"
+    },
+    {
+      "source": "richtext/plugin/undo.js",
+      "snapshot": "richtext-v1/plugin/undo.js",
+      "sha256": "99a060ed609d395bee46356d54f62e8bce0118d044d1e473ad6de706a7df0a04"
+    },
+    {
+      "source": "save/auto-save.js",
+      "snapshot": "save-v1/auto-save.js",
+      "sha256": "4ea0f7d1549d569061fd690a9a9139a39088c5384e7598a526c35705c801f2fd"
+    },
+    {
+      "source": "save/config.js",
+      "snapshot": "save-v1/config.js",
+      "sha256": "3c0abcaae87bc57178d953c11476c171933ecb9c60cfe9297d426396787835c2",
+      "upstreamSha256": "ca560d89659c11f890e2a45a6007b634744b84d9ad9d229a77db6bdd57441d62"
+    },
+    {
+      "source": "save/supabase.js",
+      "snapshot": "save-v1/supabase.js",
+      "sha256": "68c7555a245a093dd5a030ce4c736f8628096b045357500c08b659b514b0300b",
+      "upstreamSha256": "327d772a767d8d92734ac237bcbf28eee76e46ec8d8b02381bdac19f800bb3fe"
+    },
+    {
+      "source": "save/unified-load.js",
+      "snapshot": "save-v1/unified-load.js",
+      "sha256": "cf49b36d1d5a3ec0f9e5dd6e461795de46cdb25a442cc88f468e848bf8eecdca"
+    }
+  ],
+  "adaptedFor": "assembleia-2026",
+  "adaptation": "Separate browser storage bootstrap and cloud document types; upstream editor retained."
+}

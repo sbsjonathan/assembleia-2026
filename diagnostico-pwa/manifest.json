@@ -1,0 +1,11 @@
+{
+  "id": "./teste-de-tela",
+  "name": "Teste de tela",
+  "short_name": "Teste de tela",
+  "description": "Comparação isolada da barra superior no iPhone.",
+  "start_url": "./index.html?instalacao=teste",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#143368",
+  "theme_color": "#143368"
+}

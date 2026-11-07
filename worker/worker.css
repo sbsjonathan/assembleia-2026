@@ -1,0 +1,260 @@
+:root {
+  --primary: #007AFF;
+  --primary-active: #005ec4;
+  --success: #34C759;
+  --bg-app: #FFFFFF;
+  --bg-input: #F2F2F7;
+  --txt-main: #000000;
+  --txt-placeholder: #C7C7CC;
+  --control-height: 46px; /* Altura refinada */
+  --radius: 10px; /* Curva padrão iOS input */
+}
+
+/* Reset básico */
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body {
+  margin: 0 auto; max-width: 600px; min-height: 100vh;
+  padding: 0 16px 32px 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  background: var(--bg-app); color: var(--txt-main);
+  display: flex; flex-direction: column;
+}
+
+/* --- CONTROLES (Glassmorphism) --- */
+.controls {
+  display: flex; gap: 8px;
+  flex-wrap: wrap;            /* <<< ADICIONADO: permite segunda linha */
+  align-items: center;         /* mantém alinhado bonitinho */
+  position: sticky; top: 0; z-index: 100;
+  padding: 12px 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  margin: 0 -16px 10px -16px; padding-left: 16px; padding-right: 16px;
+  border-bottom: 0.5px solid rgba(0,0,0,0.1);
+}
+
+/* força a quebra exatamente onde você quer */
+.controls-break { flex-basis: 100%; height: 0; }
+
+/* --- INPUTS E SELECTS --- */
+input, select, button {
+  height: var(--control-height);
+  border-radius: var(--radius);
+  font-size: 17px; border: none; outline: none;
+  appearance: none; -webkit-appearance: none;
+  font-family: inherit;
+}
+
+/* Estilo unificado para Inputs */
+.input-style {
+  background: var(--bg-input);
+  color: var(--txt-main);
+  padding: 0 12px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.input-style:focus { background: #E5E5EA; }
+
+#monthInput { flex: 1; min-width: 120px; }
+#studyInput { 
+  width: 64px; text-align: center; 
+  background-image: none; /* Remove seta padrão feia */
+}
+
+/* --- BOTÕES --- */
+button {
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: transform 0.1s, opacity 0.2s;
+  flex-shrink: 0; width: var(--control-height);
+}
+button:active { transform: scale(0.95); }
+
+/* Botão IR (Azul vibrante) */
+#btnGo {
+  background: var(--primary); color: white;
+  box-shadow: 0 2px 8px rgba(0, 122, 255, 0.25);
+}
+
+/* Ícone de Seta para o botão IR via CSS */
+#btnGo::before {
+  content: '';
+  width: 10px; height: 10px;
+  border-top: 2.5px solid #fff;
+  border-right: 2.5px solid #fff;
+  transform: rotate(45deg);
+  margin-left: -2px; /* Ajuste visual */
+  transition: opacity 0.2s;
+}
+
+/* Estado Loading do Botão */
+#btnGo.loading { pointer-events: none; opacity: 1; }
+#btnGo.loading::before { opacity: 0; } /* Esconde a seta */
+#btnGo.loading::after {
+  content: ''; position: absolute;
+  width: 18px; height: 18px;
+  border: 2.5px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Botão COPIAR */
+#btnCopy {
+  background: var(--bg-input); color: var(--primary);
+  font-size: 20px;
+}
+#btnCopy::before { content: '📄'; filter: grayscale(100%); opacity: 0.6; }
+#btnCopy.copied { background: var(--success); color: white; }
+#btnCopy.copied::before { content: '✓'; filter: none; opacity: 1; color: white; font-weight: 800; }
+
+/* NOVO BOTÃO 1 (mesmo tamanho, na linha de baixo) */
+#btn1{
+  background: var(--bg-input);
+  color: var(--txt-main);
+  font-weight: 700;
+}
+#btn2{
+  background: var(--bg-input);
+  color: var(--txt-main);
+  font-weight: 700;
+}
+#btn3{
+  background: var(--bg-input);
+  color: var(--txt-main);
+  font-weight: 700;
+}
+#btn4{
+  background: var(--bg-input);
+  color: var(--txt-main);
+  font-weight: 700;
+}
+
+#btnBack{
+  margin-left: auto;
+  background: var(--bg-input);
+  color: var(--txt-main);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+/* --- TEXTAREA & SKELETON --- */
+.output-container { position: relative; flex: 1; display: flex; flex-direction: column; }
+
+textarea {
+  width: 100%; flex: 1; border: none; resize: none; outline: none;
+  background: transparent; font-size: 17px; line-height: 1.5;
+  color: #000; padding: 8px 0;
+}
+textarea::placeholder { color: var(--txt-placeholder); }
+
+/* Skeleton Loading (O "Fantasma" carregando) */
+.skeleton-overlay {
+  position: absolute; inset: 0; background: var(--bg-app);
+  z-index: 10; display: none; flex-direction: column; gap: 12px; padding-top: 10px;
+}
+.skeleton-overlay.active { display: flex; }
+
+.skeleton-line {
+  height: 14px; border-radius: 4px; background: #E1E9EE;
+  background: linear-gradient(90deg, #F2F2F7 25%, #E5E5EA 50%, #F2F2F7 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+/* Tamanhos variados para parecer texto real */
+.w-100 { width: 100%; }
+.w-80 { width: 80%; }
+.w-60 { width: 60%; }
+.w-40 { width: 40%; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-app: #000000; --bg-input: #1C1C1E;
+    --txt-main: #FFFFFF; --txt-placeholder: #555;
+  }
+  .controls { background: rgba(30,30,30,0.8); border-bottom-color: rgba(255,255,255,0.15); }
+  .skeleton-line { background: linear-gradient(90deg, #1C1C1E 25%, #2C2C2E 50%, #1C1C1E 75%); }
+  textarea { color: #FFF; }
+  #btnCopy::before { filter: invert(1); }
+  #btnCopy.copied::before { filter: none; }
+}
+
+
+/* Feedback visual para botões 1 e 2 */
+.btn-feedback {
+  background: var(--primary) !important;
+  color: #fff !important;
+  transform: scale(0.92);
+}
+
+
+
+
+/* ========= INICIO MODULO BOTAO 3 (CSS) ========= */
+#btn3 {
+  background: var(--bg-input);
+  color: var(--txt-main);
+  font-weight: 700;
+}
+
+.editor-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99999;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.editor-modal.active {
+  display: flex;
+}
+
+.editor-container {
+  background: var(--bg-app);
+  width: 100%;
+  max-width: 800px;
+  height: 90vh;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.editor-toolbar {
+  display: flex;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--bg-input);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+.editor-toolbar button {
+  width: auto;
+  padding: 0 16px;
+  background: var(--bg-app);
+  color: var(--txt-main);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  font-weight: 600;
+}
+
+.editor-toolbar button#btnSaveEditor {
+  background: var(--primary);
+  color: white;
+}
+
+.editor-iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+  background: #fff;
+}
+/* ========= FIM MODULO BOTAO 3 (CSS) ========= */

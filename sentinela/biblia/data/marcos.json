@@ -1,0 +1,3415 @@
+{
+  "nome_do_livro": "Marcos",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Princípio das boas novas a respeito de Jesus Cristo, o Filho de Deus.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Conforme está escrito em Isaías, o profeta: “(Veja! Enviarei o meu mensageiro na sua frente, o qual preparará o seu caminho.)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "A voz de alguém está clamando no deserto: ‘Preparem o caminho para Jeová! Endireitem as suas estradas.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "João, o Batizador, estava no deserto, pregando o batismo em símbolo de arrependimento para o perdão de pecados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "E todo o território da Judeia e todos os habitantes de Jerusalém iam ao encontro dele e eram batizados por ele no rio Jordão, confessando abertamente os seus pecados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "João usava roupa de pelo de camelo e um cinto de couro na cintura, e comia gafanhotos e mel silvestre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Ele pregava: “Alguém mais forte do que eu vem depois de mim, e não sou digno de me abaixar e desamarrar o cordão das suas sandálias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Eu batizei vocês com água, mas ele os batizará com espírito santo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "No decorrer daqueles dias, Jesus chegou de Nazaré, da Galileia, e foi batizado por João no Jordão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Imediatamente, ao sair da água, viu os céus se abrindo e o espírito descer como pomba sobre ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E uma voz saiu dos céus: “Você é meu Filho, o amado; eu o aprovo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E o espírito o impeliu imediatamente a ir ao deserto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Assim, ele ficou no deserto por 40 dias, e foi tentado por Satanás. Ele estava com os animais selvagens, mas os anjos o serviam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Então, depois de João ter sido preso, Jesus entrou na Galileia, pregando as boas novas de Deus",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "e dizendo: “Chegou o tempo determinado, e o Reino de Deus está próximo. Arrependam-se e tenham fé nas boas novas.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Enquanto andava à beira do mar da Galileia, ele viu Simão e André, irmão de Simão, lançando suas redes no mar, pois eram pescadores.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "De modo que Jesus lhes disse: “Sigam-me, e eu farei de vocês pescadores de homens.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "E eles abandonaram imediatamente as suas redes e o seguiram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Depois de ir um pouco mais à frente, ele viu Tiago, filho de Zebedeu, e seu irmão João, enquanto estavam no seu barco consertando as suas redes,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "e sem demora ele os chamou. Então eles deixaram seu pai, Zebedeu, no barco com os empregados e o seguiram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "E entraram em Cafarnaum. Assim que chegou o sábado, ele entrou na sinagoga e começou a ensinar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "E as pessoas ficaram maravilhadas com o seu modo de ensinar, pois ele as ensinava como quem tinha autoridade, e não como os escribas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Naquele momento havia na sinagoga deles um homem sob o poder de um espírito impuro, e ele gritou:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "“O que você quer conosco, Jesus Nazareno? Veio nos destruir? Eu sei exatamente quem você é: o Santo de Deus!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Mas Jesus o censurou, dizendo: “Cale-se e saia dele!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "E o espírito impuro, depois de lançar o homem em convulsão e gritar ao máximo da sua voz, saiu dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Pois bem, todos ficaram tão pasmados que começaram a discutir o que tinha acontecido, dizendo: “O que é isso? Um novo ensinamento! Ele dá ordens com autoridade até mesmo a espíritos impuros, e eles lhe obedecem.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "De modo que o relato sobre ele se espalhou rapidamente em todas as direções, por toda a região da Galileia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Depois saíram da sinagoga e foram à casa de Simão e André, com Tiago e João.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "A sogra de Simão estava de cama, com febre, e falaram dela a Jesus imediatamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Ele se dirigiu a ela, pegou-a pela mão e a levantou. A febre a deixou, e ela começou a servi-los.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Ao anoitecer, após o pôr do sol, as pessoas levaram a ele todos os doentes e os possessos de demônios;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "e a cidade toda estava reunida na frente da porta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Assim, ele curou a muitos que sofriam de várias doenças e expulsou muitos demônios, mas não deixava os demônios falar, pois sabiam que ele era Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "De manhã cedo, quando ainda estava escuro, ele se levantou, saiu e foi para um lugar isolado, e ali começou a orar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "No entanto, Simão e os que estavam com ele foram à sua procura.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Ao encontrá-lo, disseram-lhe: “Todos estão procurando o senhor.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Mas ele lhes disse: “Vamos a outro lugar, às cidades vizinhas, para que eu também pregue ali, pois foi por isso que vim.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "E ele foi, pregando nas sinagogas deles, em toda a Galileia, e expulsando os demônios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Aproximou-se dele também um leproso, suplicando-lhe até de joelhos: “Se o senhor apenas quiser, pode me purificar.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Em vista disso, ele teve pena; e estendeu a mão, tocou no homem e lhe disse: “Eu quero! Seja purificado.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Imediatamente a lepra desapareceu dele, e ele ficou purificado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "Então Jesus o mandou logo embora, depois de lhe ordenar com firmeza:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "“Tenha o cuidado de não contar nada a ninguém, mas vá, mostre-se ao sacerdote e ofereça pela sua purificação o que Moisés determinou, em testemunho para eles.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "Mas, depois de se afastar, o homem começou a proclamar e a divulgar amplamente o acontecido, de modo que Jesus não podia mais entrar abertamente numa cidade, mas ficava fora, em lugares isolados. Contudo, as pessoas continuavam a vir a ele de todas as partes.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No entanto, depois de alguns dias, ele entrou novamente em Cafarnaum, e a notícia de que ele estava em casa se espalhou.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Então tantas pessoas se ajuntaram que não havia mais lugar, nem mesmo perto da porta, e ele começou a lhes falar a palavra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E lhe trouxeram um paralítico, carregado por quatro homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas eles não podiam levá-lo diretamente a Jesus por causa da multidão; assim, removeram o telhado acima de onde Jesus estava e, depois de fazer uma abertura, baixaram a maca em que o paralítico estava deitado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quando Jesus viu a fé que tinham, disse ao paralítico: “Filho, seus pecados estão perdoados.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Porém, alguns escribas estavam ali sentados e raciocinavam no coração:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "“Por que este homem fala dessa maneira? Ele está blasfemando. Quem pode perdoar pecados a não ser um só, Deus?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Mas Jesus imediatamente discerniu em seu espírito que estavam raciocinando desse modo entre eles e lhes disse: “Por que vocês estão raciocinando essas coisas no coração?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "O que é mais fácil dizer ao paralítico: ‘Seus pecados estão perdoados’, ou: ‘Levante-se, apanhe a sua maca e ande’?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Mas, a fim de que vocês saibam que o Filho do Homem tem autoridade para perdoar pecados na terra ...”, ele disse ao paralítico:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "“Eu lhe digo: Levante-se, apanhe a sua maca e vá para casa.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Com isso, ele se levantou, apanhou imediatamente a sua maca e saiu andando na frente de todos. Assim, todos ficaram maravilhados e glorificaram a Deus, dizendo: “Nunca vimos nada igual.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Novamente, ele foi para a beira do mar; toda a multidão ia ao seu encontro, e ele começou a ensiná-los.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Enquanto caminhava, ele viu Levi, filho de Alfeu, sentado na coletoria, e lhe disse: “Seja meu seguidor.” Então ele se levantou e o seguiu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Mais tarde, Jesus estava comendo na casa de Levi, e muitos cobradores de impostos e pecadores estavam comendo com Jesus e seus discípulos, pois muitos deles o seguiam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mas, quando os escribas dos fariseus viram que ele comia com os pecadores e os cobradores de impostos, perguntaram aos discípulos: “Ele come com cobradores de impostos e pecadores?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Ao ouvir isso, Jesus lhes disse: “Os que têm saúde não precisam de médico, mas sim os doentes. Eu não vim chamar os justos, mas os pecadores.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Os discípulos de João e os fariseus praticavam o jejum. Assim, aproximaram-se de Jesus e lhe perguntaram: “Por que os discípulos de João e os discípulos dos fariseus praticam o jejum, mas os seus discípulos não praticam o jejum?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Então Jesus lhes disse: “Será que os amigos do noivo têm motivo para jejuar enquanto o noivo está com eles? Enquanto eles têm o noivo consigo, não podem jejuar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Mas virão dias em que o noivo será tirado deles, e então, naquele dia, jejuarão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Ninguém costura um remendo de pano novo numa roupa velha. Se fizer isso, o remendo de pano novo repuxará a roupa velha, e o rasgão ficará pior.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Também, ninguém põe vinho novo em odres velhos. Se fizer isso, o vinho arrebentará os odres, e tanto o vinho como os odres serão perdidos. Mas põe-se vinho novo em odres novos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Ele estava passando pelos campos de cereais no sábado, e seus discípulos começaram a arrancar espigas enquanto caminhavam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "De modo que os fariseus lhe disseram: “Veja! Por que eles estão fazendo o que não é permitido no sábado?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Mas ele lhes disse: “Vocês nunca leram o que Davi fez numa situação de necessidade, quando ele e seus homens ficaram com fome?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Como, no relato sobre Abiatar, o principal sacerdote, ele entrou na casa de Deus e comeu os pães da apresentação, os quais a ninguém é permitido comer, a não ser aos sacerdotes, e deu também deles aos homens que estavam com ele?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "E acrescentou: “O sábado veio à existência por causa do homem, e não o homem por causa do sábado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Portanto, o Filho do Homem é Senhor até mesmo do sábado.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Novamente ele entrou numa sinagoga, e ali estava um homem com a mão atrofiada.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Assim, observavam-no atentamente para ver se curaria o homem no sábado, a fim de acusá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Ele disse ao homem com a mão atrofiada: “Levante-se e venha para o centro.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "A seguir, ele lhes perguntou: “É permitido, no sábado, fazer o bem ou fazer o mal, salvar uma vida ou matar?” Mas eles continuaram calados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Depois de olhar para os que estavam à sua volta, com indignação e profundamente triste com a insensibilidade do coração deles, ele disse ao homem: “Estenda a mão.” Ele a estendeu, e a mão foi restabelecida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Os fariseus saíram então e imediatamente começaram a conspirar com os partidários de Herodes contra Jesus, para matá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas Jesus foi para o mar com os seus discípulos, e uma grande multidão da Galileia e da Judeia o seguia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Ao ouvir falar de quantas coisas ele fazia, uma grande multidão foi ao encontro dele, até mesmo de Jerusalém, da Idumeia, do outro lado do Jordão e dos arredores de Tiro e de Sídon.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "E ele disse aos seus discípulos que mantivessem um pequeno barco à disposição dele, para que a multidão não o apertasse.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Visto que ele curava a muitos, todos os que tinham doenças graves se aglomeravam em volta dele para tocá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Até mesmo os espíritos impuros, sempre que o viam, se prostravam diante dele, gritavam e diziam: “Você é o Filho de Deus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Muitas vezes, porém, ele lhes ordenou com firmeza que não dissessem a outros quem ele era.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Ele subiu a um monte e convocou os que ele quis, e eles se dirigiram a ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Formou então um grupo de 12, a quem deu o nome de apóstolos, aqueles que o acompanhariam e que ele enviaria para pregar,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "com autoridade para expulsar demônios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "E no grupo dos Doze que ele formou estavam Simão (a quem também deu o nome de Pedro),",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Tiago, filho de Zebedeu, João, irmão de Tiago (ele também deu a estes o nome de Boanerges, que significa “filhos do trovão”),",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "André, Filipe, Bartolomeu, Mateus, Tomé, Tiago, filho de Alfeu, Tadeu, Simão, o Cananita,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "e Judas Iscariotes, que mais tarde o traiu. Então ele entrou numa casa,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "e novamente a multidão se ajuntou, de modo que não podiam sequer tomar uma refeição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Mas, quando os seus parentes souberam do que estava acontecendo, saíram para pegá-lo, pois diziam: “Ele perdeu o juízo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Também os escribas que desceram de Jerusalém diziam: “Ele está com Belzebu e expulsa os demônios por meio do governante dos demônios.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Portanto, depois de chamá-los, falou-lhes com ilustrações: “Como Satanás pode expulsar a Satanás?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Se um reino fica dividido contra si mesmo, esse reino não pode ficar de pé,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "e, se uma casa fica dividida contra si mesma, essa casa não poderá ficar de pé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Também, se Satanás se levantou contra si mesmo e ficou dividido, não pode ficar de pé, mas está chegando ao fim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "De fato, ninguém que entre na casa de um homem forte é capaz de roubar os seus bens, a menos que primeiro amarre o homem forte. Só então poderá saquear a casa dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Eu lhes digo a verdade: Todas as coisas serão perdoadas aos filhos dos homens, não importa que pecados cometam e que blasfêmias digam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "No entanto, quem blasfema contra o espírito santo nunca terá perdão, mas é culpado de pecado eterno.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Jesus disse isso porque diziam: “Ele está com um espírito impuro.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Chegaram então sua mãe e seus irmãos e, ficando do lado de fora, mandaram alguém chamá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Como havia uma multidão sentada em volta dele, disseram-lhe: “Veja! Sua mãe e seus irmãos estão lá fora procurando o senhor.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Mas ele lhes respondeu: “Quem são minha mãe e meus irmãos?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Então ele olhou para os que estavam sentados ao redor dele e disse: “Aqui estão a minha mãe e os meus irmãos!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Quem faz a vontade de Deus, esse é meu irmão, minha irmã e minha mãe.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Ele começou novamente a ensinar à beira do mar, e uma multidão muito grande se reuniu perto dele. Então ele entrou num barco e se sentou, e ficou a certa distância da margem, mas toda a multidão estava em terra, à beira do mar.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E ele começou a ensinar-lhes muitas coisas com ilustrações. Ensinava-lhes dizendo:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "“Escutem: O semeador saiu para semear.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Ao passo que semeava, algumas sementes caíram à beira da estrada, e vieram as aves e as comeram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Outras caíram em solo rochoso, onde não havia muita terra, e brotaram imediatamente porque o solo não era profundo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas, quando o sol se levantou, ficaram queimadas e murcharam, porque não tinham raiz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Outras sementes caíram entre os espinhos, e os espinhos cresceram e as sufocaram, e elas não deram fruto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Mas outras caíram em solo bom e, depois de brotar e crescer, começaram a dar fruto; e produziram 30, 60 e 100 vezes mais.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Ele acrescentou então: “Quem tem ouvidos para escutar, escute.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então, quando ficou sozinho, os que estavam em volta dele vieram com os Doze e começaram a lhe perguntar sobre as ilustrações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Ele lhes disse: “A vocês foi dado o segredo sagrado do Reino de Deus, mas para os de fora tudo é apresentado em ilustrações,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "para que eles olhem, mas ainda assim não vejam, e ouçam, mas ainda assim não compreendam; e eles jamais darão meia-volta e receberão perdão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Além disso, ele lhes disse: “Vocês não compreendem essa ilustração; portanto, como entenderão todas as outras ilustrações?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "“O semeador semeia a palavra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Então, aquelas sementes à beira da estrada, onde se semeia a palavra, representam os que ouvem a palavra, mas logo vem Satanás e tira a palavra que foi semeada neles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Do mesmo modo, aquelas semeadas em solo rochoso representam os que ouvem a palavra e logo a aceitam com alegria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Contudo, não têm raiz em si mesmos, mas continuam por algum tempo; então, assim que surge dificuldade ou perseguição por causa da palavra, tropeçam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Ainda há outras que são semeadas entre os espinhos. Essas representam os que ouvem a palavra,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "mas as ansiedades deste mundo, o poder enganoso das riquezas e os desejos de todas as outras coisas interferem e sufocam a palavra, e ela se torna infrutífera.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Finalmente, aquelas que foram semeadas em solo bom representam os que escutam a palavra, a aceitam e dão fruto: 30, 60 e 100 vezes mais.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Disse-lhes também: “Será que se pega uma lâmpada para colocá-la debaixo de um cesto ou debaixo de uma cama? Não é para colocá-la em cima de um suporte?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Pois não há nada escondido que não venha a ser exposto; nada cuidadosamente oculto que não venha à tona.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Escute quem tem ouvidos para escutar.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Disse-lhes ainda: “Prestem atenção ao que estão ouvindo. A mesma medida com que vocês medem será usada com vocês, e mais lhes será acrescentado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Pois àquele que tem, mais será dado; mas daquele que não tem, até mesmo o que tem será tirado.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Assim, acrescentou: “Portanto, o Reino de Deus é como quando um homem lança sementes no solo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Ele dorme à noite e se levanta de dia, e as sementes brotam e crescem alto, embora ele não saiba exatamente como.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "O solo, por si mesmo, dá fruto aos poucos: primeiro a haste, depois a espiga, e finalmente o grão maduro na espiga.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Mas, assim que os grãos ficam maduros, ele passa a foice, porque chegou o tempo da colheita.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "E acrescentou: “A que podemos comparar o Reino de Deus, ou com que ilustração podemos explicá-lo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "É semelhante a um grão de mostarda que, quando é semeado no solo, é a menor de todas as sementes da terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Mas, depois de semeado, cresce e se torna maior do que todas as outras hortaliças e produz grandes ramos, de modo que as aves do céu podem achar abrigo sob a sua sombra.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Com muitas ilustrações desse tipo, ele lhes falava a palavra, até onde eram capazes de entender.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Realmente, nada lhes falava sem ilustração, mas explicava tudo em particular aos seus discípulos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "E naquele dia, ao cair a noite, ele lhes disse: “Passemos para a outra margem.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Assim, depois de terem dispensado a multidão, eles o levaram, assim como estava, no barco; e havia outros barcos com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Levantou-se então uma violenta tempestade, e as ondas se lançavam sobre o barco, de modo que o barco estava ficando inundado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Mas ele estava na popa, dormindo sobre o travesseiro. Assim, eles o acordaram e lhe disseram: “Instrutor, o senhor não se importa que estejamos prestes a morrer?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Com isso ele se levantou, censurou o vento e disse ao mar: “Silêncio! Cale-se!” E o vento parou, e houve uma grande calmaria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Então ele lhes disse: “Por que vocês estão com tanto medo? Ainda não têm nenhuma fé?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Mas eles sentiram um medo incomum e disseram uns aos outros: “Quem é realmente este homem? Até mesmo o vento e o mar lhe obedecem.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Chegaram então à outra margem do mar, à região dos gerasenos.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E, assim que Jesus saiu do barco, um homem sob o poder de um espírito impuro saiu dentre os túmulos e foi ao seu encontro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Ele vivia entre os túmulos, e, até aquele tempo, absolutamente ninguém havia sido capaz de mantê-lo preso, nem mesmo com uma corrente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Muitas vezes ele tinha sido preso com correntes nos pés e nas mãos, mas ele quebrava as correntes das mãos e despedaçava as dos pés; e ninguém tinha força para dominá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "E, incessantemente, noite e dia, ele gritava nos túmulos e nos montes, e se cortava com pedras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas, ao ver Jesus a certa distância, correu e se curvou diante dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Então gritou, em voz bem alta: “O que você quer comigo, Jesus, Filho do Deus Altíssimo? Jure por Deus que não me atormentará.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pois Jesus havia lhe dito: “Saia do homem, espírito impuro!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas Jesus lhe perguntou: “Qual é o seu nome?” E ele respondeu: “Meu nome é Legião, porque há muitos de nós.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "E suplicava a Jesus que não enviasse os espíritos para fora daquela região.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Havia então uma grande manada de porcos pastando no monte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Por isso os espíritos lhe suplicaram: “Mande-nos para os porcos, para que entremos neles.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "E ele lhes deu permissão. Assim, os espíritos impuros saíram e entraram nos porcos; e a manada se jogou despenhadeiro abaixo, para dentro do mar, cerca de 2. 000 deles, e se afogaram no mar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas os que cuidavam dos porcos fugiram e contaram isso na cidade e na zona rural, e as pessoas foram ver o que tinha acontecido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Assim, aproximaram-se de Jesus e viram o possesso de demônios, que havia tido a legião, sentado, vestido e em perfeito juízo; e ficaram com medo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Também, os que tinham visto tudo aquilo lhes contaram o que tinha acontecido com o homem possesso de demônios e com os porcos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Assim, começaram a suplicar a Jesus que saísse daquela região.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Então, quando ele estava entrando no barco, o homem que tinha estado possesso de demônios suplicou que o deixasse ir com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "No entanto, ele não deixou, mas disse-lhe: “Vá para casa, para seus parentes, e conte-lhes tudo o que Jeová fez por você e a misericórdia que ele lhe demonstrou.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "O homem foi embora e começou a proclamar em Decápolis tudo o que Jesus havia feito por ele; e todos ficavam admirados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Depois de Jesus ter passado novamente, no barco, para a margem oposta, ajuntou-se a ele uma grande multidão, e ele estava à beira do mar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Chegou então um dos presidentes da sinagoga, chamado Jairo, e, ao vê-lo, se prostrou aos seus pés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Ele lhe suplicou muitas vezes: “Minha filhinha está gravemente doente. Por favor, venha e ponha as mãos sobre ela, para que possa ficar boa e viver.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Assim, Jesus foi com ele, e uma grande multidão o seguia e apertava.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "E havia uma mulher que por 12 anos sofria de um fluxo de sangue.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Ela havia sofrido muito às mãos de muitos médicos, e tinha gastado todos os seus recursos, sem ter melhorado, mas, em vez disso, tinha ficado pior.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Tendo ouvido falar de Jesus, ela se aproximou por trás dele, na multidão, e tocou na sua roupa,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "pois dizia: “Se eu apenas tocar na sua roupa, ficarei boa.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "E o seu fluxo de sangue secou imediatamente, e ela sentiu no corpo que tinha sido curada daquela doença aflitiva.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Imediatamente, Jesus percebeu que havia saído poder dele, e ele se virou na multidão e perguntou: “Quem tocou na minha roupa?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Seus discípulos lhe disseram: “O senhor está vendo que a multidão o aperta, e ainda pergunta: ‘Quem me tocou?’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Mas ele estava olhando em volta para ver quem tinha feito isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "A mulher, tremendo de medo, sabendo o que tinha lhe acontecido, se aproximou e se prostrou diante dele, e lhe disse toda a verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Ele disse a ela: “Filha, a sua fé fez você ficar boa. Vá em paz e fique curada da sua doença aflitiva.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Enquanto ele ainda falava, chegaram alguns homens da casa do presidente da sinagoga e disseram: “Sua filha morreu! Por que incomodar mais o Instrutor?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Mas Jesus ouviu as palavras deles e disse ao presidente da sinagoga: “Não tenha medo, apenas exerça fé.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Então não deixou ninguém acompanhá-lo, a não ser Pedro, Tiago e João, irmão de Tiago.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Assim, chegaram à casa do presidente da sinagoga, e ele viu o alvoroço e os que choravam e lamentavam em alta voz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Depois de entrar, disse-lhes: “Por que vocês estão chorando e fazendo esse alvoroço? A menina não morreu; ela está dormindo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Em vista disso, começaram a rir dele com desprezo. Mas, depois de mandar que todos saíssem, ele levou consigo o pai e a mãe da menina e os que estavam com ele, e entrou onde a menina estava.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Então, pegando a mão da menina, disse-lhe: “Talita cumi”, que traduzido significa: “Menina, digo-lhe: Levante-se!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "E a menina se levantou imediatamente e começou a andar. (Ela tinha 12 anos de idade.) Com isso, eles não conseguiram se conter de tanta alegria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "Mas ele lhes ordenou vez após vez que não deixassem ninguém saber disso, e mandou que dessem a ela algo para comer.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Ele partiu dali e entrou na sua própria cidade, e seus discípulos o seguiram.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Quando chegou o sábado, ele começou a ensinar na sinagoga, e a maioria dos que o ouviram ficaram maravilhados e disseram: “Onde este homem obteve essas coisas? Por que foi dada essa sabedoria a ele, e por que essas obras poderosas são realizadas pelas suas mãos?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Não é este o carpinteiro, filho de Maria e irmão de Tiago, José, Judas e Simão? E não estão as suas irmãs aqui conosco?” Assim, começaram a tropeçar por causa dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas Jesus lhes disse: “Um profeta não fica sem honra a não ser na sua própria terra, entre os seus parentes e na sua própria casa.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "E não pôde fazer nenhuma obra poderosa ali, a não ser pôr as mãos sobre alguns doentes e curá-los.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Realmente, admirou-se com a sua falta de fé. E percorreu todas as aldeias nas redondezas, ensinando.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Ele convocou então os Doze e começou a enviá-los de dois em dois, e lhes deu autoridade sobre os espíritos impuros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Também lhes deu ordens para não levarem nada para a viagem, a não ser um bastão — nem pão, nem bolsa de provisões, nem dinheiro no cinto —,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "mas ordenou que eles calçassem sandálias e que não levassem roupa extra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Além disso, ele lhes disse: “Em qualquer casa em que entrarem, fiquem ali até saírem daquele lugar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E qualquer lugar que não os receber nem os ouvir, ao saírem dali sacudam a poeira que está nos seus pés, em testemunho para eles.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Assim, partiram e pregaram que as pessoas deveriam se arrepender;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "eles expulsavam muitos demônios, passavam azeite em muitos doentes e os curavam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E o rei Herodes ouviu falar disso, pois o nome de Jesus havia se tornado bem conhecido, e as pessoas diziam: “João, o Batizador, foi levantado dentre os mortos, e é por isso que ele realiza obras poderosas.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Mas outros diziam: “É Elias.” Ainda outros diziam: “É um profeta semelhante a um dos profetas antigos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mas, ao ouvir isso, Herodes disse: “João, aquele que eu decapitei, foi levantado.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "De fato, o próprio Herodes anteriormente havia mandado prender João e o havia amarrado na prisão por causa de Herodias, esposa de Filipe, seu irmão, porque tinha se casado com ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Pois João dizia a Herodes: “Não é permitido que o senhor tenha a esposa do seu irmão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Por isso, Herodias nutria ressentimento contra ele e queria matá-lo, mas não podia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Pois Herodes tinha temor de João, sabendo que era homem justo e santo, e o protegia. Sempre que o ouvia, ficava perplexo, sem saber o que fazer; contudo, ouvia-o com prazer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Mas chegou um dia conveniente, quando Herodes, no seu aniversário, ofereceu um banquete aos altos funcionários, aos comandantes militares e aos homens mais importantes da Galileia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "E a filha de Herodias entrou e dançou, e ela agradou a Herodes e aos que comiam com ele. O rei disse à moça: “Peça-me o que quiser, e eu darei a você.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Sim, ele lhe jurou: “O que for que você me pedir, até a metade do meu reino, eu darei a você.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Então ela saiu e perguntou à sua mãe: “O que devo pedir?” Ela respondeu: “A cabeça de João, o Batizador.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Imediatamente, ela correu até o rei e fez o seu pedido, dizendo: “Quero que o senhor me dê sem demora, numa bandeja, a cabeça de João Batista.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Embora isso o entristecesse profundamente, o rei não quis desconsiderar o pedido dela, por causa dos juramentos que tinha feito e por causa dos seus convidados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Assim, o rei enviou imediatamente um soldado da sua guarda com ordens para que trouxesse a cabeça de João. Então ele foi, decapitou-o na prisão",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "e trouxe a cabeça numa bandeja. Ele a deu à moça, e a moça a deu à sua mãe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Quando os discípulos dele ouviram isso, foram pegar o seu corpo e o colocaram num túmulo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Os apóstolos se reuniram em volta de Jesus e lhe contaram tudo o que tinham feito e ensinado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "E ele lhes disse: “Venham comigo, vamos sozinhos a um lugar isolado para descansar um pouco.” Pois havia muitos que iam e vinham, e eles não tinham folga nem para tomar uma refeição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Por isso partiram no barco para um lugar isolado, para ficarem sozinhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Mas as pessoas os viram partir, e muitos ficaram sabendo disso. E afluíram para lá a pé, de todas as cidades, e chegaram primeiro que eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Pois bem, ao desembarcar, ele viu uma grande multidão e teve pena deles, porque eram como ovelhas sem pastor. E começou a lhes ensinar muitas coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Já era tarde, e seus discípulos se aproximaram dele e disseram: “Este lugar é isolado e já é tarde.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Dispense-os, para que possam ir à zona rural e às aldeias ao redor comprar algo para comer.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Ele lhes respondeu: “Deem-lhes vocês algo para comer.” Perguntaram-lhe então: “Devemos ir comprar pães no valor de 200 denários, e dá-los às pessoas para comer?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Ele lhes disse: “Quantos pães vocês têm? Vão ver!” Depois de verificarem, disseram: “Cinco, além de dois peixes.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "E ele mandou que todos se sentassem em grupos na grama verde.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Assim eles se sentaram em grupos de cem e de cinquenta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Pegando então os cinco pães e os dois peixes, ele olhou para o céu e proferiu uma bênção. Depois partiu os pães e começou a dá-los aos discípulos, para que os servissem às pessoas, e repartiu os dois peixes entre todos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Assim, todos comeram e ficaram satisfeitos;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "e recolheram 12 cestos cheios de pedaços de pão, além das sobras de peixes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "Os que comeram os pães foram 5. 000 homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "Então, sem demora, ele mandou os discípulos entrar no barco e partir na frente, para a margem oposta, em direção a Betsaida, enquanto ele mesmo dispensava a multidão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 46,
+          "texto": "Mas, depois de se despedir deles, foi a um monte para orar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 47,
+          "texto": "Quando anoiteceu, o barco estava no meio do mar, mas ele estava sozinho em terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 48,
+          "texto": "Então, ao ver que tinham grandes dificuldades para remar por causa do vento contrário, ele se dirigiu a eles por volta da quarta vigília da noite, andando sobre o mar, mas parecia que ele ia passar direto por eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 49,
+          "texto": "Quando o viram andando sobre o mar, pensaram: “É uma aparição!” e gritaram,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 50,
+          "texto": "pois todos eles o viram e ficaram assustados. Mas ele lhes disse imediatamente: “Coragem! Sou eu; não tenham medo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 51,
+          "texto": "Então subiu no barco com eles, e o vento parou. Em vista disso, ficaram muito espantados,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 52,
+          "texto": "porque não tinham compreendido o significado dos pães; o coração deles continuava fechado ao entendimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 53,
+          "texto": "Quando terminaram a travessia, chegaram a Genesaré e ancoraram o barco ali.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 54,
+          "texto": "Mas, assim que saíram do barco, as pessoas o reconheceram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 55,
+          "texto": "Elas percorreram toda aquela região e começaram a levar os doentes em macas, para onde ouviam falar que ele estava.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 56,
+          "texto": "E onde quer que ele entrasse — em aldeias, em cidades ou na zona rural —, colocavam os doentes nas praças e lhe imploravam que pudessem tocar pelo menos na borda da sua roupa. E todos os que tocavam nela ficavam bons.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 7,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então os fariseus e alguns dos escribas que tinham chegado de Jerusalém se reuniram em volta dele.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E eles viram alguns dos discípulos dele tomar a refeição com mãos impuras, isto é, sem lavá-las.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "(Pois os fariseus e todos os judeus não comem sem lavar as mãos até os cotovelos, apegando-se à tradição dos homens dos tempos antigos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "e, ao voltar do mercado, não comem sem se lavar. Há muitas outras tradições que eles receberam e às quais se apegam, como batismos de copos, de jarros e de vasilhas de cobre.)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Então esses fariseus e escribas lhe perguntaram: “Por que os seus discípulos não seguem a tradição dos homens dos tempos antigos, mas tomam a refeição com mãos impuras?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ele lhes disse: “Isaías profetizou apropriadamente a respeito de vocês, hipócritas, como está escrito: ‘Este povo me honra com os lábios, mas seu coração está muito longe de mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "É em vão que continuam a me adorar, pois ensinam as regras de homens como doutrinas.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Vocês abandonam o mandamento de Deus e se apegam à tradição de homens.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Ele lhes disse ainda: “Vocês sabem muito bem como pôr de lado o mandamento de Deus, a fim de manter a sua tradição.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 10,
+          "texto": "Por exemplo, Moisés disse: ‘Honre seu pai e sua mãe’ e ‘Quem amaldiçoar seu pai ou sua mãe seja morto’.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Mas vocês dizem: ‘Se um homem diz ao seu pai ou à sua mãe: “Tudo o que eu tenho que poderia beneficiá-lo é corbã (isto é, uma dádiva dedicada a Deus)”’,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "vocês não o deixam mais fazer nem uma única coisa para seu pai ou para sua mãe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Assim vocês invalidam a palavra de Deus pela tradição que transmitiram. E fazem muitas coisas como essa.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E, chamando novamente a multidão, ele lhes disse: “Escutem-me, todos vocês, e compreendam o significado do que eu digo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Não há nada fora de um homem que, entrando nele, possa torná-lo impuro; mas as coisas que saem do homem são as que o tornam impuro.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "——",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Então, depois de ele se afastar da multidão e entrar numa casa, seus discípulos lhe perguntaram sobre a ilustração.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 18,
+          "texto": "De modo que lhes perguntou: “Vocês também estão sem entendimento, como eles? Não percebem que nada de fora que entre num homem pode torná-lo impuro,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "visto que entra, não no seu coração, mas no seu estômago, e sai para o esgoto?” Assim ele declarou puros todos os alimentos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Além disso, ele disse: “O que sai do homem é o que o torna impuro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Pois, de dentro, do coração dos homens, saem raciocínios prejudiciais: imoralidade sexual, roubos, assassinatos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "adultérios, ganância, maldades, engano, conduta insolente, olho invejoso, blasfêmia, arrogância e insensatez.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Todas essas coisas más saem de dentro e tornam o homem impuro.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Ele se levantou e foi para a região de Tiro e Sídon. Ali, entrou numa casa e não quis que ninguém soubesse, mas não pôde passar despercebido.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 25,
+          "texto": "Logo uma mulher cuja filhinha tinha um espírito impuro ouviu falar dele e foi até lá, e se prostrou aos seus pés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "A mulher era grega, de nacionalidade siro-fenícia, e ela lhe pedia com insistência que expulsasse da sua filha o demônio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Mas ele lhe disse: “Deixe primeiro os filhos ficarem satisfeitos, pois não é certo tirar o pão dos filhos e jogá-lo aos cachorrinhos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Ela, porém, lhe respondeu: “Sim, senhor; no entanto, até os cachorrinhos debaixo da mesa comem as migalhas que as criancinhas deixam cair.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Com isso, ele lhe disse: “Por causa da sua resposta, vá; o demônio saiu da sua filha.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Assim, ela foi para casa e encontrou a criancinha deitada na cama, e o demônio a tinha deixado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Quando Jesus voltou da região de Tiro, passou por Sídon e foi para o mar da Galileia, atravessando a região de Decápolis.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 32,
+          "texto": "Ali, levaram-lhe um surdo que tinha um impedimento na fala e suplicaram-lhe que pusesse a mão sobre ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "E ele o levou à parte, longe da multidão. Então pôs os dedos nos ouvidos do homem e, depois de cuspir, tocou na língua dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Olhando para o céu, suspirou profundamente e lhe disse: “Efatá”, isto é: “Abra-se.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Com isso, seus ouvidos se abriram e seu impedimento na fala foi removido, e ele começou a falar normalmente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Então lhes ordenou que não contassem isso a ninguém, mas, quanto mais ordenava, mais proclamavam o acontecido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "De fato, estavam extremamente admirados e diziam: “Ele faz bem todas as coisas. Faz até os surdos ouvir e os mudos falar.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 8,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Naqueles dias, havia novamente uma grande multidão, e eles não tinham nada para comer. Então ele convocou os discípulos e lhes disse:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“Tenho pena da multidão, porque já estão comigo há três dias, e eles não têm nada para comer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Se eu os mandar para casa com fome, desfalecerão na estrada, e alguns deles vieram de longe.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas os seus discípulos lhe responderam: “Onde alguém poderia encontrar neste lugar isolado pão suficiente para satisfazê-los?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Com isso ele lhes perguntou: “Quantos pães vocês têm?” Disseram: “Sete.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E mandou a multidão se sentar no chão. Então pegou os sete pães, deu graças, partiu-os e começou a dá-los aos seus discípulos, para que os servissem, e eles os serviram à multidão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Tinham também alguns peixinhos e, depois de dar graças por estes, disse-lhes que os servissem também.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim, comeram e ficaram satisfeitos, e recolheram sete cestos grandes, cheios dos pedaços que sobraram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Havia cerca de 4. 000 homens. Então ele os dispensou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Ele entrou imediatamente no barco com seus discípulos e chegou à região de Dalmanuta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Ali os fariseus se aproximaram e começaram a discutir com ele, pedindo-lhe um sinal do céu, para o porem à prova.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Então ele suspirou profundamente e disse: “Por que esta geração busca um sinal? Eu lhes digo a verdade: Nenhum sinal será dado a esta geração.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Com isso os deixou, embarcou novamente e foi para a margem oposta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "No entanto, eles se esqueceram de levar pães e não tinham nada consigo no barco, a não ser um pão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "E ele lhes advertiu claramente: “Mantenham os olhos abertos; cuidado com o fermento dos fariseus e com o fermento de Herodes.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então eles começaram a discutir entre si sobre o fato de não terem pães.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Notando isso, ele lhes disse: “Por que vocês estão discutindo sobre não terem pães? Ainda não percebem e não entendem? Seu coração ainda está fechado ao entendimento?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "‘Embora tenham olhos, não veem; e embora tenham ouvidos, não ouvem?’ Não se lembram",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "de quantos cestos cheios de pedaços vocês recolheram, quando parti os cinco pães para os 5. 000 homens?” Disseram-lhe: “Doze.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "“E quando parti os sete pães para os 4. 000 homens, quantos cestos grandes, cheios de pedaços, vocês recolheram?” Responderam-lhe: “Sete.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Com isso lhes disse: “Vocês ainda não entendem?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Chegaram então a Betsaida. Ali levaram a ele um cego e lhe suplicaram que tocasse nele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "E ele pegou o cego pela mão e o levou para fora da aldeia. Depois de cuspir nos olhos dele, pôs as mãos sobre ele e lhe perguntou: “Vê alguma coisa?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "O homem olhou para cima e disse: “Vejo pessoas, mas elas parecem árvores andando.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Ele pôs de novo as mãos sobre os olhos do homem, e o homem viu claramente. Sua visão foi restabelecida, e ele podia ver tudo nitidamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Assim, mandou-o para casa, dizendo: “Não entre na aldeia.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Jesus e seus discípulos partiram então para as aldeias de Cesareia de Filipe, e, no caminho, ele perguntou aos seus discípulos: “Quem as pessoas dizem que eu sou?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Responderam-lhe: “João Batista; mas outros dizem que é Elias; e ainda outros, um dos profetas.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "E ele lhes perguntou: “E vocês, quem dizem que eu sou?” Pedro lhe respondeu: “O senhor é o Cristo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Então ele lhes ordenou com firmeza que não contassem a ninguém sobre ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Também, ele começou a lhes ensinar que o Filho do Homem tinha de sofrer muitas coisas e ser rejeitado pelos anciãos, pelos principais sacerdotes e pelos escribas, e que tinha de ser morto e ser levantado três dias depois.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "De fato, fez essa declaração abertamente. Mas Pedro o levou à parte e começou a censurá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Com isso ele se virou, olhou para os seus discípulos e censurou Pedro, dizendo: “Para trás de mim, Satanás! Porque você não tem os pensamentos de Deus, mas os de homens.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Chamou então a multidão, junto com seus discípulos, e lhes disse: “Se alguém quer ser meu seguidor, negue a si mesmo, apanhe sua estaca de tortura e siga-me sempre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e por causa das boas novas a salvará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Realmente, de que adianta o homem ganhar o mundo inteiro e perder a sua vida?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "O que, realmente, o homem daria em troca da sua vida?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Pois quem se envergonhar de mim e das minhas palavras entre esta geração adúltera e pecadora, desse o Filho do Homem também se envergonhará quando vier na glória do seu Pai, com os santos anjos.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 9,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Ele lhes disse também: “Digo a verdade a vocês: Há alguns dos que estão aqui que de modo algum provarão a morte antes de verem o Reino de Deus já vindo em poder.”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Seis dias depois, Jesus chamou Pedro, Tiago e João, e os levou a sós a um alto monte. E ele foi transfigurado diante deles;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "suas roupas se tornaram cintilantes e ficaram muito mais brancas do que qualquer lavadeiro na terra poderia alvejar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Também lhes apareceu Elias com Moisés, e eles estavam conversando com Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Então Pedro disse a Jesus: “Rabi, é bom que estejamos aqui. Vamos armar, então, três tendas: uma para o senhor, uma para Moisés e uma para Elias.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Na verdade, não sabia como reagir, pois eles estavam com muito medo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "E formou-se uma nuvem, encobrindo-os, e uma voz saiu da nuvem: “Este é meu Filho, o amado. Escutem-no.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "De repente, então, olharam em volta e não viram mais ninguém com eles, a não ser Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Enquanto desciam do monte, Jesus lhes ordenou com firmeza que não contassem a ninguém o que tinham visto, até que o Filho do Homem fosse levantado dentre os mortos.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 10,
+          "texto": "Eles obedeceram às suas palavras, mas discutiram entre si o que significava ele ser levantado dentre os mortos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E lhe perguntaram: “Por que os escribas dizem que Elias tem de vir primeiro?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ele lhes respondeu: “Elias realmente vem primeiro e restabelece todas as coisas. Mas como é que está escrito a respeito do Filho do Homem que ele tem de sofrer muitas coisas e ser tratado com desprezo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Porém, eu lhes digo que Elias, de fato, já veio, e fizeram com ele tudo o que quiseram, assim como está escrito a respeito dele.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Ao chegarem onde estavam os outros discípulos, notaram uma grande multidão em volta deles, e havia escribas discutindo com eles.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 15,
+          "texto": "Mas, assim que as pessoas da multidão o viram, ficaram admiradas e correram para cumprimentá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então ele lhes perguntou: “Sobre o que vocês estão discutindo com eles?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "E alguém da multidão lhe respondeu: “Instrutor, eu trouxe meu filho para o senhor, porque ele tem um espírito mudo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Onde quer que esse espírito o apanhe, lança-o no chão, e ele espuma pela boca, range os dentes e perde a força. Eu pedi aos seus discípulos que expulsassem o espírito, mas eles não foram capazes de fazer isso.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Em resposta, ele lhes disse: “Ó geração sem fé, até quando terei de continuar com vocês? Até quando terei de suportá-los? Tragam-no a mim.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "De modo que o levaram a ele, mas, ao ver Jesus, o espírito lançou o menino imediatamente em convulsões. Depois de cair no chão, ele ficou rolando e espumando pela boca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Então Jesus perguntou ao pai: “Há quanto tempo isso acontece com ele?” Ele respondeu: “Desde a infância,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "e o espírito o lança muitas vezes no fogo e também na água, para matá-lo. Mas, se o senhor puder fazer algo, tenha pena de nós e ajude-nos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Jesus lhe disse: “Esta expressão: ‘Se puder’! Ora, tudo é possível para quem tem fé.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Imediatamente, o pai do menino clamou: “Eu tenho fé! Ajude-me onde preciso de fé!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Observando então que uma multidão estava rapidamente se aproximando deles, Jesus censurou o espírito impuro, dizendo-lhe: “Espírito mudo e surdo, eu lhe ordeno que saia dele e não entre nele novamente!”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 26,
+          "texto": "Depois de clamar e de causar muitas convulsões no menino, o espírito saiu; e o menino parecia morto, de modo que a maioria das pessoas dizia: “Ele está morto!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Mas Jesus o pegou pela mão e o levantou, e ele ficou de pé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Assim, depois de entrar numa casa, seus discípulos lhe perguntaram em particular: “Por que nós não conseguimos expulsá-lo?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Ele lhes respondeu: “Essa espécie só sai por oração.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Partiram dali e atravessaram a Galileia, mas ele não quis que ninguém soubesse disso,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 31,
+          "texto": "pois estava ensinando os seus discípulos. E lhes dizia: “O Filho do Homem será entregue às mãos dos homens, e eles o matarão, mas, embora seja morto, será levantado três dias depois.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "No entanto, não entendiam o que ele lhes dizia e tinham medo de perguntar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "E entraram em Cafarnaum. Então, quando estava dentro da casa, ele lhes perguntou: “Sobre o que vocês estavam discutindo na estrada?”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 34,
+          "texto": "Eles ficaram calados, pois na estrada tinham discutido entre si sobre quem era o maior.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Então ele se sentou, chamou os Doze e lhes disse: “Se alguém quer ser o primeiro, tem de ser o último de todos e servo de todos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Então ele pegou uma criancinha e a colocou no meio deles; pôs os braços em volta dela e lhes disse:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "“Quem recebe uma destas criancinhas em meu nome recebe também a mim; e quem me recebe, recebe não só a mim, mas também Aquele que me enviou.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "João lhe disse: “Instrutor, vimos alguém expulsar demônios usando o seu nome e tentamos impedi-lo, porque ele não estava nos acompanhando.”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 39,
+          "texto": "Mas Jesus disse: “Não tentem impedi-lo, porque ninguém que faça uma obra poderosa em meu nome pode logo depois falar mal de mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Pois quem não é contra nós é a favor de nós.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "E eu garanto a vocês que quem lhes der um copo de água para beber, por vocês pertencerem a Cristo, de modo algum perderá sua recompensa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Mas quem fizer tropeçar um destes pequenos que têm fé, seria melhor para ele que pusessem no seu pescoço uma pedra de moinho daquelas que o jumento faz girar, e que fosse lançado no mar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "“Se a sua mão faz você tropeçar, corte-a. É melhor para você entrar na vida aleijado do que ir com as duas mãos para a Geena, para o fogo que não pode ser apagado.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 44,
+          "texto": "——",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "E, se o seu pé o faz tropeçar, corte-o. É melhor para você entrar na vida manco do que ser lançado com os dois pés na Geena.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 46,
+          "texto": "——",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 47,
+          "texto": "E, se o seu olho o faz tropeçar, lance-o para longe. É melhor para você entrar no Reino de Deus com um olho só do que ser lançado com os dois olhos na Geena,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 48,
+          "texto": "onde os vermes não morrem e o fogo não é apagado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 49,
+          "texto": "“Pois todos têm de ser salgados com fogo.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 50,
+          "texto": "O sal é bom, mas, se o sal perder a sua salinidade, o que farão para recuperar o seu sabor? Tenham sal em vocês mesmos e mantenham a paz uns com os outros.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 10,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Dali ele se levantou e foi para as fronteiras da Judeia, do outro lado do Jordão, e novamente multidões se ajuntaram em volta dele. Ele começou a ensiná-las de novo, como costumava fazer.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Alguns fariseus se aproximaram e, querendo pô-lo à prova, perguntaram se era permitido que um homem se divorciasse da esposa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Ele lhes respondeu: “O que Moisés lhes ordenou?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Disseram: “Moisés permitiu que o homem escrevesse um certificado de divórcio e a mandasse embora.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Mas Jesus lhes disse: “Foi por causa da dureza do coração de vocês que ele lhes escreveu esse mandamento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "No entanto, no princípio da criação ‘Ele os fez homem e mulher.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Por essa razão o homem deixará seu pai e sua mãe,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "e os dois serão uma só carne’, de modo que não são mais dois, mas uma só carne.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Portanto, o que Deus pôs sob o mesmo jugo, o homem não deve separar.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Quando estavam novamente na casa, os discípulos lhe perguntaram sobre isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Ele lhes disse: “Quem se divorcia da sua esposa e se casa com outra comete adultério contra ela,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "e, se uma mulher, depois de se divorciar do seu marido, se casa com outro, comete adultério.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "As pessoas começaram então a trazer a ele criancinhas, para que tocasse nelas, mas os discípulos repreenderam as pessoas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Vendo isso, Jesus ficou indignado e lhes disse: “Deixem as criancinhas vir a mim. Não tentem impedi-las, pois o Reino de Deus pertence aos que são como elas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Eu lhes digo a verdade: Quem não receber o Reino de Deus como uma criancinha, de modo algum entrará nele.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "E pegou as crianças nos braços e começou a abençoá-las, pondo as mãos sobre elas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Quando ele estava saindo, um homem chegou correndo, pôs-se de joelhos diante dele e lhe perguntou: “Bom Instrutor, o que devo fazer para herdar a vida eterna?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Jesus lhe disse: “Por que você me chama de bom? Ninguém é bom, a não ser um só, Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Você conhece os mandamentos: ‘Não assassine; não cometa adultério; não furte; não dê falso testemunho; não defraude; honre seu pai e sua mãe.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "O homem lhe disse: “Instrutor, eu tenho cumprido todas essas coisas desde bem jovem.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Jesus olhou para ele e, sentindo amor por ele, disse: “Falta uma coisa a seu respeito: vá, venda o que você tem e dê o dinheiro aos pobres, e você terá um tesouro no céu; e venha ser meu seguidor.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Mas ele ficou triste com a resposta e foi embora abatido, porque tinha muitas posses.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Depois de olhar em volta, Jesus disse aos seus discípulos: “Como será difícil para os que têm dinheiro entrar no Reino de Deus!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Mas os discípulos ficaram surpresos com as suas palavras. Jesus disse então: “Filhos, como é difícil entrar no Reino de Deus!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "É mais fácil um camelo passar pelo buraco de uma agulha do que um rico entrar no Reino de Deus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Eles ficaram ainda mais admirados e lhe perguntaram: “Quem é que pode ser salvo?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Jesus olhou diretamente para eles e disse: “Para os homens é impossível, mas não é assim para Deus, pois para Deus todas as coisas são possíveis.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Pedro começou a lhe dizer: “Veja, deixamos tudo e seguimos o senhor.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Jesus disse: “Eu lhes garanto: Ninguém deixou casa, irmãos, irmãs, mãe, pai, filhos ou campos, por minha causa e por causa das boas novas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "que não receba cem vezes mais agora, neste tempo, casas, irmãos, irmãs, mães, filhos e campos, com perseguições, e, no futuro sistema de coisas, a vida eterna.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Mas muitos que são primeiros serão últimos; e os últimos, primeiros.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Estavam então indo pela estrada, subindo para Jerusalém, e Jesus ia na frente deles, e eles estavam admirados; mas os que os seguiam estavam com medo. Novamente, ele chamou os Doze à parte e começou a lhes dizer as coisas que estavam para acontecer com ele:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "“Escutem, estamos subindo para Jerusalém, e o Filho do Homem será entregue aos principais sacerdotes e aos escribas. Eles o condenarão à morte e o entregarão a homens das nações,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "e esses zombarão dele, cuspirão nele, o açoitarão e o matarão, mas três dias depois ele será levantado.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Tiago e João, os filhos de Zebedeu, se aproximaram dele e lhe disseram: “Instrutor, queremos que o senhor faça para nós o que lhe pedirmos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Ele lhes perguntou: “O que querem que eu faça para vocês?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Eles responderam: “Conceda-nos que nos sentemos um à sua direita e outro à sua esquerda, na sua glória.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Mas Jesus lhes disse: “Vocês não sabem o que estão pedindo. Será que podem beber o cálice que eu estou bebendo ou ser batizados com o batismo com que eu estou sendo batizado?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Disseram-lhe: “Podemos.” Então Jesus lhes disse: “Vocês beberão o cálice que eu estou bebendo e serão batizados com o batismo com que eu estou sendo batizado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "No entanto, sentar-se à minha direita ou à minha esquerda não cabe a mim conceder; esses lugares pertencem àqueles para quem foram preparados.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Quando os outros dez souberam disso, ficaram indignados com Tiago e João.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Mas Jesus os chamou e lhes disse: “Vocês sabem que os que são considerados governantes das nações dominam sobre elas, e seus grandes exercem autoridade sobre elas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "Não deve ser assim entre vocês; mas quem quiser se tornar grande entre vocês tem de ser o seu servo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "e quem quiser ser o primeiro entre vocês tem de ser o escravo de todos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "Pois até mesmo o Filho do Homem veio, não para ser servido, mas para servir e dar a sua vida como resgate em troca de muitos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 46,
+          "texto": "Eles entraram então em Jericó. Mas, quando ele, seus discípulos e uma multidão considerável estavam saindo de Jericó, Bartimeu (filho de Timeu), um mendigo cego, estava sentado à beira da estrada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 47,
+          "texto": "Ao ouvir que era Jesus, o Nazareno, ele começou a gritar: “Filho de Davi, Jesus, tenha misericórdia de mim!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 48,
+          "texto": "Em vista disso, muitos começaram a censurá-lo, mandando que se calasse, mas ele gritava ainda mais: “Filho de Davi, tenha misericórdia de mim!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 49,
+          "texto": "Então Jesus parou e disse: “Chamem-no.” E chamaram o cego, dizendo-lhe: “Coragem! Levante-se, ele está chamando você.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 50,
+          "texto": "Jogando a capa para o lado, ele se levantou rapidamente e foi ao encontro de Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 51,
+          "texto": "Então Jesus lhe perguntou: “O que você quer que eu faça por você?” O cego lhe disse: “Rabôni, deixe-me recuperar a visão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 52,
+          "texto": "E Jesus lhe disse: “Vá, sua fé fez você ficar bom.” E ele recuperou imediatamente a visão e começou a segui-lo pela estrada.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 11,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então, quando estavam chegando perto de Jerusalém, de Betfagé e de Betânia, no monte das Oliveiras, ele enviou dois dos seus discípulos",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "e lhes disse: “Vão à aldeia que está ao alcance da vista e, assim que entrarem lá, acharão um jumentinho amarrado, no qual ninguém ainda montou. Desamarrem-no e tragam-no para cá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E, se alguém lhes perguntar: ‘Por que estão fazendo isso?’, digam: ‘O Senhor precisa dele, e logo o mandará de volta para cá.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Assim partiram e acharam o jumentinho amarrado junto a uma porta, do lado de fora, na rua, e o desamarraram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Mas alguns dos que estavam ali perguntaram a eles: “O que vocês estão fazendo, desamarrando o jumentinho?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Disseram a eles o que Jesus tinha dito, e eles os deixaram ir.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Trouxeram então a Jesus o jumentinho e colocaram sobre este suas capas, e ele se sentou nele.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 8,
+          "texto": "Também, muitos estenderam suas capas na estrada, mas outros cortaram ramos dos campos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "E os que iam na frente e os que vinham atrás gritavam: “Salva, rogamos! Bendito é aquele que vem em nome de Jeová!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Bendito é o Reino que virá, do nosso pai Davi! Salva, rogamos, nas maiores alturas!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E ele entrou em Jerusalém, foi ao templo e olhou tudo em volta, mas, visto que já estava tarde, saiu com os Doze para Betânia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "No dia seguinte, quando estavam saindo de Betânia, ele sentiu fome.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 13,
+          "texto": "De certa distância viu uma figueira que tinha folhas e foi ver se achava algo nela. Mas, ao chegar perto dela, não encontrou nada, exceto folhas, pois não era a estação dos figos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Então ele lhe disse: “Nunca mais ninguém coma do seu fruto.” E os seus discípulos estavam escutando.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Chegaram então a Jerusalém. Ali ele entrou no templo e começou a expulsar os que vendiam e compravam no templo, e derrubou as mesas dos cambistas e as cadeiras dos que vendiam pombas;",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 16,
+          "texto": "e não deixava ninguém carregar nenhum utensílio através do templo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Ele ensinava, dizendo-lhes: “Não está escrito: ‘Minha casa será chamada casa de oração para todas as nações’? Mas vocês fizeram dela um abrigo de ladrões.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Os principais sacerdotes e os escribas ouviram isso, e começaram a procurar um meio de matá-lo, pois tinham medo dele, porque toda a multidão estava maravilhada com o seu ensino.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Quando ficou tarde no dia, saíram da cidade.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 20,
+          "texto": "Mas, de manhã cedo, quando estavam passando pela figueira, viram que ela estava seca desde as raízes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Pedro se lembrou e lhe disse: “Rabi, veja! A figueira que o senhor amaldiçoou secou.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Jesus lhe disse em resposta: “Tenham fé em Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Eu lhes digo a verdade: Quem disser a este monte: ‘Levante-se e jogue-se no mar’, e não duvidar no coração, mas tiver fé em que aquilo que disser vai acontecer, assim acontecerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "É por isso que lhes digo: Todas as coisas que vocês pedirem em oração, tenham fé em que já as receberam, e as terão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "E, quando vocês estiverem em pé, orando, perdoem o que tiverem contra alguém, para que o seu Pai, que está nos céus, também perdoe as falhas de vocês.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "——",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Chegaram novamente a Jerusalém. E enquanto ele andava pelo templo, os principais sacerdotes, os escribas e os anciãos vieram",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 28,
+          "texto": "e lhe perguntaram: “Com que autoridade você faz essas coisas? E quem lhe deu autoridade para fazer essas coisas?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Jesus lhes disse: “Eu lhes farei uma pergunta. Respondam-me, e eu lhes direi com que autoridade faço essas coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "O batismo de João era do céu ou dos homens? Respondam-me.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Então eles começaram a raciocinar entre si, dizendo: “Se dissermos: ‘Do céu’, ele dirá: ‘Então, por que vocês não acreditaram nele?’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Mas nos atrevemos a dizer: ‘Dos homens’?” Eles tinham medo da multidão, pois todos achavam que João realmente tinha sido um profeta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Assim, responderam a Jesus: “Não sabemos.” Jesus lhes disse: “Então eu também não lhes digo com que autoridade faço essas coisas.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 12,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então ele começou a lhes falar com ilustrações: “Um homem plantou um vinhedo, pôs uma cerca em volta dele, cavou um tanque como lagar de vinho e ergueu uma torre; então arrendou o vinhedo a lavradores e viajou para fora.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Na época devida, enviou um escravo aos lavradores para receber deles alguns dos frutos do vinhedo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mas eles o pegaram e espancaram, e o mandaram embora de mãos vazias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Enviou-lhes outro escravo, e eles lhe bateram na cabeça e o humilharam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Então enviou outro, e eles o mataram; e enviou muitos outros: a uns eles espancaram, a outros mataram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ele tinha mais um, um filho amado. Por fim o enviou a eles, dizendo: ‘Respeitarão o meu filho.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas aqueles lavradores disseram entre si: ‘Este é o herdeiro. Venham, vamos matá-lo, e a herança será nossa.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim, eles o pegaram, o mataram e o lançaram para fora do vinhedo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "O que fará o dono do vinhedo? Voltará e matará os lavradores, e dará o vinhedo a outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Vocês nunca leram esta passagem das Escrituras: ‘A pedra que os construtores rejeitaram, essa se tornou a principal pedra angular.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Isso procede de Jeová e é maravilhoso aos nossos olhos’?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Em vista disso, quiseram prendê-lo, porque sabiam que ele havia contado a ilustração pensando neles. Mas tinham medo da multidão, de modo que o deixaram e foram embora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "A seguir, enviaram-lhe alguns dos fariseus e dos partidários de Herodes, para apanhá-lo nas suas palavras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Ao chegarem, eles lhe disseram: “Instrutor, sabemos que o senhor é verdadeiro e que não busca agradar a homens, pois não olha para a aparência das pessoas, mas ensina o caminho de Deus em harmonia com a verdade. É permitido ou não pagar a César o imposto por cabeça?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Devemos pagar ou não devemos pagar?” Percebendo a hipocrisia deles, ele lhes disse: “Por que vocês me põem à prova? Tragam-me um denário para eu ver.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Trouxeram-lhe um, e ele lhes perguntou: “De quem é esta imagem e inscrição?” Responderam-lhe: “De César.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Jesus disse então: “Paguem a César o que é de César, mas a Deus o que é de Deus.” E ficaram maravilhados com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Então os saduceus, que dizem não haver ressurreição, se aproximaram e lhe perguntaram:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "“Instrutor, Moisés nos escreveu que, se alguém morre e deixa esposa, mas não deixa filhos, o irmão dele deve tomar a viúva em casamento para dar descendência ao seu irmão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Havia sete irmãos. O primeiro tomou uma esposa, mas morreu sem deixar descendente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "E o segundo se casou com ela, mas morreu sem deixar descendente, e o mesmo aconteceu com o terceiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "E nenhum dos sete deixou descendente. Por último, morreu também a mulher.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Na ressurreição, de qual deles ela será esposa? Pois os sete a tiveram como esposa.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Jesus lhes disse: “Não é por isso que vocês estão enganados, porque não conhecem nem as Escrituras, nem o poder de Deus?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Pois, quando se levantam dentre os mortos, os homens não se casam, nem as mulheres são dadas em casamento, mas são como os anjos nos céus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Quanto aos mortos serem levantados, vocês não leram no livro de Moisés, no relato sobre o espinheiro, que Deus lhe disse: ‘Eu sou o Deus de Abraão, o Deus de Isaque e o Deus de Jacó’?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Ele é Deus, não de mortos, mas de vivos. Vocês estão muito enganados.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Um dos escribas, que havia se aproximado e ouvido a discussão, vendo que ele tinha lhes respondido bem, perguntou-lhe: “Qual mandamento é o primeiro de todos?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Jesus respondeu: “O primeiro é: ‘Ouve, ó Israel: Jeová, nosso Deus, é um só Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Ame a Jeová, seu Deus, de todo o seu coração, de toda a sua alma, de toda a sua mente e de toda a sua força.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "O segundo é: ‘Ame o seu próximo como a si mesmo.’ Não há outro mandamento maior do que esses.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "O escriba lhe disse: “Instrutor, o senhor disse bem, em harmonia com a verdade: ‘Ele é um só, e não há outro além dele’;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "e amá-lo de todo o coração, de todo o entendimento e de toda a força, e amar o próximo como a si mesmo vale muito mais do que todas as ofertas queimadas e sacrifícios.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Com isso, Jesus, percebendo que ele tinha respondido de modo inteligente, disse-lhe: “Você não está longe do Reino de Deus.” Mas ninguém teve coragem de lhe fazer mais perguntas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "No entanto, ao continuar ensinando no templo, Jesus disse: “Como é que os escribas dizem que o Cristo é filho de Davi?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "O próprio Davi disse, pelo espírito santo: ‘Jeová disse ao meu Senhor: “Sente-se à minha direita, até que eu ponha os seus inimigos debaixo dos seus pés.”’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "O próprio Davi o chama de Senhor, então como ele pode ser seu filho?” E a grande multidão o escutava com prazer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "E ele ensinava, dizendo: “Cuidado com os escribas, que querem andar de vestes compridas e querem cumprimentos nas praças públicas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "os primeiros assentos nas sinagogas e os lugares mais destacados nos banquetes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Eles devoram as casas das viúvas e, para impressionar, fazem longas orações. Eles receberão um julgamento mais severo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "E ele se sentou, com os cofres do tesouro à vista, e começou a observar como a multidão punha dinheiro nos cofres do tesouro, e muitos ricos punham neles muitas moedas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Chegou então uma viúva pobre e pôs neles duas pequenas moedas de pouquíssimo valor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "Ele chamou então os discípulos e lhes disse: “Digo-lhes a verdade: Esta viúva pobre pôs nos cofres do tesouro mais do que todos os outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "Pois todos eles puseram do que lhes sobrava, mas ela, da sua carência, pôs tudo que possuía, tudo que tinha para viver.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 13,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quando ele estava saindo do templo, um dos seus discípulos lhe disse: “Instrutor, veja que pedras e que edifícios maravilhosos!”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "No entanto, Jesus lhe disse: “Está vendo estes grandes edifícios? De modo algum ficará aqui pedra sobre pedra sem ser derrubada.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Quando ele estava sentado no monte das Oliveiras, com o templo à vista, Pedro, Tiago, João e André lhe perguntaram em particular:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“Diga-nos: Quando acontecerão essas coisas e qual será o sinal de que todas essas coisas estão prestes a chegar a um final?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Assim, Jesus começou a lhes dizer: “Cuidado para que ninguém os engane.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Muitos virão em meu nome, dizendo: ‘Sou eu’, e enganarão a muitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Além disso, quando ouvirem falar de guerras e notícias de guerras, não fiquem apavorados. Essas coisas têm de acontecer, mas ainda não é o fim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "“Porque nação se levantará contra nação e reino contra reino; haverá terremotos num lugar após outro; também haverá falta de alimentos. Essas coisas são um começo das dores de aflição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "“Quanto a vocês, tomem cuidado. As pessoas os entregarão aos tribunais locais, e vocês serão espancados nas sinagogas, e serão postos diante de governadores e reis, por minha causa, para darem testemunho a eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Também, em todas as nações, as boas novas têm de ser pregadas primeiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E, quando levarem vocês para entregá-los, não fiquem preocupados com o que dizer, mas digam o que lhes for dado naquela hora. Pois quem fala não são vocês, mas é o espírito santo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Além disso, irmão entregará irmão à morte, e o pai ao filho, e os filhos se levantarão contra os pais e farão com que sejam mortos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "E vocês serão odiados por todos, por causa do meu nome. Mas quem perseverar até o fim será salvo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "“No entanto, quando vocês virem a coisa repugnante que causa desolação estar num lugar onde não devia (que o leitor use de discernimento), então, os que estiverem na Judeia fujam para os montes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O homem que estiver no terraço não desça, nem entre para tirar algo da sua casa,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "e o homem que estiver no campo não volte ao que deixou atrás, para apanhar sua capa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Ai das mulheres grávidas e das que amamentarem naqueles dias!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Persistam em orar para que isso não ocorra no inverno;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "pois aqueles dias serão dias de tribulação, como nunca ocorreu desde o princípio da criação, que Deus criou, até agora, nem ocorrerá de novo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "De fato, se Jeová não tivesse abreviado os dias, ninguém seria salvo. Mas, por causa dos escolhidos, que ele escolheu, ele abreviou os dias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "“Então, também, se alguém lhes disser: ‘Vejam! Aqui está o Cristo!’ ou ‘Vejam! Ali está ele!’, não acreditem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Porque surgirão falsos cristos e falsos profetas, e farão sinais e milagres a fim de desencaminhar, se possível, os escolhidos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Vocês, portanto, sejam vigilantes. Eu lhes disse tudo antecipadamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "“Mas naqueles dias, depois daquela tribulação, o sol escurecerá, a lua não dará a sua luz,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "as estrelas cairão do céu, e os poderes que estão nos céus serão abalados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "E então verão o Filho do Homem vir nas nuvens, com grande poder e glória.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "E então ele enviará os anjos e reunirá os seus escolhidos desde os quatro ventos, desde a extremidade da terra até a extremidade do céu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "“Aprendam desta ilustração sobre a figueira: assim que os ramos novos ficam tenros e brotam folhas, vocês sabem que o verão está próximo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Do mesmo modo, quando virem essas coisas acontecer, saibam que ele está próximo, às portas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Eu lhes garanto que esta geração de modo algum passará até que todas essas coisas aconteçam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Céu e terra passarão, mas as minhas palavras de modo algum passarão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "“A respeito daquele dia ou daquela hora ninguém sabe, nem os anjos no céu, nem o Filho, mas somente o Pai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Sejam vigilantes, mantenham-se despertos, pois vocês não sabem quando é o tempo determinado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "É semelhante a um homem que, ao viajar para fora, deixou sua casa e deu autoridade aos seus escravos, a cada um o seu trabalho, e ordenou ao porteiro que se mantivesse vigilante.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Portanto, mantenham-se vigilantes, pois vocês não sabem quando virá o senhor da casa, quer tarde no dia, quer à meia-noite, quer antes do amanhecer, quer de manhã cedo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "a fim de que, quando ele vier de repente, não os encontre dormindo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Mas o que eu digo a vocês, digo a todos: Mantenham-se vigilantes.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 14,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Dali a dois dias era a Páscoa e a Festividade dos Pães sem Fermento. E os principais sacerdotes e os escribas estavam procurando um modo astucioso de prendê-lo e matá-lo.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois diziam: “Não durante a festividade; talvez haja um alvoroço entre o povo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E, quando ele estava em Betânia, comendo na casa de Simão, o leproso, chegou uma mulher com um frasco de alabastro que continha óleo perfumado, nardo genuíno, muito caro. Ela rompeu o frasco de alabastro e começou a derramá-lo sobre a cabeça dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Em vista disso, alguns disseram uns aos outros, indignados: “Por que se desperdiçou esse óleo perfumado?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois esse óleo perfumado poderia ter sido vendido por mais de 300 denários, e o dinheiro dado aos pobres!” E ficaram muito aborrecidos com ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas Jesus disse: “Deixem-na em paz. Por que vocês estão perturbando a mulher? Ela me fez uma coisa muito boa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Porque vocês sempre têm consigo os pobres e podem lhes fazer o bem sempre que quiserem, mas nem sempre terão a mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Ela fez o que pôde; ela se antecipou em derramar óleo perfumado sobre o meu corpo, em vista do meu sepultamento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Eu lhes digo a verdade: Onde quer que se preguem as boas novas em todo o mundo, o que essa mulher fez também será relatado, em memória dela.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "E Judas Iscariotes, um dos Doze, se dirigiu aos principais sacerdotes a fim de entregá-lo a eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Quando ouviram isso, se alegraram e prometeram lhe dar dinheiro de prata. De modo que ele começou a procurar uma oportunidade para traí-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Então, no primeiro dia da Festividade dos Pães sem Fermento, quando costumavam oferecer o sacrifício pascoal, seus discípulos lhe perguntaram: “Onde o senhor quer que façamos os preparativos para tomar a refeição pascoal?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Em vista disso, ele enviou dois dos seus discípulos e lhes disse: “Vão à cidade, e um homem levando um jarro de barro com água encontrará vocês. Sigam-no,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "e onde quer que ele entrar, digam ao dono da casa: ‘O Instrutor diz: “Onde está a sala dos hóspedes, em que eu possa tomar a refeição pascoal com os meus discípulos?”’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "E ele lhes mostrará uma grande sala no andar de cima, mobiliada e pronta. Façam ali os preparativos para nós.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então os discípulos foram, entraram na cidade e encontraram tudo assim como ele tinha lhes dito, e prepararam a refeição pascoal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Depois de anoitecer, ele chegou com os Doze.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "E, enquanto estavam recostados à mesa e comiam, Jesus disse: “Digo-lhes a verdade: Um de vocês, que está comendo comigo, me trairá.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Eles começaram a ficar tristes, e lhe perguntavam um por um: “Por acaso sou eu?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Ele lhes disse: “É um dos Doze, aquele que põe comigo a mão na tigela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Pois o Filho do Homem vai embora, assim como está escrito a respeito dele, mas ai daquele que trai o Filho do Homem! Seria melhor para esse homem que não tivesse nascido.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "E, ao continuarem a comer, pegou um pão, proferiu uma bênção, partiu-o e deu a eles, dizendo: “Peguem; isto representa o meu corpo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "E, pegando um cálice, ele deu graças, deu-o a eles, e todos beberam dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "E lhes disse: “Isto representa o meu ‘sangue do pacto’, que será derramado em benefício de muitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Eu lhes digo a verdade: Eu de modo algum beberei mais do produto da videira até aquele dia em que beberei vinho novo, no Reino de Deus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Por fim, depois de cantarem louvores, saíram para o monte das Oliveiras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "E Jesus lhes disse: “Todos vocês tropeçarão, pois está escrito: ‘Ferirei o pastor, e as ovelhas serão espalhadas.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Mas, depois que eu for levantado, irei adiante de vocês para a Galileia.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "No entanto, Pedro lhe disse: “Mesmo que todos os outros tropecem, eu não tropeçarei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Em vista disso, Jesus lhe disse: “Digo-lhe a verdade: Hoje, sim, ainda esta noite, antes de o galo cantar duas vezes, você me negará três vezes.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Mas ele insistiu: “Mesmo que eu tenha de morrer com o senhor, de modo algum o negarei.” E todos os outros começaram a dizer a mesma coisa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Assim, chegaram a um lugar chamado Getsêmani, e ele disse aos seus discípulos: “Sentem-se aqui enquanto eu oro.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "E ele levou consigo Pedro, Tiago e João, e começou a ficar profundamente angustiado e muito aflito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Disse-lhes: “Estou profundamente triste, a ponto de morrer. Fiquem aqui e mantenham-se vigilantes.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "E, indo um pouco mais adiante, ele se prostrou no chão e começou a orar para que, se fosse possível, aquela hora se afastasse dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "E disse: “Aba, Pai, todas as coisas são possíveis para ti; afasta de mim este cálice. Contudo, não o que eu quero, mas o que tu queres.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Ele voltou e os encontrou dormindo, e disse a Pedro: “Simão, você está dormindo? Não teve força para se manter vigilante por uma hora?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Mantenham-se vigilantes e orem continuamente, para que não caiam em tentação. Naturalmente, o espírito está disposto, mas a carne é fraca.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Ele se afastou de novo e orou, dizendo a mesma coisa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "E voltou novamente e os encontrou dormindo, pois estavam com os olhos pesados, e por isso não sabiam o que lhe responder.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Voltou então pela terceira vez e lhes disse: “Numa ocasião como esta, vocês estão dormindo e descansando! Basta! Chegou a hora! O Filho do Homem está sendo entregue às mãos de pecadores.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Levantem-se, vamos embora. Vejam! Aquele que me trai está chegando.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "E imediatamente, enquanto ele ainda falava, chegou Judas, um dos Doze, e com ele uma multidão com espadas e bastões. Eles tinham sido enviados pelos principais sacerdotes, pelos escribas e pelos anciãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "O traidor havia combinado com eles um sinal, dizendo: “Aquele que eu beijar é ele; prendam-no e levem-no embora sob vigilância.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "Então se dirigiu diretamente a ele, se aproximou e disse: “Rabi!” e o beijou ternamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 46,
+          "texto": "Assim, eles o agarraram e prenderam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 47,
+          "texto": "No entanto, um dos que estavam presentes puxou a espada e atacou o escravo do sumo sacerdote, decepando-lhe a orelha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 48,
+          "texto": "Então Jesus lhes disse: “Vocês vieram me prender com espadas e bastões, como se eu fosse um bandido?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 49,
+          "texto": "Dia após dia eu estava com vocês no templo, ensinando; contudo, vocês não me prenderam. Porém, isso é para cumprir as Escrituras.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 50,
+          "texto": "E todos o abandonaram e fugiram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 51,
+          "texto": "No entanto um jovem, usando apenas uma roupa de linho fino por cima do corpo nu, começou a segui-lo de perto, e tentaram prendê-lo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 52,
+          "texto": "mas ele largou a roupa de linho e escapou nu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 53,
+          "texto": "Levaram então Jesus ao sumo sacerdote; e todos os principais sacerdotes, os anciãos e os escribas se reuniram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 54,
+          "texto": "Mas Pedro, de uma boa distância, o seguiu até o pátio do sumo sacerdote; e ficou sentado junto com os criados se aquecendo diante de um fogo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 55,
+          "texto": "Os principais sacerdotes e todo o Sinédrio estavam procurando testemunhos contra Jesus, para entregá-lo à morte, mas não achavam nenhum.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 56,
+          "texto": "Na verdade, muitos davam testemunho falso contra ele, mas os seus testemunhos não estavam de acordo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 57,
+          "texto": "Também alguns se levantavam e davam testemunho falso contra ele, dizendo:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 58,
+          "texto": "“Nós o ouvimos dizer: ‘Derrubarei este templo feito por mãos humanas e em três dias construirei outro, não feito por mãos humanas.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 59,
+          "texto": "Mas mesmo nesse ponto seu testemunho não estava de acordo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 60,
+          "texto": "Então o sumo sacerdote se levantou no meio deles e perguntou a Jesus: “Você não diz nada em resposta? O que diz do testemunho destes homens contra você?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 61,
+          "texto": "Mas ele continuou calado e não deu nenhuma resposta. O sumo sacerdote voltou a interrogá-lo, dizendo: “Você é o Cristo, o Filho do Bendito?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 62,
+          "texto": "Jesus respondeu então: “Sou; e vocês verão o Filho do Homem sentado à direita de poder e vindo com as nuvens do céu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 63,
+          "texto": "Em vista disso, o sumo sacerdote rasgou suas vestes e disse: “Que necessidade temos ainda de testemunhas?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 64,
+          "texto": "Vocês ouviram a blasfêmia. Qual é a sua decisão?” Todos decidiram que ele merecia a morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 65,
+          "texto": "E alguns começaram a cuspir nele, a cobrir-lhe o rosto, a esmurrá-lo e a dizer-lhe: “Profetize!” E, depois de esbofeteá-lo, os oficiais de justiça o levaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 66,
+          "texto": "Então, enquanto Pedro estava embaixo, no pátio, chegou uma das servas do sumo sacerdote.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 67,
+          "texto": "Vendo Pedro se aquecer, olhou bem para ele e disse: “Você também estava com o Nazareno, esse Jesus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 68,
+          "texto": "Mas ele negou, dizendo: “Não o conheço nem sei do que você está falando”, e saiu para a entrada do pátio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 69,
+          "texto": "A serva o viu ali e novamente começou a dizer aos presentes: “Este é um deles.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 70,
+          "texto": "Mais uma vez ele negou isso. E, pouco depois, os que estavam presentes começaram a dizer a Pedro de novo: “Certamente você é um deles, pois, de fato, você é galileu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 71,
+          "texto": "Mas ele começou a amaldiçoar a si mesmo e a jurar: “Eu não conheço esse homem de quem vocês estão falando!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 72,
+          "texto": "Imediatamente um galo cantou pela segunda vez, e Pedro se lembrou do que Jesus tinha lhe dito: “Antes de o galo cantar duas vezes, você me negará três vezes.” E, muito abalado, ele começou a chorar.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 15,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Logo ao amanhecer, os principais sacerdotes, com os anciãos e os escribas, sim, o Sinédrio inteiro, se reuniram para decidir o que fazer; depois amarraram Jesus, o levaram e o entregaram a Pilatos.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Então Pilatos lhe perguntou: “Você é o Rei dos judeus?” Em resposta ele disse: “O senhor mesmo está dizendo isso.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mas os principais sacerdotes o estavam acusando de muitas coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Então Pilatos voltou a interrogá-lo, dizendo: “Você não tem nenhuma resposta para dar? Veja quantas acusações levantam contra você.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Mas Jesus não deu mais nenhuma resposta, de modo que Pilatos ficou surpreso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Pois bem, por ocasião da festividade, ele costumava soltar um preso, aquele que pedissem.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 7,
+          "texto": "Naquela ocasião o homem chamado Barrabás estava na prisão com os rebeldes que, na sua rebelião, haviam cometido assassinato.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim, a multidão se aproximou e começou a pedir que Pilatos fizesse para eles o que costumava fazer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Em vista disso, ele lhes perguntou: “Querem que eu solte o Rei dos judeus?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pois Pilatos sabia que os principais sacerdotes o tinham entregado por inveja.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Mas os principais sacerdotes atiçaram a multidão para que, em vez disso, soltasse Barrabás.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Então, Pilatos novamente lhes perguntou: “O que, então, devo fazer com aquele a quem vocês chamam de Rei dos judeus?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mais uma vez gritaram: “Para a estaca com ele!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas Pilatos lhes disse: “Por quê? O que ele fez de mau?” Contudo, gritaram ainda mais: “Para a estaca com ele!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Assim, desejando satisfazer a multidão, Pilatos soltou Barrabás; e, depois de mandar que Jesus fosse chicoteado, entregou-o para ser morto na estaca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Os soldados o levaram então para o pátio da residência do governador, e convocaram todo o grupo de soldados.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 17,
+          "texto": "Eles o vestiram de púrpura, trançaram uma coroa de espinhos e a puseram nele;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "e começaram a lhe dizer: “Salve, Rei dos judeus!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Também, bateram-lhe na cabeça com uma cana e cuspiram nele; então se ajoelharam diante dele e se curvaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Por fim, depois de terem zombado dele, tiraram-lhe as roupas púrpura e puseram de volta nele suas roupas. E o levaram para fora, para pregá-lo na estaca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Também, um homem passava por ali, vindo do campo, certo Simão de Cirene, pai de Alexandre e de Rufo. Eles o obrigaram a prestar serviço carregando a estaca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Assim, levaram-no ao lugar chamado Gólgota, que traduzido significa “lugar da caveira”.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 23,
+          "texto": "Ali tentaram lhe dar vinho misturado com uma droga, mirra, mas ele não quis tomá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "E o pregaram na estaca e repartiram suas roupas, lançando sortes para decidir quem ficaria com o quê.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Era então a terceira hora quando o pregaram na estaca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "E a inscrição da acusação contra ele dizia: “O Rei dos judeus”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Além disso, penduraram dois ladrões em estacas ao lado dele, um à sua direita e outro à sua esquerda.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "——",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "E os que passavam o insultavam, balançando a cabeça e dizendo: “Ah! você que ia derrubar o templo e construí-lo em três dias,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "salve a si mesmo, descendo da estaca.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Do mesmo modo, também os principais sacerdotes junto com os escribas zombavam dele entre si, dizendo: “A outros ele salvou; a si mesmo não pode salvar!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Que o Cristo, o Rei de Israel, desça agora da estaca, para que vejamos e possamos crer.” Até os que estavam em estacas ao lado dele o insultavam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Quando chegou a sexta hora, caiu uma escuridão sobre toda aquela terra, até a nona hora.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 34,
+          "texto": "E à nona hora, Jesus clamou em alta voz: “Eli, Eli, lama sabactâni?”, que traduzido significa: “Deus meu, Deus meu, por que me abandonaste?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "E, ouvindo isso, alguns dos que estavam por perto disseram: “Vejam! Ele está chamando Elias.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Então alguém correu, ensopou uma esponja em vinho acre, colocou-a numa cana e deu a ele para beber, dizendo: “Deixem-no! Vamos ver se Elias vem tirá-lo dali.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Mas Jesus deu um alto grito e morreu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "E a cortina do santuário se rasgou em duas, de alto a baixo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Então, quando o oficial do exército que estava ali diante dele viu que ele tinha morrido nessas circunstâncias, disse: “Certamente este homem era o Filho de Deus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Havia também mulheres observando de certa distância; entre elas estavam Maria Madalena, Maria, mãe de Tiago, o Menor, e de Josés, e Salomé.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 41,
+          "texto": "Essas mulheres o acompanhavam e serviam quando ele estava na Galileia. Também estavam ali muitas outras mulheres que tinham ido com ele a Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Então, visto que a tarde já estava avançada e era o dia da Preparação, isto é, o dia antes do sábado,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 43,
+          "texto": "chegou José de Arimateia, membro bem-conceituado do Conselho, que também aguardava o Reino de Deus. Ele tomou coragem, compareceu perante Pilatos e pediu o corpo de Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "Mas Pilatos quis saber se ele já estava morto e, convocando o oficial do exército, lhe perguntou se Jesus já tinha morrido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "Assim, depois de se certificar por meio do oficial do exército, concedeu o corpo a José.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 46,
+          "texto": "José comprou linho fino e tirou o corpo da estaca; depois o enrolou no linho fino e o colocou num túmulo que tinha sido aberto na rocha. Então rolou uma pedra até a entrada do túmulo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 47,
+          "texto": "Mas Maria Madalena e Maria, a mãe de Josés, ficaram olhando para onde ele tinha sido colocado.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 16,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então, passado o sábado, Maria Madalena, Maria, mãe de Tiago, e Salomé compraram aromas para passar no corpo dele.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E, no primeiro dia da semana, chegaram bem cedo ao túmulo, depois de o sol se levantar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Diziam umas às outras: “Quem rolará a pedra da entrada do túmulo para nós?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas, ao levantarem os olhos, viram que a pedra, embora muito grande, tinha sido rolada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quando elas entraram no túmulo, viram um jovem sentado à direita, usando uma veste comprida, branca, e ficaram espantadas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ele lhes disse: “Não se assustem. Vocês estão procurando Jesus, o Nazareno, que foi morto na estaca. Ele foi levantado; não está aqui. Vejam, este é o lugar onde o colocaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Agora vão, digam aos discípulos dele e a Pedro: ‘Ele está indo adiante de vocês para a Galileia. Ali o verão, assim como ele lhes disse.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Então elas saíram e fugiram do túmulo, tremendo e tomadas de emoção. E não disseram nada a ninguém, pois estavam com medo.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

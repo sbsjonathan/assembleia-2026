@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-program-year="2026" data-program-day="sex" data-font-scope="interface">
+<head>
+<script id="assembleia-app-scope" src="shared/app-scope.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <title>Assembleia 2026</title>
+  <meta name="app-version" content="2026.11.07.1">
+
+  <meta name="theme-color" content="#ffffff">
+  <meta name="application-name" content="Assembleia 2026">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Assembleia 2026">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    (function() {
+      try {
+        var root = document.documentElement;
+        var theme = localStorage.getItem('tema-interface') || 'system';
+        var isDark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        root.setAttribute('data-theme', isDark ? 'dark' : 'light');
+        root.dataset.themeChoice = theme;
+      } catch(e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="shared/statusbar.css">
+  <script src="shared/statusbar.js"></script>
+  <script src="shared/typography.js"></script>
+  <link rel="stylesheet" href="shared/typography.css">
+  <link rel="stylesheet" href="stylep.css">
+  <link rel="stylesheet" href="assembleia/hora/styleh.css">
+  <link rel="stylesheet" href="assembleia/menu/menu.css">
+  <link rel="stylesheet" href="assembleia/export/export.css">
+  <link rel="stylesheet" href="navbar/navbar-unified.css">
+  <link rel="stylesheet" href="assembleia/anotacoes/clickable/click-asmb.css">
+  <link rel="stylesheet" href="richtext/biblia/stylebbl.css">
+  <link rel="stylesheet" href="programacao/programacao.css">
+</head>
+<body class="assembly-home">
+
+  <div id="img-topo"></div>
+  <div class="programacao">
+    <div class="dia" id="programacao-dia">Sexta-feira</div>
+    <div id="menu-container"></div>
+    <div id="programacao-container" aria-live="polite"></div>
+  </div>
+
+  <script src="assembleia/menu/menu.js"></script>
+  <script src="assembleia/export/export.js"></script>
+  <script src="assembleia/hora/scripth.js"></script>
+  <script src="sentinela/artigos/article-runtime.js"></script>
+  <script src="navbar/navbar-unified.js"></script>
+  <script src="richtext/biblia/abrev.js"></script>
+  <script src="richtext/biblia/reference-model.js"></script>
+  <script src="richtext/biblia/scriptbbl-container.js"></script>
+  <script src="programacao/programacao-bbl.js"></script>
+  <script src="assembleia/anotacoes/agente-ia.js"></script>
+  <script src="assembleia/anotacoes/clickable/click-asmb.js"></script>
+  <script src="programacao/dia.js"></script>
+  
+  <script src="save/config.js"></script>
+  <script src="save/supabase.js"></script>
+  <script src="assembleia/conexao.js"></script>
+  <script src="save/asmb-sync.js"></script>
+  <script src="assembleia/anotacoes/clickable/envio-texto.js"></script>
+</body>
+</html>

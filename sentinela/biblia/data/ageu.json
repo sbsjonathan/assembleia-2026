@@ -1,0 +1,205 @@
+{
+  "nome_do_livro": "Ageu",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No segundo ano do rei Dario, no sexto mês, no primeiro dia do mês, o governador de Judá, Zorobabel, filho de Sealtiel, e o sumo sacerdote Josué, filho de Jeozadaque, receberam por meio do profeta Ageu a seguinte palavra de Jeová:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“Assim diz Jeová dos exércitos: ‘Este povo diz: “Ainda não chegou o tempo para se construir a casa de Jeová.”’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Então a palavra de Jeová veio novamente por meio do profeta Ageu:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“É tempo de vocês morarem nas suas casas revestidas de painéis, enquanto esta casa está em ruínas?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Agora, assim diz Jeová dos exércitos: ‘Prestem atenção aos seus caminhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Vocês semeiam muita semente, mas colhem pouco. Comem, mas não ficam saciados. Bebem, mas não ficam satisfeitos. Vestem roupa, mas não se aquecem. Quem trabalha, guarda o seu salário numa bolsa furada.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "“Assim diz Jeová dos exércitos: ‘Prestem atenção aos seus caminhos.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "“‘Subam à montanha e tragam madeira. Construam a casa, para que eu tenha prazer nela e seja glorificado’, diz Jeová.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "“‘Vocês esperaram muito e obtiveram pouco; e, quando trouxeram esse pouco para dentro de casa, eu o espalhei com meu sopro. Por quê?’ diz Jeová dos exércitos. ‘Porque a minha casa está em ruínas, enquanto cada um de vocês está atarefado em cuidar da sua própria casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Por isso, os céus acima de vocês retiveram seu orvalho, e a terra reteve sua produção.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E eu fiz vir uma seca sobre a terra, sobre os montes, sobre o cereal, sobre o vinho novo, sobre o azeite, sobre o que o solo produzia, sobre os humanos e os rebanhos, e sobre todo o trabalho das suas mãos.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E Zorobabel, filho de Sealtiel, e o sumo sacerdote Josué, filho de Jeozadaque, e o restante do povo escutaram a voz de Jeová, seu Deus, e as palavras do profeta Ageu, visto que Jeová, seu Deus, o tinha enviado; e o povo começou a temer a Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Então Ageu, o mensageiro de Jeová, transmitiu ao povo a seguinte mensagem, cumprindo a comissão que havia recebido de Jeová: “‘Eu estou com vocês’, diz Jeová.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E Jeová despertou o espírito do governador de Judá, Zorobabel, filho de Sealtiel, e o espírito do sumo sacerdote Josué, filho de Jeozadaque, e o espírito do restante do povo; e eles vieram e começaram a trabalhar na casa de Jeová dos exércitos, seu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Isso aconteceu no dia 24 do sexto mês, no segundo ano do rei Dario.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No dia 21 do sétimo mês, a seguinte palavra de Jeová veio por meio do profeta Ageu:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“Por favor, pergunte ao governador de Judá, Zorobabel, filho de Sealtiel, ao sumo sacerdote Josué, filho de Jeozadaque, e ao restante do povo:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "‘Restou alguém entre vocês que viu esta casa na sua glória anterior? O que acham da aparência dela agora? Não é como se fosse nada em comparação com o que era antes?’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“‘Mas agora, seja forte, Zorobabel’, diz Jeová, ‘e seja forte, Josué, sumo sacerdote, filho de Jeozadaque’. “‘E sejam fortes, todos vocês, povo desta terra’, diz Jeová, ‘e trabalhem’. “‘Pois eu estou com vocês’, diz Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "‘Lembrem-se do que lhes prometi quando saíram do Egito e de que o meu espírito continua entre vocês. Não tenham medo.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "“Pois assim diz Jeová dos exércitos: ‘Mais uma vez — dentro em pouco — e eu farei tremer os céus, a terra, o mar e o solo seco.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "“‘E vou fazer tremer todas as nações, e entrarão as coisas preciosas de todas as nações; e vou encher esta casa de glória’, diz Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "“‘A prata é minha, e o ouro é meu’, diz Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "“‘A futura glória desta casa será maior do que a da anterior’, diz Jeová dos exércitos. “‘E estabelecerei a paz neste lugar’, diz Jeová dos exércitos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "No dia 24 do nono mês, no segundo ano de Dario, o profeta Ageu recebeu a seguinte palavra de Jeová:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "“Assim diz Jeová dos exércitos: ‘Por favor, pergunte aos sacerdotes o seguinte a respeito da lei:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "“Se um homem levar carne sagrada na dobra da sua roupa e a sua roupa tocar num pão, num cozido, em vinho, em azeite ou em qualquer tipo de alimento, será que essas coisas se tornarão sagradas?”’” Os sacerdotes responderam: “Não!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Então Ageu perguntou: “Se alguém que ficou impuro por ter tocado num cadáver tocar em alguma dessas coisas, será que ela se tornará impura?” Os sacerdotes responderam: “Ela se tornará impura.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Em vista disso, Ageu disse: “‘Assim é este povo, e assim é esta nação diante de mim’, diz Jeová, ‘e assim é todo o trabalho das suas mãos; tudo o que apresentam aqui é impuro’.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "“‘Mas agora, por favor, de hoje em diante, prestem atenção ao seguinte: O que acontecia antes de se ter colocado pedra sobre pedra no templo de Jeová?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Quando alguém ia a um monte de cereal esperando encontrar 20 medidas, havia apenas 10; quando alguém ia ao lagar de vinho para retirar 50 medidas da prensa, havia apenas 20.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Eu golpeava vocês — todo o trabalho das suas mãos — com calor abrasador, bolor e granizo, mas nenhum de vocês voltava para mim’, diz Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "“‘Por favor, prestem atenção ao seguinte a partir de hoje, dia 24 do nono mês, o dia em que se lançou o alicerce do templo de Jeová; prestem atenção ao seguinte:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Ainda há cereais no depósito? A videira, a figueira, a romãzeira e a oliveira não produziram nada, não é mesmo? A partir de hoje, eu os abençoarei.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "No dia 24 do mês, Ageu recebeu pela segunda vez a palavra de Jeová:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "“Diga a Zorobabel, governador de Judá: ‘Farei tremer os céus e a terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Destruirei o trono de reinos e aniquilarei a força dos reinos das nações; e destruirei o carro de guerra e os que andam nele; os cavalos e seus cavaleiros cairão, cada um pela espada do seu irmão.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "“‘Naquele dia’, diz Jeová dos exércitos, ‘vou tomar você, meu servo Zorobabel, filho de Sealtiel’, diz Jeová, ‘e farei de você um anel de selar, porque foi você que escolhi’, diz Jeová dos exércitos.”",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

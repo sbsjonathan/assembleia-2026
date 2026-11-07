@@ -1,0 +1,475 @@
+{
+  "nome_do_livro": "1 Tessalonicenses",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Paulo, Silvano e Timóteo, à congregação dos tessalonicenses, que está em união com Deus, o Pai, e com o Senhor Jesus Cristo: Que vocês tenham bondade imerecida e paz.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Sempre agradecemos a Deus ao mencionar todos vocês nas nossas orações,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "pois, na presença do nosso Deus e Pai, nos lembramos constantemente do seu trabalho fiel, do seu esforço motivado por amor e da sua perseverança em razão da sua esperança no nosso Senhor Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Pois sabemos, irmãos amados por Deus, que ele os escolheu,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "porque as boas novas que pregamos não chegaram a vocês apenas com palavras, mas também com poder, com espírito santo e com forte convicção; vocês sabem que tipo de pessoas nos tornamos entre vocês para o seu benefício.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E vocês se tornaram imitadores nossos e do Senhor, pois aceitaram a palavra sob muito sofrimento, com a alegria que vem do espírito santo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "de modo que se tornaram um exemplo para todos os crentes da Macedônia e da Acaia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "O fato é que, por causa de vocês, a palavra de Jeová foi ouvida não somente na Macedônia e na Acaia, mas a sua fé em Deus se espalhou por todos os lugares, de modo que não precisamos dizer nada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Pois eles mesmos continuam relatando como nós contatamos vocês pela primeira vez e como vocês se converteram a Deus, abandonando os seus ídolos, para ser escravos de um Deus vivente e verdadeiro,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "e para aguardar dos céus o seu Filho, a quem ele levantou dentre os mortos, isto é, Jesus, que nos livra da ira que virá.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Certamente, vocês mesmos sabem, irmãos, que a nossa visita a vocês não foi sem resultados.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois, embora tivéssemos sofrido e sido maltratados em Filipos, como sabem, reunimos coragem com a ajuda do nosso Deus para lhes falar as boas novas de Deus diante de muita oposição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois a exortação que damos não vem de erro nem de impureza, nem é enganosa,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "mas, visto que Deus nos aprovou para sermos incumbidos das boas novas, assim falamos para agradar não a homens, mas a Deus, que examina o nosso coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "De fato, vocês sabem que nós nunca bajulamos ninguém nem usamos de fingimento com intenções gananciosas; Deus é testemunha!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Nem estivemos buscando glória de homens, não, nem de vocês nem de outros, embora pudéssemos, como apóstolos de Cristo, ter posto sobre vocês um peso financeiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pelo contrário, nós nos tornamos meigos entre vocês, como a mãe que amamenta e cuida ternamente dos seus próprios filhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim, tendo terno amor por vocês, estávamos decididos não só a lhes transmitir as boas novas de Deus, mas também a lhes dar tudo de nós, porque vocês vieram a ser muito amados por nós.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Vocês certamente se lembram, irmãos, do nosso grande esforço e trabalho árduo. Nós trabalhávamos noite e dia para não sermos um peso financeiro para nenhum de vocês ao pregar-lhes as boas novas de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Vocês são testemunhas, e Deus também é, de como nos comportamos de maneira leal, justa e irrepreensível em relação a vocês, crentes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Vocês bem sabem que nós exortávamos, consolávamos e aconselhávamos a cada um de vocês, assim como o pai faz com os filhos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "para que prosseguissem andando de um modo digno de Deus, que os chama ao seu Reino e glória.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "De fato, é por isso que também agradecemos a Deus incessantemente, porque, quando receberam a palavra de Deus, que ouviram de nós, vocês a aceitaram não como a palavra de homens, mas pelo que ela realmente é, a palavra de Deus, que também atua em vocês, crentes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Pois vocês, irmãos, se tornaram imitadores das congregações de Deus na Judeia, que estão em união com Cristo Jesus, porque vocês sofreram às mãos dos seus próprios conterrâneos as mesmas coisas que eles também estão sofrendo às mãos dos judeus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "que até mesmo mataram o Senhor Jesus e os profetas, e nos perseguiram. Além disso, eles não estão agradando a Deus e são contra os interesses de todos os homens,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "visto que tentam nos impedir de falar às pessoas das nações para que elas se salvem. Desse modo eles continuam completando a medida de seus pecados. Mas por fim a ira dele os alcançou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Nós, irmãos, quando fomos separados de vocês por pouco tempo (em pessoa, não no coração), tínhamos um grande desejo de vê-los pessoalmente, e assim nos esforçamos muito para fazer isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Por essa razão queríamos ir visitá-los; sim, eu, Paulo, tentei não só uma vez, mas duas, contudo Satanás bloqueou o nosso caminho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Pois qual é a nossa esperança, alegria ou coroa de exultação perante o nosso Senhor Jesus, na sua presença? Não são realmente vocês?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Vocês, certamente, são a nossa glória e alegria.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Portanto, quando não suportávamos mais, achamos melhor ficar sozinhos em Atenas",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "e enviar a vocês Timóteo, nosso irmão e ministro de Deus na proclamação das boas novas a respeito do Cristo; nós o enviamos a fim de firmar e consolar vocês no que se refere à sua fé,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "para que ninguém se abalasse por causa dessas tribulações. Pois vocês mesmos sabem que nós não podemos evitar sofrer essas coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Quando estávamos com vocês, nós os preveníamos de que sofreríamos tribulação, e isso é o que tem acontecido, como sabem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Foi por isso que, quando não pude mais suportar, eu o enviei para saber da fidelidade de vocês, pois eu temia que o Tentador os tivesse tentado de algum modo, e o nosso trabalho árduo tivesse sido em vão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas Timóteo acaba de chegar daí e nos deu boas notícias a respeito da sua fidelidade e amor, e disse que vocês continuam a ter sempre boas lembranças de nós e desejam muito nos ver, assim como nós também desejamos vê-los.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "É por isso, irmãos, que em toda a nossa aflição e tribulação fomos consolados por causa de vocês e da fidelidade que demonstram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pois, se vocês se mantêm firmes no Senhor, nós ficamos reanimados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Como podemos agradecer a Deus por vocês e pela grande alegria que sentimos perante o nosso Deus por causa de vocês?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Noite e dia fazemos súplicas com o maior fervor possível para vê-los pessoalmente e para completar o que falta na sua fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Que o próprio Deus, nosso Pai, e o nosso Senhor Jesus abram caminho para irmos até vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ainda mais, que o Senhor os faça aumentar, sim, transbordar em amor uns pelos outros e por todos, como nós transbordamos em amor por vocês;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "assim ele tornará o seu coração firme, irrepreensível em santidade perante o nosso Deus e Pai, durante a presença do nosso Senhor Jesus com todos os seus santos.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Finalmente, irmãos, assim como vocês receberam instruções da nossa parte sobre como devem andar a fim de agradar a Deus — e é assim que estão andando —, pedimos e suplicamos a vocês, pelo Senhor Jesus, que façam isso mais plenamente.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois vocês conhecem as instruções que lhes demos da parte do Senhor Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois esta é a vontade de Deus: que vocês sejam santos e se abstenham de imoralidade sexual.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Cada um de vocês deve saber controlar o seu próprio corpo em santidade e honra,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "não com paixão desenfreada, ávida, como as nações que não conhecem a Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ninguém deve ultrapassar os limites do que é próprio e se aproveitar do seu irmão nesse assunto, pois Jeová exige punição por todas essas coisas, assim como lhes dissemos antes e também os advertimos fortemente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois Deus nos chamou, não para a impureza, mas para a santidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Portanto, quem desconsidera isso não desconsidera o homem, mas a Deus, que dá a vocês o seu espírito santo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "No entanto, no que se refere ao amor fraternal, vocês não precisam que lhes escrevamos, pois vocês mesmos são ensinados por Deus a amar uns aos outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Realmente, vocês estão fazendo isso com relação a todos os irmãos, em toda a Macedônia. Mas nós os exortamos, irmãos, a continuar fazendo isso cada vez mais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Tenham por objetivo viver em paz, cuidar dos seus próprios assuntos e trabalhar com as suas próprias mãos, assim como os instruímos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "a fim de que andem decentemente diante dos de fora e não necessitem de nada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Além disso, irmãos, não queremos que vocês fiquem na ignorância quanto aos que estão dormindo na morte, para que não fiquem pesarosos como os demais, que não têm esperança.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Se temos fé em que Jesus morreu e foi levantado, então também temos fé em que Deus trará com ele aqueles que adormeceram na morte em união com Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Pois nós dizemos a vocês o seguinte pela palavra de Jeová: nós, os vivos, que sobrevivermos até a presença do Senhor, de modo algum precederemos os que adormeceram na morte;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "porque o próprio Senhor descerá do céu com uma chamada de comando, com voz de arcanjo e com a trombeta de Deus, e os mortos em união com Cristo se levantarão primeiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Depois nós, os vivos, que sobrevivermos, seremos arrebatados junto com eles em nuvens para encontrar o Senhor no ar; e assim estaremos sempre com o Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Portanto, consolem sempre uns aos outros com essas palavras.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Agora, quanto aos tempos e às épocas, irmãos, não é preciso lhes escrever nada.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois vocês mesmos sabem muito bem que o dia de Jeová vem exatamente como um ladrão à noite.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Quando estiverem dizendo: “Paz e segurança!”, então virá instantaneamente sobre eles a repentina destruição, assim como as dores de parto vêm sobre a mulher grávida, e eles de modo algum escaparão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas vocês, irmãos, não estão em escuridão, de modo que o dia lhes sobrevenha assim como sobreviria a um ladrão,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "pois todos vocês são filhos da luz e filhos do dia. Nós não pertencemos nem à noite nem à escuridão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Portanto, não estejamos dormindo, assim como fazem os demais, mas estejamos despertos e mantenhamos os sentidos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois os que dormem, dormem de noite, e os que se embriagam, se embriagam de noite.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Mas, quanto a nós, que pertencemos ao dia, mantenhamos os sentidos e usemos a couraça da fé e do amor e, como capacete, a esperança da salvação;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "porque Deus não nos escolheu para sofrer a ira, mas para obter a salvação por meio do nosso Senhor Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Ele morreu por nós, para que, quer estejamos acordados, quer estejamos dormindo, vivamos junto com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Portanto, continuem a encorajar e a edificar uns aos outros, assim como de fato estão fazendo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pedimos agora a vocês, irmãos, que respeitem os que trabalham arduamente no seu meio, que presidem a vocês no Senhor e que os aconselham;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "tenham a mais alta consideração por eles em amor, por causa do trabalho deles. Sejam pacíficos uns com os outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Por outro lado, nós os exortamos, irmãos, que advirtam os indisciplinados, consolem os que estão deprimidos, amparem os fracos, sejam pacientes com todos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Tomem cuidado para que ninguém pague mal com mal, mas empenhem-se sempre pelo bem uns dos outros e de todos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Estejam sempre alegres.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Orem constantemente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Deem graças por todas as coisas. Essa é a vontade de Deus para vocês em Cristo Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Não apaguem o fogo do espírito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Não tratem as profecias com desprezo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Certifiquem-se de todas as coisas; apeguem-se ao que é bom.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Abstenham-se de todo tipo de mal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Que o próprio Deus de paz os santifique completamente. E que o espírito, a alma e o corpo de vocês, irmãos, sejam preservados irrepreensíveis e sãos em todos os sentidos durante a presença do nosso Senhor Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Aquele que os chama é fiel, e certamente fará isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Irmãos, continuem a orar por nós.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Cumprimentem a todos os irmãos com beijo santo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Eu ponho vocês sob a obrigação solene, pelo Senhor, de providenciar que esta carta seja lida a todos os irmãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Que a bondade imerecida do nosso Senhor Jesus Cristo esteja com vocês.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<script id="assembleia-app-scope" src="shared/app-scope.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Atualizar A Sentinela</title>
+<meta name="apple-mobile-web-app-capable" content="yes"><link id="sentinela-statusbar-style" rel="stylesheet" href="shared/statusbar.css">
+<script id="sentinela-statusbar-script" src="shared/statusbar.js"></script>
+<style>[hidden]{display:none!important}*{box-sizing:border-box}body{margin:0;padding:calc(env(safe-area-inset-top) + 35px) 24px calc(env(safe-area-inset-bottom) + 30px);font:16px/1.6 system-ui;color:#25232a;background:#f4f3f6}main{max-width:480px;margin:auto}h1{font-size:27px;line-height:1.2}button,a.action{display:block;width:100%;min-height:48px;border:0;border-radius:12px;background:#604184;color:#fff;font:600 16px/1.5 system-ui;padding:12px 16px;text-align:center;text-decoration:none;margin:15px 0}button:disabled{opacity:.55}.small{font-size:13px;color:#69636f}</style><script id="sentinela-typography-script" src="shared/typography.js"></script>
+<link id="sentinela-typography-style" rel="stylesheet" href="shared/typography.css">
+</head>
+<body><main><h1>Atualizar A Sentinela</h1><p>Confira a versão do aplicativo e conclua a atualização neste dispositivo.</p><p id="status" role="status">Conferindo a versão…</p><p class="small">Suas anotações e a Bíblia salva permanecem neste dispositivo.</p><button id="retry" disabled>Verificando…</button><a class="action" id="open" href="index.html" hidden>Abrir A Sentinela</a><a class="action" href="diagnostico-statusbar.html">Diagnóstico da barra superior</a><a class="action" href="index.html?diagnostico=1">Diagnóstico da tela inicial</a><p id="version" class="small"></p></main>
+<script>
+'use strict';
+const target='2026.11.07.1',root=new URL('./',location.href),status=document.getElementById('status'),button=document.getElementById('retry'),open=document.getElementById('open');
+function version(worker){return new Promise(resolve=>{if(!worker)return resolve(null);const channel=new MessageChannel();const timer=setTimeout(()=>{channel.port1.close();resolve(null)},1500);channel.port1.onmessage=({data})=>{if(data?.type!=='APP_VERSION')return;clearTimeout(timer);channel.port1.close();resolve(data)};worker.postMessage({action:'GET_APP_VERSION'},[channel.port2]);});}
+async function update(){button.disabled=true;button.textContent='Verificando…';open.hidden=true;
+ try{if(!('serviceWorker'in navigator))throw new Error('Abra este endereço no Safari atualizado.');
+  const registration=await navigator.serviceWorker.register(new URL('sw.js',root),{scope:root.pathname,updateViaCache:'none'});
+  let info=await version(registration.active);if(info?.ready&&info.version===target){ready(info);return;}
+  if(!navigator.onLine)throw new Error('Conecte-se à internet para concluir a atualização.');
+  status.textContent='Recebendo a atualização do aplicativo…';await registration.update();
+  const deadline=Date.now()+90000;
+  while(Date.now()<deadline){registration.waiting?.postMessage({action:'SKIP_WAITING'});info=await version(registration.active);if(info?.ready&&info.version===target){ready(info);return;}await new Promise(resolve=>setTimeout(resolve,800));}
+  throw new Error('A atualização não terminou. Confira a conexão e tente novamente.');
+ }catch(error){status.textContent=error.message;button.disabled=false;button.textContent='Tentar novamente';}}
+function ready(info){status.textContent='Esta versão já está instalada. Você pode abrir o aplicativo.';document.getElementById('version').textContent='Versão instalada: '+info.version;const destination=new URL('index.html',root);destination.searchParams.set('atualizado',info.version);open.href=destination.href;open.hidden=false;button.disabled=false;button.textContent='Conferir novamente';}
+button.onclick=update;update();
+</script></body></html>

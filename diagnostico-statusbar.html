@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<script id="assembleia-app-scope" src="shared/app-scope.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#f5f3f7">
+  <title>Diagnóstico da barra superior</title>
+  <link id="sentinela-statusbar-style" rel="stylesheet" href="shared/statusbar.css">
+  <script id="sentinela-statusbar-script" src="shared/statusbar.js"></script>
+  <script src="shared/typography.js"></script>
+  <link rel="stylesheet" href="shared/typography.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f3f7; color: #27232e; font: var(--font-base-global,16px)/1.55 system-ui,sans-serif; }
+    main { max-width: 600px; margin: auto; padding: calc(28px + env(safe-area-inset-top,0px)) 24px calc(30px + env(safe-area-inset-bottom,0px)); }
+    h1 { font-size: 1.65em; line-height: 1.2; margin: 18px 0; }
+    h2 { font-size: 1.15em; margin-top: 24px; }
+    p { margin: 12px 0; }
+    a { color: #5b3979; }
+    nav { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 16px; }
+    .action { display: block; padding: 14px; border: 1px solid #cfc6d9; border-radius: 12px; background: #fff; font-weight: 600; text-align: center; text-decoration: none; }
+    .action:first-child { grid-column: 1/-1; color: #fff; background: #53376e; border-color: #53376e; }
+    .notice { padding: 14px; background: #fff; border-left: 4px solid #795695; border-radius: 5px; }
+    .small { font-size: .85em; color: #655d6e; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+<main>
+  <a href="save/auth-supabase.html">‹ Voltar para Salvar</a>
+  <h1>Diagnóstico da barra superior</h1>
+  <p>Vamos comparar o desfoque no próprio iPhone, na página em que ele aparece.</p>
+  <p id="browser-warning" class="notice" hidden>Você está no navegador. Para analisar o PWA, abra o aplicativo pelo ícone na Tela de Início e vá a <strong>Salvar → Diagnóstico da barra superior</strong>.</p>
+  <p id="app-confirmation" class="notice" hidden>Você está no aplicativo instalado. Escolha a página abaixo para começar.</p>
+  <h2>Quatro comparações rápidas</h2>
+  <p>Primeiro medimos o visual atual. Depois testamos uma faixa rosa, os filtros desligados e uma faixa sólida maior. Em cada etapa, indique se o topo ficou sólido ou continua desfocado.</p>
+  <p>As alterações são temporárias. Ao terminar, toque em <strong>Copiar diagnóstico</strong> e cole o relatório na conversa. O botão <strong>Sair e restaurar</strong> desfaz o teste a qualquer momento.</p>
+  <nav aria-label="Escolha a página para analisar">
+    <a class="action" id="article-test" href="sentinela/artigos/estudo.html?diagnostico=statusbar">Analisar A Sentinela</a>
+    <a class="action" href="biblia/biblia.html?diagnostico=statusbar">Bíblia</a>
+    <a class="action" href="richtext/container.html?diagnostico=statusbar">Anotações</a>
+    <a class="action" href="save/auth-supabase.html?diagnostico=statusbar">Salvar</a>
+  </nav>
+  <h2>Comparar o modo do ícone instalado</h2>
+  <p>Se a versão atual continuar desfocada mesmo com os filtros desligados, podemos comparar esta instalação com um ícone separado, chamado <strong>Teste de tela</strong>. O aplicativo original permanece no aparelho.</p>
+  <a class="action" href="diagnostico-pwa/index.html?instalacao=atual">Abrir comparação de instalação</a>
+  <p class="small">O relatório contém medidas da tela, versões carregadas e suas respostas sobre o desfoque. Não inclui o conteúdo de anotações, senhas ou textos dos artigos. Nada é enviado automaticamente.</p>
+  <p class="small">Diagnóstico 2026.11.03.14 · <a href="atualizar.html">Verificar atualização</a></p>
+</main>
+<script>
+  const installed = navigator.standalone === true || matchMedia('(display-mode: standalone)').matches;
+  document.getElementById(installed ? 'app-confirmation' : 'browser-warning').hidden = false;
+  const monday = new Date();
+  monday.setDate(monday.getDate() + (monday.getDay() === 0 ? -6 : 1 - monday.getDay()));
+  const week = String(monday.getDate()).padStart(2, '0') + '-' + String(monday.getMonth() + 1).padStart(2, '0');
+  const article = new URL(document.getElementById('article-test').href);
+  article.searchParams.set('semana', week);
+  document.getElementById('article-test').href = article.href;
+</script>
+</body>
+</html>

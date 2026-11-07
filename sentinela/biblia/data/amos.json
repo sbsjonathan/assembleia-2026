@@ -1,0 +1,780 @@
+{
+  "nome_do_livro": "Amós",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Palavras a respeito de Israel que Amós, que era um dos criadores de ovelhas de Tecoa, recebeu em visão nos dias de Uzias, rei de Judá, e nos dias de Jeroboão, filho de Joás e rei de Israel, dois anos antes do terremoto.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Ele disse: “Jeová rugirá de Sião, E de Jerusalém levantará a sua voz. Os campos dos pastores ficarão de luto, E o cume do Carmelo secará.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "“Assim diz Jeová: ‘“Por causa de três atos rebeldes de Damasco, e por causa de quatro, não voltarei atrás, Porque esmagaram Gileade com trenós de ferro usados para debulha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Portanto, enviarei fogo sobre a casa de Hazael, E o fogo consumirá as torres fortificadas de Ben-Hadade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quebrarei as trancas dos portões de Damasco; Destruirei os habitantes de Bicate-Áven E aquele que governa em Bete-Éden; E o povo da Síria irá exilado para Quir”, diz Jeová.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Assim diz Jeová: ‘“Por causa de três atos rebeldes de Gaza, e por causa de quatro, não voltarei atrás, Porque levaram um grupo inteiro de exilados para entregá-los a Edom.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Portanto, enviarei fogo sobre a muralha de Gaza, E o fogo consumirá as suas torres fortificadas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Destruirei os habitantes de Asdode E aquele que governa em Ascalom; Voltarei a minha mão contra Ecrom, E os filisteus que restarem morrerão”, diz o Soberano Senhor Jeová.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Assim diz Jeová: ‘Por causa de três atos rebeldes de Tiro, e por causa de quatro, não voltarei atrás, Porque entregaram a Edom um grupo inteiro de exilados E porque não se lembraram do pacto de irmãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Portanto, enviarei fogo sobre a muralha de Tiro, E o fogo consumirá as suas torres fortificadas.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Assim diz Jeová: ‘Por causa de três atos rebeldes de Edom, e por causa de quatro, não voltarei atrás, Porque ele perseguiu seu próprio irmão com a espada E se recusou a mostrar misericórdia; Na sua ira, continua a dilacerá-los de modo implacável, E permanece furioso com eles, para sempre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Portanto, enviarei fogo sobre Temã, E o fogo consumirá as torres fortificadas de Bozra.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Assim diz Jeová: ‘“Por causa de três atos rebeldes dos amonitas, e por causa de quatro, não voltarei atrás, Porque rasgaram o ventre das mulheres grávidas de Gileade para ampliar seu próprio território.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Portanto, porei fogo na muralha de Rabá, E o fogo consumirá as suas torres fortificadas, Com um grito de guerra no dia da batalha, Com uma tempestade no dia do vendaval.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "E seu rei será exilado, junto com seus príncipes”, diz Jeová.’",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Assim diz Jeová: ‘“Por causa de três atos rebeldes de Moabe, e por causa de quatro, não voltarei atrás, Porque ele queimou os ossos do rei de Edom para fazer cal.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Portanto, enviarei fogo sobre Moabe, E o fogo consumirá as torres fortificadas de Queriote; Moabe morrerá em meio a um tumulto, Com um grito de guerra, com o som da buzina.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Removerei do meio dela o governante E matarei a ele e a todos os príncipes dela”, diz Jeová.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Assim diz Jeová: ‘Por causa de três atos rebeldes de Judá, e por causa de quatro, não voltarei atrás, Porque eles rejeitaram a lei de Jeová E não guardaram os decretos dele; Mas foram desviados pelas mesmas mentiras que seus antepassados seguiram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Portanto, enviarei fogo sobre Judá, E o fogo consumirá as torres fortificadas de Jerusalém.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Assim diz Jeová: ‘Por causa de três atos rebeldes de Israel, e por causa de quatro, não voltarei atrás, Porque vendem o justo por prata, E o pobre por um par de sandálias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Eles pisoteiam a cabeça dos humildes no pó da terra E bloqueiam o caminho dos mansos. Um homem e seu pai têm relações com a mesma jovem, Profanando meu santo nome.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Junto a todos os altares, estiram-se sobre mantos que tomaram como garantia de empréstimo; E o vinho que bebem na casa dos seus deuses vem das multas que aplicaram às pessoas.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "‘Mas fui eu que aniquilei diante deles o amorreu, Que era tão alto como os cedros e tão forte como os carvalhos; Eu destruí seus frutos em cima e suas raízes embaixo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Eu tirei vocês da terra do Egito E os fiz andar através do deserto por quarenta anos, Para que tomassem posse da terra do amorreu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Escolhi alguns dos seus filhos como profetas E alguns dos seus jovens como nazireus. Não é verdade, ó povo de Israel?’ diz Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "‘Mas vocês deram vinho aos nazireus, E ordenaram aos profetas: “Não profetizem.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Portanto, eu esmagarei vocês onde vocês estão, Assim como uma carroça carregada de feixes de cereal esmaga o que está embaixo dela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "O ligeiro não terá para onde fugir, O forte não manterá a sua força, E nenhum guerreiro escapará com vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O arqueiro não manterá a sua posição, O que tem pés ligeiros não escapará, E o cavaleiro não escapará com vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Até mesmo o guerreiro mais corajoso Fugirá nu naquele dia’, diz Jeová.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Ouçam esta palavra que Jeová falou a seu respeito, ó povo de Israel, a respeito de toda a família que tirei da terra do Egito:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "‘Dentre todas as famílias da terra, conheci somente a vocês. Por isso ajustarei contas com vocês por todos os seus erros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Será que duas pessoas viajam juntas, a menos que tenham concordado em se encontrar?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Será que o leão ruge na floresta sem que tenha uma presa? E o leão novo, será que rosna no seu esconderijo sem que tenha apanhado nada?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Será que o pássaro cai numa armadilha posta no chão, sem que haja um laço para ele? E a armadilha, será que salta do chão sem que tenha apanhado nada?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Quando a buzina toca na cidade, não tremem as pessoas? Quando acontece uma calamidade na cidade, não foi Jeová quem agiu?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois o Soberano Senhor Jeová não fará coisa alguma Sem ter revelado seu assunto confidencial aos seus servos, os profetas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "O leão rugiu! Quem não terá medo? O Soberano Senhor Jeová falou! Quem não profetizará?’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "‘Proclamem o seguinte nas torres fortificadas de Asdode E nas torres fortificadas da terra do Egito. Digam: “Reúnam-se contra os montes de Samaria; Vejam o tumulto que há no meio dela E as explorações cometidas dentro dela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pois eles não sabem fazer o que é direito”, diz Jeová, “Eles, os que acumulam violência e destruição nas suas torres fortificadas.”’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Portanto, assim diz o Soberano Senhor Jeová: ‘Um adversário cercará esta terra, Arrancará de você o seu poder, E as suas torres fortificadas serão saqueadas.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Assim diz Jeová: ‘Como o pastor arranca da boca do leão duas pernas ou um pedaço de orelha, Assim será arrancado o povo de Israel, Os que agora estão em Samaria, sentados em camas suntuosas e em divãs de luxo.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "‘Ouçam e avisem a casa de Jacó’, diz o Soberano Senhor Jeová, o Deus dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "‘Pois, no dia em que eu ajustar contas com Israel por todos os seus atos rebeldes, Também ajustarei contas com os altares de Betel; Os chifres do altar serão cortados e cairão por terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Derrubarei a casa de inverno junto com a casa de verão.’ ‘As casas de marfim serão destruídas, E as grandes casas chegarão ao seu fim’, diz Jeová.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Ouçam esta palavra, ó vacas de Basã, Que estão no monte de Samaria; Vocês, mulheres que exploram os humildes e esmagam os pobres, Que dizem aos seus maridos: ‘Tragam-nos algo para beber!’",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O Soberano Senhor Jeová jurou pela sua santidade: ‘“Vejam! Virão para vocês os dias em que serão levantadas com ganchos de açougueiro; E as que restarem, com anzóis.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Vocês sairão pelas brechas da muralha, cada uma pela brecha logo à sua frente; E serão expulsas para Harmom”, diz Jeová.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "‘Venham a Betel e cometam transgressões; A Gilgal, e cometam ainda mais transgressões! Tragam seus sacrifícios de manhã, E seus dízimos no terceiro dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Queimem como sacrifício de agradecimento pão feito com fermento; Proclamem em voz bem alta suas ofertas voluntárias! Pois é isso que vocês amam fazer, ó povo de Israel’, diz o Soberano Senhor Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "‘Quanto a mim, fiz com que os seus dentes ficassem limpos, sem comida, em todas as suas cidades, E fiz com que faltasse pão em todas as suas casas; Mas vocês não voltaram para mim’, diz Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "‘Eu também os privei de chuvas três meses antes da colheita; Fazia chover numa cidade, mas não em outra cidade. Um campo tinha chuva, Mas outro campo, que não tinha chuva, secava.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pessoas de duas ou três cidades iam cambaleando a outra cidade para beber água, E mesmo assim não se saciavam; Mas vocês não voltaram para mim’, diz Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "‘Atingi as suas safras com calor abrasador e com bolor. Vocês multiplicavam os seus jardins e vinhedos, Mas o gafanhoto devorava as suas figueiras e oliveiras; Mesmo assim, vocês não voltaram para mim’, diz Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "‘Enviei contra vocês uma peste como a do Egito. Com a espada, matei os jovens e capturei os cavalos. Fiz o mau cheiro dos seus acampamentos subir ao seu nariz; Mas vocês não voltaram para mim’, diz Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "‘Causei uma devastação entre vocês, Como a devastação de Sodoma e Gomorra, causada por Deus. E vocês eram como um pedaço de madeira tirado do fogo; Mas não voltaram para mim’, diz Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Então, isso é o que farei a você, ó Israel. Visto que lhe farei isso, Prepare-se para se encontrar com o seu Deus, ó Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Pois, veja! Ele é quem formou os montes e criou o vento; Ele diz ao homem quais são os Seus pensamentos, Transforma a aurora em escuridão E pisa nos lugares altos da terra; Seu nome é Jeová, o Deus dos exércitos.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Ouçam esta palavra que declaro contra vocês em forma de lamentação, ó casa de Israel:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "‘Caiu a virgem Israel; Ela não pode mais se levantar. Foi abandonada na sua própria terra; Não há ninguém para levantá-la.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "“Pois assim diz o Soberano Senhor Jeová: ‘A cidade que marcha para a guerra com mil homens ficará com cem; E aquela que sai com cem ficará com dez, para a casa de Israel.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“Pois assim diz Jeová à casa de Israel: ‘Busquem-me e continuem vivendo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Não busquem a Betel, Não vão a Gilgal nem se dirijam a Berseba; Pois Gilgal irá sem falta para o exílio, E Betel será reduzida a nada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Busquem a Jeová e continuem vivendo, Para que ele não irrompa sobre a casa de José como um fogo E consuma Betel, sem que ninguém possa apagar o fogo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Vocês transformam a justiça em absinto E lançam por terra a retidão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Aquele que fez a constelação de Quima e a constelação de Quesil, Aquele que transforma as densas trevas em manhã, Aquele que faz o dia ficar escuro como a noite, Aquele que convoca as águas do mar Para derramá-las na superfície da terra — Jeová é seu nome.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Ele fará com que a destruição venha de repente sobre os homens fortes, Trará destruição sobre lugares fortificados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Eles odeiam os que dão repreensão no portão da cidade E detestam os que falam a verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Visto que vocês exigem que o pobre pague aluguel pela terra E tomam dele o cereal como imposto, Não continuarão a morar nas casas de pedras lavradas que construíram Nem beberão o vinho dos vinhedos seletos que plantaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois eu sei quantos são os seus atos rebeldes E como são grandes os seus pecados: Vocês atormentam o justo, Aceitam suborno E negam os direitos do pobre no portão da cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Portanto, os sábios ficarão em silêncio naquele tempo, Porque será um tempo de calamidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Busquem o bem, e não o mal, Para que continuem vivendo. Então Jeová, o Deus dos exércitos, estará com vocês, Como vocês dizem que ele está.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Odeiem o mal e amem o bem, Deixem que a justiça prevaleça no portão da cidade. Pode ser que Jeová, o Deus dos exércitos, Mostre favor aos que restarem de José.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "“Portanto, assim diz Jeová, o Deus dos exércitos, Jeová: ‘Em todas as praças haverá lamento, E em todas as ruas as pessoas dirão: “Ai! Ai!” Chamarão os lavradores para chorar E os lamentadores profissionais para lamentar.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "‘Em todos os vinhedos haverá lamento; Pois eu passarei no meio de vocês’, diz Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "‘Ai dos que anseiam pelo dia de Jeová! O que o dia de Jeová significará para vocês? Será escuridão, e não luz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Será como quando um homem foge de um leão e se depara com um urso; E, quando ele entra em casa e apoia a mão na parede, uma cobra o morde.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Não será o dia de Jeová escuridão em vez de luz? Não terá trevas em vez de claridade?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Eu odeio, desprezo as suas festividades E não tenho prazer no cheiro das suas assembleias solenes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Mesmo que vocês me façam sacrifícios queimados e ofertas, Não terei prazer neles; E não olharei com favor para os seus sacrifícios de participação em comum de animais gordos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Afastem de mim a barulheira dos seus cânticos; Não quero ouvir as melodias dos seus instrumentos de cordas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Que a justiça flua como as águas, E a retidão como um rio que não para de correr.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Vocês por acaso me trouxeram sacrifícios e ofertas Durante os quarenta anos no deserto, ó casa de Israel?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Agora, vocês terão de levar seu rei Sicute e Caivã, As imagens que fizeram para si da estrela do seu deus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "E eu vou mandar vocês para o exílio, para além de Damasco’, diz aquele cujo nome é Jeová, o Deus dos exércitos.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Ai dos autoconfiantes de Sião, Dos que se sentem seguros no monte de Samaria, Os homens de destaque da mais importante das nações, Aqueles a quem a casa de Israel recorre!",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Vão a Calné e vejam; De lá, vão à Grande Hamate E desçam a Gate dos filisteus. Será que eles são melhores do que estes reinos, Ou será que o território deles é maior do que o de vocês?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Por acaso vocês estão afastando da mente o dia da calamidade E trazendo um reinado de violência?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Eles se deitam em camas de marfim e se estendem em divãs, Comem os cordeiros do rebanho e os bezerros gordos;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Improvisam canções ao som da harpa E, como Davi, inventam instrumentos musicais;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Bebem vinho em grandes taças E se untam com os óleos mais seletos. Mas não se importam com a catástrofe de José!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Portanto, serão os primeiros a ir para o exílio; E a festança dos que se estendem em seus divãs chegará ao fim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "‘O Soberano Senhor Jeová jurou por si mesmo’, diz Jeová, o Deus dos exércitos: ‘“Detesto o orgulho de Jacó, Odeio as suas torres fortificadas E vou entregar a cidade e tudo o que nela há.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "“‘“E, se numa casa sobrarem dez homens, eles também morrerão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Um parente virá para carregá-los para fora e queimá-los um por um. Ele levará os ossos deles para fora da casa; então perguntará a quem estiver nos aposentos internos da casa: ‘Há mais alguém com você?’ E o outro responderá: ‘Ninguém!’ Então ele dirá: ‘Silêncio! Pois não é tempo de mencionar o nome de Jeová.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois Jeová está dando a ordem, E ele derrubará a casa grande e a reduzirá a escombros, E a casa pequena a destroços.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Será que os cavalos correm sobre um rochedo Ou será que alguém ara com bois ali? Pois vocês transformaram a justiça numa planta venenosa, E o fruto da retidão em absinto;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Vocês se alegram com o que não tem valor E dizem: “Não nos tornamos poderosos pela nossa própria força?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Portanto, ó casa de Israel, trarei uma nação contra vocês’, diz Jeová, o Deus dos exércitos, ‘E eles os oprimirão desde Lebo-Hamate até o vale do Arabá’.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 7,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Isto é o que o Soberano Senhor Jeová me mostrou: ele formou um enxame de gafanhotos quando a safra tardia estava começando a crescer. Era a safra tardia depois de se ter cortado o feno que pertence ao rei.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Quando o enxame terminou de devorar a vegetação da terra, eu disse: “Ó Soberano Senhor Jeová, por favor, perdoa! Como Jacó poderá sobreviver? Ele é tão fraco!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Então Jeová reconsiderou a questão. “Não acontecerá”, disse Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Isto é o que o Soberano Senhor Jeová me mostrou: o Soberano Senhor Jeová ordenou uma punição por fogo. O fogo consumiu as vastas águas profundas e consumiu uma porção da terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Então eu disse: “Ó Soberano Senhor Jeová, por favor, não faças isso! Como Jacó poderá sobreviver? Ele é tão fraco!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Então Jeová reconsiderou a questão. “Isso também não acontecerá”, disse o Soberano Senhor Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Isto é o que ele me mostrou: eu vi Jeová em pé sobre uma muralha feita a prumo, e havia um fio de prumo na sua mão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Jeová me perguntou então: “O que você está vendo, Amós?” Eu respondi: “Um fio de prumo.” Então Jeová disse: “Estou colocando um fio de prumo no meio do meu povo Israel. Não mais os perdoarei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Os altos sagrados de Isaque serão desolados, e os santuários de Israel serão devastados; e eu virei contra a casa de Jeroboão com uma espada.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Amazias, o sacerdote de Betel, enviou esta mensagem a Jeroboão, rei de Israel: “Amós está conspirando contra o senhor bem no meio da casa de Israel. Esta terra não pode suportar todas as palavras dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois assim diz Amós: ‘Jeroboão morrerá à espada, e Israel certamente será exilado da sua terra.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Amazias disse então a Amós: “Ó visionário, vá embora! Vá para a terra de Judá; ganhe o seu pão ali, e ali pode profetizar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mas não profetize mais em Betel, pois é o santuário de um rei e o templo de um reino.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Então Amós respondeu a Amazias: “Eu não era profeta nem filho de profeta; eu era pastor e cuidava de sicômoros-figueiras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Mas Jeová me tirou de seguir o rebanho, e Jeová me disse: ‘Vá, profetize ao meu povo Israel.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Agora, ouça a palavra de Jeová: ‘Você está dizendo: “Não profetize contra Israel e não pregue contra a casa de Isaque.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Portanto, assim diz Jeová: “Sua esposa se tornará prostituta na cidade, e seus filhos e suas filhas cairão pela espada. Com a corda de medir, suas terras serão repartidas, e você mesmo morrerá numa terra impura; e Israel certamente será exilado da sua terra.”’”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 8,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Isto é o que o Soberano Senhor Jeová me mostrou: eu vi um cesto de frutas de verão.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Ele me perguntou então: “O que você está vendo, Amós?” Eu respondi: “Um cesto de frutas de verão.” Então Jeová me disse: “Chegou o fim para o meu povo Israel. Não mais os perdoarei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "‘As canções do templo, naquele dia, se tornarão lamentos’, diz o Soberano Senhor Jeová. ‘Haverá muitos cadáveres jogados por toda a parte. Silêncio!’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Ouçam isto, vocês que pisoteiam o pobre E arruínam os mansos da terra,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Que dizem: ‘Quando acabará a festividade da lua nova, para que possamos vender nossos cereais; E também o sábado, para que possamos pôr os grãos à venda? Assim poderemos reduzir a medida da efa E aumentar o peso do siclo, Adulterando nossa balança para enganar;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Poderemos comprar o necessitado por prata E o pobre por um par de sandálias, E também vender as impurezas do cereal.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Jeová jurou pelo Orgulho de Jacó: ‘Nunca me esquecerei de tudo o que eles fizeram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Por causa disso, esta terra tremerá E todo habitante dela ficará de luto. Por acaso não se levantará toda ela como o Nilo, E subirá e baixará como o Nilo do Egito?’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "‘Naquele dia’, diz o Soberano Senhor Jeová, ‘Farei o sol se pôr ao meio-dia E escurecerei a terra em plena luz do dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Transformarei as suas festividades em luto E todas as suas canções em lamentações, Cobrirei todos os quadris com pano de saco e farei com que todas as cabeças sejam rapadas; Farei com que vocês lamentem como se tivessem perdido um filho único, E o fim de tudo será como um dia amargo.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "‘Vejam! Virão os dias’, diz o Soberano Senhor Jeová, ‘Em que enviarei uma fome a esta terra; Não uma fome de pão nem uma sede de água, Mas de ouvir as palavras de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Cambalearão de mar a mar E do norte ao leste. Procurarão por toda a parte a palavra de Jeová, mas não a acharão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Naquele dia, moças bonitas desmaiarão, E também os jovens, por causa da sede;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Aqueles que juram pelo pecado de Samaria e dizem: “Tão certo como seu deus vive, ó Dã!” E “Tão certo como o caminho de Berseba vive!” — Eles cairão, e não mais se levantarão.’”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 9,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Vi Jeová sobre o altar, e ele disse: “Golpeie o topo dos pilares, e as bases tremerão. Quebre-os no topo, e eu matarei com a espada o que restar do povo. Ninguém conseguirá fugir, e ninguém conseguirá escapar.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Se cavarem até a Sepultura, De lá a minha mão os tirará; E, se subirem aos céus, De lá os farei descer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E, se eles se esconderem no cume do Carmelo, Eu os procurarei ali até encontrá-los e os apanharei. Se eles se esconderem dos meus olhos no fundo do mar, Ali ordenarei à serpente que os morda.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Se forem levados ao cativeiro pelos seus inimigos, Ali darei ordens à espada, e ela os matará; Fixarei meus olhos neles para o mal, e não para o bem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois o Soberano Senhor, Jeová dos exércitos, é aquele que toca nesta terra De modo que ela se derrete, e todos os seus habitantes ficarão de luto; E toda ela subirá como o Nilo E baixará como o Nilo do Egito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "‘Aquele que constrói a sua escada nos céus E estabelece sua construção acima da terra; Aquele que convoca as águas do mar Para derramá-las na superfície da terra — Jeová é seu nome.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "‘Não são vocês para mim como os filhos dos cuchitas, ó povo de Israel?’ diz Jeová. ‘Por acaso não tirei Israel da terra do Egito, Os filisteus de Creta, e a Síria de Quir?’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "‘Vejam! Os olhos do Soberano Senhor Jeová estão sobre o reino pecador, E ele o exterminará da face da terra. Mas não destruirei completamente a casa de Jacó’, diz Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "‘Pois vejam! Eu vou dar a ordem, E vou sacudir a casa de Israel no meio de todas as nações, Assim como se sacode a peneira E nenhuma pedrinha cai no chão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Morrerão pela espada todos os pecadores do meu povo, Os que dizem: “A calamidade não chegará perto de nós nem nos atingirá.”’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "‘Naquele dia levantarei a tenda de Davi, que está caída; Consertarei as brechas E restaurarei as ruínas dela; Eu a reconstruirei como era antigamente,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "A fim de que eles tomem posse do que restar de Edom E de todas as nações sobre as quais se invocou o meu nome’, diz Jeová, aquele que está fazendo isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "‘Vejam! Virão dias’, diz Jeová, ‘Em que o arador alcançará o ceifeiro, E o pisador de uvas, o semeador; Vinho novo gotejará dos montes E fluirá de todas as colinas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Trarei de volta do cativeiro o meu povo Israel, E eles reconstruirão as cidades desoladas e habitarão nelas; Plantarão vinhedos e beberão o vinho deles, Plantarão pomares e comerão o fruto deles.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "‘Eu os plantarei na sua terra, E eles nunca mais serão desarraigados Da terra que lhes dei’, diz Jeová, seu Deus.”",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

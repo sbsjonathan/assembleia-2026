@@ -1,0 +1,381 @@
+.anotacao-asmb {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  pointer-events: none;
+  transition:
+    grid-template-rows 0.3s cubic-bezier(0.2, 0.8, 0.1, 1),
+    opacity 0.25s ease,
+    margin-bottom 0.3s cubic-bezier(0.2, 0.8, 0.1, 1);
+}
+
+.anotacao-asmb.ativa {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  margin-bottom: 20px;
+  pointer-events: auto;
+}
+
+.anotacao-asmb-inner {
+  overflow: hidden;
+  min-height: 0;
+  padding: 10px 25px 25px 10px;
+  margin: -10px -25px -25px -10px;
+}
+
+.clickable-asmb-wrap {
+  position: relative;
+  padding: 0 0 8px;
+}
+
+.expand-handle-asmb {
+  position: absolute;
+  right: -15px;
+  bottom: -13px;
+  width: 44px;
+  height: 44px;
+  z-index: 4;
+  background: none;
+  border: none;
+  padding: 0;
+  opacity: 0;
+  transform: translateY(3px) scale(0.96);
+  pointer-events: none;
+  transition: opacity 0.22s ease, transform 0.16s ease, filter 0.16s ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  touch-action: manipulation;
+}
+
+.clickable-asmb:focus + .expand-handle-asmb,
+.clickable-asmb:focus-visible + .expand-handle-asmb,
+.clickable-asmb-wrap:focus-within .expand-handle-asmb {
+  opacity: 0.42;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.expand-handle-asmb:active {
+  opacity: 0.62;
+  transform: translateY(0) scale(1.12);
+}
+
+.expand-handle-asmb::before,
+.expand-handle-asmb::after {
+  content: "";
+  position: absolute;
+  border-top: 2.5px solid var(--cor-global, #2a7d7d);
+  border-radius: 10px;
+  transform: rotate(-45deg);
+  pointer-events: none;
+  filter: drop-shadow(0 0 1px color-mix(in srgb, var(--cor-global, #2a7d7d) 42%, transparent)) drop-shadow(0 0 3px color-mix(in srgb, var(--cor-global, #2a7d7d) 22%, transparent));
+  transition: filter 0.16s ease;
+}
+
+.expand-handle-asmb:active::before,
+.expand-handle-asmb:active::after {
+  filter: drop-shadow(0 0 2px color-mix(in srgb, var(--cor-global, #2a7d7d) 55%, transparent)) drop-shadow(0 0 6px color-mix(in srgb, var(--cor-global, #2a7d7d) 30%, transparent));
+}
+
+.expand-handle-asmb::before {
+  width: 21px;
+  right: 15px;
+  bottom: 31px;
+}
+
+.expand-handle-asmb::after {
+  width: 10px;
+  right: 17px;
+  bottom: 27.1px;
+}
+
+.clickable-asmb {
+  min-height: 46px;
+  height: auto;
+  padding: 10px 28px 10px 12px;
+  border: 1px solid var(--cor-global, #2a7d7d);
+  border-radius: 8px;
+  background: #fff;
+  color: #222;
+  font-size: 1.02em;
+  line-height: 1.48;
+  outline: none;
+  overflow-y: visible;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--cor-global, #2a7d7d) 16%, transparent), 0 0 6px color-mix(in srgb, var(--cor-global, #2a7d7d) 18%, transparent), 0 0 14px color-mix(in srgb, var(--cor-global, #2a7d7d) 10%, transparent);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease, opacity 0.18s ease, color 0.18s ease;
+  -webkit-user-modify: read-write;
+}
+
+.clickable-asmb.is-empty::before {
+  content: attr(data-placeholder);
+  color: color-mix(in srgb, var(--cor-global, #2a7d7d) 42%, white 58%);
+  pointer-events: none;
+}
+
+.clickable-asmb:focus,
+.clickable-asmb:focus-visible {
+  border-color: var(--cor-global, #2a7d7d);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--cor-global, #2a7d7d) 22%, transparent), 0 0 8px color-mix(in srgb, var(--cor-global, #2a7d7d) 22%, transparent), 0 0 18px color-mix(in srgb, var(--cor-global, #2a7d7d) 14%, transparent);
+}
+
+.click-trigger-asmb {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 0.18s ease, opacity 0.18s ease;
+}
+
+.click-trigger-asmb.ativo {
+  color: var(--cor-global, #2a7d7d);
+}
+
+.click-trigger-asmb.ativo .refs-neutral {
+  color: #111;
+}
+
+.click-trigger-asmb.ativo .refs-neutral .bbl {
+  color: #336699;
+}
+
+.anotacao-asmb.has-summary .expand-handle-asmb,
+.anotacao-asmb.has-summary .clickable-asmb + .expand-handle-asmb,
+.anotacao-asmb.has-summary .clickable-asmb-wrap:focus-within .expand-handle-asmb,
+.anotacao-asmb.has-error .expand-handle-asmb,
+.anotacao-asmb.has-error .clickable-asmb + .expand-handle-asmb,
+.anotacao-asmb.has-error .clickable-asmb-wrap:focus-within .expand-handle-asmb {
+  opacity: 0.48;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.anotacao-asmb.is-pending .expand-handle-asmb,
+.anotacao-asmb.is-pending .clickable-asmb + .expand-handle-asmb,
+.anotacao-asmb.is-pending .clickable-asmb-wrap:focus-within .expand-handle-asmb {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: translateY(3px) scale(0.96) !important;
+}
+
+.clickable-asmb.is-summary {
+  background: color-mix(in srgb, #ffffff 88%, var(--cor-global, #2a7d7d) 12%);
+  color: #1f2a30;
+  -webkit-user-modify: read-only;
+  user-select: none;
+  caret-color: transparent;
+}
+
+.clickable-asmb.is-pending {
+  background: color-mix(in srgb, #ffffff 92%, var(--cor-global, #2a7d7d) 8%);
+  opacity: 0.9;
+  -webkit-user-modify: read-only;
+  user-select: none;
+  caret-color: transparent;
+}
+
+.clickable-asmb.has-error-state {
+  background: color-mix(in srgb, #ffffff 92%, #8c6b2f 8%);
+}
+
+.clickable-asmb.is-summary:focus,
+.clickable-asmb.is-summary:focus-visible,
+.clickable-asmb.is-pending:focus,
+.clickable-asmb.is-pending:focus-visible {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--cor-global, #2a7d7d) 18%, transparent), 0 0 8px color-mix(in srgb, var(--cor-global, #2a7d7d) 18%, transparent), 0 0 18px color-mix(in srgb, var(--cor-global, #2a7d7d) 12%, transparent);
+}
+
+.asmb-status-badge {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: color-mix(in srgb, var(--cor-global, #2a7d7d) 72%, #223 28%);
+  opacity: 0.78;
+  pointer-events: none;
+}
+
+.anotacao-asmb[data-status="error_network"] .asmb-status-badge,
+.anotacao-asmb[data-status="error_api"] .asmb-status-badge {
+  color: color-mix(in srgb, #a6782a 74%, #544 26%);
+}
+
+.status-svg {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+.status-svg--spinner {
+  animation: asmb-spin 0.85s linear infinite;
+}
+
+@keyframes asmb-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.clickable-asmb .node-toggle,
+.clickable-asmb .node-text,
+.clickable-asmb .node-paragraph { display:block; width:100%; margin:0; }
+.clickable-asmb .row { position:relative; display:flex !important; flex-wrap:nowrap !important; align-items:flex-start !important; gap:0; padding:1px 0; border-radius:4px; }
+.clickable-asmb .row > * { min-width:0; }
+.clickable-asmb .node-paragraph > .row { background:transparent !important; }
+.clickable-asmb .toggle-arrow { width:35px; height:28px; flex:0 0 35px; border:0 !important; background:transparent !important; padding:0; margin:0; display:flex !important; align-items:center !important; justify-content:center !important; border-radius:3px; cursor:pointer; transition:background .15s ease; -webkit-tap-highlight-color: transparent; -webkit-appearance:none; appearance:none; box-shadow:none !important; }
+.clickable-asmb .toggle-arrow:active { background:rgba(0,0,0,.05) !important; }
+.clickable-asmb .toggle-arrow::before { content:''; width:0; height:0; border-top:5px solid transparent; border-bottom:5px solid transparent; border-left:7px solid color-mix(in srgb, var(--cor-global, #2a7d7d) 78%, #233 22%); transform:rotate(0deg); transform-origin:35% 50%; transition:transform .22s cubic-bezier(.2,0,0,1); }
+.clickable-asmb .toggle-arrow[aria-expanded="true"]::before { transform:rotate(90deg); }
+.clickable-asmb .toggle-arrow .triangle { display:none !important; }
+.clickable-asmb .toggle-spacer { width:35px; height:28px; flex:0 0 35px; }
+.clickable-asmb .toggle-title,
+.clickable-asmb .text-content,
+.clickable-asmb .paragraph-content { position:relative; display:block !important; flex:1 1 auto; min-width:0; outline:none; white-space:pre-wrap; word-break:break-word; font-size:16px; line-height:1.45; padding:2px 0; color:#222; min-height:28px; transition: color 0.18s ease; }
+.clickable-asmb .text-content { padding-right:0; }
+.clickable-asmb .children { display:block; padding-left:20px; margin-left:0; }
+.clickable-asmb .children[hidden] { display:none !important; }
+.clickable-asmb .text-plus { display:none !important; }
+.clickable-asmb .editable ul,
+.clickable-asmb .editable ol,
+.clickable-asmb ul,
+.clickable-asmb ol { margin:8px 0; padding-left:22px; }
+.clickable-asmb .editable li,
+.clickable-asmb li { margin-bottom:4px; padding-left:2px; }
+.clickable-asmb .node-paragraph.font-h1 .paragraph-content { font-size:calc(26px * var(--font-scale-global)); font-weight:700; line-height:1.3; }
+.clickable-asmb .node-paragraph.font-h2 .paragraph-content { font-size:calc(21px * var(--font-scale-global)); font-weight:600; line-height:1.35; }
+.clickable-asmb .node-paragraph.font-h3 .paragraph-content { font-size:calc(18px * var(--font-scale-global)); font-weight:600; line-height:1.4; }
+.clickable-asmb .node-paragraph.font-h1 .paragraph-content *,
+.clickable-asmb .node-paragraph.font-h2 .paragraph-content *,
+.clickable-asmb .node-paragraph.font-h3 .paragraph-content * { font-size:inherit; }
+.clickable-asmb.is-summary .toggle-arrow,
+.clickable-asmb.is-pending .toggle-arrow { pointer-events:none; }
+
+.clickable-asmb.is-rich-inline.is-not-virgin { padding-top: 6px; padding-bottom: 6px; }
+.clickable-asmb.is-rich-inline.is-not-virgin .node-paragraph,
+.clickable-asmb.is-rich-inline.is-not-virgin .node-text,
+.clickable-asmb.is-rich-inline.is-not-virgin .node-toggle { margin: 0; }
+.clickable-asmb.is-rich-inline.is-not-virgin .row { padding-top: 0 !important; padding-bottom: 0 !important; }
+.clickable-asmb.is-rich-inline.is-not-virgin .toggle-title,
+.clickable-asmb.is-rich-inline.is-not-virgin .text-content,
+.clickable-asmb.is-rich-inline.is-not-virgin .paragraph-content { min-height: 0; padding-top: 0; padding-bottom: 0; }
+.clickable-asmb.is-rich-inline.is-not-virgin .children { margin-top: 2px; }
+.clickable-asmb.is-rich-inline.is-not-virgin > :first-child,
+.clickable-asmb.is-rich-inline.is-not-virgin .node-paragraph:first-child,
+.clickable-asmb.is-rich-inline.is-not-virgin .node-text:first-child,
+.clickable-asmb.is-rich-inline.is-not-virgin .node-toggle:first-child { margin-top: 0 !important; }
+.clickable-asmb.is-rich-inline.is-not-virgin > :last-child,
+.clickable-asmb.is-rich-inline.is-not-virgin .node-paragraph:last-child,
+.clickable-asmb.is-rich-inline.is-not-virgin .node-text:last-child,
+.clickable-asmb.is-rich-inline.is-not-virgin .node-toggle:last-child { margin-bottom: 0 !important; }
+.clickable-asmb.is-rich-inline.is-not-virgin > .node-paragraph:only-child > .row,
+.clickable-asmb.is-rich-inline.is-not-virgin > .node-text:only-child > .row { min-height: 28px; align-items: center !important; }
+.clickable-asmb.is-rich-inline.is-not-virgin > .node-paragraph:only-child .paragraph-content,
+.clickable-asmb.is-rich-inline.is-not-virgin > .node-text:only-child .text-content { min-height: 28px; display: flex !important; align-items: center; }
+
+/* ========================================= */
+/* --- DARK MODE OVERRIDES (Click ASMB) ---  */
+/* ========================================= */[data-theme="dark"] .clickable-asmb {
+  background: #1c1c1e;
+  color: #f2f2f7;
+  border-color: color-mix(in srgb, var(--cor-global, #2a7d7d) 40%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--cor-global, #2a7d7d) 30%, transparent), 
+              0 0 6px color-mix(in srgb, var(--cor-global, #2a7d7d) 20%, transparent), 
+              0 0 14px color-mix(in srgb, var(--cor-global, #2a7d7d) 10%, transparent);
+}
+
+[data-theme="dark"] .clickable-asmb:focus,
+[data-theme="dark"] .clickable-asmb:focus-visible {
+  border-color: var(--cor-global, #2a7d7d);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--cor-global, #2a7d7d) 40%, transparent), 
+              0 0 8px color-mix(in srgb, var(--cor-global, #2a7d7d) 30%, transparent), 
+              0 0 18px color-mix(in srgb, var(--cor-global, #2a7d7d) 20%, transparent);
+}[data-theme="dark"] .clickable-asmb.is-empty::before {
+  color: color-mix(in srgb, var(--cor-global, #2a7d7d) 60%, #636366 40%);
+}
+
+[data-theme="dark"] .click-trigger-asmb.ativo .refs-neutral {
+  color: #f2f2f7;
+}[data-theme="dark"] .clickable-asmb.is-summary {
+  background: color-mix(in srgb, #1c1c1e 82%, var(--cor-global, #2a7d7d) 18%);
+  color: #ebebf5;
+}[data-theme="dark"] .clickable-asmb.is-pending {
+  background: color-mix(in srgb, #1c1c1e 88%, var(--cor-global, #2a7d7d) 12%);
+}
+
+[data-theme="dark"] .clickable-asmb.has-error-state {
+  background: color-mix(in srgb, #1c1c1e 88%, #8c6b2f 12%);
+}
+
+[data-theme="dark"] .clickable-asmb.is-summary:focus,
+[data-theme="dark"] .clickable-asmb.is-summary:focus-visible,
+[data-theme="dark"] .clickable-asmb.is-pending:focus,
+[data-theme="dark"] .clickable-asmb.is-pending:focus-visible {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--cor-global, #2a7d7d) 30%, transparent), 
+              0 0 8px color-mix(in srgb, var(--cor-global, #2a7d7d) 25%, transparent), 
+              0 0 18px color-mix(in srgb, var(--cor-global, #2a7d7d) 15%, transparent);
+}
+
+[data-theme="dark"] .asmb-status-badge {
+  color: color-mix(in srgb, var(--cor-global, #2a7d7d) 60%, #ebebf5 40%);
+}
+
+[data-theme="dark"] .anotacao-asmb[data-status="error_network"] .asmb-status-badge,[data-theme="dark"] .anotacao-asmb[data-status="error_api"] .asmb-status-badge {
+  color: color-mix(in srgb, #a6782a 80%, #ebebf5 20%);
+}
+
+[data-theme="dark"] .clickable-asmb .toggle-arrow:active {
+  background: rgba(255,255,255,0.08) !important;
+}
+
+[data-theme="dark"] .clickable-asmb .toggle-arrow::before {
+  border-left-color: color-mix(in srgb, var(--cor-global, #2a7d7d) 78%, #f2f2f7 22%);
+}
+
+[data-theme="dark"] .clickable-asmb .toggle-title,
+[data-theme="dark"] .clickable-asmb .text-content,[data-theme="dark"] .clickable-asmb .paragraph-content {
+  color: #f2f2f7;
+}
+
+.anotacao-asmb.is-shortcut-note.ativa .expand-handle-asmb,
+.anotacao-asmb.is-shortcut-note .clickable-asmb + .expand-handle-asmb,
+.anotacao-asmb.is-shortcut-note .clickable-asmb-wrap:focus-within .expand-handle-asmb {
+  opacity: 0.48;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.clickable-asmb--shortcut {
+  background: color-mix(in srgb, #ffffff 90%, var(--cor-global, #2a7d7d) 10%);
+  -webkit-user-modify: read-only;
+  user-select: none;
+  caret-color: transparent;
+  cursor: default;
+}
+
+.clickable-asmb--shortcut:focus,
+.clickable-asmb--shortcut:focus-visible {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--cor-global, #2a7d7d) 18%, transparent), 0 0 8px color-mix(in srgb, var(--cor-global, #2a7d7d) 18%, transparent), 0 0 18px color-mix(in srgb, var(--cor-global, #2a7d7d) 12%, transparent);
+}
+
+.asmb-shortcut-message {
+  color: var(--cor-global, #2a7d7d);
+  font-size: 0.98em;
+  line-height: 1.5;
+}
+
+.asmb-shortcut-message em {
+  color: inherit;
+  font-style: italic;
+}
+
+[data-theme="dark"] .clickable-asmb--shortcut {
+  background: color-mix(in srgb, #10161a 86%, var(--cor-global, #2a7d7d) 14%);
+}
+
+[data-theme="dark"] .asmb-shortcut-message {
+  color: var(--cor-global, #2a7d7d);
+}

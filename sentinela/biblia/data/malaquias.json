@@ -1,0 +1,300 @@
+{
+  "nome_do_livro": "Malaquias",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Proclamação: Esta é a palavra de Jeová a Israel por meio de Malaquias:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“Eu mostrei amor a vocês”, diz Jeová. Mas vocês dizem: “Como nos mostraste amor?” “Esaú não era irmão de Jacó?” diz Jeová. “Mas amei a Jacó",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "e odiei a Esaú; e fiz os seus montes ficar desolados e entreguei a sua herança aos chacais do deserto.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“Embora Edom diga: ‘Fomos arrasados, mas voltaremos e reconstruiremos as ruínas’, Jeová dos exércitos diz: ‘Eles construirão, mas eu derrubarei, e serão chamados de “território da maldade” e de “o povo que Jeová condenou para sempre”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Vocês verão com os seus próprios olhos e dirão: “Que Jeová seja magnificado sobre o território de Israel.”’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "“‘O filho honra o pai; e o servo, seu senhor. Portanto, se eu sou o pai, onde está a honra que me devem? E, se eu sou o senhor, onde está o temor que me devem?’ diz Jeová dos exércitos a vocês, sacerdotes, que desprezam o meu nome. “‘Mas vocês dizem: “Como desprezamos o teu nome?”’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "“‘Apresentando alimento impuro no meu altar.’ “‘E vocês dizem: “Como te tornamos impuro?”’ “‘Dizendo: “A mesa de Jeová é desprezível.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "E, ao apresentar um animal cego como sacrifício, dizem: “Não faz mal.” E, ao apresentar um animal manco ou doente, dizem: “Não faz mal.”’” “Por favor, tente apresentá-los ao seu governador. Será que ele se agradará de você ou o receberá com favor?” diz Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "“E agora, por favor, apelem a Deus, para que ele nos mostre favor. Com essas ofertas das suas mãos, será que ele receberá a algum de vocês com favor?” diz Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "“E quem entre vocês está disposto a fechar as portas? Pois vocês nem mesmo acendem o meu altar sem cobrar. Não me agrado de vocês”, diz Jeová dos exércitos, “nem tenho prazer em nenhuma oferta das suas mãos”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "“Pois meu nome será grande entre as nações, desde o nascente até o poente. Em todo lugar se fará fumegar sacrifícios e se farão ofertas ao meu nome, como uma dádiva pura, porque meu nome será grande entre as nações”, diz Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "“Mas vocês o profanam quando dizem: ‘A mesa de Jeová é impura, e as ofertas nela, seu alimento, são desprezíveis.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Vocês também dizem: ‘Que cansativo!’ e mostram desprezo por ela”, diz Jeová dos exércitos. “E trazem animais roubados, mancos e doentes. Sim, vocês trazem essas coisas como dádiva! Será que eu deveria aceitá-la das suas mãos?” diz Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "“Maldito aquele que é astuto, que tem no seu rebanho um animal macho sadio, mas faz um voto e sacrifica a Jeová um animal defeituoso. Pois eu sou um grande Rei”, diz Jeová dos exércitos, “e meu nome inspirará temor entre as nações”.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“E agora, ó sacerdotes, este mandamento é para vocês.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Se não escutarem e não levarem a sério glorificar o meu nome”, diz Jeová dos exércitos, “enviarei contra vocês a maldição e transformarei suas bênçãos em maldições. Sim, já transformei as bênçãos em maldições, porque vocês não estão levando isso a sério”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "“Vejam! Por sua causa destruirei a semente plantada, e espalharei esterco no seu rosto, o esterco das suas festividades; e vocês serão levados até ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Então vocês saberão que lhes dei este mandamento para que o meu pacto com Levi continuasse em vigor”, diz Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "“Meu pacto com ele foi um pacto de vida e paz, que dei a ele para que tivesse temor. Ele teve temor de mim, sim, teve reverência pelo meu nome.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "A lei da verdade estava na sua boca, e não se achava injustiça nos seus lábios. Ele andava comigo em paz e retidão, e fez muitos recuar do erro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois os lábios do sacerdote devem guardar o conhecimento, e da sua boca as pessoas devem buscar a lei, porque ele é o mensageiro de Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "“Mas vocês se desviaram do caminho. Fizeram muitos tropeçar no que se refere à lei. Corromperam o pacto de Levi”, diz Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "“Portanto, farei que vocês sejam desprezados e rebaixados diante de todo o povo, visto que não guardaram os meus caminhos, mas mostraram parcialidade ao aplicar a lei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "“Não temos todos nós um só pai? Não foi um só Deus que nos criou? Então por que somos traiçoeiros uns com os outros, profanando o pacto dos nossos antepassados?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Judá agiu traiçoeiramente, e uma coisa detestável foi feita em Israel e em Jerusalém; porque Judá profanou a santidade de Jeová, a qual Ele ama, e se casou com a filha de um deus estrangeiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Jeová eliminará das tendas de Jacó todo aquele que faz isso — não importa quem seja — mesmo que ele apresente uma oferta a Jeová dos exércitos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "“E vocês fazem outra coisa que deixa o altar de Jeová coberto de lágrimas, de choro e de suspiros, de modo que ele não dá mais atenção à sua oferta nem olha com favor para nada que vem das suas mãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E vocês dizem: ‘Por que razão?’ Porque Jeová é testemunha entre você e a esposa da sua juventude, com quem você foi traiçoeiro, embora ela fosse sua companheira e sua esposa por meio de um pacto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Mas houve um que não fez isso, visto que ele tinha o que restava do espírito. E o que ele visava? A descendência de Deus. Portanto, estejam atentos ao seu espírito e não ajam traiçoeiramente com a esposa da sua juventude.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Pois eu odeio o divórcio”, diz Jeová, o Deus de Israel, “e também aquele que cobre a sua roupa de violência”, diz Jeová dos exércitos. “Estejam atentos ao seu espírito e não ajam traiçoeiramente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "“Vocês cansam a Jeová com as suas palavras. Mas dizem: ‘Como o cansamos?’ Dizendo: ‘Todo aquele que faz o mal é bom aos olhos de Jeová, e ele se agrada dele’; ou dizendo: ‘Onde está o Deus da justiça?’”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Vejam! Enviarei o meu mensageiro, e ele preparará o caminho diante de mim. E de repente o verdadeiro Senhor, a quem vocês procuram, virá ao Seu templo; e o mensageiro do pacto, de quem vocês se agradam, virá. Ele certamente virá”, diz Jeová dos exércitos.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“Mas quem suportará o dia da sua vinda, e quem conseguirá se manter de pé quando ele aparecer? Pois ele será como o fogo do refinador e como a barrela dos lavadeiros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E ele se sentará como um refinador e purificador de prata, e purificará os filhos de Levi; e os depurará como o ouro e como a prata, e eles certamente se tornarão para Jeová pessoas que apresentam uma oferta em justiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "E a oferta de Judá e de Jerusalém será realmente agradável a Jeová, como nos dias do passado e como nos tempos antigos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "“Eu me chegarei a vocês para julgá-los e darei prontamente testemunho contra os feiticeiros, contra os adúlteros, contra os que juram falsamente, contra os que defraudam o trabalhador contratado, a viúva e o órfão, e contra os que se recusam a ajudar o estrangeiro. Esses não me temem”, diz Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "“Pois eu sou Jeová; eu não mudo. E vocês são filhos de Jacó; ainda não chegaram ao seu fim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Desde os dias dos seus antepassados vocês têm se desviado dos meus decretos e não os têm guardado. Voltem para mim, e eu voltarei para vocês”, diz Jeová dos exércitos. Mas vocês dizem: “Como voltaremos?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "“Será que um simples humano pode roubar a Deus? Mas vocês estão me roubando.” E vocês dizem: “Como te roubamos?” “Nos dízimos e nas contribuições.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Com certeza, vocês são amaldiçoados, pois estão me roubando — sim, a nação inteira está fazendo isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Tragam todo o dízimo ao depósito para que haja alimento na minha casa; e, por favor, ponham-me à prova nesse respeito”, diz Jeová dos exércitos, “e vejam se não abrirei para vocês as comportas dos céus e se não derramarei sobre vocês uma bênção até que não falte mais nada”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "“E vou censurar o devorador, e ele não destruirá o fruto da sua terra; e a videira no seu campo não será infrutífera”, diz Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "“Todas as nações dirão que vocês são felizes, porque vocês se tornarão uma terra de prazer”, diz Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "“Suas palavras contra mim foram fortes”, diz Jeová. E vocês dizem: “Como falamos contra ti?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "“Vocês dizem: ‘É inútil servir a Deus. Qual é a vantagem de cumprirmos nossas obrigações para com ele e de andarmos abatidos perante Jeová dos exércitos?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Agora consideramos felizes os que são arrogantes. Além disso, os que praticam o que é mau são bem-sucedidos. Eles se atrevem a pôr Deus à prova e conseguem se safar.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então os que temiam a Jeová falavam uns com os outros, cada um com o seu próximo, e Jeová prestava atenção e escutava. E diante dele foi escrito um livro de recordação para os que temiam a Jeová e para os que meditavam no seu nome.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "“Eles serão meus”, diz Jeová dos exércitos, “no dia em que eu produzir uma propriedade especial. Terei compaixão deles assim como um homem tem compaixão do seu filho, que o serve.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "E vocês verão novamente a diferença entre uma pessoa justa e uma pessoa má, entre quem serve a Deus e quem não o serve”.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Vejam! Vem o dia, ardente como uma fornalha, quando todos os arrogantes e todos os que praticam o que é mau se tornarão como palha. O dia que virá certamente os devorará”, diz Jeová dos exércitos, “e não lhes deixará nem raiz nem ramo.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Mas, sobre vocês que honram o meu nome, o sol da justiça brilhará, com cura nos seus raios; e vocês saltarão como bezerros gordos”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "“E vocês pisarão os maus, pois eles serão como pó debaixo da sola dos seus pés no dia em que eu agir”, diz Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“Lembrem-se da Lei do meu servo Moisés, os decretos e as decisões judiciais que ordenei em Horebe que todo o Israel obedecesse.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "“Vejam! Eu lhes enviarei Elias, o profeta, antes de chegar o grande e atemorizante dia de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E ele fará o coração dos pais se tornar como o de filhos, e o coração dos filhos como o dos pais, para que eu não venha e golpeie a terra, entregando-a à destruição.”",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+.zoom-container {
+    position: fixed;
+    inset: 0;
+    width: auto;
+    /* Fixed insets follow the actual viewport on iOS; 100dvh can remain
+       shorter after the document is locked and leave a navbar-sized strip. */
+    height: auto;
+    min-height: 0;
+    overflow: hidden;
+    overscroll-behavior: none;
+    background: black;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.4s ease-in-out;
+    box-sizing: border-box;
+}
+.zoom-container.active { opacity: 1; }
+.zoom-container.active,
+.zoom-container.closing { visibility: visible; pointer-events: all; }
+
+/* Color the native canvas too, including the iPhone home-indicator area. */
+html.zoom-viewer-open { background: #000 !important; }
+html.zoom-viewer-closing body { transition: none !important; }
+
+.zoom-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: calc(60px + env(safe-area-inset-top, 0px));
+    background: linear-gradient(180deg, rgba(20,20,20,0.65) 0%, rgba(20,20,20,0.25) 70%, transparent 100%);
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: env(safe-area-inset-top, 0px) calc(20px + env(safe-area-inset-right, 0px)) 0 calc(20px + env(safe-area-inset-left, 0px));
+    transition: opacity 0.3s, transform 0.3s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.zoom-header.hidden { opacity: 0; transform: translateY(-100%); pointer-events: none; }
+.zoom-footer {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(0deg, rgba(20,20,20,0.75) 0%, rgba(20,20,20,0.35) 70%, transparent 100%);
+    z-index: 10001; padding: 20px calc(20px + env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 15px) calc(20px + env(safe-area-inset-left, 0px));
+    color: rgba(255, 255, 255, 0.9); font-size: 14px; line-height: 1.4; text-align: center;
+    transition: opacity 0.3s, transform 0.3s; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    pointer-events: none;
+}
+.zoom-footer.hidden { opacity: 0; transform: translateY(100%); }
+
+.zoom-btn-fechar {
+    background: none; border: none; color: rgba(255,255,255,0.60); font-size: 22px; font-weight: 400;
+    padding: 0; border-radius: 50%; box-shadow: none; min-width: 36px; min-height: 36px; width: 36px;
+    height: 36px; display: flex; align-items: center; justify-content: center; opacity: 0.65;
+    transition: opacity 0.2s, background 0.2s;
+}
+.zoom-btn-fechar:active { opacity: 1; background: rgba(255,255,255,0.11); }
+.zoom-btn-fechar:focus { outline: none; }
+
+.zoom-content {
+    flex: 1;
+    min-height: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+}
+
+.zoom-image {
+    max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;
+    transform-origin: center center; will-change: transform, opacity;
+    opacity: 1;
+}
+
+.zoom-image.transition-active {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.zoom-image.zoom-enter,
+.zoom-image.zoom-exit {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+body.zoom-active {
+    overflow: hidden; position: fixed; width: 100%; height: 100%;
+    box-sizing: border-box;
+    background: #000 !important;
+    transition: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .zoom-container, .zoom-header, .zoom-footer, .zoom-image.transition-active { transition: none; }
+}

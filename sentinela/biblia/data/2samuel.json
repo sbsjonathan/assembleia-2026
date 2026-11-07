@@ -1,0 +1,3600 @@
+{
+  "nome_do_livro": "2 Samuel",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Depois da morte de Saul, quando Davi tinha voltado após derrotar os amalequitas, Davi ficou em Ziclague por dois dias.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "No terceiro dia, veio um homem do acampamento de Saul, com as roupas rasgadas e com terra na cabeça. Quando ele se aproximou de Davi, prostrou-se, lançando-se por terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Davi perguntou: “De onde você vem?” Ele respondeu: “Escapei do acampamento de Israel.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Davi lhe perguntou: “O que aconteceu? Conte-me, por favor.” Ele disse: “Os soldados fugiram da batalha, e muitos foram feridos e morreram. Até mesmo Saul e seu filho Jonatã morreram.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Davi perguntou ao homem que lhe trouxe a notícia: “Como é que você sabe que Saul e seu filho Jonatã morreram?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "O homem respondeu: “Eu estava por acaso no monte Gilboa, e vi Saul se apoiando na sua lança, e os carros de guerra e os cavaleiros estavam se aproximando dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Quando ele se virou e me viu, ele me chamou. Eu disse: ‘Aqui estou!’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Ele me perguntou: ‘Quem é você?’ Eu respondi: ‘Sou amalequita.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então ele disse: ‘Venha aqui e mate-me, pois estou agonizando, mas ainda estou vivo.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "De modo que fui até ele e o matei, porque eu sabia que ele não conseguiria sobreviver depois de ter sido gravemente ferido. Então peguei a coroa da cabeça dele e o bracelete do seu braço e os trouxe aqui ao meu senhor.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Em vista disso, Davi pegou as suas roupas e as rasgou, e todos os homens que estavam com ele fizeram o mesmo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Eles lamentaram, choraram e jejuaram até o anoitecer, por Saul, por seu filho Jonatã, pelo povo de Jeová e pela casa de Israel, porque haviam caído pela espada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Davi perguntou ao homem que lhe trouxe a notícia: “De onde você é?” Ele respondeu: “Sou filho de um residente estrangeiro amalequita.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Davi lhe disse: “Por que é que você não temeu levantar a mão para matar o ungido de Jeová?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Então Davi chamou um dos seus homens e ordenou: “Venha aqui e mate-o!” De modo que o homem o golpeou, e ele morreu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Davi lhe disse: “Que o seu sangue recaia sobre a sua cabeça, porque a sua própria boca o condenou, quando disse: ‘Eu matei o ungido de Jeová.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Então Davi cantou um cântico fúnebre por Saul e por seu filho Jonatã,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "e disse que se devia ensiná-lo ao povo de Judá. Esse cântico, chamado “O Arco”, está escrito no livro de Jasar e diz:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "“Sua beleza, ó Israel, pereceu sobre os montes. Como caíram os valentes!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Não contem isso em Gate; Não o anunciem nas ruas de Ascalom, Para que não se alegrem as filhas dos filisteus, Para que não exultem as filhas dos incircuncisos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Ó montes de Gilboa, Não haja sobre vocês nem orvalho nem chuva, Nem campos que produzam contribuições sagradas, Porque ali foi profanado o escudo dos valentes, O escudo de Saul não está mais ungido com óleo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Do sangue dos que eram mortos, da gordura dos valentes, O arco de Jonatã não recuava, E a espada de Saul não voltava sem êxito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Saul e Jonatã, tão amados e queridos durante a sua vida, Mesmo na morte não foram separados. Eram mais velozes do que as águias E mais fortes do que os leões.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Ó filhas de Israel, chorem por Saul, Que as vestiu de escarlate e com adornos, Que pôs enfeites de ouro na sua roupa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Como caíram os valentes na batalha! Jonatã está morto sobre os montes!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Estou aflito por você, meu irmão Jonatã; Você era um amigo muito querido. Para mim, seu amor era superior ao amor das mulheres.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Como caíram os valentes, E pereceram as armas de guerra!”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Depois disso, Davi consultou a Jeová: “Devo ir para uma das cidades de Judá?” Jeová respondeu: “Vá.” Davi perguntou: “Para onde devo ir?” Ele respondeu: “Para Hebrom.”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Então Davi foi para lá junto com suas duas esposas: Ainoã, de Jezreel, e Abigail, viúva de Nabal, o carmelita.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Davi levou também os seus homens, cada um com os da sua casa, e eles se estabeleceram nas cidades ao redor de Hebrom.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Então os homens de Judá vieram e ali ungiram Davi rei sobre a casa de Judá. Eles disseram a Davi: “Foram os homens de Jabes-Gileade que enterraram Saul.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Assim, Davi enviou mensageiros aos homens de Jabes-Gileade para lhes dizer: “Que Jeová os abençoe, porque vocês demonstraram amor leal para com Saul, seu senhor, enterrando-o.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E que Jeová demonstre amor leal e fidelidade para com vocês. Eu também demonstrarei bondade para com vocês pelo que fizeram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Agora fortaleçam as suas mãos e sejam corajosos, pois o seu senhor Saul está morto, e a casa de Judá me ungiu rei sobre eles.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Mas Abner, filho de Ner, chefe do exército de Saul, levou Is-Bosete, filho de Saul, a Maanaim, que fica do outro lado do rio,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "e o fez rei sobre Gileade, sobre os asuritas, sobre Jezreel, sobre Efraim, sobre Benjamim e sobre todo o Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Is-Bosete, filho de Saul, tinha 40 anos de idade quando se tornou rei de Israel e reinou por dois anos. Mas a casa de Judá apoiava Davi.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "O tempo que Davi reinou sobre a casa de Judá, em Hebrom, foi sete anos e seis meses.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Depois de algum tempo, Abner, filho de Ner, e os servos de Is-Bosete, filho de Saul, foram de Maanaim a Gibeão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Joabe, filho de Zeruia, e os servos de Davi também saíram e os encontraram no reservatório de água de Gibeão. Um grupo ficou de um lado do reservatório; o outro, do lado oposto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Por fim, Abner disse a Joabe: “Que os homens se preparem e lutem diante de nós.” Joabe respondeu: “Que eles se preparem.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Então eles se apresentaram e atravessaram para lutar. Foram escolhidos 12 benjaminitas do grupo de Is-Bosete, filho de Saul, e 12 servos de Davi.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Eles agarraram um ao outro pela cabeça e cada um enfiou a espada no lado do seu adversário, e todos caíram mortos ao mesmo tempo. Por isso aquele lugar, que fica em Gibeão, foi chamado de Helcate-Hazurim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "A batalha que se seguiu naquele dia foi muito violenta, e Abner e os homens de Israel por fim foram derrotados pelos servos de Davi.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Os três filhos de Zeruia — Joabe, Abisai e Asael — estavam ali. Asael era capaz de correr como uma gazela em campo aberto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Asael começou a perseguir Abner. Ele corria atrás de Abner sem se desviar nem para a direita nem para a esquerda.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Quando Abner olhou para trás, perguntou: “É você, Asael?” Ele respondeu: “Sou eu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Abner disse-lhe então: “Desvie-se para a direita ou para a esquerda, pegue um desses homens e fique com as coisas dele.” Mas Asael não quis parar de persegui-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Abner disse novamente a Asael: “Pare de me perseguir, senão terei de matá-lo. Depois disso, como eu poderia encarar seu irmão Joabe?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Mas Asael não parou. Então Abner o golpeou na barriga com a parte de trás da lança, de modo que ela lhe saiu pelas costas, e ele caiu e morreu ali onde estava. Todos os que passavam pelo lugar onde Asael havia caído e morrido paravam ali.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Então Joabe e Abisai foram atrás de Abner. Ao pôr do sol eles chegaram à colina de Amá, que fica em frente a Gia, no caminho para o deserto de Gibeão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Ali os benjaminitas se juntaram a Abner; eles formaram uma só tropa, tomando posições no cume de uma colina.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Então Abner gritou para Joabe: “Até quando a espada vai devorar? Não sabe que as consequências serão amargas? Quando é que você vai mandar seus homens parar de perseguir seus irmãos?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Joabe respondeu: “Tão certo como o verdadeiro Deus vive, se você não tivesse falado, só de manhã os homens iriam parar de perseguir seus irmãos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Então Joabe tocou a buzina, e seus homens pararam de perseguir Israel; e a batalha terminou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Durante toda aquela noite, Abner e seus homens caminharam através do Arabá, atravessaram o Jordão, passaram pelo vale inteiro e por fim chegaram a Maanaim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Depois que parou de perseguir Abner, Joabe reuniu todo o povo. Dos servos de Davi, faltavam 19, além de Asael.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Mas os servos de Davi tinham derrotado os benjaminitas e os homens de Abner — 360 deles tinham morrido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Eles levaram Asael e o enterraram no túmulo do seu pai, em Belém. Depois Joabe e seus homens caminharam a noite inteira e chegaram a Hebrom ao amanhecer.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "A guerra entre a casa de Saul e a casa de Davi continuou por um bom tempo; e, enquanto Davi se fortalecia, a casa de Saul enfraquecia cada vez mais.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Nesse meio-tempo Davi teve filhos em Hebrom. O primogênito foi Amnom, filho de Ainoã, de Jezreel;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "o segundo foi Quileabe, filho de Abigail, viúva de Nabal, o carmelita; o terceiro foi Absalão, filho de Maacá, filha de Talmai, rei de Gesur;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "o quarto foi Adonias, filho de Hagite; o quinto foi Sefatias, filho de Abital;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "e o sexto foi Itreão, filho de Eglá, esposa de Davi. Esses foram os filhos que Davi teve em Hebrom.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Enquanto a guerra entre a casa de Saul e a casa de Davi continuava, Abner fortalecia cada vez mais a sua posição na casa de Saul.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Saul havia tido uma concubina chamada Rispa, filha de Aiá. Um dia, Is-Bosete disse a Abner: “Por que você teve relações com a concubina de meu pai?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Abner ficou muito irado com as palavras de Is-Bosete e disse: “Por acaso eu sou um cão de Judá? Até hoje tenho demonstrado amor leal para com a casa de Saul, seu pai, e para com os irmãos e amigos dele, e não entreguei você nas mãos de Davi. Agora você me chama para prestar contas por causa de um erro referente a uma mulher.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Que Deus me castigue, e que o faça severamente, se eu não fizer por Davi assim como Jeová jurou a ele,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "ou seja, tirar o reino da casa de Saul e estabelecer o trono de Davi sobre Israel e sobre Judá, desde Dã até Berseba.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Is-Bosete não disse mais nenhuma palavra em resposta a Abner, porque tinha medo dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Abner enviou imediatamente mensageiros para dizer a Davi: “A quem pertence o país?” E acrescentou: “Faça um pacto comigo, e eu farei tudo o que puder para trazer todo o Israel para o seu lado.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Davi respondeu: “Muito bem! Farei um pacto com você. Só peço que, quando vier me ver, não compareça à minha presença sem primeiro trazer Mical, filha de Saul.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Então Davi enviou mensageiros para dizer a Is-Bosete, filho de Saul: “Entregue-me a minha esposa Mical, com quem fiquei noivo por cem prepúcios dos filisteus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Assim, Is-Bosete mandou tirá-la do seu marido, Paltiel, filho de Laís.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mas seu marido foi atrás dela e a seguiu chorando até Baurim. Então Abner disse a ele: “Vá, volte para casa!” E ele voltou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Nesse meio-tempo, Abner enviou a seguinte mensagem aos anciãos de Israel: “Já faz algum tempo que vocês querem ter Davi como rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Agora ajam, porque Jeová disse a Davi: ‘Por meio de Davi, meu servo, salvarei meu povo Israel das mãos dos filisteus e das mãos de todos os seus inimigos.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Em seguida, Abner falou com o povo de Benjamim. Abner também foi a Hebrom para falar com Davi em particular e lhe contar o que Israel e toda a casa de Benjamim tinham resolvido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Quando Abner, acompanhado de 20 homens, foi até Davi em Hebrom, Davi deu um banquete para Abner e os homens que estavam com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Abner disse então a Davi: “Permita-me ir e reunir todo o Israel ao meu senhor, o rei, para que façam com o senhor um pacto, e o senhor será rei sobre tudo o que desejar.” Portanto, Davi dispensou Abner, e ele foi embora em paz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Naquele momento, Joabe e os homens de Davi voltavam de um ataque rápido, trazendo muito despojo. Abner não estava mais com Davi em Hebrom, porque Davi o tinha deixado ir embora em paz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Quando Joabe chegou com todo o exército, disseram-lhe: “Abner, filho de Ner, veio até o rei, que o dispensou; e ele foi em paz.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Portanto, Joabe compareceu perante o rei e disse: “O que foi que o senhor fez? Abner veio falar com o senhor, e o senhor o deixou ir embora e escapar?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "O senhor conhece Abner, filho de Ner! Ele veio aqui para enganá-lo, para ficar sabendo de cada passo que o senhor dá e para descobrir tudo o que o senhor faz.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Então Joabe saiu da presença de Davi e enviou mensageiros atrás de Abner. Eles o trouxeram de volta da cisterna de Sirá, mas Davi não sabia de nada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Quando Abner voltou a Hebrom, Joabe o levou à parte, junto ao portão da cidade, para falar com ele em particular. No entanto, ali Joabe enfiou a espada na barriga dele, e ele morreu; fez isso por ele ter matado seu irmão Asael.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Mais tarde, quando Davi soube o que aconteceu, disse: “Eu e o meu reino somos para sempre inocentes perante Jeová do sangue de Abner, filho de Ner.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Que a culpa de sangue recaia sobre a cabeça de Joabe e sobre toda a casa de seu pai. Que nunca falte na casa de Joabe homem que tenha um corrimento, ou leproso, ou homem que trabalhe numa roda de fiar, ou alguém que seja morto à espada, ou alguém que passe fome!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Assim, Joabe e seu irmão Abisai mataram Abner por ele ter matado Asael, irmão deles, na batalha em Gibeão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Davi disse então a Joabe e a todos os homens que estavam com ele: “Rasguem as suas roupas e vistam-se com pano de saco, e chorem por Abner.” O próprio rei Davi foi andando atrás da maca funerária.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Abner foi enterrado em Hebrom, e o rei chorou alto junto ao túmulo de Abner. Todo o povo também chorou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "E o rei cantou o seguinte cântico fúnebre por Abner: “Por que Abner teve de morrer como um insensato?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Suas mãos não estavam amarradas, E seus pés não estavam acorrentados. Você caiu como quem cai diante de criminosos.” Então todo o povo chorou novamente por ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Mais tarde, o povo levou pão para consolar Davi enquanto ainda era dia, mas ele jurou: “Que Deus me castigue, e que o faça severamente, se eu comer pão ou qualquer outra coisa antes do pôr do sol!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Todo o povo viu isso e gostou. De fato, como tudo o que o rei fazia, isso agradou o povo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Assim, todos os homens de Davi e todo o Israel ficaram sabendo naquele dia que o rei não era responsável pela morte de Abner, filho de Ner.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Então o rei disse aos seus servos: “Saibam que foi um príncipe e um grande homem que caiu hoje em Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Hoje eu sou fraco, embora ungido rei, e esses homens, os filhos de Zeruia, são violentos demais para mim. Que Jeová retribua ao malfeitor de acordo com a sua maldade.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quando Is-Bosete, filho de Saul, soube que Abner tinha morrido em Hebrom, perdeu a coragem, e todos os israelitas ficaram com medo.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Havia dois homens que comandavam os bandos de saqueadores que pertenciam ao filho de Saul: um se chamava Baaná, e o outro Recabe. Eles eram filhos de Rimom, o beerotita, da tribo de Benjamim. (Pois Beerote também era considerada parte de Benjamim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Os beerotitas fugiram para Gitaim, e residem lá como estrangeiros até hoje.)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Jonatã, filho de Saul, tinha um filho aleijado dos pés. Ele tinha cinco anos de idade quando a notícia da morte de Saul e de Jonatã chegou de Jezreel. Então sua ama o pegou e fugiu, mas, enquanto ela corria em pânico, ele caiu e ficou aleijado. O nome dele era Mefibosete.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Recabe e Baaná, filhos de Rimom, o beerotita, foram à casa de Is-Bosete durante a hora mais quente do dia, enquanto ele estava descansando, ao meio-dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Eles entraram na casa como se tivessem ido buscar trigo e o golpearam na barriga; depois Recabe e seu irmão Baaná fugiram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Quando eles entraram na casa, Is-Bosete estava no seu quarto, deitado na cama. Eles o golpearam e o mataram; depois deceparam sua cabeça. Então pegaram a cabeça e caminharam a noite inteira pela estrada do Arabá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Chegaram a Hebrom e apresentaram a cabeça de Is-Bosete ao rei Davi, e disseram: “Aqui está a cabeça de Is-Bosete, filho de Saul, seu inimigo, que queria tirar a sua vida. Hoje Jeová vingou o meu senhor, o rei, de Saul e dos seus descendentes.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "No entanto, Davi disse a Recabe e ao seu irmão Baaná, filhos de Rimom, o beerotita: “Tão certo como vive Jeová, que me livrou de toda a aflição,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "quando alguém veio me dizer: ‘Saul está morto!’ achando que estava trazendo boas notícias, eu o agarrei e o matei em Ziclague. Essa foi a recompensa de mensageiro que lhe dei!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Tenho muito mais motivos para fazer isso com homens maus que mataram um homem justo na sua própria casa, na sua cama! Será que não devo exigir de vocês o sangue dele e eliminá-los da face da terra?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Então Davi mandou que seus homens os matassem. Eles amputaram as mãos e os pés deles e penduraram seus corpos junto ao reservatório de água de Hebrom. Mas a cabeça de Is-Bosete eles pegaram e enterraram na sepultura de Abner, em Hebrom.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Com o tempo, todas as tribos de Israel foram a Davi, em Hebrom, e disseram: “Somos do mesmo sangue.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "No passado, quando Saul era o nosso rei, o senhor era quem liderava Israel nas suas campanhas militares. E Jeová lhe disse: ‘Você pastoreará o meu povo Israel e se tornará líder de Israel.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Assim, todos os anciãos de Israel foram até o rei Davi em Hebrom, e o rei Davi fez um pacto com eles em Hebrom, perante Jeová. Depois eles ungiram Davi rei sobre Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Davi tinha 30 anos de idade quando se tornou rei e reinou por 40 anos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Em Hebrom ele reinou sobre Judá por sete anos e seis meses, e em Jerusalém reinou por 33 anos sobre todo o Israel e Judá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E o rei e seus homens foram a Jerusalém para lutar contra os jebuseus que moravam naquela região. Eles zombaram de Davi: “Você nunca entrará aqui! Até os cegos e os mancos vão expulsá-lo.” Eles pensavam: ‘Davi nunca entrará aqui.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "No entanto, Davi tomou a fortaleza de Sião, que hoje é a Cidade de Davi.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Davi disse naquele dia: “Os que atacam os jebuseus devem ir pelo túnel de água para golpear esses ‘cegos e mancos’, que Davi odeia!” É por isso que se diz: “Os cegos e os mancos nunca entrarão nesta casa.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então Davi passou a morar na fortaleza, que recebeu o nome de Cidade de Davi. E Davi fez construções em todo o redor, do Aterro para dentro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Assim, Davi foi ficando cada vez mais poderoso, e Jeová, o Deus dos exércitos, estava com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Hirão, rei de Tiro, enviou mensageiros a Davi. Ele mandou também madeiras de cedro, carpinteiros e pedreiros para erguer os muros, e eles construíram uma casa para Davi.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E Davi percebeu que Jeová o havia estabelecido firmemente como rei sobre Israel e que havia exaltado seu reino por causa do Seu povo Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Depois de ter mudado de Hebrom, Davi tomou mais concubinas e esposas em Jerusalém; e Davi teve mais filhos e filhas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Estes são os nomes dos filhos dele que nasceram em Jerusalém: Samua, Sobabe, Natã, Salomão,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Ibar, Elisua, Nefegue, Jafia,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Elisama, Eliada e Elifelete.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Quando os filisteus ficaram sabendo que Davi tinha sido ungido rei sobre Israel, todos eles foram à procura de Davi. Ao saber disso, Davi foi para o refúgio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Então os filisteus vieram e se espalharam pelo vale de Refaim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Davi consultou a Jeová: “Devo ir contra os filisteus? Tu os entregarás nas minhas mãos?” Jeová respondeu a Davi: “Vá, porque certamente entregarei os filisteus nas suas mãos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Portanto, Davi foi a Baal-Perazim e os golpeou ali. Por isso Davi disse: “Jeová rompeu as fileiras dos meus inimigos diante de mim, como águas que abrem uma brecha.” É por isso que chamou aquele lugar de Baal-Perazim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Os filisteus abandonaram ali os seus ídolos, e Davi e seus homens os levaram embora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Mais tarde, os filisteus vieram novamente e se espalharam pelo vale de Refaim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Davi consultou a Jeová, que disse: “Não os ataque pela frente. Dê a volta por trás deles e ataque-os em frente aos balsameiros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Quando você ouvir o som de marcha nas copas dos balsameiros, aja com determinação, pois Jeová terá ido à sua frente para golpear o exército dos filisteus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Portanto, Davi fez exatamente como Jeová lhe ordenou, e ele golpeou os filisteus desde Geba até Gezer.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Davi reuniu novamente todos os melhores soldados de Israel, 30.000.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Então Davi e todos os homens que estavam com ele foram a Baal-Judá para buscar a Arca do verdadeiro Deus, diante da qual se invoca o nome de Jeová dos exércitos, que está sentado em seu trono acima dos querubins.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "No entanto, eles colocaram a Arca do verdadeiro Deus numa carroça nova para levá-la da casa de Abinadabe, que ficava na colina. Uzá e Aiô, filhos de Abinadabe, conduziam a carroça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Assim, eles levaram a Arca do verdadeiro Deus da casa de Abinadabe, que ficava na colina. Aiô caminhava na frente da Arca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Davi e toda a casa de Israel festejavam perante Jeová com todo tipo de instrumentos de madeira de junípero, com harpas e outros instrumentos de cordas, com pandeiros, com chocalhos e com címbalos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas, quando chegaram à eira de Nacom, Uzá estendeu a mão e segurou a Arca do verdadeiro Deus, pois os bois quase a derrubaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Então a ira de Jeová se acendeu contra Uzá, e o verdadeiro Deus o executou ali mesmo pelo seu ato irreverente, e ele morreu ali, ao lado da Arca do verdadeiro Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Mas Davi ficou indignado porque a ira de Jeová tinha irrompido contra Uzá. E aquele lugar é chamado de Peres-Uzá até hoje.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Davi ficou com medo de Jeová naquele dia e disse: “Como poderei levar a Arca de Jeová para a minha cidade?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Davi não quis mais levar a Arca de Jeová para onde ele estava, na Cidade de Davi. Em vez disso, Davi ordenou que ela fosse levada à casa de Obede-Edom, o geteu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "A Arca de Jeová ficou na casa de Obede-Edom, o geteu, por três meses; e Jeová abençoava Obede-Edom e a todos os da sua casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Relatou-se ao rei Davi: “Jeová abençoou a casa de Obede-Edom e tudo o que pertence a ele por causa da Arca do verdadeiro Deus.” Então Davi foi com alegria à casa de Obede-Edom para buscar a Arca do verdadeiro Deus e levá-la para a Cidade de Davi.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Quando os que carregavam a Arca de Jeová tinham dado seis passos, ele sacrificou um touro e um bezerro gordo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Davi estava dançando diante de Jeová com todas as suas forças; e Davi usava um éfode de linho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Davi e toda a casa de Israel estavam levando a Arca de Jeová com gritos de alegria e ao som da buzina.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mas, quando a Arca de Jeová chegou à Cidade de Davi, Mical, filha de Saul, olhou pela janela e viu o rei Davi pulando e dançando diante de Jeová; e ela começou a desprezá-lo no coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Então levaram a Arca de Jeová para a tenda que Davi havia armado para ela e a colocaram no seu lugar. Depois, Davi fez ofertas queimadas e sacrifícios de participação em comum perante Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Quando Davi acabou de fazer as ofertas queimadas e os sacrifícios de participação em comum, abençoou o povo em nome de Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Além disso, ele distribuiu a todo o povo, a toda a multidão de Israel, a cada homem e a cada mulher, um pão em forma de anel, um bolo de tâmaras e um bolo de passas. Depois todo o povo partiu, cada um para a sua casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Quando Davi voltou para abençoar os da sua casa, Mical, filha de Saul, foi ao encontro dele. Ela disse: “Como o rei de Israel se fez glorioso hoje, despindo-se aos olhos das escravas dos seus servos, assim como faz um tolo!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Então Davi disse a Mical: “Eu estava festejando perante Jeová, que escolheu a mim em vez de a seu pai e todos os da sua casa, e me designou como líder do povo de Jeová, Israel. Por isso vou festejar perante Jeová,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "e me humilharei ainda mais e serei rebaixado até mesmo aos meus próprios olhos. Mas eu serei glorificado pelas escravas que você mencionou.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Assim, Mical, filha de Saul, não teve nenhum filho até o dia da sua morte.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 7,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quando o rei já morava na sua casa, e Jeová lhe tinha dado descanso de todos os seus inimigos ao redor,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "o rei disse a Natã, o profeta: “Veja, eu estou morando numa casa de cedros, enquanto a Arca do verdadeiro Deus está numa tenda.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Então Natã disse ao rei: “Faça tudo o que o seu coração desejar, porque Jeová está com o senhor.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Naquela mesma noite, Natã recebeu a seguinte palavra de Jeová:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "“Vá e diga ao meu servo Davi: ‘Assim diz Jeová: “Por que você deveria construir uma casa para eu morar?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Eu nunca morei numa casa desde o dia em que tirei o povo de Israel do Egito até hoje, mas tenho mudado de um lugar para outro, numa tenda e num tabernáculo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Durante todo o tempo em que andei com todos os israelitas, será que alguma vez perguntei a um dos líderes das tribos de Israel a quem designei para pastorear meu povo Israel: ‘Por que vocês não construíram uma casa de cedros para mim?’”’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Agora diga o seguinte ao meu servo Davi: ‘Assim diz Jeová dos exércitos: “Eu o tirei das pastagens, de detrás do rebanho, para que se tornasse líder do meu povo Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Estarei com você aonde quer que você for e vou eliminar todos os seus inimigos de diante de você. E farei um grande nome para você, igual ao nome dos grandes homens da terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Designarei um lugar ao meu povo Israel e os estabelecerei ali. Eles morarão nesse lugar e não serão mais perturbados; os maus não os oprimirão mais como fizeram no passado,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "desde o dia em que designei juízes sobre o meu povo Israel. Vou dar a você descanso de todos os seus inimigos. “‘“Além disso, Jeová lhe diz que Jeová edificará uma casa para você.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quando chegar o fim dos seus dias e você descansar com os seus antepassados, farei surgir o seu descendente, seu próprio filho, e estabelecerei firmemente o reino dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "É ele quem construirá uma casa para o meu nome, e eu estabelecerei firmemente o trono do seu reino para sempre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Eu me tornarei seu pai e ele se tornará meu filho. Quando ele fizer o que é errado, vou puni-lo com a vara dos homens e com os golpes dos filhos dos homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Não retirarei dele o meu amor leal, assim como retirei de Saul, a quem removi de diante de você.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Quanto a você, sua casa e seu reino estarão firmes diante de você para sempre; seu trono ficará firmemente estabelecido para sempre.”’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Natã transmitiu a Davi todas essas palavras e toda essa visão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Em vista disso, o rei Davi entrou e se sentou diante de Jeová, e disse: “Quem sou eu, ó Soberano Senhor Jeová? E o que é a minha casa, para que me tenhas feito chegar até aqui?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Como se isso não bastasse, ó Soberano Senhor Jeová, também me falas que a casa do teu servo permanecerá até um tempo distante no futuro; e isso é lei para toda a humanidade, ó Soberano Senhor Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "O que mais eu, o teu servo Davi, posso te dizer, visto que me conheces tão bem, ó Soberano Senhor Jeová?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Por causa da tua palavra e de acordo com o teu coração, fizeste todas essas grandes coisas e as revelaste ao teu servo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "É por isso que tu és realmente grande, ó Soberano Senhor Jeová. Não há ninguém igual a ti, e não há Deus além de ti — tudo o que já ouvimos confirma isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Que outra nação na terra é como o teu povo Israel? Deus os resgatou como o seu povo, fazendo um nome para si por realizar coisas grandes e atemorizantes por eles. Expulsaste as nações e os seus deuses em benefício do teu povo, que resgataste para ti do Egito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Estabeleceste teu povo Israel como teu próprio povo para sempre; e tu, ó Jeová, te tornaste seu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "“Agora, ó Jeová Deus, cumpre para sempre a promessa que fizeste a respeito do teu servo e da casa dele, e que tu faças assim como prometeste.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Que teu nome seja enaltecido para sempre, para que as pessoas digam: ‘Jeová dos exércitos é Deus sobre Israel’, e que a casa do teu servo Davi seja firmemente estabelecida diante de ti.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Pois tu, Jeová dos exércitos, Deus de Israel, fizeste uma revelação ao teu servo, dizendo: ‘Edificarei uma casa para você.’ Por isso é que o teu servo teve coragem de fazer esta oração a ti.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Ó Soberano Senhor Jeová, tu és o verdadeiro Deus e as tuas palavras são verdade, e tu prometeste essas coisas boas ao teu servo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Portanto, que seja do teu agrado abençoar a casa do teu servo e que ela permaneça para sempre diante de ti, pois tu prometeste isso, ó Soberano Senhor Jeová, e que a casa do teu servo seja abençoada para sempre com a tua bênção.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 8,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Algum tempo depois, Davi derrotou os filisteus e os subjugou; Davi tomou Metegue-Amá das mãos dos filisteus.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Ele derrotou os moabitas, fez com que se deitassem no chão e os mediu com uma corda: duas medidas de corda para a morte, e uma medida inteira de corda para a vida. Então os moabitas se tornaram servos de Davi e passaram a lhe pagar tributo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Davi derrotou Hadadezer, filho de Reobe, rei de Zobá, quando este estava indo restabelecer seu domínio sobre a região do rio Eufrates.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Davi capturou 1. 700 cavaleiros de Hadadezer e 20. 000 soldados a pé. Então Davi cortou os tendões de todos os cavalos dos carros de guerra, com exceção de 100 deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quando os sírios de Damasco vieram ajudar Hadadezer, rei de Zobá, Davi matou 22. 000 sírios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Então Davi manteve tropas na Síria de Damasco; e os sírios se tornaram servos de Davi e passaram a lhe pagar tributo. Jeová dava vitórias a Davi aonde quer que ele fosse.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Além disso, Davi pegou os escudos de ouro dos servos de Hadadezer e os trouxe a Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "O rei Davi pegou também uma grande quantidade de cobre de Betá e de Berotai, cidades de Hadadezer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Toi, rei de Hamate, ficou sabendo que Davi tinha derrotado todo o exército de Hadadezer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Portanto, Toi enviou Jorão, seu filho, ao rei Davi para cumprimentá-lo e parabenizá-lo por ele ter derrotado Hadadezer, pois Hadadezer sempre guerreava contra Toi. Jorão levou a Davi objetos de prata, de ouro e de cobre,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "os quais o rei Davi santificou para Jeová, junto com a prata e o ouro que tinha santificado, procedente de todas as nações que havia subjugado",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "— a Síria, Moabe, os amonitas, os filisteus e os amalequitas —, e junto com o despojo de Hadadezer, filho de Reobe, rei de Zobá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Além disso, Davi fez um nome para si quando voltou depois de ter matado 18. 000 edomitas no vale do Sal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Ele manteve tropas em Edom; em todo o Edom ele manteve tropas, e todos os edomitas se tornaram servos de Davi. Jeová dava vitórias a Davi aonde quer que ele fosse.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Davi reinava sobre todo o Israel, e Davi governava com justiça e retidão em benefício de todo o seu povo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Joabe, filho de Zeruia, era chefe do exército; e Jeosafá, filho de Ailude, era cronista.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Zadoque, filho de Aitube, e Aimeleque, filho de Abiatar, eram sacerdotes; e Seraías era secretário.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Benaia, filho de Jeoiada, comandava os queretitas e os peletitas. E os filhos de Davi se tornaram ministros principais.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 9,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então Davi disse: “Resta ainda alguém da casa de Saul, a quem eu possa demonstrar amor leal por causa de Jonatã?”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Havia um servo da casa de Saul chamado Ziba. De modo que o chamaram à presença de Davi, e o rei lhe perguntou: “Você é Ziba?” Ele respondeu: “Sou seu servo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "O rei perguntou: “Sobrou alguém da casa de Saul, a quem eu possa demonstrar o amor leal de Deus?” Ziba respondeu ao rei: “Resta ainda um filho de Jonatã; ele é aleijado dos dois pés.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "O rei lhe perguntou: “Onde ele está?” Ziba respondeu ao rei: “Está na casa de Maquir, filho de Amiel, em Lo-Debar.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Imediatamente o rei Davi mandou trazê-lo da casa de Maquir, filho de Amiel, em Lo-Debar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Quando se apresentou a Davi, Mefibosete, filho de Jonatã, filho de Saul, prostrou-se, lançando-se com o rosto por terra. Davi disse então: “Mefibosete!” Ele respondeu: “Aqui está o seu servo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Davi lhe disse: “Não tenha medo, pois certamente demonstrarei amor leal a você por causa de Jonatã, seu pai. Eu lhe devolverei todas as terras de Saul, seu avô, e você sempre comerá à minha mesa.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Nisto ele se prostrou e disse: “Quem é o seu servo para o senhor mostrar consideração por um cão morto como eu?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então o rei mandou chamar Ziba, ajudante de Saul, e lhe disse: “Estou dando ao neto do seu senhor tudo o que pertencia a Saul e à casa dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Você, seus filhos e seus servos cultivarão a terra para ele e também colherão o que ela produzir, para fornecer alimento para a família dele. Mas Mefibosete, neto do seu senhor, sempre comerá à minha mesa.” Ziba tinha 15 filhos e 20 servos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Então Ziba disse ao rei: “Seu servo fará tudo o que meu senhor, o rei, ordena.” Assim, Mefibosete comia à mesa de Davi, como um dos filhos do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Mefibosete também tinha um filho pequeno chamado Mica. Todos os que moravam na casa de Ziba se tornaram servos de Mefibosete.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "E Mefibosete morava em Jerusalém, pois sempre comia à mesa do rei. Ele era aleijado dos dois pés.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 10,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Depois disso, o rei dos amonitas morreu, e seu filho Hanum se tornou rei no seu lugar.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Então Davi disse: “Demonstrarei amor leal a Hanum, filho de Naás, assim como o pai dele demonstrou amor leal a mim.” Portanto, Davi enviou seus servos para consolá-lo pela morte do seu pai. Mas, quando os servos de Davi chegaram à terra dos amonitas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "os príncipes dos amonitas disseram a Hanum, seu senhor: “Acha que foi para honrar seu pai que Davi lhe enviou consoladores? Davi enviou seus servos para fazer o reconhecimento da cidade, espioná-la e destruí-la.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Então Hanum pegou os servos de Davi, raspou um lado da barba deles e cortou suas roupas pela metade, na altura das nádegas; depois os mandou embora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quando contaram isso a Davi, ele imediatamente enviou homens ao encontro dos seus servos, porque eles tinham sido muito humilhados. O rei lhes disse: “Fiquem em Jericó e voltem quando as suas barbas tiverem crescido.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Com o tempo, os amonitas perceberam que tinham despertado o ódio de Davi. Então os amonitas enviaram mensageiros para contratar 20. 000 soldados sírios de Bete-Reobe e de Zobá. Contrataram também o rei de Maacá, com 1. 000 homens, e 12. 000 homens de Istobe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Quando Davi ficou sabendo disso, enviou Joabe e todo o exército, incluindo os guerreiros mais valentes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "E os amonitas saíram e se puseram em formação de batalha à entrada do portão da cidade, ao passo que os sírios de Zobá e de Reobe, junto com Istobe e Maacá, se posicionaram à parte, em campo aberto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Quando Joabe viu que as forças de ataque vinham contra ele pela frente e pela retaguarda, escolheu alguns dos melhores soldados de Israel e os colocou em formação de batalha para enfrentar os sírios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Ele pôs o restante dos homens sob o comando do seu irmão Abisai, a fim de colocá-los em formação de batalha para enfrentar os amonitas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Então Joabe disse: “Se os sírios se tornarem fortes demais para mim, venha me ajudar; mas, se os amonitas se tornarem fortes demais para você, eu vou ajudá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Temos de ser fortes e lutar com coragem pelo nosso povo e pelas cidades do nosso Deus, e Jeová fará o que for bom aos Seus olhos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Então Joabe e os seus homens avançaram para lutar contra os sírios, e estes fugiram de diante dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Quando os amonitas viram que os sírios tinham fugido, eles fugiram de Abisai e entraram na cidade. Depois dessa batalha contra os amonitas, Joabe voltou a Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Quando os sírios viram que tinham sido derrotados por Israel, reagruparam-se.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então Hadadezer convocou os sírios que estavam na região do rio Eufrates, e eles vieram a Helão, comandados por Sobaque, o chefe do exército de Hadadezer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Ao ser informado disso, Davi reuniu imediatamente todo o Israel, atravessou o Jordão e chegou a Helão. Os sírios puseram-se então em formação de batalha para enfrentar Davi e lutaram contra ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Mas os sírios fugiram de Israel. Davi matou 700 condutores de carros de guerra e 40. 000 cavaleiros sírios, e feriu Sobaque, chefe do exército deles, que morreu ali mesmo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Quando todos os reis, servos de Hadadezer, viram que tinham sido derrotados por Israel, fizeram imediatamente paz com Israel e se tornaram seus súditos. E os sírios ficaram com medo de ajudar novamente os amonitas.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 11,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No começo do ano, época em que os reis saem em campanhas militares, Davi enviou Joabe junto com os seus servos e todo o exército de Israel para destruir os amonitas, e eles cercaram Rabá. Mas Davi ficou em Jerusalém.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Certo dia, ao anoitecer, Davi se levantou da cama e foi passear pelo terraço da casa do rei. Do terraço ele viu uma mulher tomando banho, e a mulher era muito bonita.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Davi mandou alguém procurar saber quem era a mulher. Disseram-lhe: “É Bate-Seba, filha de Elião, esposa de Urias, o hitita.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Então Davi enviou mensageiros para que a trouxessem. Então ela veio, e ele se deitou com ela. (Isso aconteceu quando ela estava se purificando da sua impureza.) Depois ela voltou para casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "A mulher ficou grávida e mandou dizer a Davi: “Estou grávida.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Em vista disso, Davi mandou a seguinte mensagem a Joabe: “Envie-me Urias, o hitita.” Então Joabe enviou Urias a Davi.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Quando Urias chegou, Davi perguntou como estava Joabe, como estavam os soldados e como estava indo a guerra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Davi disse então a Urias: “Vá para casa e descanse um pouco.” Assim que Urias saiu da casa do rei, foi-lhe enviado um presente de cortesia do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "No entanto, Urias não foi para casa, mas dormiu à entrada da casa do rei com todos os outros servos do seu senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então disseram a Davi: “Urias não foi para casa.” Em vista disso, Davi disse a Urias: “Você não acabou de chegar de viagem? Por que não foi para casa?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Urias disse a Davi: “A Arca e os homens de Israel e de Judá estão em abrigos temporários, e meu chefe Joabe e os servos do meu senhor estão acampados em campo aberto. Como eu poderia ir para casa, comer e beber, e me deitar com a minha esposa? Tão certo como o senhor vive, não farei isso!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Então Davi disse a Urias: “Fique aqui mais um dia, e amanhã o mandarei de volta.” Assim, Urias ficou em Jerusalém naquele dia e no dia seguinte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Davi o convidou então para vir comer e beber com ele, e o embriagou. Mas Urias saiu ao anoitecer para dormir na sua cama, junto com os servos do seu senhor, e não foi para casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "De manhã, Davi escreveu uma carta a Joabe e a enviou por meio de Urias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Ele escreveu na carta: “Coloquem Urias na linha de frente, onde o combate estiver mais violento. Então recuem e o deixem sozinho, para que ele seja ferido e morra.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Joabe já vinha observando a cidade atentamente, e colocou Urias onde ele sabia que estavam os guerreiros mais valentes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Quando os homens da cidade saíram e lutaram contra Joabe, alguns dos servos de Davi foram mortos. Urias, o hitita, estava entre os que morreram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Então Joabe informou a Davi tudo o que estava acontecendo na guerra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Ele disse ao mensageiro: “Quando você tiver acabado de dar ao rei todas as notícias da guerra,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "pode ser que o rei fique furioso e pergunte: ‘Por que vocês foram lutar tão perto da cidade? Não sabiam que eles atirariam do alto da muralha?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Quem matou Abimeleque, filho de Jerubesete? Não foi uma mulher que jogou sobre ele uma pedra de moinho do alto da muralha, matando-o em Tebes? Por que vocês chegaram tão perto da muralha?’ Então diga: ‘Seu servo Urias, o hitita, também morreu.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Assim, o mensageiro foi e contou a Davi tudo o que Joabe tinha ordenado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "O mensageiro disse a Davi: “Os inimigos foram mais fortes do que nós e saíram para lutar em campo aberto. Mas nós os fizemos recuar até a entrada do portão da cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Então os arqueiros atiraram contra os seus servos do alto da muralha, e alguns dos servos do rei morreram. Seu servo Urias, o hitita, também morreu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Davi disse então ao mensageiro: “Diga o seguinte a Joabe: ‘Não se preocupe com isso, pois a espada devora qualquer um. Intensifique o ataque contra a cidade e conquiste-a.’ Também encoraje-o.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Quando a esposa de Urias soube que seu marido tinha morrido, começou a chorar por ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Assim que terminou o período de luto, Davi mandou trazê-la para a sua casa; ela se tornou sua esposa e lhe deu um filho. Mas o que Davi tinha feito desagradou muito a Jeová.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 12,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então Jeová enviou Natã a Davi. Natã foi até ele e disse: “Havia dois homens que moravam na mesma cidade; um era rico e o outro era pobre.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O homem rico tinha uma grande quantidade de ovelhas e bois,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "mas o homem pobre tinha apenas uma cordeirinha que havia comprado. Ele cuidava dela, e ela cresceu junto com ele e seus filhos. Ela comia do pouco alimento que ele tinha, bebia do seu copo e dormia nos seus braços. Ela se tornou como uma filha para ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Certo dia, chegou um visitante ao homem rico, mas este não quis pegar nenhuma das suas ovelhas ou bois para preparar uma refeição para o viajante que tinha vindo até ele. Em vez disso, pegou a cordeira do homem pobre e a preparou para o visitante.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Nisto Davi ficou furioso com o homem e disse a Natã: “Tão certo como Jeová vive, o homem que fez isso merece morrer!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E ele deve pagar quatro vezes o valor da cordeira, porque fez isso e não teve compaixão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Então Natã disse a Davi: “O senhor é o homem! Assim diz Jeová, o Deus de Israel: ‘Eu mesmo o ungi rei sobre Israel e o livrei das mãos de Saul.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Eu estava disposto a dar a você a casa do seu senhor e a pôr as esposas dele nos seus braços, e dei a você a casa de Israel e de Judá. E, como se isso não bastasse, eu estava disposto a fazer muito mais por você.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Por que você desprezou a palavra de Jeová, fazendo o que é mau aos seus olhos? Você matou Urias, o hitita, com a espada! E, depois de tê-lo matado com a espada dos amonitas, você se casou com a esposa dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Portanto, a espada nunca se afastará da sua casa, porque você me desprezou, tomando a esposa de Urias, o hitita, como sua esposa.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Assim diz Jeová: ‘Trarei sobre você uma calamidade vinda da sua própria casa. Tomarei as suas esposas diante dos seus olhos e as darei a outro homem, e ele se deitará com elas em plena luz do dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Você agiu às escondidas, mas eu farei isso diante de todo o Israel e em plena luz do dia.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Davi disse então a Natã: “Pequei contra Jeová.” Natã disse a Davi em resposta: “Jeová perdoa o seu pecado; o senhor não morrerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas, visto que o senhor mostrou tanto desrespeito por Jeová nesse assunto, seu filho que acabou de nascer certamente morrerá.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Depois Natã foi para casa. E Jeová golpeou o filho que a esposa de Urias tinha dado a Davi, e ele ficou doente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Davi suplicou ao verdadeiro Deus a favor do menino e fez um jejum rigoroso. Davi entrava no seu quarto e passava a noite deitado no chão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Os anciãos da sua casa ficavam junto dele e tentavam fazê-lo se levantar do chão, mas ele se recusava e não queria comer com eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "No sétimo dia, o menino morreu. Mas os servos de Davi ficaram com medo de lhe contar que o menino tinha morrido. Eles disseram: “Enquanto o menino estava vivo nós falamos com o rei, mas ele não nos escutou. Então como podemos lhe contar que o menino morreu? Ele pode fazer algo terrível.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Quando Davi viu seus servos cochichando entre si, percebeu que o menino tinha morrido. Davi perguntou aos seus servos: “O menino morreu?” Eles responderam: “Morreu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Então Davi se levantou do chão, tomou banho, passou óleo no corpo e trocou de roupa. Em seguida foi à casa de Jeová e se prostrou. Depois voltou para casa, pediu que lhe trouxessem algo para comer, e comeu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Seus servos lhe perguntaram: “O que significa isso? Enquanto o menino estava vivo, o senhor jejuou e chorou; mas, assim que o menino morreu, o senhor se levantou e comeu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Ele respondeu: “Enquanto o menino estava vivo, eu jejuei e chorei, pois pensava: ‘Quem sabe Jeová me mostrará favor e deixará o menino viver?’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Mas agora que ele morreu, por que jejuar? Será que posso trazê-lo de volta? Eu vou me juntar a ele, mas ele não voltará a mim.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Então Davi consolou sua esposa Bate-Seba. Ele se deitou com ela, e eles tiveram relações. Com o tempo, ela lhe deu um filho, que recebeu o nome de Salomão. Jeová o amava,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "e, por meio de Natã, o profeta, disse que deviam chamá-lo de Jedidias, porque Jeová o amava.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Joabe continuou a lutar contra Rabá dos amonitas e tomou a cidade real.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Portanto, Joabe enviou mensageiros a Davi e disse: “Lutei contra Rabá e tomei a cidade das águas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Agora reúna o restante dos soldados, cerque a cidade e tome-a, para que não seja eu que a tome e receba o crédito por isso.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Portanto, Davi reuniu todos os soldados e foi a Rabá, lutou contra ela e a tomou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Então ele tirou a coroa da cabeça de Malcã. Ela pesava um talento de ouro, junto com as pedras preciosas, e foi colocada na cabeça de Davi. Ele também pegou uma grande quantidade de despojo da cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Ele capturou as pessoas que havia nela e as colocou para serrar pedras, trabalhar com ferramentas de ferro afiadas e com machados de ferro, e para fabricar tijolos. Ele fez isso com todas as cidades dos amonitas. Por fim, Davi e todos os soldados voltaram a Jerusalém.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 13,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Absalão, filho de Davi, tinha uma bela irmã chamada Tamar, e Amnom, filho de Davi, se apaixonou por ela.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Amnom estava tão aflito que ficou doente por causa de Tamar, sua irmã, pois ela era virgem e para Amnom parecia impossível lhe fazer alguma coisa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Amnom tinha um amigo chamado Jonadabe, filho de Simeia, irmão de Davi. Jonadabe era um homem muito inteligente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Portanto, Jonadabe lhe perguntou: “Por que você, filho do rei, está tão deprimido todo dia? Por que não me conta?” Amnom respondeu: “Estou apaixonado por Tamar, irmã do meu irmão Absalão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Jonadabe lhe disse: “Deite-se na sua cama e finja que está doente. Quando seu pai vier visitá-lo, diga-lhe: ‘Por favor, deixe que minha irmã Tamar venha e me dê algo para comer. Se ela preparar uma comida para doente diante de mim, eu comerei das mãos dela.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Assim, Amnom se deitou e fingiu que estava doente; e o rei foi visitá-lo. Amnom disse então ao rei: “Por favor, deixe que minha irmã Tamar venha e faça dois pães em forma de coração diante de mim, para que eu coma das mãos dela.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Então Davi mandou dizer a Tamar, na casa: “Por favor, vá à casa do seu irmão Amnom e prepare algo para ele comer.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim, Tamar foi à casa do seu irmão Amnom, onde ele estava deitado. Ela pegou a farinha, amassou-a, preparou os pães diante dele e os fritou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então ela pegou a panela e o serviu. Mas Amnom se recusou a comer e disse: “Façam com que todos saiam da minha presença!” E todos saíram da presença dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Amnom disse então a Tamar: “Traga o pão ao meu quarto, para que eu coma das suas mãos.” Assim, Tamar pegou os pães em forma de coração que tinha feito e os levou para o seu irmão Amnom, no quarto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Quando ela trouxe os pães para ele comer, ele a agarrou e disse: “Venha, deite-se comigo, minha irmã.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Mas ela lhe disse: “Não, meu irmão! Não me humilhe, pois não se faz uma coisa dessas em Israel. Não cometa esse ato vergonhoso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Como eu poderia me livrar da minha vergonha? E você será considerado um homem desprezível em Israel. Por favor, fale com o rei, porque ele não me negará a você.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas Amnom não quis escutá-la; ele a dominou à força e a humilhou, violentando-a.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Depois Amnom começou a odiá-la intensamente; seu ódio por ela se tornou maior do que o amor que tinha sentido. Ele lhe disse: “Levante-se; vá embora!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "E ela disse: “Não, meu irmão, pois me mandar embora agora é pior do que o que você fez comigo!” Mas ele não quis escutá-la.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Então ele chamou o jovem que o servia e disse: “Tire essa pessoa da minha presença e tranque a porta!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "(Tamar estava usando uma túnica especial, pois as filhas virgens do rei usavam esse tipo de roupa.) Portanto, o servo dele a levou para fora e trancou a porta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Então Tamar pôs cinzas sobre a cabeça e rasgou a túnica que estava usando; ela foi embora chorando alto, com as mãos na cabeça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Depois seu irmão Absalão lhe perguntou: “Foi o seu irmão Amnom que fez isso com você? Não diga nada a ninguém, minha irmã. Ele é seu irmão. Não se aflija por causa disso.” Então Tamar ficou morando na casa de seu irmão Absalão sem ter contato com outras pessoas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Quando o rei Davi soube de tudo isso, ficou furioso. Mas ele não queria ferir os sentimentos de Amnom, seu filho, porque o amava, visto que ele era seu primogênito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "E Absalão não disse nenhuma palavra a Amnom, nem boa nem má, pois ficou com ódio de Amnom por ele ter humilhado sua irmã Tamar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Dois anos depois, os tosquiadores de ovelhas de Absalão estavam em Baal-Hazor, perto de Efraim, e Absalão convidou todos os filhos do rei para ir até lá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Assim, Absalão compareceu perante o rei e disse: “Seu servo está tosquiando as ovelhas. Por favor, que o rei e os seus servos venham comigo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Mas o rei disse a Absalão: “Não, meu filho. Se todos nós formos, seremos um peso para você.” Embora Absalão insistisse, o rei não quis ir, mas o abençoou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Absalão disse então: “Se o senhor não quer ir, deixe meu irmão Amnom ir conosco.” O rei perguntou: “Por que ele deveria ir com você?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Mas Absalão insistiu; por isso, o rei mandou Amnom e todos os filhos do rei com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "E Absalão ordenou aos seus ajudantes: “Fiquem atentos, e, quando o coração de Amnom estiver alegre por causa do vinho, eu lhes direi: ‘Matem Amnom!’ Então vocês devem matá-lo. Não tenham medo; sou eu que estou mandando. Sejam fortes e corajosos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "E os ajudantes de Absalão fizeram a Amnom exatamente como Absalão tinha ordenado. Então os outros filhos do rei se levantaram, montaram em suas mulas e fugiram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Enquanto estavam a caminho, chegou a Davi a seguinte notícia: “Absalão matou todos os filhos do rei; nenhum deles sobreviveu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Em vista disso, o rei se levantou, rasgou as suas roupas e se lançou no chão. E todos os servos que estavam com ele também rasgaram as suas roupas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "No entanto, Jonadabe, filho de Simeia, irmão de Davi, disse: “Não pense meu senhor que todos os jovens, os filhos do rei, foram mortos, pois foi apenas Amnom que morreu. Isso aconteceu por ordem de Absalão, que tinha decidido fazer isso desde o dia em que Amnom humilhou a irmã dele, Tamar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Portanto, meu senhor, o rei, não dê atenção à informação de que todos os filhos do rei morreram; foi apenas Amnom que morreu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Nesse meio-tempo, Absalão fugiu. Mais tarde, o vigia da cidade viu que muitas pessoas vinham pela estrada atrás dele, perto da montanha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Então Jonadabe disse ao rei: “Veja! Os filhos do rei voltaram. Aconteceu exatamente o que o seu servo disse.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Assim que ele acabou de falar, os filhos do rei entraram, chorando alto. O rei e todos os seus servos também choraram muito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Absalão, porém, fugiu para junto de Talmai, filho de Amiúde e rei de Gesur. Davi chorou a morte do seu filho por muitos dias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Depois de Absalão fugir para Gesur, ele ficou ali por três anos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Por fim, o rei Davi desejou muito ir ver Absalão, pois já havia se conformado com a morte de Amnom.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 14,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Joabe, filho de Zeruia, ficou sabendo que o rei estava com saudades de Absalão.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Assim, Joabe mandou buscar uma mulher inteligente em Tecoa e lhe disse: “Por favor, finja que está de luto; vista-se com roupas de luto e não passe óleo no corpo. Aja como uma mulher que há muito tempo chora por um morto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Depois vá ao rei e fale o que eu vou lhe dizer.” Assim, Joabe pôs as palavras na sua boca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "A mulher de Tecoa compareceu perante o rei, prostrou-se, lançando-se com o rosto por terra, e disse: “Ajude-me, ó rei!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O rei lhe perguntou: “Qual é o problema?” Ela respondeu: “Sou viúva; meu marido morreu",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "e deixou a sua serva com dois filhos. Eles brigaram no campo e não havia ninguém que os apartasse. Um deles golpeou o outro e o matou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Agora toda a família ficou contra a sua serva, e estão dizendo: ‘Entregue-nos aquele que matou o seu irmão. Nós vamos matá-lo para que ele pague pela vida do seu irmão, a quem matou, mesmo que isso signifique eliminar o herdeiro!’ Eles querem apagar a última brasa que me restou, e querem deixar o meu marido sem nome e sem nenhum sobrevivente na face da terra.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "O rei disse então à mulher: “Vá para casa, e eu mandarei cuidar do seu caso.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então a mulher de Tecoa disse ao rei: “Ó meu senhor, o rei, que a culpa recaia sobre mim e sobre a casa de meu pai, e que o rei e seu trono sejam inocentes.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O rei respondeu: “Se alguém falar mais alguma coisa com você sobre isso, traga-o a mim, e ele nunca mais a incomodará.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Mas ela disse: “Por favor, ó rei, lembre-se de Jeová, seu Deus, para que o vingador do sangue não cause dano e mate meu filho.” Ele respondeu: “Tão certo como Jeová vive, nenhum fio de cabelo do seu filho cairá ao chão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "A mulher disse então: “Por favor, deixe que a sua serva fale mais uma coisa ao meu senhor, o rei.” Ele respondeu: “Fale!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "A mulher disse: “Por que então o senhor pensou em fazer a mesma coisa contra o povo de Deus? Falando assim, o rei está condenando a si mesmo, pois baniu o seu próprio filho e não o traz de volta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Certamente, todos nós morreremos e seremos como águas derramadas no chão, que não podem ser recuperadas. Mas Deus não tiraria uma vida; e ele procura motivos para que aquele que foi banido não permaneça afastado dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Vim aqui para dizer isso ao meu senhor, o rei, porque fiquei com medo do povo. Sua serva pensou: ‘Vou falar com o rei. Talvez o rei atenda ao pedido da sua escrava.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "O rei talvez me ouça e livre a sua escrava das mãos do homem que está tentando eliminar a mim e ao meu único filho da herança que Deus nos deu.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Sua serva também pensou: ‘Que a palavra do meu senhor, o rei, me tranquilize’, pois meu senhor, o rei, é como um anjo do verdadeiro Deus, capaz de discernir entre o bem e o mal. Que Jeová, seu Deus, esteja com o senhor.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Então o rei disse à mulher: “Não esconda nada do que eu lhe perguntar.” A mulher disse: “Por favor, fale, meu senhor, o rei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Então o rei perguntou: “Foi Joabe quem mandou você falar tudo isso?” A mulher respondeu: “Tão certo como o senhor vive, ó rei, é exatamente como o senhor diz, pois foi o seu servo Joabe que me instruiu e colocou todas essas palavras na boca da sua serva.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Seu servo Joabe fez isso para mudar a aparência das coisas, mas o meu senhor é sábio como um anjo do verdadeiro Deus, e sabe tudo o que está acontecendo no país.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Depois, o rei disse a Joabe: “Está bem, vou fazer isso. Vá e traga de volta o jovem Absalão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Nisto Joabe prostrou-se, lançando-se com o rosto por terra, e louvou o rei. Joabe disse: “Hoje o seu servo sabe que achou favor aos seus olhos, ó meu senhor, o rei, porque o rei atendeu ao pedido do seu servo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Então Joabe se levantou, foi a Gesur e trouxe Absalão a Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "No entanto, o rei disse: “Que ele volte para casa, mas não compareça à minha presença.” Portanto, Absalão voltou para casa e não compareceu perante o rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Em todo o Israel não havia homem que fosse tão elogiado por sua beleza quanto Absalão. Da cabeça aos pés, ele era sem defeito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Quando cortava o cabelo (ele tinha de fazer isso no final de cada ano, porque ficava muito pesado), este pesava 200 siclos, segundo o peso real de pedra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Absalão teve três filhos e uma filha. Ela se chamava Tamar e era uma mulher muito bonita.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "E Absalão ficou morando em Jerusalém por dois anos inteiros, mas não compareceu perante o rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Portanto, Absalão mandou chamar Joabe, a fim de enviá-lo ao rei, mas ele não quis vir. Então mandou chamá-lo novamente, pela segunda vez, mas ainda assim ele não quis vir.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Por fim, Absalão disse aos seus servos: “O terreno de Joabe fica ao lado do meu, e ele tem ali uma plantação de cevada. Vão e ponham fogo nela.” Assim, os servos de Absalão puseram fogo na plantação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Em vista disso, Joabe foi à casa de Absalão e lhe perguntou: “Por que os seus servos puseram fogo na minha plantação?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Absalão respondeu a Joabe: “Eu enviei a você esta mensagem: ‘Venha e deixe-me enviá-lo ao rei para perguntar: “Por que voltei de Gesur? Seria melhor eu ter ficado lá. Agora deixe-me ver o rei, e, se sou culpado de alguma coisa, que ele me mate.”’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Assim, Joabe foi até o rei e lhe contou isso. Então o rei chamou Absalão, que se apresentou ao rei e se prostrou, lançando-se com o rosto por terra diante do rei. E o rei beijou Absalão.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 15,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Depois disso, Absalão providenciou um carro com cavalos, e 50 homens para correr na sua frente.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Absalão se levantava cedo e ficava ao lado da estrada que dá para o portão da cidade. Sempre que alguém tinha uma causa para apresentar ao rei para julgamento, Absalão o chamava e perguntava: “De que cidade você é?” Ele respondia: “Seu servo é de uma das tribos de Israel.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Absalão lhe dizia: “Olhe, sua solicitação é justa e legítima, mas não há ninguém da parte do rei para ouvir a sua causa.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Absalão dizia: “Quem me dera ser designado juiz no país! Então todo aquele que tivesse uma causa ou uma questão judicial poderia vir a mim, e eu cuidaria que ele obtivesse justiça.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "E, quando alguém se aproximava para se curvar diante dele, Absalão estendia a mão, segurava-o e beijava-o.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Absalão fazia isso com todos os israelitas que vinham até o rei para pedir justiça; assim Absalão conquistava a lealdade dos homens de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Ao fim de quatro anos, Absalão disse ao rei: “Por favor, deixe-me ir a Hebrom cumprir o voto que fiz a Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pois seu servo fez o seguinte voto solene quando morava em Gesur, na Síria: ‘Se Jeová me levar de volta a Jerusalém, eu apresentarei uma oferta a Jeová.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "O rei lhe disse então: “Vá em paz.” Assim, ele saiu e foi a Hebrom.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então Absalão enviou espiões a todas as tribos de Israel para dizer: “Assim que vocês ouvirem o som da buzina, anunciem: ‘Absalão se tornou rei em Hebrom!’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E 200 homens de Jerusalém haviam ido para lá com Absalão. Eles tinham sido convidados e foram sem suspeitar de nada, sem saber o que estava acontecendo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Além disso, quando ofereceu os sacrifícios, Absalão mandou buscar Aitofel, o gilonita, conselheiro de Davi, da sua cidade, Gilo. A conspiração foi ganhando força, e o número dos que apoiavam Absalão continuou aumentando.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Então alguém informou Davi: “Os homens de Israel passaram para o lado de Absalão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Imediatamente Davi disse a todos os seus servos que estavam com ele em Jerusalém: “Vamos fugir, pois nenhum de nós escapará de Absalão! Apressem-se, senão ele logo nos alcançará e nos trará calamidade, golpeando a cidade com a espada!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Os servos do rei disseram: “O que for que o senhor decidir, ó rei, seus servos estão dispostos a fazer.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Portanto, o rei saiu acompanhado de todos os da sua casa, mas deixou dez concubinas para tomarem conta da casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "O rei partiu com todo o povo atrás dele, e pararam em Bete-Meraque.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Todos os servos que partiram com ele e todos os queretitas, os peletitas e os geteus, 600 homens que o tinham seguido desde Gate, iam passando enquanto o rei os inspecionava.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "O rei disse então a Itai, o geteu: “Por que você também está indo conosco? Volte e fique com o novo rei, pois você é estrangeiro, um exilado da sua terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Você chegou ontem. Será que hoje eu deveria fazê-lo vaguear conosco, indo quando eu tiver de ir e para onde eu tiver de ir? Volte e leve seus irmãos com você, e que Jeová lhe demonstre amor leal e fidelidade!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Mas Itai disse ao rei: “Tão certo como Jeová vive, e tão certo como o meu senhor, o rei, vive, não importa onde o senhor estiver, ali estará o seu servo, quer para morrer quer para viver!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Em vista disso, Davi disse a Itai: “Então vá, atravesse.” Assim, Itai, o geteu, atravessou o vale com todos os homens e as crianças que estavam com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Todos os que moravam na região choravam alto, enquanto todo esse povo fazia a travessia; e o rei estava parado junto ao vale do Cédron. Todo o povo atravessava em direção à estrada que dá para o deserto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Zadoque também estava ali com todos os levitas, levando a Arca do Pacto do verdadeiro Deus, e eles colocaram a Arca do verdadeiro Deus no chão. E Abiatar chegou enquanto todo o povo saía da cidade e atravessava o vale.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Mas o rei disse a Zadoque: “Leve a Arca do verdadeiro Deus de volta à cidade. Se eu achar favor aos olhos de Jeová, ele me trará de volta e me deixará ver a Arca e o lugar onde ela fica.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Mas, se ele disser: ‘Não me agrado mais de você’, então que ele faça comigo o que for bom aos seus olhos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "O rei disse a Zadoque, o sacerdote: “Você não é vidente? Volte em paz à cidade. Levem com vocês seus filhos: Aimaás, seu filho, e Jonatã, filho de Abiatar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Ficarei esperando nos pontos de travessia junto ao deserto, até que vocês me mandem informações.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Portanto, Zadoque e Abiatar levaram a Arca do verdadeiro Deus de volta a Jerusalém e permaneceram ali.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "E Davi subia o monte das Oliveiras, chorando enquanto caminhava; ele estava descalço e com a cabeça coberta. Todos os que estavam com ele também cobriram a cabeça e subiam o monte chorando.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Disseram então a Davi: “Aitofel está entre os que conspiram com Absalão.” Davi disse: “Por favor, ó Jeová, transforma em tolice o conselho de Aitofel!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Quando Davi chegou ao cume do monte, onde o povo costumava adorar a Deus, Husai, o arquita, estava ali esperando por ele, com sua veste comprida rasgada e com terra na cabeça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "No entanto, Davi lhe disse: “Se você for comigo, será um peso para mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Mas, se você voltar à cidade e disser a Absalão: ‘Sou seu servo, ó rei. Fui servo do seu pai no passado, mas agora sou seu servo’, então você poderá frustrar para mim o conselho de Aitofel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Os sacerdotes Zadoque e Abiatar estarão lá com você. Conte a Zadoque e a Abiatar tudo o que você ouvir na casa do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Eles e seus dois filhos, Aimaás, filho de Zadoque, e Jonatã, filho de Abiatar, estão lá. Por meio deles, mandem-me informações sobre tudo o que vocês ouvirem.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Assim Husai, amigo de Davi, chegou a Jerusalém quando Absalão estava entrando na cidade.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 16,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quando Davi tinha passado um pouco além do cume do monte, Ziba, ajudante de Mefibosete, o esperava ali, com dois jumentos selados, carregados com duzentos pães, cem tortas de passas, cem tortas de frutas de verão e um jarro grande de vinho.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O rei perguntou a Ziba: “Por que você trouxe essas coisas?” Ziba respondeu: “Os jumentos são para os da casa do rei montarem, o pão e as frutas de verão são para os homens comerem, e o vinho é para os que ficarem exaustos no deserto.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "O rei perguntou: “E onde está o filho do seu senhor?” Ziba disse então ao rei: “Ele ficou em Jerusalém, pois disse: ‘É hoje que a casa de Israel me dará de volta o reino de meu pai.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "O rei disse então a Ziba: “Tudo o que pertence a Mefibosete agora é seu.” Ziba disse: “Eu me curvo diante do senhor. Que eu ache favor aos seus olhos, meu senhor, o rei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quando o rei Davi chegou a Baurim, um homem da família da casa de Saul, chamado Simei, filho de Gera, veio em sua direção, amaldiçoando-o.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ele atirava pedras no rei Davi e em todos os servos do rei Davi, bem como em todo o povo e nos homens valentes que estavam à direita e à esquerda do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Simei dizia o seguinte ao amaldiçoá-lo: “Fora, fora daqui, homem culpado de sangue! Homem imprestável!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Jeová está fazendo recair sobre você toda a culpa de sangue pela casa de Saul, no lugar de quem você reinou, e Jeová está entregando o reino nas mãos de Absalão, seu filho. Agora veio sobre você a calamidade, porque você é um homem culpado de sangue!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então Abisai, filho de Zeruia, disse ao rei: “Por que permitir que esse cão morto amaldiçoe o meu senhor, o rei? Deixe-me ir lá e decepar a cabeça dele.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Mas o rei disse: “O que eu tenho a ver com vocês, filhos de Zeruia? Deixe que ele me amaldiçoe, pois Jeová lhe disse: ‘Amaldiçoe Davi!’ Portanto, quem lhe dirá: ‘Por que você está fazendo isso?’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Davi disse então a Abisai e a todos os seus servos: “Se o meu próprio filho, sangue do meu sangue, está procurando tirar a minha vida, quanto mais um benjaminita! Deixem que ele me amaldiçoe, pois Jeová lhe disse para fazer isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Talvez Jeová veja minha aflição e Jeová me dê bênçãos em vez das maldições que hoje são invocadas sobre mim.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Assim, Davi e seus homens continuaram andando pela estrada, enquanto Simei mantinha o passo com ele ao lado do monte, amaldiçoando, atirando pedras e jogando muita poeira.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Por fim, o rei e todos os que estavam com ele chegaram exaustos ao seu destino, e ali descansaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Nesse meio-tempo, Absalão e todos os homens de Israel chegaram a Jerusalém, e Aitofel estava com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Quando Husai, o arquita, amigo de Davi, compareceu diante de Absalão, Husai disse a Absalão: “Viva o rei! Viva o rei!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Em vista disso, Absalão perguntou a Husai: “É assim que você demonstra amor leal ao seu amigo? Por que você não foi com o seu amigo?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Husai disse então a Absalão: “Eu não faria isso; eu estou do lado daquele que foi escolhido por Jeová, por este povo e por todos os homens de Israel, e é com ele que ficarei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "E digo mais: A quem devo servir? Não é ao filho? Assim como servi seu pai, também servirei o senhor.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Absalão perguntou então a Aitofel: “Dê-me um conselho. O que devemos fazer?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Aitofel disse então a Absalão: “Tenha relações com as concubinas do seu pai, aquelas que ele deixou para tomar conta da casa. Quando todo o Israel souber que o seu pai passou a odiar você, os que apoiam você se fortalecerão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Assim, armaram para Absalão uma tenda no terraço, e Absalão teve relações com as concubinas do seu pai diante dos olhos de todo o Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Naqueles dias, o conselho que Aitofel dava era considerado como a palavra do verdadeiro Deus. Era assim que tanto Davi como Absalão consideravam todos os conselhos de Aitofel.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 17,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Aitofel disse então a Absalão: “Por favor, deixe-me escolher 12. 000 homens e ir hoje à noite atrás de Davi.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Eu o atacarei quando ele estiver cansado e sem forças, e vou fazer com que ele entre em pânico. Todos os que estão com ele fugirão, e eu matarei somente o rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Então trarei todo o povo de volta a você. A volta de todo o povo vai depender do que acontecer com o homem a quem você procura. E todo o povo ficará em paz.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "A proposta era boa aos olhos de Absalão e de todos os anciãos de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "No entanto, Absalão disse: “Chamem também Husai, o arquita, e ouçamos o que ele tem a dizer.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Portanto, Husai compareceu perante Absalão. E Absalão lhe disse: “Esse foi o conselho de Aitofel. Devemos seguir o conselho dele? Se não, diga você o que devemos fazer.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Então Husai disse a Absalão: “Desta vez, o conselho que Aitofel deu não é bom.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Husai disse mais: “Você sabe muito bem que seu pai e os homens dele são valentes e que estão desesperados, como uma ursa que perdeu os filhotes no campo. Além disso, seu pai é um guerreiro e não passará a noite com o povo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Neste exato momento ele deve estar escondido numa caverna ou em algum outro lugar. Se ele atacar primeiro, quem ficar sabendo disso dirá: ‘Os apoiadores de Absalão foram derrotados!’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "E até mesmo o homem corajoso, que tem um coração de leão, ficará fraco de tanto medo, porque todo o Israel sabe que seu pai é um guerreiro valente, e que os homens que estão com ele são corajosos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Meu conselho é o seguinte: reúna todos os homens de Israel junto a você, desde Dã até Berseba, tantos como os grãos de areia à beira do mar; e você deve comandá-los na batalha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Nós o atacaremos onde quer que ele estiver. Cairemos sobre ele assim como o orvalho cai sobre a terra, e nenhum deles sobreviverá, nem ele nem os seus homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Se ele se esconder numa cidade, todo o Israel levará cordas até aquela cidade, e nós a arrastaremos para o vale até não sobrar nem mesmo uma pequena pedra.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Então Absalão e todos os homens de Israel disseram: “O conselho de Husai, o arquita, é melhor do que o conselho de Aitofel!” Pois Jeová tinha decidido frustrar o bom conselho de Aitofel. Jeová fez isso para trazer calamidade sobre Absalão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Mais tarde, Husai disse aos sacerdotes Zadoque e Abiatar: “Foi assim que Aitofel aconselhou Absalão e os anciãos de Israel, e foi assim que eu aconselhei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Agora mandem depressa o seguinte aviso a Davi: ‘Não passe a noite nos pontos de travessia junto ao deserto, mas sem falta atravesse o rio, senão o rei e todo o seu povo poderão ser exterminados.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Jonatã e Aimaás estavam esperando em En-Rogel; uma serva levou o recado para eles, e eles foram contar ao rei Davi, pois não quiseram arriscar ser vistos entrando na cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Mas um jovem os viu e contou a Absalão. Então eles partiram depressa e chegaram à casa de um homem em Baurim que tinha um poço no pátio da sua casa. Eles se esconderam dentro dele,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "e a esposa do homem colocou uma cobertura sobre a boca do poço e pôs sobre ela grãos triturados; ninguém ficou sabendo disso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Os servos de Absalão foram à casa da mulher e lhe perguntaram: “Onde estão Aimaás e Jonatã?” A mulher respondeu: “Eles foram em direção às águas.” Então os homens os procuraram, mas não os acharam. Assim, voltaram a Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Depois que os homens foram embora, os dois saíram do poço e foram informar o rei Davi. Eles lhe disseram: “Vão! Atravessem depressa o rio, pois foi assim e assim o conselho de Aitofel contra vocês.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Imediatamente, Davi e todo o povo que estava com ele começaram a atravessar o Jordão. Ao amanhecer, não havia ninguém que não tivesse atravessado o Jordão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Quando Aitofel viu que seu conselho não tinha sido seguido, selou um jumento e foi para casa, em sua cidade. Depois deu instruções aos da sua casa e se enforcou. Assim ele morreu e foi enterrado na sepultura dos seus antepassados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Nesse meio-tempo, Davi foi a Maanaim, e Absalão atravessou o Jordão com todos os homens de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Absalão colocou Amasa no lugar de Joabe para comandar o exército. Amasa era filho de um homem chamado Itra, o israelita, que teve relações com Abigail; ela era filha de Naás e irmã de Zeruia, mãe de Joabe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Absalão e os homens de Israel se acamparam na terra de Gileade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Assim que Davi chegou a Maanaim, Sobi, filho de Naás, de Rabá dos amonitas, e Maquir, filho de Amiel, de Lo-Debar, e Barzilai, o gileadita de Rogelim,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "trouxeram camas, bacias, panelas de barro, trigo, cevada, farinha, grãos torrados, favas, lentilha e sementes tostadas;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "também mel, manteiga, ovelhas e queijo. Trouxeram tudo isso para que Davi e o povo que estava com ele comessem, pois disseram: “O povo está faminto, com sede e cansado no deserto.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 18,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então Davi contou os seus homens e designou sobre eles chefes de mil e chefes de cem.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E Davi colocou um terço dos homens sob o comando de Joabe, um terço sob o comando de Abisai, filho de Zeruia, irmão de Joabe, e um terço sob o comando de Itai, o geteu. O rei disse então aos homens: “Eu também irei com vocês.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mas eles disseram: “O senhor não deve ir, pois, se fugirmos, eles não se importarão; e, se metade de nós morrer, eles também não se importarão, porque o senhor vale 10. 000 de nós. Portanto, seria melhor o senhor ficar aqui na cidade e nos enviar ajuda.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "O rei lhes disse: “Farei o que vocês acharem melhor.” Assim, o rei ficou junto ao portão da cidade enquanto os homens saíam em grupos de cem e de mil.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "E o rei deu a seguinte ordem a Joabe, a Abisai e a Itai: “Tratem bem o jovem Absalão, por minha causa.” Todos os homens ouviram quando o rei deu essa ordem a respeito de Absalão a todos os chefes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Os homens saíram ao campo para enfrentar Israel, e a batalha foi travada na floresta de Efraim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Os homens de Israel foram derrotados ali pelos homens de Davi, e naquele dia houve uma grande matança: 20. 000 homens foram mortos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "A batalha se espalhou por toda a região e, naquele dia, a floresta devorou mais homens do que a espada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Por fim, Absalão, que estava montado numa mula, se deparou com os homens de Davi. A mula passou por baixo dos galhos de uma árvore grande, e a cabeça de Absalão ficou presa nos galhos da árvore, de modo que ele ficou pendurado, ao passo que a mula que ele montava seguiu adiante.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então alguém viu o que aconteceu e contou a Joabe: “Vi Absalão pendurado numa árvore grande.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Joabe disse ao homem: “Se você o viu, por que não o matou ali mesmo? Nesse caso, eu lhe daria com prazer dez peças de prata e um cinto.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Mas o homem disse a Joabe: “Mesmo que me dessem 1. 000 peças de prata, eu não levantaria a mão contra o filho do rei, pois ouvimos a ordem do rei ao senhor, a Abisai e a Itai: ‘Cuidem para que ninguém faça mal ao jovem Absalão.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Se eu tivesse desobedecido e tirado a vida dele, isso nunca ficaria escondido do rei, e o senhor não me protegeria.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Joabe disse: “Não vou perder mais tempo com você!” Assim, ele pegou três dardos e traspassou o coração de Absalão enquanto ele ainda estava vivo entre os galhos da árvore.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Então dez ajudantes que carregavam as armas de Joabe vieram e golpearam Absalão até matá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "A seguir, Joabe tocou a buzina e os homens pararam de perseguir Israel; assim Joabe os deteve.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Eles jogaram Absalão num grande buraco na floresta, e amontoaram sobre ele uma pilha de pedras. E todos os homens de Israel fugiram para casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Enquanto estava vivo, Absalão tinha erguido uma coluna para si mesmo no vale do Rei, pois disse: “Não tenho filho para manter a lembrança do meu nome.” De modo que deu à coluna o seu próprio nome, e ela é chamada de Monumento de Absalão até hoje.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Aimaás, filho de Zadoque, disse: “Por favor, deixe-me ir correndo dar a notícia ao rei, porque Jeová lhe fez justiça, livrando-o dos seus inimigos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Mas Joabe lhe disse: “Você não vai levar a notícia hoje. Você poderá fazer isso outro dia, mas hoje não, porque o filho do rei morreu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Joabe disse então a um cuchita: “Vá, conte ao rei o que você viu.” Então o cuchita se curvou diante de Joabe e saiu correndo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Aimaás, filho de Zadoque, pediu mais uma vez a Joabe: “Por favor, não importa o que aconteça, deixe-me ir também atrás do cuchita.” Mas Joabe disse: “Por que você deveria ir, meu filho, se não há mais nenhuma notícia para você levar?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "No entanto, Aimaás insistiu: “Não importa o que aconteça, deixe-me ir.” Assim, Joabe lhe disse: “Vá!” E Aimaás saiu correndo pelo caminho do distrito do Jordão, e por fim ultrapassou o cuchita.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Davi estava sentado entre os dois portões da cidade, e o vigia subiu ao terraço que havia sobre o portão, junto à muralha. O vigia levantou os olhos e viu um homem correndo sozinho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Portanto, ele gritou, avisando o rei. O rei disse: “Se ele está sozinho, ele traz alguma notícia.” À medida que o homem se aproximava,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "o vigia viu outro homem correndo. Assim, ele gritou ao porteiro: “Veja! Outro homem vem correndo sozinho!” O rei disse: “Este também traz alguma notícia.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "O vigia disse: “Pelo jeito de correr, o primeiro é Aimaás, filho de Zadoque.” E o rei disse: “Ele é um homem bom e traz boas notícias.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Aimaás gritou então para o rei: “Está tudo bem!” Então ele se curvou diante do rei com o rosto por terra e disse: “Louvado seja Jeová, seu Deus, que entregou os homens que se rebelaram contra o meu senhor, o rei!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "No entanto, o rei perguntou: “Está tudo bem com o jovem Absalão?” Aimaás respondeu: “Vi uma grande comoção quando Joabe enviou o servo do rei e também a mim, mas não sei o que era.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "De modo que o rei disse: “Fique aqui do lado e espere.” Assim, ele ficou do lado esperando.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Então o cuchita chegou, e o cuchita disse: “Trago a seguinte notícia ao meu senhor, o rei: Hoje Jeová lhe fez justiça, livrando-o das mãos de todos os que se rebelaram contra o senhor.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Mas o rei perguntou ao cuchita: “Está tudo bem com o jovem Absalão?” O cuchita respondeu: “Que todos os inimigos do meu senhor, o rei, e todos os que se rebelaram contra o senhor para prejudicá-lo acabem como o jovem!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "O rei ficou abalado e subiu ao quarto de terraço, que ficava em cima do portão. Ele chorava enquanto caminhava, dizendo: “Meu filho Absalão, meu filho, meu filho Absalão! Quem me dera ter morrido em seu lugar, Absalão, meu filho, meu filho!”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 19,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Joabe foi informado: “O rei está chorando e lamentando por causa de Absalão.”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "De modo que a vitória naquele dia se transformou em luto para todo o povo, porque ficaram sabendo que o rei estava aflito por causa do seu filho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Naquele dia, os soldados voltaram em silêncio para a cidade, assim como um exército que está envergonhado por ter fugido da batalha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "O rei tinha coberto o rosto e continuava a clamar em voz bem alta: “Meu filho Absalão! Absalão, meu filho, meu filho!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Então Joabe entrou na casa onde o rei estava e lhe disse: “O senhor está envergonhando todos os seus homens, que hoje salvaram a sua vida, a vida dos seus filhos e das suas filhas, das suas esposas e das suas concubinas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "O senhor ama os que o odeiam e odeia os que o amam, pois hoje o senhor deixou claro que os chefes e os servos que lhe pertencem não significam nada para o senhor. Pois tenho certeza de que, se hoje só Absalão estivesse vivo e todos nós estivéssemos mortos, tudo estaria bem para o senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Agora levante-se, saia e encoraje seus servos, porque juro por Jeová que, se não fizer isso, ninguém ficará esta noite com o senhor. Isso será pior do que todo o mal que aconteceu com o senhor desde a sua juventude até agora.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim, o rei foi e se sentou no portão da cidade, e todo o povo foi informado: “O rei está sentado no portão.” Então todo o povo compareceu perante o rei. Mas os homens de Israel tinham fugido, cada um para sua casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Em todas as tribos de Israel todo o povo discutia entre si e comentava: “O rei nos salvou dos nossos inimigos e nos livrou dos filisteus, mas fugiu do país por causa de Absalão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "E Absalão, a quem ungimos rei sobre nós, morreu na batalha. Então por que não fazem nada para trazer o rei de volta?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "O rei Davi mandou a seguinte mensagem aos sacerdotes Zadoque e Abiatar: “Digam aos anciãos de Judá: ‘Por que vocês seriam os últimos a providenciar a volta do rei para casa, quando os comentários de todo o Israel chegaram até onde o rei está morando?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Vocês são meus irmãos, somos do mesmo sangue. Por que vocês seriam os últimos a providenciar a volta do rei?’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "E vocês devem dizer a Amasa: ‘Não somos do mesmo sangue? Que Deus me castigue, e que o faça severamente, se de agora em diante você não se tornar o chefe do meu exército no lugar de Joabe.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Assim o rei Davi ganhou o coração de todos os homens de Judá, sem exceção, e eles mandaram dizer a ele: “Volte, junto com todos os seus servos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O rei voltou e chegou ao Jordão, e os homens de Judá chegaram a Gilgal para se encontrar com o rei, a fim de acompanhá-lo na travessia do Jordão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então Simei, filho de Gera, benjaminita de Baurim, foi depressa com os homens de Judá ao encontro do rei Davi,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "e com ele estavam 1. 000 homens de Benjamim. Ziba, ajudante da casa de Saul, com seus 15 filhos e 20 servos, também foi depressa ao Jordão antes do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Ele atravessou o rio no seu ponto de travessia para trazer os da casa do rei e fazer tudo o que o rei quisesse. Mas, quando o rei estava prestes a atravessar o Jordão, Simei, filho de Gera, prostrou-se diante dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Ele disse ao rei: “Que o senhor não me considere culpado e não se lembre do mal que seu servo lhe fez no dia em que o meu senhor, o rei, saiu de Jerusalém. Que o rei não leve isso em conta,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "pois o seu servo reconhece que pecou. Por isso hoje sou o primeiro de toda a casa de José a vir ao encontro do meu senhor, o rei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Imediatamente Abisai, filho de Zeruia, disse: “Não deveria Simei ser morto por ter amaldiçoado o ungido de Jeová?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Mas Davi disse: “O que vocês têm a ver com isso, filhos de Zeruia? Por que agem contra mim? Deve hoje alguém ser morto em Israel? Por acaso não sei que hoje voltei a ser o rei de Israel?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Então o rei disse a Simei: “Você não morrerá.” E o rei confirmou isso com um juramento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Mefibosete, neto de Saul, também foi ao encontro do rei. Ele não tinha cuidado dos pés, nem aparado o bigode, nem lavado as suas roupas, desde o dia em que o rei tinha ido embora até o dia em que voltou em paz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Quando ele chegou a Jerusalém para se encontrar com o rei, o rei lhe perguntou: “Por que você não foi comigo, Mefibosete?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Ele respondeu: “Meu servo me enganou, meu senhor, o rei. Visto que sou aleijado, eu disse a ele: ‘Vou mandar selar minha jumenta para eu montar nela e ir com o rei.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Mas ele caluniou o seu servo diante do meu senhor, o rei. No entanto, meu senhor, o rei, é como um anjo do verdadeiro Deus. Assim, faça o que o senhor achar melhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Todos os da casa do meu pai poderiam ter sido mortos pelo meu senhor, o rei. Apesar disso, o senhor pôs o seu servo entre os que comem à sua mesa. Portanto, que direito tenho eu de pedir mais alguma coisa ao rei?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Mas o rei lhe disse: “Não fale mais nada. A minha decisão é que você e Ziba devem dividir o campo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Então Mefibosete disse ao rei: “Que ele fique com tudo, já que o meu senhor, o rei, voltou em paz para casa.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Barzilai, o gileadita, veio de Rogelim para o Jordão a fim de acompanhar o rei até o Jordão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Barzilai era muito idoso; tinha 80 anos de idade. Foi ele quem forneceu alimento ao rei enquanto este ficou em Maanaim, pois era um homem muito rico.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "O rei disse a Barzilai: “Venha comigo e eu lhe darei alimento em Jerusalém.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Mas Barzilai disse ao rei: “Quantos anos de vida ainda me restam, para que eu vá com o rei a Jerusalém?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Já tenho 80 anos de idade. Será que consigo distinguir o que é bom do que é mau? Pode o seu servo sentir o gosto do que come e do que bebe, ou ainda escutar a voz de cantores e cantoras? Portanto, por que devia o seu servo ser mais um peso para o meu senhor, o rei?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Seu servo já está satisfeito de acompanhar o rei até o Jordão. Por que o rei devia me recompensar dessa maneira?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Por favor, deixe o seu servo voltar, e deixe-me morrer na minha cidade, perto da sepultura do meu pai e da minha mãe. Mas aqui está o seu servo Quimã. Que ele vá com o meu senhor, o rei. Faça por ele o que o senhor achar melhor.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Então o rei disse: “Quimã irá comigo, e eu farei por ele o que você achar melhor. Farei por você qualquer coisa que me pedir.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Todo o povo começou então a atravessar o Jordão, e, quando o rei estava para atravessar, o rei beijou Barzilai e o abençoou; e Barzilai voltou para casa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Quando o rei atravessou e foi a Gilgal, Quimã foi com ele. Todos os homens de Judá e metade dos homens de Israel atravessaram com o rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Então todos os homens de Israel se dirigiram ao rei e perguntaram: “Por que os nossos irmãos, os homens de Judá, foram buscar o senhor às escondidas, e fizeram o rei e os da sua casa, bem como todos os homens de Davi, atravessar o Jordão?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Todos os homens de Judá responderam aos homens de Israel: “Fizemos isso porque o rei é nosso parente. Por que vocês estão irritados com isso? Será que comemos algo às custas do rei ou ganhamos dele algum presente?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "No entanto, os homens de Israel responderam aos homens de Judá: “Nós temos dez partes no que se refere ao rei. Portanto, temos mais direitos em relação a Davi do que vocês. Então, por que vocês nos desprezaram? Não devíamos ter sido os primeiros a trazer o nosso rei de volta?” Mas as palavras dos homens de Judá prevaleceram sobre as palavras dos homens de Israel.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 20,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Havia ali um agitador chamado Seba, filho de Bicri, um benjaminita. Ele tocou a buzina e disse: “Não temos parte alguma com Davi e nenhuma herança com o filho de Jessé. Voltem todos aos seus deuses, ó Israel!”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Em vista disso, todos os homens de Israel deixaram de seguir Davi para seguir Seba, filho de Bicri, mas os homens de Judá, desde o Jordão até Jerusalém, permaneceram com o seu rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Quando chegou à sua casa em Jerusalém, o rei Davi colocou numa casa à parte, sob guarda, as dez concubinas que havia deixado para tomarem conta da sua casa. Ele lhes providenciou alimento, mas não teve mais relações com elas. Elas continuaram confinadas até o dia da morte delas, vivendo como viúvas, embora tivessem marido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "O rei disse então a Amasa: “Convoque os homens de Judá e apresente-se aqui com eles dentro de três dias.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Portanto, Amasa foi convocar Judá, mas não voltou no prazo que havia sido estabelecido para ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Então Davi disse a Abisai: “Seba, filho de Bicri, talvez nos prejudique mais do que Absalão. Pegue os meus servos e vá atrás dele, para que ele não encontre cidades fortificadas e escape de nós.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Assim, os homens de Joabe, os queretitas, os peletitas e todos os homens valentes, saíram de Jerusalém com ele e foram atrás de Seba, filho de Bicri.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quando chegaram perto da pedra grande em Gibeão, Amasa veio ao encontro deles. Joabe estava usando um traje militar e tinha uma espada na bainha, presa na cintura. Quando se aproximou de Amasa, a espada caiu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Joabe disse a Amasa: “Tudo bem com você, meu irmão?” Então, com a mão direita, Joabe segurou a barba de Amasa, como se fosse beijá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Amasa não se preveniu contra a espada na mão de Joabe, de modo que Joabe o golpeou no abdômen, derramando seus intestinos no chão. Ele não precisou fazer isso de novo; uma vez foi suficiente para matá-lo. Então Joabe e seu irmão Abisai foram atrás de Seba, filho de Bicri.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Um dos jovens que estavam com Joabe ficou ao lado do corpo de Amasa e dizia: “Quem está do lado de Joabe e apoia Davi, que siga a Joabe!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Enquanto isso, Amasa se revolvia no sangue no meio da estrada. Quando o homem viu que todos estavam parando ali, removeu o corpo de Amasa da estrada para o campo. Então jogou um manto sobre ele, pois viu que todos os que se aproximavam dele paravam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Depois que o corpo foi retirado da estrada, todos os homens seguiram Joabe na perseguição a Seba, filho de Bicri.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Seba passou por todas as tribos de Israel e foi a Abel de Bete-Maacá. Os bicritas se reuniram e o seguiram para dentro da cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Joabe e seus homens vieram e o cercaram em Abel de Bete-Maacá. Eles levantaram contra a cidade uma rampa de ataque, visto que ela ficava dentro de uma fortificação. E todos os homens que estavam com Joabe cavaram por baixo da muralha para derrubá-la.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então uma mulher sábia gritou da cidade: “Escutem, homens, escutem! Por favor, digam a Joabe que venha até aqui para que eu fale com ele.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Quando ele se aproximou, a mulher perguntou: “Você é Joabe?” Ele respondeu: “Sou.” Ela lhe disse: “Escute as palavras da sua serva.” “Estou escutando”, disse ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Ela continuou: “No passado sempre se dizia: ‘Peçam conselhos em Abel, e isso resolverá a questão.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Eu represento os pacíficos e fiéis de Israel. Você está tentando destruir uma cidade que é como uma mãe em Israel. Por que você quer arruinar a herança de Jeová?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Joabe respondeu: “Eu jamais arruinaria e destruiria esta cidade!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "A questão não é essa. Acontece que um homem chamado Seba, filho de Bicri, da região montanhosa de Efraim, se rebelou contra o rei Davi. Se vocês entregarem só esse homem, eu me retirarei da cidade.” A mulher disse então a Joabe: “A cabeça dele será jogada para você por cima da muralha!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Imediatamente, a mulher sábia foi e falou com todo o povo. Então eles deceparam a cabeça de Seba, filho de Bicri, e a jogaram para Joabe. Em vista disso, ele tocou a buzina e os homens deixaram a cidade, voltando cada um para a sua casa; e Joabe voltou a Jerusalém, ao rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Joabe comandava todo o exército de Israel; Benaia, filho de Jeoiada, comandava os queretitas e os peletitas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Adorão era o responsável pelos convocados para trabalho obrigatório; Jeosafá, filho de Ailude, era o cronista.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Seva era o secretário; Zadoque e Abiatar eram sacerdotes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "E Ira, o jairita, também se tornou um dos ministros principais de Davi.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 21,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Houve uma fome nos dias de Davi por três anos seguidos. Assim, Davi consultou a Jeová, e Jeová respondeu: “Saul e sua casa têm culpa de sangue, porque ele matou os gibeonitas.”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Portanto, o rei chamou os gibeonitas e conversou com eles. (A propósito, os gibeonitas não eram israelitas, mas um restante dos amorreus. Os israelitas tinham feito um juramento de que os poupariam, mas Saul, no seu zelo pelo povo de Israel e de Judá, procurou golpeá-los.)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Davi perguntou aos gibeonitas: “O que devo fazer por vocês e como posso fazer expiação, para que vocês abençoem a herança de Jeová?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Os gibeonitas responderam: “A questão que temos com Saul e os da sua casa não tem a ver com prata ou ouro, nem podemos matar ninguém em Israel.” De modo que ele disse: “Farei o que vocês me pedirem.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Eles disseram ao rei: “Quanto ao homem que nos exterminou e que tramou nos eliminar de todo o território de Israel,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "entreguem-nos sete dos seus filhos. Nós penduraremos seus cadáveres perante Jeová em Gibeá de Saul, o escolhido de Jeová.” O rei disse então: “Eu os entregarei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "No entanto, o rei teve compaixão de Mefibosete, filho de Jonatã, filho de Saul, por causa do juramento que Davi e Jonatã, filho de Saul, haviam feito perante Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim, o rei pegou Armoni e Mefibosete, os dois filhos que Rispa, filha de Aiá, tinha dado a Saul, e os cinco filhos que Mical, filha de Saul, tinha dado a Adriel, filho de Barzilai, o meolatita.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Ele os entregou então aos gibeonitas e estes penduraram seus cadáveres no monte perante Jeová. Os sete morreram juntos; foram executados nos primeiros dias da colheita, no início da colheita da cevada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então Rispa, filha de Aiá, pegou um pano de saco e o estendeu para si sobre uma rocha, desde o início da colheita até a chuva dos céus cair sobre os corpos; ela não permitiu que as aves dos céus pousassem sobre eles de dia, nem que os animais selvagens se aproximassem de noite.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Contaram a Davi o que Rispa, filha de Aiá, concubina de Saul, tinha feito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Portanto, Davi foi buscar os ossos de Saul e do seu filho Jonatã, que estavam com os líderes de Jabes-Gileade. Eles haviam roubado os corpos da praça de Bete-Sã, onde os filisteus os tinham pendurado no dia em que os filisteus mataram Saul em Gilboa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Ele trouxe de lá os ossos de Saul e os ossos do seu filho Jonatã, e também ajuntaram os ossos dos homens que tinham sido executados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Enterraram então os ossos de Saul e de Jonatã, seu filho, em Zela, na terra de Benjamim, no túmulo de Quis, seu pai. Depois de terem feito tudo o que o rei havia ordenado, Deus ouviu as súplicas deles a favor da terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Houve novamente guerra entre os filisteus e Israel. Portanto, Davi e seus homens foram e lutaram contra os filisteus, mas Davi ficou exausto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Um descendente dos refains, chamado Isbi-Benobe, tinha uma lança de cobre que pesava 300 siclos, e estava armado com uma espada nova. Ele estava prestes a matar Davi.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Imediatamente Abisai, filho de Zeruia, socorreu Davi, golpeou o filisteu e o matou. Então os homens de Davi fizeram a ele o seguinte juramento: “O senhor nunca mais sairá conosco à batalha, para que o senhor não apague a lâmpada de Israel!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Depois disso, houve outra guerra contra os filisteus, em Gobe. Nessa ocasião Sibecai, o husatita, matou Safe, descendente dos refains.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Houve mais uma guerra contra os filisteus em Gobe, e Elanã, filho de Jaare-Oreguim, o belemita, matou Golias, o geteu, cuja lança tinha um cabo que parecia o cilindro dos tecelões.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Houve novamente guerra, desta vez em Gate. Havia ali um homem de tamanho extraordinário, com seis dedos em cada mão e seis dedos em cada pé, 24 ao todo; e ele também era descendente dos refains.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Ele desafiava Israel; por isso Jonatã, filho de Simei, irmão de Davi, o matou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Esses quatro eram descendentes dos refains em Gate. Eles foram mortos por Davi e seus homens.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 22,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "E Davi dirigiu a Jeová as palavras deste cântico no dia em que Jeová o livrou das mãos de todos os seus inimigos e das mãos de Saul.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Ele disse: “Jeová é meu rochedo, minha fortaleza e meu libertador.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Meu Deus é minha rocha, em quem me refugio; Ele é meu escudo e meu poderoso salvador, meu refúgio seguro, O lugar para onde fujo, meu salvador; tu me salvas da violência.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Invoco a Jeová, que é digno de louvor, E serei salvo dos meus inimigos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "As ondas da morte quebraram ao meu redor; Enxurradas de homens imprestáveis me apavoraram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "As cordas da Sepultura me envolveram; Os laços da morte me confrontaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Na minha aflição eu invoquei a Jeová, Clamei ao meu Deus. Então do seu templo ele ouviu a minha voz, E meu clamor por ajuda chegou aos seus ouvidos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "A terra começou a balançar e a tremer; Os alicerces dos céus se abalaram E estremeceram, porque ele se tinha irado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Das suas narinas subiu fumaça, E da sua boca saiu um fogo consumidor; Dele saíram brasas vivas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Ele fez o céu se inclinar e desceu; Havia densas trevas debaixo dos seus pés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Ele veio voando, montado num querubim; Apareceu nas asas de um espírito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Então ele pôs escuridão ao seu redor como um abrigo, Havia águas escuras e nuvens carregadas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Do resplendor diante dele ardiam brasas de fogo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Então Jeová começou a trovejar do céu; O Altíssimo fez ouvir a sua voz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Ele atirou as suas flechas e os dispersou; Também relâmpagos, e os pôs em confusão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "O leito do mar se tornou visível; Os alicerces da terra foram expostos pela censura de Jeová, Pelo forte sopro que sai das suas narinas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Das alturas ele estendeu a mão; Ele me segurou e me tirou de águas profundas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Ele me livrou do meu forte inimigo, Dos que me odiavam, que eram mais fortes do que eu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Eles me enfrentaram no dia do meu desastre, Mas Jeová foi o meu apoio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Ele me levou para um lugar seguro; Ele me livrou porque se agradava de mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Jeová me recompensa conforme a minha retidão; Ele me retribui conforme a inocência das minhas mãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Pois tenho guardado os caminhos de Jeová, E não cometi o mal de abandonar o meu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Todas as suas decisões judiciais estão diante de mim; Não me desviarei dos seus decretos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Permanecerei irrepreensível diante dele, E me guardarei do erro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Que Jeová me recompense conforme a minha retidão, Conforme a minha inocência diante dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Com alguém leal, ages com lealdade; Com o homem irrepreensível e valente, ages de modo irrepreensível;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Com o puro, tu te mostras puro; Mas, com o tortuoso, te mostras astuto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Pois salvas os humildes, Mas olhas com desaprovação para os arrogantes, e os rebaixas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Pois tu és a minha lâmpada, ó Jeová; É Jeová quem ilumina a minha escuridão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Com a tua ajuda posso atacar um bando de saqueadores; Com o poder de Deus posso escalar uma muralha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "O caminho do verdadeiro Deus é perfeito; A declaração de Jeová é pura. Ele é um escudo para todos os que se refugiam nele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Pois quem é Deus além de Jeová? E quem é uma rocha, a não ser o nosso Deus?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "O verdadeiro Deus é a minha fortaleza, Ele tornará perfeito o meu caminho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Ele torna os meus pés como os do cervo E me faz ficar de pé nos lugares altos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Ele treina as minhas mãos para a guerra; Meus braços podem envergar um arco de cobre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Tu me dás o teu escudo de salvação, E a tua humildade me engrandece.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Alargas o caminho para os meus passos; Meus pés não escorregarão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Perseguirei os meus inimigos e os aniquilarei; Não voltarei até que tenham sido eliminados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Eu os eliminarei e os esmagarei, de modo que não se levantarão; Eles cairão sob os meus pés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Tu me equiparás de força para a batalha; Farás com que os meus adversários caiam diante de mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Tu farás com que os meus inimigos fujam de mim; Eu eliminarei os que me odeiam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Eles clamam por ajuda, mas não há quem os salve; Até mesmo clamam a Jeová, mas ele não lhes responde.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "Eu os triturarei como o fino pó da terra; Eu os esmagarei e pisotearei como lama nas ruas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "Tu me livrarás das críticas do meu povo. Tu me protegerás para ser cabeça de nações; Um povo que não conheci me servirá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "Estrangeiros virão a mim encolhidos de temor; O que eles ouvirem a meu respeito fará com que se sujeitem a mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 46,
+          "texto": "Os estrangeiros perderão a coragem; Sairão tremendo das suas fortalezas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 47,
+          "texto": "Jeová vive! Louvada seja a minha Rocha! Seja exaltado o meu Deus, a rocha da minha salvação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 48,
+          "texto": "O verdadeiro Deus executa vingança a meu favor; Ele me sujeita os povos;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 49,
+          "texto": "Ele me livra dos meus inimigos. Tu me elevas bem acima dos que me atacam; Tu me salvas do homem violento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 50,
+          "texto": "É por isso que eu te agradecerei entre as nações, ó Jeová, E ao teu nome cantarei louvores;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 51,
+          "texto": "Ele realiza grandes atos de salvação para o seu rei; Demonstra amor leal ao seu ungido, A Davi e à sua descendência, para sempre.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 23,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Estas são as últimas palavras de Davi: “Palavras de Davi, filho de Jessé, Palavras do homem que foi exaltado, O ungido do Deus de Jacó, O agradável cantor dos cânticos de Israel.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O espírito de Jeová falou por meio de mim; Sua palavra estava na minha língua.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "O Deus de Israel falou; A Rocha de Israel me disse: ‘Quando aquele que governa a humanidade é justo E governa no temor de Deus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Seu governo é como a luz da manhã, quando o sol brilha Numa manhã sem nuvens. É como a claridade depois da chuva, Que faz a relva brotar da terra.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Não é assim a minha casa perante Deus? Pois ele fez comigo um pacto eterno, Bem definido em cada detalhe e seguro. Visto que este significa toda a minha salvação e todo o meu prazer, Não é por isso que ele o fará florescer?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas todos os homens imprestáveis são lançados fora como espinheiros, Que não podem ser arrancados com as mãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "O homem que toca neles Precisa se armar com ferro e com o cabo de uma lança, E eles devem ser completamente queimados com fogo onde estiverem.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Estes são os nomes dos guerreiros valentes de Davi: Josebe-Bassebete, um taquemonita, chefe dos três. Numa ocasião, ele matou 800 homens com a sua lança.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Depois dele vinha Eleazar, filho de Dodo, filho de Aoí. Ele era um dos três guerreiros valentes que estavam com Davi quando desafiaram os filisteus. Os filisteus tinham se reunido para a batalha, e, quando os homens de Israel recuaram,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "ele manteve a sua posição e golpeou os filisteus até seu braço ficar cansado e sua mão ficar dura de tanto segurar a espada. Assim, Jeová lhes deu naquele dia uma grande vitória; e os soldados voltaram depois de Eleazar para recolher o despojo dos cadáveres.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Depois dele vinha Samá, filho de Agé, o hararita. Quando os filisteus se reuniram em Leí, onde havia uma plantação de lentilhas, os soldados fugiram por causa dos filisteus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Mas ele se posicionou no meio da plantação e a defendeu, matando os filisteus, de modo que Jeová lhes deu uma grande vitória.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Três dos 30 chefes foram encontrar Davi na caverna de Adulão durante a colheita, enquanto uma tropa de filisteus estava acampada no vale de Refaim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Davi estava então no seu refúgio, e havia em Belém um posto avançado dos filisteus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Davi expressou este desejo: “Quem me dera beber da água da cisterna que fica perto do portão de Belém!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então os três guerreiros valentes invadiram o acampamento dos filisteus, tiraram água da cisterna que fica perto do portão de Belém e a trouxeram a Davi. Mas ele não quis bebê-la e a derramou para Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Ele disse: “Eu jamais faria isso, ó Jeová! Como eu poderia beber o sangue dos homens que arriscaram sua vida?” Assim, ele não quis bebê-la. Essas são as façanhas dos três guerreiros valentes de Davi.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Abisai, irmão de Joabe, filho de Zeruia, era o chefe de outro grupo de três. Ele matou 300 homens com a sua lança e era tão famoso quanto os três primeiros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Embora se destacasse mais entre os três do grupo e fosse o chefe deles, não chegou à categoria dos três primeiros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Benaia, filho de Jeoiada, era um homem corajoso que realizou muitas façanhas em Cabzeel. Ele matou os dois filhos de Ariel, de Moabe; ele desceu numa cisterna num dia em que nevou, e matou um leão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Ele também matou um egípcio de tamanho extraordinário. Embora o egípcio tivesse uma lança na mão, Benaia o enfrentou com uma vara. Ele arrancou a lança da mão do egípcio e o matou com ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Essas foram as façanhas de Benaia, filho de Jeoiada. Ele era tão famoso quanto os três guerreiros valentes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Embora se destacasse ainda mais do que os 30, não chegou à categoria dos três. Mas Davi o designou sobre a sua guarda pessoal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Asael, irmão de Joabe, estava entre os 30: Elanã, filho de Dodo, de Belém;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Samá, o harodita; Elica, o harodita;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Helez, o paltita; Ira, filho de Iques, o tecoíta;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Abiezer, o anatotita; Mebunai, o husatita;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Zalmom, o aoíta; Maarai, o netofatita;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Helebe, filho de Baaná, o netofatita; Itai, filho de Ribai, de Gibeá dos benjaminitas;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Benaia, piratonita; Hidai, dos vales de Gaás;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Abi-Albom, o arbatita; Azmavete, o barumita;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Eliaba, o saalbonita; os filhos de Jásen; Jonatã;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Samá, o hararita; Aião, filho de Sarar, o hararita;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Elifelete, filho de Aasbai, filho do maacatita; Elião, filho de Aitofel, o gilonita;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Hezro, o carmelita; Paarai, o arbita;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Igal, filho de Natã, de Zobá; Bani, o gadita;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Zeleque, o amonita; Naarai, o beerotita, escudeiro de Joabe, filho de Zeruia;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Ira, o itrita; Garebe, o itrita;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "e Urias, o hitita — 37 ao todo.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 24,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "A ira de Jeová se acendeu novamente contra Israel quando Davi foi instigado a agir contra eles, com as palavras: “Vá, faça um recenseamento de Israel e de Judá.”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Portanto, o rei disse a Joabe, o chefe do exército, que estava junto dele: “Percorra todas as tribos de Israel, desde Dã até Berseba, e registrem o povo, para que eu saiba quantos são.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mas Joabe disse ao rei: “Que Jeová, seu Deus, multiplique cem vezes o povo, e que o meu senhor, o rei, veja isso com os próprios olhos. Mas por que o meu senhor, o rei, quer fazer isso?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas a palavra do rei prevaleceu sobre a de Joabe e a dos chefes do exército. Portanto, Joabe e os chefes do exército saíram da presença do rei para registrar o povo de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Atravessaram o Jordão e acamparam em Aroer, à direita da cidade que fica no meio do vale, e foram em direção aos gaditas, e a Jazer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Depois foram a Gileade e à terra de Tatim-Hodchi; dali se dirigiram a Dã-Jaã e foram a Sídon.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Foram então à fortaleza de Tiro e a todas as cidades dos heveus e dos cananeus, e por fim chegaram a Berseba, que fica no Neguebe de Judá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim percorreram todo o país e voltaram a Jerusalém depois de nove meses e vinte dias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então Joabe entregou ao rei o número dos que foram registrados: Israel tinha 800. 000 guerreiros armados com espadas; e Judá, 500. 000 homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Mas o coração de Davi se encheu de remorso depois de ele ter contado o povo. Davi disse então a Jeová: “Cometi um pecado grave ao fazer isso. E agora, Jeová, por favor, perdoa o pecado do teu servo, pois agi de modo muito insensato.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Quando Davi se levantou de manhã, o profeta Gade, vidente de Davi, recebeu a seguinte mensagem de Jeová:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "“Vá e diga a Davi: ‘Assim diz Jeová: “Eu lhe dou três opções. Escolha qual delas devo executar contra você.”’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Então Gade compareceu perante Davi e lhe perguntou: “Deve haver sete anos de fome no seu país? Deve o senhor passar três meses fugindo dos seus inimigos, que o perseguirão? Ou deve haver três dias de peste no seu país? Agora pense bem e diga que resposta devo dar Àquele que me enviou.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Então Davi disse a Gade: “Isso é muito aflitivo para mim. Que nós caiamos nas mãos de Jeová, pois a Sua misericórdia é grande, mas que eu não caia nas mãos dos homens.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Então Jeová enviou uma peste sobre Israel, desde a manhã até o tempo determinado, de modo que 70. 000 pessoas morreram, de Dã a Berseba.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Quando o anjo estendeu a mão para destruir Jerusalém, Jeová lamentou a calamidade e disse ao anjo que causava a destruição entre o povo: “Já chega! Abaixe a mão.” O anjo de Jeová estava perto da eira de Araúna, o jebuseu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Ao ver o anjo que golpeava o povo, Davi disse a Jeová: “Fui eu que pequei, eu que cometi esse erro. Mas o que fizeram estas ovelhas? Por favor, que a tua mão venha sobre mim e sobre a casa do meu pai.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Então Gade compareceu perante Davi naquele dia e lhe disse: “Suba à eira de Araúna, o jebuseu, e construa ali um altar a Jeová.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Portanto, Davi foi segundo a palavra de Gade, conforme Jeová havia ordenado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Quando Araúna viu o rei e seus servos vindo em sua direção, Araúna saiu imediatamente e se curvou diante do rei com o rosto por terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Araúna perguntou: “Por que o meu senhor, o rei, veio ao seu servo?” Davi respondeu: “Vim para comprar a sua eira, a fim de construir nela um altar a Jeová, para que cesse o flagelo sobre o povo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Mas Araúna disse a Davi: “Fique com ela, meu senhor, o rei, e ofereça o que o senhor quiser. Aqui estão os bois para a oferta queimada, bem como o trenó de debulha e o jugo dos bois, para servir de lenha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Tudo isso dou ao senhor, ó rei.” E Araúna disse ao rei: “Que Jeová, seu Deus, lhe mostre favor.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "No entanto, o rei disse a Araúna: “De modo algum! Eu a comprarei de você. Não oferecerei a Jeová, meu Deus, sacrifícios queimados que não me custem nada.” Assim, Davi comprou a eira e os bois por 50 siclos de prata.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Davi construiu ali um altar a Jeová e ofereceu sacrifícios queimados e sacrifícios de participação em comum. Então Jeová ouviu as súplicas a favor do país, e o flagelo sobre Israel cessou.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+/* Only Notes v2 in an installed iOS app. Keep chrome anchored from the top;
+   bottom:0 / inset:0 can use a shorter fixed box after the native keyboard. */
+html[data-notes-version="2"][data-notes-surface="pwa"] .leitor-fx,
+html[data-notes-version="2"][data-notes-surface="pwa"] #notes-versions {
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  width: var(--notes-surface-width);
+  height: var(--notes-surface-height);
+}
+
+html[data-notes-version="2"][data-notes-surface="pwa"] .bottom-navbar {
+  top: max(0px, calc(var(--notes-surface-height) - var(--navbar-real-height, 85px))) !important;
+  bottom: auto !important;
+  width: var(--notes-surface-width) !important;
+}
+
+html[data-notes-version="2"][data-notes-surface="pwa"] body.leitor-keep-toolbar .kbd-toolbar,
+html[data-notes-version="2"][data-notes-surface="pwa"] body.zombie-toolbar-active .kbd-toolbar {
+  top: max(0px, calc(var(--notes-surface-height) - var(--notes-toolbar-height, 68px)));
+  bottom: auto;
+  right: auto;
+  width: var(--notes-surface-width);
+}
+
+html[data-notes-version="2"][data-notes-surface="pwa"] body.leitor-keep-toolbar .glass-fx,
+html[data-notes-version="2"][data-notes-surface="pwa"] body.zombie-toolbar-active .glass-fx {
+  top: 0;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  width: var(--notes-surface-width);
+  height: var(--notes-surface-height);
+}

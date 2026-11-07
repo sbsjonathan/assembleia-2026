@@ -1,0 +1,21 @@
+.notes-version-overlay[hidden], .notes-version-overlay [hidden] { display: none !important; }
+.notes-version-overlay { position: fixed; inset: 0; z-index: 13000; display: flex; align-items: center; justify-content: center; overflow: hidden; box-sizing: border-box; overscroll-behavior: contain; padding: max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom)); background: #0006; }
+.notes-version-card { display: flex; flex-direction: column; width: 100%; max-width: 390px; max-height: min(100%, calc(100dvh - max(16px, env(safe-area-inset-top)) - max(16px, env(safe-area-inset-bottom)))); overflow: hidden; box-sizing: border-box; padding: 14px 18px; border-radius: 18px; background: #fff; color: #292929; box-shadow: 0 12px 35px #0003; font: 15px/1.45 -apple-system, BlinkMacSystemFont, sans-serif; }
+.notes-version-card header { display: flex; align-items: center; flex: 0 0 auto; gap: 8px; }
+.notes-version-body { min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+.notes-version-card h2 { flex: 1; margin: 0; font: 600 18px/1.3 -apple-system, BlinkMacSystemFont, sans-serif; }
+.notes-version-card p { margin: 10px 0; color: #6c6572; font: inherit; }
+.notes-version-card button { font: inherit; cursor: pointer; }
+#notes-versions-close { min-width: 44px; min-height: 44px; padding: 0; border: 0; background: transparent; color: #604184; font-size: 27px; }
+.notes-version-choice { display: block; width: 100%; min-height: 62px; margin-top: 10px; padding: 10px 13px; border: 1px solid #ddd8e3; border-radius: 10px; background: transparent; color: inherit; text-align: left; }
+.notes-version-choice strong, .notes-version-choice span { display: block; }
+.notes-version-choice strong { font-weight: 600; }
+.notes-version-choice span { margin-top: 2px; color: #6c6572; font-size: 12px; }
+.notes-version-choice[aria-pressed="true"] { border-color: #604184; background: #f5f1f8; }
+.notes-version-export { display: block; width: 100%; min-height: 44px; padding: 8px 0; border: 0; background: transparent; color: #604184; text-align: left; }
+#notes-version-message:empty { display: none; }
+[data-theme="dark"] .notes-version-card { background: #222225; color: #eee; }
+[data-theme="dark"] .notes-version-card p, [data-theme="dark"] .notes-version-choice span { color: #bab4c1; }
+[data-theme="dark"] .notes-version-choice { border-color: #57515e; }
+[data-theme="dark"] .notes-version-choice[aria-pressed="true"] { background: #362d40; border-color: #b99dd5; }
+[data-theme="dark"] :is(.notes-version-export, #notes-versions-close) { color: #c4a7df; }

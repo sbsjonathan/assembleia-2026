@@ -1,0 +1,1060 @@
+{
+  "nome_do_livro": "Oseias",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Esta é a palavra de Jeová que Oseias, filho de Beeri, recebeu nos dias de Uzias, Jotão, Acaz e Ezequias, reis de Judá, e nos dias de Jeroboão, filho de Joás e rei de Israel.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Quando Jeová começou a transmitir a sua palavra por meio de Oseias, Jeová disse a Oseias: “Vá, case-se com uma mulher de prostituição e tenha filhos de prostituição, pois foi por causa da prostituição que esta terra abandonou completamente a Jeová.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Assim ele foi e se casou com Gômer, filha de Diblaim, e ela ficou grávida e lhe deu um filho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Então Jeová lhe disse: “Dê-lhe o nome de Jezreel, pois dentro de pouco tempo ajustarei contas com a casa de Jeú pelos atos de derramamento de sangue de Jezreel, e porei fim ao reino da casa de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Naquele dia quebrarei o arco de Israel no vale de Jezreel.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ela ficou grávida de novo e deu à luz uma filha. E Ele disse a Oseias: “Dê-lhe o nome de Lo-Ruama, pois não terei mais misericórdia da casa de Israel e certamente os expulsarei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas terei misericórdia da casa de Judá, e vou salvá-los por meio de Jeová, o Deus deles; não os salvarei por meio de arco, espada, guerra, cavalos nem cavaleiros.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Depois de desmamar Lo-Ruama, ela ficou grávida e deu à luz um filho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então Ele disse: “Dê-lhe o nome de Lo-Ami, porque vocês não são o meu povo, e eu não serei o seu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "“E o número dos israelitas será como os grãos de areia do mar, que não podem ser medidos nem contados. E, no lugar onde foi dito a eles: ‘Vocês não são o meu povo’, será dito a eles: ‘Os filhos do Deus vivente.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E o povo de Judá e o povo de Israel serão ajuntados em união, escolherão para si um único cabeça e subirão daquela terra, pois será grande o dia de Jezreel.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Digam aos seus irmãos: ‘Meu povo!’ E às suas irmãs: ‘Ó mulher de quem se teve misericórdia!’",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Acusem a sua mãe; acusem-na, Pois ela não é minha esposa e eu não sou marido dela. Ela deve afastar de si a sua prostituição E do meio dos seus seios o seu adultério.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Senão eu a despirei e a deixarei nua, como no dia em que ela nasceu, Farei dela um deserto, Eu a reduzirei a uma terra árida, E a matarei de sede.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "E não terei misericórdia dos seus filhos, Pois são filhos de prostituição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois a mãe deles se prostituiu. Aquela que os deu à luz agiu vergonhosamente, pois disse: ‘Irei atrás dos meus amantes, Aqueles que me dão meu pão e minha água, Minha lã e meu linho, meu azeite e minha bebida.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Por isso, vou bloquear o seu caminho com uma cerca de espinhos; Vou levantar contra ela um muro de pedras, De modo que ela não poderá achar as suas veredas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Ela correrá atrás dos seus amantes, mas não os alcançará; Procurará por eles, mas não os achará. Então ela dirá: ‘Voltarei para o meu marido, Pois a minha situação naquele tempo era melhor do que agora.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Ela não reconheceu que era eu quem lhe dava o cereal, o vinho novo e o azeite, E era eu quem lhe dava prata em abundância E também ouro, os quais eles usavam na adoração de Baal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "‘Por isso, voltarei e tirarei dela o meu cereal no tempo da colheita E o meu vinho novo na sua época, E vou arrancar dela a minha lã e o meu linho, que serviam para cobrir a sua nudez.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Agora exporei as suas partes íntimas bem diante dos seus amantes, E nenhum homem a livrará da minha mão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Porei fim a toda a sua alegria, Suas festividades, suas luas novas, seus sábados e todas as suas épocas festivas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E vou arruinar as suas videiras e as suas figueiras, sobre as quais ela disse: “São o pagamento que recebi dos meus amantes.” Vou fazer delas um matagal, E os animais selvagens as devorarão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Vou ajustar contas com ela pelos dias em que oferecia sacrifícios às imagens de Baal, Quando se enfeitava com seus brincos e suas joias, e ia atrás dos seus amantes, E era de mim que ela se esquecia’, diz Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "‘Portanto, vou persuadi-la, Vou conduzi-la para o deserto E vou falar-lhe ao coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Dali em diante vou devolver-lhe seus vinhedos, E farei do vale de Acor uma porta de esperança; Ali ela me responderá como nos dias da sua juventude, Como no dia em que saiu da terra do Egito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "E naquele dia’, diz Jeová, ‘Você me chamará de “meu marido”, e não me chamará mais de “meu dono”’.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "‘Vou remover da sua boca os nomes das imagens de Baal, E o nome delas não será mais lembrado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Naquele dia farei em favor deles um pacto com os animais selvagens, E com as aves dos céus e os animais rasteiros; Livrarei esta terra do arco, da espada e da guerra; E vou fazer com que se deitem em segurança.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Vou tomar você como noiva para sempre; Vou tomá-la como noiva em retidão e justiça, Em amor leal e misericórdia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Vou tomá-la como noiva em fidelidade, E você certamente conhecerá a Jeová.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "‘Naquele dia eu responderei’, diz Jeová, ‘Responderei aos céus, E eles responderão à terra;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "E a terra responderá ao cereal, ao vinho novo e ao azeite; E eles responderão a Jezreel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Eu a semearei para mim na terra, Vou ter misericórdia daquela de quem não se teve misericórdia; Vou dizer aos que não são o meu povo: “Vocês são o meu povo”, E eles dirão: “Tu és o meu Deus.”’”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então Jeová me disse: “Vá mais uma vez, ame a mulher que é amada por outro homem e que comete adultério, assim como Jeová ama o povo de Israel enquanto eles se voltam para outros deuses e amam passas prensadas.”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Assim, eu a comprei para mim por 15 peças de prata e um ômer e meio de cevada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Então eu lhe disse: “Você continuará sendo minha por muitos dias. Não se prostitua e não tenha relações com outro homem, e eu agirei da mesma maneira com você.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Pois o povo de Israel viverá por muito tempo sem rei, sem príncipe, sem sacrifícios, sem colunas sagradas, e sem éfode e ídolos domésticos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Depois, o povo de Israel voltará e buscará a Jeová, seu Deus, e a Davi, seu rei; e voltarão tremendo para Jeová e para a sua bondade na parte final dos dias.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Ouçam a palavra de Jeová, ó povo de Israel, Pois Jeová tem uma causa contra os habitantes desta terra, Porque não há verdade, nem amor leal, nem conhecimento de Deus nesta terra.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Juramentos falsos, mentiras, assassinatos, Roubos e adultérios se espalharam; E há atos de derramamento de sangue, um após outro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Por isso esta terra ficará de luto, E todos os habitantes dela definharão; Os animais selvagens, as aves dos céus E até os peixes do mar morrerão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“No entanto, que ninguém discuta nem repreenda, Pois o seu povo é como os que discutem com um sacerdote.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Por isso você tropeçará em plena luz do dia, E o profeta tropeçará junto com você como se fosse noite. E eu silenciarei a sua mãe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Meu povo será silenciado, pois não há conhecimento. Visto que você rejeitou o conhecimento, Eu também o rejeitarei para que não sirva mais como meu sacerdote; E, visto que se esqueceu da lei do seu Deus, Eu também me esquecerei dos seus filhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Quanto mais aumentavam em número, mais pecavam contra mim. Transformarei a glória deles em desonra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Eles se alimentam do pecado do meu povo, E anseiam pelo seu erro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Acontecerá o mesmo com o povo e com o sacerdote; Ajustarei contas com eles por causa dos seus caminhos, E farei com que sofram as consequências das suas ações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Eles comerão, mas não ficarão satisfeitos. Serão promíscuos, mas não aumentarão em número, Porque não fizeram caso de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "A prostituição, o vinho e o vinho novo Tiram a motivação para fazer o que é certo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Meu povo consulta ídolos de madeira, E faz o que seu bastão lhes diz; Pois o espírito de prostituição faz com que se desviem, E por causa da sua prostituição se recusam a se sujeitar ao seu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Oferecem sacrifícios nos cumes dos montes E fazem sacrifícios fumegar nas colinas, Debaixo do carvalho, do estoraque e de toda árvore grande, Porque sua sombra é boa. Por isso é que suas filhas se prostituem E suas noras cometem adultério.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Não ajustarei contas com as suas filhas por se prostituírem Nem com as suas noras por cometerem adultério, Pois os homens se retiram com as prostitutas E oferecem sacrifícios com as prostitutas de templo. Um povo assim, sem entendimento, será arruinado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Embora você se prostitua, Israel, Que Judá não se torne culpado. Não vão a Gilgal nem a Bete-Áven, Nem jurem: ‘Tão certo como Jeová vive!’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Pois Israel ficou obstinado igual a uma vaca teimosa. Será que Jeová agora os pastoreará como a um carneirinho num campo aberto?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Efraim se apegou a ídolos. Deixe-o sozinho!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Quando a cerveja deles acaba, Eles se tornam promíscuos. Os governantes dela amam profundamente a desonra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "O vento a envolverá nas suas asas, E eles se envergonharão dos seus sacrifícios.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Ouçam isto, sacerdotes, Prestem atenção, casa de Israel, Escutem, casa do rei, Pois o julgamento é contra vocês, Porque vocês são uma armadilha para Mispá E uma rede estendida sobre Tabor.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Os rebeldes ficaram profundamente envolvidos em matança, E eu estou avisando a todos eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Conheço Efraim, E Israel não está escondido de mim. Pois agora, Efraim, você passou a agir de modo promíscuo; Israel se tornou impuro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Suas ações não permitem que eles voltem para o seu Deus, Pois há um espírito de prostituição entre eles; E eles não reconhecem a Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O orgulho de Israel dá testemunho contra ele; Tanto Israel como Efraim tropeçaram no seu erro, E Judá tropeçou com eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Foram buscar a Jeová com seus bois e suas ovelhas, Mas não o puderam achar. Ele tinha se afastado deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Traíram a Jeová, Pois geraram filhos estrangeiros. Agora um mês os devorará junto com tudo que lhes pertence.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Toquem a buzina em Gibeá, a trombeta em Ramá! Deem um grito de guerra em Bete-Áven; depois de você, ó Benjamim!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Ó Efraim, no dia da punição você se tornará um motivo de terror. Anunciei entre as tribos de Israel o que certamente acontecerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Os príncipes de Judá são como os que mudam de lugar os marcos divisórios. Derramarei sobre eles a minha fúria como água.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Efraim está oprimido, esmagado pelo julgamento, Pois estava decidido a ir atrás do seu adversário.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Por isso, eu me tornei como uma traça para Efraim E como podridão para a casa de Judá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Quando Efraim viu a sua doença, e Judá a sua ferida, Efraim foi à Assíria e enviou mensageiros a um grande rei. Mas este era incapaz de curar vocês, E ele não podia sarar a sua ferida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Eu serei como um leão novo para Efraim, E como um leão forte para a casa de Judá. Eu os dilacerarei e irei embora; Eu os levarei, e ninguém os livrará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Vou embora para o meu lugar até que sofram as consequências do seu erro, E então eles buscarão o meu favor. Quando estiverem em aflição, procurarão por mim.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Venham, e voltemos para Jeová; Pois, embora ele tenha nos dilacerado, vai nos curar. Embora tenha nos golpeado, vai tratar das nossas feridas.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Depois de dois dias ele nos fará reviver. No terceiro dia nos levantará, E viveremos perante ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Conheceremos a Jeová, buscaremos seriamente conhecê-lo. Sua chegada é tão certa como o raiar do dia. Ele chegará a nós como um aguaceiro, Como uma chuva de primavera que satura a terra.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“O que devo fazer com você, Efraim? O que devo fazer com você, Judá? Pois o amor leal de vocês é como a neblina da manhã, Como o orvalho, que logo desaparece.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Por isso eu os golpearei por meio dos profetas; Eu os matarei com as palavras da minha boca. E os julgamentos contra você brilharão como a luz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Pois tenho prazer no amor leal, não em sacrifícios, E no conhecimento de Deus, não em ofertas queimadas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas eles, como meros humanos, violaram o pacto. Nestes lugares eles me traíram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Gileade é uma cidade de malfeitores, Cheia de pegadas de sangue.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "A comunidade dos sacerdotes é como um bando de assaltantes que fica de emboscada à espera de alguém. Eles assassinam na estrada de Siquém, Pois sua conduta é vergonhosa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Vi uma coisa horrível na casa de Israel. Ali Efraim se prostitui; Israel se tornou impuro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Quanto a você, Judá, uma colheita está determinada para você, Quando eu trouxer de volta o meu povo cativo.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 7,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Quando tento curar Israel, O erro de Efraim vem à tona E também a maldade de Samaria. Pois eles agem de modo falso; Ladrões entram nas casas, e bandos de assaltantes atacam do lado de fora.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Mas eles não reconhecem no coração que eu vou me lembrar de toda a sua maldade. Agora estão cercados pelas suas ações; Elas estão bem diante da minha face.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Eles alegram o rei com a sua maldade; E príncipes, com as suas mentiras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Todos eles são adúlteros, Ardem como o forno que o padeiro acende; Ele para de atiçar o fogo depois de sovar a massa até ela ficar levedada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "No dia do nosso rei, os príncipes ficaram doentes; Ficaram furiosos por causa do vinho. Ele deu a mão a zombadores.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Eles se aproximam com os corações ardendo como um forno. O padeiro dorme a noite inteira; De manhã, o forno queima como um fogo ardente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Todos eles estão quentes como um forno, E devoram seus governantes. Todos os seus reis caíram; Nenhum deles clama a mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Efraim se mistura com as nações. Efraim é como um pão redondo que não foi virado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Estrangeiros consumiram seu poder, mas ele não percebe. E seus cabelos grisalhos ficaram brancos, mas ele não se dá conta disso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O orgulho de Israel dá testemunho contra ele, Mas eles não voltam para Jeová, seu Deus, Nem o procuram apesar de tudo isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Efraim é como uma pomba ingênua, sem entendimento. Clamam ao Egito, vão à Assíria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "“Aonde quer que forem, lançarei sobre eles a minha rede. Eu os derrubarei como se fossem as aves dos céus. Eu os disciplinarei de acordo com os avisos que receberam como assembleia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Ai deles, pois fugiram de mim! Que sejam arruinados, pois pecaram contra mim! Eu estava pronto para resgatá-los, mas eles falaram mentiras contra mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Não foi de coração que clamaram a mim por ajuda, Embora ficassem se lamentando nas suas camas. Faziam cortes em si mesmos pelo seu cereal e pelo seu vinho novo. Voltam-se contra mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Embora eu os tenha disciplinado e tenha fortalecido seus braços, Eles tramam o mal contra mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Eles se voltaram, mas não para algo mais elevado; Não eram dignos de confiança, assim como um arco frouxo. Seus príncipes cairão à espada por causa das suas línguas insolentes. Por isso serão objeto de zombaria na terra do Egito.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 8,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Toque a buzina! Vem alguém como águia contra a casa de Jeová, Pois eles violaram o meu pacto e transgrediram a minha lei.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Eles clamam a mim: ‘Ó meu Deus, nós, Israel, conhecemos a ti!’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Israel rejeitou o que é bom. Que seja perseguido pelo inimigo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Eles designaram reis, mas sem o meu consentimento. Designaram príncipes, mas sem a minha aprovação. Com a sua prata e o seu ouro fizeram ídolos, Para a sua própria destruição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Seu bezerro foi rejeitado, Samaria. Minha ira se acende contra eles. Até quando serão incapazes de se purificar?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Pois isso vem de Israel. Um artesão o fez; ele não é Deus. O bezerro de Samaria será completamente despedaçado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois estão semeando vento E colherão tempestade. Nenhuma haste produz espiga madura; Aquilo que brota não produz farinha. Mesmo que produza, ela será devorada por estrangeiros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Israel será devorado. Agora estarão entre as nações, Como um objeto indesejável.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Pois eles subiram à Assíria, como um jumento selvagem que anda sozinho. Efraim contratou amantes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Embora eles contratem amantes entre as nações, Agora eu os reunirei; Eles começarão a sofrer por causa do fardo imposto pelo rei e pelos príncipes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois Efraim multiplicou os altares para pecar. Eles se tornaram seus altares para o pecado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Eu lhe escrevi as muitas coisas da minha lei, Mas elas foram consideradas como algo estranho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Eles me oferecem sacrifícios e comem a carne, Mas Jeová não se agrada deles. Agora Ele se lembrará do erro deles e os punirá pelos seus pecados. Eles voltaram para o Egito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Israel se esqueceu Daquele que o fez e construiu templos, E Judá multiplicou as cidades fortificadas. Mas eu enviarei fogo sobre as suas cidades, E o fogo consumirá as torres de cada uma delas.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 9,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Não se alegre, Israel. Não exulte como os povos. Pois com a sua prostituição você se afastou do seu Deus. Você amou o salário de prostituição em todas as eiras de cereais.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Mas a eira e o lagar não os alimentarão, E o vinho novo causará a sua decepção.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Não continuarão a morar na terra de Jeová; Em vez disso, Efraim voltará ao Egito, E na Assíria comerão o que é impuro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Não mais derramarão ofertas de vinho para Jeová; Os sacrifícios deles não lhe agradarão. São como o pão servido quando há luto; Todos os que o comem ficam impuros. Pois seu pão servirá apenas para eles mesmos; Não entrará na casa de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O que vocês farão no dia de se reunir, No dia da festividade de Jeová?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Vejam! Eles terão de fugir por causa da destruição. O Egito os ajuntará, e Mênfis os sepultará. Urtigas tomarão conta dos seus preciosos objetos de prata, E espinheiros crescerão nas suas tendas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Os dias do ajuste de contas chegarão, Os dias da retribuição virão. E Israel ficará sabendo disso. Seu profeta se revelará um tolo, e o homem de expressões inspiradas ficará louco; Visto que seu erro é abundante, a hostilidade contra vocês é abundante.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "O vigia de Efraim estava com o meu Deus. Mas agora todos os caminhos dos seus profetas são como as armadilhas de um passarinheiro; Há hostilidade na casa do seu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Ficaram profundamente corrompidos, como nos dias de Gibeá. Ele se lembrará do seu erro e punirá os seus pecados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "“Quando encontrei Israel, foi como encontrar uvas no deserto. Quando vi os antepassados de vocês, foi como ver os primeiros figos temporãos numa figueira. Mas eles se dirigiram a Baal de Peor; Eles se dedicaram a essa coisa vergonhosa E se tornaram tão repugnantes quanto o objeto do seu amor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "A glória de Efraim voa para longe como uma ave; Não há nascimento, nem gravidez, nem concepção.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Mesmo que criem filhos, Eu os tirarei deles até que não sobre nenhum. Sim, ai deles quando eu me afastar deles!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Efraim, plantado num pasto, era para mim como Tiro; Agora Efraim terá de entregar seus filhos para a matança.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Ó Jeová, dá a eles o que deves dar: Um ventre que aborta e peitos secos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "“Toda a sua maldade estava em Gilgal; foi ali que passei a odiá-los. Vou expulsá-los da minha casa por causa das suas más ações. Não os amarei mais; Todos os seus príncipes são obstinados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Efraim será golpeado. Sua raiz secará, e eles não produzirão nenhum fruto. Mesmo que deem à luz, vou entregar à morte seus filhos queridos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Meu Deus os rejeitará, Pois não o escutaram; E eles se tornarão fugitivos entre as nações.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 10,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Israel é uma videira degenerada, que está produzindo seus frutos. Quanto mais fruto dá, mais multiplica os seus altares. Quanto melhores as colheitas da sua terra, mais esplêndidas são as suas colunas sagradas.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Seu coração é hipócrita; Agora serão condenados. Alguém quebrará seus altares e destruirá suas colunas sagradas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Agora dirão: ‘Não temos rei, pois não tememos a Jeová. E o que um rei poderia fazer por nós?’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Eles falam palavras vazias, juram falsamente e fazem pactos; Por isso o julgamento é como ervas venenosas que crescem nos campos arados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Os residentes de Samaria temerão pelo deus-bezerro de Bete-Áven. O povo chorará por ele, Bem como os sacerdotes de deuses estrangeiros, que se alegravam por causa dele e da sua glória, Pois ele irá para o exílio, para longe deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ele será levado para a Assíria como presente para um grande rei. Efraim será envergonhado, E Israel se envergonhará do conselho que seguiu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Samaria e seu rei certamente serão eliminados, Como um raminho quebrado na superfície das águas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Os altos sagrados de Bete-Áven, que são o pecado de Israel, serão aniquilados. Espinhos e abrolhos crescerão nos seus altares. As pessoas dirão às montanhas: ‘Cubram-nos!’ E às colinas: ‘Caiam sobre nós!’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Você peca desde os dias de Gibeá, ó Israel. Nisso eles têm persistido. A guerra não alcançou os filhos da injustiça em Gibeá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Quando for da minha vontade, eu os disciplinarei. E povos se ajuntarão contra eles, Quando eles tiverem de puxar a carga dos seus dois erros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Efraim era uma novilha ensinada que gostava de trilhar grãos, Por isso, eu poupava seu belo pescoço. Agora, porei arreios em Efraim. Judá vai arar; Jacó vai aplainar para outro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Semeiem segundo a justiça e colham amor leal. Passem o arado nas terras que não foram cultivadas, Enquanto há tempo para buscar a Jeová, Até que ele venha e lhes ensine segundo a justiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mas vocês cultivaram maldade, Colheram injustiça, E comeram o fruto da mentira; Pois você confiou no seu próprio caminho, No grande número dos seus guerreiros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Um tumulto irromperá contra o seu povo, E suas cidades fortificadas serão todas devastadas, Assim como Salmã devastou a casa de Arbel No dia da batalha, quando as mães foram despedaçadas junto com os seus filhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Isso é o que será feito com vocês, ó Betel, por causa da sua enorme maldade. Ao raiar do dia, o rei de Israel certamente será eliminado.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 11,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Quando Israel era um menino, eu o amei; E do Egito chamei o meu filho.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Quanto mais eles eram chamados, Mais se afastavam de quem os chamava. Ofereciam sacrifícios às imagens de Baal E faziam ofertas às imagens esculpidas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mas fui eu que ensinei Efraim a andar, que os tomei nos braços; E eles não reconheceram que eu os tinha curado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Continuei a conduzi-los com as cordas dos homens, com os cordões do amor; Eu era para eles como alguém que aliviava seu pescoço de um jugo, E bondosamente dei alimento a cada um.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Eles não retornarão à terra do Egito, mas a Assíria será o seu rei, Porque se negaram a voltar para mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E uma espada girará contra as suas cidades, Destruirá as suas trancas e os devorará, por causa das suas tramas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Meu povo está decidido a ser infiel a mim. Embora sejam chamados para o alto, ninguém se levanta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Como posso abandonar você, Efraim? Como posso entregar você a outros, Israel? Como posso tratar você como Admá? Como posso deixá-lo igual a Zeboim? Eu voltei atrás; Ao mesmo tempo, minhas compaixões despertaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Não darei vazão à minha ira ardente. Não destruirei novamente a Efraim, Pois sou Deus, e não homem. Sou o Santo no meio de vocês, E não virei contra vocês com fúria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Eles seguirão a Jeová, e ele rugirá como um leão; Quando ele rugir, seus filhos virão tremendo do oeste.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Virão tremendo como pássaros quando saírem do Egito; Como pombas, quando saírem da terra da Assíria. E eu os estabelecerei nas suas casas”, diz Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "“Efraim me cercou com mentiras; E a casa de Israel, com falsidade. Mas Judá ainda anda com Deus E é fiel ao Santíssimo.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 12,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Efraim se alimenta de vento. Corre atrás do vento leste o dia inteiro. Multiplica mentiras e violência. Fazem um pacto com a Assíria e levam azeite ao Egito.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Jeová tem uma causa contra Judá; Ajustará contas com Jacó segundo os seus caminhos, E lhe retribuirá segundo as suas ações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "No ventre ele agarrou seu irmão pelo calcanhar, E com o seu vigor lutou com Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Lutou com um anjo e saiu vencedor. Chorou e implorou seu favor.” Ele o encontrou em Betel, e ali Ele falou conosco.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Jeová, o Deus dos exércitos, Jeová é o nome pelo qual Ele é lembrado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "“Portanto, volte ao seu Deus, Demonstre amor leal e justiça, E espere sempre no seu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas o comerciante tem nas mãos balanças enganosas; Ele ama defraudar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Efraim diz: ‘Eu realmente fiquei rico; Adquiri riquezas. Mas não encontrarão nenhum erro nem pecado em todo o meu trabalho árduo.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas eu sou Jeová, seu Deus, desde a terra do Egito. Farei com que você more novamente em tendas, Como nos dias de um tempo determinado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Eu falava aos profetas, Multiplicava suas visões E falava parábolas por meio dos profetas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Em Gileade há mentira e falsidade. Em Gilgal sacrificam touros. E seus altares são como montões de pedras em campos arados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Jacó fugiu para o território de Arã, Israel serviu ali por uma esposa, E por uma esposa cuidou de ovelhas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Por meio de um profeta Jeová tirou Israel do Egito; E, por meio de um profeta, cuidou dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Efraim ofendeu a Deus amargamente; Sua culpa de sangue permanece sobre ele. Seu Senhor lhe retribuirá a desonra que ele causou.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 13,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Quando Efraim falava, causava tremor; Ele era importante em Israel. Mas se tornou culpado por adorar a Baal e morreu.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Agora pecam ainda mais E com a sua prata fazem estátuas de metal; Com habilidade fazem ídolos, todos estes trabalho de artesãos. E dizem: ‘Que os homens que oferecem sacrifícios beijem os bezerros.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Por isso se tornarão como a neblina da manhã, Como o orvalho que logo cedo desaparece, Como a palha levada da eira por um vendaval, E como a fumaça que sai pela chaminé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas eu sou Jeová, seu Deus, desde a terra do Egito. Você não conheceu outro Deus além de mim, E não há outro salvador, a não ser eu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Conheci você no deserto, na terra da seca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Eles ficaram satisfeitos com seus pastos, Ficaram satisfeitos e seu coração se tornou orgulhoso. E assim se esqueceram de mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Eu me tornarei para eles como um leão novo, Como um leopardo à espreita na beira do caminho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Vou encontrá-los como uma ursa que perdeu seus filhotes, E vou rasgar o seu peito. Ali os devorarei como um leão; Um animal selvagem os dilacerará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Visto que você se voltou contra mim, seu ajudador, Isso destruirá você, Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então, onde está o seu rei, para salvá-lo em todas as suas cidades, E seus governantes, sobre os quais você disse: ‘Dá-me um rei e príncipes’?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Eu lhe dei um rei na minha ira, E na minha fúria o tirarei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "O erro de Efraim está guardado; Seu pecado está armazenado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "As dores de parto chegarão para ele. Mas ele é um filho insensato; Ele não se apresenta quando é hora de nascer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Do poder da Sepultura os livrarei; Da morte os resgatarei. Onde estão os seus aguilhões, ó Morte? Onde está o seu poder de destruição, ó Sepultura? A compaixão ficará escondida dos meus olhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Mesmo que ele floresça entre os juncos, Virá um vento leste, o vento de Jeová; Ele virá do deserto para secar sua fonte e esgotar sua nascente. Ele saqueará seu tesouro, todas as suas coisas preciosas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Samaria será considerada culpada, pois se rebelou contra o seu Deus. Eles cairão à espada. Seus filhos serão despedaçados, E o ventre das mulheres grávidas será rasgado.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 14,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Volte para Jeová, seu Deus, ó Israel, Pois você tropeçou por causa do seu erro.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Voltem para Jeová com estas palavras, Digam-lhe: ‘Perdoa o nosso erro e aceita o que é bom, E ofereceremos, como se fossem novilhos, o louvor dos nossos lábios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "A Assíria não nos salvará. Não montaremos em cavalos, Nem diremos mais ao trabalho das nossas mãos: “Ó nosso Deus!” Pois é em ti que o órfão encontra misericórdia.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Vou curá-los da sua infidelidade. Vou amá-los de livre e espontânea vontade, Porque a minha ira se afastou de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Vou me tornar para Israel como o orvalho. Ele florescerá como o lírio E lançará raízes profundas como as das árvores do Líbano.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Seus raminhos se espalharão, Seu esplendor será como o da oliveira, E sua fragrância será como a do Líbano.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Morarão novamente à sombra dele. Cultivarão cereais e florescerão como a videira. A fama dele será como a do vinho do Líbano.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Efraim perguntará: ‘O que eu ainda tenho a ver com os ídolos?’ Eu responderei e cuidarei dele. Serei como um junípero frondoso. O fruto de vocês virá de mim.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Quem é sábio? Que entenda essas coisas. Quem é prudente? Que as compreenda. Pois os caminhos de Jeová são retos, E os justos andarão neles; Mas os transgressores tropeçarão neles.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

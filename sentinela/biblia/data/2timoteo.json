@@ -1,0 +1,440 @@
+{
+  "nome_do_livro": "2 Timóteo",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Paulo, apóstolo de Cristo Jesus pela vontade de Deus, segundo a promessa da vida que vem por meio de Cristo Jesus,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "a Timóteo, filho amado: Que você tenha bondade imerecida, misericórdia e paz da parte de Deus, o Pai, e de Cristo Jesus, nosso Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Sou grato a Deus, a quem presto serviço sagrado como os meus antepassados e com uma consciência limpa, e nunca deixo de me lembrar de você nas minhas súplicas, noite e dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Ao me lembrar de suas lágrimas, fico ansioso de vê-lo para que eu me encha de alegria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois eu me recordo da sua fé sem hipocrisia, fé que houve primeiro em sua avó Loide e em sua mãe, Eunice, e que, estou certo, há também em você.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Por essa razão quero lembrar-lhe que atice, como a um fogo, o dom de Deus que você recebeu pela imposição das minhas mãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois Deus não nos deu um espírito de covardia, mas de poder, de amor e de bom senso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim, não se envergonhe do testemunho sobre o nosso Senhor, nem de mim, prisioneiro por causa dele; mas, confiante no poder de Deus, participe em suportar sofrimentos pelas boas novas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Ele nos salvou e nos chamou com uma chamada santa, não por causa das nossas obras, mas por causa do seu propósito e da sua bondade imerecida. Esta nos foi concedida em Cristo Jesus antes dos tempos antigos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "mas agora se tornou claramente evidente pela manifestação do nosso Salvador, Cristo Jesus. Ele aboliu a morte e, por meio das boas novas, lançou luz sobre a vida imperecível.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Dessas boas novas fui designado pregador, apóstolo e instrutor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "É por isso que eu também sofro essas coisas, mas não me envergonho. Pois conheço Aquele em quem creio e estou confiante em que ele é capaz de guardar o que entreguei aos cuidados dele, até aquele dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Apegue-se ao padrão de palavras sadias que você ouviu de mim, com a fé e o amor que resultam da união com Cristo Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Guarde, por meio do espírito santo que mora em nós, esse precioso bem que lhe foi confiado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Você sabe que todos na província da Ásia se afastaram de mim, incluindo Figelo e Hermógenes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Que o Senhor conceda misericórdia à família de Onesíforo, pois ele muitas vezes me reanimou, e não se envergonhou por eu estar preso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Pelo contrário, quando esteve em Roma, ele me procurou diligentemente e me achou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Que o Senhor conceda que ele ache misericórdia da parte de Jeová naquele dia. E você bem sabe quantos serviços ele prestou em Éfeso.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Portanto, meu filho, continue a se fortalecer por meio da bondade imerecida que está em Cristo Jesus;",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "e as coisas que você ouviu de mim e que foram confirmadas por muitas testemunhas, essas coisas confie a homens fiéis, que, por sua vez, estarão qualificados para ensinar outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Como bom soldado de Cristo Jesus, participe em suportar sofrimentos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Ninguém que serve como soldado se envolve nos assuntos comerciais da vida civil, a fim de agradar àquele que o alistou como soldado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "E, mesmo nos jogos, quem compete não é coroado a menos que tenha competido segundo as regras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "O lavrador que trabalha arduamente tem de ser o primeiro a participar dos frutos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pense constantemente no que digo; o Senhor lhe dará entendimento em todas as coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Lembre-se de que Jesus Cristo foi levantado dentre os mortos e era descendente de Davi, segundo as boas novas que prego;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "por causa delas sofro e estou acorrentado como um criminoso. Contudo, a palavra de Deus não está acorrentada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Por isso continuo suportando todas as coisas por causa dos escolhidos, para que eles também possam obter a salvação que vem por meio de Cristo Jesus, junto com glória eterna.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Esta declaração é digna de confiança: Se já morremos com ele, certamente também viveremos com ele;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "se continuarmos perseverando, também reinaremos com ele; se o negarmos, ele também nos negará;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "se formos infiéis, ele permanece fiel, pois não pode negar a si mesmo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Continue a fazê-los lembrar dessas coisas, instruindo-os perante Deus para que não briguem por causa de palavras, coisa que não é de nenhum proveito, pois prejudica os que escutam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Faça o máximo para se apresentar a Deus aprovado, como um trabalhador que não tem nada de que se envergonhar, que maneja corretamente a palavra da verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mas rejeite as conversas vãs que violam o que é santo, pois levarão a uma impiedade cada vez maior,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "e as palavras deles se espalharão como gangrena. Himeneu e Fileto estão entre eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Esses homens se desviaram da verdade, dizendo que a ressurreição já ocorreu, e estão arruinando a fé de alguns.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Apesar disso, o sólido alicerce de Deus permanece, tendo este selo: “Jeová conhece os que lhe pertencem” e “Todo aquele que invoca o nome de Jeová renuncie à injustiça”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Numa casa grande não há só utensílios de ouro e de prata, mas também de madeira e de barro; alguns para uso honroso, mas outros para uso sem honra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Assim, se alguém se mantiver longe destes últimos, será um instrumento para uso honroso, santificado, útil para o seu dono, preparado para toda boa obra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Por isso, fuja dos desejos da juventude, mas empenhe-se pela justiça, pela fé, pelo amor, pela paz, junto com os que invocam o Senhor com um coração puro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Além disso, rejeite debates tolos e sem sentido, pois você sabe que eles geram brigas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "O escravo do Senhor não precisa brigar, mas precisa ser meigo com todos, qualificado para ensinar, precisa se controlar ao sofrer algum mal,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "e instruir com brandura os que não tiverem uma atitude favorável. Talvez Deus lhes conceda arrependimento, o que os levará a um conhecimento exato da verdade;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "dessa forma cairão em si e escaparão do laço do Diabo, pois foram apanhados por ele para fazer a sua vontade.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Mas saiba que nos últimos dias haverá tempos críticos, difíceis de suportar.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois os homens só amarão a si mesmos, amarão o dinheiro, serão presunçosos, arrogantes, blasfemadores, desobedientes aos pais, ingratos, desleais,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "desnaturados, não estarão dispostos a acordos, serão caluniadores, sem autodomínio, ferozes, sem amor ao que é bom,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "traidores, teimosos, cheios de orgulho, amarão os prazeres em vez de a Deus",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "e manterão uma aparência de devoção a Deus, mas rejeitarão o poder dessa devoção. Desses, afaste-se.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Dentre eles surgem homens que se introduzem ardilosamente nas famílias e cativam mulheres fracas, sobrecarregadas de pecados, movidas por vários desejos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "as quais estão sempre aprendendo, sem nunca conseguir chegar a um conhecimento exato da verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim como Janes e Jambres se opuseram a Moisés, esses também continuam se opondo à verdade. Esses homens têm a mente completamente corrompida e são reprovados quanto à fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Contudo, não irão muito longe, pois a tolice deles ficará bem clara a todos, como no caso daqueles dois homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Mas você seguiu atentamente meus ensinamentos, meu proceder na vida, meu propósito, minha fé, minha paciência, meu amor, minha perseverança,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "minhas perseguições e sofrimentos, como os que enfrentei em Antioquia, em Icônio, em Listra. Eu suportei essas perseguições, e o Senhor me livrou de todas elas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "De fato, todos os que desejarem levar uma vida de devoção a Deus, em união com Cristo Jesus, também serão perseguidos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mas as pessoas más e os impostores se tornarão cada vez piores, enganando e sendo enganados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Você, porém, continue nas coisas que aprendeu e foi persuadido a crer, pois você sabe de quem as aprendeu",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "e desde a infância conhece os escritos sagrados, que podem torná-lo sábio para a salvação por meio da fé em Cristo Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Toda a Escritura é inspirada por Deus e proveitosa para ensinar, para repreender, para endireitar as coisas, para disciplinar em justiça,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "a fim de que o homem de Deus seja plenamente competente, completamente equipado para toda boa obra.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Eu lhe ordeno solenemente perante Deus e Cristo Jesus, que julgará os vivos e os mortos, pela sua manifestação e pelo seu Reino:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pregue a palavra; faça isso urgentemente, em tempos favoráveis e em tempos difíceis; repreenda, censure, exorte, com toda a paciência e arte de ensino.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois haverá um tempo em que não suportarão o ensinamento sadio, mas, de acordo com os seus próprios desejos, se cercarão de instrutores que lhes façam cócegas nos ouvidos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Desviarão os ouvidos da verdade e darão atenção a histórias falsas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Você, porém, mantenha os sentidos em todas as coisas, suporte as dificuldades, faça a obra de um evangelizador, realize plenamente o seu ministério.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Pois eu já estou sendo derramado como oferta de bebida, e a hora do meu livramento está próxima.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Travei a boa luta, terminei a corrida, vivi de acordo com a fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "De agora em diante me está reservada a coroa da justiça, que o Senhor, o justo juiz, me dará como recompensa naquele dia; e não somente a mim, mas também a todos os que anseiam a sua manifestação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Faça todo o possível para me visitar em breve.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pois Demas me abandonou porque amava este mundo; ele foi para Tessalônica, Crescente para a Galácia, e Tito para a Dalmácia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Apenas Lucas está comigo. Traga Marcos com você, porque ele é útil para mim no ministério.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Enviei Tíquico para Éfeso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Quando você vier, traga a capa que deixei em Trôade com Carpo, e também os rolos, especialmente os pergaminhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Alexandre, o fundidor de cobre, me prejudicou muito. Jeová lhe retribuirá segundo as suas ações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Você também deve tomar cuidado com ele, porque ele se opôs fortemente à nossa mensagem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Na minha primeira defesa, ninguém se pôs do meu lado, mas todos me abandonaram — que isso não lhes seja levado em conta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Mas o Senhor ficou ao meu lado e me fortaleceu, para que, por meu intermédio, se realizasse plenamente a pregação, e todas as nações a ouvissem; e fui livrado da boca do leão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "O Senhor me livrará de todo mal e me levará a salvo para o seu Reino celestial. A ele seja dada a glória para todo o sempre. Amém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Transmita minhas saudações a Prisca e a Áquila, e à família de Onesíforo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Erasto ficou em Corinto, mas deixei Trófimo em Mileto, doente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Faça todo o possível para chegar aqui antes do inverno. Êubulo lhe manda saudações, e também Pudente, Lino, Cláudia e todos os irmãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "O Senhor esteja com o espírito que você mostra. Que a bondade imerecida dele esteja com vocês.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

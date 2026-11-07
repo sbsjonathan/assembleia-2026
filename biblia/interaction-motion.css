@@ -1,0 +1,25 @@
+/* Selection feedback stays on the content control, away from the fixed chrome. */
+.sentinela-bible :is(.book-tile,.chapter-tile,.section-tabs button,.section-row,.menu-row,.book-info button,.chapter-nav button,.reference-preview-open) {
+  transition: background-color 200ms cubic-bezier(.4,0,.2,1), color 200ms cubic-bezier(.4,0,.2,1), box-shadow 200ms cubic-bezier(.4,0,.2,1);
+}
+.sentinela-bible .bible-choice-pressed {
+  box-shadow: inset 0 0 0 100vmax rgba(96,65,132,.14);
+}
+.sentinela-bible :is(.book-tile,.chapter-tile).bible-choice-pressed {
+  box-shadow: inset 0 0 0 100vmax rgba(255,255,255,.18);
+}
+
+/* Durations follow the fade/sheet resources included in the Android reference. */
+.bible-modal-motion.is-opening::backdrop { animation: bible-soft-backdrop-in 250ms cubic-bezier(.4,0,.2,1) both; }
+.bible-modal-motion.is-closing::backdrop { animation: bible-soft-backdrop-out 200ms cubic-bezier(.4,0,.2,1) both; }
+.bible-modal-motion.dialog-css-motion.is-opening { animation: bible-soft-sheet-in 250ms cubic-bezier(.4,0,.2,1) both; }
+.bible-modal-motion.dialog-css-motion.is-closing { animation: bible-soft-sheet-out 200ms cubic-bezier(.4,0,.2,1) both; }
+@keyframes bible-soft-sheet-in { from { opacity: 0; transform: translateY(var(--bible-sheet-enter-y,32px)); } to { opacity: 1; transform: translateY(0); } }
+@keyframes bible-soft-sheet-out { from { opacity: 1; transform: translateY(0); } to { opacity: 0; transform: translateY(var(--bible-sheet-exit-y,24px)); } }
+@keyframes bible-soft-backdrop-in { from { opacity: var(--bible-backdrop-from,0); } to { opacity: 1; } }
+@keyframes bible-soft-backdrop-out { from { opacity: var(--bible-backdrop-from,1); } to { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .sentinela-bible .bible-choice-pressed { box-shadow: none; }
+  .sentinela-bible :is(.book-tile,.chapter-tile,.section-tabs button,.section-row,.menu-row,.book-info button,.chapter-nav button,.reference-preview-open) { transition: none; }
+  .bible-modal-motion,.bible-modal-motion::backdrop { animation: none !important; }
+}

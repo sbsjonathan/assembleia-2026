@@ -1,0 +1,83 @@
+/* A normal-flow search screen. iOS owns document scrolling while the keyboard
+   is visible: no fixed body, translated input, or visualViewport positioning. */
+body.bible-search-open { background: #fff; }
+/* A returning chapter must retain its full document height while iOS is still
+   dismissing the keyboard. Reserve the measured navbar, not its temporary zero
+   keyboard reserve; this also covers a missing/delayed WebKit resize event. */
+body.sentinela-bible.with-bottom-navbar:not(.bible-search-open) { padding-bottom: var(--navbar-real-height, var(--bible-menu-height)) !important; }
+body.sentinela-bible.audio-open.with-bottom-navbar:not(.bible-search-open) { padding-bottom: calc(var(--navbar-real-height, var(--bible-menu-height)) + 116px) !important; }
+body.sentinela-bible.with-bottom-navbar.bible-search-open,
+body.sentinela-bible.audio-open.with-bottom-navbar.bible-search-open { padding-bottom: 0 !important; }
+body.bible-search-open > :is(.app-header, .study-article-header, .section-tabs),
+body.bible-search-open :is(#audio-follow, #audio-player, #bible-offline-notice) { display: none !important; }
+body.bible-search-open .bottom-navbar { visibility: hidden; pointer-events: none; }
+#search-dialog.bible-search-page {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: var(--app-statusbar-height, env(safe-area-inset-top, 0px)) max(14px, env(safe-area-inset-right, 0px)) max(10px, env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px));
+  border: 0;
+  background: #fff;
+  color: #292929;
+  font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: visible;
+}
+#search-dialog .search-surface { display: block; width: 100%; min-width: 0; }
+#search-dialog .search-panel-header { position: sticky; top: var(--app-statusbar-height, env(safe-area-inset-top, 0px)); z-index: 2; background: #fff; display: flex; flex: 0 0 auto; align-items: center; justify-content: space-between; gap: 8px; min-height: 52px; padding: 2px 0 4px; }
+#search-dialog .search-panel-header h2 { margin: 0; font-size: 20px; font-weight: 650; line-height: 1.25; }
+#search-dialog .search-close, #search-dialog .search-clear, #search-dialog .search-submit { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; border: 0; border-radius: 6px; background: transparent; color: var(--purple, #604184); padding: 8px; }
+#search-dialog .search-close { margin-right: 0; }
+#search-dialog .search-close svg { width: 24px; height: 24px; }
+#search-dialog #search-form { flex: 0 0 auto; margin: 0; padding: 0 0 8px; }
+#search-dialog #search-form label { display: block; margin: 0 0 7px; color: #666; font-size: 12px; line-height: 1.3; }
+#search-dialog .search-query-field { display: flex; align-items: center; min-width: 0; min-height: 49px; border: 1px solid #bcb5c5; border-radius: 9px; background: #f7f6f8; }
+#search-dialog .search-query-field:focus-within { border-color: var(--purple, #604184); box-shadow: 0 0 0 1px var(--purple, #604184); }
+#search-dialog #search-input { flex: 1; width: 0; min-width: 0; min-height: 47px; margin: 0; padding: 10px 0 10px 12px; border: 0; border-radius: 9px; outline: 0; background: transparent; color: #222; font-family: inherit; font-size: 17px; line-height: 1.4; -webkit-appearance: none; appearance: none; }
+#search-dialog #search-input::-webkit-search-cancel-button,
+#search-dialog #search-input::-webkit-search-decoration,
+#search-dialog #search-input::-webkit-search-results-button,
+#search-dialog #search-input::-webkit-search-results-decoration { display: none; width: 0; height: 0; -webkit-appearance: none; appearance: none; }
+#search-dialog .search-clear { min-width: 36px; padding: 8px 4px; color: #777; }
+#search-dialog .search-clear svg { width: 17px; height: 17px; }
+#search-dialog .search-submit { min-width: 44px; }
+#search-dialog .search-submit svg { width: 21px; height: 21px; }
+#search-dialog .search-categories { display: flex; flex: 0 0 auto; gap: 4px; width: 100%; min-width: 0; overflow-x: auto; overflow-y: hidden; overscroll-behavior: contain; scrollbar-width: none; border-bottom: 1px solid #dedbe2; }
+#search-dialog .search-categories::-webkit-scrollbar { display: none; }
+#search-dialog .search-category { display: flex; flex: 0 0 auto; align-items: center; gap: 5px; min-height: 44px; padding: 9px 10px; border: 0; border-bottom: 3px solid transparent; background: transparent; color: #666; font-size: 13px; font-weight: 500; white-space: nowrap; }
+#search-dialog .search-category:first-child { padding-left: 4px; }
+#search-dialog .search-category[aria-selected="true"] { border-bottom-color: var(--purple, #604184); color: var(--purple, #604184); font-weight: 700; }
+#search-dialog .search-category-count { padding: 1px 5px; border-radius: 8px; background: #eeebf2; font-size: 10px; font-weight: 600; }
+#search-dialog .search-status { display: flex; flex: 0 0 auto; align-items: center; gap: 8px; min-height: 38px; margin: 0; padding: 9px 0 8px; color: #68616e; font-size: 12px; line-height: 1.45; overflow-wrap: anywhere; }
+#search-dialog .search-status-text { display: -webkit-box; min-width: 0; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+#search-dialog .search-status.is-error { color: #a33d28; }
+#search-dialog .search-status.is-loading::before { content: ''; flex: 0 0 auto; width: 12px; height: 12px; border: 2px solid #d8cfe4; border-top-color: var(--purple, #604184); border-radius: 50%; animation: bible-search-spin .8s linear infinite; }
+#search-dialog .search-results-scroll { display: block; min-width: 0; overflow: visible; padding: 0 2px 8px; }
+#search-dialog #search-results { display: block; margin: 0; }
+#search-dialog #search-results .search-result { display: block; width: 100%; min-width: 0; min-height: 64px; margin: 0; padding: 13px 0 16px; border: 0; border-bottom: 1px solid #e5e2e9; border-radius: 0; background: transparent; color: #292929; font-family: inherit; text-align: left; white-space: normal; overflow-wrap: anywhere; }
+#search-dialog #search-results .search-result:active { background: #f4f1f7; }
+#search-dialog .search-result-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; margin-bottom: 5px; font-size: 10px; line-height: 1.45; }
+#search-dialog .search-result-kind { color: #765c92; font-weight: 650; text-transform: uppercase; letter-spacing: .25px; }
+#search-dialog .search-result-source { color: #777; }
+#search-dialog .search-result-title { display: block; color: var(--blue, #4c6f9f); font-size: 17px; font-weight: 600; line-height: 1.35; }
+#search-dialog .search-result-snippet { display: block; margin-top: 6px; font-size: 14px; line-height: 1.6; }
+#search-dialog mark { padding: 0 1px; border-radius: 2px; color: inherit; background: #f4e5a6; font-weight: 650; }
+#search-dialog .search-result-reason { display: block; margin-top: 7px; color: #736280; font-size: 11px; line-height: 1.5; }
+#search-dialog .search-load-more, #search-dialog .search-retry { width: 100%; min-height: 46px; margin: 14px 0 0; padding: 11px 14px; border: 1px solid #cfc5db; border-radius: 7px; background: #f3eff7; color: var(--purple, #604184); font-size: 14px; font-weight: 600; }
+#search-dialog .search-coverage { margin: 16px 0 5px; color: #7b7580; font-size: 11px; line-height: 1.55; }
+#search-dialog .search-examples { display: flex; flex-wrap: wrap; gap: 8px; margin: 7px 0 20px; }
+#search-dialog #search-results .search-example { display: inline-block; width: auto; min-height: 42px; padding: 9px 13px; border: 1px solid #d8d0e2; border-radius: 6px; background: #f7f4fa; color: var(--purple, #604184); font-size: 14px; }
+#search-dialog .search-suggestions-title { margin: 0 0 4px; color: #68616e; font-size: 13px; font-weight: 600; }
+#search-dialog .search-empty { margin: 14px 0; color: #777; font-size: 14px; line-height: 1.6; }
+@keyframes bible-search-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { #search-dialog .search-status.is-loading::before { animation: none; } }
+@media (max-width: 360px) {
+  #search-dialog.bible-search-page { padding-left: max(10px, env(safe-area-inset-left, 0px)); padding-right: max(10px, env(safe-area-inset-right, 0px)); }
+  #search-dialog .search-panel-header h2 { font-size: 18px; }
+  #search-dialog #search-input { font-size: 16px; }
+}
+
+/* Reading results follow the chosen text size; the search controls stay compact. */
+html body #search-dialog.bible-search-page .search-panel-header h2 { font-size: min(22px, calc(20px * var(--font-scale-global, 1))); }
+html body #search-dialog.bible-search-page .search-category { font-size: min(14px, calc(13px * var(--font-scale-global, 1))); }
+html body #search-dialog.bible-search-page .search-category-count { font-size: 10px; }
+html body #search-dialog.bible-search-page :is(.search-status, #search-form label) { font-size: 12px; }

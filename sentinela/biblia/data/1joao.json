@@ -1,0 +1,555 @@
+{
+  "nome_do_livro": "1 João",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "O que era desde o princípio, que ouvimos, que vimos com os nossos olhos, que observamos e que nossas mãos apalparam, com respeito à palavra da vida",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "(sim, a vida foi revelada, e nós vimos, e estamos dando testemunho e relatando a vocês a vida eterna que estava com o Pai e nos foi revelada),",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "o que vimos e ouvimos também estamos relatando a vocês, para que também possam estar unidos conosco. E nós estamos unidos com o Pai e com o seu Filho, Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Escrevemos estas coisas para que a nossa alegria seja completa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Esta é a mensagem que ouvimos dele e que estamos anunciando a vocês: Deus é luz, e não há nenhuma escuridão nele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Se fazemos a declaração: “Estamos unidos com ele”, mas continuamos andando na escuridão, estamos mentindo e não estamos praticando a verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "No entanto, se estamos andando na luz assim como ele mesmo está na luz, estamos unidos uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo o pecado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Se fazemos a declaração: “Não temos pecado”, estamos enganando a nós mesmos e a verdade não está em nós.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Se confessamos os nossos pecados, ele é fiel e justo para perdoar os nossos pecados e nos purificar de toda injustiça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Se fazemos a declaração: “Nós não pecamos”, fazemos dele um mentiroso, e a sua palavra não está em nós.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Meus filhinhos, eu lhes escrevo estas coisas para que vocês não cometam pecado. Contudo, se alguém cometer um pecado, temos um ajudador junto ao Pai: Jesus Cristo, um justo.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E ele é um sacrifício propiciatório pelos nossos pecados; contudo, não apenas pelos nossos, mas também pelos do mundo inteiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E por meio disto sabemos que o conhecemos: se continuamos a obedecer aos seus mandamentos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Quem diz: “Eu o conheço”, e ainda assim não obedece aos seus mandamentos, é mentiroso, e a verdade não está nele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Mas, se alguém obedece à sua palavra, nele o amor de Deus foi verdadeiramente aperfeiçoado. Por meio disso sabemos que estamos em união com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Quem diz que permanece em união com ele está ele mesmo sob a obrigação de continuar andando assim como ele andou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Amados, eu não lhes escrevo um novo mandamento, mas um mandamento antigo, que vocês têm desde o princípio. Esse mandamento antigo é a palavra que vocês ouviram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Contudo, eu lhes escrevo um novo mandamento, algo que é verdadeiro no caso dele e no seu, porque a escuridão está passando e a verdadeira luz já está brilhando.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Quem diz que está na luz, mas odeia seu irmão, ainda está na escuridão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Quem ama seu irmão permanece na luz, e nele não há motivo para tropeço.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Mas quem odeia seu irmão está na escuridão e está andando na escuridão, e não sabe para onde vai, porque a escuridão lhe cegou os olhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Eu lhes escrevo, filhinhos, porque os seus pecados foram perdoados por causa do nome dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Eu lhes escrevo, pais, porque vocês conhecem aquele que existe desde o princípio. Eu lhes escrevo, jovens, porque vocês venceram o Maligno. Eu lhes escrevo, filhinhos, porque vocês conhecem o Pai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Eu lhes escrevo, pais, porque vocês conhecem aquele que existe desde o princípio. Eu lhes escrevo, jovens, porque vocês são fortes, e a palavra de Deus permanece em vocês, e vocês venceram o Maligno.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Não amem nem o mundo, nem as coisas no mundo. Se alguém ama o mundo, o amor do Pai não está nele;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "porque tudo o que há no mundo — o desejo da carne, o desejo dos olhos e a ostentação de posses — não se origina do Pai, mas se origina do mundo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Além disso, o mundo está passando, e também o seu desejo, mas quem faz a vontade de Deus permanece para sempre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Filhinhos, esta é a última hora e, assim como vocês ouviram que o anticristo virá, já surgiram agora muitos anticristos. Por causa disso sabemos que esta é a última hora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Eles saíram do nosso meio, mas não eram dos nossos, pois, se fossem dos nossos, teriam permanecido conosco. Mas saíram para que se mostrasse que nem todos são dos nossos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "E vocês têm uma unção que receberam daquele que é santo, e todos vocês têm conhecimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Eu lhes escrevo não porque vocês não conhecem a verdade, mas porque a conhecem, e porque nenhuma mentira se origina da verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Quem é o mentiroso, senão aquele que nega que Jesus é o Cristo? Esse é o anticristo, aquele que nega o Pai e o Filho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Todo aquele que nega o Filho não tem também o Pai. Mas quem reconhece o Filho tem também o Pai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Quanto a vocês, aquilo que ouviram desde o princípio deve permanecer em vocês. Se aquilo que ouviram desde o princípio permanecer em vocês, também permanecerão em união com o Filho e em união com o Pai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Também, foi isto que ele mesmo nos prometeu: a vida eterna.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Eu lhes escrevo estas coisas a respeito dos que estão tentando desencaminhá-los.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "E, quanto a vocês, a unção que receberam dele permanece em vocês, e não precisam que alguém os ensine. Mas a unção da parte dele, que é verdadeira e não é mentira, lhes ensina todas as coisas. Assim como ela os ensinou, permaneçam em união com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Assim, filhinhos, permaneçam em união com ele, para que, quando ele for manifestado, possamos falar com confiança e não nos afastemos dele envergonhados, durante a sua presença.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Se vocês sabem que ele é justo, também sabem que todo aquele que pratica a justiça nasceu dele.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Vejam com que amor o Pai nos amou, a ponto de sermos chamados filhos de Deus! E é isso que nós somos. É por isso que o mundo não nos conhece, porque não chegou a conhecê-lo.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Amados, agora somos filhos de Deus, mas ainda não foi revelado o que seremos. Sabemos que, quando ele for manifestado, seremos semelhantes a ele, porque o veremos assim como ele é.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E todo aquele que nele tem essa esperança se purifica, assim como ele é puro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Todo aquele que pratica o pecado está praticando também o que é contra a lei, e o pecado é aquilo que é contra a lei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Vocês sabem também que ele foi manifestado para tirar os nossos pecados, e não há pecado nele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Todo aquele que permanece em união com ele não pratica o pecado; ninguém que pratica o pecado o viu, nem chegou a conhecê-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Filhinhos, que ninguém os desencaminhe. Quem pratica a justiça é justo, assim como ele é justo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quem pratica o pecado se origina do Diabo, porque o Diabo está pecando desde o princípio. Com este objetivo o Filho de Deus foi manifestado: para desfazer as obras do Diabo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Todo aquele que nasceu de Deus não pratica o pecado, pois a Sua semente permanece nele, e ele não pode praticar o pecado, pois nasceu de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Desta forma sabemos quem são os filhos de Deus e quem são os filhos do Diabo: aquele que não pratica a justiça não se origina de Deus, nem aquele que não ama o seu irmão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Porque esta é a mensagem que vocês ouviram desde o princípio: devemos amar uns aos outros;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "não como Caim, que se originou do Maligno e matou o seu irmão. E por que motivo o matou? Porque as suas próprias obras eram más, mas as do seu irmão eram justas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Não se admirem, irmãos, de que o mundo os odeia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Nós sabemos que passamos da morte para a vida porque amamos os irmãos. Quem não ama permanece na morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Todo aquele que odeia o seu irmão é assassino, e vocês sabem que a vida eterna não permanece em nenhum assassino.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Por meio disto chegamos a conhecer o amor: ele entregou a vida por nós, e nós temos a obrigação de entregar a vida pelos nossos irmãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Mas se alguém tem os bens deste mundo e vê o seu irmão passando necessidade, e ainda assim se recusa a lhe mostrar compaixão, de que modo o amor de Deus permanece nele?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Filhinhos, devemos amar não em palavras nem com a língua, mas em ações e em verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Por meio disso saberemos que nos originamos da verdade e tranquilizaremos o nosso coração diante dele",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "sempre que o nosso coração nos condenar, porque Deus é maior do que o nosso coração e sabe todas as coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Amados, se o nosso coração não nos condena, temos confiança ao falar com Deus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "e tudo o que pedimos recebemos dele, porque estamos obedecendo aos seus mandamentos e fazendo o que é agradável aos seus olhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Realmente, este é o seu mandamento: que tenhamos fé no nome do seu Filho, Jesus Cristo, e que amemos uns aos outros, assim como ele nos deu um mandamento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Além disso, quem obedece aos seus mandamentos permanece em união com ele, e ele em união com esse. E, pelo espírito que ele nos deu, sabemos que ele permanece em união conosco.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Amados, não acreditem em toda declaração inspirada, mas ponham à prova as declarações inspiradas para ver se elas se originam de Deus, pois muitos falsos profetas saíram pelo mundo afora.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "É desta forma que vocês podem saber se a declaração inspirada vem de Deus: toda declaração inspirada que reconhece que Jesus Cristo veio na carne se origina de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mas toda declaração inspirada que não reconhece Jesus não se origina de Deus. Além disso, essa é a declaração inspirada do anticristo, a qual vocês ouviram que viria e agora já está no mundo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Filhinhos, vocês se originam de Deus e venceram a eles, porque aquele que está em união com vocês é maior do que aquele que está em união com o mundo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Eles se originam do mundo; é por isso que falam o que se origina do mundo e o mundo os escuta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Nós nos originamos de Deus. Quem conhece a Deus nos escuta; quem não se origina de Deus não nos escuta. É assim que fazemos distinção entre a declaração inspirada da verdade e a declaração inspirada do erro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Amados, continuemos a amar uns aos outros, porque o amor vem de Deus, e todo aquele que ama nasceu de Deus e conhece a Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quem não ama não conhece a Deus, porque Deus é amor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Por meio disto se revelou o amor de Deus em nosso caso: Deus enviou o seu Filho unigênito ao mundo para que ganhássemos a vida por meio dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O amor consiste no seguinte: não que nós tenhamos amado a Deus, mas que ele nos amou e enviou seu Filho como sacrifício propiciatório pelos nossos pecados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Amados, se foi assim que Deus nos amou, então nós também temos a obrigação de amar uns aos outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ninguém jamais viu a Deus. Se continuamos a amar uns aos outros, Deus permanece em nós e o seu amor é aperfeiçoado em nós.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Por meio disto sabemos que permanecemos em união com ele e ele em união conosco: porque ele nos deu o seu espírito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Além disso, nós mesmos vimos e agora damos testemunho de que o Pai enviou seu Filho como salvador do mundo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Quem reconhece que Jesus é Filho de Deus, com ele Deus permanece em união, e ele em união com Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "E nós conhecemos o amor que Deus tem por nós e acreditamos nesse amor. Deus é amor, e quem permanece no amor permanece em união com Deus, e Deus permanece em união com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Dessa forma o amor foi aperfeiçoado em nós, para que possamos falar com confiança no dia do julgamento, porque, assim como ele é, assim também nós somos neste mundo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "No amor não há medo, mas o perfeito amor expulsa o medo, porque o medo nos restringe. Realmente, quem tem medo não foi aperfeiçoado no amor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Nós amamos porque ele nos amou primeiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Se alguém diz: “Eu amo a Deus”, e ainda assim odeia o seu irmão, é mentiroso. Pois quem não ama o seu irmão, a quem vê, não pode amar a Deus, a quem não vê.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "E recebemos dele este mandamento: aquele que ama a Deus deve amar também o seu irmão.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quem crê que Jesus é o Cristo nasceu de Deus. E quem ama aquele que causou o nascimento ama também aquele que nasceu dele.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Por meio disto sabemos que amamos os filhos de Deus, quando amamos a Deus e cumprimos os seus mandamentos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois o amor de Deus significa o seguinte: que obedeçamos aos seus mandamentos; contudo, os seus mandamentos não são pesados,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "porque todo aquele que nasceu de Deus vence o mundo. E esta é a vitória que venceu o mundo: a nossa fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quem pode vencer o mundo? Não é aquele que tem fé em que Jesus é o Filho de Deus?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Este é aquele que veio por meio de água e de sangue: Jesus Cristo; não apenas com a água, mas com a água e com o sangue. E o espírito dá testemunho, porque o espírito é a verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois são três os que dão testemunho:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "o espírito, a água e o sangue; e os três estão de acordo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Se aceitamos o testemunho de homens, maior é o testemunho de Deus. Porque este é o testemunho de Deus: o testemunho que ele deu a respeito do seu Filho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Quem deposita fé no Filho de Deus tem o testemunho dentro de si. Quem não tem fé em Deus faz dele um mentiroso, porque não deposita fé no testemunho dado por Deus a respeito do seu Filho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E este é o testemunho: Deus nos deu vida eterna, e essa vida está em seu Filho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quem tem o Filho tem essa vida; quem não tem o Filho de Deus não tem essa vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Eu lhes escrevo estas coisas para que vocês, que depositaram fé no nome do Filho de Deus, saibam que têm vida eterna.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E esta é a confiança que temos nele: não importa o que peçamos segundo a sua vontade, ele nos ouve.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "E, se sabemos que ele nos ouve com respeito àquilo que pedimos, sabemos que teremos as coisas pedidas, visto que as pedimos a ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Se alguém vir seu irmão cometendo um pecado que não incorre em morte, ele pedirá, e Deus lhe dará vida, sim, aos que não cometerem um pecado que incorre em morte. Há um pecado que incorre em morte. Não é a respeito desse pecado que eu digo que ele deve orar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Toda injustiça é pecado; contudo, há um pecado que não incorre em morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Sabemos que todo aquele que nasceu de Deus não pratica o pecado, mas aquele que nasceu de Deus vigia sobre ele, e o Maligno não pode pôr as mãos nele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Sabemos que nos originamos de Deus, mas o mundo inteiro está no poder do Maligno.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "E sabemos que o Filho de Deus veio e nos deu entendimento para podermos obter conhecimento daquele que é verdadeiro. E nós estamos em união com aquele que é verdadeiro, por meio do seu Filho, Jesus Cristo. Esse é o verdadeiro Deus e a vida eterna.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Filhinhos, guardem-se dos ídolos.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

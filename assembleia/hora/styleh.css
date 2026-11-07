@@ -1,0 +1,44 @@
+:root {
+    --hora-traco-cor: #8e8e8e;
+    --hora-traco-comprimento: 0.92px;
+    --hora-traco-gap-inicio: 1.2px;
+    --hora-traco-gap-fim: 2.2px;
+    --hora-traco-espessura: 0.8px;
+    --hora-traco-subida: 2.8px;
+    --hora-traco-padding-bottom: 1px;
+}
+
+p.hora-ativo,
+li.simposio-subtema-ativo {
+    position: relative;
+    text-decoration: none;
+}
+
+p.hora-ativo > .hora-ativo-texto,
+li.simposio-subtema-ativo > .simposio-subtema-ativo-texto {
+    display: inline;
+    padding-bottom: var(--hora-traco-padding-bottom);
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--hora-traco-cor) 0 var(--hora-traco-comprimento),
+        transparent var(--hora-traco-gap-inicio) var(--hora-traco-gap-fim)
+    );
+    background-repeat: repeat-x;
+    background-size: auto var(--hora-traco-espessura);
+    background-position: 0 calc(100% - var(--hora-traco-subida));
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+p.hora-ativo::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -12px;
+    top: 8px;
+    width: 8px;
+    height: 9px;
+    border-radius: 46%;
+    background: var(--cor-global, #2a7d7d);
+    z-index: 2;
+}

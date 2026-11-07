@@ -1,0 +1,1175 @@
+{
+  "nome_do_livro": "Eclesiastes",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "As palavras do congregante, filho de Davi, rei em Jerusalém.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“A maior das vaidades!” diz o congregante, “A maior das vaidades! Tudo é vão!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "O que é que o homem ganha com todo o seu trabalho árduo, No qual tanto se esforça debaixo do sol?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Uma geração vai e outra geração vem, Mas a terra permanece para sempre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O sol nasce, e o sol se põe; Depois volta depressa para o lugar onde nasce novamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "O vento sopra para o sul e gira para o norte; Dá voltas e voltas, girando continuamente; o vento continua dando as suas voltas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Todos os rios correm para o mar; mesmo assim, o mar não fica cheio. Os rios voltam para o lugar de onde saíram, a fim de correr novamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Todas as coisas são cansativas, Mais do que se pode dizer. O olho não se satisfaz com o que vê, Nem o ouvido se sacia com o que ouve.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "O que foi é o que será, E o que foi feito se fará novamente; Não há nada de novo debaixo do sol.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Será que há alguma coisa de que se possa dizer: “Veja, isto é novo”? Tudo já existe há muito tempo; Já existia antes da nossa época.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Ninguém se lembra dos que viveram nos tempos antigos; E ninguém se lembrará dos que vierem depois; Nem estes serão lembrados pelos que vierem depois deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Eu, o congregante, tornei-me rei sobre Israel, em Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Empenhei-me em estudar e investigar com sabedoria tudo o que se faz debaixo dos céus — a ocupação penosa que Deus deu aos filhos dos homens, que os mantém ocupados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Vi tudo que se faz debaixo do sol, E concluí: tudo é vão, é correr atrás do vento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O que é torto não pode ser endireitado, E o que está faltando não pode ser enumerado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então eu disse no meu coração: “Bem, adquiri grande sabedoria, mais do que qualquer outro antes de mim em Jerusalém, e meu coração obteve muita sabedoria e conhecimento.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Eu me dediquei a conhecer a sabedoria, a conhecer a loucura e a conhecer a tolice — e isso também é correr atrás do vento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Porque muita sabedoria traz muita frustração, De modo que aquele que aumenta seu conhecimento aumenta sua dor.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então eu disse no meu coração: “Vou experimentar o prazer e ver o que eu ganho com isso.” Mas vi que isso também era vaidade.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Eu disse do riso: “Loucura!” E do prazer: “Para que serve?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Fiz uma investigação profunda: eu me permiti deliciar-me com vinho, mantendo minha sabedoria todo o tempo; fui ao ponto de abraçar a tolice, para descobrir o que seria melhor os humanos fazerem nos poucos dias de vida que têm debaixo dos céus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Empreendi grandes obras. Construí casas e plantei vinhedos para mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Fiz para mim pomares e parques, e plantei neles todo tipo de árvores frutíferas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Fiz para mim reservatórios de água para irrigar um bosque de árvores verdejantes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Adquiri servos e servas, e tive servos que nasceram na minha casa. Também adquiri muitos rebanhos — gado bovino e ovelhas —, mais do que todos os que me precederam em Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Acumulei para mim prata e ouro, tesouros de reis e de províncias. Reuni para mim cantores e cantoras, bem como o grande prazer dos filhos dos homens: uma mulher, sim, muitas mulheres.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então, tornei-me grande e superei todos os que me precederam em Jerusalém. E a minha sabedoria continuou comigo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Não me neguei nada do que desejei. Não privei meu coração de nenhum tipo de prazer. Meu coração se alegrava por causa de todo o meu trabalho árduo, e essa era a minha recompensa por todo o meu trabalho árduo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Mas, quando refleti em todas as obras que minhas próprias mãos tinham feito e em todo o trabalho árduo que eu tinha realizado com tanto esforço, vi que tudo era vão, era correr atrás do vento; não havia nada de real valor debaixo do sol.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Então voltei minha atenção para a sabedoria, a loucura e a tolice. (Pois o que pode fazer o homem que vem depois do rei? Apenas o que já se fez.)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "E eu vi que a sabedoria leva vantagem sobre a tolice, assim como a luz leva vantagem sobre a escuridão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "O sábio tem olhos que enxergam claramente; mas o tolo anda em escuridão. Também entendi que o fim de ambos é o mesmo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Então eu disse no meu coração: “Aquilo que acontece com o tolo também vai acontecer comigo.” Então, o que foi que eu ganhei, tornando-me excessivamente sábio? E eu disse no meu coração: “Isso também é vaidade.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Porque nem o sábio nem o tolo serão lembrados para sempre. Nos dias futuros, todos terão sido esquecidos. E como morrerá o sábio? Assim como o tolo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Então passei a odiar a vida, porque todo o trabalho que se fazia debaixo do sol me pareceu aflitivo, pois tudo era vão, era correr atrás do vento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Passei a odiar tudo pelo qual havia trabalhado tão arduamente debaixo do sol, porque eu teria de deixar tudo aquilo para o meu sucessor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "E quem pode dizer se ele será sábio ou tolo? De qualquer modo, ele assumirá o controle sobre tudo que adquiri debaixo do sol com grande esforço e sabedoria. Isso também é vaidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Então meu coração começou a ficar desiludido com respeito a todo o trabalho árduo em que eu tanto havia me esforçado debaixo do sol.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Pois mesmo que um homem trabalhe arduamente, guiado por sabedoria, conhecimento e habilidade, ele terá de entregar tudo que ganhou a alguém que não trabalhou por aquilo. Isso também é vaidade e uma grande desgraça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "O que é que o homem realmente ganha com todo o seu trabalho árduo e a ambição que o impele a trabalhar arduamente debaixo do sol?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Durante todos os seus dias, seu trabalho traz dor e frustração, e nem à noite seu coração descansa. Isso também é vaidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Não há nada melhor para o homem do que comer, beber e desfrutar do seu trabalho árduo. Compreendi que isso também vem da mão do verdadeiro Deus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "pois quem come e quem bebe melhor do que eu?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Ao homem que lhe agrada, ele dá sabedoria, conhecimento e alegria, mas ao pecador ele dá o trabalho de ajuntar e simplesmente dar o que acumulou àquele que agrada ao verdadeiro Deus. Isso também é vaidade, é correr atrás do vento.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Para tudo há um tempo determinado; Há um tempo para toda atividade debaixo dos céus:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Tempo para nascer e tempo para morrer; Tempo para plantar e tempo para arrancar o que se plantou;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Tempo para matar e tempo para curar; Tempo para derrubar e tempo para construir;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Tempo para chorar e tempo para rir; Tempo para lamentar e tempo para dançar;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Tempo para jogar fora pedras e tempo para ajuntar pedras; Tempo para abraçar e tempo para evitar os abraços;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Tempo para procurar e tempo para dar por perdido; Tempo para guardar e tempo para jogar fora;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Tempo para rasgar e tempo para costurar; Tempo para ficar calado e tempo para falar;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Tempo para amar e tempo para odiar; Tempo para guerra e tempo para paz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "O que é que um trabalhador ganha com todo o seu esforço?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Vi a ocupação que Deus deu aos filhos dos homens para mantê-los ocupados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Ele fez tudo belo a seu tempo. Pôs até mesmo eternidade no coração deles; no entanto, a humanidade nunca compreenderá plenamente o trabalho do verdadeiro Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Concluí que, para eles, não há nada melhor do que se alegrar e fazer o bem durante a sua vida,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "e também que todos comam e bebam, e desfrutem dos resultados de todo o seu trabalho árduo. É a dádiva de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Entendi que tudo o que o verdadeiro Deus faz durará para sempre. Não há nada que possa ser acrescentado e não há nada que possa ser tirado. O verdadeiro Deus fez as coisas desse modo, para que as pessoas o temessem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O que acontece, já aconteceu; e o que existirá, já existiu. Mas o verdadeiro Deus procura aquilo que se busca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Também vi o seguinte debaixo do sol: no lugar da justiça havia maldade, e no lugar da retidão havia maldade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Então eu disse no meu coração: “O verdadeiro Deus julgará tanto o justo como o mau, pois há um tempo para toda atividade e para toda ação.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Eu também disse no meu coração que o verdadeiro Deus porá à prova os filhos dos homens e lhes mostrará que são como os animais,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "pois o que acontece com os humanos também acontece com os animais: todos têm o mesmo fim. Como morre um, assim morre o outro; e todos eles têm o mesmo espírito. De modo que o homem não tem nenhuma superioridade sobre os animais; tudo é vão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Todos irão para o mesmo lugar. Todos eles vieram do pó e todos eles retornam ao pó.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Quem é que realmente sabe se o espírito dos humanos vai para cima ou se o espírito do animal desce para a terra?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "E eu vi que não há nada melhor para o homem do que desfrutar do seu trabalho, porque essa é a sua recompensa; pois quem pode fazê-lo ver o que acontecerá depois que ele se for?",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Novamente voltei minha atenção para todos os atos de opressão que ocorrem debaixo do sol. Vi as lágrimas dos oprimidos, mas não havia quem os consolasse. Os opressores deles tinham o poder, e não havia quem os consolasse.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E declarei felizes as pessoas que já tinham morrido, em vez das que ainda estão vivas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E melhor do que todas elas é aquele que ainda não nasceu, que não viu as ações aflitivas praticadas debaixo do sol.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "E eu vi quanto esforço e trabalho habilidoso vêm da rivalidade entre as pessoas; isso também é vaidade, é correr atrás do vento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O tolo cruza os braços e vai se definhando.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Melhor é um punhado de descanso do que dois punhados de trabalho árduo e correr atrás do vento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Voltei minha atenção para outro exemplo de vaidade debaixo do sol:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "um homem totalmente solitário, que não tem nenhuma companhia; não tem nem filho nem irmão, mas não há fim de todo o seu trabalho árduo. Seus olhos nunca se satisfazem com as riquezas. No entanto, será que ele se pergunta: “Para quem trabalho arduamente, privando-me de coisas boas?” Isso também é vaidade e uma ocupação penosa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Melhor dois do que um, porque eles têm boa recompensa pelo seu trabalho árduo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pois, se um deles cai, o outro pode ajudar seu companheiro a se levantar. Mas o que acontecerá com aquele que cai e não tem ninguém para ajudá-lo a se levantar?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Além disso, se dois se deitarem juntos, ficarão aquecidos; mas como pode alguém sozinho manter-se aquecido?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Também, alguém pode vencer a um que está só, mas dois juntos podem resistir ao agressor. E um cordão tríplice não pode ser facilmente rompido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Melhor é um jovem pobre, mas sábio, do que um rei velho, mas tolo, que já não tem bom senso para ouvir conselhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Pois ele saiu da prisão para se tornar rei, embora tenha nascido pobre no domínio do outro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Considerei todos os vivos que andam debaixo do sol e o que acontece com o jovem sucessor, que se levanta no lugar do outro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Embora a multidão que o apoia seja incontável, os que vêm depois não ficarão contentes com ele. Isso também é vaidade, é correr atrás do vento.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Cuide dos seus passos sempre que for à casa do verdadeiro Deus; é melhor se aproximar para ouvir do que para oferecer um sacrifício como fazem os tolos, pois eles não percebem que estão agindo mal.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Não se apresse em abrir a boca, nem permita que o seu coração fale irrefletidamente diante do verdadeiro Deus, pois o verdadeiro Deus está nos céus, mas você está na terra. É por isso que as suas palavras devem ser poucas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois o sonho vem em resultado de muitas preocupações, e a fala insensata vem em resultado de muitas palavras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Sempre que você fizer um voto a Deus, não demore a cumpri-lo, pois ele não se agrada dos tolos. O que votar, cumpra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Melhor é não fazer um voto do que fazer um voto e não cumpri-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Não permita que a sua boca leve você a pecar, nem diga diante do anjo que foi um engano. Por que deixar o verdadeiro Deus indignado por causa do que você disse, de modo que ele destrua o que você realizou?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois, assim como muitas preocupações levam a sonhos, assim também muitas palavras levam à vaidade. Mas tema o verdadeiro Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Caso você veja, em sua província, a opressão do pobre e a violação da justiça e do que é direito, não fique surpreso. Pois aquele que está em autoridade é observado por alguém superior a ele, e acima deles há outros em posição ainda mais alta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Também, o produto da terra é dividido entre todos; até o rei é servido do que vem do campo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Quem ama a prata nunca se fartará da prata, e quem ama a riqueza nunca ficará satisfeito com a sua renda. Isso também é vaidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Quando aumentam as coisas boas, aumentam os que as consomem. E que vantagem há para o dono delas, a não ser contemplá-las com os seus olhos?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Doce é o sono de quem serve, quer coma pouco quer muito; mas a fartura do rico não o deixa dormir.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Há uma grande desgraça que vi debaixo do sol: riquezas acumuladas para o próprio mal do homem que as possui.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Essas riquezas se perdem por causa de um mau negócio, e, quando ele se torna pai, já não tem mais nada em suas mãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Nu o homem sai do ventre da sua mãe, e irá embora assim como veio. E não pode levar nada consigo por todo o seu trabalho árduo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Isto também é uma grande desgraça: assim como o homem vem, assim ele irá embora; e que vantagem tem aquele que continua trabalhando arduamente para alcançar o vento?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Também, todos os seus dias ele come em escuridão, com muita frustração, doença e indignação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Isto é o que eu vi ser bom e apropriado: que a pessoa coma, beba e desfrute dos resultados de todo o trabalho árduo em que tanto se esforça debaixo do sol, durante os poucos dias de vida que o verdadeiro Deus lhe deu, pois essa é a sua recompensa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Também, quando o verdadeiro Deus dá a um homem riquezas e bens materiais, junto com a capacidade de desfrutá-los, este deve aceitar a sua recompensa e se alegrar com seu trabalho árduo. Essa é a dádiva de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Pois não pensará muito nos dias da sua vida passageira, porque o verdadeiro Deus o mantém ocupado com a alegria do seu coração.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Há outra desgraça que vi debaixo do sol, e ela é comum entre os homens:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "o verdadeiro Deus dá a um homem riquezas, bens materiais e glória, de modo que não lhe falta nada do que deseja, mas o verdadeiro Deus não lhe dá a capacidade de desfrutar o que tem, embora um estranho o possa desfrutar. Isso é vaidade e um grande mal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Se um homem se tornar pai cem vezes, viver muitos anos e chegar à velhice, e mesmo assim não desfrutar de suas boas coisas antes de ser sepultado, devo dizer que a criança que nasceu morta está em melhor situação do que ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Pois ela veio em vão e foi embora em escuridão, e a escuridão sepultou o seu nome.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Embora nunca tenha visto o sol nem conhecido nada, ela ainda está em melhor situação do que aquele homem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Qual é a vantagem de viver duas vezes mil anos sem experimentar a felicidade? Não vão todos para o mesmo lugar?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Todo o trabalho árduo de um homem é para a sua boca; no entanto, ele nunca satisfaz seu apetite.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pois que vantagem tem o sábio sobre o tolo, e de que adianta o pobre saber enfrentar a vida?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Melhor é se satisfazer com o que os olhos veem do que ir atrás de desejos. Isso também é vaidade, é correr atrás do vento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O que existe já recebeu um nome, e o que o homem é, já se sabe; e ele não pode lutar com aquele que é mais poderoso do que ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Quanto mais palavras, mais vaidade; e que vantagem elas trazem para o homem?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quem sabe o que é melhor que o homem faça na vida durante os poucos dias da sua vida vã, que passam como a sombra? Quem pode informar ao homem o que acontecerá debaixo do sol depois que ele se for?",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 7,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Um bom nome é melhor do que um bom óleo, e o dia da morte é melhor do que o dia do nascimento.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Melhor é ir a uma casa onde há luto do que ir a uma casa onde há festa, pois a morte é o fim de todo homem, e quem está vivo deve refletir sobre isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Melhor a tristeza do que o riso, pois um rosto triste torna melhor o coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "O coração dos sábios está na casa onde há luto, mas o coração dos tolos está na casa onde há alegria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Melhor é ouvir a censura de um sábio do que ouvir a canção dos tolos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Pois, igual ao estalar de espinhos queimando debaixo da panela, assim é o riso do tolo; e isso também é vaidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas a opressão pode levar o sábio à loucura, e o suborno corrompe o coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Melhor é o fim de uma coisa do que o seu começo. Melhor é ser paciente do que ter um espírito arrogante.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Não fique ofendido facilmente, pois é o coração dos tolos que fica ofendido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Não diga: “Por que os tempos antigos eram melhores do que os atuais?” Pois não é a sabedoria que o faz perguntar isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "A sabedoria acompanhada de uma herança é algo bom, e é uma vantagem para os que veem a luz do dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois a sabedoria é uma proteção, assim como o dinheiro é uma proteção. Mas a vantagem do conhecimento é esta: a sabedoria preserva a vida de quem a possui.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Considere o trabalho do verdadeiro Deus: quem pode endireitar o que ele fez torto?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Num dia bom seja bom também; mas, num dia de dificuldades, lembre-se de que o verdadeiro Deus fez tanto um como o outro, de modo que os homens não podem ter certeza de nada do que lhes acontecerá no futuro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Durante a minha vida vã, vi de tudo: pessoas justas que morrem na sua justiça e pessoas más que vivem muito tempo, apesar da sua maldade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Não seja justo demais nem excessivamente sábio. Por que deveria causar ruína a si mesmo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Não seja excessivamente mau, nem seja tolo. Por que deveria morrer antes do seu tempo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "É melhor seguir um dos conselhos, mas não desconsiderar o outro; pois quem teme a Deus acatará a ambos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "A sabedoria faz com que o sábio seja mais poderoso do que dez homens fortes numa cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Pois não há nenhum homem justo na terra que sempre faça o que é bom e nunca peque.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Também, não dê atenção a todas as palavras que as pessoas dizem, senão você poderia ouvir seu servo amaldiçoá-lo;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "pois você, no íntimo, bem sabe que você mesmo, muitas vezes, amaldiçoou a outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Tudo isso eu examinei com sabedoria, e eu disse: “Vou me tornar sábio.” Mas isso estava fora do meu alcance.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "O que já aconteceu é inatingível e insondável. Quem o pode entender?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Eu voltei meu coração para conhecer, investigar e procurar a sabedoria e a razão por trás das coisas, e para entender a maldade da insensatez e a tolice da loucura.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Então descobri que mais amarga do que a morte é a mulher que é como uma rede de caça, cujo coração é como redes de arrasto e cujas mãos são como correntes. Aquele que agrada ao verdadeiro Deus escapará dela, mas o pecador é capturado por ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "“Veja, isto é o que eu descobri”, diz o congregante. “Investiguei uma coisa após outra para tirar uma conclusão,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "mas, o que busquei continuamente, não encontrei. Entre mil, achei um homem, mas não achei nenhuma mulher.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "O que descobri se resume nisto: o verdadeiro Deus fez a humanidade reta, mas eles seguiram seus próprios planos.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 8,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quem é como o sábio? Quem sabe a solução de um problema? A sabedoria de um homem ilumina o seu rosto e abranda a sua aparência severa.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Eu digo: “Obedeça às ordens do rei por causa do juramento feito a Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Não se apresse a sair da presença dele. Não tome posição a favor de algo mau; pois ele pode fazer o que bem entender,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "porque a palavra do rei é soberana; quem pode dizer a ele: ‘O que está fazendo?’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quem obedece à ordem não sofrerá nenhum mal, e o coração sábio discernirá o tempo certo e a maneira certa de agir.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Para tudo há um tempo e uma maneira de agir, porque as dificuldades da humanidade são muitas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Visto que nenhum homem conhece o futuro, quem pode lhe dizer o que vai acontecer?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim como nenhum homem tem poder sobre o espírito nem pode reter o espírito, assim ninguém tem poder sobre o dia da morte. Assim como ninguém é dispensado durante uma guerra, assim a maldade não deixará escapar os que a praticam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Eu vi tudo isso, e me pus a refletir em todo o trabalho que se tem feito debaixo do sol enquanto homem domina homem para o seu prejuízo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "E eu vi os maus serem enterrados, aqueles que costumavam entrar e sair do lugar santo, mas eles logo eram esquecidos na cidade em que praticavam a maldade. Isso também é vaidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Por não se executar logo a sentença contra um ato mau, o coração dos homens se enche de coragem para fazer o mal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Embora o pecador faça o mal cem vezes e continue vivendo por muito tempo, sei que tudo terminará bem para os que temem o verdadeiro Deus, porque eles têm temor dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mas nada terminará bem para aquele que é mau, nem prolongará ele a sua vida, que é como uma sombra, porque ele não tem temor de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Há algo vão que acontece na terra: há justos que são tratados como se tivessem praticado o mal, e há maus que são tratados como se tivessem praticado a justiça. Eu digo que isso também é vaidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Então eu recomendei a alegria, porque, para o homem, não há nada melhor debaixo do sol do que comer, beber e se alegrar; isso deve acompanhá-lo ao passo que trabalha arduamente durante os dias da sua vida, que o verdadeiro Deus lhe dá debaixo do sol.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Dediquei-me a adquirir sabedoria e a observar toda a atividade realizada na terra, e até mesmo fiquei sem dormir, dia e noite.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Então eu considerei todo o trabalho do verdadeiro Deus e percebi que a humanidade não é capaz de compreender o que acontece debaixo do sol. Por mais que os homens tentem, não podem compreender. Mesmo que digam que são bastante sábios para entender, não são capazes de compreender.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 9,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Assim, refleti sobre tudo isso e concluí que os justos e os sábios, bem como suas obras, estão nas mãos do verdadeiro Deus. Os homens não se dão conta do amor nem do ódio que houve antes deles.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Todos têm o mesmo fim: o justo e o injusto, o bom e puro e o impuro, aqueles que oferecem sacrifícios e aqueles que não oferecem sacrifícios. O bom é igual ao pecador; quem faz juramentos é igual àquele que pensa antes de fazer um juramento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Isto é algo aflitivo que acontece debaixo do sol: visto que todos têm o mesmo fim, o coração dos humanos está cheio de maldade; e há loucura no seu coração durante a sua vida, e depois eles morrem!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Há esperança para aquele que está entre os vivos, porque é melhor o cão vivo do que o leão morto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois os vivos sabem que morrerão, mas os mortos não sabem absolutamente nada, nem têm mais recompensa, porque toda lembrança deles caiu no esquecimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Também seu amor, seu ódio e seu ciúme já não existem, e eles não têm mais parte em nada do que se faz debaixo do sol.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Vá, coma o seu alimento com alegria e beba o seu vinho com coração alegre, pois o verdadeiro Deus já se agradou das suas obras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Sejam sempre brancas as suas roupas, e não deixe de pôr óleo sobre a sua cabeça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Desfrute a vida com a sua amada esposa todos os dias da sua vida vã, que Ele lhe deu debaixo do sol, sim, todos os seus dias vãos. Pois essa é a sua porção na vida e no seu trabalho árduo, no qual tanto se esforça debaixo do sol.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Tudo o que a sua mão achar para fazer, faça-o com toda a sua força, pois não há trabalho, nem planejamento, nem conhecimento, nem sabedoria na Sepultura, o lugar para onde você vai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E eu vi mais outra coisa debaixo do sol: os velozes nem sempre vencem a corrida, e nem sempre os fortes vencem a batalha; os sábios nem sempre têm alimento, os inteligentes nem sempre têm riquezas, os que têm conhecimento nem sempre têm sucesso; porque o tempo e o imprevisto sobrevêm a todos eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois o homem não sabe a sua hora. Assim como os peixes são apanhados numa rede cruel e os pássaros são apanhados numa armadilha, assim os filhos dos homens são enlaçados na hora da desgraça, quando ela lhes sobrevém de repente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Também vi, debaixo do sol, este exemplo de sabedoria, que me impressionou:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "havia uma pequena cidade, com poucos homens. Um rei poderoso veio contra ela e a sitiou, e construiu contra ela grandes obras de cerco.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Achava-se ali um homem pobre, mas sábio, e ele salvou a cidade com a sua sabedoria. No entanto, ninguém se lembrou daquele homem pobre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "E eu disse para mim mesmo: “A sabedoria é melhor do que a força; apesar disso, a sabedoria do pobre é desprezada e as suas palavras não são ouvidas.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "É melhor ouvir as palavras calmas dos sábios do que os gritos de quem governa entre os tolos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "A sabedoria é melhor do que armas de guerra, mas um único pecador pode destruir muitas coisas boas.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 10,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Assim como moscas mortas fazem o óleo do perfumista estragar e cheirar mal, assim também uma pequena tolice pesa mais do que a sabedoria e a glória.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O coração do sábio o guia no caminho certo, mas o coração do tolo o guia no caminho errado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Seja qual for o caminho em que ande, o tolo age sem bom senso, e ele mostra a todos que é tolo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Se a ira de um governante se acender contra você, não deixe o seu lugar, pois a calma aplaca grandes pecados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Há algo aflitivo que vi debaixo do sol, o tipo de erro cometido pelos que estão no poder:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "os tolos são postos em muitas posições elevadas, mas os ricos continuam em posições inferiores.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Vi servos andando a cavalo, mas príncipes andando a pé como servos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quem cava um buraco pode cair nele; e quem derruba um muro de pedras pode ser picado por uma cobra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Quem extrai pedras, com elas pode se ferir, e quem racha toras se expõe ao perigo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Se uma ferramenta está cega e não for afiada, será preciso fazer muito esforço. Mas a sabedoria ajuda a obter sucesso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Se a cobra picar antes de ser encantada, não haverá vantagem para o encantador habilidoso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "As palavras que saem da boca do sábio trazem favor, mas os lábios do tolo são a sua ruína:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "suas primeiras palavras são tolice, e as últimas são loucura desastrosa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas o tolo continua falando. O homem não sabe o que vai acontecer; quem pode informá-lo do que virá depois dele?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O trabalho árduo do tolo o esgota, pois ele não sabe nem mesmo encontrar o caminho para a cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Como é desastroso para um país quando o seu rei é uma criança e os seus príncipes começam a se banquetear de manhã!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Como é feliz o país cujo rei é filho de nobres e cujos príncipes se alimentam no tempo certo, para recuperar as forças, e não somente para se embriagar!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Por causa de extrema preguiça as vigas do telhado cedem, e por causa de mãos ociosas a casa tem goteiras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "O pão é feito para dar alegria, e o vinho torna a vida prazerosa; mas o dinheiro atende a todas as necessidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Nem mesmo em pensamento amaldiçoe o rei, e não amaldiçoe o rico no seu quarto de dormir; pois um pássaro pode levar as suas palavras, e uma ave pode contar o que você disse.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 11,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Lance o seu pão sobre as águas, porque depois de muitos dias você o achará de novo.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Reparta o que é seu com sete ou mesmo com oito, pois você não sabe que desastre pode ocorrer na terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Se as nuvens estiverem carregadas, despejarão chuva sobre a terra; e, se uma árvore cair, seja para o sul seja para o norte, onde a árvore cair, ali ficará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Quem observa o vento não semeará, e quem olha para as nuvens não colherá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Assim como você não sabe como o espírito age nos ossos da criança no ventre da mulher grávida, assim também você desconhece o trabalho do verdadeiro Deus, que faz todas as coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Semeie de manhã a sua semente e não descanse as suas mãos até o anoitecer; pois você não sabe qual dará bons resultados, esta ou aquela, ou se ambas serão boas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Doce é a luz, e é agradável aos olhos ver o sol.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Portanto, se um homem viver muitos anos, que ele aproveite todos eles. Mas ele deve se lembrar de que os dias de escuridão talvez sejam muitos; tudo que está para vir é vaidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Alegre-se, jovem, enquanto você ainda é jovem, e que o seu coração seja feliz nos dias da sua juventude. Siga os caminhos do seu coração e vá para onde seus olhos o levarem; mas saiba que o verdadeiro Deus o levará a julgamento por todas essas coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Portanto, tire do seu coração as preocupações e afaste do seu corpo coisas prejudiciais, pois a juventude e a flor da vida são vaidade.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 12,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Lembre-se, então, do seu Grandioso Criador nos dias da sua juventude, antes que venham os dias de aflição e cheguem os anos em que você dirá: “Não tenho prazer neles”;",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "antes que o sol, a luz, a lua e as estrelas escureçam, e as nuvens retornem depois da chuva;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "quando os guardas da casa ficam trêmulos, os homens fortes se curvam, as mulheres param de moer por se terem tornado poucas, e as damas que olham pelas janelas veem escuridão;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "quando as portas que dão para a rua se fecham, quando o barulho do moinho fica baixo, quando a pessoa se levanta ao som de um pássaro, e todas as filhas do canto ficam fracas;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "quando há medo de alturas e terrores na rua; quando a amendoeira floresce, o gafanhoto se arrasta e a alcaparra rebenta, porque o homem está caminhando para a sua morada permanente, e os lamentadores percorrem as ruas;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "antes que o cordão de prata se rompa, a tigela de ouro seja esmagada, o jarro junto à fonte se quebre e a roldana da cisterna rebente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Então o pó volta à terra, de onde veio, e o espírito volta ao verdadeiro Deus, que o deu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "“A maior das vaidades!” diz o congregante. “Tudo é vão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "O congregante não só se tornou sábio, mas também ensinou continuamente ao povo o que sabia; ele meditou e fez uma pesquisa profunda a fim de compilar muitos provérbios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O congregante procurou encontrar palavras agradáveis e registrar com exatidão palavras de verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "As palavras dos sábios são como aguilhadas, e o conjunto de seus ditos são como pregos bem cravados; suas palavras foram dadas por um só pastor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quanto a qualquer coisa além delas, meu filho, seja avisado: de se fazerem muitos livros não há fim, e dedicar-se demais a eles cansa a pessoa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Depois de se ouvir tudo, a conclusão é esta: tema o verdadeiro Deus e obedeça aos seus mandamentos, pois essa é toda a obrigação do homem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Pois o verdadeiro Deus julgará todas as ações, incluindo todas as coisas ocultas, e determinará se são boas ou más.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

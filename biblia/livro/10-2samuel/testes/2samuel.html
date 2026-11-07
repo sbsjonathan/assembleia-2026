@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<script id="assembleia-app-scope" src="../../../../shared/app-scope.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>2 Samuel - Capítulos</title>
+
+  
+  <script>
+    (function() {
+      try {
+        var size = localStorage.getItem('tamanho-fonte-global') || 16;
+        var safeSize = Math.min(26, Math.max(16, parseInt(size, 10)));
+        var scale = safeSize / 16;
+        var root = document.documentElement;
+        root.style.setProperty('--tamanho-fonte', safeSize + 'px');
+        root.style.setProperty('--font-base-default', '16');
+        root.style.setProperty('--font-base-global', safeSize + 'px');
+        root.style.setProperty('--font-scale-global', scale);
+        root.dataset.fontSizeGlobal = safeSize;
+
+        var theme = localStorage.getItem('tema-interface') || 'system';
+        var isDark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        root.setAttribute('data-theme', isDark ? 'dark' : 'light');
+        root.dataset.themeChoice = theme;
+      } catch(e) {}
+    })();
+  </script>
+
+<!-- Estilo global da pasta 'livro' -->
+  <link rel="stylesheet" href="../style-bbl.css">
+  <!-- Navbar unificada -->
+  <link rel="stylesheet" href="../../../../navbar/navbar-unified.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Cabeçalho -->
+    <div class="header">
+      <a href="../../biblia.html?resume=0" class="back-button">&lt; Voltar</a>
+      <span class="title">2 Samuel</span>
+    </div>
+
+    <!-- Grade de Capítulos (1 a 24) -->
+    <div class="chapters-grid">
+      <a href="../../capitulo.html?livro=2samuel&cap=1" class="chapter-button">1</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=2" class="chapter-button">2</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=3" class="chapter-button">3</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=4" class="chapter-button">4</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=5" class="chapter-button">5</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=6" class="chapter-button">6</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=7" class="chapter-button">7</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=8" class="chapter-button">8</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=9" class="chapter-button">9</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=10" class="chapter-button">10</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=11" class="chapter-button">11</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=12" class="chapter-button">12</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=13" class="chapter-button">13</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=14" class="chapter-button">14</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=15" class="chapter-button">15</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=16" class="chapter-button">16</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=17" class="chapter-button">17</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=18" class="chapter-button">18</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=19" class="chapter-button">19</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=20" class="chapter-button">20</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=21" class="chapter-button">21</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=22" class="chapter-button">22</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=23" class="chapter-button">23</a>
+      <a href="../../capitulo.html?livro=2samuel&cap=24" class="chapter-button">24</a>
+    </div>
+  </div>
+
+  <!-- Navbar é carregada aqui -->
+  <script src="../../../../navbar/navbar-unified.js"></script>
+  
+  <!-- SCRIPT DE CORREÇÃO PARA A NAVEGAÇÃO (idêntico às outras páginas de livro) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.querySelector('.bottom-navbar');
+      if (!navbar) return;
+
+      // 1. Força a navbar a ficar sempre visível nesta página
+      navbar.classList.remove('hidden');
+      // 2. Garante que o ícone "Bíblia" esteja ativo
+      const activeItem = navbar.querySelector('[data-page="bible"]');
+      if (activeItem) {
+          navbar.querySelectorAll('.navbar-item').forEach(item => item.classList.remove('active'));
+          activeItem.classList.add('active');
+      }
+
+      // 3. Helper para obter o parâmetro da semana (compatível com navbar-unified.js)
+      function getSemanaParam() {
+        if (window.semanaAtual) return `?semana=${window.semanaAtual}`;
+        const urlParams = new URLSearchParams(window.location.search);
+        const semanaURL = urlParams.get('semana');
+        if (semanaURL) return `?semana=${semanaURL}`;
+        
+        const hoje = new Date();
+        const diaDaSemana = hoje.getDay();
+        const diasParaSegunda = diaDaSemana === 0 ? -6 : 1 - diaDaSemana;
+        const segundaFeira = new Date(hoje);
+        segundaFeira.setDate(hoje.getDate() + diasParaSegunda);
+        const dia = String(segundaFeira.getDate()).padStart(2, '0');
+        const mes = String(segundaFeira.getMonth() + 1).padStart(2, '0');
+        return `?semana=${dia}-${mes}`;
+      }
+
+      // 4. Sobrescreve os links da navbar com os caminhos corretos para esta página
+      const navLinks = {
+        'home': '../../../index.html',
+        'bible': '../../biblia.html?resume=0',
+        'notes': `../../../richtext/container.html${getSemanaParam()}`,
+        'save': '../../../save/auth-supabase.html'
+      };
+
+      for (const [page, url] of Object.entries(navLinks)) {
+        const item = navbar.querySelector(`.navbar-item[data-page="${page}"]`);
+        if (item) {
+          item.setAttribute('onclick', ''); 
+          item.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = url;
+          });
+        }
+      }
+      
+      // Lógica especial para A Sentinela
+      const sentinelaItem = navbar.querySelector('.navbar-item[data-page="watchtower"]');
+      if (sentinelaItem) {
+        sentinelaItem.setAttribute('onclick', '');
+        sentinelaItem.addEventListener('click', async (e) => {
+          e.preventDefault();
+          const semana = getSemanaParam().substring(8); // Extrai 'dd-mm'
+          const basePath = '../../../';
+          try {
+            const response = await fetch(`${basePath}sentinela/artigos/${semana}.html`, { method: 'HEAD' });
+            if (response.ok) {
+              window.location.href = `${basePath}sentinela/artigos/${semana}.html`;
+            } else {
+              window.location.href = `${basePath}sentinela/em-breve.html?semana=${semana}`;
+            }
+          } catch (error) {
+            window.location.href = `${basePath}sentinela/em-breve.html?semana=${semana}`;
+          }
+        });
+      }
+    });
+  </script>
+
+  
+  
+  <script>
+  (function () {
+    const LAST_KEY = 'bbl:lastPage';
+
+    const book = (function(){
+      const file = (location.pathname.split('/').pop() || '').toLowerCase();
+      return file.replace(/\.html$/i, '');
+    })();
+
+    const POS_KEY = 'bbl:pos:livro:' + book;
+    const debounce = (fn,ms)=>{ let t; return ()=>{ clearTimeout(t); t=setTimeout(fn,ms); }; };
+    let scroller = null;
+
+    function getScroller(){
+      return scroller || document.querySelector('.chapters-grid') || document.scrollingElement || document.documentElement;
+    }
+
+    function save(){
+      const el = getScroller();
+      try{
+        localStorage.setItem(POS_KEY, String(el.scrollTop|0));
+        localStorage.setItem(LAST_KEY, JSON.stringify({
+          page:'livro',
+          href: location.href,
+          book,
+          scrollTop: el.scrollTop|0,
+          t: Date.now(),
+          schema: 2
+        }));
+      }catch(e){}
+    }
+
+    document.addEventListener('DOMContentLoaded', ()=>{
+      scroller = getScroller();
+      const y = parseInt(localStorage.getItem(POS_KEY)||'0',10);
+      if (y) scroller.scrollTop = y;
+      save();
+      scroller.addEventListener('scroll', debounce(save, 200), {passive:true});
+    });
+
+    window.addEventListener('pagehide', save);
+  })();
+  </script>
+</body>
+</html>

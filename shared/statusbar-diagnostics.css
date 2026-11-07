@@ -1,0 +1,78 @@
+/* Loaded only for the explicit, temporary status-area diagnostic. */
+#statusbar-diagnostic-panel {
+    position: fixed;
+    inset: auto 8px max(8px, env(safe-area-inset-bottom, 0px));
+    z-index: 2147483600;
+    max-width: 520px;
+    max-height: 48svh;
+    margin-inline: auto;
+    padding: 14px;
+    overflow: auto;
+    box-sizing: border-box;
+    border: 1px solid #c9c4d1;
+    border-radius: 16px;
+    background: #fff;
+    color: #24212a;
+    box-shadow: 0 3px 24px #0003;
+    font: 14px/1.4 system-ui, sans-serif;
+    text-align: left;
+    isolation: isolate;
+}
+#statusbar-diagnostic-panel * { box-sizing: border-box; }
+#statusbar-diagnostic-panel [hidden] { display: none !important; }
+#statusbar-diagnostic-panel h2 { margin: 0; color: inherit; font: 650 17px/1.3 system-ui, sans-serif; }
+#statusbar-diagnostic-panel p { margin: 8px 0; font: inherit; color: inherit; }
+#statusbar-diagnostic-panel .sd-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+#statusbar-diagnostic-panel .sd-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+#statusbar-diagnostic-panel button {
+    flex: 1 1 auto;
+    min-height: 44px;
+    margin: 0;
+    padding: 8px 12px;
+    border: 1px solid #d4cedc;
+    border-radius: 9px;
+    background: #f4f1f7;
+    color: #493060;
+    font: 600 14px/1.3 system-ui, sans-serif;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+#statusbar-diagnostic-panel button:disabled { opacity: .5; cursor: wait; }
+#statusbar-diagnostic-panel .sd-primary { background: #53376e; border-color: #53376e; color: #fff; }
+#statusbar-diagnostic-panel .sd-quiet { background: transparent; border-color: transparent; }
+#statusbar-diagnostic-panel .sd-toolbar { margin-top: 8px; }
+#statusbar-diagnostic-panel .sd-note { font-size: 12px; color: #655e6e; }
+#statusbar-diagnostic-panel textarea { width: 100%; min-height: 100px; margin-top: 10px; padding: 8px; color: #222; background: #f7f6f8; font: 12px/1.3 monospace; }
+#statusbar-diagnostic-panel.sd-collapsed { width: auto; left: auto; padding: 5px; }
+#statusbar-diagnostic-panel.sd-collapsed .sd-content,
+#statusbar-diagnostic-panel.sd-collapsed h2 { display: none; }
+
+html[data-statusbar-test="pink"] #app-solid-statusbar,
+html[data-statusbar-test="tall"] #app-solid-statusbar {
+    display: block !important;
+    position: fixed !important;
+    inset: 0 0 auto !important;
+    height: var(--app-statusbar-height, 12px) !important;
+    width: auto !important;
+    z-index: 2147483500 !important;
+    opacity: 1 !important;
+    pointer-events: none !important;
+    transform: none !important;
+    filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    transition: none !important;
+}
+html[data-statusbar-test="pink"] #app-solid-statusbar { background: #ff00bb !important; }
+html[data-statusbar-test="tall"] { --app-statusbar-height: max(96px, env(safe-area-inset-top, 0px)) !important; }
+html[data-statusbar-test="tall"] #app-solid-statusbar {
+    background: var(--cor-principal-estudo, var(--chrome, var(--bg-color, var(--bg-gradient-start, #fff)))) !important;
+}
+html[data-statusbar-test="no-filters"],
+html[data-statusbar-test="no-filters"] *,
+html[data-statusbar-test="no-filters"] *::before,
+html[data-statusbar-test="no-filters"] *::after {
+    filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+}

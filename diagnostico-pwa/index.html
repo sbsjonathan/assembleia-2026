@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<script id="assembleia-app-scope" src="../shared/app-scope.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="app-version" content="2026.11.03.14">
+    <meta name="theme-color" content="#143368">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Teste de tela</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./teste.css">
+    <script src="../shared/statusbar-diagnostics-data.js" defer></script>
+    <script src="./teste.js" defer></script>
+</head>
+<body>
+    <header class="app-header">
+        <h1>Teste de tela</h1>
+    </header>
+    <main>
+        <section aria-labelledby="observation-title">
+            <p class="eyebrow" id="phase-label">Comparação da barra superior</p>
+            <h2 id="observation-title">Como está o cabeçalho azul?</h2>
+            <p>Observe “Teste de tela”, no alto. O fundo está sólido e as letras nítidas, ou há um desfoque por cima?</p>
+            <p class="notice" id="browser-warning" hidden>Você está no navegador. Para comparar a barra do aplicativo, abra esta página pelo ícone da tela de início.</p>
+            <div class="observation-buttons">
+                <button type="button" id="solid-button">Está sólido</button>
+                <button type="button" id="blurred-button" class="secondary">Continua desfocado</button>
+            </div>
+            <p class="feedback" id="report-status" role="status" aria-live="polite">Escolha o que aparece na tela para preparar o relatório.</p>
+            <button type="button" id="copy-report" disabled>Copiar relatório</button>
+            <details id="report-details" hidden>
+                <summary>Ver relatório</summary>
+                <label class="sr-only" for="report-output">Relatório de diagnóstico</label>
+                <textarea id="report-output" readonly rows="12" spellcheck="false" autocapitalize="off"></textarea>
+            </details>
+        </section>
+        <section class="instructions" aria-labelledby="installation-title">
+            <h2 id="installation-title">Comparar com um novo ícone</h2>
+            <p><strong>Mantenha o ícone original.</strong> Este teste não substitui seu aplicativo.</p>
+            <ol>
+                <li>Copie o endereço de teste abaixo e abra-o no Safari.</li>
+                <li>Toque em Compartilhar → Adicionar à Tela de Início.</li>
+                <li>Mantenha “Abrir como App” ativado, se essa opção aparecer, e o nome <strong>Teste de tela</strong>.</li>
+                <li>Abra esse novo ícone e registre novamente o resultado.</li>
+            </ol>
+            <label for="test-url">Endereço de teste</label>
+            <textarea id="test-url" readonly rows="3" spellcheck="false" autocapitalize="off"></textarea>
+            <button type="button" id="copy-test-url" class="secondary">Copiar endereço de teste</button>
+            <p class="feedback" id="url-status" role="status" aria-live="polite"></p>
+            <p class="footnote">O novo ícone serve apenas para diagnóstico. Não é uma migração e não copia suas anotações nem publicações baixadas. O relatório só é enviado se você o copiar e compartilhar.</p>
+        </section>
+        <p id="return-link" hidden><a href="../diagnostico-statusbar.html">Voltar ao diagnóstico</a></p>
+        <noscript>Ative o JavaScript para preparar e copiar o relatório. Você ainda pode observar o título e comparar os dois ícones.</noscript>
+    </main>
+</body>
+</html>

@@ -1,0 +1,2270 @@
+{
+  "nome_do_livro": "1 Coríntios",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Paulo, chamado para ser apóstolo de Cristo Jesus pela vontade de Deus, e Sóstenes, nosso irmão,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "à congregação de Deus em Corinto, a vocês que foram santificados em união com Cristo Jesus, chamados para ser santos, junto com todos os que, em toda a parte, invocam o nome do nosso Senhor Jesus Cristo, Senhor deles e nosso:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Que vocês tenham bondade imerecida e paz da parte de Deus, nosso Pai, e do Senhor Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Eu sempre agradeço ao meu Deus por vocês, em vista da bondade imerecida de Deus que lhes foi concedida em Cristo Jesus;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "porque em tudo vocês foram enriquecidos nele, na plena capacidade de falar e em pleno conhecimento,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "visto que o testemunho a respeito do Cristo foi firmado entre vocês,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "de modo que não lhes falta nenhum dom enquanto estão esperando ansiosamente a revelação do nosso Senhor Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Também, ele os fará firmes até o fim, para que estejam livres de qualquer acusação no dia do nosso Senhor Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Deus é fiel, aquele que os chamou para estarem em união com o seu Filho, Jesus Cristo, o nosso Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Eu os exorto, irmãos, pelo nome do nosso Senhor Jesus Cristo, que todos falem de acordo e que não haja divisões entre vocês, mas que estejam completamente unidos na mesma mente e na mesma maneira de pensar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois alguns da casa de Cloe me informaram a respeito de vocês, meus irmãos, que existem discórdias entre vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "O que eu quero dizer é que cada um de vocês diz: “Eu pertenço a Paulo”, “mas eu a Apolo”, “mas eu a Cefas”, “mas eu a Cristo”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Por acaso o Cristo está dividido? Será que Paulo foi morto na estaca em favor de vocês? Ou, será que vocês foram batizados em nome de Paulo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Agradeço a Deus por eu não ter batizado a nenhum de vocês, a não ser Crispo e Gaio,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "para que ninguém diga que vocês foram batizados em meu nome.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Sim, batizei também os da casa de Estéfanas. Quanto aos outros, não sei se batizei mais alguém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Pois Cristo não me enviou para batizar, mas para declarar as boas novas; e não com sabedoria de palavras, a fim de que a estaca do Cristo não se torne inútil.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Pois a mensagem a respeito da estaca é tolice para os que estão a caminho da destruição, mas para nós, que estamos sendo salvos, é o poder de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Pois está escrito: “Acabarei com a sabedoria dos sábios e rejeitarei a inteligência dos intelectuais.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Onde está o sábio? Onde está o escriba? Onde está o argumentador deste sistema de coisas? Deus não tornou tola a sabedoria do mundo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Pois, na sabedoria de Deus, o mundo, pela sua sabedoria, não chegou a conhecer a Deus. Portanto Deus, por meio da tolice do que se prega, se agradou de salvar os que creem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Pois os judeus pedem sinais, e os gregos procuram sabedoria,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "mas nós proclamamos Cristo morto na estaca, que para os judeus é motivo de tropeço, e para as nações é tolice.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "No entanto, para os chamados, tanto judeus como gregos, Cristo é o poder de Deus e a sabedoria de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Porque uma coisa tola de Deus é mais sábia do que os homens, e uma coisa fraca de Deus é mais forte do que os homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Pois vocês podem ver a sua chamada da parte dele, irmãos: não há muitos sábios do ponto de vista humano, nem muitos poderosos, nem muitos de origem nobre,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "mas Deus escolheu as coisas tolas do mundo para envergonhar os sábios; e Deus escolheu as coisas fracas do mundo para envergonhar as coisas fortes;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "e Deus escolheu as coisas insignificantes do mundo e as coisas menosprezadas, as coisas que não são, para reduzir a nada as coisas que são,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "a fim de que ninguém se orgulhe à vista de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Mas é devido a ele que vocês estão em união com Cristo Jesus, que se tornou para nós sabedoria da parte de Deus, também justiça, santificação e livramento por resgate,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "para que seja assim como está escrito: “Quem se orgulhar, orgulhe-se em Jeová.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Assim, quando estive com vocês, irmãos, não fui lhes declarar o segredo sagrado de Deus com linguagem ou sabedoria extravagantes.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois decidi não saber nada entre vocês, a não ser Jesus Cristo, e este morto na estaca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E eu estive com vocês em fraqueza, em temor e com muito tremor;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "e a minha linguagem e aquilo que preguei não foram palavras persuasivas de sabedoria, mas uma demonstração de espírito e de poder,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "para que a sua fé não se baseasse na sabedoria de homens, mas no poder de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ora, falamos de sabedoria entre os que são maduros, mas não da sabedoria deste sistema de coisas nem da sabedoria dos governantes deste sistema de coisas, os quais ficarão reduzidos a nada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas falamos da sabedoria de Deus expressa em segredo sagrado, a sabedoria escondida, que Deus predeterminou antes dos sistemas de coisas, para a nossa glória.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Essa é a sabedoria que nenhum dos governantes deste sistema de coisas veio a conhecer, pois, se a tivessem conhecido, não teriam executado o glorioso Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas, como está escrito: “O olho não viu e o ouvido não ouviu, nem foram concebidas no coração do homem as coisas que Deus preparou para os que o amam.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Porque é a nós que Deus as revelou por meio do seu espírito, pois o espírito investiga todas as coisas, até mesmo as coisas profundas de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois quem entre os homens sabe as coisas de um homem, a não ser o espírito do homem que está dentro dele? Assim, também, ninguém sabe as coisas de Deus, a não ser o espírito de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E nós não recebemos o espírito do mundo, mas o espírito que vem de Deus, para que soubéssemos as coisas que nos foram dadas bondosamente por Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Dessas coisas também falamos, não com palavras ensinadas pela sabedoria humana, mas com as ensinadas pelo espírito, ao explicarmos assuntos espirituais com palavras espirituais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas o homem físico não aceita as coisas do espírito de Deus, pois para ele são tolice; e ele não pode conhecê-las, porque elas são examinadas espiritualmente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "No entanto, o homem espiritual examina todas as coisas, mas ele mesmo não é examinado por nenhum homem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Pois “quem chegou a conhecer a mente de Jeová, para poder instruí-lo”? Mas nós temos a mente de Cristo.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Assim, irmãos, não lhes pude falar como a homens espirituais, mas como a homens carnais, como a criancinhas em Cristo.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Eu os alimentei com leite, não com alimento sólido, pois vocês ainda não eram fortes o suficiente. De fato, nem mesmo agora são fortes o suficiente,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "pois ainda são carnais. Visto que há entre vocês ciúme e brigas, não é verdade que são carnais e estão andando como homens?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Pois, quando um diz: “Eu pertenço a Paulo”, mas outro diz: “Eu a Apolo”, será que vocês não estão agindo como simples homens?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O que, então, é Apolo? Sim, o que é Paulo? Ministros por meio de quem vocês se tornaram crentes, assim como o Senhor concedeu a cada um.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Eu plantei, Apolo regou, mas Deus fazia crescer,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "de modo que nem o que planta nem o que rega são alguma coisa, mas sim Deus, que faz crescer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quem planta e quem rega são um só, mas cada um receberá a sua própria recompensa, segundo o seu próprio trabalho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Pois somos colaboradores de Deus. Vocês são lavoura de Deus, edifício de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Segundo a bondade imerecida de Deus que me foi concedida, eu lancei um alicerce como construtor perito, mas outro constrói sobre ele. Que cada um, porém, preste atenção a como constrói sobre ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois ninguém pode lançar outro alicerce, a não ser o que já foi lançado, que é Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ora, se alguém construir sobre o alicerce com ouro, prata, pedras preciosas, ou com madeira, feno, palha,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "a qualidade da obra de cada um ficará evidente, pois o dia a porá à mostra; porque será revelada por meio de fogo, e o próprio fogo mostrará que tipo de obra cada um realizou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Se a obra que alguém construiu sobre o alicerce permanecer, ele receberá uma recompensa;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "caso se queime a obra de alguém, ele sofrerá perda, mas ele mesmo será salvo; contudo, nesse caso, será como que através do fogo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Vocês não sabem que são templo de Deus e que o espírito de Deus mora em vocês?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Se alguém destruir o templo de Deus, Deus o destruirá; pois o templo de Deus é santo, e vocês são esse templo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Que ninguém engane a si mesmo: se alguém entre vocês pensa que é sábio neste sistema de coisas, torne-se tolo, para que se torne sábio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Porque a sabedoria deste mundo é tolice perante Deus, pois está escrito: “Ele apanha os sábios na sua própria astúcia.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "E também: “Jeová sabe que os raciocínios dos sábios são fúteis.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Assim, que ninguém ponha seu orgulho nos homens; porque a vocês pertence tudo:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "quer Paulo, quer Apolo, quer Cefas, quer o mundo, quer a vida, quer a morte, quer as coisas presentes, quer as coisas por vir, tudo pertence a vocês;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "vocês, por sua vez, pertencem a Cristo; Cristo, por sua vez, pertence a Deus.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Os homens devem nos considerar como assistentes do Cristo e administradores dos segredos sagrados de Deus.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Ora, o que se espera dos administradores é que se mostrem fiéis.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Para mim, pouco importa ser examinado por vocês ou por um tribunal humano. Na verdade, nem eu examino a mim mesmo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Pois não estou ciente de nada contra mim mesmo. Mas isso não prova que eu seja justo; quem me examina é Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Portanto, não julguem nada antes do tempo devido, até que venha o Senhor. Ele trará da escuridão para a luz as coisas secretas e revelará as intenções dos corações, e então cada um receberá o seu louvor da parte de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Irmãos, eu apliquei essas coisas a mim mesmo e a Apolo para o bem de vocês, a fim de que, por meio do nosso exemplo, aprendam a regra: “Não vão além das coisas que estão escritas”, a fim de que não fiquem cheios de orgulho, tomando o partido de um contra o outro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois quem torna você diferente dos outros? Realmente, o que você tem que não tenha recebido? Se você, de fato, recebeu tudo que tem, por que se gaba como se não o tivesse recebido?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Vocês já estão satisfeitos? Já estão ricos? Já começaram a reinar sem nós? Eu realmente queria que vocês já tivessem começado a reinar, para que nós também reinássemos com vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Pois me parece que Deus pôs a nós, os apóstolos, em exibição por último, como homens condenados à morte, porque nos tornamos um espetáculo para o mundo, para anjos e para homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Nós somos tolos por causa de Cristo, mas vocês são prudentes em união com Cristo; nós somos fracos, mas vocês são fortes; vocês são honrados, mas nós somos desonrados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Até agora, passamos fome e sede, não temos roupa suficiente, somos espancados, estamos desabrigados",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "e trabalhamos arduamente com as nossas próprias mãos. Quando insultados, abençoamos; quando perseguidos, suportamos com paciência;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "quando caluniados, respondemos com brandura; nós nos tornamos como o lixo do mundo, a escória de todas as coisas, até agora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Estou escrevendo essas coisas, não para envergonhá-los, mas para instruí-los como meus filhos amados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Pois, embora vocês tenham 10. 000 tutores em Cristo, certamente não têm muitos pais; porque fui eu que me tornei seu pai em Cristo Jesus por meio das boas novas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Assim, eu os exorto: tornem-se meus imitadores.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "É por isso que lhes envio Timóteo, porque ele é meu filho amado e fiel no Senhor. Ele lembrará vocês do meu modo de fazer as coisas em união com Cristo Jesus, assim como estou ensinando em toda a parte, em todas as congregações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Alguns estão cheios de orgulho, como se eu não fosse visitar vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Mas vou visitá-los em breve, se Jeová quiser, e tomarei conhecimento não das palavras desses orgulhosos, mas do poder deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Pois o Reino de Deus não é questão de palavras, mas de poder.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "O que vocês preferem? Que eu os visite com uma vara, ou com amor e brandura de espírito?",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "O fato é que se relata entre vocês imoralidade sexual, imoralidade que não se encontra nem entre as nações: um homem está vivendo com a esposa de seu pai.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E vocês se orgulham disso? Não deviam, na verdade, estar de luto, para que o homem que cometeu esse ato fosse tirado do seu meio?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Embora eu esteja ausente em corpo, estou presente em espírito, e já julguei o homem que fez isso, como se eu estivesse aí com vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Quando estiverem reunidos em nome do nosso Senhor Jesus, sabendo que estou com vocês em espírito com o poder do nosso Senhor Jesus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "entreguem esse homem a Satanás, para a destruição da carne, a fim de que o espírito seja salvo no dia do Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "O seu motivo de orgulho não é bom. Não sabem que um pouco de fermento leveda a massa toda?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Eliminem o velho fermento, para que sejam massa nova, sem fermento, como de fato são. Pois, realmente, Cristo, o nosso cordeiro pascoal, já foi sacrificado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Portanto, celebremos a festividade, não com o velho fermento, nem com o fermento da maldade e da impiedade, mas com pães sem fermento, de sinceridade e de verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Eu lhes escrevi na minha carta que parassem de ter convivência com os que praticam imoralidade sexual,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "não querendo dizer toda a convivência com as pessoas deste mundo que praticam imoralidade sexual, ou com os gananciosos, com os extorsores ou com os idólatras. Nesse caso, vocês teriam realmente de sair do mundo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Mas eu lhes escrevo agora que parem de ter convivência com qualquer um que se chame irmão, mas que pratique imoralidade sexual, ou que seja ganancioso, idólatra, injuriador, beberrão ou extorsor; nem sequer comam com tal homem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois o que eu tenho a ver com o julgamento dos de fora? Não são vocês que julgam os de dentro,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "ao passo que Deus julga os de fora? “Removam do meio de vocês a pessoa má.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quando algum de vocês tem uma questão contra outro, como se atreve a ir a juízo perante os injustos, e não perante os santos?",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Ou vocês não sabem que os santos julgarão o mundo? E, se o mundo será julgado por vocês, será que vocês não são capazes de julgar questões de tão pouca importância?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Não sabem que nós julgaremos anjos? Então por que não questões desta vida?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Se vocês, então, têm questões desta vida para serem julgadas, por que vocês escolhem como juízes a homens que são vistos com desaprovação pela congregação?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Digo isso para induzi-los à vergonha. Será que não há nenhum homem sábio entre vocês que possa julgar entre seus irmãos?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Em vez disso, irmão vai a juízo contra irmão, e isso perante descrentes!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Realmente, já é uma derrota para vocês quando movem ações judiciais uns contra os outros. Não seria melhor sofrer a injustiça? Não seria melhor ficar com o prejuízo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pelo contrário, vocês fazem injustiça e causam prejuízo, e isso a seus irmãos!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Ou será que vocês não sabem que os injustos não herdarão o Reino de Deus? Não se enganem. Os que praticam imoralidade sexual, os idólatras, os adúlteros, os homens que se submetem a atos homossexuais, os homens que praticam o homossexualismo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "os ladrões, os gananciosos, os beberrões, os injuriadores e os extorsores não herdarão o Reino de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E, no entanto, isso é o que alguns de vocês foram. Mas vocês foram lavados; vocês foram santificados; vocês foram declarados justos no nome do Senhor Jesus Cristo e com o espírito do nosso Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Tudo me é permitido, mas nem tudo é vantajoso. Tudo me é permitido, mas não me deixarei ser controlado por nada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "O alimento é para o estômago, e o estômago para o alimento; mas Deus reduzirá ambos a nada. O corpo não é para imoralidade sexual, mas para o Senhor; e o Senhor é para o corpo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas Deus levantou o Senhor e também levantará a nós da morte, por meio do seu poder.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Vocês não sabem que os seus corpos são membros de Cristo? Deveria eu, então, tirar os membros do Cristo e uni-los a uma prostituta? De modo algum!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Vocês não sabem que aquele que se une a uma prostituta é um só corpo com ela? Pois “os dois”, diz ele, “serão uma só carne”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Mas quem está unido ao Senhor é um só em espírito com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Fujam da imoralidade sexual! Qualquer outro pecado que o homem possa cometer é fora de seu corpo, mas quem pratica a imoralidade sexual peca contra o seu próprio corpo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Vocês não sabem que o seu corpo é o templo do espírito santo, que está em vocês e que lhes foi dado por Deus? Além disso, vocês não pertencem a si mesmos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "pois foram comprados por um preço. Portanto, glorifiquem a Deus no corpo de vocês.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 7,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Agora, quanto às coisas sobre as quais vocês escreveram, é melhor que o homem não toque em mulher;",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "mas, visto que há tanta imoralidade sexual, que cada homem tenha a sua própria esposa, e que cada mulher tenha o seu próprio marido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "O marido dê à esposa o que lhe é devido, e faça a esposa o mesmo para com o marido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "A esposa não tem autoridade sobre o seu próprio corpo, mas sim o marido; do mesmo modo, o marido não tem autoridade sobre o seu próprio corpo, mas sim a esposa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Não privem um ao outro do que é devido, a não ser por consentimento mútuo, por um tempo determinado, para que dediquem tempo à oração e depois se unam novamente, a fim de que Satanás não os tente pela sua falta de autodomínio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "No entanto, digo isso como concessão, não como ordem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas eu queria que todos os homens fossem como eu. Entretanto, cada um tem o seu próprio dom da parte de Deus, um desse modo, outro daquele modo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Agora, digo aos que não são casados e às viúvas que é melhor para eles que permaneçam assim como eu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas, se não tiverem autodomínio, que se casem, pois é melhor se casar do que ficar ardendo de paixão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Aos casados ordeno, não eu, mas o Senhor, que a esposa não se separe do marido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Mas, se ela se separar, que permaneça sem se casar, ou então que se reconcilie com o marido; e o marido não deve deixar a esposa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Mas aos outros digo eu, sim, eu, não o Senhor: Se algum irmão tem esposa descrente, e ela está disposta a ficar com ele, que ele não a deixe;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "e se uma mulher tem marido descrente, e ele está disposto a ficar com ela, que ela não deixe o marido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Pois o marido descrente está santificado em relação à esposa, e a esposa descrente está santificada em relação ao irmão; do contrário, os seus filhos seriam impuros, mas agora são santos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "No entanto, se o descrente decidir deixá-la, que a deixe; o irmão ou a irmã não estão sob obrigação nessas circunstâncias, mas Deus chamou vocês à paz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Pois, esposa, como sabe se não salvará o seu marido? Ou, marido, como sabe se não salvará a sua esposa?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Contudo, que cada um ande conforme a porção que Jeová lhe deu, conforme Deus o chamou. E assim dou esta ordem em todas as congregações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Alguém já era circuncidado quando foi chamado? Que não desfaça a circuncisão. Alguém era incircunciso quando foi chamado? Não seja circuncidado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "A circuncisão não significa nada, e a incircuncisão não significa nada; o que importa é a obediência aos mandamentos de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Que cada um permaneça no estado em que foi chamado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Você foi chamado quando escravo? Não se preocupe com isso; mas, se puder ficar livre, aproveite a oportunidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Pois todo aquele que era escravo quando foi chamado no Senhor é agora o liberto que pertence ao Senhor; igualmente, aquele que era livre quando foi chamado é agora escravo de Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Vocês foram comprados por um preço; parem de se tornar escravos de homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Irmãos, que cada um permaneça diante de Deus no estado em que foi chamado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Agora, no que se refere aos que são virgens, não tenho ordem da parte do Senhor, mas dou a minha opinião como alguém que é fiel pela misericórdia do Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Portanto, penso que é melhor o homem continuar como está, em vista das dificuldades atuais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Você está amarrado a uma esposa? Pare de tentar ficar livre. Você não está amarrado a uma esposa? Pare de procurar uma esposa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Mas, mesmo que você se case, não comete pecado. E, se uma pessoa virgem se casa, não comete pecado. No entanto, os que fizerem isso terão dificuldades na vida. Mas eu estou tentando poupá-los disso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Além disso, digo o seguinte, irmãos: O tempo que resta é reduzido. De agora em diante, aqueles que têm esposa vivam como se não tivessem;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "os que choram, como quem não chora; os que se alegram, como quem não se alegra; os que compram, como quem não possui;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "e os que fazem uso do mundo, como quem não o usa plenamente. Porque a cena deste mundo está mudando.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Realmente, quero que vocês estejam livres de preocupação. O homem que não é casado se preocupa com as coisas do Senhor, em como pode agradar ao Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Mas o homem casado se preocupa com as coisas do mundo, em como pode agradar à esposa,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "e está dividido. Além disso, a mulher não casada e a virgem se preocupam com as coisas do Senhor, para serem santas tanto no corpo como no espírito. No entanto, a mulher casada se preocupa com as coisas do mundo, em como pode agradar ao marido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Digo isso para o seu próprio bem, não para lhes impor restrições, mas para induzi-los a fazer o que é apropriado e a servir constantemente ao Senhor, sem distração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Mas, se alguém, por ficar sem se casar, acha que está se comportando de modo impróprio, e se ele estiver além da flor da juventude, então isto é o que deve ocorrer: que ele faça o que quer; ele não peca. Que se casem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "No entanto, se alguém estiver resolvido no coração e não sentir necessidade, mas tiver controle sobre a sua própria vontade e tiver tomado no seu próprio coração a decisão de não se casar, ele fará bem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Assim também, aquele que se casa faz bem, mas aquele que não se casar fará melhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "A esposa está amarrada ao marido durante todo o tempo em que ele estiver vivo. Mas, se o seu marido adormecer na morte, ela estará livre para se casar com quem quiser, somente no Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Na minha opinião, porém, ela será mais feliz se permanecer como está; e estou certo de que tenho também o espírito de Deus.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 8,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Agora, sobre os alimentos oferecidos a ídolos: sabemos que todos nós temos conhecimento. O conhecimento enche a pessoa de orgulho, mas o amor edifica.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Se alguém pensa que conhece alguma coisa, ainda não conhece como deveria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mas, se alguém ama a Deus, esse é conhecido por ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Quanto a comer alimentos oferecidos a ídolos, sabemos que o ídolo não é nada no mundo, e que não há outro Deus, senão um só.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois, embora haja os que são chamados deuses, quer no céu, quer na terra, assim como há muitos “deuses” e muitos “senhores”,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "para nós há realmente um só Deus, o Pai, de quem procedem todas as coisas, e nós existimos para ele; e há um só Senhor, Jesus Cristo, por meio de quem são todas as coisas, e nós existimos por meio dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "No entanto, nem todos têm esse conhecimento. Mas alguns, devido à familiaridade que tinham com os ídolos, comem o alimento como algo sacrificado a um ídolo, e a consciência deles, que é fraca, fica contaminada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Mas o alimento não nos aproximará de Deus; não seremos piores se não comermos, nem melhores se comermos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Tomem cuidado, porém, para que o seu direito de escolha não se torne de algum modo uma pedra de tropeço para os que são fracos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pois, se alguém vir você, que tem conhecimento, tomando uma refeição no templo de um ídolo, será que a consciência daquele que é fraco não ficará ousada a ponto de ele comer alimentos oferecidos a ídolos?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Assim, pelo conhecimento que você tem, está sendo arruinado aquele que é fraco, seu irmão pelo qual Cristo morreu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quando vocês pecam assim contra os seus irmãos e ferem a consciência fraca deles, estão pecando contra Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "É por isso que, se o alimento fizer o meu irmão tropeçar, nunca mais comerei carne alguma, para que eu não faça o meu irmão tropeçar.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 9,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Não sou livre? Não sou apóstolo? Não vi Jesus, nosso Senhor? Não são vocês a minha obra no Senhor?",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Mesmo que eu não seja apóstolo para os outros, com toda a certeza sou para vocês! Pois vocês são o selo que confirma o meu apostolado no Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Minha defesa perante os que me questionam é a seguinte:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Será que não temos o direito de comer e beber?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Será que não temos o direito de ser acompanhados por uma esposa crente, assim como os outros apóstolos, os irmãos do Senhor e Cefas?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ou será que só eu e Barnabé não temos o direito de deixar de trabalhar para o nosso sustento?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Que soldado serve com os seus próprios recursos? Quem planta um vinhedo e não come do seu fruto? Ou quem pastoreia um rebanho e não toma do leite do rebanho?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Será que estou dizendo essas coisas de um ponto de vista humano? Ou a Lei não diz também essas coisas?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Pois está escrito na Lei de Moisés: “Não amordace o touro quando ele debulha o grão.” Será que é com touros que Deus está preocupado?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Ou não é de fato por nossa causa que ele diz isso? Realmente, isso foi escrito por nossa causa, porque o homem que ara e o homem que debulha devem fazer essas coisas na esperança de receber uma parte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Se nós semeamos entre vocês coisas espirituais, seria demais colhermos de vocês apoio material?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Se outros homens têm esse direito sobre vocês, será que nós não temos esse direito ainda muito mais? Contudo, não fizemos uso desse direito, mas estamos suportando tudo para não criar nenhum obstáculo às boas novas a respeito do Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Vocês não sabem que os homens que cumprem deveres sagrados comem das coisas do templo, e que aqueles que servem regularmente diante do altar recebem uma parte do que é oferecido no altar?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Do mesmo modo, o Senhor ordenou que aqueles que proclamam as boas novas vivam das boas novas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Mas eu não tenho feito uso de nem uma única dessas coisas. De fato, não escrevi para que se fizesse isso no meu caso, pois seria melhor morrer do que ... Ninguém vai tirar o meu motivo de orgulho!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Ora, se eu estou declarando as boas novas, isso não é motivo para me orgulhar, pois me é imposta a necessidade. Realmente, ai de mim se eu não declarar as boas novas!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Se eu faço isso espontaneamente, tenho uma recompensa; mas, mesmo se o fizer contra a minha vontade, ainda assim estou incumbido de uma responsabilidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Então, qual é a minha recompensa? É que, quando eu declarar as boas novas, eu ofereça as boas novas sem custo, para não abusar da minha autoridade no que se refere às boas novas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Pois, embora eu seja livre com relação a todos, eu me fiz escravo de todos, para ganhar o maior número possível de pessoas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Para os judeus me tornei como judeu, para ganhar os judeus; para os debaixo de lei me tornei como debaixo de lei — embora eu mesmo não esteja debaixo de lei —, para ganhar os debaixo de lei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Para os sem lei me tornei como sem lei — embora eu não esteja sem lei para com Deus, mas esteja debaixo de lei para com Cristo —, para ganhar os sem lei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Para os fracos me tornei fraco, para ganhar os fracos. Eu me tornei todas as coisas para pessoas de todo tipo, para de todos os modos possíveis salvar alguns.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Mas faço tudo pela causa das boas novas, para compartilhá-las com outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Vocês não sabem que numa corrida todos os corredores correm, mas apenas um recebe o prêmio? Corram de tal modo que consigam ganhá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Todos os que participam numa competição exercem autodomínio em todas as coisas. Claro, eles fazem isso para receber uma coroa perecível, mas nós, uma que não perece.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Portanto, não corro sem rumo; direciono os meus golpes de modo a não golpear o ar;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "surro o meu corpo e o conduzo como escravo, para que, depois de ter pregado a outros, eu mesmo não venha a ser de algum modo reprovado.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 10,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Irmãos, quero que vocês saibam que os nossos antepassados estiveram todos debaixo da nuvem e todos passaram pelo mar,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "todos foram batizados em Moisés, por meio da nuvem e do mar,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "todos comeram o mesmo alimento espiritual",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "e todos beberam a mesma bebida espiritual. Pois bebiam da rocha espiritual que os seguia, e essa rocha representava o Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Contudo, Deus não se agradou da maioria deles, pois foram mortos no deserto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Essas coisas se tornaram exemplos para nós, para que não desejemos coisas prejudiciais, como eles desejaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Não se tornem idólatras, como alguns deles se tornaram; assim como está escrito: “O povo se sentou para comer e beber. Então se levantaram para se divertir.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "E não cometamos imoralidade sexual, como alguns deles cometeram imoralidade sexual, só para caírem, 23. 000 deles num só dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Nem ponhamos Jeová à prova, como alguns deles o puseram à prova, só para serem mortos pelas serpentes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "E não sejam queixosos, como alguns deles se queixaram, só para serem mortos pelo destruidor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Essas coisas lhes aconteceram como exemplos e foram escritas como aviso para nós, para quem já chegou o fim dos sistemas de coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Portanto, quem pensa estar de pé, tome cuidado para não cair.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Não sobreveio a vocês nenhuma tentação a não ser as que são comuns aos homens. Mas Deus é fiel, e ele não deixará que vocês sejam tentados além do que podem suportar; mas, quando vier a tentação, ele também providenciará a saída, para que a possam suportar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Portanto, meus amados, fujam da idolatria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Falo como a homens de discernimento; julguem vocês mesmos o que eu digo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Será que o cálice de bênção que abençoamos não é uma participação no sangue do Cristo? O pão que partimos não é uma participação no corpo do Cristo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Visto que há um só pão, nós, embora muitos, somos um só corpo, pois todos participamos daquele único pão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Olhem para o Israel natural: Não são participantes com o altar os que comem dos sacrifícios?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "O que então estou querendo dizer? Que aquilo que se sacrifica a um ídolo é alguma coisa, ou que o ídolo é alguma coisa?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Não; mas digo que o que as nações sacrificam, elas sacrificam a demônios, e não a Deus. E eu não quero que vocês se tornem participantes de nada com os demônios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Vocês não podem beber o cálice de Jeová e o cálice de demônios; não podem participar da “mesa de Jeová” e da mesa de demônios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Ou ‘estamos provocando Jeová ao ciúme’? Será que somos mais fortes do que ele?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Tudo é permitido, mas nem tudo é vantajoso. Tudo é permitido, mas nem tudo edifica.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Que cada um persista em buscar não a sua própria vantagem, mas a da outra pessoa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Comam de tudo o que se vende no açougue, sem fazer perguntas por causa da sua consciência,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "pois “a Jeová pertence a terra e tudo o que nela há”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Se algum descrente os convidar para uma refeição, e vocês quiserem ir, comam de tudo o que se puser diante de vocês, sem fazer perguntas por causa da sua consciência.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Mas, se alguém lhes disser: “Isso é algo oferecido em sacrifício”, não comam, por causa daquele que lhes disse isso e por causa da consciência.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Não me refiro à sua própria consciência, mas à da outra pessoa. Pois, por que a minha liberdade deveria ser julgada pela consciência de outro?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Se eu dou graças quando participo de uma refeição, por que serei criticado por causa daquilo pelo qual dou graças?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Portanto, quer vocês comam, quer bebam, quer façam qualquer outra coisa, façam todas as coisas para a glória de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Não se tornem motivo de tropeço para judeus, nem para gregos, nem para a congregação de Deus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "assim como eu estou tentando agradar a todos em todas as coisas, não buscando a minha própria vantagem, mas a do maior número de pessoas, para que sejam salvas.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 11,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Tornem-se meus imitadores, como eu sou de Cristo.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Eu os elogio porque em todas as coisas vocês se lembram de mim e se apegam às tradições conforme as transmiti a vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mas quero que saibam que o cabeça de todo homem é o Cristo; o cabeça da mulher é o homem; e o cabeça do Cristo é Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Todo homem que ora ou profetiza com algo sobre a cabeça envergonha a sua cabeça;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "mas toda mulher que ora ou profetiza com a cabeça descoberta envergonha a sua cabeça, pois é exatamente como se fosse uma mulher com a cabeça raspada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Porque, se a mulher não se cobrir, deve cortar rente o cabelo; mas, se é vergonhoso para a mulher cortar rente o cabelo ou raspar a cabeça, ela deve se cobrir.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois o homem não deve cobrir a cabeça, visto ser imagem e glória de Deus, mas a mulher é a glória do homem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Porque o homem não veio da mulher, mas a mulher veio do homem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "E, além disso, o homem não foi criado para a mulher, mas a mulher para o homem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "É por isso que a mulher deve ter um sinal de autoridade sobre a cabeça, e por causa dos anjos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Entretanto, no Senhor, nem a mulher existe sem o homem, nem o homem sem a mulher.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois, assim como a mulher procede do homem, assim também o homem vem à existência por meio da mulher; mas todas as coisas procedem de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Julguem vocês mesmos: É apropriado para uma mulher orar a Deus com a cabeça descoberta?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Não lhes ensina a própria natureza que ter cabelo comprido é uma desonra para o homem,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "mas, se a mulher tem cabelo comprido, isso é uma glória para ela? Pois o cabelo lhe foi dado em lugar de uma cobertura para a cabeça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "No entanto, se alguém quiser argumentar a favor de outro costume, não temos outro, nem o têm as congregações de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Mas, ao dar essas ordens, não os elogio, porque não é para o seu benefício que vocês se reúnem, mas para o seu prejuízo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Pois, em primeiro lugar, ouço dizer que, quando vocês se reúnem como congregação, existem divisões entre vocês; e, até certo ponto, acredito nisso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Pois certamente haverá seitas entre vocês, para que também fique claro quais de vocês são aprovados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Quando vocês se reúnem, não é realmente para tomar a Ceia do Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Pois, na hora de tomá-la, vocês comem primeiro o seu próprio jantar, de modo que um está com fome, mas outro está embriagado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Será que vocês não têm casa para comer e beber? Ou desprezam a congregação de Deus e fazem aqueles que não têm nada se sentir envergonhados? O que posso dizer a vocês? Devo elogiá-los? Nisso não os elogio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Pois eu recebi do Senhor o que também lhes transmiti: que o Senhor Jesus, na noite em que ia ser traído, pegou um pão,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "e, depois de dar graças, partiu-o e disse: “Isto representa o meu corpo, em benefício de vocês. Persistam em fazer isso em memória de mim.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Ele fez o mesmo também com respeito ao cálice, depois de terem tomado a refeição, dizendo: “Este cálice representa o novo pacto com base no meu sangue. Persistam em fazer isso, sempre que o beberem, em memória de mim.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Pois, sempre que vocês comerem esse pão e beberem esse cálice, estarão proclamando a morte do Senhor, até que ele venha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Portanto, quem comer o pão ou beber o cálice do Senhor indignamente será culpado com respeito ao corpo e ao sangue do Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Primeiro, que o homem examine e aprove a si mesmo, e só então coma do pão e beba do cálice.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Pois quem come e bebe sem discernir o corpo, come e bebe julgamento contra si mesmo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "É por isso que muitos entre vocês estão fracos e doentes, e um bom número está dormindo na morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Mas, se discerníssemos o que nós mesmos somos, não seríamos julgados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "No entanto, quando somos julgados, somos disciplinados por Jeová, para não sermos condenados com o mundo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Portanto, meus irmãos, quando se reunirem para essa ceia, esperem uns pelos outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Se alguém estiver com fome, que coma em casa, para que, quando vocês se reunirem, isso não resulte em julgamento. Mas, quanto aos outros assuntos, eu os porei em ordem quando chegar aí.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 12,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Agora, quanto aos dons espirituais, irmãos, não quero que vocês fiquem na ignorância.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Vocês sabem que, quando eram pessoas das nações, eram influenciados e desviados para aqueles ídolos sem voz, seguindo-os para onde quer que levassem vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Portanto, saibam que ninguém diz: “Jesus é maldito!” quando fala pelo espírito de Deus, e ninguém pode dizer: “Jesus é Senhor!” a não ser por espírito santo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Há diferentes dons, mas há o mesmo espírito;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "e há diferentes maneiras de servir, contudo há o mesmo Senhor;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "e há diferentes atividades, contudo é o mesmo Deus que realiza tudo em todos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas a manifestação do espírito é dada a cada um com um objetivo benéfico.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pois a um é dada a palavra de sabedoria por meio do espírito; a outro, a palavra de conhecimento, segundo o mesmo espírito;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "a outro, a fé, pelo mesmo espírito; a outro, dons de curar, por esse único espírito;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "a ainda outro, a realização de obras poderosas; a outro, o profetizar; a outro, o discernimento de expressões inspiradas; a outro, diversas línguas; e a outro, a interpretação de línguas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Mas todas essas coisas são realizadas pelo mesmo e único espírito, que distribui a cada um, individualmente, assim como quer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois, assim como o corpo é um só, mas tem muitos membros, e todos os membros do corpo, embora muitos, são um só corpo, assim também é o Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Pois todos nós fomos batizados por um só espírito para formar um só corpo, quer judeus quer gregos, quer escravos quer livres, e a todos nós se deu de beber de um só espírito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Pois, de fato, o corpo não é composto de um só membro, mas de muitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Se o pé dissesse: “Visto que não sou mão, não sou parte do corpo”, não é por isso que ele deixaria de ser parte do corpo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "E, se o ouvido dissesse: “Visto que não sou olho, não sou parte do corpo”, não é por isso que ele deixaria de ser parte do corpo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Se o corpo inteiro fosse um olho, onde ficaria a audição? Se todo ele fosse um ouvido, onde ficaria o olfato?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Mas a verdade é que Deus dispôs cada um dos membros do corpo assim como lhe agradou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Se todos fossem um só membro, onde estaria o corpo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Mas o fato é que são muitos membros, porém um só corpo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "O olho não pode dizer à mão: “Não preciso de você”; nem a cabeça pode dizer aos pés: “Não preciso de vocês.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Pelo contrário, os membros do corpo que parecem mais fracos são necessários,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "e as partes do corpo que consideramos menos honrosas, nós cercamos de maior honra; assim as nossas partes menos atraentes são tratadas com mais decência,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "ao passo que as nossas partes atraentes não precisam desse cuidado. Mas Deus formou o corpo desse modo, dando maior honra à parte que dela precisava,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "para que não houvesse divisão no corpo, mas para que os membros tivessem o mesmo cuidado uns com os outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Se um membro sofre, todos os outros membros sofrem com ele; se um membro é glorificado, todos os outros membros se alegram com ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Ora, vocês são o corpo de Cristo, e cada um de vocês, individualmente, é membro desse corpo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "E Deus estabeleceu os vários membros na congregação: primeiro, apóstolos; segundo, profetas; terceiro, instrutores; depois vêm obras poderosas; depois dons de curar; a prestação de ajuda; habilidades de liderança; diversas línguas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Será que todos são apóstolos? Será que todos são profetas? Será que todos são instrutores? Será que todos realizam obras poderosas?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Será que todos têm dons de curar? Será que todos falam em línguas? Será que todos são intérpretes?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Mas persistam em se empenhar pelos maiores dons. Contudo, ainda lhes mostrarei um caminho superior.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 13,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Se eu falar em línguas de homens e de anjos, mas não tiver amor, sou um gongo que ressoa ou um címbalo que retine.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E se eu tiver o dom de profecia e entender todos os segredos sagrados e todo o conhecimento, e se eu tiver toda a fé, a ponto de mover montanhas, mas não tiver amor, nada sou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E se eu der todos os meus bens para alimentar outros, e se eu entregar o meu corpo para me gabar, mas não tiver amor, de nada me adianta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "O amor é paciente e bondoso. O amor não é ciumento. Não se gaba, não é orgulhoso,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "não se comporta indecentemente, não procura os seus próprios interesses, não se irrita com facilidade. Não leva em conta o dano.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Não se alegra com a injustiça, mas se alegra com a verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Suporta todas as coisas, acredita em todas as coisas, espera todas as coisas, persevera em todas as coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "O amor nunca acaba. Mas, quer haja dom de profecia, será eliminado; quer haja dom de línguas, cessará; quer haja dom de conhecimento, será eliminado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Pois temos conhecimento parcial e profetizamos parcialmente,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "mas, quando vier o que é completo, será eliminado o que é parcial.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Quando eu era criança, falava como criança, pensava como criança, raciocinava como criança; mas, agora que me tornei homem, eliminei as características de criança.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois atualmente vemos contornos indefinidos por meio de um espelho de metal, mas então será face a face. Atualmente eu conheço em parte, mas então conhecerei de modo exato, assim como eu sou conhecido de modo exato.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Agora, porém, permanecem estas três coisas: a fé, a esperança, o amor; mas a maior delas é o amor.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 14,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Empenhem-se pelo amor, mas continuem se esforçando pelos dons espirituais, de preferência o de profetizar.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois quem fala em outra língua não fala a homens, mas a Deus, porque ninguém entende, embora ele fale segredos sagrados pelo espírito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "No entanto, quem profetiza edifica, encoraja e consola a homens com suas palavras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Quem fala em outra língua edifica a si mesmo, mas quem profetiza edifica a congregação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Eu gostaria que todos vocês falassem em línguas, mas prefiro que profetizem. Na verdade, quem profetiza é maior do que aquele que fala em línguas, a menos que este interprete, para que a congregação seja edificada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas, irmãos, se eu fosse agora visitá-los falando em línguas, que bem eu faria a vocês, a não ser que lhes falasse com uma revelação, com conhecimento, com uma profecia ou com um ensinamento?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "O mesmo acontece com as coisas inanimadas que produzem som, quer seja flauta quer harpa. Se não houver distinção entre as notas, como alguém reconhecerá o que se toca na flauta ou na harpa?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pois, se a trombeta não der um toque claro, quem se aprontará para a batalha?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Do mesmo modo, se com a língua vocês não proferirem palavras que sejam fáceis de entender, como alguém saberá o que se fala? Vocês estarão, na verdade, falando ao vento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pode ser que se falem muitos idiomas diferentes no mundo, mas nenhum deles é sem significado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois, se eu não entender o sentido do que se fala, serei um estrangeiro para aquele que fala, e aquele que fala será um estrangeiro para mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Assim também vocês: visto que desejam tanto ter os dons do espírito, procurem ter em abundância dons que edificarão a congregação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Portanto, quem fala em outra língua, ore para que a possa interpretar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Pois, se eu oro em outra língua, é o meu dom do espírito que ora, mas a minha mente fica improdutiva.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O que se deve fazer, então? Orarei com o dom do espírito, mas orarei também com a minha mente. Cantarei louvores com o dom do espírito, mas cantarei louvores também com a minha mente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "De outro modo, se você der louvor com um dom do espírito, como é que a pessoa comum que está no meio de vocês dirá “amém” aos seus agradecimentos, visto que não sabe o que você está dizendo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "É verdade que você dá graças de um modo excelente, mas o outro não está sendo edificado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Agradeço a Deus por falar em mais línguas do que todos vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Contudo, numa congregação, prefiro falar cinco palavras com a minha mente, para também instruir outros, a falar dez mil palavras em outra língua.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Irmãos, não se tornem crianças no seu entendimento. Sejam crianças quanto à maldade, e tornem-se adultos no seu entendimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Está escrito na Lei: “‘Pelas línguas de estrangeiros e pelos lábios de estranhos falarei a este povo, e mesmo assim se recusarão a me ouvir’, diz Jeová.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Portanto, as línguas não servem de sinal para os crentes, mas para os descrentes, ao passo que a profecia não é para os descrentes, mas para os crentes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Assim, se a congregação inteira se reunir e todos falarem em línguas, e entrarem pessoas comuns ou descrentes, não dirão que vocês estão loucos?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Mas, se todos vocês estiverem profetizando, e entrar um descrente ou uma pessoa comum, ele será repreendido e examinado cuidadosamente por todos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Os segredos do seu coração serão então revelados, de modo que ele se prostrará com o rosto por terra e adorará a Deus, declarando: “Deus está realmente entre vocês.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "O que deve ser feito então, irmãos? Quando vocês se reúnem, um tem salmo, outro tem ensinamento, outro tem revelação, outro fala em outra língua, e outro tem interpretação. Que todas as coisas ocorram para a edificação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "E, se alguém falar em outra língua, que isso seja limitado a dois ou no máximo três, um de cada vez, e alguém deve interpretar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Mas, se não houver intérprete, ele deve ficar calado na congregação e falar consigo mesmo e com Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Que dois ou três profetas falem, e os outros discirnam o significado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Mas, se outro recebe uma revelação enquanto está sentado ali, que aquele que estava falando se cale.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Pois todos vocês podem profetizar, um de cada vez, para que todos aprendam e sejam encorajados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "E o dom espiritual dos profetas deve ser controlado pelos profetas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Pois Deus não é Deus de desordem, mas de paz. Como em todas as congregações dos santos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "que as mulheres fiquem caladas nas congregações, pois não lhes é permitido falar. Em vez disso, que estejam em sujeição, como também diz a Lei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Se elas quiserem aprender algo, perguntem ao marido, em casa, pois é vergonhoso para uma mulher falar na congregação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Foi de vocês que a palavra de Deus se originou? Será que vocês foram os únicos que ela alcançou?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Se alguém acha que é profeta ou que tem um dom do espírito, ele deve reconhecer que as coisas que estou escrevendo a vocês são o mandamento do Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Mas, se alguém desconsiderar isso, ele será desconsiderado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Portanto, meus irmãos, continuem se esforçando pelo profetizar; contudo, não proíbam o falar em línguas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Mas que todas as coisas ocorram com decência e ordem.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 15,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Agora, irmãos, quero lembrá-los das boas novas que lhes declarei, que vocês aceitaram e a favor das quais tomaram sua firme posição.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Por meio delas vocês também estão sendo salvos, desde que se apeguem firmemente às boas novas que lhes declarei; a menos que vocês tenham se tornado crentes em vão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois entre as primeiras coisas que lhes transmiti estava aquilo que também recebi: que Cristo morreu pelos nossos pecados, segundo as Escrituras;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "que foi sepultado e que foi levantado no terceiro dia, segundo as Escrituras;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "e que apareceu a Cefas, depois aos Doze.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Depois disso ele apareceu a mais de 500 irmãos de uma só vez, a maioria dos quais ainda está conosco, embora alguns já tenham adormecido na morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Depois apareceu a Tiago e, então, a todos os apóstolos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Mas, por último de todos, apareceu também a mim, como a alguém nascido prematuramente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Pois eu sou o menos importante dos apóstolos, e não sou digno de ser chamado apóstolo, porque persegui a congregação de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Mas, pela bondade imerecida de Deus, sou o que sou. E a bondade imerecida dele para comigo não foi em vão. Pelo contrário, trabalhei mais do que todos eles; contudo, não fui eu, mas a bondade imerecida de Deus que está comigo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Portanto, seja eu ou sejam eles, desse modo nós pregamos, e desse modo vocês creram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ora, se pregamos que Cristo foi levantado dentre os mortos, como é que alguns entre vocês dizem que não há ressurreição dos mortos?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Se, de fato, não há ressurreição dos mortos, então Cristo não foi levantado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas, se Cristo não foi levantado, a nossa pregação certamente é vã, e a fé que vocês têm também é vã.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Além disso, acabamos também sendo falsas testemunhas de Deus, porque damos testemunho contra Deus, dizendo que ele levantou o Cristo, a quem ele não levantou, se é verdade que os mortos não serão levantados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Pois, se os mortos não serão levantados, Cristo também não foi levantado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "E, se Cristo não foi levantado, a fé que vocês têm é inútil; vocês continuam em seus pecados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Então também os que adormeceram na morte em união com Cristo estão perdidos para sempre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Se somente para esta vida temos esperado em Cristo, somos mais dignos de pena do que qualquer outra pessoa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Mas o fato é que Cristo foi levantado dentre os mortos, sendo as primícias dos que adormeceram na morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Pois, visto que a morte veio por meio de um homem, a ressurreição dos mortos também vem por meio de um homem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Porque, assim como em Adão todos morrem, assim também em Cristo todos receberão vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Mas cada um na sua própria ordem: como primícias, Cristo; depois os que pertencem a Cristo, durante a sua presença.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "A seguir, o fim, quando ele entregar o Reino ao seu Deus e Pai, depois de ter reduzido a nada todo governo, toda autoridade e poder.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Pois ele tem de reinar até que Deus lhe tenha posto todos os inimigos debaixo dos pés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "E o último inimigo a ser reduzido a nada é a morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Pois Deus “lhe sujeitou todas as coisas debaixo dos pés”. Mas, quando ele diz que ‘todas as coisas foram sujeitas’, é claro que isso não inclui Aquele que lhe sujeitou todas as coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "No entanto, quando todas as coisas lhe tiverem sido sujeitas, então o próprio Filho também se sujeitará Àquele que lhe sujeitou todas as coisas, para que Deus seja todas as coisas para com todos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Senão, o que farão os que estão sendo batizados com o objetivo de ser mortos? Se os mortos realmente não serão levantados, por que, então, eles estão sendo batizados com esse objetivo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Por que nós, também, estamos toda hora em perigo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Eu enfrento a morte diariamente. Isso é tão certo quanto o orgulho que tenho de vocês, irmãos, em Cristo Jesus, nosso Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Se, como outros homens, eu lutei com feras em Éfeso, de que me adianta isso? Se os mortos não serão levantados, “comamos e bebamos, pois amanhã morreremos”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Não se deixem enganar. Más companhias estragam bons hábitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Recuperem o bom senso fazendo o que é justo e não pratiquem o pecado, pois alguns não têm conhecimento de Deus. Estou falando para induzi-los à vergonha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Mas alguém dirá: “Como é que os mortos serão levantados? Sim, com que tipo de corpo virão?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Insensato! Aquilo que você semeia não passa a viver a menos que primeiro morra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "E o que você semeia não é o corpo que se desenvolverá, mas apenas um simples grão, seja de trigo, seja de algum outro tipo de semente;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "mas Deus dá à semente um corpo conforme lhe agrada, e dá a cada uma delas um corpo próprio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Nem toda carne é igual, mas existe a carne dos homens, e existe também a carne dos bois, a carne das aves e a dos peixes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "E há corpos celestiais e corpos terrenos, mas a glória dos corpos celestiais é de um tipo e a dos corpos terrenos é de outro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "A glória do sol é de um tipo, a glória da lua é de outro, e a glória das estrelas é de outro; de fato, uma estrela difere de outra estrela em glória.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "O mesmo se dá com a ressurreição dos mortos. Semeado perecível, o corpo é levantado imperecível.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "Semeado em desonra, é levantado em glória. Semeado em fraqueza, é levantado em poder.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "Semeado corpo físico, é levantado corpo espiritual. Se há corpo físico, há também um espiritual.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "Assim está escrito: “O primeiro homem, Adão, se tornou um ser vivente.” O último Adão se tornou um espírito que dá vida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 46,
+          "texto": "No entanto, não é o espiritual que vem primeiro. O que vem primeiro é o físico, e depois vem o espiritual.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 47,
+          "texto": "O primeiro homem vem da terra e é feito do pó; o segundo homem vem do céu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 48,
+          "texto": "Como aquele feito do pó, assim são também os que são feitos do pó; e, como o celestial, assim são também os que são celestiais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 49,
+          "texto": "E, assim como levamos a imagem daquele feito do pó, levaremos também a imagem do celestial.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 50,
+          "texto": "Mas eu lhes digo o seguinte, irmãos: carne e sangue não podem herdar o Reino de Deus, nem pode o que é perecível herdar o imperecível.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 51,
+          "texto": "Escutem, vou lhes contar um segredo sagrado: Nem todos adormeceremos na morte, mas todos seremos transformados,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 52,
+          "texto": "num momento, num piscar de olhos, durante o toque da última trombeta. Pois a trombeta soará, e os mortos serão levantados imperecíveis, e nós seremos transformados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 53,
+          "texto": "Pois isto que é perecível tem de se revestir do que é imperecível, e isto que é mortal tem de se revestir do que é imortal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 54,
+          "texto": "Mas, quando isto que é perecível se revestir do que é imperecível, e isto que é mortal se revestir do que é imortal, então se cumprirá a declaração que está escrita: “A morte foi eliminada para sempre.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 55,
+          "texto": "“Morte, onde está a sua vitória? Morte, onde está o seu aguilhão?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 56,
+          "texto": "O aguilhão que produz a morte é o pecado, e a força do pecado é a Lei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 57,
+          "texto": "Mas graças sejam dadas a Deus, pois ele nos dá a vitória por meio do nosso Senhor Jesus Cristo!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 58,
+          "texto": "Portanto, meus amados irmãos, sejam firmes, inabaláveis, e tenham sempre bastante para fazer na obra do Senhor, sabendo que o seu trabalho árduo no Senhor não é em vão.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 16,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Agora, quanto à coleta para os santos, vocês podem seguir as orientações que dei às congregações da Galácia.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Todo primeiro dia da semana, cada um de vocês deve pôr algo à parte, conforme os seus recursos, para que as coletas não sejam feitas quando eu chegar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mas, quando eu chegar aí, enviarei a Jerusalém os homens que vocês aprovarem por cartas, para que levem a bondosa dádiva de vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "No entanto, se parecer apropriado que eu também vá para lá, eles irão comigo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Mas vou visitar vocês depois de ter passado pela Macedônia, pois vou passar pela Macedônia;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "e talvez fique algum tempo com vocês, ou até passe o inverno aí, para que depois vocês me acompanhem parte do caminho para onde eu for.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois não quero agora vê-los só de passagem; espero passar algum tempo com vocês, se Jeová permitir.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "No entanto, vou permanecer em Éfeso até a Festividade de Pentecostes,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "porque me foi aberta uma porta ampla para atividade, mas há muitos opositores.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Se Timóteo chegar aí, tomem providências para que ele não tenha nada a temer enquanto estiver entre vocês, pois ele está realizando a obra de Jeová, assim como eu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Portanto, que ninguém o menospreze. Encaminhem-no em paz em sua viagem, para que ele venha me encontrar, pois estou esperando por ele junto com os irmãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quanto a Apolo, nosso irmão, insisti muito que ele fosse visitar vocês com os irmãos. Ele não tem intenção de ir agora, mas irá quando tiver oportunidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Fiquem despertos, mantenham-se firmes na fé, sejam corajosos, tornem-se poderosos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Que tudo que vocês fizerem seja com amor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Tenho uma exortação a dar a vocês, irmãos: vocês sabem que os da casa de Estéfanas são os primeiros frutos da Acaia e que eles se dedicaram a servir os santos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Que vocês também se sujeitem a pessoas como eles e a todos os que cooperam e trabalham arduamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Mas eu me alegro com a presença de Estéfanas, de Fortunato e de Acaico, porque compensaram a ausência de vocês aqui.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Pois eles reanimaram o meu espírito e o de vocês. Portanto, reconheçam o valor de homens como esses.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "As congregações da Ásia lhes mandam saudações. Áquila e Prisca, junto com a congregação que se reúne na casa deles, enviam a vocês calorosas saudações no Senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Todos os irmãos lhes enviam saudações. Cumprimentem uns aos outros com beijo santo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Aqui estão as minhas saudações, as de Paulo, pela minha própria mão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Se alguém não amar o Senhor, seja amaldiçoado. Venha, nosso Senhor!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Que a bondade imerecida do Senhor Jesus esteja com vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Que o meu amor esteja com todos vocês em união com Cristo Jesus.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

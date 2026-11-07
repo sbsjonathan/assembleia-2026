@@ -1,0 +1,80 @@
+{
+  "nome_do_livro": "3 João",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "O homem idoso, a Gaio, o amado, a quem eu amo verdadeiramente.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Amado, oro para que tudo continue correndo bem com você e que tenha boa saúde, assim como você está bem agora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois eu me alegrei muito quando os irmãos vieram e deram testemunho de que você se apega à verdade, de que continua andando na verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Não tenho alegria maior do que esta: ouvir que os meus filhos continuam andando na verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Amado, você mostra sua fidelidade naquilo que faz pelos irmãos, mesmo que não os conheça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Eles deram testemunho do seu amor perante a congregação. Por favor, encaminhe-os na viagem deles de uma maneira digna de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Porque foi a favor do nome dele que saíram, sem receber nada das pessoas das nações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Portanto, nós temos a obrigação de mostrar hospitalidade a irmãos como esses, para que nos tornemos colaboradores na verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Escrevi algo à congregação, mas Diótrefes, que gosta de ocupar o primeiro lugar entre eles, não aceita nada de nós com respeito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "É por isso que, se eu for aí, trarei à atenção as coisas que ele tem feito, as calúnias que tem espalhado sobre nós. Não satisfeito com isso, ele se recusa a receber os irmãos com respeito e tenta impedir e expulsar da congregação aqueles que querem recebê-los.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Amado, não imite o que é mau, mas imite o que é bom. Quem faz o bem se origina de Deus. Quem faz o mal não viu a Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Todos eles falam bem de Demétrio, inclusive a própria verdade. De fato, nós também testemunhamos a favor dele, e você sabe que o testemunho que damos é verdadeiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Eu tinha muitas coisas para lhe escrever, mas não quero continuar escrevendo com pena e tinta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Porém, espero vê-lo logo, e falaremos pessoalmente. Que a paz esteja com você. Os amigos mandam-lhe saudações. Dê minhas saudações aos amigos, um por um.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

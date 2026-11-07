@@ -1,0 +1,450 @@
+{
+  "nome_do_livro": "Rute",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Nos dias em que os juízes administravam a justiça, houve uma fome no país. E um homem partiu de Belém, em Judá, para ir morar como estrangeiro nos campos de Moabe, ele com a esposa e os dois filhos.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O nome do homem era Elimeleque, o nome da sua esposa era Noemi, e os nomes dos seus dois filhos eram Malom e Quiliom. Eles eram efratitas de Belém de Judá. Chegaram aos campos de Moabe e ficaram morando lá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Algum tempo depois morreu Elimeleque, marido de Noemi, e ficaram ela e os dois filhos.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 4,
+          "texto": "Mais tarde, os homens se casaram com mulheres moabitas: uma se chamava Orpa e a outra se chamava Rute. Eles ficaram morando lá por cerca de dez anos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Depois morreram também os dois filhos, Malom e Quiliom, e Noemi ficou sem os dois filhos e sem o marido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Então ela e as suas noras partiram dos campos de Moabe, pois ela tinha ouvido falar em Moabe que Jeová havia voltado a atenção para seu povo, dando-lhes pão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Ela deixou o lugar onde morava com as suas duas noras. Enquanto caminhavam pela estrada para voltar à terra de Judá,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 8,
+          "texto": "Noemi disse às suas noras: “Voltem, cada uma à casa da sua mãe. Que Jeová lhes demonstre amor leal, assim como vocês fizeram aos seus maridos que morreram e a mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Que Jeová permita que cada uma de vocês encontre segurança no lar de um marido.” Então as beijou, e elas começaram a chorar alto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "E elas lhe diziam: “Não! Nós iremos com a senhora para o seu povo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Mas Noemi disse: “Voltem, minhas filhas. Por que vocês deveriam ir comigo? Será que ainda posso dar à luz filhos que se tornariam seus maridos?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Voltem, minhas filhas. Voltem, pois estou velha demais para me casar. Mesmo que eu tivesse esperança de encontrar um marido hoje à noite e pudesse ter filhos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "vocês ficariam esperando por eles até que crescessem? Ficariam sem se casar à espera deles? Não, minhas filhas. Estou muito amargurada de ver vocês nesta situação, pois a mão de Jeová se voltou contra mim.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Elas choraram alto de novo, e depois Orpa beijou sua sogra e partiu. Mas Rute insistiu em ficar com ela.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 15,
+          "texto": "Assim, Noemi disse: “Veja, a sua cunhada voltou ao seu povo e aos seus deuses. Volte com a sua cunhada.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mas Rute disse: “Não insista comigo para abandoná-la, para deixar de acompanhá-la; pois, aonde a senhora for, eu irei, e onde a senhora passar a noite, eu passarei a noite. Seu povo será o meu povo, e seu Deus será o meu Deus.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 17,
+          "texto": "Onde a senhora morrer, eu morrerei e lá serei enterrada. Que Jeová me castigue, e que o faça severamente, se outra coisa senão a morte me separar da senhora.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Quando Noemi viu que Rute insistia em acompanhá-la, desistiu de tentar convencê-la.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 19,
+          "texto": "E as duas seguiram viagem até que chegaram a Belém. Assim que chegaram a Belém, toda a cidade ficou agitada por causa delas, e as mulheres perguntavam: “Esta é Noemi?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "E ela dizia às mulheres: “Não me chamem de Noemi. Chamem-me de Mara, pois o Todo-Poderoso tornou minha vida muito amarga.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Eu tinha tudo quando fui, mas Jeová me fez voltar de mãos vazias. Por que me chamam de Noemi, se Jeová se opôs a mim e o Todo-Poderoso me causou calamidade?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Foi assim que Noemi voltou dos campos de Moabe junto com Rute, sua nora moabita. Elas chegaram a Belém no início da colheita da cevada.",
+          "novo_paragrafo": true
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Noemi tinha um parente muito rico por parte do seu marido. O nome dele era Boaz, e ele era da família de Elimeleque.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Rute, a moabita, disse a Noemi: “Por favor, deixe que eu vá ao campo e respigue cereal atrás de alguém que me mostre favor.” Portanto, Noemi lhe disse: “Vá, minha filha.”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 3,
+          "texto": "Então ela foi e começou a respigar no campo, atrás dos ceifeiros. Por acaso ela foi parar num campo que pertencia a Boaz, que era da família de Elimeleque.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Naquele momento, Boaz chegou de Belém e disse aos ceifeiros: “Jeová esteja com vocês.” E eles responderam: “Jeová o abençoe.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Boaz perguntou então ao servo encarregado dos ceifeiros: “A que família essa moça pertence?”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 6,
+          "texto": "O servo encarregado dos ceifeiros respondeu: “A moça é uma moabita que voltou com Noemi dos campos de Moabe.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Ela disse: ‘Por favor, posso respigar e recolher as espigas cortadas que forem deixadas para trás pelos ceifeiros?’ E ela ficou de pé desde que chegou esta manhã; só se sentou agora no abrigo, para descansar um pouco.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Então Boaz disse a Rute: “Escute, minha filha. Não vá respigar em outro campo, nem vá para nenhum outro lugar. Fique perto das minhas servas.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 9,
+          "texto": "Fique atenta ao campo que ceifarem e vá com elas. Dei ordem aos servos para que não toquem em você. Quando estiver com sede, vá até os jarros e beba a água que os servos tirarem.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Em vista disso, ela se prostrou com o rosto por terra e lhe perguntou: “Como é que eu achei favor aos seus olhos, e por que o senhor reparou em mim, se eu sou uma estrangeira?”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 11,
+          "texto": "Boaz lhe respondeu: “Contaram-me tudo o que você fez por sua sogra depois da morte do seu marido, e que você deixou seu pai, sua mãe e a terra dos seus parentes, e veio morar com um povo que não conhecia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Que Jeová a recompense pelo que você tem feito e que haja para você um salário perfeito da parte de Jeová, o Deus de Israel, debaixo das asas de quem você veio buscar refúgio.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Então ela disse: “Que eu ache favor aos seus olhos, meu senhor, visto que me consolou e falou de um modo que tranquilizou esta sua serva, embora eu nem seja uma das suas servas.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Na hora da refeição, Boaz lhe disse: “Venha comer pão e mergulhe seu pedaço no vinagre.” Então ela se sentou junto aos ceifeiros, e ele lhe ofereceu cereal torrado. Ela comeu e ficou satisfeita, e ainda sobrou.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 15,
+          "texto": "Quando ela se levantou para respigar, Boaz ordenou aos seus servos: “Deixem que ela respigue entre as espigas cortadas, e não a incomodem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Além disso, tirem algumas espigas dos feixes e deixem-nas para trás, para que ela as respigue, e não digam nada para impedi-la.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Assim, ela continuou a respigar no campo até anoitecer. Depois bateu o que tinha respigado, e deu cerca de uma efa de cevada.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 18,
+          "texto": "Então apanhou a cevada e entrou na cidade, e sua sogra viu o que ela tinha respigado. Rute também pegou o alimento que havia sobrado depois da refeição, quando comeu e ficou satisfeita, e o deu a ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Sua sogra disse-lhe então: “Onde você respigou hoje? Onde você trabalhou? Abençoado seja aquele que reparou em você.” Assim, ela falou à sua sogra sobre a pessoa com quem tinha trabalhado: “O nome do homem com quem trabalhei hoje é Boaz.”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 20,
+          "texto": "Noemi disse então à sua nora: “Seja ele abençoado por Jeová, que não falhou em demonstrar amor leal para com os vivos e os mortos.” E Noemi acrescentou: “O homem é nosso parente. Ele é um dos nossos resgatadores.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Então Rute, a moabita, disse: “Ele me disse também: ‘Fique perto dos meus servos até que tenham terminado toda a minha colheita.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Assim, Noemi disse a Rute, sua nora: “Minha filha, é melhor você acompanhar as servas dele do que ser incomodada em outro campo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Assim, ela ficou perto das servas de Boaz e respigou até o fim da colheita da cevada e da colheita do trigo. E ela continuou morando com a sua sogra.",
+          "novo_paragrafo": true
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Noemi, sua sogra, disse-lhe então: “Minha filha, preciso procurar um lar para você, para que você fique bem.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Boaz é nosso parente. Foi com as servas dele que você esteve. Hoje à noite ele vai limpar cevada na eira.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Portanto lave-se, passe óleo perfumado, vista a sua melhor roupa e desça à eira. Não deixe que ele note a sua presença até que ele tenha terminado de comer e beber.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Quando ele for dormir, preste atenção ao lugar onde ele se deita. Então vá, descubra os pés dele e deite-se. E ele lhe dirá o que fazer.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Ela respondeu então: “Farei tudo o que a senhora me disse.”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 6,
+          "texto": "Então ela desceu à eira e fez tudo o que a sua sogra lhe tinha dito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Enquanto isso, Boaz comia e bebia, e seu coração estava feliz. Então ele foi se deitar na beirada do monte de cereais. Depois ela se aproximou com cuidado, descobriu os pés dele e se deitou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "À meia-noite, o homem começou a tremer e, quando se inclinou para frente, viu uma mulher deitada aos seus pés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Ele perguntou: “Quem é você?” Ela respondeu: “Sou Rute, sua serva. Estenda o seu manto sobre a sua serva, pois o senhor é resgatador.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então ele disse: “Que Jeová a abençoe, minha filha. Você demonstrou mais amor leal desta vez do que da primeira vez, pois você não foi atrás de jovens, quer pobres quer ricos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E agora, minha filha, não tenha medo. Farei para você tudo o que me diz, pois todos na cidade sabem que você é uma excelente mulher.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Mas, embora eu realmente seja resgatador, há um resgatador de parentesco mais próximo do que eu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Fique aqui esta noite. Se de manhã ele a resgatar, muito bem! Que ele a resgate. Mas, tão certo como Jeová vive, eu mesmo a resgatarei se ele não quiser resgatá-la. Fique deitada aqui até amanhecer.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Assim, ela ficou deitada aos pés dele até de manhã e se levantou antes que estivesse claro o suficiente para ser reconhecida. Então ele disse: “Ninguém deve saber que uma mulher veio à eira.”",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 15,
+          "texto": "E também disse: “Traga o manto que você está usando e segure-o aberto.” Assim, ela o segurou, e ele colocou nele seis medidas de cevada e o pôs sobre ela; depois ele entrou na cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Ela voltou à sua sogra, que lhe perguntou: “Como foi, minha filha?” Rute lhe contou tudo o que o homem tinha feito por ela.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 17,
+          "texto": "Ela acrescentou: “Ele me deu estas seis medidas de cevada e disse: ‘Não vá de mãos vazias à sua sogra.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Então ela disse: “Agora espere, minha filha, até saber como ficará o assunto, pois o homem não descansará até resolver o assunto hoje.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Boaz subiu até o portão da cidade e se sentou ali. Quando o resgatador que Boaz havia mencionado ia passando, Boaz disse: “Fulano, venha e sente-se aqui.” Ele foi e se sentou.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Então Boaz chamou dez anciãos da cidade e disse: “Sentem-se aqui.” E eles se sentaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Boaz disse então ao resgatador: “Noemi, que voltou dos campos de Moabe, tem de vender o campo que pertencia ao nosso irmão Elimeleque.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 4,
+          "texto": "Então achei que devia informá-lo do assunto e lhe dizer: ‘Compre-o diante dos que moram aqui e dos anciãos do meu povo. Se você for resgatá-lo, resgate-o. Mas, se não for resgatá-lo, diga-me para que eu saiba, pois você tem o direito de resgate, e eu venho depois de você.’” Ele respondeu: “Estou disposto a resgatá-lo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Então Boaz disse: “No dia em que você comprar o campo de Noemi, tem de comprá-lo também de Rute, a moabita, esposa do falecido, para restaurar o nome dele sobre a sua herança.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Diante disso, o resgatador disse: “Não posso resgatá-lo, para que eu não arruíne a minha própria herança. Resgate-o para você com o meu direito de resgate, porque eu não posso resgatá-lo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Nos tempos antigos, o costume em Israel relacionado com o direito de resgate e com a transferência, para validar todo tipo de transação, era o seguinte: o homem tinha de tirar a sandália e dá-la ao outro, e assim se confirmava um acordo em Israel.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 8,
+          "texto": "Portanto, ao dizer a Boaz: “Compre-o para você”, o resgatador tirou a sandália.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Boaz disse então aos anciãos e a todo o povo: “Vocês são hoje testemunhas de que estou comprando de Noemi tudo o que pertencia a Elimeleque, e tudo o que pertencia a Quiliom e a Malom.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "E assim adquiro como esposa Rute, a moabita, que era esposa de Malom, a fim de restaurar o nome do falecido sobre a sua herança e para que o nome dele não seja eliminado dentre os seus irmãos e do portão da sua cidade. Vocês são hoje testemunhas.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Em vista disso, todo o povo que estava no portão da cidade e os anciãos disseram: “Somos testemunhas! Que Jeová conceda à esposa que entra na sua casa ser igual a Raquel e a Leia, que edificaram a casa de Israel. Que você prospere em Efrata e faça um bom nome em Belém.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 12,
+          "texto": "E que, por meio da descendência que Jeová lhe dará dessa moça, a sua casa se torne igual à casa de Peres, que Tamar deu à luz a Judá.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Assim, Boaz tomou Rute e ela se tornou sua esposa. Ele teve relações com ela, e Jeová permitiu que ela engravidasse e desse à luz um filho.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 14,
+          "texto": "Então as mulheres disseram a Noemi: “Louvado seja Jeová, que hoje não a deixou sem um resgatador. Que o nome dele seja proclamado em Israel!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Ele revigorou a sua vida e vai ampará-la na sua velhice, pois é filho da sua nora, que a ama e é para você melhor do que sete filhos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Noemi pegou o menino e o segurou no colo, e passou a cuidar dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Então as vizinhas lhe deram um nome. Elas disseram: “Nasceu um filho para Noemi”, e o chamaram de Obede. Ele é o pai de Jessé, pai de Davi.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Esta é a linhagem de Peres: Peres tornou-se pai de Esrom,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 19,
+          "texto": "Esrom tornou-se pai de Rão, Rão tornou-se pai de Aminadabe,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Aminadabe tornou-se pai de Nasom, Nasom tornou-se pai de Salmom,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Salmom tornou-se pai de Boaz, Boaz tornou-se pai de Obede,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Obede tornou-se pai de Jessé, e Jessé tornou-se pai de Davi.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

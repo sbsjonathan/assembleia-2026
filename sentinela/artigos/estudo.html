@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<script id="assembleia-app-scope" src="../../shared/app-scope.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#3F3C6D">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link id="sentinela-statusbar-style" rel="stylesheet" href="../../shared/statusbar.css">
+<script id="sentinela-statusbar-script" src="../../shared/statusbar.js"></script>
+<title>Estudo de A Sentinela</title>
+<style>
+  :root { --indigo:#3F3C6D; --suave:#6b6b76; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif; background:#f4f4f7; }
+  .estado {
+    min-height:100dvh; display:flex; align-items:center; justify-content:center;
+    padding:calc(24px + env(safe-area-inset-top)) 20px calc(24px + env(safe-area-inset-bottom));
+  }
+  .estado[hidden] { display:none; }
+  .box { text-align:center; color:var(--indigo); }
+  .sp { width:24px;height:24px;border:3px solid rgba(63,60,109,.25);border-top-color:var(--indigo);border-radius:50%;animation:g .8s linear infinite;margin:0 auto 14px; }
+  @keyframes g { to { transform:rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce){ .sp{ animation:none; } }
+  .box p { font-size:15px; font-weight:600; }
+
+  .aviso {
+    background:#fff; border-radius:20px; box-shadow:0 18px 50px rgba(0,0,0,.08);
+    padding:40px 28px; text-align:center; max-width:400px; width:100%;
+  }
+  .aviso .ic { font-size:3.4rem; margin-bottom:16px; opacity:.85; }
+  .aviso h1 { font-size:1.5rem; color:#375255; margin:0 0 12px; }
+  .aviso p { color:var(--suave); line-height:1.5; margin:0 0 24px; }
+  .aviso a, .aviso button { display:inline-block; background:#375255; color:#fff; text-decoration:none; font:inherit; font-size:15px; font-weight:600; padding:14px 22px; border:0; border-radius:12px; cursor:pointer; }
+  .aviso a { margin-top:12px; background:transparent; color:#375255; }
+</style>
+<script id="sentinela-typography-script" src="../../shared/typography.js"></script>
+<link id="sentinela-typography-style" rel="stylesheet" href="../../shared/typography.css">
+</head>
+<body>
+  <div class="estado" id="estado" hidden aria-live="polite">
+    <div class="box"><div class="sp"></div><p>Carregando o estudo…</p></div>
+  </div>
+<script src="article-runtime.js"></script>
+<script>
+(function () {
+  'use strict';
+  const runtime = window.SentinelaArticleRuntime;
+  const state = document.getElementById('estado');
+  const date = runtime.resolveDate(location.href);
+  const url = runtime.cacheKey(date);
+  const rootURL = new URL('../../', location.href).href;
+  let opening = false;
+
+  function unavailable() {
+    state.hidden = false;
+    const message = navigator.onLine === false
+      ? 'Este estudo ainda não está salvo neste aparelho. Conecte-se à internet para abri-lo pela primeira vez.'
+      : 'Não consegui abrir este estudo agora. Ele pode ainda não estar disponível. Você pode tentar novamente.';
+    state.innerHTML = '<div class="aviso"><div class="ic">📖</div><h1>Estudo indisponível</h1><p>' + message + '</p><button id="retry-study" type="button">Tentar novamente</button><br><a href="../../index.html">← Voltar ao início</a></div>';
+    document.getElementById('retry-study').addEventListener('click', openStudy);
+  }
+
+  function showArticle(html) {
+    const prepared = runtime.prepareHTML(html, { date, rootURL });
+    document.open();
+    document.write(prepared);
+    document.close();
+  }
+
+  async function cachedArticle() {
+    if (!('caches' in window)) return null;
+    try {
+      const cache = await caches.open(runtime.CACHE_NAME);
+      const saved = await cache.match(url);
+      if (!saved || !saved.ok) return null;
+      const html = await saved.text();
+      return runtime.isArticle(html) ? html : null;
+    } catch (_) { return null; }
+  }
+
+  async function openStudy() {
+    if (opening) return;
+    opening = true;
+    // The normal installed-app path is served directly by the worker. This
+    // fallback also reads existing downloads before making any network request.
+    state.hidden = true;
+    const saved = await cachedArticle();
+    if (saved) { showArticle(saved); return; }
+    if (navigator.onLine === false) { opening = false; unavailable(); return; }
+    state.innerHTML = '<div class="box"><div class="sp"></div><p>Carregando o estudo…</p></div>';
+    state.hidden = false;
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
+    try {
+      const response = await fetch(url, { cache: 'no-store', signal: controller.signal });
+      if (!response.ok) throw new Error('Estudo indisponível.');
+      const html = await response.text();
+      if (!runtime.isArticle(html)) throw new Error('Resposta inválida.');
+      if ('caches' in window) {
+        try {
+          const cache = await caches.open(runtime.CACHE_NAME);
+          await cache.put(url, new Response(html, { headers: { 'Content-Type': 'text/html; charset=utf-8' } }));
+        } catch (_) { /* Storage may be full; reading the article still works. */ }
+      }
+      showArticle(html);
+    } catch (_) {
+      opening = false;
+      unavailable();
+    } finally { clearTimeout(timeout); }
+  }
+
+  openStudy();
+})();
+</script>
+</body>
+</html>

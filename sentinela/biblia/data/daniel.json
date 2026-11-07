@@ -1,0 +1,1850 @@
+{
+  "nome_do_livro": "Daniel",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No terceiro ano do reinado de Jeoiaquim, rei de Judá, Nabucodonosor, rei de Babilônia, chegou a Jerusalém e a sitiou.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E Jeová entregou nas suas mãos Jeoiaquim, rei de Judá, junto com alguns dos utensílios da casa do verdadeiro Deus, e ele os levou para a terra de Sinear, para a casa do seu deus. Ele colocou os utensílios na sala do tesouro do seu deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "O rei então ordenou a Aspenaz, principal oficial da corte, que trouxesse alguns israelitas, incluindo os de descendência real ou nobre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Deveriam ser jovens sem nenhum defeito, de boa aparência, dotados de sabedoria, conhecimento e discernimento, capazes de servir no palácio do rei. Ele deveria lhes ensinar a escrita e a língua dos caldeus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Além disso, o rei estipulou para eles uma porção diária das iguarias do rei e do vinho que ele bebia. Eles deveriam ser treinados por três anos, e no fim desse período passariam a servir o rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Entre eles, havia alguns da tribo de Judá: Daniel, Hananias, Misael e Azarias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "E o principal oficial da corte deu-lhes outros nomes: chamou Daniel de Beltessazar, Hananias de Sadraque, Misael de Mesaque, e Azarias de Abednego.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Mas Daniel decidiu no coração que não se tornaria impuro com as iguarias do rei nem com o vinho que ele bebia. Assim, pediu ao principal oficial da corte permissão para não consumir essas coisas que o tornariam impuro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "E o verdadeiro Deus fez com que o principal oficial da corte mostrasse favor e misericórdia a Daniel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Mas o principal oficial da corte disse a Daniel: “Tenho medo do meu senhor, o rei, que estipulou o alimento e a bebida para vocês. E se ele perceber que a aparência de vocês está pior do que a dos outros jovens de sua idade? Por sua causa, eu serei culpado perante o rei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Mas Daniel disse ao guardião, a quem o principal oficial da corte tinha encarregado de cuidar de Daniel, Hananias, Misael e Azarias:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "“Por favor, faça uma experiência com seus servos por dez dias; deem-nos vegetais para comer e água para beber.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Depois compare a nossa aparência com a aparência dos jovens que comem as iguarias do rei e, de acordo com o que observar, decida como tratará os seus servos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Ele concordou com a proposta e fez uma experiência com eles por dez dias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Ao fim dos dez dias eles tinham uma aparência melhor e mais saudável do que todos os jovens que comiam as iguarias do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Portanto, o guardião retirava as iguarias e o vinho destinados a eles, e lhes dava vegetais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "E o verdadeiro Deus deu a esses quatro jovens conhecimento e compreensão de todo tipo de escrita, e também lhes deu sabedoria; e Daniel recebeu entendimento de todo tipo de visões e sonhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Ao terminar o prazo que o rei tinha determinado para que os levassem à sua presença, o principal oficial da corte os levou perante Nabucodonosor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Quando o rei falou com eles, não havia em todo o grupo ninguém como Daniel, Hananias, Misael e Azarias; e eles continuaram a servir perante o rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "E, sempre que o rei os consultava sobre um assunto que exigia sabedoria e entendimento, ele os achava dez vezes melhores do que todos os sacerdotes-magos e adivinhos que havia em todo o seu reino.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "E Daniel continuou ali até o primeiro ano do rei Ciro.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No segundo ano do seu reinado, Nabucodonosor teve diversos sonhos, e ele ficou tão agitado que não conseguia dormir.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Portanto, o rei mandou convocar os sacerdotes-magos, os adivinhos, os feiticeiros e os caldeus, para que dissessem ao rei o que ele havia sonhado. De modo que eles entraram e se apresentaram ao rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "O rei lhes disse então: “Tive um sonho, e estou agitado porque quero saber o que sonhei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Os caldeus responderam ao rei na língua aramaica: “Ó rei, viva para sempre! Conte aos seus servos o seu sonho, e nós diremos a interpretação.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O rei respondeu aos caldeus: “Esta é a minha última palavra: se vocês não me revelarem o sonho e a interpretação dele, serão cortados em pedaços, e as suas casas serão transformadas em latrinas públicas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas, se me disserem o sonho e a interpretação dele, eu lhes darei presentes, uma recompensa e grande honra. Portanto, digam-me o sonho e a interpretação dele.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Eles voltaram a dizer: “Que o rei conte aos seus servos o sonho, e nós diremos a interpretação dele.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "O rei disse: “Eu sei muito bem que vocês estão tentando ganhar tempo, porque viram que dei minha última palavra sobre o assunto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Se não me revelarem o sonho, haverá uma única punição para todos vocês. Mas vocês combinaram me dizer uma mentira e me enganar, esperando que a situação mude. Portanto, digam-me o sonho, e saberei que podem explicar a interpretação dele.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Os caldeus responderam ao rei: “Não há homem na terra que seja capaz de fazer o que o rei está pedindo, pois nenhum grande rei ou governante jamais pediu algo assim de um sacerdote-mago, adivinho ou caldeu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "O que o rei está pedindo é difícil, e não existe ninguém que possa revelar isso ao rei, a não ser os deuses, que não moram entre os mortais.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ao ouvir isso, o rei ficou extremamente furioso e mandou matar todos os sábios de Babilônia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Quando a ordem foi emitida, e os sábios estavam para ser mortos, Daniel e seus companheiros também foram procurados para ser mortos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Então Daniel, com prudência e cautela, falou com Arioque, que era o chefe da guarda pessoal do rei e tinha saído para matar os sábios de Babilônia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Ele perguntou a Arioque, o oficial do rei: “Por que o rei emitiu uma ordem tão severa?” E Arioque informou Daniel sobre o assunto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "De modo que Daniel se apresentou ao rei e pediu que lhe concedesse tempo para dizer ao rei a interpretação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Depois, Daniel foi para casa e contou a seus companheiros, Hananias, Misael e Azarias, o que tinha acontecido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Ele pediu que orassem para que o Deus do céu mostrasse misericórdia com respeito a esse segredo, de modo que Daniel e seus companheiros não fossem destruídos junto com os outros sábios de Babilônia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Então o segredo foi revelado a Daniel numa visão, à noite. Por isso, Daniel louvou ao Deus do céu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Daniel disse: “Que o nome de Deus seja louvado por toda a eternidade, Pois somente ele tem sabedoria e poder.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Ele muda tempos e épocas, Remove reis e estabelece reis, Dá sabedoria aos sábios e conhecimento aos que têm discernimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Ele revela as coisas profundas e as coisas escondidas, Sabe o que há na escuridão, E com ele mora a luz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "A ti, ó Deus dos meus antepassados, dou graças e louvor, Porque me deste sabedoria e poder. E agora me revelaste o que te pedimos; Tu nos revelaste o assunto que preocupa o rei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Então Daniel procurou Arioque, a quem o rei havia designado para destruir os sábios de Babilônia, e lhe disse: “Não destrua nenhum dos sábios de Babilônia. Leve-me perante o rei, e eu direi ao rei a interpretação.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Arioque levou Daniel depressa à presença do rei e lhe disse: “Achei um homem entre os exilados de Judá que pode revelar a interpretação ao rei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "O rei perguntou a Daniel, que havia recebido o nome de Beltessazar: “Você pode realmente me revelar o sonho que tive e a interpretação dele?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Daniel respondeu ao rei: “Nenhum sábio, adivinho, sacerdote-mago ou astrólogo é capaz de revelar ao rei o segredo que ele quer saber.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Mas há nos céus um Deus que revela segredos, e ele revelou ao rei Nabucodonosor o que acontecerá na parte final dos dias. Este é o sonho e estas são as visões que passaram por sua mente, enquanto estava deitado na sua cama:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "“Quando o senhor, ó rei, estava na sua cama, os seus pensamentos se voltaram para o que acontecerá no futuro, e Aquele que revela segredos lhe revelou o que vai acontecer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Esse segredo me foi revelado, não porque eu tenha mais sabedoria do que qualquer outra pessoa; na verdade, foi para se revelar a interpretação ao rei, de modo que o senhor possa entender os pensamentos do seu coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "“Ó rei, enquanto o senhor estava observando, apareceu uma enorme estátua. Essa estátua imensa e extremamente brilhante estava na sua frente, e sua aparência era amedrontadora.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "A cabeça da estátua era de ouro puro, o peito e os braços eram de prata, o abdômen e as coxas eram de cobre,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "as pernas eram de ferro e os pés eram parcialmente de ferro e parcialmente de argila.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Enquanto o senhor estava olhando, uma pedra foi cortada de um monte, não por mãos, e atingiu os pés da estátua, que eram de ferro e de argila, e os esmigalhou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Então o ferro, a argila, o cobre, a prata e o ouro foram esmigalhados de uma vez só, e ficaram como a palha que voa da eira no verão; o vento os levou embora, de modo que não se podia achar nenhum vestígio deles. Mas a pedra que atingiu a estátua se tornou um grande monte e cobriu a terra inteira.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "“Esse é o sonho, e agora nós diremos ao rei a sua interpretação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "O senhor, ó rei — rei de reis, a quem o Deus do céu deu o reino, o poder, a força e a glória,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "em cuja mão ele entregou os homens, onde quer que eles morem, e também os animais selvagens e as aves dos céus, e a quem ele fez governante sobre todos eles —, o senhor mesmo é a cabeça de ouro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "“Mas depois do senhor surgirá outro reino, inferior ao senhor; e depois outro reino, um terceiro, de cobre, que dominará a terra inteira.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "“Quanto ao quarto reino, será forte como o ferro. Pois, assim como o ferro esmaga e tritura tudo o mais, como o ferro que despedaça, ele esmagará e despedaçará a todos esses.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "“E, assim como o senhor viu que os pés e os dedos dos pés eram parcialmente de argila de oleiro e parcialmente de ferro, o reino estará dividido; porém, haverá nele um pouco da dureza do ferro, assim como o senhor viu o ferro misturado com argila mole.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "E, assim como os dedos dos pés eram parcialmente de ferro e parcialmente de argila, o reino será parcialmente forte e parcialmente frágil.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "Assim como o senhor viu o ferro misturado com a argila mole, eles estarão misturados com o povo; mas não se aderirão um ao outro, do mesmo modo como o ferro não se mistura com a argila.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "“Nos dias desses reis, o Deus do céu estabelecerá um reino que jamais será destruído. E esse reino não passará para as mãos de nenhum outro povo. Vai esmigalhar e pôr um fim a todos esses reinos, e somente ele permanecerá para sempre,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "assim como o senhor viu que uma pedra foi cortada do monte, não por mãos, e que ela esmigalhou o ferro, o cobre, a argila, a prata e o ouro. O Grandioso Deus revelou ao rei o que acontecerá no futuro. O sonho é verdadeiro, e a sua interpretação é digna de confiança.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 46,
+          "texto": "Então o rei Nabucodonosor se prostrou com o rosto por terra diante de Daniel e lhe prestou homenagem. E mandou que se oferecesse a ele um presente e incenso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 47,
+          "texto": "O rei disse a Daniel: “Realmente, o Deus de vocês é Deus de deuses, Senhor de reis e Revelador de segredos, porque você conseguiu revelar esse segredo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 48,
+          "texto": "Assim, o rei enalteceu Daniel e lhe deu muitos presentes valiosos, e o fez governante de toda a província de Babilônia e superintendente principal de todos os sábios de Babilônia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 49,
+          "texto": "E, a pedido de Daniel, o rei encarregou Sadraque, Mesaque e Abednego da administração da província de Babilônia, mas Daniel servia na corte do rei.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "O rei Nabucodonosor fez uma imagem de ouro, de 60 côvados de altura e seis côvados de largura. Erigiu-a na planície de Dura, na província de Babilônia.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Depois o rei Nabucodonosor mandou reunir os sátrapas, os superintendentes, os governadores, os conselheiros, os tesoureiros, os juízes, os magistrados e todos os administradores das províncias, para a inauguração da imagem erigida pelo rei Nabucodonosor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Então os sátrapas, os superintendentes, os governadores, os conselheiros, os tesoureiros, os juízes, os magistrados e todos os administradores das províncias se reuniram para a inauguração da imagem erigida pelo rei Nabucodonosor, e ficaram de pé diante da imagem erigida por Nabucodonosor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "O arauto proclamou em alta voz: “Ordena-se a vocês, povos, nações e línguas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "que, quando ouvirem o som da buzina, da flauta, da cítara, da harpa triangular, do instrumento de cordas, da gaita de foles e de todos os outros instrumentos musicais, se prostrem e adorem a imagem de ouro que o rei Nabucodonosor erigiu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Quem não se prostrar e não adorar será imediatamente lançado na fornalha ardente.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Assim, quando ouviram o som da buzina, da flauta, da cítara, da harpa triangular, do instrumento de cordas e de todos os outros instrumentos musicais, todos os povos, nações e línguas se prostraram e adoraram a imagem de ouro que o rei Nabucodonosor havia erigido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Nessa hora alguns caldeus se apresentaram e acusaram os judeus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Eles disseram ao rei Nabucodonosor: “Ó rei, viva para sempre!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O senhor deu a ordem, ó rei, de que todo homem que ouvisse o som da buzina, da flauta, da cítara, da harpa triangular, do instrumento de cordas, da gaita de foles e de todos os outros instrumentos musicais se prostrasse e adorasse a imagem de ouro;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "e de que aquele que não se prostrasse e não adorasse fosse lançado na fornalha ardente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Mas há alguns judeus que o senhor encarregou da administração da província de Babilônia que não fizeram caso do senhor, ó rei: Sadraque, Mesaque e Abednego. Esses homens não servem os deuses do senhor e se recusam a adorar a imagem de ouro que o senhor erigiu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Então Nabucodonosor, muito furioso, mandou trazer Sadraque, Mesaque e Abednego. E esses homens foram levados perante o rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Nabucodonosor lhes disse: “Sadraque, Mesaque e Abednego, é verdade que vocês não servem os meus deuses e se recusam a adorar a imagem de ouro que erigi?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Se agora, ao ouvirem o som da buzina, da flauta, da cítara, da harpa triangular, do instrumento de cordas, da gaita de foles e de todos os outros instrumentos musicais, vocês se dispuserem a se prostrar e adorar a imagem que fiz, muito bem. Mas, se vocês se recusarem a adorá-la, serão imediatamente lançados na fornalha ardente. E quem é o deus que pode salvá-los das minhas mãos?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Sadraque, Mesaque e Abednego responderam ao rei: “Ó Nabucodonosor, não temos necessidade nenhuma de lhe dar uma resposta a respeito disso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Se tiver de ser assim, nosso Deus, a quem servimos, pode nos salvar da fornalha ardente, e ele pode nos salvar da sua mão, ó rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Mas, mesmo que ele não faça isso, saiba, ó rei, que nós não serviremos os seus deuses nem adoraremos a imagem de ouro que o senhor erigiu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Então Nabucodonosor ficou tão furioso com Sadraque, Mesaque e Abednego que a expressão do rosto dele mudou com relação a eles, e ele mandou aquecer a fornalha sete vezes mais do que o normal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Depois mandou que alguns homens valentes do seu exército amarrassem Sadraque, Mesaque e Abednego e os lançassem na fornalha ardente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Portanto esses homens foram amarrados, ainda vestidos com seus mantos, túnicas, gorros e todas as outras roupas, e foram lançados na fornalha ardente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Como a ordem do rei havia sido muito severa e a fornalha estava quente além do normal, foram os homens que levaram Sadraque, Mesaque e Abednego que morreram pelas chamas da fornalha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Mas os três homens, Sadraque, Mesaque e Abednego, caíram amarrados dentro da fornalha ardente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Então o rei Nabucodonosor, com medo, rapidamente se levantou e perguntou aos seus altos funcionários: “Não foram três homens que amarramos e lançamos no fogo?” Eles responderam ao rei: “Sim, ó rei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Ele disse: “Olhem! Estou vendo quatro homens andando livremente no meio do fogo, e eles não sofrem nenhum dano, e o quarto homem parece um filho dos deuses.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Nabucodonosor se aproximou da porta da fornalha ardente e disse: “Sadraque, Mesaque e Abednego, servos do Deus Altíssimo, saiam e venham para cá!” E Sadraque, Mesaque e Abednego saíram do meio do fogo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Os sátrapas, os superintendentes, os governadores e os altos funcionários do rei que estavam reunidos ali viram que o fogo não havia tido nenhum efeito no corpo daqueles homens. Nenhum fio do seu cabelo tinha sido chamuscado, seus mantos estavam intactos, e nem mesmo havia cheiro de fogo neles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Então, Nabucodonosor declarou: “Louvado seja o Deus de Sadraque, Mesaque e Abednego, que enviou o seu anjo e salvou os seus servos. Eles confiaram nele e não obedeceram à ordem do rei, e estavam dispostos a morrer em vez de servir e adorar qualquer outro deus que não fosse o seu próprio Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Por isso, dou a ordem de que qualquer pessoa, de todo povo, nação ou língua, que disser alguma coisa contra o Deus de Sadraque, Mesaque e Abednego seja cortada em pedaços, e que sua casa seja transformada em latrina pública; pois não há outro deus que possa salvar como esse.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Depois disso, o rei promoveu Sadraque, Mesaque e Abednego na província de Babilônia.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Do rei Nabucodonosor a todos os povos, nações e línguas, que moram em toda a terra: Que seja grande a sua paz!",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Tenho a satisfação de declarar os sinais e as maravilhas que o Deus Altíssimo realizou com respeito a mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Como são grandes os seus sinais e como são poderosas as suas maravilhas! Seu reino é um reino eterno, e seu domínio é de geração após geração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“Eu, Nabucodonosor, estava tranquilo na minha casa, em prosperidade no meu palácio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Tive um sonho que me deixou com medo. Enquanto eu estava deitado na minha cama, as imagens e visões que passaram pela minha mente me amedrontaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Por isso, dei a ordem de que trouxessem à minha presença todos os sábios de Babilônia, para que me revelassem a interpretação do sonho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "“Então vieram os sacerdotes-magos, os adivinhos, os caldeus e os astrólogos. Quando eu lhes contei o sonho, eles não puderam me revelar a interpretação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Por fim veio à minha presença Daniel, que recebeu o nome de Beltessazar (conforme o nome do meu deus) e em quem está o espírito dos deuses santos, e eu contei a ele o sonho:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "“‘Ó Beltessazar, chefe dos sacerdotes-magos, sei muito bem que em você está o espírito dos deuses santos e que nenhum segredo é difícil demais para você; por isso, explique-me as visões que vi no meu sonho e a interpretação dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "“‘Nas visões que passaram pela minha mente enquanto eu estava deitado na minha cama, vi uma árvore no meio da terra, e ela era extremamente alta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "A árvore cresceu e ficou forte, e o topo dela atingiu os céus; era visível até os confins da terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Sua folhagem era bela, ela tinha frutos em abundância, e nela havia alimento para todos. Debaixo dela os animais selvagens procuravam sombra, nos seus galhos moravam as aves dos céus, e todas as criaturas se alimentavam dela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "“‘Na minha cama, enquanto eu observava as visões que passavam pela minha mente, vi um vigilante, um santo, que descia dos céus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Ele gritou com voz forte: “Derrubem a árvore, cortem os seus galhos, façam cair as suas folhas e espalhem os seus frutos! Que os animais fujam de debaixo dela; e as aves, dos seus galhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Mas deixem o toco com as raízes na terra, com faixas de ferro e de cobre, no meio da relva do campo. Que ele seja molhado pelo orvalho dos céus, e que a sua porção seja com os animais, no meio da vegetação da terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Que o seu coração seja mudado para que não seja mais um coração humano, e lhe seja dado um coração de animal, e passem sobre ele sete tempos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Isso é por decreto dos vigilantes e o pedido é declarado pelos santos, para que todos os que vivem saibam que o Altíssimo é Governante no reino da humanidade e que ele o dá a quem quiser, e estabelece sobre ele até mesmo o mais humilde dos homens.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "“‘Esse foi o sonho que eu, o rei Nabucodonosor, tive. Agora, você, ó Beltessazar, diga qual é a interpretação, visto que todos os outros sábios do meu reino são incapazes de me revelar a interpretação. Mas você pode fazer isso, porque em você está o espírito de deuses santos.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "“Nesse momento, Daniel, que recebeu o nome de Beltessazar, ficou pasmado por um instante, e seus pensamentos começaram a amedrontá-lo. “O rei disse: ‘Ó Beltessazar, não permita que o sonho e a interpretação o amedrontem.’ “Beltessazar respondeu: ‘Ó meu senhor, aplique-se o sonho aos que o odeiam, e a interpretação dele aos seus inimigos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "“‘A árvore que o senhor viu, que cresceu e ficou forte, cujo topo atingiu os céus e era visível a toda a terra,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "que tinha bela folhagem, frutos em abundância e alimento para todos, debaixo da qual moravam os animais selvagens e em cujos galhos residiam as aves dos céus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "é o senhor, ó rei, porque o senhor se tornou grande e ficou forte; a sua grandeza cresceu e atingiu os céus, e o seu domínio os confins da terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "“‘E o rei viu um vigilante, um santo, que descia dos céus e dizia: “Derrubem a árvore e destruam-na, mas deixem o toco com as raízes na terra, com faixas de ferro e de cobre, no meio da relva do campo. Que ele seja molhado pelo orvalho dos céus, e que a sua porção seja com os animais selvagens, até terem passado sobre ele sete tempos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Esta é a interpretação, ó rei; é o decreto do Altíssimo que atingirá o meu senhor, o rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "O senhor será expulso do meio dos homens e a sua morada será com os animais selvagens; receberá vegetação para comer, como os touros, e será molhado pelo orvalho dos céus; e passarão sobre o senhor sete tempos, até que reconheça que o Altíssimo é Governante no reino da humanidade e que ele o dá a quem quiser.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "“‘Mas, visto que mandaram deixar o toco da árvore com as raízes, seu reino lhe será restituído depois que o senhor reconhecer que são os céus que governam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Portanto, ó rei, queira aceitar o meu conselho. Afaste-se dos seus pecados fazendo o que é direito, e da sua maldade mostrando misericórdia aos pobres. Talvez assim se prolongue a sua prosperidade.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Tudo isso aconteceu com o rei Nabucodonosor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Doze meses mais tarde, o rei estava caminhando no terraço do palácio real de Babilônia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Ele dizia: “Não é esta Babilônia, a grande, que eu mesmo construí para a casa real, com minha própria força e poder, e para a glória da minha majestade?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Enquanto a palavra ainda estava na boca do rei, uma voz veio dos céus: “Esta mensagem é para você, ó rei Nabucodonosor: ‘O reino se afastou de você,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "e você será expulso do meio da humanidade. Sua morada será com os animais selvagens; receberá vegetação para comer, como os touros; e passarão sobre você sete tempos, até que reconheça que o Altíssimo é Governante no reino da humanidade e que ele o dá a quem quiser.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Naquele instante se cumpriu a palavra em Nabucodonosor. Ele foi expulso do meio da humanidade e começou a comer vegetação como os touros, seu corpo foi molhado pelo orvalho dos céus, até que o seu cabelo ficou comprido como penas de águia, e as suas unhas eram como garras de aves.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "“No fim daquele período, eu, Nabucodonosor, olhei para o céu, e meu entendimento voltou a mim. E eu louvei o Altíssimo; dei louvor e glória Àquele que vive para sempre, porque o seu domínio é um domínio eterno, e o seu reino é de geração após geração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Todos os habitantes da terra são como nada diante dele, e ele age segundo a sua própria vontade com relação ao exército dos céus e os habitantes da terra. Não há ninguém que possa detê-lo ou dizer-lhe: ‘O que fizeste?’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "“Naquela ocasião meu entendimento voltou a mim, e a glória do meu reino, a minha majestade e o meu esplendor voltaram a mim. Meus altos funcionários e meus nobres me procuravam ansiosamente; fui restabelecido no meu reino, e foi-me dada uma grandeza ainda maior.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "“Agora, eu, Nabucodonosor, louvo, enalteço e glorifico o Rei dos céus, porque todas as suas obras são verdade e os seus caminhos são justiça, e porque ele pode humilhar os que andam com orgulho.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "O rei Belsazar deu um grande banquete a mil dos seus nobres, e bebia vinho na frente deles.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Sob o efeito do vinho, Belsazar mandou trazer as taças de ouro e de prata que seu pai, Nabucodonosor, havia tirado do templo em Jerusalém, para que o rei, seus nobres, suas concubinas e suas esposas secundárias bebessem nelas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Então trouxeram as taças de ouro que haviam sido tiradas do templo da casa de Deus em Jerusalém, e o rei, seus nobres, suas concubinas e suas esposas secundárias beberam nelas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Beberam vinho e louvaram os deuses de ouro e de prata, e os de cobre, de ferro, de madeira e de pedra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "No mesmo instante, apareceram dedos de mão de homem e começaram a escrever no reboco da parede, no palácio do rei, em frente ao candelabro. E o rei pôde ver a mão escrevendo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Nisto, o rei ficou pálido, e seus pensamentos o apavoraram; seus quadris tremiam e seus joelhos batiam um no outro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "O rei gritou que convocassem os adivinhos, os caldeus e os astrólogos. O rei disse aos sábios de Babilônia: “Qualquer homem que ler esta escrita e me disser a interpretação dela será vestido de púrpura, receberá um colar de ouro no pescoço e governará como o terceiro no reino.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Então vieram todos os sábios do rei, mas eles não foram capazes de ler a escrita nem de revelar ao rei a interpretação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Por isso, o rei Belsazar ficou muito amedrontado, e seu rosto ficou pálido. Seus nobres ficaram perplexos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Em vista das palavras do rei e dos seus nobres, a rainha entrou na sala de banquete. A rainha disse: “Ó rei, viva para sempre! Não permita que os seus pensamentos o apavorem, nem fique pálido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "No seu reino existe um homem que tem o espírito de deuses santos. Nos dias do seu pai, acharam-se nele esclarecimento, entendimento e sabedoria como a sabedoria de deuses. O rei Nabucodonosor, seu pai, designou-o como chefe dos sacerdotes-magos, dos adivinhos, dos caldeus e dos astrólogos; seu pai fez isso, ó rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois Daniel, a quem o rei deu o nome de Beltessazar, tinha um espírito extraordinário, conhecimento e entendimento para interpretar sonhos, solucionar enigmas e resolver problemas difíceis. Agora, que Daniel seja convocado, e ele lhe dirá a interpretação.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Assim, Daniel foi trazido perante o rei. O rei perguntou a Daniel: “Você é Daniel, dos exilados de Judá, que meu pai, o rei, trouxe de Judá?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Ouvi dizer que em você está o espírito de deuses e que se acharam em você esclarecimento, entendimento e sabedoria extraordinária.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Os sábios e os adivinhos foram trazidos à minha presença para ler esta escrita e me revelar a interpretação dela, mas eles não são capazes de dizer a interpretação da mensagem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "No entanto, eu ouvi dizer que você é capaz de fornecer interpretações e resolver problemas difíceis. Portanto, se você conseguir ler a escrita e me revelar a interpretação dela, será vestido de púrpura, receberá um colar de ouro no pescoço e governará como o terceiro no reino.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Então Daniel respondeu ao rei: “O senhor pode ficar com os seus presentes e dar as recompensas a outros. No entanto, eu lerei a escrita para o rei e lhe revelarei a interpretação dela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Ó rei, o Deus Altíssimo concedeu a Nabucodonosor, seu pai, o reino, a grandeza, a honra e a majestade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Por causa da grandeza que Ele lhe deu, todos os povos, nações e línguas tremiam de medo diante dele. Ele matava ou deixava viver a quem quisesse, enaltecia ou humilhava a quem quisesse.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Mas, quando seu coração ficou arrogante e seu espírito se endureceu, de modo que ele agiu presunçosamente, foi derrubado do trono do seu reino, e foi-lhe tirada a dignidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Ele foi expulso do meio da humanidade, seu coração foi feito semelhante ao de um animal, e ele morava com os jumentos selvagens. Recebia vegetação para comer, como os touros, e seu corpo ficou molhado com o orvalho dos céus, até que ele reconheceu que o Altíssimo é Governante no reino da humanidade e estabelece sobre ele a quem quiser.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "“Mas o senhor não humilhou o seu coração, ó Belsazar, filho de Nabucodonosor, embora soubesse de tudo isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Pelo contrário, o senhor enalteceu a si mesmo em desafio ao Senhor dos céus, e mandou que lhe trouxessem as taças da casa dele. Depois o senhor, seus nobres, suas concubinas e suas esposas secundárias beberam vinho nelas, e louvaram os deuses de prata e ouro, de cobre, de ferro, de madeira e de pedra, deuses que não veem, não ouvem nem sabem nada. Mas o senhor não glorificou o Deus em cujas mãos está o seu fôlego e todos os seus caminhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Por isso, a mão foi enviada por ele, e essas palavras foram escritas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "E estas são as palavras que foram escritas: MENE, MENE, TEQUEL e PARSIM.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "“Esta é a interpretação das palavras: MENE: Deus contou os dias do seu reino e o fez chegar ao fim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "“TEQUEL: o senhor foi pesado na balança e achado em falta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "“PERES: seu reino foi dividido e dado aos medos e aos persas.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Então Belsazar deu a ordem, e vestiram Daniel de púrpura, colocaram um colar de ouro em seu pescoço e proclamaram que ele se tornaria o terceiro governante no reino.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Naquela mesma noite Belsazar, o rei caldeu, foi morto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "E Dario, o medo, recebeu o reino; ele tinha cerca de 62 anos de idade.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Dario achou por bem designar 120 sátrapas para administrar todo o reino.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Acima deles, havia três altos funcionários, um dos quais era Daniel; os sátrapas deviam prestar contas a eles, para que o rei não sofresse prejuízo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E Daniel se destacava entre os altos funcionários e os sátrapas, visto que nele havia um espírito extraordinário, e o rei pretendia designá-lo sobre todo o reino.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Naquele tempo, os altos funcionários e os sátrapas procuravam um motivo para acusar Daniel com respeito a questões de Estado, mas não conseguiam achar nenhuma base para acusação, nem nada corrupto, pois ele era digno de confiança, e não era culpado de nenhuma negligência nem corrupção.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Portanto, esses homens disseram: “Não acharemos nenhum motivo para acusar Daniel, a não ser que seja algo relacionado com a lei do seu Deus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "De modo que esses altos funcionários e sátrapas foram todos juntos à presença do rei e lhe disseram: “Ó rei Dario, viva para sempre!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Todos os funcionários reais, os superintendentes, os sátrapas, os conselheiros reais e os governadores se reuniram e concordaram que seja emitido um decreto real, impondo uma proibição: durante 30 dias, todo aquele que fizer uma petição a qualquer deus ou homem sem ser ao senhor, ó rei, deve ser lançado na cova dos leões.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Agora, ó rei, estabeleça o decreto e assine-o, para que não seja mudado, segundo a lei dos medos e dos persas, que não pode ser anulada.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então o rei Dario assinou o decreto com a proibição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Assim que Daniel soube que o decreto havia sido assinado, foi para sua casa, que tinha as janelas do quarto de terraço abertas na direção de Jerusalém. E ele se ajoelhou, orou e louvou o seu Deus, assim como fazia regularmente antes disso, três vezes por dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Então aqueles homens entraram de repente e encontraram Daniel fazendo petições e suplicando favor perante o seu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E eles foram falar com o rei e o lembraram da proibição real: “O senhor não assinou uma proibição estabelecendo que, durante 30 dias, todo homem que fizesse uma petição a qualquer deus ou homem sem ser ao senhor, ó rei, fosse lançado na cova dos leões?” O rei respondeu: “A questão está bem estabelecida segundo a lei dos medos e dos persas, que não pode ser anulada.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Eles disseram imediatamente ao rei: “Daniel, que é um dos exilados de Judá, não fez caso do senhor, ó rei, nem da proibição que o senhor assinou; ele está orando três vezes por dia.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Quando o rei ouviu isso, ficou muito aflito, e tentou pensar numa maneira de livrar Daniel; até o pôr do sol fez de tudo para salvá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Por fim, aqueles homens foram juntos falar com o rei; eles disseram ao rei: “Ó rei, lembre-se que, segundo a lei dos medos e dos persas, não se pode mudar nenhuma proibição ou decreto emitidos pelo rei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Portanto, o rei deu a ordem, e trouxeram Daniel e o lançaram na cova dos leões. O rei disse a Daniel: “Seu Deus, a quem você serve incessantemente, o livrará.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Depois trouxeram uma pedra e a colocaram sobre a entrada da cova, e o rei a selou com o seu anel de selar e com o anel de selar dos seus nobres, para que nada pudesse ser mudado no caso de Daniel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Então o rei foi para o palácio. Ele passou a noite jejuando e não aceitou nenhum divertimento; e não conseguia dormir.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Finalmente, quando o dia começou a clarear, o rei se levantou e foi depressa à cova dos leões.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Ao chegar perto da cova, chamou Daniel com voz triste. O rei perguntou a Daniel: “Ó Daniel, servo do Deus vivente, será que o seu Deus, a quem você serve incessantemente, pôde livrá-lo dos leões?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Daniel imediatamente respondeu ao rei: “Ó rei, viva para sempre!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Meu Deus enviou seu anjo e fechou a boca dos leões, e eles não me machucaram, pois fui considerado inocente diante dele; e também não fiz nada contra o senhor, ó rei.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "O rei ficou muito alegre e ordenou que Daniel fosse tirado da cova. Quando Daniel foi tirado da cova, viram que não havia sofrido nenhum dano, porque ele tinha confiado no seu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Em seguida o rei ordenou que fossem trazidos os homens que tinham acusado Daniel, e eles foram lançados na cova dos leões, com seus filhos e suas esposas. Antes de eles atingirem o fundo da cova, os leões os atacaram e despedaçaram todos os seus ossos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Então o rei Dario escreveu a todos os povos, nações e línguas, que moravam em toda a terra: “Que tenham grande paz!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Estou emitindo uma ordem de que, em toda a extensão do meu reino, as pessoas tremam de temor diante do Deus de Daniel. Pois ele é o Deus vivente e permanece para sempre. Seu reino nunca será destruído, e seu domínio é eterno.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Ele livra, salva e realiza sinais e milagres nos céus e na terra, pois livrou Daniel das garras dos leões.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Assim, Daniel prosperou no reino de Dario e no reino de Ciro, o persa.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 7,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No primeiro ano de Belsazar, rei de Babilônia, Daniel teve um sonho, e visões passaram pela sua mente enquanto estava deitado na sua cama. Então ele escreveu o sonho; fez um registro completo do assunto.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Daniel declarou: “Em minhas visões durante a noite, vi que os quatro ventos dos céus agitavam o vasto mar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E quatro animais enormes saíam do mar; eles eram diferentes uns dos outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“O primeiro se parecia com um leão e tinha asas de águia. Eu o observei até que suas asas foram arrancadas, e ele foi levantado da terra e posto sobre dois pés como um homem, e recebeu um coração de homem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "“E apareceu outro animal, um segundo, parecido com um urso. Ele estava erguido de um lado e tinha na boca, entre os dentes, três costelas; e foi-lhe dito: ‘Levante-se, coma muita carne.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "“Depois disso continuei olhando, e apareceu outro animal, parecido com um leopardo, mas ele tinha nas costas quatro asas, como as de uma ave. O animal tinha quatro cabeças; e ele recebeu autoridade para governar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "“Depois disso, nas visões da noite, continuei olhando, e vi um quarto animal, assustador, medonho e extremamente forte, e ele tinha grandes dentes de ferro. Devorava, triturava e, o que sobrava, ele pisoteava. Era diferente de todos os outros animais antes dele, e tinha dez chifres.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Enquanto eu olhava os chifres com atenção, surgiu entre eles outro chifre, um pequeno, e três dos primeiros chifres foram arrancados de diante dele. E vi que nesse chifre havia olhos que pareciam olhos humanos e uma boca que falava de modo arrogante.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "“Continuei olhando até que foram colocados tronos, e o Antigo de Dias se sentou. Sua roupa era branca como a neve, e seus cabelos eram como a lã pura. Seu trono eram chamas de fogo, e as rodas do trono eram fogo ardente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Um rio de fogo corria, saindo de diante dele. Mil vezes mil o serviam, e dez mil vezes dez mil estavam de pé diante dele. O Tribunal entrou em sessão, e abriram-se livros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "“Então continuei olhando, por causa do som das palavras arrogantes faladas pelo chifre; olhei, até que o animal foi morto e seu corpo foi destruído e entregue para ser queimado no fogo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quanto aos outros animais, tirou-se o domínio deles, e sua vida foi prolongada por um tempo e uma época.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "“Continuei olhando nas visões da noite e vi alguém parecido com um filho de homem vir com as nuvens dos céus; ele obteve acesso ao Antigo de Dias e foi conduzido à sua presença.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E foi-lhe dado domínio, honra e um reino, para que os povos, nações e línguas o servissem. Seu domínio é um domínio eterno, que jamais terminará, e seu reino não será destruído.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "“Quanto a mim, Daniel, meu espírito ficou aflito dentro de mim, porque as visões que passaram pela minha mente me amedrontaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Eu me aproximei de um dos que estavam de pé ali, para perguntar o que realmente significava aquilo. Então ele me respondeu e revelou a interpretação daquelas coisas:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "“‘Esses animais enormes, quatro ao todo, são quatro reis que se erguerão da terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Mas os santos do Supremo receberão o reino, e eles possuirão o reino para sempre, sim, para todo o sempre.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "“Então eu quis saber mais sobre o quarto animal, que era diferente de todos os outros. Ele era extremamente assustador, tinha dentes de ferro e garras de cobre; ele devorava, triturava e, o que sobrava, ele pisoteava.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Também quis saber sobre os dez chifres que havia na sua cabeça e sobre o outro chifre que surgiu, diante do qual caíram três, o chifre que tinha olhos e uma boca que falava de modo arrogante, e que parecia ser maior do que os outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "“Continuei olhando enquanto esse chifre guerreava contra os santos e os estava vencendo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "até que veio o Antigo de Dias, e proferiu-se o julgamento a favor dos santos do Supremo, e chegou o tempo determinado para os santos tomarem posse do reino.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "“Ele disse o seguinte: ‘Quanto ao quarto animal, representa um quarto reino que haverá na terra. Ele será diferente de todos os outros reinos; devorará toda a terra e a pisoteará e triturará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Quanto aos dez chifres, dez reis surgirão daquele reino; e depois deles surgirá ainda outro, que será diferente dos primeiros e humilhará três reis.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Ele dirá palavras contra o Altíssimo e hostilizará continuamente os santos do Supremo. Tentará mudar tempos e lei, e eles serão entregues nas suas mãos por um tempo, tempos e metade de um tempo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Mas o Tribunal entrou em sessão, e tiraram-lhe seu domínio, a fim de aniquilá-lo e destruí-lo completamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "“‘E o reino, o domínio e a grandeza dos reinos debaixo de todos os céus foram entregues ao povo que são os santos do Supremo. O reino deles é um reino eterno, e todos os domínios servirão e obedecerão a eles.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "“Aqui termina o assunto. Quanto a mim, Daniel, meus pensamentos me deixaram tão perplexo que eu fiquei pálido. Mas guardei essas coisas no coração.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 8,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No terceiro ano do reinado do rei Belsazar, eu, Daniel, tive uma visão, depois daquela que havia tido anteriormente.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Eu tive a visão e, enquanto observava, eu estava na fortaleza de Susã, que fica na província de Elão; tive a visão, e estava junto ao curso de água do Ulai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Quando levantei os olhos, vi um carneiro de pé diante do curso de água, e ele tinha dois chifres. Os dois chifres eram compridos, porém um era mais comprido do que o outro, e o mais comprido surgiu depois.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Vi o carneiro dar chifradas para o oeste, para o norte e para o sul, e nenhum animal selvagem conseguia ficar de pé diante dele, e ninguém podia livrar o que estivesse em seu poder. Ele fazia tudo que queria e se engrandecia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Enquanto eu olhava, apareceu um bode que vinha do oeste, atravessando toda a face da terra sem tocar no chão. E o bode tinha entre os olhos um chifre notável.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ele vinha em direção ao carneiro de dois chifres, que eu tinha visto de pé diante do curso de água; estava correndo em direção a ele com toda a sua fúria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Eu o vi se aproximar do carneiro, e estava cheio de fúria contra ele. Ele atacou o carneiro e quebrou-lhe os dois chifres, e o carneiro não teve forças para resistir a ele. Ele derrubou o carneiro no chão e o pisoteou, e não houve quem o livrasse do seu poder.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Depois o bode se engrandeceu extraordinariamente, mas, assim que se tornou poderoso, o grande chifre foi quebrado; então quatro chifres notáveis surgiram em seu lugar, em direção aos quatro ventos dos céus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "De um deles saiu outro chifre, um pequeno, e ele cresceu até ficar muito grande, em direção ao sul, em direção ao leste e em direção à Terra Gloriosa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Cresceu tanto que alcançou o exército dos céus, e ele fez cair para a terra alguns do exército e algumas das estrelas, e os pisoteou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Ele se engrandeceu até mesmo contra o Príncipe do exército, e o sacrifício constante foi tirado Dele, e o lugar estabelecido do Seu santuário foi derrubado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E um exército foi entregue, junto com o sacrifício constante, por causa da transgressão; e o chifre continuou a lançar a verdade por terra, e agiu e foi bem-sucedido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "E eu ouvi um santo falando, e outro santo perguntou ao que estava falando: “Quanto tempo durará a visão sobre o sacrifício constante e sobre a transgressão que causa desolação, para fazer do lugar santo e do exército coisas a serem pisoteadas?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E ele me disse: “Até terem passado 2. 300 noites e manhãs. E o lugar santo certamente será restabelecido na sua condição correta.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Enquanto eu, Daniel, estava tendo a visão e procurando entendê-la, de repente vi na minha frente alguém que parecia um homem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "E ouvi a voz de um homem, vinda do meio do Ulai; ele gritou: “Gabriel, faça com que ele entenda o que viu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Portanto, ele se aproximou de onde eu estava. Mas, quando chegou, fiquei tão apavorado que me prostrei com o rosto por terra. Ele me disse: “Entenda, ó filho do homem, que a visão é para o tempo do fim.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "No entanto, enquanto ele falava comigo, adormeci profundamente com o rosto no chão. Então ele me tocou e me fez ficar de pé onde eu estava,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "e disse: “Eu lhe mostrarei o que acontecerá na parte final do tempo da fúria, porque a visão é para o tempo determinado do fim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "“O carneiro de dois chifres que você viu representa os reis da Média e da Pérsia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "O bode peludo representa o rei da Grécia, e o chifre grande que havia entre os seus olhos representa o primeiro rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Quanto ao chifre que foi quebrado, de modo que quatro se levantaram em seu lugar, haverá quatro reinos procedentes da nação dele que se levantarão, mas não com o seu poder.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "“E na parte final desses reinos, quando os transgressores completarem suas ações, um rei de aparência feroz, que entende declarações ambíguas, se levantará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Ele se tornará muito poderoso, mas não pelo seu próprio poder. Causará destruição de modo extraordinário, e será bem-sucedido e tomará ação. Ele arruinará poderosos, também o povo composto dos santos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "E, com sua astúcia, usará de falsidade para ser bem-sucedido; no coração ele se enaltecerá e, durante um período de segurança, arruinará a muitos. Ele até mesmo se levantará contra o Príncipe dos príncipes, mas será destroçado sem a intervenção de mãos humanas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "“O que foi dito na visão a respeito das noites e das manhãs é verdade, mas você deve manter a visão em segredo, porque ela se refere a dias que estão muito à frente.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Eu, Daniel, estava exausto e fiquei doente por alguns dias. Depois me levantei e fui cuidar do serviço do rei; mas eu estava atordoado por causa da visão, e ninguém podia entendê-la.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 9,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No primeiro ano de Dario, que era filho de Assuero, descendente dos medos, e que tinha sido feito rei sobre o reino dos caldeus,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "sim, no primeiro ano do seu reinado, eu, Daniel, compreendi pelos livros o número de anos para se cumprir a desolação de Jerusalém, conforme mencionado na palavra de Jeová dirigida ao profeta Jeremias; seriam 70 anos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Então recorri a Jeová, o verdadeiro Deus, fazendo súplicas em oração e jejuando, em pano de saco e em cinzas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Orei a Jeová, meu Deus, e fiz confissão; eu disse: “Ó, Jeová, o verdadeiro Deus, o Grande, que inspira temor, aquele que guarda seu pacto e demonstra amor leal aos que o amam e aos que guardam os seus mandamentos:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "pecamos, fizemos o que é errado e o que é mau e nos rebelamos; nós nos desviamos dos teus mandamentos e das tuas decisões judiciais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Não escutamos os teus servos, os profetas, que falaram em teu nome aos nossos reis, aos nossos príncipes, aos nossos antepassados e a todo o povo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "A ti, ó Jeová, pertence a justiça, mas hoje a vergonha pertence a nós — aos homens de Judá, aos habitantes de Jerusalém e a todo o Israel, os de perto e os de longe, em todas as terras às quais os espalhaste, porque agiram de modo infiel para contigo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "“Ó Jeová, a nós pertence a vergonha — aos nossos reis, aos nossos príncipes e aos nossos antepassados, porque pecamos contra ti.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "A Jeová, nosso Deus, pertencem a misericórdia e o perdão, pois nós nos rebelamos contra ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Não obedecemos à voz de Jeová, nosso Deus; não seguimos as suas leis, que ele pôs diante de nós por meio dos seus servos, os profetas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Todo o Israel transgrediu a tua Lei e se desviou, desobedecendo à tua voz, de modo que derramaste sobre nós a maldição e o juramento escrito na Lei de Moisés, o servo do verdadeiro Deus, pois nós pecamos contra Ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ele cumpriu as palavras que havia falado contra nós e contra os nossos governantes, que nos governavam, e trouxe sobre nós grande calamidade. Debaixo de todo o céu, nunca se fez nada parecido ao que foi feito a Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Assim como está escrito na Lei de Moisés, toda essa calamidade veio sobre nós; mesmo assim, não buscamos o favor de Jeová, nosso Deus, por nos afastar do nosso erro e mostrar que compreendemos a tua verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "“Assim, Jeová se manteve atento e trouxe calamidade sobre nós, pois Jeová, nosso Deus, é justo em tudo que faz; contudo, nós não obedecemos à sua voz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "“Agora, ó Jeová, nosso Deus, que tiraste teu povo da terra do Egito com mão poderosa e fizeste para ti um nome que perdura até hoje, nós pecamos e fizemos o que é mau.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Por favor, ó Jeová, segundo todos os teus atos justos, faz com que a tua ira e o teu furor se afastem da tua cidade, Jerusalém, teu santo monte; pois, por causa dos nossos pecados e dos erros dos nossos antepassados, Jerusalém e o teu povo são alvo de desprezo para todos ao nosso redor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "E agora, ó nosso Deus, escuta a oração do teu servo e as súplicas dele, e, por tua própria causa, ó Jeová, faz a tua face brilhar sobre o teu santuário, que está desolado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Inclina o teu ouvido, ó meu Deus, e ouve! Abre os olhos e vê a nossa condição desolada e a cidade que leva o teu nome; pois estamos fazendo súplicas a ti, não por causa dos nossos atos justos, mas por causa da tua grande misericórdia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Ó Jeová, ouve. Ó Jeová, perdoa. Ó Jeová, presta atenção e age! Não demores, por tua própria causa, ó meu Deus, pois a tua cidade e o teu povo levam o teu nome.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Enquanto eu ainda estava falando, orando e confessando o meu pecado e o pecado do meu povo Israel, e fazendo o meu pedido diante de Jeová, o meu Deus, em favor do santo monte do meu Deus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "sim, enquanto eu ainda estava falando em oração, Gabriel, o homem que eu tinha visto anteriormente na visão, aproximou-se de mim quando eu estava completamente exausto, por volta da hora da oferta do anoitecer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "E ele me deu entendimento, dizendo: “Ó Daniel, agora vim para lhe dar compreensão e entendimento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Quando você começou a fazer sua súplica, foi emitida uma mensagem, e eu vim para comunicá-la a você, porque você é muito precioso. Portanto, considere o assunto e entenda a visão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "“Setenta semanas foram determinadas para o seu povo e para a sua cidade santa, a fim de terminar a transgressão, acabar com o pecado, fazer expiação do erro, trazer justiça eterna, selar a visão e a profecia, e ungir o Santo dos Santos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Você deve saber e entender o seguinte: depois de se emitir a ordem para restaurar e reconstruir Jerusalém, até a vinda do Messias, o Líder, haverá 7 semanas e também 62 semanas. Ela será restaurada e reconstruída, com praça pública e fosso, mas em tempos de aflição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "“Depois das 62 semanas o Messias será eliminado, sem nada para si.\n“E o povo de um líder que virá destruirá a cidade e o lugar santo. E o seu fim será pela inundação. Até o fim haverá guerra; o que foi determinado são desolações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "“Ele manterá em vigor o pacto para muitos por uma semana; e na metade da semana fará cessar o sacrifício e a oferta. “E aquele que causa desolação virá na asa de coisas repugnantes; e o que foi determinado será derramado também sobre aquele que é desolado, até a exterminação.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 10,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No terceiro ano de Ciro, rei da Pérsia, Daniel, que era chamado Beltessazar, recebeu uma revelação. A mensagem era verdadeira; era sobre um grande conflito. Ele entendeu a mensagem e recebeu compreensão do que viu.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Naqueles dias eu, Daniel, estive de luto por três semanas inteiras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Não comi comida saborosa, não entrou nem carne nem vinho na minha boca e não passei óleo no meu corpo por três semanas inteiras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "No dia 24 do primeiro mês, enquanto eu estava à margem do grande rio, o Tigre,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "levantei os olhos e vi um homem vestido de linho, e ele tinha na cintura um cinto de ouro de Ufaz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Seu corpo era como crisólito, seu rosto parecia um relâmpago, seus olhos eram como tochas acesas, seus braços e seus pés pareciam cobre polido, e o som das suas palavras era como o som de uma multidão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Somente eu, Daniel, tive a visão; os homens que estavam comigo não a viram. No entanto, eles começaram a tremer muito, e fugiram para se esconder.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Então fiquei sozinho e, quando tive essa grande visão, não me restou energia; minha aparência ficou deplorável, e eu perdi totalmente as forças.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "E ouvi o som das suas palavras; mas, quando eu o ouvi falar, caí num sono profundo, com o rosto no chão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Em seguida, a mão de alguém me tocou; ela me sacudiu e me fez ficar de joelhos, apoiado sobre as minhas mãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E ele me disse: “Ó Daniel, homem muito precioso, dê atenção às palavras que vou lhe dizer. Agora, fique de pé, pois fui enviado a você.” Quando ele me disse isso, fiquei de pé, tremendo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ele me disse então: “Não tenha medo, Daniel. Suas palavras foram ouvidas desde o primeiro dia em que você se dedicou a buscar o entendimento e a se humilhar perante o seu Deus, e eu vim por causa das suas palavras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mas o príncipe do reino da Pérsia se colocou em oposição a mim por 21 dias. Então Miguel, um dos príncipes mais importantes, veio me ajudar; e eu permaneci ali com os reis da Pérsia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Agora vim para fazer você entender o que acontecerá ao seu povo na parte final dos dias, porque é uma visão para os dias que ainda virão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Quando ele me falava essas palavras, virei o rosto para o chão e fiquei sem fala.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então alguém com aparência de homem tocou nos meus lábios, de modo que abri a boca e disse àquele que estava de pé na minha frente: “Meu senhor, estou tremendo por causa da visão, e não tenho mais forças.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Portanto, como é que eu, o servo do meu senhor, posso falar com o meu senhor? Pois agora estou sem forças e completamente sem fôlego.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Aquele que tinha a aparência de homem tocou em mim novamente e me fortaleceu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Então ele disse: “Não tenha medo, ó homem muito precioso. Que a paz esteja com você. Seja forte, sim, seja forte!” Quando ele falou comigo, me senti mais forte e disse: “Que o meu senhor fale, pois me fortaleceu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "De modo que ele disse: “Sabe por que vim ao seu encontro? Agora voltarei para lutar com o príncipe da Pérsia. Quando eu for, chegará o príncipe da Grécia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "No entanto, eu direi a você as coisas registradas no livro da verdade. Não há ninguém que me dê forte apoio em tudo isso, a não ser Miguel, o príncipe de vocês.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 11,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Eu, da minha parte, no primeiro ano de Dario, o medo, levantei-me para fortalecê-lo e protegê-lo.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O que eu direi agora a você é a verdade: “Mais três reis se levantarão na Pérsia, e o quarto acumulará mais riquezas do que todos os outros. Quando ele se tornar forte por meio das suas riquezas, incitará todos contra o reino da Grécia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "“E um rei poderoso se levantará, e reinará com domínio extenso e fará tudo que quiser.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "No entanto, quando ele tiver se levantado, seu reino será quebrado e repartido para os quatro ventos dos céus, mas não passará para os seus descendentes e não será como o domínio que ele exerceu, pois o reino dele será desarraigado e passará a outros, não a estes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "“E o rei do sul, isto é, um dos seus príncipes, se tornará forte. Mas outro será mais forte do que ele e reinará com domínio extenso, com autoridade maior do que a dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "“Depois de alguns anos, eles farão uma aliança, e a filha do rei do sul virá ao rei do norte para fazer um acordo. Mas ela não manterá o poder do seu braço. E ele não se manterá de pé, nem o braço dele; e ela será entregue, e também os que a trouxeram, e aquele que causou seu nascimento, e aquele que a tornou forte naqueles tempos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "No lugar dele se levantará um broto das raízes dela, e ele irá ao exército, irá contra a fortaleza do rei do norte, tomará ação contra eles e vencerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Também chegará ao Egito com os deuses deles, com as suas imagens de metal, com os seus objetos preciosos de prata e de ouro e com cativos. Por alguns anos, ele se manterá longe do rei do norte,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "que irá contra o reino do rei do sul, mas retornará à sua própria terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "“No que se refere aos filhos dele, eles se prepararão para a guerra e reunirão um exército grande e numeroso. Ele certamente avançará e arrasará tudo como uma inundação. Mas ele retornará, e guerreará até chegar à fortaleza dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "“E o rei do sul ficará furioso e sairá para lutar contra ele, isto é, contra o rei do norte. Este reunirá uma grande multidão, mas a multidão será entregue nas mãos daquele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E a multidão será levada embora. O coração dele se enaltecerá, e ele fará cair dezenas de milhares; mas não usará sua forte posição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "“E o rei do norte voltará e reunirá uma multidão maior do que a primeira; e no fim dos tempos, depois de alguns anos, ele certamente chegará com um grande exército e com muitos recursos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Naqueles tempos muitos se levantarão contra o rei do sul. “E os homens violentos do povo a que você pertence se levantarão para tentar fazer uma visão se tornar realidade, mas tropeçarão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "“E o rei do norte chegará e levantará uma rampa de ataque, e capturará uma cidade fortificada. E os braços do sul não se manterão de pé, nem seus melhores homens; eles não terão poder para se manter de pé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Aquele que virá contra ele fará tudo que quiser, e ninguém se manterá de pé diante dele. Ficará de pé na Terra Gloriosa, e na sua mão haverá capacidade de exterminar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Ele estará determinado a vir com toda a força do seu reino, e haverá um acordo com ele; e ele tomará ação. Quanto à filha de mulher, será concedido que ele a arruíne. E ela não se manterá de pé e não continuará a lhe pertencer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Ele voltará sua atenção para as terras litorâneas e capturará muitas delas. Mas um comandante fará cessar a humilhação que sofreu às mãos dele, e essa humilhação acabará. Fará com que a humilhação volte sobre ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Então ele voltará sua atenção para as fortalezas da sua própria terra; tropeçará e cairá, e não será achado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "“No lugar dele se levantará alguém que fará um exator passar pelo reino esplêndido; no entanto, em poucos dias ele será destroçado, mas não em ira nem em guerra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "“E no lugar dele se levantará um desprezado, a quem não darão a majestade do reino; e ele chegará durante um tempo de segurança e se apossará do reino por meio de engano.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "E os braços da inundação serão arrastados por causa dele e serão destroçados; e o Líder do pacto também será destroçado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "E, devido à aliança que farão com ele, ele usará de engano, se erguerá e se tornará forte por meio de uma pequena nação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Durante um tempo de segurança, ele entrará nas partes mais ricas da província e fará o que não fizeram os seus pais nem os pais dos seus pais. Distribuirá entre o povo despojo, espólio e bens; e planejará as suas tramas contra lugares fortificados, mas apenas por um tempo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "“E ele reunirá sua força e sua coragem contra o rei do sul, com um grande exército, e o rei do sul se preparará para a guerra com um exército extremamente grande e poderoso. E ele não se manterá de pé, porque planejarão tramas contra ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Aqueles que comem as suas iguarias causarão a sua ruína. “Quanto ao seu exército, será arrasado, e muitos cairão mortos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "“No que se refere a esses dois reis, seu coração se inclinará a fazer o que é mau; eles se sentarão à mesma mesa e mentirão um ao outro. Mas nada será bem-sucedido, porque o fim ainda é para o tempo determinado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "“E ele voltará à sua terra com grande quantidade de bens, e o seu coração será contra o pacto sagrado. Ele tomará ação e voltará à sua terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "“No tempo determinado ele retornará e irá contra o sul. Mas essa vez não será como antes,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "pois os navios de Quitim virão contra ele, e ele será humilhado. “Ele voltará e despejará sua fúria contra o pacto sagrado, e tomará ação; e voltará e dará atenção aos que abandonam o pacto sagrado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "E braços procedentes dele se levantarão e profanarão o santuário, a fortaleza, e removerão o sacrifício constante. “E estabelecerão a coisa repugnante que causa desolação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "“Por meio de palavras enganosas, ele levará à apostasia os que violam o pacto. Mas o povo que conhece o seu Deus vencerá e tomará ação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "E os que têm discernimento entre o povo darão entendimento a muitos. E tropeçarão, caindo vítimas da espada e do fogo, do cativeiro e do saque, por alguns dias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Mas, quando tropeçarem, receberão um pouco de ajuda; e muitos se juntarão a eles por meio de declarações enganosas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "E alguns dos que têm discernimento serão levados a tropeçar, para que seja feita uma obra de refinamento por causa deles e para que seja feita uma purificação e um embranquecimento até o tempo do fim; porque isso ainda é para o tempo determinado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "“O rei fará tudo que quiser, e ele se enaltecerá e se magnificará acima de todo deus; e falará coisas chocantes contra o Deus dos deuses. E será bem-sucedido até acabar a fúria; porque o que foi determinado acontecerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Ele não dará consideração ao Deus dos seus pais; e não dará consideração ao desejo de mulheres, nem a nenhum outro deus, pois magnificará a si mesmo acima de todos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Em vez disso, dará glória ao deus das fortalezas. A um deus que os seus pais não conheceram, dará glória por meio de ouro, prata, pedras preciosas e coisas valiosas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Com um deus estrangeiro, tomará ação contra as fortalezas mais poderosas. Ele dará grande glória aos que lhe derem reconhecimento e fará com que governem entre muitos. E repartirá a terra por um preço.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "“No tempo do fim, o rei do sul se envolverá com ele em uma troca de empurrões, e o rei do norte virá sobre ele como uma tempestade, com carros de guerra, cavaleiros e muitos navios; ele entrará nas terras e arrasará tudo como uma inundação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Também entrará na Terra Gloriosa, e muitas terras serão levadas a tropeçar. Mas estes são os que escaparão da sua mão: Edom, Moabe e a parte principal dos amonitas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Ele continuará a estender a mão contra as terras; quanto à terra do Egito, ela não escapará.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "E ele reinará sobre os tesouros ocultos de ouro e de prata e sobre todas as coisas preciosas do Egito. E os líbios e os etíopes acompanharão os seus passos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "“Mas haverá notícias procedentes do leste e do norte que o perturbarão, e ele sairá com grande furor para aniquilar e entregar muitos à destruição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "Armará suas tendas reais entre o grande mar e o monte santo da Terra Gloriosa; e chegará ao seu fim, e não haverá quem o ajude.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 12,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "“Naquele tempo se levantará Miguel, o grande príncipe que está de pé a favor do povo a que você pertence. E haverá um tempo de aflição como nunca houve, desde que começou a existir nação até aquele tempo. Naquele tempo seu povo escapará, todo aquele que se achar inscrito no livro.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E muitos dos que dormem no pó da terra acordarão, uns para a vida eterna, outros para a desonra e para o desprezo eterno.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "“E os que têm discernimento brilharão tão claramente como os céus, e os que levam muitos à justiça como as estrelas, para todo o sempre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“Quanto a você, Daniel, mantenha em segredo as palavras e sele o livro até o tempo do fim. Muitos farão uma busca, e o conhecimento verdadeiro se tornará abundante.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Então eu, Daniel, vi dois outros de pé ali: um na margem de cá do rio e outro na margem de lá do rio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E um deles disse ao homem vestido de linho, que estava acima das águas do rio: “Quanto tempo passará até o fim dessas coisas maravilhosas?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Depois ouvi o homem vestido de linho, que estava acima das águas do rio; ele levantou a mão direita e a mão esquerda para os céus e jurou por Aquele que vive para sempre: “Passará um tempo determinado, tempos determinados e metade de um tempo. Assim que se terminar de despedaçar o poder do povo santo, todas essas coisas chegarão ao seu fim.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Quanto a mim, ouvi, mas não consegui entender, de modo que perguntei: “Ó meu senhor, qual será o resultado dessas coisas?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então ele disse: “Vá, Daniel, porque as palavras devem ser mantidas em segredo e seladas até o tempo do fim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Muitos se purificarão, se embranquecerão e serão refinados. E os maus farão o que é mau, e nenhum dos maus entenderá; mas os que têm discernimento entenderão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "“E, a partir do tempo em que for removido o sacrifício constante e for estabelecida a coisa repugnante que causa desolação, haverá 1. 290 dias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "“Feliz aquele que se mantém na expectativa e chega aos 1. 335 dias!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "“Quanto a você, continue até o fim. Você descansará, mas no fim dos dias se levantará para receber a sua porção.”",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

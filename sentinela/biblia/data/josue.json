@@ -1,0 +1,3415 @@
+{
+  "nome_do_livro": "Josué",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Depois da morte de Moisés, o servo de Jeová, Jeová disse a Josué, filho de Num, ajudante de Moisés:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“Moisés, meu servo, morreu. Agora prepare-se, atravesse o Jordão, você e todo este povo, e vá para a terra que darei ao povo de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Eu lhes darei todo lugar em que vocês pisarem, assim como prometi a Moisés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Seu território se estenderá desde o deserto até o Líbano e o grande rio, o rio Eufrates — toda a terra dos hititas — e até o Grande Mar, ao oeste.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Ninguém poderá se manter firme diante de você enquanto você viver. Assim como estive com Moisés, assim estarei com você. Não o desampararei nem o abandonarei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Seja corajoso e forte, pois é você que fará este povo herdar a terra que darei a eles, conforme jurei aos antepassados deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "“Somente seja corajoso e muito forte, e obedeça cuidadosamente a toda a Lei que Moisés, meu servo, lhe ordenou. Não se desvie dela nem para a direita nem para a esquerda, a fim de agir sabiamente aonde quer que você for.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Este livro da Lei deve estar sempre em seus lábios; leia-o em voz baixa dia e noite, para obedecer cuidadosamente a tudo o que está escrito nele. Assim seu caminho será bem-sucedido, e você agirá sabiamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Não lhe ordenei que seja corajoso e forte? Não fique apavorado nem tenha medo, pois Jeová, seu Deus, estará com você aonde quer que você for.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então Josué ordenou aos oficiais do povo:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "“Percorram todo o acampamento e deem esta ordem ao povo: ‘Preparem provisões, porque em três dias vocês atravessarão o Jordão para tomar posse da terra que Jeová, seu Deus, lhes dá como propriedade.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E aos rubenitas, aos gaditas e à meia tribo de Manassés, Josué disse:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "“Lembrem-se do que Moisés, o servo de Jeová, lhes ordenou: ‘Jeová, seu Deus, lhes dá descanso; ele lhes deu esta terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Suas esposas, seus filhos e seus rebanhos morarão na terra que Moisés lhes deu deste lado do Jordão. Mas todos vocês, guerreiros valentes, devem atravessar em formação de batalha à frente dos seus irmãos. Vocês devem ajudá-los",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "até que Jeová dê descanso aos seus irmãos, assim como deu a vocês, e eles também tomem posse da terra que Jeová, seu Deus, lhes dá. Então voltem à terra que receberam para ocupar e tomem posse dela, a terra que Moisés, o servo de Jeová, lhes deu do lado leste do Jordão.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Eles responderam a Josué: “Faremos tudo o que você nos ordenou e iremos aonde quer que nos envie.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Assim como escutamos tudo o que Moisés disse, também escutaremos a você. Acima de tudo, que Jeová, seu Deus, esteja com você assim como esteve com Moisés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Qualquer homem que se rebelar contra as suas ordens e que não obedecer a tudo o que você lhe ordenar será morto. Somente seja corajoso e forte.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então Josué, filho de Num, enviou secretamente de Sitim dois homens como espiões. Ele lhes disse: “Vão e inspecionem a terra, especialmente Jericó.” Assim eles foram e chegaram à casa de uma prostituta chamada Raabe, e ficaram ali.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "O rei de Jericó foi informado: “Homens israelitas vieram aqui esta noite para espionar a terra.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Em vista disso, o rei de Jericó mandou dizer a Raabe: “Traga para fora os homens que vieram e que estão na sua casa, pois eles vieram para espionar toda a terra.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas a mulher pegou os dois homens e os escondeu. Então ela disse: “É verdade, os homens vieram a mim, mas eu não sabia de onde eram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Ao escurecer, quando o portão da cidade estava para ser fechado, os homens foram embora. Eu não sei para onde foram, mas, se vocês forem depressa atrás deles, os alcançarão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "(Mas ela os tinha levado para o terraço e os tinha escondido entre as fileiras de hastes de linho que havia no terraço.)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Assim, os homens foram atrás deles em direção aos pontos de travessia do Jordão, e o portão da cidade foi fechado assim que os perseguidores saíram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Antes de os espiões se deitarem para dormir, ela foi até eles no terraço.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Ela lhes disse: “Sei que Jeová lhes dará esta terra e que estamos com medo de vocês. Todos os habitantes desta terra estão desanimados por sua causa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pois soubemos como Jeová secou as águas do mar Vermelho diante de vocês quando saíram do Egito, e o que fizeram aos dois reis dos amorreus, Siom e Ogue, que vocês entregaram à destruição do outro lado do Jordão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Quando soubemos disso, ficamos desanimados; perdemos a coragem por causa de vocês, pois Jeová, seu Deus, é Deus nos céus, em cima, e na terra, embaixo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Agora, por favor, jurem-me por Jeová que, por eu ter demonstrado bondade para com vocês, vocês também demonstrarão bondade para com os da casa do meu pai. Deem-me um sinal de que agirão com boa-fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Poupem a vida do meu pai, da minha mãe, dos meus irmãos, das minhas irmãs e de todos os que lhes pertencem; e livrem-nos da morte.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Diante disso os homens lhe disseram: “Daremos nossa vida pela vida de vocês! Se você não disser nada sobre a nossa missão, nós demonstraremos bondade e fidelidade para com você quando Jeová nos der a terra.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "A seguir, ela os fez descer por uma corda pela janela, pois a sua casa ficava num dos lados da muralha da cidade. Na verdade, ela morava no alto da muralha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então ela lhes disse: “Vão à região montanhosa e escondam-se lá por três dias, para que seus perseguidores não os encontrem. Depois que os perseguidores tiverem voltado, vocês podem seguir caminho.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Os homens lhe disseram: “Estaremos livres de culpa por esse juramento que você nos impôs",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "se, quando entrarmos nesta terra, você não tiver amarrado esta corda de fio escarlate na janela pela qual nos fez descer. Você deve reunir na sua casa seu pai, sua mãe, seus irmãos e todos os da casa do seu pai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Então, se alguém sair da sua casa para fora, o sangue dele recairá sobre a cabeça dele, e nós estaremos livres de culpa. Mas, se algo ruim acontecer a alguém que estiver na casa com você, o sangue dele recairá sobre a nossa cabeça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Mas, se você denunciar a nossa missão, estaremos livres de culpa por esse juramento que nos impôs.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Ela disse: “Seja segundo as suas palavras.” Com isso ela os deixou ir embora, e eles seguiram caminho. Mais tarde ela amarrou a corda escarlate na janela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Eles partiram para a região montanhosa e ficaram lá por três dias, até que os perseguidores voltassem. Os perseguidores os procuraram em todas as estradas, mas não os encontraram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Os dois homens desceram então da região montanhosa, atravessaram o rio e foram até Josué, filho de Num. Eles lhe relataram todas as coisas que lhes havia acontecido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Então disseram a Josué: “Jeová nos entregou toda esta terra. De fato, todos os habitantes desta terra estão desanimados por nossa causa.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Josué levantou-se então de manhã cedo, e ele e todos os israelitas partiram de Sitim e chegaram ao Jordão. Ali passaram a noite antes de fazer a travessia.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Depois de três dias, os oficiais percorreram o acampamento",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "e ordenaram ao povo: “Assim que virem a Arca do Pacto de Jeová, seu Deus, ser carregada pelos sacerdotes levíticos, vocês devem partir do lugar onde estão e segui-la.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas mantenham dela uma distância de cerca de 2. 000 côvados; não se aproximem mais do que isso! Desse modo saberão que caminho seguir, pois vocês não passaram por esse caminho antes.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Então Josué disse ao povo: “Santifiquem-se, pois amanhã Jeová fará coisas maravilhosas no seu meio.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "A seguir, Josué disse aos sacerdotes: “Peguem a Arca do Pacto e vão à frente do povo.” Assim, eles pegaram a Arca do Pacto e foram à frente do povo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Jeová disse então a Josué: “A partir de hoje eu o enaltecerei aos olhos de todo o Israel, para que saibam que estarei com você assim como estive com Moisés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Você deve dar esta ordem aos sacerdotes que carregam a Arca do Pacto: ‘Quando vocês chegarem à beira do rio Jordão, devem ficar parados nas águas do Jordão.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "E Josué disse aos israelitas: “Venham e escutem as palavras de Jeová, seu Deus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então Josué disse: “Por meio disto vocês saberão que há um Deus vivente no seu meio, e que ele sem falta expulsará de diante de vocês os cananeus, os hititas, os heveus, os perizeus, os girgaseus, os amorreus e os jebuseus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Vejam! A Arca do Pacto do Senhor de toda a terra está indo na sua frente, para dentro do Jordão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Agora escolham 12 homens das tribos de Israel, um homem para cada tribo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Assim que os pés dos sacerdotes que carregam a Arca de Jeová, o Senhor de toda a terra, tocarem nas águas do Jordão, as águas do Jordão, que vêm de cima, serão represadas e ficarão paradas como uma barragem.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Portanto, quando o povo partiu das suas tendas, pouco antes de atravessar o Jordão, os sacerdotes que carregavam a Arca do Pacto foram à frente do povo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Assim que os carregadores da Arca chegaram ao Jordão, e os sacerdotes que carregavam a Arca colocaram os pés na beira da água (pois o Jordão transborda e inunda as suas margens durante todos os dias da colheita),",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "as águas rio acima ficaram paradas. Elevaram-se como uma barragem, muito longe dali, em Adão, cidade próxima de Zaretã, ao passo que as águas que desciam, na direção do mar do Arabá, o mar Salgado, se escoaram. As águas foram represadas, e o povo fez a travessia na altura de Jericó.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Enquanto os sacerdotes que carregavam a Arca do Pacto de Jeová ficaram parados em terra seca no meio do Jordão, todo o Israel fazia a travessia em terra seca, até que a nação inteira terminou de atravessar o Jordão.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Assim que a nação inteira terminou de atravessar o Jordão, Jeová disse a Josué:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“Escolham 12 homens dentre o povo, um homem de cada tribo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "e deem-lhes a seguinte ordem: ‘Peguem 12 pedras do meio do Jordão, do lugar onde os pés dos sacerdotes ficaram parados; levem-nas com vocês e coloquem-nas no lugar onde vocês passarão a noite.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Então Josué chamou os 12 homens que havia designado dentre os israelitas, um homem de cada tribo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "e Josué lhes disse: “Passem adiante da Arca de Jeová, seu Deus, até o meio do Jordão, e cada um de vocês deve pôr uma pedra sobre o ombro, segundo o número das tribos dos israelitas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "para servir de sinal no seu meio. Se mais tarde os seus filhos lhes perguntarem: ‘Por que estas pedras estão aqui?’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "vocês lhes responderão: ‘É porque as águas do Jordão foram represadas diante da Arca do Pacto de Jeová. Quando ela atravessou o Jordão, as águas do Jordão foram represadas. Estas pedras servirão permanentemente de recordação para o povo de Israel.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Portanto, os israelitas fizeram assim como Josué havia ordenado. Pegaram 12 pedras do meio do Jordão, assim como Jeová havia instruído a Josué, uma para cada tribo dos israelitas. Eles as levaram para o lugar onde passariam a noite e as colocaram ali.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Josué também colocou de pé 12 pedras no meio do Jordão, no lugar onde tinham ficado os pés dos sacerdotes que carregaram a Arca do Pacto, e as pedras continuam lá até hoje.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Os sacerdotes que carregavam a Arca permaneceram parados no meio do Jordão até que se fez tudo o que Jeová havia ordenado ao povo por meio de Josué, em harmonia com tudo o que Moisés havia ordenado a Josué. Enquanto isso, o povo fazia a travessia apressadamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Assim que todo o povo tinha terminado a travessia, a Arca de Jeová e os sacerdotes fizeram a travessia à vista do povo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E os rubenitas, os gaditas e a meia tribo de Manassés fizeram a travessia em formação de batalha na frente dos outros israelitas, assim como Moisés lhes havia instruído.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Cerca de 40. 000 soldados armados para a batalha fizeram a travessia diante de Jeová rumo às planícies desérticas de Jericó.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Naquele dia, Jeová enalteceu Josué aos olhos de todo o Israel. E eles o respeitaram profundamente durante todos os dias da vida dele, assim como haviam respeitado profundamente a Moisés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Jeová disse então a Josué:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "“Ordene aos sacerdotes que carregam a Arca do Testemunho que saiam do Jordão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Portanto, Josué ordenou aos sacerdotes: “Saiam do Jordão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Quando os sacerdotes que carregavam a Arca do Pacto de Jeová saíram do meio do Jordão, e os pés dos sacerdotes pisaram em terra seca, as águas do Jordão retomaram o seu curso e inundaram as margens, assim como antes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "O povo saiu do Jordão no dia dez do primeiro mês e acampou em Gilgal, na fronteira leste de Jericó.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Quanto às 12 pedras que eles haviam tirado do Jordão, Josué as colocou de pé em Gilgal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Então ele disse aos israelitas: “No futuro, quando os filhos perguntarem aos pais: ‘O que significam estas pedras?’,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "vocês explicarão aos filhos: ‘Israel atravessou o Jordão em terra seca",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "quando Jeová, seu Deus, secou as águas do Jordão diante deles até que o tivessem atravessado, assim como Jeová, seu Deus, havia feito com o mar Vermelho quando o secou diante de nós até que o tivéssemos atravessado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Ele fez isso para que todos os povos da terra saibam como a mão de Jeová é poderosa, e para que vocês sempre temam a Jeová, seu Deus.’”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Todos os reis dos amorreus que estavam do lado oeste do Jordão e todos os reis dos cananeus que estavam junto ao mar ouviram falar que Jeová tinha secado as águas do Jordão diante dos israelitas até que tivessem feito a travessia. Assim que souberam disso, ficaram desanimados e sem coragem por causa dos israelitas.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Naquela época, Jeová disse a Josué: “Faça facas de pedra e faça novamente a circuncisão dos homens de Israel.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Portanto, Josué fez facas de pedra e circuncidou os homens de Israel em Gibeate-Aralote.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "É por este motivo que Josué os circuncidou: do povo que saiu do Egito, todos os homens, os homens de guerra, haviam morrido no deserto, na jornada que fizeram ao sair do Egito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Todos os que saíram do Egito já eram circuncidados, mas todos os que nasceram no deserto durante a jornada que fizeram ao sair do Egito não eram circuncidados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Os israelitas haviam andado 40 anos no deserto até que a nação inteira tinha morrido, isto é, os homens de guerra que saíram do Egito e que não obedeceram à voz de Jeová. Jeová lhes jurou que nunca os deixaria ver a terra a qual Jeová havia jurado aos seus antepassados que nos daria, uma terra que mana leite e mel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Assim, em lugar deles colocou os seus filhos, a quem Josué circuncidou; eles eram incircuncisos porque não tinham sido circuncidados durante a jornada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Depois que a nação inteira foi circuncidada, eles ficaram nos seus lugares no acampamento até se recuperarem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Jeová disse então a Josué: “Hoje retirei de vocês a humilhação da parte do Egito.” De modo que aquele lugar é chamado Gilgal até hoje.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Os israelitas permaneceram acampados em Gilgal e, no dia 14 do mês, ao anoitecer, celebraram a Páscoa nas planícies desérticas de Jericó.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E no dia seguinte à Páscoa, nesse mesmo dia, começaram a comer dos produtos da terra, pães sem fermento e grãos torrados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "O maná cessou no dia em que eles comeram dos produtos da terra; não havia mais maná para os israelitas, mas eles passaram a comer dos produtos da terra de Canaã naquele ano.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Quando Josué estava perto de Jericó, levantou os olhos e viu na sua frente um homem de pé, com uma espada desembainhada na mão. Josué se aproximou dele e perguntou: “Você está do nosso lado ou do lado dos nossos adversários?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Ele respondeu: “Eu estou aqui como príncipe do exército de Jeová.” Em vista disso, Josué se prostrou, lançando-se com o rosto por terra, e lhe disse: “O que o meu senhor tem a dizer ao seu servo?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O príncipe do exército de Jeová disse a Josué: “Tire as sandálias dos pés, porque o lugar em que você está pisando é santo.” Josué fez isso imediatamente.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Jericó estava completamente fechada por causa dos israelitas; ninguém saía e ninguém entrava.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Então Jeová disse a Josué: “Veja, eu lhe entreguei Jericó, seu rei e seus guerreiros valentes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Todos vocês, homens de guerra, devem marchar em volta da cidade, contornando a cidade uma vez. Devem fazer isso por seis dias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Providencie sete sacerdotes para carregar sete buzinas de chifre de carneiro na frente da Arca. Mas, no sétimo dia, vocês devem marchar sete vezes em volta da cidade, e os sacerdotes devem tocar as buzinas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quando as buzinas de chifre de carneiro forem tocadas, assim que vocês ouvirem o som das buzinas, todo o povo deve dar um grande grito de guerra. Então a muralha da cidade cairá por terra, e o povo deve avançar, cada um em direção à cidade.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Assim, Josué, filho de Num, reuniu os sacerdotes e lhes disse: “Peguem a Arca do Pacto, e sete sacerdotes devem carregar sete buzinas de chifre de carneiro na frente da Arca de Jeová.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Então ele disse ao povo: “Vão e marchem em volta da cidade, e os soldados armados devem ir na frente da Arca de Jeová.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim como Josué tinha dito ao povo, os sete sacerdotes que carregavam as sete buzinas de chifre de carneiro diante de Jeová passaram adiante e tocaram as buzinas, e a Arca do Pacto de Jeová os seguia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "E os soldados armados iam na frente dos sacerdotes que tocavam as buzinas, e a retaguarda seguia a Arca, ao passo que as buzinas eram tocadas continuamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Josué havia ordenado ao povo: “Não gritem nem deixem que a sua voz seja ouvida. Nenhuma palavra deve sair da sua boca até o dia em que eu lhes disser: ‘Gritem!’ Então gritem.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Ele fez a Arca de Jeová dar uma volta completa na cidade, contornando-a uma vez. Depois eles voltaram ao acampamento e passaram a noite ali.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Na manhã seguinte, Josué se levantou cedo, e os sacerdotes pegaram a Arca de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "E os sete sacerdotes que carregavam as sete buzinas de chifre de carneiro iam na frente da Arca de Jeová, tocando as buzinas continuamente. Os homens armados iam na frente deles, e a retaguarda seguia a Arca de Jeová, ao passo que as buzinas eram tocadas continuamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "No segundo dia, eles marcharam uma vez em volta da cidade e depois voltaram ao acampamento. Fizeram isso por seis dias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "No sétimo dia, eles se levantaram cedo, assim que raiou o dia, e da mesma maneira marcharam sete vezes em volta da cidade. Foi apenas naquele dia que marcharam sete vezes em volta da cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Na sétima vez, quando os sacerdotes tocaram as buzinas, Josué disse ao povo: “Gritem, pois Jeová lhes entregou a cidade!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "A cidade e tudo o que há nela devem ser entregues à destruição, pois pertencem a Jeová. Somente Raabe, a prostituta, pode continuar a viver, ela e todos os que estiverem com ela na casa, pois ela escondeu os mensageiros que enviamos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Mas fiquem longe do que está condenado à destruição, para que não desejem algo que está condenado à destruição e o peguem. Isso faria o acampamento de Israel se tornar algo condenado à destruição, trazendo-lhe calamidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Mas toda a prata, todo o ouro e todos os objetos de cobre e de ferro são algo sagrado que pertence a Jeová. Devem ser levados ao tesouro de Jeová.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Então, quando as buzinas foram tocadas, o povo gritou. Assim que o povo ouviu o som das buzinas e deu um grande grito de guerra, a muralha caiu por terra. Depois disso, o povo avançou, cada um em direção à cidade, e tomou a cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Entregaram à destruição pela espada tudo o que havia na cidade, homens e mulheres, jovens e idosos, também touros, ovelhas e jumentos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Josué disse aos dois homens que tinham espionado a terra: “Entrem na casa da prostituta e tragam para fora tanto a ela como a todos os que lhe pertencem, assim como vocês lhe juraram.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Portanto, os jovens espiões entraram e trouxeram para fora Raabe junto com seu pai, sua mãe, seus irmãos e todos os que lhe pertenciam, sim, trouxeram para fora toda a sua família, e os levaram em segurança a um local fora do acampamento de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Então queimaram com fogo a cidade e tudo o que havia nela. Mas a prata, o ouro, e os objetos de cobre e de ferro, entregaram ao tesouro da casa de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Apenas Raabe, a prostituta, os da casa do seu pai e todos os que lhe pertenciam foram poupados por Josué; e ela mora em Israel até hoje, porque escondeu os mensageiros que Josué tinha enviado para espionar Jericó.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Naquela ocasião, Josué fez o seguinte juramento: “Maldito seja perante Jeová o homem que se empenhar em reconstruir esta cidade, Jericó. Ele lançará os alicerces dela pagando com a perda do seu primogênito, e colocará as suas portas pagando com a perda do seu filho mais novo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Assim, Jeová estava com Josué, e a sua fama se espalhou por toda a terra.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 7,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Mas os israelitas foram infiéis com respeito ao que havia sido condenado à destruição, pois Acã, filho de Carmi, filho de Zabdi, filho de Zerá, da tribo de Judá, pegou algumas coisas do que havia sido condenado à destruição. Em vista disso, a ira de Jeová se acendeu contra os israelitas.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Josué enviou então homens de Jericó a Ai, que fica perto de Bete-Áven e ao leste de Betel, e lhes disse: “Vão e espionem a terra.” Portanto, os homens foram e espionaram Ai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Quando voltaram a Josué, lhe disseram: “Não é necessário que todo o povo vá. Uns 2. 000 ou 3. 000 homens são suficientes para derrotar Ai. Não canse todo o povo mandando-os ir, pois os habitantes de lá são poucos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "De modo que cerca de 3. 000 homens foram para lá, mas eles tiveram de fugir dos homens de Ai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Os homens de Ai mataram 36 homens; perseguiram os israelitas desde o lado de fora do portão até Sebarim, matando-os na descida. Por isso, o coração do povo derreteu e se tornou como água.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Em vista disso, Josué rasgou as suas roupas e se prostrou com o rosto por terra diante da Arca de Jeová até o anoitecer, ele e os anciãos de Israel, e jogaram pó sobre a cabeça.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Josué disse: “Ai, Soberano Senhor Jeová, por que fizeste este povo atravessar o Jordão? Foi para nos entregar aos amorreus, a fim de sermos destruídos? Quem dera que tivéssemos nos contentado em permanecer do outro lado do Jordão!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Perdão, ó Jeová, o que posso dizer agora que Israel fugiu dos seus inimigos?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Quando os cananeus e todos os habitantes desta terra ouvirem falar disso, eles nos cercarão e apagarão o nosso nome da terra, e o que tu farás com relação ao teu grande nome?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Jeová respondeu a Josué: “Levante-se! Por que você está prostrado com o rosto por terra?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Israel pecou; eles violaram o pacto que lhes ordenei que guardassem. Pegaram algumas coisas do que havia sido condenado à destruição, furtando-as e colocando-as secretamente entre os seus próprios bens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Por isso, os israelitas não poderão se manter firmes contra os seus inimigos. Virarão as costas para fugir dos seus inimigos, visto que se tornaram algo condenado à destruição. Não estarei mais com vocês, a menos que eliminem do seu meio o que foi condenado à destruição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Vá e santifique o povo! Diga-lhes: ‘Santifiquem-se amanhã, pois assim diz Jeová, o Deus de Israel: “Há algo condenado à destruição no seu meio, ó Israel. Vocês não poderão se manter firmes contra os seus inimigos até que removam do seu meio o que está condenado à destruição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Vocês devem se apresentar de manhã, tribo por tribo; a tribo que Jeová selecionar virá à frente, família por família; a família que Jeová selecionar virá à frente, casa por casa; e a casa que Jeová selecionar virá à frente, homem por homem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "E aquele que for pego com a coisa condenada à destruição será queimado no fogo, ele e tudo o que for dele, porque violou o pacto de Jeová e porque cometeu um ato vergonhoso em Israel.”’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então Josué se levantou cedo na manhã seguinte e fez Israel se apresentar, tribo por tribo, e a tribo de Judá foi selecionada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Ele fez as famílias de Judá vir à frente e a família dos zeraítas foi selecionada; depois fez a família dos zeraítas vir à frente, homem por homem, e Zabdi foi selecionado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Por fim, fez vir à frente os da casa de Zabdi, homem por homem, e Acã, filho de Carmi, filho de Zabdi, filho de Zerá, da tribo de Judá, foi selecionado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Josué disse então a Acã: “Meu filho, por favor, honre a Jeová, o Deus de Israel, e confesse a ele. Por favor, diga-me o que você fez. Não me esconda nada.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Acã disse a Josué: “De fato, fui eu que pequei contra Jeová, o Deus de Israel, e o que fiz foi o seguinte:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "quando vi no meio do despojo um belo manto oficial de Sinear, 200 siclos de prata e uma barra de ouro de 50 siclos, eu os desejei e os peguei. Estão escondidos na minha tenda, enterrados no chão, com o dinheiro por baixo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Josué enviou imediatamente alguns homens, e eles foram correndo até a tenda; lá na tenda estava escondido o manto, com o dinheiro por baixo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Assim, eles tiraram as coisas da tenda e as levaram a Josué e a todos os israelitas, e as puseram diante de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Então Josué e todo o Israel com ele pegaram Acã, filho de Zerá, bem como a prata, o manto oficial, a barra de ouro, seus filhos, suas filhas, seus touros, seus jumentos, suas ovelhas, sua tenda e tudo o que era seu, e os levaram para o vale de Acor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Josué disse: “Por que você trouxe calamidade sobre nós? Hoje Jeová trará calamidade sobre você.” Então todo o Israel o apedrejou; depois disso queimou todos no fogo. Assim, todos eles foram apedrejados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "E levantaram sobre ele um grande monte de pedras, que permanece até o dia de hoje. Em vista disso, a ira ardente de Jeová diminuiu. É por isso que aquele lugar é chamado de vale de Acor até hoje.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 8,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Jeová disse então a Josué: “Não tenha medo nem fique apavorado. Leve com você todos os homens de guerra e suba contra Ai. Veja, entreguei a você o rei de Ai, seu povo, sua cidade e sua terra.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Faça com Ai e seu rei assim como você fez com Jericó e seu rei, com a diferença de que podem pegar para vocês o seu despojo e os seus rebanhos. Arme uma emboscada por trás da cidade.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Assim, Josué e todos os homens de guerra subiram contra Ai. Josué escolheu 30. 000 guerreiros valentes e os enviou de noite.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Ele lhes deu a seguinte ordem: “Fiquem de emboscada atrás da cidade. Não se afastem muito da cidade, e fiquem todos de prontidão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Eu e todo o povo que está comigo nos aproximaremos da cidade, e, quando eles vierem contra nós, assim como fizeram antes, fugiremos deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Quando eles vierem atrás de nós, nós os atrairemos para longe da cidade, pois dirão: ‘Estão fugindo de nós como fizeram antes.’ Assim, fugiremos deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Então vocês devem sair da emboscada e tomar a cidade; Jeová, seu Deus, a entregará a vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim que vocês tomarem a cidade, devem incendiá-la. Devem fazer segundo a palavra de Jeová. Essas são as ordens que lhes dou.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então Josué os enviou, e eles foram ao local da emboscada; posicionaram-se entre Betel e Ai, ao oeste de Ai, ao passo que Josué passou aquela noite com o restante do povo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Depois de Josué ter se levantado de manhã cedo e reunido as tropas, ele e os anciãos de Israel as conduziram a Ai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Todos os homens de guerra que estavam com ele subiram e avançaram até a frente da cidade. Acamparam ao norte de Ai, com o vale entre eles e Ai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Nesse meio-tempo, ele havia escolhido cerca de 5. 000 homens e os havia colocado de emboscada entre Betel e Ai, ao oeste da cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Assim, o povo montou o acampamento principal ao norte da cidade, e a retaguarda ficou ao oeste da cidade. Naquela noite, Josué foi até o meio do vale.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E, assim que o rei de Ai viu isso, ele e os homens da cidade se apressaram e saíram logo de manhã cedo para enfrentar Israel em batalha, num lugar que ficava de frente para a planície desértica. Mas o rei não sabia que havia uma emboscada contra ele atrás da cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Quando os homens de Ai atacaram, Josué e todo o Israel fugiram pela estrada em direção ao deserto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então todo o povo que estava na cidade foi convocado para persegui-los. E, ao perseguirem Josué, foram atraídos para longe da cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Não restou nenhum homem em Ai e em Betel que não fosse atrás de Israel. Deixaram a cidade desprotegida e perseguiram Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Jeová disse então a Josué: “Estenda a lança que está na sua mão em direção a Ai, pois a entregarei nas suas mãos.” Assim, Josué estendeu a lança que estava na sua mão em direção à cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "No momento em que ele estendeu a mão, os homens da emboscada saíram depressa do lugar onde estavam, correram para a cidade e a tomaram. Imediatamente incendiaram a cidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Quando os homens de Ai viraram para trás e viram a fumaça da cidade subindo ao céu, não tiveram forças para fugir em direção alguma. Então o povo que estava fugindo para o deserto se voltou contra os perseguidores.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Quando Josué e todo o Israel viram que os homens da emboscada tinham tomado a cidade e que subia fumaça da cidade, deram meia-volta e atacaram os homens de Ai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "E os que tinham tomado a cidade saíram ao seu encontro, de modo que os homens de Ai ficaram encurralados no meio, com israelitas de um lado e do outro. Os israelitas os mataram, de modo que não restou nenhum sobrevivente nem fugitivo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Mas capturaram o rei de Ai vivo e o levaram a Josué.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Depois de Israel terminar de matar todos os habitantes de Ai que estavam no campo, no deserto onde os tinham perseguido, e o último deles ter caído pela espada, então todo o Israel voltou a Ai e a golpeou com a espada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Todos os que caíram naquele dia, tanto homens como mulheres, somaram 12.000, todo o povo de Ai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Josué manteve a mão estendida com a lança até ter entregado todos os habitantes de Ai à destruição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "No entanto, Israel pegou para si os rebanhos e o despojo da cidade, segundo as ordens que Jeová tinha dado a Josué.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Josué queimou então Ai e a reduziu para sempre a um monte de ruínas, como está até hoje.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Ele pendurou o rei de Ai num madeiro até o anoitecer. Quando o sol estava para se pôr, Josué ordenou que retirassem seu cadáver do madeiro. Lançaram-no então na entrada do portão da cidade e levantaram sobre ele um grande monte de pedras, que permanece ali até hoje.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Foi então que Josué construiu no monte Ebal um altar a Jeová, o Deus de Israel,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "assim como Moisés, o servo de Jeová, havia ordenado aos israelitas e assim como está escrito no livro da Lei de Moisés: “Um altar de pedras inteiras, nas quais não se usou nenhum instrumento de ferro.” Sobre ele fizeram ofertas queimadas a Jeová bem como sacrifícios de participação em comum.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Então ele escreveu nas pedras uma cópia da Lei que Moisés havia escrito perante os israelitas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Todo o Israel, os anciãos, os oficiais e os juízes estavam de pé de ambos os lados da Arca, diante dos sacerdotes levíticos que carregavam a Arca do Pacto de Jeová; tanto os residentes estrangeiros como os israelitas de nascimento estavam lá. Metade deles estava diante do monte Gerizim e a outra metade diante do monte Ebal (assim como Moisés, o servo de Jeová, havia ordenado anteriormente), para que o povo de Israel fosse abençoado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Depois disso ele leu em voz alta todas as palavras da Lei, as bênçãos e as maldições, segundo tudo o que está escrito no livro da Lei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Não houve palavra alguma, de tudo o que Moisés havia ordenado, que Josué não lesse em voz alta diante de toda a congregação de Israel, incluindo as mulheres, as crianças e os residentes estrangeiros que moravam no seu meio.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 9,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quando a notícia chegou a todos os reis que ficavam do lado oeste do Jordão, os que estavam na região montanhosa, na Sefelá, ao longo de toda a costa do Grande Mar e em frente ao Líbano — os hititas, os amorreus, os cananeus, os perizeus, os heveus e os jebuseus —,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "eles formaram uma aliança para lutar contra Josué e Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Os habitantes de Gibeão também ouviram falar sobre o que Josué havia feito a Jericó e a Ai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Por isso, eles agiram com astúcia: colocaram provisões em sacas velhas e as puseram sobre seus jumentos, junto com odres de vinho rebentados e remendados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Puseram também sandálias gastas e remendadas nos pés, e vestiram roupas gastas. Todo o pão que levavam estava seco e quebradiço.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Depois foram a Josué no acampamento em Gilgal e disseram a ele e aos homens de Israel: “Viemos de uma terra distante. Agora, façam um pacto conosco.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas os homens de Israel disseram aos heveus: “Talvez vocês morem perto de nós. Como podemos então fazer um pacto com vocês?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Eles responderam a Josué: “Somos seus servos.” Então Josué lhes perguntou: “Quem são vocês e de onde vieram?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Eles responderam: “Seus servos vieram de uma terra bem distante por causa do nome de Jeová, seu Deus, pois ouvimos falar da sua fama e de tudo o que ele fez no Egito,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "e de tudo o que fez aos dois reis dos amorreus do outro lado do Jordão, a Siom, rei de Hesbom, e a Ogue, rei de Basã, que morava em Astarote.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Por isso, os nossos anciãos e todos os habitantes da nossa terra nos disseram: ‘Peguem provisões para a viagem e vão ao encontro deles. Digam-lhes: “Seremos seus servos; por isso, façam um pacto conosco.”’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Este pão que trouxemos como provisão para nós ainda estava quente no dia em que saímos das nossas casas para vir até vocês. Agora você pode ver que está seco e quebradiço.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "E estes odres de vinho estavam novos quando os enchemos, mas agora já rebentaram. E nossas roupas e sandálias ficaram gastas por causa da viagem muito longa.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Em vista disso, os homens de Israel pegaram algumas das provisões deles, mas não consultaram a Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Então Josué fez paz com eles e um pacto para que continuassem a viver, e os maiorais da assembleia lhes fizeram um juramento sobre isso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Três dias depois de terem feito um pacto com eles, ficaram sabendo que moravam perto deles, na vizinhança.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Os israelitas partiram então e chegaram às cidades deles no terceiro dia; suas cidades eram Gibeão, Quefira, Beerote e Quiriate-Jearim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Mas os israelitas não os atacaram, visto que os maiorais da assembleia tinham feito um juramento a eles por Jeová, o Deus de Israel. Por isso, toda a assembleia começou a se queixar contra os maiorais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Em vista disso, todos os maiorais disseram a toda a assembleia: “Visto que nós lhes fizemos um juramento por Jeová, o Deus de Israel, não podemos fazer nada contra eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Faremos o seguinte: vamos deixá-los viver, para que não haja indignação contra nós por causa do juramento que lhes fizemos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "E os maiorais acrescentaram: “Que eles vivam, mas que se tornem cortadores de lenha e tiradores de água para toda a assembleia.” Foi isso que os maiorais lhes prometeram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Josué os chamou então e lhes perguntou: “Por que vocês nos enganaram, dizendo: ‘Somos de um lugar muito longe de vocês’, quando na verdade moram bem no nosso meio?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "De agora em diante, vocês são amaldiçoados, e sempre serão escravos, trabalhando como cortadores de lenha e tiradores de água para a casa do meu Deus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Eles disseram a Josué: “Agimos assim porque se disse claramente a nós, seus servos, que Jeová, seu Deus, havia ordenado a Moisés, Seu servo, que desse a vocês toda esta terra e eliminasse todos os habitantes dela de diante de vocês. Por isso, tememos pelas nossas vidas, por sua causa, e esse é o motivo de termos agido assim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Agora estamos nas suas mãos. Faça conosco o que achar bom e justo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "E foi isto que Josué fez: ele os livrou das mãos dos israelitas, e eles não os mataram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Mas naquele dia Josué fez deles cortadores de lenha e tiradores de água para a assembleia e para o altar de Jeová no lugar que Ele escolhesse, e eles continuam a fazer isso até hoje.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 10,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Assim que Adoni-Zedeque, rei de Jerusalém, ouviu falar que Josué havia tomado Ai e a havia entregado à destruição, fazendo a Ai e ao seu rei o mesmo que havia feito a Jericó e ao seu rei, e que os habitantes de Gibeão tinham feito paz com Israel e permaneciam entre eles,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "ele ficou apavorado, porque Gibeão era uma cidade grande, como uma das cidades reais. Era maior do que Ai, e todos os seus homens eram guerreiros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Por isso, Adoni-Zedeque, rei de Jerusalém, mandou a seguinte mensagem a Hoão, rei de Hebrom, a Pirão, rei de Jarmute, a Jafia, rei de Laquis, e a Debir, rei de Eglom:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "“Venham ajudar-me a atacar Gibeão, visto que ela fez paz com Josué e com os israelitas.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Com isso, os cinco reis dos amorreus — o rei de Jerusalém, o rei de Hebrom, o rei de Jarmute, o rei de Laquis e o rei de Eglom — se ajuntaram e, com os seus exércitos, foram e acamparam para atacar Gibeão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Os homens de Gibeão mandaram então dizer a Josué, no acampamento em Gilgal: “Não abandone os seus escravos. Venha depressa! Salve-nos e ajude-nos! Todos os reis dos amorreus da região montanhosa se uniram contra nós.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Assim Josué partiu de Gilgal com todos os homens de guerra e os guerreiros valentes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Jeová disse então a Josué: “Não tenha medo deles, pois os entreguei a você. Nenhum deles poderá se manter firme contra você.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Josué os atacou de surpresa, depois de ter marchado a noite toda desde Gilgal.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Jeová os lançou em confusão diante de Israel, e este lhes causou uma grande matança em Gibeão, perseguindo-os na subida de Bete-Horom e matando-os por todo o caminho até Azeca e Maquedá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Enquanto fugiam de Israel e estavam na descida de Bete-Horom, Jeová lançou do céu grandes pedras de granizo sobre eles, até Azeca, e eles morreram. De fato, mais pessoas morreram por causa do granizo do que pela espada dos israelitas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "No dia em que Jeová derrotou os amorreus diante dos olhos dos israelitas, Josué disse a Jeová diante de Israel: “Sol, fique parado sobre Gibeão, E lua, sobre o vale de Aijalom!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Assim, o sol ficou parado e a lua não se moveu até que a nação pôde se vingar dos seus inimigos. Isso não está escrito no livro de Jasar? O sol ficou parado no meio do céu e não teve pressa em se pôr durante cerca de um dia inteiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Nunca houve um dia igual àquele, nem antes nem depois, quando Jeová escutou a voz de um homem, pois Jeová estava lutando por Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Depois disso, Josué voltou ao acampamento em Gilgal junto com todo o Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Enquanto isso, os cinco reis fugiram e se esconderam na caverna de Maquedá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Então foi dito a Josué: “Os cinco reis foram encontrados escondidos na caverna de Maquedá.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Portanto, Josué disse: “Rolem grandes pedras à entrada da caverna e coloquem homens ali para vigiá-los.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Mas o restante de vocês não deve parar. Persigam seus inimigos e golpeiem-nos pela retaguarda. Não os deixem entrar nas cidades deles, pois Jeová, seu Deus, os entregou nas suas mãos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Josué e os israelitas lhes causaram uma grande matança, a ponto de eliminá-los, com exceção de alguns sobreviventes que escaparam e entraram nas cidades fortificadas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Então todo o povo retornou são e salvo a Josué, no acampamento em Maquedá. E ninguém ousou dizer uma palavra contra os israelitas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Josué disse então: “Abram a entrada da caverna e tragam para fora os cinco reis.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Assim, eles tiraram estes cinco reis da caverna: o rei de Jerusalém, o rei de Hebrom, o rei de Jarmute, o rei de Laquis e o rei de Eglom.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Quando levaram esses reis a Josué, ele convocou todos os homens de Israel e disse aos comandantes dos homens de guerra que haviam ido com ele: “Aproximem-se. Coloquem os pés sobre a nuca desses reis.” Então eles se aproximaram e colocaram os pés sobre a nuca deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Josué disse-lhes então: “Não tenham medo nem fiquem apavorados. Sejam corajosos e fortes, pois isso é o que Jeová fará a todos os seus inimigos, contra quem vocês lutarem.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Então Josué os golpeou e os matou, e os pendurou em cinco madeiros; e eles ficaram pendurados nos madeiros até o fim da tarde.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Ao pôr do sol, Josué ordenou que eles fossem tirados dos madeiros e jogados na caverna em que tinham se escondido. Depois grandes pedras foram colocadas na entrada da caverna, e elas permanecem lá até hoje.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Naquele dia, Josué tomou Maquedá e a golpeou com a espada, entregando seu rei e todos que havia nela à destruição, sem deixar nenhum sobrevivente. Ele fez com o rei de Maquedá o mesmo que havia feito com o rei de Jericó.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Então Josué foi de Maquedá a Libna, junto com todo o Israel, e lutou contra Libna.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Jeová também entregou aquela cidade e seu rei nas mãos de Israel, e eles golpearam com a espada tanto a ela como a todos que havia nela, sem deixar nenhum sobrevivente. Assim, fizeram com o seu rei o mesmo que haviam feito com o rei de Jericó.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "A seguir, Josué foi de Libna a Laquis, junto com todo o Israel, e acampou ali e lutou contra ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Jeová entregou Laquis nas mãos de Israel, e eles a tomaram no segundo dia. Golpearam com a espada tanto a ela como a todos que havia nela, assim como haviam feito a Libna.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Horão, rei de Gezer, subiu então para ajudar Laquis, mas Josué golpeou a ele e ao seu povo até não restar nenhum sobrevivente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Então Josué foi de Laquis a Eglom, junto com todo o Israel, e acampou ali e lutou contra ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Eles a tomaram naquele dia e a golpearam com a espada. Naquele dia entregaram todos que havia nela à destruição, assim como haviam feito a Laquis.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Josué foi então de Eglom a Hebrom, junto com todo o Israel, e lutou contra ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Eles a tomaram e a golpearam com a espada, tanto ao seu rei como aos seus povoados e a todos que havia nela, sem deixar nenhum sobrevivente. Assim como havia feito a Eglom, assim ele entregou todos que havia nela à destruição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Por fim, Josué foi a Debir, junto com todo o Israel, e lutou contra ela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Ele tomou tanto a ela como ao seu rei e a todos os seus povoados, e os golpearam com a espada, entregando todos que havia nela à destruição, sem deixar nenhum sobrevivente. Ele fez a Debir e ao seu rei assim como havia feito a Hebrom, e a Libna e seu rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Josué conquistou toda a terra — a região montanhosa, o Neguebe, a Sefelá e as encostas — e todos os seus reis, sem deixar nenhum sobrevivente; tudo o que respirava ele entregou à destruição, assim como Jeová, o Deus de Israel, havia ordenado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Josué os conquistou desde Cades-Barneia até Gaza, e toda a terra de Gósen, e até Gibeão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Josué capturou todos esses reis e sua terra numa só campanha militar, porque era Jeová, o Deus de Israel, quem estava lutando por Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "Então Josué voltou ao acampamento em Gilgal junto com todo o Israel.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 11,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Assim que Jabim, rei de Hazor, ouviu falar disso, enviou mensageiros a Jobabe, rei de Madom, ao rei de Sinrom, ao rei de Acsafe,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "aos reis da região montanhosa do norte, aos das planícies ao sul de Quinerete, aos da Sefelá, aos das encostas de Dor ao oeste,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "aos cananeus ao leste e ao oeste, aos amorreus, aos hititas, aos perizeus, aos jebuseus na região montanhosa, e aos heveus ao sopé do Hermom, na terra de Mispá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Portanto, todos esses reis saíram junto com os seus exércitos, uma enorme multidão tão numerosa como os grãos de areia à beira do mar, com muitíssimos cavalos e carros de guerra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Todos esses reis concordaram em se reunir e foram acampar juntos, perto das águas de Merom, para lutar contra Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Então Jeová disse a Josué: “Não tenha medo por causa deles, pois amanhã, por volta desta hora, entregarei todos eles mortos a Israel. Corte os tendões dos seus cavalos e queime os seus carros no fogo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Josué e todos os homens de guerra fizeram então um ataque-surpresa contra eles junto às águas de Merom.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Jeová os entregou nas mãos de Israel, e eles os derrotaram e os perseguiram até Sídon, a Grande, e Misrefote-Maim, e o vale de Mispa, ao leste, e eles os mataram sem deixar nenhum sobrevivente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então Josué fez a eles assim como Jeová lhe tinha dito: cortou os tendões dos seus cavalos e queimou seus carros no fogo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Josué voltou então e tomou Hazor, e matou seu rei com a espada, visto que Hazor anteriormente tinha sido a principal cidade de todos esses reinos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Eles mataram com a espada todos que havia nela, entregando-os à destruição. Não sobrou nada que respirasse. Então ele queimou Hazor com fogo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Josué tomou todas as cidades desses reis e derrotou todos os seus reis, golpeando-os com a espada. Ele os entregou à destruição, assim como Moisés, o servo de Jeová, havia ordenado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mas Israel não queimou nenhuma das cidades que ficavam sobre montes, com exceção de Hazor, que foi a única que Josué queimou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Os israelitas saquearam para si todo o despojo e os rebanhos dessas cidades, mas golpearam com a espada a todos os humanos até exterminar cada um deles. Não deixaram sobrar ninguém que respirasse.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Assim como Jeová havia ordenado a Moisés, seu servo, assim Moisés ordenou a Josué, e assim Josué fez. Ele não deixou de cumprir nada de tudo o que Jeová havia ordenado a Moisés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Josué conquistou toda esta terra, a região montanhosa, todo o Neguebe, toda a terra de Gósen, a Sefelá, o Arabá e a região montanhosa de Israel com a sua Sefelá,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "desde o monte Halaque, que se eleva em direção a Seir, até Baal-Gade, no vale do Líbano, ao sopé do monte Hermom; ele capturou todos os seus reis, os derrotou e os matou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Josué guerreou contra todos esses reis por um bom tempo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Não houve nenhuma cidade que fizesse paz com os israelitas, exceto os heveus que moravam em Gibeão. Eles conquistaram todas as outras por meio de guerra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Foi Jeová quem permitiu que seus corações ficassem obstinados para guerrearem contra Israel, a fim de que ele os entregasse à destruição sem ter compaixão. Eles deveriam ser exterminados, assim como Jeová havia ordenado a Moisés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Naquela época, Josué eliminou os anaquins da região montanhosa, de Hebrom, de Debir e de Anabe, bem como de toda a região montanhosa de Judá e de toda a região montanhosa de Israel. Josué entregou à destruição tanto a eles como às suas cidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Não sobrou nenhum anaquim na terra dos israelitas. Restaram somente em Gaza, em Gate e em Asdode.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "De modo que Josué assumiu o controle de toda a terra, assim como Jeová havia prometido a Moisés; então Josué a deu como herança a Israel, para reparti-la entre as suas tribos, conforme a porção devida a cada tribo. E a terra teve descanso da guerra.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 12,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Estes são os reis da terra que os israelitas derrotaram e de cujas terras tomaram posse no lado leste do Jordão, desde o vale do Arnom até o monte Hermom, e todo o lado leste do Arabá:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Siom, rei dos amorreus, que morava em Hesbom e reinava desde Aroer, que ficava à beira do vale do Arnom, desde o meio do vale, e sobre metade de Gileade, até o vale do Jaboque, o limite do território dos amonitas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Ele também reinava sobre o Arabá, até o lado leste do mar de Quinerete e até o lado leste do mar do Arabá, o mar Salgado, em direção a Bete-Jesimote, e para o sul, ao sopé das encostas do Pisga.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Também tomaram posse do território de Ogue, rei de Basã, um dos últimos refains, que morava em Astarote e em Edrei,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "e que reinava no monte Hermom, em Salcá e em todo o Basã, até o limite do território dos gesuritas e dos maacatitas, bem como em metade de Gileade, até o território de Siom, rei de Hesbom.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Moisés, o servo de Jeová, e os israelitas os derrotaram; depois Moisés, o servo de Jeová, deu a terra deles como propriedade aos rubenitas, aos gaditas e à meia tribo de Manassés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Estes são os reis da terra que Josué e os israelitas derrotaram no lado oeste do Jordão, desde Baal-Gade, no vale do Líbano, até o monte Halaque, que se eleva em direção a Seir, cuja terra Josué deu depois como propriedade às tribos de Israel, repartindo-a entre elas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "na região montanhosa, na Sefelá, no Arabá, nas encostas, no deserto e no Neguebe, — a terra dos hititas, dos amorreus, dos cananeus, dos perizeus, dos heveus e dos jebuseus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Foram eles: o rei de Jericó, um; o rei de Ai, que estava ao lado de Betel, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "o rei de Jerusalém, um; o rei de Hebrom, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "o rei de Jarmute, um; o rei de Laquis, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "o rei de Eglom, um; o rei de Gezer, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "o rei de Debir, um; o rei de Geder, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "o rei de Hormá, um; o rei de Arade, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "o rei de Libna, um; o rei de Adulão, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "o rei de Maquedá, um; o rei de Betel, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "o rei de Tapua, um; o rei de Héfer, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "o rei de Afeque, um; o rei de Lassarom, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "o rei de Madom, um; o rei de Hazor, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "o rei de Sinrom-Merom, um; o rei de Acsafe, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "o rei de Taanaque, um; o rei de Megido, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "o rei de Quedes, um; o rei de Jocneão, no Carmelo, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "o rei de Dor, nas encostas de Dor, um; o rei de Goim, em Gilgal, um;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "o rei de Tirza, um; 31 reis ao todo.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 13,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Josué já era de idade bem avançada. Assim, Jeová lhe disse: “Você já é de idade bem avançada, mas ainda falta grande parte da terra para se tomar posse.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Esta é a terra que falta: todas as regiões dos filisteus e as dos gesuritas",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "(desde o braço do Nilo que fica ao leste do Egito até a fronteira de Ecrom, ao norte, que era considerado território cananeu), incluindo as regiões dos cinco governantes dos filisteus, isto é, dos gazitas, dos asdoditas, dos ascalonitas, dos geteus e dos ecronitas; a região dos avins,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "ao sul; toda a terra dos cananeus; Meara, que pertence aos sidônios, até Afeque, até a fronteira dos amorreus;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "a terra dos gebalitas e todo o leste do Líbano, desde Baal-Gade, ao sopé do monte Hermom, até Lebo-Hamate;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "todos os habitantes da região montanhosa, desde o Líbano até Misrefote-Maim; e todos os sidônios. Eu os expulsarei diante dos israelitas. Você só tem de reparti-la a Israel como herança, assim como lhe ordenei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Portanto, você deve repartir essa terra como herança entre as nove tribos e a meia tribo de Manassés.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Junto com a outra meia tribo, os rubenitas e os gaditas receberam a herança que Moisés lhes tinha dado do lado leste do Jordão, assim como Moisés, o servo de Jeová, tinha dado a eles:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "desde Aroer, que fica à beira do vale do Arnom, e a cidade que fica no meio do vale, e todo o planalto de Medeba até Dibom;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "todas as cidades de Siom, rei dos amorreus, que reinou em Hesbom, até a fronteira dos amonitas;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "também Gileade e o território dos gesuritas e dos maacatitas; e todo o monte Hermom, e todo o Basã até Salcá,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "isto é, todo o reino de Ogue em Basã, que reinou em Astarote e em Edrei. (Ele era um dos últimos refains.) Moisés os derrotou e expulsou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mas os israelitas não expulsaram os gesuritas e os maacatitas, pois Gesur e Maacá moram no meio de Israel até hoje.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Ele só não deu herança à tribo dos levitas. As ofertas feitas por fogo a Jeová, o Deus de Israel, são a sua herança, assim como ele lhes prometeu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "E Moisés deu uma herança à tribo dos rubenitas, segundo as suas famílias,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "e o território deles se estendia a partir de Aroer, que fica à beira do vale do Arnom, a partir da cidade que fica no meio do vale, e incluía todo o planalto junto a Medeba;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Hesbom e todas as suas cidades que ficam no planalto, Dibom, Bamote-Baal, Bete-Baal-Meom,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Jaaz, Quedemote, Mefaate,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Quiriataim, Sibma, Zerete-Saar, no monte do vale,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Bete-Peor, as encostas do Pisga, Bete-Jesimote,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "todas as cidades do planalto e todo o reino de Siom, rei dos amorreus, que reinou em Hesbom. Moisés derrotou tanto a ele como aos maiorais midianitas — Evi, Requém, Zur, Hur e Reba — vassalos de Siom que moravam naquela terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Entre aqueles que os israelitas mataram com a espada estava Balaão, o adivinho, filho de Beor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "O limite do território dos rubenitas era o Jordão; esse território, com suas cidades e seus povoados, foi a herança dos rubenitas, segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Além disso, Moisés deu uma herança à tribo de Gade, aos gaditas, segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Seu território incluía Jazer, todas as cidades de Gileade e metade da terra dos amonitas até Aroer, que fica em frente de Rabá;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "e ia desde Hesbom até Ramate-Mispa e Betonim, e desde Maanaim até a fronteira de Debir.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "No vale, incluía Bete-Harã, Bete-Ninra, Sucote e Zafom, o restante do reino de Siom, rei de Hesbom, com o Jordão como fronteira a partir da extremidade sul do mar de Quinerete, do lado leste do Jordão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Essa foi a herança dos gaditas, segundo as suas famílias, com suas cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Além disso, Moisés deu uma herança à meia tribo de Manassés, à metade da tribo de Manassés, segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "E seu território começava em Maanaim e incluía todo o Basã, isto é, todo o reino de Ogue, rei de Basã, e todas as aldeias de tendas de Jair que estão em Basã, 60 cidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "E metade de Gileade, e Astarote e Edrei, as cidades do reino de Ogue em Basã, ficaram para os filhos de Maquir, filho de Manassés, isto é, para a metade dos filhos de Maquir, segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Essas foram as heranças que Moisés lhes deu nas planícies desérticas de Moabe, no outro lado do Jordão, ao leste de Jericó.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Mas Moisés não deu herança à tribo dos levitas. Jeová, o Deus de Israel, é a sua herança, assim como ele lhes prometeu.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 14,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Foi isso que os israelitas receberam como herança na terra de Canaã, que lhes foi dado como herança por Eleazar, o sacerdote, Josué, filho de Num, e os cabeças das casas paternas das tribos de Israel.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "A herança para as nove tribos e meia foi por sortes, assim como Jeová havia ordenado por meio de Moisés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Moisés tinha dado herança às outras duas tribos e meia no outro lado do Jordão, e aos levitas ele não deu herança entre eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Os descendentes de José foram contados como duas tribos, Manassés e Efraim; os levitas não receberam nenhuma porção da terra, a não ser cidades com suas pastagens, para eles morarem e para seus rebanhos e seus bens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Dessa forma os israelitas repartiram a terra, assim como Jeová havia ordenado a Moisés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Então os homens de Judá se aproximaram de Josué em Gilgal, e Calebe, filho de Jefuné, o quenizeu, lhe disse: “Você sabe o que Jeová falou a Moisés, o homem do verdadeiro Deus, sobre mim e você em Cades-Barneia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Eu tinha 40 anos de idade quando Moisés, o servo de Jeová, me enviou de Cades-Barneia para espionar a terra, e retornei com um relatório franco e honesto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Embora meus irmãos que foram comigo tenham desanimado o povo, eu segui a Jeová, meu Deus, de todo o coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Moisés jurou naquele dia: ‘A terra em que seus pés pisaram se tornará uma herança permanente para você e seus filhos, pois você seguiu a Jeová, meu Deus, de todo o coração.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pois bem, assim como prometeu, Jeová me preservou vivo durante esses 45 anos desde que Jeová fez essa promessa a Moisés, quando Israel andava no deserto; hoje eu ainda estou aqui, com 85 anos de idade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E hoje sou tão forte como no dia em que Moisés me enviou. Tenho agora a mesma força que eu tinha naquela época, tanto para a guerra como para outras atividades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Portanto, dê-me esta região montanhosa, que Jeová prometeu naquele dia. Embora você tenha ficado sabendo naquele dia que havia ali os anaquins com grandes cidades fortificadas, certamente Jeová estará comigo e eu os expulsarei, assim como Jeová prometeu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Então Josué o abençoou e deu Hebrom como herança a Calebe, filho de Jefuné.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "É por isso que Hebrom pertence a Calebe, filho de Jefuné, o quenizeu, como herança até hoje, porque ele seguiu a Jeová, o Deus de Israel, de todo o coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Anteriormente o nome de Hebrom era Quiriate-Arba (Arba era o maior homem entre os anaquins). E a terra teve descanso da guerra.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 15,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "A parte que coube à tribo de Judá, para as suas famílias, se estendia até o limite do território de Edom, o deserto de Zim e a extremidade sul do Neguebe.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Seu limite sul começava na extremidade do mar Salgado, a partir da baía que é voltada para o sul.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Então se estendia para o sul, para a subida de Acrabim, passava por Zim e então subia do sul para Cades-Barneia. Depois passava por Esrom, subia até Adar e virava para Carca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Daí passava para Azmom e se estendia até a torrente do Egito, e o limite terminava no mar. Esse era o seu limite sul.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "O limite leste era o mar Salgado até a foz do Jordão. O limite norte começava na baía do mar, na foz do Jordão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "O limite subia até Bete-Hogla e passava ao norte de Bete-Arabá, e o limite subia até a pedra de Boã, filho de Rubem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "O limite subia até Debir, no vale de Acor, e virava para o norte em direção a Gilgal, que fica em frente à subida de Adumim, ao sul do vale, e o limite passava para as águas de En-Semes e terminava em En-Rogel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "O limite subia até o vale do Filho de Hinom, até a encosta sul dos jebuseus, isto é, Jerusalém, e o limite subia para o cume do monte que fica ao oeste, em frente ao vale de Hinom, na extremidade norte do vale de Refaim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "E o limite se estendia desde o cume do monte até a fonte das águas de Neftoa, e continuava até as cidades do monte Efrom; e o limite se estendia até Baalá, isto é, Quiriate-Jearim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "De Baalá, o limite virava em direção ao oeste até o monte Seir, e passava pela encosta norte do monte Jearim, isto é, Quesalom, e descia até Bete-Semes e passava para Timná.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E o limite seguia para a encosta norte de Ecrom, se estendia até Siquerom, passava para o monte Baalá e continuava até Jabneel, terminando no mar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "O limite oeste era o litoral do Grande Mar. Esses eram todos os limites do território dos descendentes de Judá, segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "E a Calebe, filho de Jefuné, Josué deu uma parte entre os descendentes de Judá, segundo a ordem de Jeová a Josué, a saber, Quiriate-Arba, isto é, Hebrom. (Arba era o pai de Anaque.)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Portanto, Calebe expulsou dali os três filhos de Anaque: Sesai, Aimã e Talmai, descendentes de Anaque.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Então partiu dali e lutou contra os habitantes de Debir. (Anteriormente o nome de Debir era Quiriate-Sefer.)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Calebe disse então: “Ao homem que golpear Quiriate-Sefer e a tomar, darei minha filha Acsa como esposa.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "E Otniel, filho de Quenaz, irmão de Calebe, tomou a cidade. Portanto, Calebe lhe deu sua filha Acsa como esposa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Enquanto ela estava indo para casa, insistiu com Otniel para que pedisse ao pai dela um campo. Então ela desceu do jumento, e Calebe lhe perguntou: “O que você quer?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Ela respondeu: “Por favor, dê-me uma bênção, pois o senhor me deu um pedaço de terra no sul; dê-me também Gulote-Maim.” Assim, ele lhe deu Gulote Alta e Gulote Baixa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Essa foi a herança da tribo de Judá, segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "As cidades na extremidade sul da tribo de Judá em direção ao limite do território de Edom eram as seguintes: Cabzeel, Éder, Jagur,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Quiná, Dimona, Adada,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Quedes, Hazor, Itnã,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Zife, Telém, Bealote,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Hazor-Hadata, Queriote-Esrom, isto é, Hazor,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Amão, Sema, Moladá,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Hazar-Gada, Hesmom, Bete-Pelete,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Hazar-Sual, Berseba, Biziotiá,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Baalá, Iim, Ezém,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Eltolade, Quesil, Hormá,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Ziclague, Madmana, Sansana,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Lebaote, Silim, Aim e Rimom — 29 cidades ao todo, junto com os seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "As cidades na Sefelá eram: Estaol, Zorá, Asná,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Zanoa, En-Ganim, Tapua, Enã,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Jarmute, Adulão, Socó, Azeca,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Saraim, Aditaim, Gedera e Gederotaim — 14 cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Zenã, Hadasa, Migdal-Gade,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Dileã, Mispa, Jocteel,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Laquis, Boscate, Eglom,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Cabom, Laamás, Quitlis,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Gederote, Bete-Dagom, Naamá e Maquedá — 16 cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Libna, Eter, Asã,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "Iftá, Asná, Nezibe,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "Queila, Aczibe e Maressa — nove cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "Ecrom, suas aldeias dependentes e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 46,
+          "texto": "De Ecrom em direção ao oeste, tudo que fica ao lado de Asdode, com seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 47,
+          "texto": "Asdode, suas aldeias dependentes e seus povoados; Gaza, suas aldeias dependentes e seus povoados, até a torrente do Egito, o Grande Mar, e a região vizinha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 48,
+          "texto": "E na região montanhosa havia Samir, Jatir, Socó,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 49,
+          "texto": "Daná, Quiriate-Sana, isto é, Debir,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 50,
+          "texto": "Anabe, Estemo, Anim,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 51,
+          "texto": "Gósen, Holom e Gilo — 11 cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 52,
+          "texto": "Arabe, Dumá, Esã,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 53,
+          "texto": "Janim, Bete-Tapua, Afeca,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 54,
+          "texto": "Hunta, Quiriate-Arba, isto é, Hebrom, e Zior — nove cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 55,
+          "texto": "Maom, Carmelo, Zife, Jutá,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 56,
+          "texto": "Jezreel, Jocdeão, Zanoa,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 57,
+          "texto": "Caim, Gibeá e Timná — dez cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 58,
+          "texto": "Halul, Bete-Zur, Gedor,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 59,
+          "texto": "Maarate, Bete-Anote e Eltecom — seis cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 60,
+          "texto": "Quiriate-Baal, isto é, Quiriate-Jearim, e Rabá — duas cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 61,
+          "texto": "No deserto havia Bete-Arabá, Midim, Secacá,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 62,
+          "texto": "Nibsã, a Cidade do Sal, e En-Gedi — seis cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 63,
+          "texto": "Quanto aos jebuseus que moravam em Jerusalém, os homens de Judá não conseguiram expulsá-los, por isso os jebuseus continuam morando com o povo de Judá em Jerusalém até hoje.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 16,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "E a terra que caiu por sortes aos descendentes de José ia desde o Jordão, na altura de Jericó, até as águas ao leste de Jericó, e se estendia pelo deserto que sobe de Jericó e ia até a região montanhosa de Betel.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Estendia-se desde Betel, que pertence a Luz, e continuava até o limite do território dos arquitas, em Atarote.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Então descia na direção oeste, para o limite do território dos jafletitas, até o limite de Bete-Horom Baixa e Gezer, e terminava no mar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Assim, Manassés e Efraim, descendentes de José, tomaram posse das suas terras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Este era o limite do território dos descendentes de Efraim, segundo as suas famílias: o limite leste da sua herança ia de Atarote-Adar até Bete-Horom Alta,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "e o limite se estendia até o mar. Micmetate ficava ao norte; e o limite virava para o leste, até Taanate-Silo, e seguia na direção leste até Janoa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Então descia de Janoa para Atarote e Naará, chegava a Jericó e se estendia até o Jordão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "De Tapua o limite continuava em direção ao oeste até o vale de Caná e terminava no mar. Essa foi a herança da tribo de Efraim, segundo as suas famílias;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "a herança também incluía todas as cidades e povoados que os descendentes de Efraim tinham no meio da herança dos filhos de Manassés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Mas eles não expulsaram os cananeus que moravam em Gezer, e os cananeus continuam morando no meio de Efraim até hoje, sujeitos a trabalhos forçados.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 17,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então a sorte caiu para a tribo de Manassés, pois era o primogênito de José. Visto que Maquir, primogênito de Manassés e pai de Gileade, era um homem de guerra, ele recebeu Gileade e Basã.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E a sorte caiu para o restante dos descendentes de Manassés, segundo as suas famílias: os filhos de Abiezer, os filhos de Heleque, os filhos de Asriel, os filhos de Siquém, os filhos de Hefer e os filhos de Semida. Esses eram os descendentes de Manassés, filho de José, os homens segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Mas Zelofeade, filho de Hefer, filho de Gileade, filho de Maquir, filho de Manassés, não teve filhos homens, só filhas; e os nomes das suas filhas eram: Maala, Noa, Hogla, Milca e Tirza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Então elas compareceram perante Eleazar, o sacerdote, Josué, filho de Num, e os maiorais, e disseram: “Foi Jeová quem ordenou a Moisés que nos desse uma herança entre os nossos irmãos.” Assim, por ordem de Jeová, ele deu a elas uma herança entre os irmãos do seu pai.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "E dez partes caíram para Manassés, além da terra de Gileade e de Basã, que ficava do outro lado do Jordão,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "pois as filhas de Manassés receberam uma herança junto com os filhos dele. E a terra de Gileade se tornou propriedade dos outros descendentes de Manassés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "E o limite do território de Manassés ia desde Aser até Micmetate, que fica em frente a Siquém, e o limite continuava em direção ao sul, até a terra onde moravam os habitantes de En-Tapua.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "A terra de Tapua se tornou de Manassés, mas a cidade de Tapua, no limite do território de Manassés, pertencia aos descendentes de Efraim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "E o limite descia até o vale de Caná, ao sul do vale. Havia cidades de Efraim entre as cidades de Manassés; e o limite do território de Manassés ficava ao norte do vale e terminava no mar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O território ao sul pertencia a Efraim, e o território ao norte pertencia a Manassés, e o mar era seu limite; e o território de Manassés chegava a Aser, ao norte, e a Issacar, ao leste.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Nos territórios de Issacar e de Aser, Manassés ficou com Bete-Seã e suas aldeias dependentes, Ibleão e suas aldeias dependentes, os habitantes de Dor e suas aldeias dependentes, os habitantes de En-Dor e suas aldeias dependentes, os habitantes de Taanaque e suas aldeias dependentes, e os habitantes de Megido e suas aldeias dependentes, sendo três delas regiões de colinas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Mas os descendentes de Manassés não conseguiram tomar posse dessas cidades, pois os cananeus persistiam em morar nesta região.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Quando os israelitas ficaram fortes, sujeitaram os cananeus a trabalhos forçados, mas não os expulsaram completamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Os descendentes de José disseram a Josué: “Por que você nos deu como herança apenas um lote, uma parte da terra? Somos um povo numeroso, pois Jeová nos abençoou até agora.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Josué lhes respondeu: “Se vocês são um povo tão numeroso, vão à floresta e limpem uma área para vocês na terra dos perizeus e dos refains, visto que a região montanhosa de Efraim é apertada demais para vocês.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então os descendentes de José disseram: “A região montanhosa não é suficiente para nós, e todos os cananeus que moram na terra do vale têm carros de guerra com foices de ferro, tanto os que moram em Bete-Seã e nas suas aldeias dependentes como os que moram no vale de Jezreel.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Portanto, Josué disse o seguinte à casa de José, isto é, a Efraim e Manassés: “Vocês são um povo numeroso, e grande é o seu poder. Não receberão apenas uma parte,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "mas a região montanhosa também será sua. Embora seja uma floresta, vocês a limparão, e ela será a extremidade do seu território. Pois vocês expulsarão os cananeus, apesar de eles serem fortes e terem carros de guerra com foices de ferro.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 18,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então toda a assembleia de Israel se reuniu em Silo e armou ali a tenda de reunião, pois a terra já estava subjugada diante deles.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Mas ainda havia sete tribos dos israelitas que não tinham recebido a sua herança.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "De modo que Josué disse aos israelitas: “Até quando vocês ficarão esperando para ir tomar posse da terra que Jeová, o Deus dos seus antepassados, lhes deu?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Escolham três homens de cada tribo para que eu os envie; eles devem ir e percorrer a terra, fazendo um levantamento dela conforme a herança de cada tribo. Depois eles devem voltar a mim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Eles devem dividir a terra em sete partes. Judá continuará no seu território ao sul, e a casa de José continuará no seu território ao norte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Façam o levantamento da terra, dividindo-a em sete partes; depois tragam-no para mim, e eu lançarei sortes aqui para vocês perante Jeová, nosso Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Mas os levitas não terão nenhuma parte da terra entre vocês, visto que a sua herança é o sacerdócio de Jeová; e Gade, Rubem e a meia tribo de Manassés já receberam sua herança do lado leste do Jordão, que Moisés, o servo de Jeová, lhes deu.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Os homens se prepararam para ir, e Josué ordenou aos que iam fazer o levantamento da terra: “Vão, percorram a terra e façam um levantamento dela; depois voltem a mim, e eu lançarei sortes para vocês perante Jeová aqui em Silo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então os homens foram e percorreram a terra, fazendo um levantamento dela. Eles a dividiram em sete partes, segundo as cidades, registrando tudo num livro. Depois voltaram a Josué, ao acampamento em Silo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Josué lançou então sortes para eles em Silo, perante Jeová. Ali Josué distribuiu a terra aos israelitas, conforme a porção devida a cada tribo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "A sorte saiu para a tribo de Benjamim, segundo as suas famílias, e o território que lhes foi designado por sortes ficou entre o povo de Judá e o povo de José.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "No lado norte, o limite começava no Jordão, e o limite ia até a encosta norte de Jericó, subia pelo monte na direção oeste e se estendia até o deserto de Bete-Áven.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "E o limite continuava dali até Luz, na encosta sul de Luz, isto é, Betel; o limite descia até Atarote-Adar, no monte ao sul de Bete-Horom Baixa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E o limite se estendia do lado oeste e virava para o sul, desde o monte que fica em frente a Bete-Horom, ao sul; terminava em Quiriate-Baal, isto é, Quiriate-Jearim, uma cidade de Judá. Esse era o lado oeste.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "O lado sul começava na extremidade de Quiriate-Jearim e o limite se estendia para o oeste; seguia até a fonte das águas de Neftoa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "O limite descia até a extremidade do monte que fica em frente ao vale do Filho de Hinom, no norte do vale de Refaim, descia até o vale de Hinom, até a encosta sul dos jebuseus, e descia a En-Rogel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Depois seguia para o norte e se estendia até En-Semes, e então até Gelilote, que fica em frente à subida de Adumim, e descia até a pedra de Boã, filho de Rubem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "E prosseguia para a encosta norte em frente ao Arabá e descia até o Arabá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "E o limite continuava até a encosta norte de Bete-Hogla, e o limite terminava na baía norte do mar Salgado, na extremidade sul do Jordão. Esse era o limite sul.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "No lado leste, o Jordão serviu como limite. Esses eram todos os limites da herança dos descendentes de Benjamim, segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "E as cidades da tribo de Benjamim, segundo as suas famílias, eram: Jericó, Bete-Hogla, Emeque-Queziz,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Bete-Arabá, Zemaraim, Betel,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Avim, Pará, Ofra,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Quefar-Amonai, Ofni e Geba — 12 cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Gibeão, Ramá, Beerote,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Mispa, Quefira, Moza,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Requém, Irpeel, Tarala,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Zela, Ha-Elefe, Jebusi, isto é, Jerusalém, Gibeá e Quiriate — 14 cidades e seus povoados.\nEssa foi a herança dos descendentes de Benjamim, segundo as suas famílias.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 19,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então a segunda sorte saiu para Simeão, para a tribo de Simeão, segundo as suas famílias. E a sua herança ficava dentro da herança de Judá.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "A sua herança era: Berseba com Seba, Moladá,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Hazar-Sual, Balá, Ezém,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Eltolade, Betul, Hormá,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Ziclague, Bete-Marcabote, Hazar-Susa,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Bete-Lebaote e Saruém — 13 cidades e seus povoados;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Aim, Rimom, Eter e Asã — quatro cidades e seus povoados;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "e todos os povoados que havia em volta dessas cidades, até Baalate-Beer, Ramá do sul. Essa foi a herança da tribo de Simeão, segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "A herança dos descendentes de Simeão foi tirada da parte concedida a Judá, porque a parte de Judá era grande demais para eles. Portanto, os descendentes de Simeão receberam uma propriedade dentro da herança deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "A seguir, a terceira sorte saiu para os descendentes de Zebulão, segundo as suas famílias, e o limite da sua herança ia até Saride.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Seu limite ia na direção oeste até Mareal, alcançava Dabesete e então chegava até o vale que fica em frente a Jocneão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E de Saride ia para o leste, em direção ao nascente, até a fronteira de Quislote-Tabor, seguia para Daberate e então subia até Jafia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Dali continuava para o leste, em direção ao nascente, até Gate-Héfer e Ete-Cazim, e seguia até Rimom, estendendo-se até Neá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E o limite a contornava ao norte, indo até Hanatom, e terminava no vale de Iftá-El,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "e em Catate, Naalal, Sinrom, Idala e Belém — 12 cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Essa foi a herança dos descendentes de Zebulão, segundo as suas famílias. Essas foram as cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "A quarta sorte saiu para Issacar, para os descendentes de Issacar, segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "E seu limite ia até Jezreel, Quesulote, Suném,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Hafaraim, Siom, Anaarate,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Rabite, Quisiom, Ebes,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Remete, En-Ganim, En-Hadá e Bete-Pazes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "E o limite chegava até Tabor, Saazima e Bete-Semes, e terminava no Jordão — 16 cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Essa foi a herança da tribo de Issacar, segundo as suas famílias, as cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Então a quinta sorte saiu para a tribo de Aser, segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "E seu limite era Helcate, Hali, Béten, Acsafe,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Alameleque, Amade e Misal. Ao oeste chegava ao Carmelo e a Sior-Libnate,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "voltava na direção leste até Bete-Dagom, alcançava Zebulão e o lado norte do vale de Iftá-El, e chegava a Bete-Emeque e a Neiel. Então se estendia até Cabul, à esquerda,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "e até Ebrom, Reobe, Hamom e Caná, e continuava até Sídon, a Grande.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "E o limite voltava para Ramá e até a cidade fortificada de Tiro. Depois o limite voltava até Hosa e terminava no mar, na região de Aczibe,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Umá, Afeque e Reobe — 22 cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Essa foi a herança da tribo de Aser, segundo as suas famílias. Essas foram as cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "A sexta sorte saiu para os descendentes de Naftali, para os descendentes de Naftali segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "O limite do seu território começava em Helefe, na árvore grande em Zaananim, passava por Adami-Nequebe e Jabneel, ia até Lacum e terminava no Jordão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "O limite voltava para o oeste até Aznote-Tabor e se estendia dali para Hucoque, e chegava a Zebulão ao sul, a Aser ao oeste, e a Judá, no Jordão, ao leste.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "E as cidades fortificadas eram Zidim, Zer, Hamate, Racate, Quinerete,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Adamá, Ramá, Hazor,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Quedes, Edrei, En-Hazor,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "Irom, Migdal-El, Horém, Bete-Anate e Bete-Semes — 19 cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Essa foi a herança da tribo de Naftali, segundo as suas famílias, as cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "A sétima sorte saiu para a tribo de Dã, segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "E o limite da sua herança era Zorá, Estaol, Ir-Semes,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Saalabim, Aijalom, Itla,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "Elom, Timná, Ecrom,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "Eltequé, Gibetom, Baalate,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "Jeúde, Bene-Beraque, Gate-Rimom,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 46,
+          "texto": "Me-Jarcom e Racom, com a fronteira em frente a Jope.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 47,
+          "texto": "Mas o território de Dã era pequeno demais para eles. Por isso eles foram lutar contra Lesém e a tomaram, golpeando-a com a espada. Depois tomaram posse dela e se estabeleceram nela, e deram a Lesém o nome de Dã, segundo o nome de Dã, seu antepassado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 48,
+          "texto": "Essa foi a herança da tribo de Dã, segundo as suas famílias. Essas foram as cidades e seus povoados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 49,
+          "texto": "Assim terminaram de repartir a terra como herança segundo os territórios. Então os israelitas deram a Josué, filho de Num, uma herança no meio deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 50,
+          "texto": "Por ordem de Jeová, deram-lhe a cidade que ele pediu, Timnate-Sera, na região montanhosa de Efraim; e ele reconstruiu a cidade e se estabeleceu nela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 51,
+          "texto": "Essas foram as heranças que Eleazar, o sacerdote, Josué, filho de Num, e os cabeças das casas paternas das tribos de Israel distribuíram por sortes em Silo, perante Jeová, à entrada da tenda de reunião. Assim terminaram de repartir a terra.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 20,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Jeová disse então a Josué:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“Diga aos israelitas: ‘Escolham para vocês cidades de refúgio, a respeito das quais lhes falei por meio de Moisés,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "a fim de que o homicida que matar alguém, sem querer ou acidentalmente, fuja para lá. E elas servirão de refúgio para vocês contra o vingador do sangue.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Ele deve fugir para uma dessas cidades, ficar de pé à entrada do portão da cidade e expor o seu caso diante dos anciãos daquela cidade. Então eles devem acolhê-lo na cidade e lhe dar um local para morar entre eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Caso o vingador do sangue o persiga, não devem entregar o homicida nas suas mãos, pois ele matou o seu próximo acidentalmente, sem que o tenha odiado antes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ele deve morar naquela cidade até comparecer perante a assembleia para julgamento, e deve permanecer nela até a morte do sumo sacerdote em exercício naqueles dias. Então o homicida poderá voltar para a cidade de onde fugiu; ele poderá entrar na sua cidade e na sua casa.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Por isso, eles consagraram Quedes, na Galileia, na região montanhosa de Naftali; Siquém, na região montanhosa de Efraim; e Quiriate-Arba, isto é, Hebrom, na região montanhosa de Judá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Na região do Jordão, ao leste de Jericó, eles selecionaram no deserto, no planalto, Bezer, da tribo de Rubem; Ramote, em Gileade, da tribo de Gade; e Golã, em Basã, da tribo de Manassés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Essas se tornaram as cidades designadas para todos os israelitas e para os residentes estrangeiros que moravam entre eles, a fim de que qualquer um que sem querer matasse alguém pudesse fugir para lá e não ser morto pelo vingador do sangue antes de comparecer perante a assembleia para julgamento.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 21,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então os cabeças das casas paternas dos levitas se aproximaram de Eleazar, o sacerdote, de Josué, filho de Num, e dos cabeças das casas paternas das tribos de Israel,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "e lhes disseram em Silo, na terra de Canaã: “Jeová, por meio de Moisés, ordenou que nos fossem dadas cidades para morar, junto com suas pastagens para os nossos rebanhos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Portanto, por ordem de Jeová, os israelitas tiraram da sua própria herança algumas cidades e suas pastagens e as deram aos levitas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Saiu a sorte para as famílias dos coatitas; os levitas que eram descendentes de Arão, o sacerdote, receberam por sortes 13 cidades das tribos de Judá, de Simeão e de Benjamim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "E o restante dos coatitas recebeu dez cidades das famílias da tribo de Efraim, da tribo de Dã, e da meia tribo de Manassés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E os gersonitas receberam 13 cidades das famílias da tribo de Issacar, da tribo de Aser, da tribo de Naftali, e da meia tribo de Manassés em Basã.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Os meraritas, segundo as suas famílias, receberam 12 cidades das tribos de Rubem, de Gade e de Zebulão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Assim, os israelitas deram aos levitas, por sortes, essas cidades e suas pastagens, assim como Jeová tinha ordenado por meio de Moisés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Da tribo de Judá e da tribo de Simeão, eles deram as seguintes cidades aqui mencionadas por nome;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "elas foram dadas aos filhos de Arão, que pertenciam às famílias dos coatitas, dos levitas, porque a primeira sorte saiu para eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Deram-lhes Quiriate-Arba, isto é, Hebrom, na região montanhosa de Judá, e também as pastagens ao redor dela. (Arba era o pai de Anaque.)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Mas os campos e os povoados da cidade foram dados a Calebe, filho de Jefuné, como sua propriedade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "E aos filhos de Arão, o sacerdote, deram a cidade de refúgio para o homicida, isto é, Hebrom e suas pastagens, também Libna e suas pastagens,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Jatir e suas pastagens, Estemoa e suas pastagens,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Holom e suas pastagens, Debir e suas pastagens,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Aim e suas pastagens, Jutá e suas pastagens, e Bete-Semes e suas pastagens — nove cidades dessas duas tribos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "E da tribo de Benjamim: Gibeão e suas pastagens, Geba e suas pastagens,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Anatote e suas pastagens, e Almom e suas pastagens — quatro cidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Ao todo, as cidades dadas aos descendentes de Arão, os sacerdotes, foram 13 cidades e suas pastagens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "E o restante das famílias dos coatitas entre os levitas recebeu por sortes cidades da tribo de Efraim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Eles receberam a cidade de refúgio para o homicida, isto é, Siquém e suas pastagens, na região montanhosa de Efraim; também Gezer e suas pastagens,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Quibzaim e suas pastagens, e Bete-Horom e suas pastagens — quatro cidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "E da tribo de Dã: Elteque e suas pastagens, Gibetom e suas pastagens,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Aijalom e suas pastagens, e Gate-Rimom e suas pastagens — quatro cidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "E da meia tribo de Manassés: Taanaque e suas pastagens, e Gate-Rimom e suas pastagens — duas cidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Ao todo, o restante das famílias dos coatitas recebeu dez cidades junto com as suas pastagens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "E os gersonitas, das famílias dos levitas, receberam da meia tribo de Manassés a cidade de refúgio para o homicida, isto é, Golã, em Basã, e suas pastagens; receberam também Beesterá e suas pastagens — duas cidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "E da tribo de Issacar: Quisiom e suas pastagens, Daberate e suas pastagens,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Jarmute e suas pastagens, e En-Ganim e suas pastagens — quatro cidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "E da tribo de Aser: Misal e suas pastagens, Abdom e suas pastagens,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Helcate e suas pastagens, e Reobe e suas pastagens — quatro cidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "E da tribo de Naftali: a cidade de refúgio para o homicida, isto é, Quedes, na Galileia, e suas pastagens; também Hamote-Dor e suas pastagens, e Cartã e suas pastagens — três cidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Ao todo, os gersonitas receberam, segundo as suas famílias, 13 cidades e suas pastagens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "E as famílias dos meraritas, o restante dos levitas, receberam da tribo de Zebulão: Jocneão e suas pastagens, Carta e suas pastagens,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Dimna e suas pastagens, e Naalal e suas pastagens — quatro cidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "E da tribo de Rubem: Bezer e suas pastagens, Jaaz e suas pastagens,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Quedemote e suas pastagens, e Mefaate e suas pastagens — quatro cidades.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "E da tribo de Gade: a cidade de refúgio para o homicida, isto é, Ramote, em Gileade, e suas pastagens; também Maanaim e suas pastagens,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Hesbom e suas pastagens, e Jazer e suas pastagens — quatro cidades ao todo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Ao todo, os meraritas, isto é, o restante das famílias dos levitas, receberam 12 cidades, segundo as suas famílias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Dentro da propriedade dos israelitas, os levitas receberam ao todo 48 cidades junto com as suas pastagens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Cada uma dessas cidades tinha pastagens ao redor — todas essas cidades eram assim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "Dessa forma, Jeová deu a Israel toda a terra que havia jurado dar aos seus antepassados, e eles tomaram posse dela e se estabeleceram nela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "Além disso, Jeová lhes deu descanso de todos os lados, assim como havia jurado aos seus antepassados, e nem mesmo um de todos os seus inimigos pôde se manter firme diante deles. Jeová entregou todos os seus inimigos nas suas mãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "De todas as boas promessas que Jeová havia feito à casa de Israel, nem uma única promessa falhou; todas elas se cumpriram.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 22,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Então Josué convocou os rubenitas, os gaditas e a meia tribo de Manassés,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "e lhes disse: “Vocês fizeram tudo o que Moisés, o servo de Jeová, lhes ordenou e obedeceram à minha voz em tudo o que lhes ordenei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Não abandonaram os seus irmãos durante todo esse tempo, até o dia de hoje, e cumpriram o mandamento de Jeová, seu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Agora Jeová, seu Deus, deu descanso aos seus irmãos, assim como lhes prometeu. Portanto, vocês podem voltar para as suas tendas na terra que Moisés, o servo de Jeová, lhes deu como propriedade no outro lado do Jordão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Mas obedeçam cuidadosamente ao mandamento e à Lei que Moisés, o servo de Jeová, lhes deu, amando a Jeová, seu Deus, andando em todos os seus caminhos, guardando os seus mandamentos, apegando-se a ele e servindo-o de todo o seu coração e de toda a sua alma.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Então Josué os abençoou e os dispensou, e eles voltaram para as suas tendas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "À meia tribo de Manassés, Moisés tinha dado uma herança em Basã, e à outra meia tribo, Josué deu terras no lado oeste do Jordão, junto aos seus irmãos. E, quando Josué os mandou de volta para as suas tendas, ele os abençoou",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "e lhes disse: “Voltem às suas tendas com muitas riquezas e com muitíssimos rebanhos, com prata, ouro, cobre, ferro e roupas em quantidade muito grande. Repartam com seus irmãos o despojo dos seus inimigos.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Depois disso, os rubenitas, os gaditas e a meia tribo de Manassés deixaram os outros israelitas em Silo, na terra de Canaã, e retornaram para a terra de Gileade, a terra que receberam para tomar posse e se estabelecer, segundo a ordem de Jeová por meio de Moisés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Quando chegaram à região do Jordão na terra de Canaã, os rubenitas, os gaditas e a meia tribo de Manassés construíram um altar ali, junto ao Jordão, um altar grande e impressionante.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Mais tarde, os outros israelitas ouviram dizer: “Vejam! Os rubenitas, os gaditas e a meia tribo de Manassés construíram um altar na fronteira da terra de Canaã, na região do Jordão, no lado que pertence aos israelitas.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Quando os israelitas ouviram isso, toda a assembleia de Israel se reuniu em Silo a fim de guerrear contra eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Então os israelitas enviaram Fineias, filho de Eleazar, o sacerdote, aos rubenitas, aos gaditas e à meia tribo de Manassés, na terra de Gileade,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "bem como dez maiorais com ele, um maioral de cada casa paterna de todas as tribos de Israel, cada um deles sendo cabeça da sua casa paterna entre os milhares de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Quando chegaram aos rubenitas, aos gaditas e à meia tribo de Manassés, na terra de Gileade, eles lhes disseram:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "“Assim diz toda a assembleia de Jeová: ‘Por que vocês cometeram esse ato de infidelidade contra o Deus de Israel? Vocês deixaram hoje de seguir a Jeová, construindo para vocês um altar e se rebelando contra Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Não nos bastou o erro cometido em Peor? Até hoje não nos purificamos dele, apesar de uma praga ter vindo sobre a assembleia de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "E agora vocês querem deixar de seguir a Jeová? Se hoje vocês se rebelarem contra Jeová, então amanhã ele ficará indignado com toda a assembleia de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Agora, se é porque a terra que vocês receberam como propriedade é impura, atravessem para o outro lado, para a terra que pertence a Jeová, onde fica o tabernáculo de Jeová, e estabeleçam-se no nosso meio, mas não se rebelem contra Jeová nem nos tornem rebeldes por construírem para vocês um altar além do altar de Jeová, nosso Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Quando Acã, filho de Zerá, cometeu um ato de infidelidade com relação ao que era condenado à destruição, não houve indignação contra toda a assembleia de Israel? E ele não foi o único homem a morrer por causa do seu erro.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Então os rubenitas, os gaditas e a meia tribo de Manassés disseram em resposta aos cabeças dos milhares de Israel:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "“O Deus dos deuses, Jeová! O Deus dos deuses, Jeová! Ele sabe, e Israel também saberá. Se fomos rebeldes e infiéis a Jeová, que ele não nos poupe neste dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Se construímos para nós um altar para deixarmos de seguir a Jeová e para fazermos nele ofertas queimadas, ofertas de cereais e sacrifícios de participação em comum, Jeová exigirá punição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Não, nós fizemos isso por receio de que, no futuro, seus filhos digam aos nossos filhos: ‘O que vocês têm a ver com Jeová, o Deus de Israel?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Jeová pôs o Jordão como limite entre nós e vocês, os rubenitas e os gaditas. Vocês não têm parte alguma em Jeová.’ E seus filhos impedirão os nossos filhos de adorar a Jeová.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "“Por isso dissemos: ‘Construamos sem falta um altar para nós, não para ofertas queimadas nem para sacrifícios,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "mas para ser testemunha entre nós e vocês, e entre os nossos descendentes e os descendentes de vocês, de que realizaremos nosso serviço a Jeová diante dele com nossas ofertas queimadas, nossos sacrifícios de participação em comum e outros sacrifícios, para que os seus filhos não digam aos nossos filhos no futuro: “Vocês não têm parte alguma em Jeová.”’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Por causa disso dissemos: ‘Caso eles digam isso a nós e aos nossos descendentes, no futuro, então diremos: “Vejam a réplica do altar de Jeová feita pelos nossos antepassados, não para ofertas queimadas nem para sacrifícios, mas para ser testemunha entre nós e vocês.”’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Jamais nos rebelaremos contra Jeová nem deixaremos hoje de seguir a Jeová, construindo um altar para ofertas queimadas, ofertas de cereais e sacrifícios, além do altar de Jeová, nosso Deus, que está diante do seu tabernáculo!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "Quando o sacerdote Fineias, os maiorais da assembleia e os cabeças dos milhares de Israel que estavam com ele ouviram as palavras ditas pelos descendentes de Rubem, de Gade e de Manassés, ficaram satisfeitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Assim, Fineias, filho de Eleazar, o sacerdote, disse aos descendentes de Rubem, de Gade e de Manassés: “Hoje sabemos que Jeová está no nosso meio, porque vocês não cometeram esse ato de infidelidade contra Jeová. Agora vocês livraram os israelitas das mãos de Jeová.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Então Fineias, filho de Eleazar, o sacerdote, e os maiorais deixaram os rubenitas e os gaditas na terra de Gileade e voltaram para a terra de Canaã, levando a informação aos outros israelitas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "E os israelitas ficaram satisfeitos com o relatório. Os israelitas então louvaram a Deus e não falaram mais em guerrear contra os rubenitas e os gaditas, para destruir a terra em que eles moravam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Então os rubenitas e os gaditas deram um nome ao altar, porque “ele é testemunha entre nós de que Jeová é o verdadeiro Deus”.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 23,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Muito tempo depois de Jeová ter dado a Israel descanso de todos os seus inimigos ao redor, quando Josué já era de idade bem avançada,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Josué convocou todo o Israel, os anciãos, os cabeças, os juízes e os oficiais, e lhes disse: “Eu já sou de idade bem avançada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "E vocês mesmos viram tudo o que Jeová, seu Deus, fez a todas essas nações por sua causa, porque foi Jeová, seu Deus, quem lutou por vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Vejam, eu lhes designei por sortes, como herança para as suas tribos, a terra das nações que ainda restam e a terra de todas as nações que destruí, desde o Jordão até o Grande Mar, no lado oeste.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "E foi Jeová, seu Deus, quem as expulsou de diante de vocês; ele as mandou embora por sua causa, e vocês tomaram posse da terra delas, assim como Jeová, seu Deus, lhes prometeu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "“Agora, sejam muito corajosos para obedecer e cumprir tudo o que está escrito no livro da Lei de Moisés, nunca se desviando dele nem para a direita nem para a esquerda,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "nunca se misturando com essas nações que restam entre vocês. Nem mesmo mencionem o nome dos deuses delas nem jurem por eles, e nunca sirvam a eles nem se curvem diante deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Mas apeguem-se a Jeová, seu Deus, assim como fizeram até hoje.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Pois Jeová expulsará de diante de vocês nações grandes e fortes; até hoje nem um único homem pôde se manter firme diante de vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Um só homem de vocês perseguirá mil, porque Jeová, seu Deus, está lutando por vocês, assim como lhes prometeu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Por isso, sempre tomem cuidado, não deixando de amar a Jeová, seu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "“Mas, se vocês se desviarem e se apegarem às nações que restam no seu meio, e formarem alianças matrimoniais com elas e se misturarem com elas, e elas com vocês,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "estejam certos de que Jeová, seu Deus, não continuará a expulsar essas nações para vocês. Elas serão uma armadilha e um laço, um açoite nas suas costas e espinhos nos seus olhos, até que vocês tenham desaparecido dessa boa terra que Jeová, seu Deus, lhes deu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "“Vejam, estou para morrer, e vocês bem sabem, de todo o seu coração e de toda a sua alma, que não falhou nem sequer uma palavra de todas as boas promessas que Jeová, seu Deus, lhes fez. Todas elas se cumpriram para vocês. Nem sequer uma delas falhou.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Mas, assim como se cumpriram todas as boas promessas que Jeová, seu Deus, lhes fez, assim Jeová trará sobre vocês todas as calamidades que prometeu e os exterminará dessa boa terra que Jeová, seu Deus, lhes deu.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Se vocês violarem o pacto de Jeová, seu Deus, que ele lhes ordenou que guardassem, e se forem servir a outros deuses e se curvarem diante deles, então se acenderá contra vocês a ira de Jeová, e vocês logo desaparecerão da boa terra que ele lhes deu.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 24,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Josué então reuniu todas as tribos de Israel em Siquém e convocou os anciãos de Israel, os cabeças, os juízes e os oficiais, e eles compareceram perante o verdadeiro Deus.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Josué disse a todo o povo: “Assim diz Jeová, o Deus de Israel: ‘Seus antepassados, incluindo Tera, pai de Abraão e pai de Naor, moraram há muito tempo no outro lado do rio Eufrates e eles serviam a outros deuses.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "“‘Com o tempo tirei seu antepassado Abraão do outro lado do rio Eufrates e o fiz percorrer toda a terra de Canaã, e multipliquei a sua descendência. Eu lhe dei Isaque,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "e a Isaque dei Jacó e Esaú. Depois dei a região montanhosa de Seir a Esaú como sua propriedade; e Jacó e seus filhos desceram ao Egito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Mais tarde enviei Moisés e Arão e feri o Egito com pragas; então tirei vocês de lá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Quando tirei os seus pais do Egito e vocês chegaram ao mar, os egípcios perseguiram seus pais com carros de guerra e cavaleiros até o mar Vermelho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "E seus antepassados começaram a clamar a Jeová; então coloquei escuridão entre vocês e os egípcios, e trouxe o mar sobre eles, cobrindo-os; e seus próprios olhos viram o que fiz ao Egito. Depois vocês moraram no deserto por muitos anos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "“‘E levei vocês à terra dos amorreus que moravam do outro lado do Jordão, e eles lutaram contra vocês. Mas eu os entreguei nas suas mãos para que vocês pudessem tomar posse da terra deles, e eu os exterminei de diante de vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então Balaque, filho de Zipor e rei de Moabe, se levantou e lutou contra Israel. Ele convocou Balaão, filho de Beor, para amaldiçoar vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Mas eu não quis escutar Balaão. Assim, ele os abençoou repetidamente, e eu os livrei das mãos deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "“‘Então vocês atravessaram o Jordão e chegaram a Jericó. E os líderes de Jericó, assim como os amorreus, os perizeus, os cananeus, os hititas, os girgaseus, os heveus e os jebuseus lutaram contra vocês, mas eu os entreguei nas suas mãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Enviei na sua frente o sentimento de desânimo, e este os expulsou de diante de vocês, assim como havia feito com os dois reis dos amorreus. Isso não foi feito nem com a espada nem com o arco de vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Assim lhes entreguei uma terra pela qual vocês não trabalharam e cidades que não construíram, e vocês se estabeleceram nelas. Vocês estão comendo de vinhedos e de olivais que não plantaram.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "“Portanto, temam a Jeová e sirvam-no com integridade e fidelidade; eliminem do seu meio os deuses a que seus antepassados serviram do outro lado do rio Eufrates e no Egito, e sirvam a Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Agora, se vocês não acham bom servir a Jeová, escolham hoje a quem servirão, se aos deuses a quem serviram os seus antepassados que estavam do outro lado do rio Eufrates, ou aos deuses dos amorreus em cuja terra vocês estão morando. Mas, quanto a mim e aos da minha casa, serviremos a Jeová.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então o povo disse: “Jamais abandonaremos a Jeová para servir a outros deuses.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Foi Jeová, nosso Deus, quem tirou a nós e a nossos pais da terra do Egito, a terra da escravidão, e quem realizou esses grandes sinais diante dos nossos olhos e quem nos protegeu em todo o caminho em que andamos e entre todos os povos pelos quais passamos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Jeová expulsou todos os povos, incluindo os amorreus, que moraram nesta terra antes de nós. Por isso, nós também serviremos a Jeová, porque ele é o nosso Deus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Josué disse então ao povo: “Vocês não são capazes de servir a Jeová, pois ele é um Deus santo; ele é um Deus que exige devoção exclusiva. Não perdoará as suas transgressões e os seus pecados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Se vocês abandonarem a Jeová e servirem a deuses estrangeiros, ele se voltará contra vocês e os exterminará, depois de lhes ter feito o bem.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Mas o povo disse a Josué: “Não, é a Jeová que serviremos!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Então Josué disse ao povo: “Vocês são testemunhas contra si mesmos de que, de sua própria iniciativa, escolheram servir a Jeová.” Eles responderam: “Somos testemunhas!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "“Portanto, removam os deuses estrangeiros que há entre vocês e inclinem o coração para Jeová, o Deus de Israel.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "O povo disse a Josué: “Serviremos a Jeová, nosso Deus, e obedeceremos à sua voz!”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Assim, naquele dia Josué fez um pacto com o povo e estabeleceu para eles uma lei e um decreto em Siquém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Então Josué escreveu essas palavras no livro da Lei de Deus. Depois pegou uma grande pedra e a colocou debaixo da árvore grande que fica junto ao santuário de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Josué disse ainda a todo o povo: “Vejam! Esta pedra servirá de testemunho contra nós, porque ela ouviu tudo o que Jeová nos disse; e ela servirá de testemunho contra vocês, para que não neguem o seu Deus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Com isso Josué dispensou o povo, e cada um foi para a sua herança.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Depois dessas coisas Josué, filho de Num, o servo de Jeová, morreu com 110 anos de idade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "E eles o enterraram no território da sua herança, em Timnate-Sera, que fica na região montanhosa de Efraim, ao norte do monte Gaás.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Israel continuou servindo a Jeová durante todos os dias de Josué e durante todos os dias dos anciãos que continuaram vivos depois de Josué e que tinham conhecido todos os atos de Jeová a favor de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Os ossos de José, que os israelitas haviam trazido do Egito, foram enterrados em Siquém, no pedaço do campo que Jacó havia adquirido dos filhos de Hamor, pai de Siquém, por 100 peças de dinheiro; e ele se tornou a herança dos filhos de José.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "Também morreu Eleazar, filho de Arão. E o enterraram na colina de Fineias, seu filho, a colina que tinha sido dada a ele na região montanhosa de Efraim.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

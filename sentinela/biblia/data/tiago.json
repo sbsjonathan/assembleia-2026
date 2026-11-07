@@ -1,0 +1,570 @@
+{
+  "nome_do_livro": "Tiago",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Tiago, escravo de Deus e do Senhor Jesus Cristo, às 12 tribos que estão espalhadas:\nSaudações!",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Meus irmãos, considerem como motivo de verdadeira alegria o fato de enfrentarem diversas provações,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "visto que vocês sabem que a qualidade provada da sua fé produz perseverança.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas deixem que a perseverança complete a sua obra, para que vocês sejam completos e sãos em todos os sentidos, sem lhes faltar nada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Portanto, se falta sabedoria a algum de vocês, que ele persista em pedi-la a Deus — pois ele dá a todos generosamente, sem censurar —, e ela lhe será dada.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas que ele persista em pedir com fé, sem duvidar de nada, pois quem duvida é semelhante a uma onda do mar, que o vento leva de um lado para o outro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "De fato, essa pessoa não deve esperar receber algo de Jeová;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "ela é indecisa, instável em todos os seus caminhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Que o irmão humilde, porém, se alegre por causa do seu enaltecimento,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "e o rico por causa da sua humilhação; porque o rico passará como a flor do campo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois o sol se levanta com o seu calor abrasador e faz a planta secar, então sua flor cai e sua beleza desaparece. Assim também o rico desaparecerá em meio aos seus empreendimentos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Feliz aquele que continua a perseverar em provação, porque ao ser aprovado receberá a coroa da vida, que Jeová prometeu aos que continuam a amá-lo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Quando estiver sob provação, que ninguém diga: “Estou sendo provado por Deus.” Pois, com coisas más, Deus não pode ser provado, nem prova a ninguém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas cada um é provado ao ser atraído e seduzido pelo seu próprio desejo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Então o desejo, quando se torna fértil, dá à luz o pecado; e o pecado, quando consumado, produz a morte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Não se enganem, meus amados irmãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Toda boa dádiva e todo presente perfeito vem de cima, desce do Pai das luzes celestes, o qual não muda como sombras inconstantes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Foi da sua vontade nos produzir por meio da palavra da verdade, para que fôssemos, de certa forma, primícias das suas criaturas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Tenham isto em mente, meus amados irmãos: todos devem ser prontos para ouvir, mas devem demorar para falar e demorar para ficar irados;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "pois a ira do homem não produz a justiça de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Portanto, abandonem toda imundície e todo vestígio de maldade, e aceitem com brandura a implantação da palavra que é capaz de salvar vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Contudo, tornem-se cumpridores da palavra, e não apenas ouvintes, enganando-se com raciocínios falsos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Porque, se alguém é ouvinte da palavra e não cumpridor, é semelhante a um homem que olha seu próprio rosto num espelho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Pois ele olha para si mesmo, vai embora e logo esquece como ele é.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Mas aquele que examina com cuidado a lei perfeita que pertence à liberdade, e continua nela, tornou-se não um ouvinte que facilmente se esquece, mas um cumpridor da obra; e ele será feliz no que faz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Se alguém acha que adora a Deus, mas não domina a língua, ele está enganando seu próprio coração, e a sua adoração é fútil.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "A forma de adoração que é pura e imaculada do ponto de vista de nosso Deus e Pai é esta: cuidar dos órfãos e das viúvas nas suas dificuldades, e manter-se sem mancha do mundo.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Meus irmãos, será que vocês estão se apegando à fé no nosso glorioso Senhor Jesus Cristo e ao mesmo tempo usando de favoritismo?",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois, se um homem com anéis de ouro nos dedos e com roupa magnífica entra na sua reunião, mas entra também um pobre, com roupa imunda,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "será que vocês olham com favor para aquele que usa roupa magnífica e dizem: “Sente-se aqui, num lugar de honra”, mas dizem ao pobre: “Fique de pé”, ou: “Sente-se ali no chão, ao lado do apoio para os meus pés”?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Se isso acontece, não é verdade que vocês fazem distinções de classe entre si e se tornaram juízes que tomam decisões perversas?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Escutem, meus amados irmãos. Não é verdade que Deus escolheu os que são pobres aos olhos do mundo para serem ricos na fé e herdeiros do Reino que ele prometeu aos que o amam?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Mas vocês desonram o pobre. Não são os ricos que oprimem vocês e os arrastam perante os tribunais?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Não são eles que blasfemam o nome honroso que vocês levam?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Se vocês cumprem a lei régia, segundo a passagem das Escrituras: “Ame o seu próximo como a si mesmo”, fazem muito bem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Mas, se vocês continuam mostrando favoritismo, estão cometendo um pecado e são condenados pela lei como transgressores.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Pois se alguém obedece a toda a Lei, mas dá um passo em falso num só ponto, torna-se infrator da Lei inteira.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois aquele que disse: “Não cometa adultério” disse também: “Não assassine.” Portanto, se você não comete adultério, mas assassina, torna-se transgressor da Lei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Falem e comportem-se como pessoas que serão julgadas pela lei de um povo livre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Pois quem não pratica a misericórdia será julgado sem misericórdia. A misericórdia triunfa sobre o julgamento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "De que adianta, meus irmãos, alguém dizer que tem fé, se não tem obras? Será que essa fé pode salvá-lo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Se um irmão ou uma irmã não tem o que vestir nem alimento suficiente para o dia,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "e um de vocês lhe diz: “Vá em paz; mantenha-se aquecido e bem alimentado”, mas não lhe dá o que ele necessita para o corpo, de que adianta isso?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Assim também a fé por si só, sem obras, está morta.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Contudo, alguém dirá: “Você tem fé e eu tenho obras. Mostre-me a sua fé sem as obras, e eu lhe mostrarei a minha fé pelas minhas obras.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Você crê que há um só Deus? Faz muito bem. Contudo, os demônios creem e estremecem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Mas quer ver, ó homem vão, como a fé sem obras é inútil?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Não foi Abraão, nosso pai, declarado justo por obras depois de ter oferecido Isaque, seu filho, no altar?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Veja que a sua fé agiu junto com as suas obras e que a sua fé se tornou perfeita pelas suas obras,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "e cumpriu-se a passagem das Escrituras que diz: “Abraão depositou fé em Jeová, e isso lhe foi creditado como justiça”, e ele veio a ser chamado amigo de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Vejam que o homem será declarado justo por obras, e não apenas pela fé.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Da mesma maneira, não foi também Raabe, a prostituta, declarada justa por obras, depois de receber os mensageiros hospitaleiramente e de mandá-los embora por outro caminho?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Realmente, assim como o corpo sem espírito está morto, assim também a fé sem obras está morta.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Não muitos de vocês deviam se tornar instrutores, meus irmãos, pois vocês sabem que nós receberemos um julgamento mais pesado.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Pois todos nós tropeçamos muitas vezes. Se alguém não tropeça em palavra, é homem perfeito, capaz de refrear também todo o seu corpo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Se colocamos freios na boca dos cavalos para que nos obedeçam, guiamos também todo o seu corpo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Vejam também os navios: embora sejam grandes e impelidos por ventos fortes, são dirigidos por um leme muito pequeno, para onde o timoneiro deseja ir.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Do mesmo modo, a língua é uma parte pequena do corpo, mas se gaba de grandes coisas. Vejam como basta uma chama muito pequena para incendiar uma grande floresta!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "A língua também é um fogo. A língua representa um mundo de injustiça entre os membros do nosso corpo, pois contamina todo o corpo e incendeia por inteiro o curso da vida; suas chamas vêm da Geena.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Pois toda espécie de animais selvagens, de aves, de répteis e de animais marinhos pode ser domada e tem sido domada pelos humanos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Mas nenhum humano pode domar a língua. Ela é indisciplinada e prejudicial, cheia de veneno mortífero.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Com ela louvamos a Jeová, o Pai, e com ela amaldiçoamos homens que vieram a existir “à semelhança de Deus”.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Da mesma boca saem bênçãos e maldições. Meus irmãos, não é correto que as coisas sejam assim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Será que uma fonte faz brotar pela mesma abertura água doce e água amarga?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Meus irmãos, será que a figueira pode produzir azeitonas, ou a videira figos? Assim também a fonte de água salgada não pode produzir água doce.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Quem é sábio e entendido entre vocês? Que ele mostre, pela sua boa conduta, obras realizadas com a brandura que vem da sabedoria.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Mas, se vocês têm no coração ciúme amargo e rivalidade, não se gabem, não mintam contra a verdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Essa não é a sabedoria que desce de cima; é terrena, animal, demoníaca.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Porque onde houver ciúme e rivalidade, ali haverá também desordem e todo tipo de coisa ruim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Mas a sabedoria de cima é primeiramente pura, depois pacífica, razoável, pronta para obedecer, cheia de misericórdia e de bons frutos, imparcial, sem hipocrisia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Além disso, o fruto da justiça é semeado em condições pacíficas para os pacificadores.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "De onde vêm as guerras e as lutas entre vocês? Não vêm dos seus desejos carnais, que travam um combate dentro de vocês?",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Vocês desejam, mas não têm. Continuam a assassinar e a cobiçar, mas não conseguem obter o que querem. Continuam a lutar e a guerrear. Vocês não têm porque não pedem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Quando pedem, não recebem, porque estão pedindo com o objetivo errado, para gastar nos seus desejos carnais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Adúlteras, vocês não sabem que a amizade com o mundo é inimizade com Deus? Portanto, quem quer ser amigo do mundo faz de si mesmo um inimigo de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Ou vocês acham que é sem motivo que as Escrituras dizem: “O espírito que passou a morar em nós continua cheio de desejos invejosos”?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "No entanto, a bondade imerecida que Ele concede é maior. Por isso, as Escrituras dizem: “Deus se opõe aos arrogantes, mas concede bondade imerecida aos humildes.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Portanto, sujeitem-se a Deus; mas oponham-se ao Diabo, e ele fugirá de vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Acheguem-se a Deus, e ele se achegará a vocês. Limpem as mãos, ó pecadores, e purifiquem o coração, ó indecisos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Fiquem tristes, lamentem e chorem. Que o seu riso se transforme em choro, e a sua alegria em tristeza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Humilhem-se aos olhos de Jeová, e ele os enaltecerá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Parem de falar uns contra os outros, irmãos. Quem fala contra um irmão ou julga seu irmão fala contra a lei e julga a lei. Ora, se você julga a lei, não é cumpridor da lei, mas juiz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Há somente um que é Legislador e Juiz, aquele que é capaz de salvar e de destruir. Mas você, quem é você para julgar o seu próximo?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Agora escutem, vocês que dizem: “Hoje ou amanhã viajaremos para aquela cidade, ali passaremos um ano, negociaremos e ganharemos dinheiro”,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "embora nem saibam como será a sua vida amanhã. Porque vocês são uma neblina que aparece por um instante e depois desaparece.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Em vez disso, vocês deviam dizer: “Se Jeová quiser, viveremos e faremos isso ou aquilo.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mas o que acontece é que vocês se orgulham das suas arrogantes pretensões. Todo esse orgulho é mau.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Portanto, se alguém sabe fazer o que é certo e ainda assim não o faz, está pecando.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Agora, ricos, escutem! Chorem e lamentem por causa das desgraças que virão sobre vocês.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Suas riquezas apodreceram e suas roupas foram roídas pelas traças.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Seu ouro e sua prata foram consumidos pela ferrugem, e a ferrugem deles servirá de testemunho contra vocês e consumirá a sua carne. O que vocês acumularam será como um fogo nos últimos dias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Vejam! O salário que vocês deixaram de pagar aos trabalhadores que colheram os seus campos está clamando, e os clamores por ajuda da parte dos ceifeiros chegaram aos ouvidos de Jeová dos exércitos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Vocês tiveram na terra uma vida de luxo, entregue aos prazeres. Engordaram o coração no dia da matança.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Vocês condenaram, assassinaram o justo. Será que ele não se opõe a vocês?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Portanto, sejam pacientes, irmãos, até a presença do Senhor. Vejam como o lavrador fica esperando o precioso fruto da terra, aguardando-o com paciência até chegarem as primeiras e as últimas chuvas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Vocês também, exerçam paciência; fortaleçam o coração, porque a presença do Senhor se aproxima.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Não resmunguem uns contra os outros, irmãos, para que não sejam julgados. Vejam! O Juiz está às portas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Irmãos, no que se refere a suportar sofrimentos e a exercer paciência, tomem como modelo os profetas, que falaram em nome de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Vejam, consideramos felizes os que perseveraram. Vocês ouviram falar da perseverança de Jó e viram o resultado que Jeová proporcionou; viram que Jeová tem grande compaixão e é misericordioso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Acima de tudo, meus irmãos, parem de jurar, quer pelo céu, quer pela terra, e parem de fazer qualquer outro juramento. Mas que o seu “sim” signifique sim, e o seu “não”, não, para que vocês não fiquem sujeitos a julgamento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Há alguém sofrendo entre vocês? Que ele persista em orar. Há alguém animado? Que ele cante salmos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Há alguém doente entre vocês? Que ele chame os anciãos da congregação, e que eles orem por ele, colocando óleo nele em nome de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "E a oração de fé fará que o doente fique bom, e Jeová o levantará. Também, se ele tiver cometido pecados, será perdoado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Portanto, confessem abertamente os seus pecados uns aos outros e orem uns pelos outros, para que sejam curados. A súplica do justo tem um efeito poderoso.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Elias era um homem com sentimentos iguais aos nossos; contudo, quando ele orou com fervor para que não chovesse, não choveu naquela terra por três anos e seis meses.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Então ele orou novamente, e o céu deu chuva, e a terra produziu frutos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Meus irmãos, se alguém entre vocês for desencaminhado da verdade e outro o fizer voltar,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "saibam que quem faz um pecador voltar do seu caminho errado o salvará da morte e cobrirá uma multidão de pecados.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

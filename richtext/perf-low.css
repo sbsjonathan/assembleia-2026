@@ -1,0 +1,65 @@
+:root.perf-low #glassFx,
+:root.perf-low .leitor-fx {
+  display: none !important;
+}
+
+:root.perf-low .pill-container,
+:root.perf-low .font-menu,
+:root.perf-low .picker-sheet,
+:root.perf-low .leitor-toast {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+:root.perf-low .pill-container {
+  background: rgba(248, 248, 246, 0.98) !important;
+}
+
+:root[data-theme="dark"].perf-low .pill-container {
+  background: rgba(34, 34, 36, 0.98) !important;
+}
+
+:root.perf-low .kbd-toolbar,
+:root.perf-low .pill-container,
+:root.perf-low .tool-slot,
+:root.perf-low .tool-subgroup,
+:root.perf-low .tool-btn,
+:root.perf-low .font-menu,
+:root.perf-low .font-option,
+:root.perf-low .toggle-arrow,
+:root.perf-low .toggle-arrow .triangle,
+:root.perf-low .text-plus,
+:root.perf-low .row,
+:root.perf-low .node-toggle,
+:root.perf-low .node-text,
+:root.perf-low .node-paragraph,
+:root.perf-low .bbl,
+:root.perf-low .bbl--aura,
+:root.perf-low .picker-sheet,
+:root.perf-low .picker-tab,
+:root.perf-low .picker-preview,
+:root.perf-low .picker-swatch {
+  transition: none !important;
+  animation: none !important;
+}
+
+:root.perf-low .bbl--aura,
+:root.perf-low .leitor-fx__fog,
+:root.perf-low .leitor-fx__smoke,
+:root.perf-low .leitor-fx__fog canvas,
+:root.perf-low .leitor-fx__smoke canvas {
+  filter: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+:root.perf-low .editor > .node-paragraph:only-child .paragraph-content[data-empty="true"]::before {
+  animation: none !important;
+  background-image: none !important;
+  background-size: auto !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: initial !important;
+  color: var(--placeholder-color) !important;
+  text-shadow: none !important;
+}

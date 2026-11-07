@@ -1,0 +1,810 @@
+{
+  "nome_do_livro": "Efésios",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Paulo, apóstolo de Cristo Jesus pela vontade de Deus, aos santos que estão em Éfeso e são fiéis em união com Cristo Jesus:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Que vocês tenham bondade imerecida e paz da parte de Deus, nosso Pai, e do Senhor Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Louvado seja o Deus e Pai do nosso Senhor Jesus Cristo, pois ele nos abençoou em união com Cristo com toda bênção espiritual nos lugares celestiais,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "visto que nos escolheu para estar em união com ele antes da fundação do mundo, para que fôssemos santos e sem defeito diante dele em amor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois ele predeterminou que fôssemos adotados como seus filhos por meio de Jesus Cristo, segundo o seu agrado e a sua vontade,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "para o louvor da sua gloriosa bondade imerecida, que ele nos concedeu bondosamente por meio do seu Filho amado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Por intermédio dele temos o livramento por resgate, por meio do sangue dele, sim, o perdão das nossas falhas, segundo as riquezas da sua bondade imerecida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Essa bondade imerecida ele nos deu abundantemente em forma de toda sabedoria e entendimento",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "por nos fazer saber o segredo sagrado da sua vontade. Segundo o seu agrado, ele mesmo determinou o propósito",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "de estabelecer uma administração quando se completassem os tempos determinados, para reunir no Cristo todas as coisas, as coisas nos céus e as coisas na terra. Sim, nele,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "com quem estamos em união e fomos designados herdeiros, tendo sido predeterminados segundo o propósito daquele que realiza todas as coisas de acordo com o que a sua vontade determina,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "a fim de que servíssemos para o louvor da sua glória, nós, que fomos os primeiros a esperar no Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mas vocês também passaram a esperar nele depois de terem ouvido a palavra da verdade, as boas novas a respeito da salvação de vocês. Depois de terem crido, Deus os selou por meio dele com o prometido espírito santo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "que é uma garantia da nossa herança, com o objetivo de livrar por um resgate a propriedade dele mesmo, para o Seu glorioso louvor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "É por isso que eu também, desde que ouvi falar da fé que vocês têm no Senhor Jesus e do amor que demonstram para com todos os santos,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "não paro de dar graças por vocês. Continuo a mencioná-los nas minhas orações,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "para que o Deus do nosso Senhor Jesus Cristo, o Pai glorioso, lhes dê um espírito de sabedoria e de revelação, referente ao conhecimento exato dele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Ele iluminou os olhos do coração de vocês, para que saibam a que esperança ele os chamou, quais são as gloriosas riquezas que ele reserva como herança para os santos",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "e como é extraordinária a grandeza do seu poder em nós, crentes. Essa grandeza é demonstrada na atuação da sua poderosa força,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "que ele usou com relação a Cristo quando o levantou dentre os mortos e o fez sentar-se à sua direita nos lugares celestiais,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "muito acima de todo governo, autoridade, poder, domínio e todo nome que possa ser dado, não só neste sistema de coisas, mas também no que virá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Sujeitou-lhe também todas as coisas debaixo dos pés e o fez cabeça sobre todas as coisas no que se refere à congregação,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "que é o seu corpo, a plenitude daquele que em tudo completa todas as coisas.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Além disso, Deus deu vida a vocês, embora estivessem mortos por causa das suas falhas e pecados,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "nos quais andavam antes segundo o sistema deste mundo, segundo o governante da autoridade do ar, o espírito que agora atua nos filhos da desobediência.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Sim, todos nós nos comportávamos antes entre eles de acordo com os desejos da nossa carne, satisfazendo a vontade do corpo e da mente, e éramos por natureza merecedores da ira, assim como os demais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Mas Deus é rico em misericórdia e, por causa do grande amor com que nos amou,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "nos deu vida junto com o Cristo, mesmo quando estávamos mortos por causa das nossas falhas — por bondade imerecida vocês foram salvos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Além disso, Deus nos levantou junto com ele e nos fez sentar junto com ele nos lugares celestiais em união com Cristo Jesus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "a fim de que, nos futuros sistemas de coisas, ele demonstre as riquezas extraordinárias da sua bondade imerecida por meio de sua benevolência para conosco, em união com Cristo Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Graças a essa bondade imerecida vocês foram salvos por meio da fé, e isso não se deve a vocês; na verdade, é dádiva de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Não, não é resultado de obras, a fim de que ninguém tenha razão para se orgulhar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Nós somos trabalho das mãos de Deus e fomos criados em união com Cristo Jesus para realizarmos as boas obras que Deus determinou com antecedência para que andássemos nelas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Portanto, lembrem-se de que vocês, que são por nascimento pessoas das nações, antes eram chamados “incircuncisão” por aqueles chamados “circuncisão”, a qual é feita na carne por mãos humanas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Naquele tempo vocês estavam sem Cristo, apartados do estado de Israel, estranhos aos pactos da promessa; não tinham esperança e estavam sem Deus no mundo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mas agora, em união com Cristo Jesus, vocês, que antes estavam longe, estão perto pelo sangue do Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Pois ele é a nossa paz, aquele que de dois grupos fez um só e que destruiu o muro que havia no meio, que os separava.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Por meio de sua carne, ele aboliu a inimizade, a Lei de mandamentos em forma de decretos, para fazer dos dois grupos, que estão em união com ele, um novo homem, e fazer paz,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "e para, por meio da estaca, reconciliar plenamente com Deus ambos os povos em um só corpo, pois ele matou a inimizade por meio de si mesmo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "E ele veio e declarou as boas novas de paz a vocês, que estavam longe, e paz aos que estavam perto;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "pois, por meio dele, nós, ambos os povos, temos livre acesso ao Pai por um só espírito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Assim, vocês não são mais estranhos e estrangeiros, mas são concidadãos dos santos e membros da família de Deus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "e foram edificados sobre o alicerce dos apóstolos e dos profetas, sendo o próprio Cristo Jesus a pedra angular de alicerce.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Em união com ele, o edifício inteiro, tendo todas as partes harmoniosamente unidas, cresce para se tornar um templo santo para Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Em união com ele, vocês também estão sendo edificados juntamente para se tornar um lugar para Deus habitar por espírito.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Por isso, eu, Paulo, o prisioneiro por causa de Cristo Jesus em benefício de vocês, as pessoas das nações ...",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Suponho que vocês ouviram falar que eu recebi a responsabilidade de administrar a bondade imerecida de Deus em seu benefício,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "que o segredo sagrado me foi dado a conhecer por uma revelação, conforme já escrevi resumidamente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Assim, ao lerem isso, vocês podem se dar conta da compreensão que eu tenho do segredo sagrado do Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Em outras gerações, este segredo não foi dado a conhecer aos filhos dos homens assim como agora foi revelado por espírito aos seus santos apóstolos e profetas:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "que pessoas das nações seriam, em união com Cristo Jesus e por meio das boas novas, co-herdeiros, membros do mesmo corpo e participantes conosco da promessa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Eu me tornei ministro disso segundo a dádiva da bondade imerecida de Deus, que me foi concedida por meio da atuação do seu poder.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "A mim, alguém menor que o menor de todos os santos, foi concedida essa bondade imerecida, para que eu declarasse às nações as boas novas a respeito das riquezas insondáveis do Cristo",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "e fizesse com que todos vissem a administração do segredo sagrado que durante as épocas esteve escondido em Deus, que criou todas as coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O objetivo era que, por meio da congregação, se desse agora a conhecer aos governos e às autoridades nos lugares celestiais a grandemente diversificada sabedoria de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Isso está de acordo com o propósito eterno que ele formou com relação ao Cristo, nosso Senhor Jesus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "por intermédio de quem temos esta liberdade no falar e podemos nos aproximar de Deus livremente com confiança, por meio de nossa fé em Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Portanto, peço-lhes que não desistam por causa dos sofrimentos que estou suportando por vocês, pois eles significam glória para vocês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Por isso, eu me ajoelho diante do Pai,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "a quem toda família no céu e na terra deve o seu nome.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Oro para que ele, por meio de Sua grande glória, lhes conceda serem fortalecidos na pessoa que são no íntimo, com poder, por meio de seu espírito,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "e para que, por meio da sua fé, o Cristo more em seu coração com amor. Que vocês sejam arraigados e estabelecidos no alicerce,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "a fim de que, junto com todos os santos, sejam plenamente capazes de compreender qual é a largura, o comprimento, a altura e a profundidade,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "e de conhecer o amor do Cristo, que é superior ao conhecimento, a fim de que vocês fiquem cheios de toda a plenitude que Deus dá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "E àquele que, segundo o Seu poder que atua em nós, pode fazer mais e infinitamente além de tudo que peçamos ou possamos imaginar,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "a ele seja dada a glória por meio da congregação e de Cristo Jesus, por todas as gerações, para todo o sempre. Amém.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Portanto eu, o prisioneiro no Senhor, suplico-lhes que andem de um modo digno da chamada com que foram chamados,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "com toda a humildade e brandura, com paciência, suportando uns aos outros em amor,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "esforçando-se diligentemente para manter a unidade do espírito, no vínculo unificador da paz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Há um só corpo e um só espírito, assim como há uma só esperança a que foram chamados;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "há um só Senhor, uma só fé, um só batismo;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "um só Deus e Pai de todos, que é sobre todos, por meio de todos e em todos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Cada um de nós recebeu bondade imerecida na medida em que o Cristo concedeu a dádiva.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Pois as Escrituras dizem: “Quando ele subiu ao alto, levou consigo cativos; deu dádivas em homens.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Ora, o que significa a expressão “ele subiu”, senão que ele também desceu às regiões mais baixas, isto é, à terra?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "O mesmo que desceu é também aquele que subiu muito acima de todos os céus, para dar plenitude a todas as coisas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E ele deu alguns como apóstolos, alguns como profetas, alguns como evangelizadores, alguns como pastores e instrutores,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "para o reajustamento dos santos, para a obra ministerial, para edificar o corpo do Cristo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "até que todos alcancemos a unidade da fé e do conhecimento exato do Filho de Deus, o estado de homem adulto, alcançando a estatura da plenitude do Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Então não devemos mais ser crianças, jogados como que por ondas e levados para lá e para cá por todo vento de ensinamentos, pela esperteza de homens, pela astúcia de artimanhas enganosas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Mas, falando a verdade, cresçamos em todas as coisas, por amor, em direção àquele que é a cabeça, Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Por meio dele, todo o corpo é harmoniosamente unido e coordenado mediante as juntas que suprem o que é necessário. Quando cada membro funciona bem, isso contribui para o desenvolvimento do corpo, à medida que edifica a si mesmo em amor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Portanto, digo e os exorto no Senhor: não andem mais como andam as pessoas das nações, na futilidade da sua mente.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Elas estão mentalmente em escuridão e apartadas da vida que pertence a Deus, por causa da ignorância que há nelas, por causa da insensibilidade do seu coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Tendo perdido todo o senso moral, entregaram-se à conduta insolente para praticar com ganância todo tipo de impureza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Mas vocês não aprenderam que o Cristo seja assim,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "se de fato ouviram a ele e foram ensinados por meio dele, de acordo com a verdade que está em Jesus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Vocês foram ensinados que devem abandonar a velha personalidade, que está em harmonia com o proceder anterior de vocês e que está sendo corrompida segundo os desejos enganosos dela.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Continuem a renovar a sua maneira de pensar",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "e revistam-se da nova personalidade, que foi criada segundo a vontade de Deus, em verdadeira justiça e lealdade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Portanto, visto que vocês abandonaram a mentira, falem a verdade, cada um com o seu próximo, pois somos membros que pertencem uns aos outros.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Fiquem irados, mas não pequem; não deixem que o sol se ponha enquanto ainda estiverem irados;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "não deem chance ao Diabo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Quem furta não furte mais; em vez disso, trabalhe arduamente, fazendo com as mãos um bom trabalho, a fim de ter algo para repartir com alguém em necessidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Não saia da boca de vocês nenhuma palavra pervertida, ⁕ mas somente o que for bom para a edificação, conforme a necessidade, para transmitir aos ouvintes o que é benéfico.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "E não entristeçam o espírito santo de Deus, com que vocês foram selados para um dia de livramento por resgate.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Abandonem todo tipo de ressentimento, ira, raiva, gritaria e palavras ofensivas, junto com toda a maldade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Mas sejam bondosos uns com os outros, ternamente compassivos, perdoando liberalmente uns aos outros, assim como Deus os perdoou liberalmente por Cristo.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Portanto, tornem-se imitadores de Deus, como filhos amados,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "e continuem andando em amor, assim como também o Cristo nos amou e se entregou por nós como oferta e sacrifício, um aroma agradável a Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "A imoralidade sexual, todo tipo de impureza e a ganância não sejam nem mesmo mencionadas entre vocês, assim como é próprio de pessoas santas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "nem conduta vergonhosa, nem conversa tola, nem brincadeiras obscenas — coisas que não são apropriadas —; mas, em vez disso, deem graças.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Pois isto vocês sabem e reconhecem por si mesmos: ninguém que pratica imoralidade sexual, nenhuma pessoa impura, nem gananciosa — que significa ser idólatra — tem herança alguma no Reino do Cristo e de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Que ninguém os engane com palavras vãs, pois, por causa dessas coisas, a ira de Deus vem sobre os filhos da desobediência.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Portanto, não sejam parceiros deles;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "pois antes vocês eram escuridão, mas agora são luz em união com o Senhor. Continuem andando como filhos da luz,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "pois o fruto da luz consiste em tudo o que é bom, justo e verdadeiro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Certifiquem-se sempre do que agrada ao Senhor",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "e parem de participar nas obras infrutíferas da escuridão; em vez disso, exponham-nas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Pois as coisas que eles fazem em segredo são vergonhosas até mesmo para mencionar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mas todas as coisas que são expostas são reveladas pela luz, pois tudo o que é revelado é luz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Por isso se diz: “Acorde, ó você que dorme, e levante-se dentre os mortos, e o Cristo o iluminará.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Assim, estejam bem atentos para não andarem como tolos, mas como sábios,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "usando o seu tempo do melhor modo possível, porque os dias são maus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Portanto, parem de ser insensatos, mas compreendam qual é a vontade de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Também, não se embriaguem com vinho, em que há devassidão, mas fiquem cheios de espírito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Falem uns aos outros com salmos, louvores a Deus e cânticos espirituais, cantando e acompanhando a si mesmos com música no coração, para Jeová,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "dando sempre graças por todas as coisas ao nosso Deus e Pai, em nome do nosso Senhor Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Estejam sujeitos uns aos outros, no temor de Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "A esposa esteja sujeita ao marido, como ao Senhor,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "porque o marido é cabeça da esposa, assim como o Cristo é cabeça da congregação e salvador desse corpo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "De fato, assim como a congregação está sujeita ao Cristo, a esposa também deve estar sujeita ao marido, em tudo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "Marido, continue a amar a sua esposa, assim como também o Cristo amou a congregação e se entregou por ela",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "para santificar a congregação, purificando-a com o banho de água por meio da palavra,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "a fim de apresentá-la a si mesmo em todo o seu esplendor, sem mancha nem ruga, nem qualquer coisa semelhante, mas santa e sem defeito.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Do mesmo modo, o marido deve amar a esposa como ao seu próprio corpo. O homem que ama a sua esposa, ama a si mesmo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "pois nenhum homem jamais odiou o próprio corpo, mas o alimenta e cuida dele, assim como o Cristo faz com a congregação,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "porque somos membros do seu corpo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "“Por essa razão o homem deixará seu pai e sua mãe e se apegará à sua esposa, e os dois serão uma só carne.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "É grande esse segredo sagrado. Digo isso, porém, a respeito de Cristo e da congregação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "No entanto, cada um de vocês ame a sua esposa como a si mesmo; por outro lado, a esposa deve ter profundo respeito pelo marido.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Filhos, sejam obedientes aos seus pais em união com o Senhor, pois isso é justo.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“Honre seu pai e sua mãe” — esse é o primeiro mandamento com uma promessa:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "“Para que tudo vá bem com você, e você permaneça por muito tempo na terra.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "E pais, não irritem os seus filhos, mas continuem a criá-los na disciplina e na instrução de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Escravos, sejam obedientes aos seus senhores humanos, com temor e tremor, na sinceridade do seu coração, como ao Cristo,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "não apenas quando estiverem sendo observados, só para agradar a homens, mas como escravos de Cristo, fazendo de toda a alma a vontade de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Sejam escravos com uma boa atitude, como que servindo a Jeová, e não a homens,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "pois vocês sabem que Jeová retribuirá a cada um qualquer bem que fizer, seja ele escravo, seja livre.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Vocês também, senhores de escravos, continuem a tratá-los do mesmo modo, sem ameaças, pois vocês sabem que o Senhor, tanto deles como seu, está nos céus, e com ele não há parcialidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Finalmente, continuem a ser fortalecidos no Senhor e na sua poderosa força.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Vistam a armadura completa de Deus, para que possam se manter firmes contra as artimanhas do Diabo;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "pois temos uma luta, não contra sangue e carne, mas contra os governos, contra as autoridades, contra os governantes mundiais desta escuridão, contra as forças espirituais malignas nos lugares celestiais.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Por essa razão, vistam a armadura completa de Deus, para que possam resistir no dia mau e, depois de terem feito tudo, se manter firmes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Portanto, mantenham-se firmes, usando o cinturão da verdade, vestindo a couraça da justiça",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "e tendo os pés calçados com a prontidão para declarar as boas novas de paz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Além de tudo isso, usem o grande escudo da fé, com o qual poderão apagar todas as flechas ardentes do Maligno.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Aceitem também o capacete da salvação e a espada do espírito, isto é, a palavra de Deus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "ao passo que, com toda forma de oração e súplica, em todas as ocasiões, vocês continuam orando no espírito. E, para esse fim, fiquem despertos, fazendo constantemente súplica a favor de todos os santos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Orem também por mim, para que me sejam dadas as palavras quando eu abrir a boca, a fim de que eu consiga falar corajosamente ao tornar conhecido o segredo sagrado das boas novas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "pelas quais atuo como embaixador preso em correntes, e que eu fale com coragem sobre elas, como devo fazer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "E, para que vocês saibam também da minha situação e de como estou passando, Tíquico, amado irmão e ministro fiel no Senhor, lhes informará de tudo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Por isso mesmo eu o envio a vocês, para que saibam como estamos e para que ele lhes console o coração.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Que os irmãos tenham paz e amor com fé da parte de Deus, o Pai, e do Senhor Jesus Cristo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Que a bondade imerecida esteja com todos os que amam o nosso Senhor Jesus Cristo com um amor indestrutível.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

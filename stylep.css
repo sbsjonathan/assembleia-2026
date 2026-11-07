@@ -1,0 +1,160 @@
+/* Fonts are bundled locally by shared/typography.css. */
+
+:root {
+  --cor-global: #4f73c3;
+  --alt-lin: 1.5;
+  --tamanho-fonte: 16px;
+  --font-base-default: 16;
+  --font-base-global: 16px;
+  --font-scale-global: 1;
+  --espaco-bloco: calc(16px * var(--font-scale-global));
+
+  --bg-body: #ffffff;
+  --text-main: #1a1a1a;
+  --text-muted: #666666;
+  --link-color: #336699;
+  --border-color: rgba(0,0,0,0.16);
+  --btn-disabled-bg: #999999;
+  --btn-disabled-text: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-body: #000000;
+  --text-main: #f2f2f7;
+  --text-muted: #8e8e93;
+  --link-color: #5ac8fa;
+  --border-color: rgba(255,255,255,0.15);
+  --btn-disabled-bg: #3a3a3c;
+  --btn-disabled-text: #8e8e93;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  font-size: var(--font-base-global);
+  padding-top: env(safe-area-inset-top, 0px);
+  transition: font-size 0.2s ease-in-out, background-color 0.3s ease, color 0.3s ease;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: env(safe-area-inset-top, 0px);
+  background-color: var(--bg-body);
+  z-index: 15;
+  pointer-events: none;
+}
+
+#img-topo {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: none;
+}
+
+#img-topo img {
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  display: block;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.programacao {
+  padding: calc(20px * var(--font-scale-global));
+}
+
+.dia {
+  color: var(--cor-global);
+  font-size: calc(28px * var(--font-scale-global));
+  font-weight: bold;
+  margin-top: 3px;
+  margin-bottom: var(--espaco-bloco);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tema {
+  font-size: calc(18px * var(--font-scale-global));
+  margin-bottom: var(--espaco-bloco);
+  font-weight: normal;
+}
+
+.txt-tema {
+  color: var(--text-muted);
+}
+
+.bbl,
+.cantico-ref {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.sec {
+  color: var(--cor-global);
+  font-weight: bold;
+  font-size: calc(22px * var(--font-scale-global));
+  margin-bottom: var(--espaco-bloco);
+}
+
+.hora {
+  font-weight: bold;
+  color: var(--cor-global);
+}
+
+p {
+  line-height: var(--alt-lin);
+  margin-top: 0;
+  margin-bottom: var(--espaco-bloco);
+}
+
+ul {
+  list-style: none;
+  padding-left: calc(24px * var(--font-scale-global));
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li {
+  position: relative;
+  padding-left: calc(14px * var(--font-scale-global));
+  margin-top: 0;
+  margin-bottom: var(--espaco-bloco);
+  line-height: var(--alt-lin);
+}
+
+li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: calc(-2px * var(--font-scale-global));
+  font-size: 1.18em;
+}
+
+.capitalize {
+  color: var(--cor-global);
+  font-weight: bold;
+}
+/* Keep the programme and navigation at their original interface size. The
+   saved reading level controls the note text and Biblical passage previews. */
+html[data-font-scope="interface"] .clickable-asmb,
+html[data-font-scope="interface"] #modal-biblia-corpo p {
+  font-size: var(--read-size, 19.36px);
+}
+.assembly-home { --accent: var(--cor-global, #604184); }

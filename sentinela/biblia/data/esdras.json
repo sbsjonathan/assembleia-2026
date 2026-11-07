@@ -1,0 +1,1455 @@
+{
+  "nome_do_livro": "Esdras",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "No primeiro ano de Ciro, rei da Pérsia, a fim de que se cumprisse a palavra de Jeová falada por Jeremias, Jeová despertou o espírito de Ciro, rei da Pérsia, para que ele fizesse em todo o seu reino uma proclamação, que ele também registrou por escrito. Dizia o seguinte:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "“Assim diz Ciro, rei da Pérsia: ‘Jeová, o Deus dos céus, deu-me todos os reinos da terra, e ele me designou para lhe construir uma casa em Jerusalém, que fica em Judá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Quem entre vocês pertence ao povo dele? Que o seu Deus esteja com ele. Portanto, que ele suba a Jerusalém, em Judá, e reconstrua a casa que ficava em Jerusalém, a casa de Jeová, o Deus de Israel, o verdadeiro Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Que todo aquele que reside como estrangeiro, seja qual for o lugar em que esteja morando, receba dos seus vizinhos prata, ouro, bens e rebanhos, junto com a oferta voluntária para a casa do verdadeiro Deus, que ficava em Jerusalém.’”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Então os cabeças das casas paternas de Judá e de Benjamim, bem como os sacerdotes e os levitas — todos aqueles cujo espírito tinha sido despertado pelo verdadeiro Deus —, se prepararam para ir e reconstruir a casa de Jeová, que ficava em Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Todos os seus vizinhos os ajudaram, fornecendo-lhes utensílios de prata, de ouro, bens, rebanhos e coisas valiosas, além de todas as ofertas voluntárias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "O rei Ciro também mandou buscar os utensílios da casa de Jeová que Nabucodonosor tinha tirado de Jerusalém e colocado na casa do seu deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Ciro, rei da Pérsia, colocou sob a supervisão de Mitredate, o tesoureiro, a tarefa de retirar os utensílios, e este fez uma relação de todos os itens e os entregou a Sesbazar, o maioral de Judá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Esta era a relação dos itens: 30 recipientes de ouro em forma de cesto, 1. 000 recipientes de prata em forma de cesto e 29 recipientes sobressalentes,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "além de 30 tigelinhas de ouro, 410 tigelinhas de prata e 1. 000 outros utensílios.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Todos os utensílios de ouro e de prata foram 5.400. Sesbazar levou tudo isso consigo quando os exilados saíram de Babilônia para Jerusalém.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "E estes foram os homens da província que saíram do cativeiro, dentre os exilados que Nabucodonosor, rei de Babilônia, tinha levado para o exílio em Babilônia. Eles voltaram para Jerusalém e para Judá, cada um para a sua própria cidade.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Vieram com Zorobabel, Jesua, Neemias, Seraías, Reelaías, Mordecai, Bilsã, Mispar, Bigvai, Reum e Baaná. O número dos homens israelitas incluía:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "os filhos de Parós, 2.172;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "os filhos de Sefatias, 372;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "os filhos de Ará, 775;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "os filhos de Paate-Moabe, dos filhos de Jesua e de Joabe, 2.812;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "os filhos de Elão, 1.254;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "os filhos de Zatu, 945;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "os filhos de Zacai, 760;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "os filhos de Bani, 642;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "os filhos de Bebai, 623;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "os filhos de Azgade, 1.222;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "os filhos de Adonicão, 666;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "os filhos de Bigvai, 2.056;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "os filhos de Adim, 454;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "os filhos de Ater, da casa de Ezequias, 98;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "os filhos de Bezai, 323;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "os filhos de Jora, 112;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "os filhos de Hasum, 223;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "os filhos de Gibar, 95;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "os filhos de Belém, 123;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "os homens de Netofa, 56;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "os homens de Anatote, 128;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "os filhos de Azmavete, 42;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "os filhos de Quiriate-Jearim, de Quefira e de Beerote, 743;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "os filhos de Ramá e de Geba, 621;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "os homens de Micmás, 122;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "os homens de Betel e de Ai, 223;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "os filhos de Nebo, 52;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "os filhos de Magbis, 156;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "os filhos do outro Elão, 1.254;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "os filhos de Harim, 320;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "os filhos de Lode, de Hadide e de Ono, 725;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "os filhos de Jericó, 345;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "e os filhos de Senaá, 3.630.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Os sacerdotes: os filhos de Jedaías, da casa de Jesua, 973;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "os filhos de Imer, 1.052;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "os filhos de Pasur, 1.247;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "e os filhos de Harim, 1.017.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Os levitas: os filhos de Jesua e de Cadmiel, dos filhos de Hodavias, 74.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Os cantores: os filhos de Asafe, 128.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Os filhos dos porteiros: os filhos de Salum, os filhos de Ater, os filhos de Talmom, os filhos de Acube, os filhos de Hatita e os filhos de Sobai; ao todo 139.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "Os servos do templo: os filhos de Ziá, os filhos de Hasufa, os filhos de Tabaote,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "os filhos de Queros, os filhos de Siá, os filhos de Padom,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 45,
+          "texto": "os filhos de Lebana, os filhos de Hagaba, os filhos de Acube,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 46,
+          "texto": "os filhos de Hagabe, os filhos de Salmai, os filhos de Hanã,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 47,
+          "texto": "os filhos de Gidel, os filhos de Gaar, os filhos de Reaías,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 48,
+          "texto": "os filhos de Rezim, os filhos de Necoda, os filhos de Gazão,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 49,
+          "texto": "os filhos de Uza, os filhos de Paseia, os filhos de Besai,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 50,
+          "texto": "os filhos de Asná, os filhos de Meunim, os filhos de Nefusim,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 51,
+          "texto": "os filhos de Bacbuque, os filhos de Hacufa, os filhos de Harur,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 52,
+          "texto": "os filhos de Baslute, os filhos de Meída, os filhos de Harsa,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 53,
+          "texto": "os filhos de Barcos, os filhos de Sísera, os filhos de Tema,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 54,
+          "texto": "os filhos de Neziá e os filhos de Hatifa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 55,
+          "texto": "Os filhos dos servos de Salomão: os filhos de Sotai, os filhos de Soferete, os filhos de Peruda,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 56,
+          "texto": "os filhos de Jaala, os filhos de Darcom, os filhos de Gidel,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 57,
+          "texto": "os filhos de Sefatias, os filhos de Hatil, os filhos de Poquerete-Hazebaim e os filhos de Ami.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 58,
+          "texto": "Todos os servos do templo e os filhos dos servos de Salomão foram 392.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 59,
+          "texto": "Os alistados a seguir subiram de Tel-Melá, Tel-Harsa, Querube, Adom e Imer, mas não foram capazes de comprovar a sua casa paterna e a sua origem, se eram israelitas ou não:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 60,
+          "texto": "os filhos de Delaías, os filhos de Tobias e os filhos de Necoda, 652;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 61,
+          "texto": "e dentre os filhos dos sacerdotes: os filhos de Habaías, os filhos de Hacoz e os filhos de Barzilai, que tomou uma esposa dentre as filhas de Barzilai, o gileadita, e adotou o nome dessa família.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 62,
+          "texto": "Todos esses procuraram os seus registros para confirmar a sua genealogia, mas não os acharam. Assim, foram desqualificados para o sacerdócio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 63,
+          "texto": "O governador lhes disse que não poderiam comer das coisas santíssimas até que houvesse um sacerdote para consultar o Urim e o Tumim.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 64,
+          "texto": "A congregação inteira somava 42.360,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 65,
+          "texto": "sem contar os seus escravos e as suas escravas, que eram 7.337; e havia também 200 cantores e cantoras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 66,
+          "texto": "Seus cavalos eram 736; suas mulas, 245;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 67,
+          "texto": "seus camelos, 435; e seus jumentos, 6.720.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 68,
+          "texto": "Ao chegarem à casa de Jeová, em Jerusalém, alguns dos cabeças das casas paternas fizeram ofertas voluntárias para a casa do verdadeiro Deus, para que ela fosse reconstruída no seu lugar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 69,
+          "texto": "Segundo os seus recursos, eles deram ao tesouro da obra 61. 000 dracmas de ouro, 5. 000 minas de prata e 100 vestes compridas para os sacerdotes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 70,
+          "texto": "Então os sacerdotes, os levitas e alguns do povo, e também os cantores, os porteiros e os servos do templo, se estabeleceram nas suas cidades. E o restante dos israelitas se estabeleceu nas suas cidades.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quando chegou o sétimo mês e os israelitas já estavam nas suas cidades, eles se reuniram de comum acordo em Jerusalém.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Jesua, filho de Jeozadaque, e seus companheiros de sacerdócio, bem como Zorobabel, filho de Sealtiel, e seus irmãos, começaram a construir o altar do Deus de Israel, para que pudessem oferecer nele sacrifícios queimados, conforme está escrito na Lei de Moisés, o homem do verdadeiro Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Embora estivessem com medo dos povos das terras ao redor, eles construíram o altar no seu lugar original e começaram a oferecer nele sacrifícios queimados a Jeová, os sacrifícios queimados da manhã e do anoitecer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Celebraram então a Festividade das Barracas conforme o que está escrito, e ofereceram todos os dias o número determinado de sacrifícios queimados que era exigido para cada dia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Depois ofereceram as ofertas queimadas regulares e as ofertas das luas novas e de todas as festividades sagradas de Jeová, bem como as trazidas por todos os que espontaneamente faziam ofertas voluntárias a Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "A partir do primeiro dia do sétimo mês começaram a oferecer sacrifícios queimados a Jeová, embora o alicerce do templo de Jeová ainda não tivesse sido lançado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Eles deram dinheiro aos cortadores de pedras e aos artesãos, e comida, bebida e azeite aos sidônios e aos tírios, por terem trazido madeiras de cedro por mar, do Líbano até Jope, de acordo com a autorização que haviam recebido de Ciro, rei da Pérsia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "No segundo ano depois da sua chegada à casa do verdadeiro Deus em Jerusalém, no segundo mês, Zorobabel, filho de Sealtiel, e Jesua, filho de Jeozadaque, iniciaram a obra junto com o restante dos seus irmãos, os sacerdotes e os levitas, bem como todos os que tinham voltado do cativeiro para Jerusalém. Eles designaram os levitas de 20 anos de idade para cima como supervisores da obra da casa de Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Assim Jesua, seus filhos e seus irmãos, e Cadmiel e seus filhos, que eram filhos de Judá, se juntaram para supervisionar o trabalho na casa do verdadeiro Deus, junto com os filhos de Henadade e os filhos e os irmãos deles, que também eram levitas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Quando os construtores lançaram o alicerce do templo de Jeová, os sacerdotes, com as vestes oficiais e as trombetas, e os levitas, filhos de Asafe, com os címbalos, puseram-se de pé para louvar a Jeová segundo as orientações de Davi, rei de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "E começaram a louvar e a agradecer a Jeová, cantando alternadamente o refrão: “Pois ele é bom; o seu amor leal por Israel dura para sempre.” Então todo o povo gritou bem alto em louvor a Jeová porque o alicerce da casa de Jeová havia sido lançado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Muitos dos sacerdotes, dos levitas e dos cabeças das casas paternas, os idosos que tinham visto a casa anterior, choraram alto quando viram o alicerce desta casa ser lançado, ao passo que muitos outros gritavam de alegria ao máximo de sua voz.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Assim, ninguém conseguia distinguir o som dos gritos de alegria do som do choro, e o povo gritava tão alto que o som deles era ouvido a grande distância.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 4,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Quando os inimigos de Judá e de Benjamim souberam que os que tinham voltado do exílio estavam construindo um templo para Jeová, o Deus de Israel,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "dirigiram-se imediatamente a Zorobabel e aos cabeças das casas paternas, e lhes disseram: “Deixem-nos construir com vocês; pois, assim como vocês, adoramos o seu Deus e a ele temos oferecido sacrifícios desde os dias de Esar-Hadom, rei da Assíria, que nos trouxe para cá.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "No entanto, Zorobabel e Jesua, e os outros cabeças das casas paternas de Israel, lhes disseram: “Vocês não participarão conosco em construir uma casa para o nosso Deus, pois nós construiremos sozinhos uma casa para Jeová, o Deus de Israel, assim como nos ordenou Ciro, rei da Pérsia.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Em vista disso, os povos das terras ao redor desanimavam constantemente o povo de Judá e tentavam fazê-los desistir da construção.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Eles contratavam conselheiros para frustrar seus planos durante todos os dias de Ciro, rei da Pérsia, até o reinado de Dario, rei da Pérsia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "No início do reinado de Assuero, escreveram uma acusação contra os habitantes de Judá e de Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "E, nos dias de Artaxerxes, rei da Pérsia, foi escrita uma carta por Bislão, Mitredate, Tabeel e o restante dos seus colegas, dirigida ao rei Artaxerxes. Eles traduziram a carta para o aramaico, usando caracteres aramaicos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Reum, o principal oficial do governo, e Sinsai, o escrivão, escreveram uma carta contra Jerusalém ao rei Artaxerxes, conforme segue:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "(A carta era de Reum, o principal oficial do governo, de Sinsai, o escrivão, e do restante dos colegas deles — os juízes e os subgovernadores, os secretários, o povo de Ereque, os babilônios, os habitantes de Susa, isto é, os elamitas,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "e as outras nações que o grande e ilustre Asnapar levou para o exílio e estabeleceu nas cidades de Samaria e em outras partes da região ao oeste do rio Eufrates. E agora",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "segue o texto da carta que eles lhe enviaram.) “Ao rei Artaxerxes, dos seus servos, os homens da região ao oeste do rio Eufrates:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Seja do conhecimento do rei que os judeus que vieram daí para o nosso território chegaram a Jerusalém. Estão reconstruindo a cidade rebelde e má, terminando os muros e consertando os alicerces.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Seja do conhecimento do rei que, se essa cidade for reconstruída e seus muros terminados, eles não pagarão imposto, nem tributo, nem pedágio, e isso trará prejuízo ao tesouro dos reis.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Visto que comemos o sal do palácio, e que não seria correto ficarmos parados enquanto vemos os interesses do rei serem prejudicados, enviamos ao rei essas informações,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "para que se faça uma investigação no livro dos registros dos seus antepassados. O senhor descobrirá no livro dos registros que essa cidade é uma cidade rebelde, que causa prejuízo aos reis e às províncias, e que, desde os tempos antigos, sempre houve nela instigadores de rebelião. É por isso que essa cidade foi destruída.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Queremos informar ao rei que, se essa cidade for reconstruída e seus muros terminados, o senhor não terá mais nenhum controle da região ao oeste do rio Eufrates.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "O rei enviou a seguinte resposta a Reum, o principal oficial do governo, e a Sinsai, o escrivão, e ao restante dos colegas deles que moravam em Samaria e nas outras partes da região ao oeste do rio Eufrates: “Saudações!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "O documento oficial que vocês nos enviaram foi lido de modo claro na minha presença.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Ordenei que se fizesse uma investigação e descobriu-se que essa cidade já há muito tempo tem se levantado contra os reis, e nela tem havido rebeliões e revoltas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Havia reis poderosos sobre Jerusalém que governavam toda a região ao oeste do rio Eufrates, aos quais se pagavam imposto, tributo e pedágio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Portanto, deem ordem para que esses homens parem a obra, a fim de que não se reconstrua essa cidade até que eu ordene.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Não permitam que haja negligência em cuidar desse assunto, para que os interesses do rei não sejam ainda mais prejudicados.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Então, depois de se ter lido a cópia do documento oficial do rei Artaxerxes na presença de Reum e de Sinsai, o escrivão, e de seus colegas, eles foram imediatamente aos judeus em Jerusalém e usaram a força para interromper a obra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Foi então que as obras da casa de Deus em Jerusalém pararam, e continuaram paradas até o segundo ano do reinado de Dario, rei da Pérsia.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 5,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Depois o profeta Ageu e o profeta Zacarias, neto de Ido, profetizaram aos judeus que estavam em Judá e em Jerusalém em nome do Deus de Israel, que estava sobre eles.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Foi então que Zorobabel, filho de Sealtiel, e Jesua, filho de Jeozadaque, retomaram a reconstrução da casa de Deus em Jerusalém; e os profetas de Deus estavam com eles e os apoiavam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Naquele tempo Tatenai, governador da região ao oeste do rio Eufrates, Setar-Bozenai e os colegas deles foram lhes perguntar: “Quem lhes deu ordem para construir essa casa e terminar essa estrutura?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Também perguntaram: “Quais são os nomes dos homens que estão trabalhando nessa construção?”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Mas Deus estava vigiando sobre os anciãos dos judeus, e ninguém os fez parar enquanto Dario não recebesse o relatório, e se enviasse de volta um documento oficial a respeito desse assunto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Esta é uma cópia da carta que Tatenai, governador da região ao oeste do rio Eufrates, e Setar-Bozenai e os colegas dele, os subgovernadores da região ao oeste do rio Eufrates, enviaram ao rei Dario.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Enviaram-lhe um relatório nos seguintes termos: “Ao rei Dario: “Que toda a paz esteja com o senhor.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Seja do conhecimento do rei que fomos à província de Judá, à casa do grande Deus, e ela está sendo reconstruída com grandes pedras e com madeira, que está sendo colocada nas paredes. A obra está sendo feita com entusiasmo pelo povo e está avançando em resultado dos esforços deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Então perguntamos aos anciãos deles: ‘Quem lhes deu ordem para construir essa casa e terminar essa estrutura?’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Também perguntamos os nomes deles, para que pudéssemos escrever ao senhor informando quem são os homens que estão na liderança.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "“Esta foi a resposta que nos deram: ‘Somos os servos do Deus dos céus e da terra e estamos reconstruindo a casa que foi construída há muitos anos — construída e terminada por um grande rei de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "No entanto, visto que os nossos pais provocaram a ira do Deus dos céus, ele os entregou nas mãos de Nabucodonosor, o caldeu, rei de Babilônia, que demoliu essa casa e levou o povo para o exílio em Babilônia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Mas, no primeiro ano de Ciro, rei de Babilônia, o rei Ciro emitiu uma ordem para que a casa de Deus fosse reconstruída.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Além disso, o rei Ciro retirou do templo de Babilônia os utensílios de ouro e de prata da casa de Deus, que Nabucodonosor tinha retirado do templo em Jerusalém e levado ao templo de Babilônia. Os utensílios foram entregues a um homem chamado Sesbazar, a quem Ciro tinha nomeado governador.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Ciro lhe disse: “Leve estes utensílios. Vá, coloque-os no templo em Jerusalém; e que a casa de Deus seja reconstruída no seu lugar original.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então Sesbazar veio e lançou os alicerces da casa de Deus em Jerusalém; ela está em construção desde aquela época até agora, mas ainda não foi terminada.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "“Agora, se for do agrado do rei, que se faça uma investigação no tesouro real aí em Babilônia, para ver se o rei Ciro emitiu uma ordem para reconstruir essa casa de Deus em Jerusalém; e que o rei nos envie a sua decisão a respeito disso.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 6,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Foi então que o rei Dario deu a ordem, e foi feita uma investigação nos arquivos de Babilônia, onde os tesouros eram guardados.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "E foi achado um rolo na fortaleza de Ecbátana, na província da Média, e nele estava escrito o seguinte memorando:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "“No primeiro ano do rei Ciro, o rei Ciro emitiu a seguinte ordem com respeito à casa de Deus em Jerusalém: ‘Que a casa seja reconstruída para ser o lugar onde serão oferecidos sacrifícios, e que seus alicerces sejam assentados. Ela terá 60 côvados de altura e 60 côvados de largura,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "com três camadas de grandes pedras e uma camada de madeira. As despesas serão pagas pela casa do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Além disso, os utensílios de ouro e de prata da casa de Deus, que Nabucodonosor retirou do templo em Jerusalém e levou a Babilônia, serão devolvidos, para que sejam colocados no seu lugar no templo em Jerusalém e guardados na casa de Deus.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "“Assim vocês, Tatenai, governador da região ao oeste do rio Eufrates, Setar-Bozenai e seus colegas, os subgovernadores da região ao oeste do rio Eufrates, fiquem longe de lá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Não interfiram nas obras dessa casa de Deus. O governador dos judeus e os anciãos dos judeus reconstruirão essa casa de Deus no seu lugar original.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Além disso, estou emitindo uma ordem a respeito do que vocês devem fazer para que esses anciãos dos judeus possam reconstruir essa casa de Deus: As despesas serão prontamente pagas a esses homens pelo tesouro real, isto é, com o imposto recolhido na região ao oeste do rio Eufrates, para que eles não interrompam a obra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "E tudo o que for preciso lhes será dado regularmente, todo dia, sem falta — novilhos, carneiros e cordeiros para as ofertas queimadas ao Deus do céu, bem como trigo, sal, vinho e azeite, conforme disserem os sacerdotes que estão em Jerusalém —,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "a fim de que eles apresentem regularmente ofertas que agradem ao Deus dos céus e orem pela vida do rei e dos seus filhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Eu também ordeno que, se alguém violar este decreto, seja arrancada da sua casa uma viga de madeira e seja ele pendurado nela, e que sua casa seja transformada numa latrina pública por causa desse crime.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "E que o Deus que fez seu nome residir ali derrube qualquer rei ou povo que levantar a mão para violar esta ordem e para destruir essa casa de Deus em Jerusalém. Eu, Dario, emito esta ordem. Que ela seja executada prontamente.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Então Tatenai, governador da região ao oeste do rio Eufrates, Setar-Bozenai e os colegas deles fizeram prontamente tudo o que o rei Dario tinha ordenado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "E os anciãos dos judeus, encorajados pelas mensagens proféticas de Ageu e de Zacarias, neto de Ido, continuaram a construir, e a obra avançava. Eles terminaram a construção conforme a ordem do Deus de Israel e conforme a ordem de Ciro, de Dario e de Artaxerxes, rei da Pérsia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Eles terminaram a casa no dia três do mês de adar, no sexto ano do reinado do rei Dario.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Então os israelitas, os sacerdotes, os levitas e os outros que tinham voltado do exílio celebraram com alegria a inauguração da casa de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Para a inauguração da casa de Deus ofereceram 100 touros, 200 carneiros, 400 cordeiros e, como oferta pelo pecado para todo o Israel, 12 bodes, de acordo com o número das tribos de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "E designaram os sacerdotes segundo seus grupos e os levitas segundo suas turmas, para o serviço de Deus em Jerusalém, conforme está escrito no livro de Moisés.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "E os que tinham voltado do exílio celebraram a Páscoa no dia 14 do primeiro mês.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Os sacerdotes e os levitas estavam limpos, pois todos, sem exceção, tinham se purificado. Eles abateram o sacrifício pascoal para todos os que tinham voltado do exílio, para os seus companheiros de sacerdócio e para si mesmos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Então os israelitas que tinham voltado do exílio comeram do sacrifício com todos os que tinham se juntado a eles e se separado da impureza das nações das terras ao redor para adorar a Jeová, o Deus de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Eles também celebraram com alegria a Festividade dos Pães sem Fermento por sete dias, pois Jeová havia feito com que se alegrassem e tinha inclinado o coração do rei da Assíria a favor deles, de modo que ele os apoiou na obra da casa do verdadeiro Deus, o Deus de Israel.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 7,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Depois dessas coisas, no reinado de Artaxerxes, rei da Pérsia, Esdras retornou. Ele era filho de Seraías, filho de Azarias, filho de Hilquias,",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "filho de Salum, filho de Zadoque, filho de Aitube,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "filho de Amarias, filho de Azarias, filho de Meraiote,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "filho de Zeraías, filho de Uzi, filho de Buqui,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "filho de Abisua, filho de Fineias, filho de Eleazar, filho de Arão, o principal sacerdote.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Esse Esdras veio de Babilônia. Ele era um copista que tinha grande conhecimento da Lei de Moisés, dada por Jeová, o Deus de Israel. A mão de Jeová, seu Deus, estava sobre ele, de modo que o rei lhe concedeu tudo o que tinha pedido.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Alguns israelitas, sacerdotes, levitas, cantores, porteiros e servos do templo subiram a Jerusalém no sétimo ano do rei Artaxerxes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "E Esdras chegou a Jerusalém no quinto mês, no sétimo ano do rei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "No primeiro dia do primeiro mês, ele partiu de Babilônia, e chegou a Jerusalém no primeiro dia do quinto mês, pois a boa mão de seu Deus estava sobre ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Esdras havia preparado seu coração para consultar a Lei de Jeová e para praticá-la, e para ensinar seus decretos e decisões judiciais em Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Esta é uma cópia da carta que o rei Artaxerxes deu a Esdras, o sacerdote e copista, perito no conhecimento dos mandamentos de Jeová e dos seus decretos para Israel:",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "“Artaxerxes, rei dos reis, a Esdras, o sacerdote e copista da Lei do Deus dos céus: Que a paz perfeita esteja com você.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Emiti uma ordem autorizando todos no meu reino que forem do povo de Israel, incluindo seus sacerdotes e levitas, a ir com você a Jerusalém, se assim desejarem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Pois você está sendo enviado pelo rei e seus sete conselheiros para investigar se a Lei do seu Deus, que você tem em mãos, está sendo cumprida em Judá e Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Você também deve levar a prata e o ouro que o rei e os seus conselheiros deram voluntariamente ao Deus de Israel, que reside em Jerusalém,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "junto com toda a prata e o ouro que você receber em toda a província de Babilônia, e também a dádiva que o povo e os sacerdotes derem voluntariamente à casa do seu Deus em Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "E com esse dinheiro você deverá comprar prontamente touros, carneiros e cordeiros, e as correspondentes ofertas de cereais e de bebida, e deverá apresentá-los no altar da casa do seu Deus em Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "“E, com o restante da prata e do ouro, você e seus irmãos podem fazer o que acharem melhor, de acordo com a vontade do seu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Você deve entregar perante Deus em Jerusalém todos os utensílios que lhe forem dados para o serviço da casa do seu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "E todas as outras coisas necessárias que você tiver de fornecer à casa do seu Deus, você pagará com os recursos do tesouro real.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "“Eu, rei Artaxerxes, ordeno a todos os tesoureiros da região ao oeste do rio Eufrates que atendam prontamente a todos os pedidos de Esdras, o sacerdote e copista da Lei do Deus dos céus,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "até 100 talentos de prata, 100 coros de trigo, 100 batos de vinho, 100 batos de azeite e sal à vontade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Que tudo o que o Deus dos céus ordenar a respeito da casa do Deus dos céus seja feito com zelo, para que não haja ira contra os domínios do rei e contra os seus filhos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Saibam também que não é permitido cobrar imposto, tributo nem pedágio de nenhum dos sacerdotes, dos levitas, dos músicos, dos porteiros, dos servos do templo ou dos trabalhadores daquela casa de Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "“E você, Esdras, segundo a sabedoria que seu Deus lhe deu, designe magistrados e juízes para julgar todo o povo que está na região ao oeste do rio Eufrates, isto é, todos os que conhecem as leis do seu Deus; e vocês devem ensiná-las a todos os que não as conhecem.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "E todo aquele que não obedecer à Lei do seu Deus e à lei do rei deve ser prontamente julgado e punido com a morte, com o banimento, com multa ou com prisão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "Louvado seja Jeová, o Deus dos nossos antepassados, que pôs no coração do rei o desejo de embelezar a casa de Jeová em Jerusalém!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "No seu amor leal por mim, ele me concedeu o favor do rei, dos seus conselheiros e dos poderosos príncipes do rei. Assim, visto que a mão de Jeová, meu Deus, estava sobre mim, tomei coragem e reuni os líderes de Israel para que partissem comigo.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 8,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Estes foram os cabeças das casas paternas e os que com eles foram alistados por família, que saíram comigo de Babilônia durante o reinado do rei Artaxerxes:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "dos filhos de Fineias: Gérson; dos filhos de Itamar: Daniel; dos filhos de Davi: Hatus;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "dos filhos de Secanias, dos filhos de Parós: Zacarias, e com ele 150 homens alistados;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "dos filhos de Paate-Moabe: Elioenai, filho de Zeraías, e com ele 200 homens;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "dos filhos de Zatu: Secanias, filho de Jaaziel, e com ele 300 homens;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "dos filhos de Adim: Ebede, filho de Jonatã, e com ele 50 homens;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "dos filhos de Elão: Jesaías, filho de Atalias, e com ele 70 homens;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "dos filhos de Sefatias: Zebadias, filho de Micael, e com ele 80 homens;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "dos filhos de Joabe: Obadias, filho de Jeiel, e com ele 218 homens;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "dos filhos de Bani: Selomite, filho de Josifias, e com ele 160 homens;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "dos filhos de Bebai: Zacarias, filho de Bebai, e com ele 28 homens;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "dos filhos de Azgade: Joanã, filho de Hacatã, e com ele 110 homens;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "dos filhos de Adonicão, os nomes dos que foram os últimos a voltar são: Elifelete, Jeiel e Semaías, e com eles 60 homens;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "e dos filhos de Bigvai: Utai e Zabude, e com eles 70 homens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Eu os reuni junto ao rio que corre para Aava, e ali acampamos por três dias. Mas, quando fiz uma inspeção do povo e dos sacerdotes, não encontrei ali nenhum levita.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Assim, mandei chamar Eliézer, Ariel, Semaías, Elnatã, Jaribe, Elnatã, Natã, Zacarias e Mesulão, homens da liderança, e Joiaribe e Elnatã, que eram instrutores.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Então lhes enviei a Ido, o líder do lugar chamado Casifia. Eu disse a eles que pedissem a Ido e a seus irmãos, os servos do templo que estavam em Casifia, que nos trouxessem servos para a casa do nosso Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Visto que a boa mão do nosso Deus estava sobre nós, eles nos trouxeram um homem de bom critério dos filhos de Mali, neto de Levi, filho de Israel, a saber, Serebias, junto com seus filhos e seus irmãos, 18 homens;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "e também Hasabias, e com ele Jesaías, dos meraritas, junto com seus irmãos e os filhos deles,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "homens. 20 E havia 220 servos do templo, que Davi e os príncipes deram para ajudar os levitas no seu serviço, todos designados por nome.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "Então proclamei um jejum ali, junto ao rio Aava, para nos humilharmos diante do nosso Deus e pedirmos a ele orientação para a viagem que faríamos com os nossos filhos e com todos os nossos bens.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "Fiquei com vergonha de pedir ao rei soldados e cavaleiros para nos proteger dos inimigos no caminho, visto que tínhamos dito ao rei: “A boa mão do nosso Deus está sobre todos os que o buscam, mas sua força e sua ira são contra todos os que o abandonam.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Por isso jejuamos e fizemos pedidos a respeito disso ao nosso Deus, e ele ouviu as nossas súplicas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "Então dentre os chefes dos sacerdotes escolhi 12: Serebias, Hasabias e dez dos seus irmãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "E pesei para eles a prata, o ouro e os utensílios — a contribuição que o rei, seus conselheiros, seus príncipes e todos os israelitas que estavam ali tinham feito para a casa do nosso Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "Pesei e lhes entreguei 650 talentos de prata, 100 utensílios de prata que pesavam 2 talentos, 100 talentos de ouro,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "além de 20 tigelinhas de ouro que valiam 1. 000 daricos e dois utensílios de cobre refinado, com brilho vermelho, preciosos como o ouro.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "Eu lhes disse então: “Vocês são santos para Jeová, e os utensílios são sagrados, e a prata e o ouro são uma oferta voluntária a Jeová, o Deus dos seus antepassados.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "Cuidem bem dessas coisas até pesá-las nas salas da casa de Jeová, diante dos chefes dos sacerdotes e dos levitas, e diante dos príncipes das casas paternas de Israel, em Jerusalém.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "E os sacerdotes e os levitas receberam a prata, o ouro e os utensílios que haviam sido pesados, a fim de os levar a Jerusalém, à casa do nosso Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "Por fim, no dia 12 do primeiro mês, partimos do rio Aava para Jerusalém. A mão do nosso Deus estava sobre nós, e ele nos livrou das mãos dos inimigos e de emboscadas no caminho.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Chegamos então a Jerusalém e ficamos ali por três dias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "E, no quarto dia, pesamos a prata, o ouro e os utensílios na casa do nosso Deus, e os entregamos ao sacerdote Meremote, filho de Urias. Com ele estavam Eleazar, filho de Fineias, e os levitas Jozabade, filho de Jesua, e Noadias, filho de Binui.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "Tudo foi contado e pesado, e o peso total foi registrado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Os que saíram do cativeiro, que retornaram do exílio, apresentaram sacrifícios queimados ao Deus de Israel: 12 novilhos para todo o Israel, 96 carneiros, 77 cordeiros, e 12 bodes como oferta pelo pecado — tudo como oferta queimada a Jeová.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Então entregamos os decretos do rei aos sátrapas do rei e aos governadores da região ao oeste do rio Eufrates, e eles deram apoio ao povo e à casa do verdadeiro Deus.",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 9,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Assim que essas coisas foram feitas, os príncipes se dirigiram a mim e disseram: “O povo de Israel, os sacerdotes e os levitas não se separaram dos povos das terras ao redor e das suas práticas detestáveis, as práticas dos cananeus, dos hititas, dos perizeus, dos jebuseus, dos amonitas, dos moabitas, dos egípcios e dos amorreus.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Eles tomaram algumas das filhas deles como esposas para si e para os seus filhos. Agora eles, a descendência santa, se misturaram com os povos das terras ao redor. Os príncipes e os subgovernadores foram os que mais praticaram essa infidelidade.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Assim que ouvi isso, rasguei a minha túnica e a minha capa, arranquei cabelos da minha cabeça e pelos da minha barba, e me sentei, profundamente abalado.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Então todos os que temiam as palavras do Deus de Israel se reuniram à minha volta, por causa da infidelidade do povo que tinha voltado do exílio. E eu fiquei sentado, profundamente abalado, até a oferta de cereais do anoitecer.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Quando chegou a hora da oferta de cereais do anoitecer, levantei-me do meu estado de humilhação, com a túnica e a capa rasgadas. Ajoelhei-me e estendi as mãos a Jeová, meu Deus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "E disse: “Ó meu Deus, eu me sinto envergonhado e constrangido para levantar o rosto a ti, ó meu Deus, pois os nossos erros se multiplicaram sobre as nossas cabeças, e a nossa culpa se acumulou até os céus.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Desde os dias dos nossos antepassados até hoje a nossa culpa tem sido grande. E, por causa dos nossos erros, nós, nossos reis e nossos sacerdotes temos sido entregues às mãos dos reis de outras terras, sofrendo com a espada, o cativeiro, o saque e a vergonha, como se vê hoje.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Mas agora, por um momento, Jeová, nosso Deus, mostrou-nos favor, permitindo que um restante sobrevivesse e dando-nos um lugar seguro no seu santuário, para fazer os nossos olhos brilhar, ó nosso Deus, e para nos reanimar um pouco na nossa escravidão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Pois, embora sejamos escravos, nosso Deus não nos abandonou na escravidão. Mas, no seu amor leal por nós, ele nos concedeu o favor dos reis da Pérsia para nos reanimar, a fim de que se erguesse a casa do nosso Deus e se restaurassem as ruínas, e para nos dar uma muralha de pedras em Judá e em Jerusalém.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "“Mas agora, ó nosso Deus, depois de tudo isso, o que podemos dizer? Pois abandonamos os mandamentos",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "que nos deste por meio dos teus servos, os profetas, dizendo: ‘A terra em que estão entrando para tomar posse dela é uma terra impura por causa da impureza dos povos das terras ao redor, por causa das suas práticas detestáveis. Eles a encheram de ponta a ponta com a sua impureza.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Portanto, não deem as suas filhas aos filhos deles, nem aceitem as filhas deles para os seus filhos, e jamais busquem a paz e a prosperidade deles. Então vocês se tornarão fortes, comerão do que a terra tem de bom e tomarão posse dela para os seus filhos, para sempre.’",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "E, depois de tudo o que nos aconteceu por causa dos nossos atos maus e da nossa grande culpa — tu, ó nosso Deus, não agiste conosco conforme os nossos erros, e permitiste que nós, que aqui estamos, sobrevivêssemos —,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "será que violaremos novamente os teus mandamentos e formaremos alianças matrimoniais com os povos que praticam essas coisas detestáveis? Será que não ficarias tão irado conosco a ponto de nos destruir por completo, sem nos deixar restante nem sobrevivente?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Ó Jeová, Deus de Israel, tu és justo, pois sobrevivemos como um restante até hoje. Aqui estamos diante de ti como culpados, pois, por causa desse pecado, é impossível ficar de pé diante de ti.”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 10,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Enquanto Esdras estava orando e fazendo confissão, chorando prostrado diante da casa do verdadeiro Deus, uma grande multidão de israelitas — homens, mulheres e crianças — se reuniu em volta dele; e o povo chorava muito.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Em vista disso, Secanias, filho de Jeiel, dos filhos de Elão, disse a Esdras: “Nós fomos infiéis ao nosso Deus, casando-nos com mulheres estrangeiras dos povos das terras ao redor. Apesar disso, ainda há esperança para Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Agora, façamos um pacto com o nosso Deus para mandar embora todas as esposas e os filhos delas, conforme a orientação de Jeová e dos que temem o mandamento do nosso Deus. Vamos agir de acordo com a Lei.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Levante-se, pois essa questão é da sua responsabilidade, e nós vamos apoiá-lo. Seja forte e aja.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "Então Esdras se levantou e fez os chefes dos sacerdotes, os levitas e todo o Israel jurar que agiriam conforme o que havia sido dito. Assim, eles fizeram o juramento.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Esdras se retirou então de diante da casa do verdadeiro Deus e foi à sala de Jeoanã, filho de Eliasibe. Embora fosse para lá, não comeu pão nem bebeu água, em sinal de luto por causa da infidelidade do povo que tinha voltado do exílio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Então fizeram uma proclamação em Judá e Jerusalém para que todos os que tinham voltado do exílio se reunissem em Jerusalém;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "e, segundo a decisão dos príncipes e dos anciãos, quem não chegasse no prazo de três dias teria todos os bens confiscados e seria expulso da congregação do povo que tinha voltado do exílio.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Portanto, em três dias, isto é, no dia 20 do nono mês, todos os homens de Judá e de Benjamim se reuniram em Jerusalém. Todo o povo ficou sentado no pátio da casa do verdadeiro Deus, tremendo por causa daquela questão e por causa da forte chuva.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Então Esdras, o sacerdote, se levantou e lhes disse: “Vocês agiram de modo infiel, casando-se com mulheres estrangeiras, e assim aumentaram a culpa de Israel.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Agora confessem o seu erro a Jeová, o Deus dos seus antepassados, e façam a vontade dele. Separem-se dos povos das terras ao redor e dessas esposas estrangeiras.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Em resposta, toda a congregação disse em voz bem alta: “Temos a obrigação de fazer exatamente o que o senhor está dizendo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "No entanto, há muita gente aqui e estamos na estação das chuvas. Não é possível ficar do lado de fora, e o assunto não será resolvido em um ou dois dias, pois fomos muito rebeldes nessa questão.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Portanto, por favor, deixe que os nossos príncipes representem a congregação inteira; e que todos os que estão nas nossas cidades que tenham se casado com mulheres estrangeiras se apresentem num dia determinado, junto com os anciãos e os juízes de cada cidade, até fazermos recuar a ira ardente do nosso Deus causada por essa questão.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "No entanto, Jonatã, filho de Asael, e Jazeías, filho de Ticvá, se opuseram a isso, e os levitas Mesulão e Sabetai os apoiaram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Mas os que tinham voltado do exílio fizeram conforme combinado; e Esdras, o sacerdote, e os cabeças das casas paternas, todos designados por nome, reuniram-se à parte no primeiro dia do décimo mês para investigar o assunto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "E, no primeiro dia do primeiro mês, terminaram de resolver todos os casos de homens que tinham se casado com mulheres estrangeiras.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "E descobriu-se que alguns dos filhos dos sacerdotes tinham se casado com mulheres estrangeiras; dos filhos de Jesua, filho de Jeozadaque, e dos seus irmãos: Maaseias, Eliézer, Jaribe e Gedalias.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Mas eles prometeram que mandariam suas esposas embora e que, por serem culpados, ofereceriam um carneiro do rebanho pela sua culpa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Dos filhos de Imer havia Hanani e Zebadias;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 21,
+          "texto": "dos filhos de Harim: Maaseias, Elias, Semaías, Jeiel e Uzias;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 22,
+          "texto": "e dos filhos de Pasur: Elioenai, Maaseias, Ismael, Netanel, Jozabade e Eleasá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 23,
+          "texto": "Dos levitas havia Jozabade, Simei e Quelaías (isto é, Quelita), Petaías, Judá e Eliézer;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 24,
+          "texto": "dos cantores: Eliasibe; e dos porteiros: Salum, Telém e Uri.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 25,
+          "texto": "E dos israelitas, dos filhos de Parós, havia Ramias, Izias, Malquias, Miamim, Eleazar, Malquias e Benaia;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 26,
+          "texto": "dos filhos de Elão: Matanias, Zacarias, Jeiel, Abdi, Jeremote e Elias;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 27,
+          "texto": "dos filhos de Zatu: Elioenai, Eliasibe, Matanias, Jeremote, Zabade e Aziza;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 28,
+          "texto": "dos filhos de Bebai: Jeoanã, Hananias, Zabai e Atlai;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 29,
+          "texto": "dos filhos de Bani: Mesulão, Maluque, Adaías, Jasube, Seal e Jeremote;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 30,
+          "texto": "dos filhos de Paate-Moabe: Adna, Quelal, Benaia, Maaseias, Matanias, Bezalel, Binui e Manassés;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 31,
+          "texto": "dos filhos de Harim: Eliézer, Issias, Malquias, Semaías, Simeão,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 32,
+          "texto": "Benjamim, Maluque e Semarias;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 33,
+          "texto": "dos filhos de Hasum: Matenai, Matatá, Zabade, Elifelete, Jeremai, Manassés e Simei;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 34,
+          "texto": "dos filhos de Bani: Maadai, Anrão, Uel,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 35,
+          "texto": "Benaia, Bedeias, Queluí,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 36,
+          "texto": "Vanias, Meremote, Eliasibe,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 37,
+          "texto": "Matanias, Matenai e Jaasu;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 38,
+          "texto": "dos filhos de Binui: Simei,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 39,
+          "texto": "Selemias, Natã, Adaías,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 40,
+          "texto": "Macnadebai, Sasai, Sarai,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 41,
+          "texto": "Azarel, Selemias, Semarias,",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 42,
+          "texto": "Salum, Amarias e José;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 43,
+          "texto": "e dos filhos de Nebo: Jeiel, Matitias, Zabade, Zebina, Jadai, Joel e Benaia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 44,
+          "texto": "Todos esses tinham tomado esposas estrangeiras, e eles mandaram embora as esposas junto com os filhos.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

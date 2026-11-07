@@ -1,0 +1,300 @@
+{
+  "nome_do_livro": "Habacuque",
+  "capitulos": [
+    {
+      "capitulo": 1,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Proclamação que o profeta Habacuque recebeu em visão:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Até quando, ó Jeová, clamarei por ajuda, mas tu não ouvirás? Até quando clamarei a ti para me salvares da violência, mas tu não agirás?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Por que me fazes ver a maldade? E por que toleras a opressão? Por que há diante de mim destruição e violência? E por que há tantas brigas e conflitos?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Por isso a lei não tem força, E a justiça nunca é feita. Pois os maus cercam os justos; É por isso que a justiça sai pervertida.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "“Olhem para as nações e prestem atenção! Olhem espantados e fiquem admirados. Pois nos seus dias acontecerá algo Em que vocês não acreditarão, mesmo que alguém lhes conte.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Pois estou trazendo os caldeus, Nação cruel e impetuosa. Eles invadem vastas regiões da terra Para se apoderar de casas que não são suas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Eles causam terror e medo. Estabelecem a sua própria justiça e autoridade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Seus cavalos são mais velozes do que os leopardos, E mais ferozes do que os lobos durante a noite. Seus cavalos de guerra avançam a galope; Seus cavalos vêm de longe. Atacam como a águia quando mergulha sobre a presa.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Todos eles vêm prontos para a violência. Seus rostos reunidos são como o vento leste, Ajuntam cativos como grãos de areia.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Eles zombam de reis E caçoam de governantes. Eles riem de todas as fortalezas; Fazem uma rampa de terra e as conquistam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Então eles avançam como o vento e passam adiante, Mas se tornarão culpados, Porque atribuem seu poder ao seu deus.”",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Por acaso tu não existes desde a eternidade, ó Jeová? Ó meu Deus, meu Santo, tu não morres. Ó Jeová, tu os designaste para executar julgamento; Minha Rocha, tu os estabeleceste para trazer punição.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Teus olhos são puros demais para ver o que é mau; Não podes tolerar a maldade. Então, por que toleras os traiçoeiros, E te manténs calado enquanto os maus devoram os que são mais justos do que eles?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Por que fazes com que o homem seja como os peixes do mar, Como os animais rasteiros, que não têm governante?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Ele pesca a todos com um anzol. Pega-os com a sua rede de arrasto E apanha-os na sua rede de pesca. É por isso que se alegra tanto.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "É por isso que ele oferece sacrifícios à sua rede de arrasto E faz sacrifícios à sua rede de pesca; Pois, graças a elas, sua porção é suculenta, E seu alimento é da melhor qualidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Portanto, será que ele continuará esvaziando a sua rede de arrasto? Será que continuará matando nações, sem compaixão?",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 2,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Ficarei de pé no meu posto de vigilância, E tomarei posição no alto da muralha. Ficarei vigiando para ver o que ele falará por meio de mim, E o que responderei quando eu for repreendido.",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Então Jeová me respondeu: “Escreva a visão e registre-a de modo claro em tábuas, Para que aquele que a ler em voz alta possa fazê-lo com facilidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Pois a visão ainda é para o tempo determinado. Ela avança rapidamente para o seu fim, e não mentirá. Mesmo que demore, continue na expectativa dela! Pois se cumprirá sem falta. Não se atrasará!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Observe aquele que é orgulhoso; Ele não é correto no seu íntimo. Mas o justo viverá pela sua fidelidade.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "De fato, visto que o vinho é traiçoeiro, O homem arrogante não atingirá o seu alvo. Ele é voraz como a Sepultura; Insaciável como a morte. Continua ajuntando todas as nações E reunindo para si todos os povos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Não proferirão todos eles um provérbio, uma declaração intrigante e enigmas contra ele? Eles dirão: ‘Ai daquele que acumula o que não é seu — Até quando? — E que aumenta ainda mais as suas dívidas!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Não se levantarão de repente os seus credores? Eles acordarão e o sacudirão violentamente, E você servirá de despojo para eles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "Visto que você saqueou muitas nações, Todos os povos que restarem o saquearão. Pois você derramou sangue humano E cometeu violência contra a terra, Contra as cidades e contra os seus habitantes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Ai daquele que obtém lucro injusto para a sua casa, A fim de colocar seu ninho no alto E se livrar das garras da calamidade!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Suas tramas resultam em vergonha para a sua própria casa. Ao exterminar muitos povos, você peca contra si mesmo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "Pois uma pedra clamará de dentro da parede, E do telhado uma viga responderá.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Ai daquele que constrói uma cidade com derramamento de sangue, E que estabelece uma cidade com injustiça!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Por acaso não foi Jeová dos exércitos que determinou que os povos trabalhem arduamente para alimentar o fogo, E que as nações se cansem em vão?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Pois a terra ficará cheia do conhecimento da glória de Jeová, Assim como as águas cobrem o mar.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Ai daquele que dá ao seu próximo algo para beber Misturado com fúria e ira, a fim de embriagá-lo E olhar para a sua nudez!",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Você ficará empanturrado com desonra em vez de com glória. Beba você também, e exponha a sua incircuncisão. Chegará a sua vez de beber do cálice da mão direita de Jeová, E a sua glória será coberta de vergonha.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Pois a violência que você fez ao Líbano o cobrirá, E a destruição que aterrorizou os animais virá sobre você, Pois você derramou sangue humano E cometeu violência contra a terra, Contra as cidades e contra os seus habitantes.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "De que proveito é uma imagem esculpida, Se foi apenas um artesão que a fez? De que proveito são uma estátua de metal e uma instrutora de mentiras, Mesmo que o artesão confie nelas, Fazendo deuses sem valor, que não podem falar?",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "Ai daquele que diz a um pedaço de madeira: “Acorde!” Ou a uma pedra muda: “Desperte! Instrua-nos!” Veja! Eles são revestidos de ouro e prata, E não há nenhum fôlego dentro deles.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 20,
+          "texto": "Mas Jeová está no seu santo templo. Fique em silêncio diante dele, toda a terra!’”",
+          "novo_paragrafo": false
+        }
+      ]
+    },
+    {
+      "capitulo": 3,
+      "versiculos": [
+        {
+          "verso": 1,
+          "texto": "Oração do profeta Habacuque, em forma de lamentações:",
+          "novo_paragrafo": true
+        },
+        {
+          "verso": 2,
+          "texto": "Ó Jeová, ouvi os relatos a teu respeito. Ó Jeová, fiquei admirado diante dos teus atos. No meio dos anos, realiza-os de novo! No meio dos anos, torna-os conhecidos. Que te lembres de ter misericórdia durante a agitação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 3,
+          "texto": "Deus veio de Temã, O Santo veio do monte Parã. (Selá) Sua majestade cobriu os céus; Seu louvor encheu a terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 4,
+          "texto": "Seu esplendor era como a luz. Dois raios saíam brilhando da sua mão, Onde se escondia a sua força.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 5,
+          "texto": "À frente dele ia a peste, E a febre ardente seguia seus passos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 6,
+          "texto": "Ele parou e fez a terra tremer. Com um olhar, fez nações estremecer. Os montes eternos foram despedaçados, E as colinas antigas se encurvaram. Os caminhos da antiguidade pertencem a ele.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 7,
+          "texto": "Vi aflição nas tendas de Cusã. Os panos das tendas da terra de Midiã tremeram.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 8,
+          "texto": "É contra os rios, ó Jeová, É contra os rios que a tua ira está acesa? Ou a tua fúria é contra o mar? Pois cavalgaste nos teus cavalos; Teus carros de guerra foram vitoriosos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 9,
+          "texto": "Descobriste e aprontaste o teu arco. As varas foram designadas com um juramento. (Selá) Com rios partiste a terra.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 10,
+          "texto": "Os montes se contorceram de dor ao te ver. Passou uma chuva torrencial. As águas profundas rugiram. Levantaram alto suas mãos.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 11,
+          "texto": "O sol e a lua ficaram parados na sua elevada morada. Tuas flechas saíram como a luz. Tua lança brilhava como um relâmpago.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 12,
+          "texto": "Marchaste com fúria através da terra. Pisoteaste em ira as nações.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 13,
+          "texto": "Saíste para a salvação do teu povo, para salvar o teu ungido. Esmagaste o líder da casa dos maus. Ela foi exposta do alicerce até o teto. (Selá)",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 14,
+          "texto": "Furaste a cabeça dos guerreiros dele com as armas que ele mesmo possuía, Quando eles avançaram como uma tempestade para me espalhar. Eles se alegravam com a perspectiva de devorar um oprimido em segredo.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 15,
+          "texto": "Avançaste através do mar com os teus cavalos, Através de vastas águas revoltas.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 16,
+          "texto": "Eu ouvi e estremeci no íntimo; Meus lábios tremeram diante do som. A podridão penetrou nos meus ossos; Minhas pernas vacilaram. Mas espero tranquilamente o dia da aflição, Pois ele está vindo sobre aqueles que nos atacam.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 17,
+          "texto": "Mesmo que a figueira não floresça, E não haja fruto nas videiras; Mesmo que a safra da oliveira seja um fracasso, E os campos não produzam alimento; Mesmo que as ovelhas desapareçam do curral, E não haja bois nos estábulos;",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 18,
+          "texto": "Ainda assim eu vou exultar em Jeová, Vou me alegrar no Deus da minha salvação.",
+          "novo_paragrafo": false
+        },
+        {
+          "verso": 19,
+          "texto": "O Soberano Senhor Jeová é a minha força; Ele fará os meus pés como os de um cervo E me fará pisar nos lugares elevados. Ao regente; para ser acompanhado com os meus instrumentos de cordas.",
+          "novo_paragrafo": false
+        }
+      ]
+    }
+  ]
+}

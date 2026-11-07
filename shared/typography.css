@@ -1,0 +1,83 @@
+@import url('../biblia/fonts/fonts.css');
+
+/* Reading starts at 19.36px (level 3 of 11); interface-only pages use 16px.
+   Authored note formatting is left on the element instead of being rewritten. */
+html[data-font-size-global] {
+    font-size: var(--font-base-global, 19.36px);
+}
+html[data-font-size-global] body {
+    font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: var(--font-base-global, 19.36px);
+}
+html[data-font-size-global] :is(input, select, textarea) {
+    font-family: inherit;
+}
+
+/* Use the selected pixel size directly, without compounding relative sizes
+   from a modal parent or restored article styles. */
+html[data-font-size-global] .sentinela-bible :is(.verses, .study-reference-verse),
+html[data-font-size-global] .paragrafo,
+html[data-font-size-global] #modal-biblia-corpo p {
+    font-size: var(--font-base-global, 19.36px);
+}
+html[data-font-size-global] .sentinela-bible :is(.document, .note-body) {
+    font-size: var(--font-base-global);
+}
+html[data-font-size-global] .sentinela-bible :is(.verses, .note-body),
+html[data-font-size-global] .sentinela-bible .document p {
+    font-family: "WTClearText", Georgia, serif;
+}
+
+/* Home and the bottom dock use their original stylesheets. Their typography
+   and layout do not follow the selected reading level. */
+
+/* Bible interface labels retain their original proportions. */
+html[data-font-size-global] .sentinela-bible { --header: max(44px, calc(44px * var(--font-scale-global))); }
+html[data-font-size-global] .sentinela-bible .header-title h1 { font-size: calc(17px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible .header-title p { font-size: calc(13px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible :is(.header-back, .text-button, .button, .book-info button, .menu-row, .library select, .document details, .document .video-link, .welcome p) { font-size: var(--font-base-global); }
+html[data-font-size-global] .sentinela-bible .section-tabs button { font-size: calc(15px * var(--font-scale-global)); min-height: 44px; height: auto; padding-top: 8px; padding-bottom: 8px; }
+html[data-font-size-global] .sentinela-bible #book-grids h2 { font-size: calc(18px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible .book-tile { font-size: calc(14px * var(--font-scale-global)); padding-left: 6px; }
+html[data-font-size-global] .sentinela-bible .chapter-tile { font-size: calc(18px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible .section-row { font-size: calc(17px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible :is(.section-row .row-label, #position, .saved-row small, .welcome .small) { font-size: calc(12px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible :is(.section-list h2, .sheet-header h2, .saved-row > button:first-child, .font-setting button) { font-size: calc(19px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible .reader > h2 { font-size: calc(32px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible .document > h2 { font-size: calc(28px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible :is(.library h2, .saved-page h2, .welcome h2) { font-size: calc(27px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible :is(.library label, #search-form label) { font-size: calc(13px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible :is(.notice, .page-hint, .welcome a, #action-status, .document .media-missing) { font-size: calc(14px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible :is(.library details, .document table, .note-empty) { font-size: calc(15px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible :is(.reference-link, #search-results button) { font-size: calc(17px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible #search-input { font-size: max(16px, var(--font-base-global)); }
+html[data-font-size-global] .sentinela-bible .font-setting { flex-wrap: wrap; }
+html[data-font-size-global] .sentinela-bible :is(.menu-row, .chapter-nav) { gap: 10px; }
+html.large-reading-text .sentinela-bible :is(.book-grid, .chapter-grid) { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+html.large-reading-text .sentinela-bible { --header: calc(51px + 38px * var(--font-scale-global)); }
+html.large-reading-text .sentinela-bible .app-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 44px 1fr;
+    padding-bottom: 6px;
+}
+html.large-reading-text .sentinela-bible .header-back { grid-row: 1; grid-column: 1; }
+html.large-reading-text .sentinela-bible .header-actions { grid-row: 1; grid-column: 2; justify-self: end; }
+html.large-reading-text .sentinela-bible .header-title { grid-row: 2; grid-column: 1 / -1; margin-left: 0; align-self: center; }
+html.large-reading-text .sentinela-bible .header-title h1,
+html.large-reading-text .sentinela-bible .header-title p { white-space: nowrap; }
+
+html[data-font-size-global] #search-dialog .search-panel-header h2 { font-size: calc(20px * var(--font-scale-global)); }
+html[data-font-size-global] #search-dialog :is(.search-category, .search-suggestions-title) { font-size: calc(13px * var(--font-scale-global)); }
+html[data-font-size-global] #search-dialog :is(.search-category-count, .search-result-meta) { font-size: calc(10px * var(--font-scale-global)); }
+html[data-font-size-global] #search-dialog :is(.search-status, #search-form label) { font-size: calc(12px * var(--font-scale-global)); }
+html[data-font-size-global] #search-dialog .search-result-title { font-size: calc(17px * var(--font-scale-global)); }
+html[data-font-size-global] #search-dialog .search-result-snippet { font-size: var(--font-base-global); }
+html[data-font-size-global] #search-dialog :is(.search-result-reason, .search-coverage) { font-size: calc(11px * var(--font-scale-global)); }
+html[data-font-size-global] #search-dialog :is(.search-load-more, .search-retry, .search-empty, #search-results .search-example) { font-size: calc(14px * var(--font-scale-global)); }
+
+/* Extractor uses the same base for its form and generated text. */
+html[data-font-size-global] body:has(.output-container) :is(input, select, textarea) { font-size: var(--font-base-global); }
+html[data-font-size-global] body:has(.output-container) :is(#btn1, #btn2, #btn3, #btn4, #btnSaveEditor, #btnCloseEditor) { font-size: var(--font-base-global); }
+html[data-font-size-global] body:has(.output-container) textarea { font-family: "Noto Sans", sans-serif; }
+html[data-font-size-global] body:has(.output-container) #studyInput { width: calc(64px * var(--font-scale-global)); }
