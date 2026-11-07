@@ -3,6 +3,51 @@
   --cor-glow: rgba(180,180,185,0.15);
 }
 
+.assembly-heading-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: -8px 0;
+}
+
+#assembly-settings-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 8px 0 8px 8px;
+  border: 0;
+  background: none;
+  color: var(--cor-global);
+  font: 600 14px/1.5 'Noto Sans', sans-serif;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#assembly-settings-toggle svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  transition: transform .2s ease;
+}
+
+#assembly-settings-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+#assembly-settings-toggle:focus-visible { outline: 2px solid var(--cor-global); outline-offset: 3px; border-radius: 4px; }
+.assembly-home #controles { margin-top: 12px; }
+#controles[hidden] { display: none; }
+
+@media (max-width: 360px) {
+  #assembly-settings-toggle { font-size: 12px; gap: 4px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #assembly-settings-toggle svg { transition: none; }
+  .assembly-home #controles { animation: none; }
+}
+
 #controles {
   background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(248,248,250,0.96));
   border: 1px solid rgba(0, 0, 0, 0.06);

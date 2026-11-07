@@ -135,16 +135,34 @@
     overlay.hidden = true;
     if (trigger?.isConnected) trigger.focus({preventScroll:true});
   }
+  function syncFontControl() {
+    if (!overlay) return;
+    const scale = window.GlobalFontScale;
+    const slider = overlay.querySelector('#notes-font-level');
+    const level = scale?.getLevel() || 3;
+    slider.disabled = !scale;
+    slider.value = String(level);
+    slider.setAttribute('aria-valuetext', `Nível ${level} de 11${level === 3 ? ', padrão' : ''}`);
+    slider.closest('.notes-font-range').style.setProperty('--range-progress', `${(level - 1) * 10}%`);
+  }
   function build() {
     overlay = document.createElement('div'); overlay.className = 'notes-version-overlay'; overlay.id = 'notes-versions'; overlay.hidden = true;
     overlay.innerHTML = `<section class="notes-version-card" role="dialog" aria-modal="true" aria-labelledby="notes-versions-title">
       <header><h2 id="notes-versions-title">Anotações · versão ${current}</h2><button type="button" id="notes-versions-close" aria-label="Fechar opções">×</button></header>
       <div class="notes-version-body">
+      <div class="notes-font-control">
+        <label for="notes-font-level">Tamanho da fonte global</label>
+        <div class="notes-font-preview" aria-hidden="true"><span>A</span><span>A</span></div>
+        <div class="notes-font-range">
+          <div class="notes-font-track" aria-hidden="true"></div>
+          <div class="notes-font-ticks" aria-hidden="true">${'<i></i>'.repeat(11)}</div>
+          <input id="notes-font-level" type="range" min="1" max="11" step="1" value="3">
+        </div>
+      </div>
       <p>Alternar a versão mantém suas anotações.</p>
       <button type="button" id="notes-version-2" class="notes-version-choice"><strong>Versão 2 · atual</strong><span>Edição e leitura com borda animada</span></button>
       <button type="button" id="notes-version-1" class="notes-version-choice"><strong>Versão 1</strong><span>Página anterior preservada</span></button>
       <p id="notes-version-message" role="status"></p>
-      <button type="button" id="notes-diagnose-navbar" class="notes-version-export" ${current === '2' ? '' : 'hidden'}>Verificar barra inferior</button>
       <button type="button" id="notes-export-current" class="notes-version-export">Exportar nota desta semana</button>
       <button type="button" id="notes-export-original" class="notes-version-export" hidden>Exportar cópia anterior à v2</button>
       <button type="button" id="notes-export-recovery" class="notes-version-export" hidden>Exportar cópias preservadas</button>
@@ -152,21 +170,16 @@
     </section>`;
     document.body.append(overlay); message = overlay.querySelector('#notes-version-message');
     overlay.querySelector('#notes-versions-close').onclick = close;
+    overlay.querySelector('#notes-font-level').addEventListener('input', event => {
+      window.GlobalFontScale?.setLevel(Number(event.target.value));
+      syncFontControl();
+    });
     for (const version of ['1','2']) {
       const button = overlay.querySelector('#notes-version-' + version);
       button.setAttribute('aria-pressed', String(version === current));
       button.onclick = () => switchTo(version);
     }
     overlay.querySelector('#notes-export-current').onclick = exportCurrent;
-    overlay.querySelector('#notes-diagnose-navbar').onclick = () => {
-      if (window.NotesNavbarDiagnostics?.enabled) { close(); window.NotesNavbarDiagnostics.show(); return; }
-      if (document.getElementById('notes-navbar-diagnostic-script')) return;
-      close();
-      const script = document.createElement('script'); script.id = 'notes-navbar-diagnostic-script';
-      script.src = new URL('navbar-diagnostics.js',scriptURL).href;
-      script.onerror = () => { script.remove(); open(); message.textContent = 'Não foi possível abrir a verificação. Tente novamente.'; };
-      document.head.append(script);
-    };
     overlay.querySelector('#notes-export-original').onclick = async () => {
       const backup = await getBackup().catch(() => null);
       if (backup?.raw) download(backup.raw, `anotacoes-antes-v2-${initialWeek}.json`);
@@ -178,8 +191,8 @@
     overlay.addEventListener('keydown', event => {
       if (event.key === 'Escape') { event.preventDefault(); close(); }
       if (event.key === 'Tab') {
-        const buttons = [...overlay.querySelectorAll('button')].filter(button => !button.hidden && !button.disabled);
-        const first = buttons[0], last = buttons.at(-1);
+        const controls = [...overlay.querySelectorAll('button, input')].filter(control => !control.disabled && control.getClientRects().length);
+        const first = controls[0], last = controls.at(-1);
         if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
         else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
       }
@@ -188,10 +201,12 @@
   function open(event) {
     event?.preventDefault(); trigger = event?.currentTarget || document.activeElement;
     if (!overlay) build();
+    syncFontControl();
     message.textContent = backupError ? 'Não foi possível guardar a cópia inicial neste dispositivo. Você pode exportar sua nota.' : '';
     overlay.hidden = false; overlay.querySelector('#notes-versions-close').focus({preventScroll:true});
     overlay.querySelector('#notes-export-recovery').hidden = !recoveryCopies().length;
     getBackup().then(backup => { overlay.querySelector('#notes-export-original').hidden = !backup?.raw; }).catch(() => {});
   }
+  window.addEventListener('globalfont:changed', syncFontControl);
   window.NotesVersions = {current, ready, open, close, switchTo, getBackup, exportCurrent};
 })();

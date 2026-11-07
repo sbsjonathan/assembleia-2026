@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menuContainer = document.getElementById('menu-container');
     const diaElemento = document.querySelector('.dia');
+    const settingsToggle = document.getElementById('assembly-settings-toggle');
 
     if (!menuContainer || !diaElemento) return;
 
@@ -60,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.style.setProperty('--cor-glow', GLOW_CINZA);
 
     menuContainer.innerHTML = `
-      <div id="controles" style="display: none;">
+      <div id="controles" role="region" aria-label="Configurações da assembleia" hidden>
         <div class="controle-grupo controle-grupo-ajustes">
           <div class="linha-top linha-top-ajustes">
             <div class="cor-bloco">
@@ -752,17 +753,30 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function toggleMenu() {
-        menuVisivel = !menuVisivel;
-        diaElemento.setAttribute('aria-expanded', String(menuVisivel));
-        menuControles.style.display = menuVisivel ? 'block' : 'none';
+    function setMenuVisible(visible) {
+        menuVisivel = visible;
+        [diaElemento, settingsToggle].filter(Boolean).forEach((trigger) => {
+            trigger.setAttribute('aria-expanded', String(menuVisivel));
+        });
+        menuControles.hidden = !menuVisivel;
         if (menuVisivel) aplicarGlowDaCorGlobal();
         else resetarGlowPadrao();
+    }
+
+    function toggleMenu() {
+        setMenuVisible(!menuVisivel);
     }
 
     diaElemento.setAttribute('aria-expanded', 'false');
     diaElemento.setAttribute('aria-controls', 'controles');
     diaElemento.addEventListener('click', toggleMenu);
+    settingsToggle?.addEventListener('click', toggleMenu);
+    menuControles.addEventListener('keydown', (event) => {
+        if (event.key !== 'Escape') return;
+        event.preventDefault();
+        setMenuVisible(false);
+        (settingsToggle || diaElemento).focus({preventScroll:true});
+    });
     
     if (corPicker) {
         corPicker.addEventListener('input', (e) => {
@@ -788,6 +802,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const tamanho = event?.detail?.level;
         if (!tamanho || !rangeTamanhoFonte) return;
         rangeTamanhoFonte.value = String(tamanho);
+        rangeTamanhoFonte.setAttribute('aria-valuetext', `Nível ${tamanho} de ${FONTE_MAX}`);
         atualizarRangeVisual(tamanho);
     });
 

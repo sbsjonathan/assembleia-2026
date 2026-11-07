@@ -14,8 +14,31 @@
 .notes-version-choice[aria-pressed="true"] { border-color: #604184; background: #f5f1f8; }
 .notes-version-export { display: block; width: 100%; min-height: 44px; padding: 8px 0; border: 0; background: transparent; color: #604184; text-align: left; }
 #notes-version-message:empty { display: none; }
+.notes-font-control { margin: 8px 0 16px; padding: 12px 14px 8px; border: 1px solid #e8e3ed; border-radius: 12px; background: #f8f6fa; }
+.notes-font-control label { display: block; font-weight: 600; }
+.notes-font-preview { display: flex; align-items: baseline; justify-content: space-between; margin-top: 10px; color: #83798c; font-weight: 600; line-height: 1; user-select: none; }
+.notes-font-preview span:first-child { font-size: 15px; }
+.notes-font-preview span:last-child { font-size: 24px; }
+.notes-font-range { --range-progress: 20%; position: relative; height: 44px; }
+.notes-font-track, .notes-font-ticks { position: absolute; left: 14px; right: 14px; top: 50%; transform: translateY(-50%); pointer-events: none; }
+.notes-font-track { height: 4px; border-radius: 4px; background: #ded9e5; }
+.notes-font-track::after { content: ''; display: block; width: var(--range-progress); height: 100%; border-radius: inherit; background: #604184; }
+.notes-font-ticks { display: flex; align-items: center; justify-content: space-between; }
+.notes-font-ticks i { width: 2px; height: 8px; border-radius: 2px; background: #b8aebe; }
+#notes-font-level { appearance: none; -webkit-appearance: none; position: absolute; inset: 0; width: 100%; height: 44px; padding: 0; margin: 0; background: transparent; cursor: pointer; touch-action: pan-y; }
+#notes-font-level::-webkit-slider-runnable-track { height: 28px; border: 0; background: transparent; }
+#notes-font-level::-moz-range-track { height: 28px; border: 0; background: transparent; }
+#notes-font-level::-webkit-slider-thumb { appearance: none; -webkit-appearance: none; width: 28px; height: 28px; border: 1px solid #e8e3ed; border-radius: 50%; background: #fff; box-shadow: 0 2px 6px #0002; }
+#notes-font-level::-moz-range-thumb { width: 26px; height: 26px; border: 1px solid #e8e3ed; border-radius: 50%; background: #fff; box-shadow: 0 2px 6px #0002; }
+#notes-font-level:focus-visible { outline: 2px solid #604184; outline-offset: 3px; border-radius: 8px; }
 [data-theme="dark"] .notes-version-card { background: #222225; color: #eee; }
 [data-theme="dark"] .notes-version-card p, [data-theme="dark"] .notes-version-choice span { color: #bab4c1; }
 [data-theme="dark"] .notes-version-choice { border-color: #57515e; }
 [data-theme="dark"] .notes-version-choice[aria-pressed="true"] { background: #362d40; border-color: #b99dd5; }
 [data-theme="dark"] :is(.notes-version-export, #notes-versions-close) { color: #c4a7df; }
+[data-theme="dark"] .notes-font-control { border-color: #57515e; background: #2c2733; }
+[data-theme="dark"] .notes-font-preview { color: #bab4c1; }
+[data-theme="dark"] .notes-font-track { background: #57515e; }
+[data-theme="dark"] .notes-font-track::after { background: #c4a7df; }
+[data-theme="dark"] .notes-font-ticks i { background: #8f829d; }
+[data-theme="dark"] #notes-font-level:focus-visible { outline-color: #c4a7df; }

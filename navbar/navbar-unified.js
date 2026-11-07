@@ -361,6 +361,9 @@ class UnifiedNavbar {
 
     hideNavbar(reason = 'scroll') {
         if (this._imageViewerSnapshot) return;
+        // Keep the programme navigation available while reading any of its tabs.
+        // Editing still follows the keyboard, independently of scroll direction.
+        if (reason === 'scroll' && document.body.classList.contains('assembly-home')) return;
         if (reason === 'scroll' && document.body.hasAttribute('data-bible-reader')) return;
         if (reason === 'scroll' && !document.documentElement.dataset.programYear && ['home', 'notes', 'save'].includes(this.currentPage)) {
             return;
@@ -433,7 +436,8 @@ class UnifiedNavbar {
 
         document.addEventListener('focusin', (e) => {
             const tag = e.target.tagName;
-            if (tag === 'INPUT' || tag === 'TEXTAREA' || e.target.isContentEditable) {
+            const textInput = tag === 'INPUT' && !['range', 'color', 'radio', 'checkbox', 'button', 'submit', 'reset', 'file', 'image', 'hidden'].includes(e.target.type);
+            if (textInput || tag === 'TEXTAREA' || e.target.isContentEditable) {
                 this.editableFocado = true;
                 this.isKeyboardOpen = true;
                 this.hideNavbar('keyboard');
@@ -694,7 +698,7 @@ document.addEventListener('touchend', function (event) {
 // Reopening an installed iPhone app may resume the page without another load event.
 (function manageAppUpdates() {
     if (!('serviceWorker' in navigator)) return;
-    const release = 'ass26-2026.11.07.5';
+    const release = 'ass26-2026.11.07.6';
     const root = getProjectRootURL();
     let registration, checking, lastCheck = 0, refreshing = false, navigating = false;
     const pageRelease = document.querySelector('meta[name="app-version"]')?.content || (isIndexPageNavbar() ? 'legacy' : release);
