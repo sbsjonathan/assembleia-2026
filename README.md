@@ -22,19 +22,23 @@ Os seis cânticos do programa abrem as respectivas páginas oficiais do JW.org, 
 
 O ícone próprio representa as fileiras e o palco de um auditório, em roxo sobre lavanda clara. O manifesto mantém a identidade da instalação `assembleia-2026`, enquanto a versão desta linha começa por `ass26-`.
 
-Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v8`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
+Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v9`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
 
 Na atualização da variante anterior, os dados do namespace `assembleia-2026:` são copiados sem apagar os originais. Notas do antigo congresso ficam separadas como `legacy-congresso:` e não são associadas aos novos discursos. Os dados do aplicativo Sentinela não são importados nem apagados.
+
+O login salvo é restaurado antes de carregar o serviço de nuvem. Falhas de rede, respostas ambíguas e erros de interface não apagam a identidade local. Uma resposta atrasada também não pode remover uma entrada mais recente; a saída explícita continua sendo respeitada entre as páginas da Assembleia.
 
 ## Desenvolvimento
 
 Sirva esta pasta com um servidor HTTP, por exemplo `python -m http.server 8000`. Antes de publicar alterações, regenere os hashes com `python scripts/build-offline-assets.py`.
 
 Testes de persistência: `node tests/assembly-sync.cjs`.
+Testes da sessão salva, falhas temporárias e respostas atrasadas: `node tests/auth-session.cjs` e `python tests/test_auth_session.py` (este último usa contas e serviço sintéticos em páginas reais).
 Testes de atualização dos downloads: `node tests/assembly-cache-migration.cjs`.
 Testes de isolamento em navegador: `python tests/test_app_scope.py` (requer Playwright; `WEBKIT_EXECUTABLE` habilita o teste WebKit).
 Testes de abertura da semana corrente: `python tests/test_current_study.py`.
 Testes de seleção, composição e viewport do editor: `python tests/test_program_caret.py`. O teclado é simulado nesses testes; a validação nativa é feita no iPhone.
+Testes da página completa durante o foco, no navegador e no modo PWA: `python tests/test_program_focus_layout.py`. Verificam a reserva inferior, a expansão, o placeholder e a exclusão dos campos recolhidos da navegação de foco. A análise e as fontes do WebKit estão em [Foco no iOS](docs/ios-inline-focus.md).
 Testes de ida e volta da anotação, resumo e recuperação de falhas: `python tests/test_program_summary.py`.
 Testes do menu compacto de Anotações, formatação, fonte global e persistência: `python tests/test_notes_menu.py`.
 Testes de listas numeradas, continuação com Enter, conversão e histórico: `python tests/test_notes_lists.py`.
@@ -43,7 +47,7 @@ Testes de listas numeradas, continuação com Enter, conversão e histórico: `p
 
 GitHub Pages publica a raiz da branch `main` em https://sbsjonathan.github.io/assembleia-2026/.
 
-Versão atual: `ass26-2026.11.08.2`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
+Versão atual: `ass26-2026.11.08.3`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
 
 O catálogo bíblico incluído permanece disponível no pacote. Cânticos externos, áudios, serviços de IA e sincronização precisam de conexão. A Sentinela consulta primeiro o estudo semanal já baixado; sem download nem conexão, informa que o estudo está indisponível.
 

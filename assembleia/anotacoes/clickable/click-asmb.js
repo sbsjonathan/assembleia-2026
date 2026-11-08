@@ -458,6 +458,9 @@
 
     note.classList.toggle('ativa', willOpen);
     trigger.classList.toggle('ativo', willOpen);
+    // Collapsed fields must also be absent from the keyboard's next/previous
+    // focus sequence; opacity and pointer-events alone only hide them visually.
+    note.inert = !willOpen;
 
     if (!willOpen) {
       blurEditor(editor);
@@ -477,6 +480,7 @@
     const special = getSpecialNoteConfig(trigger);
     const note = document.createElement('div');
     note.className = 'anotacao-asmb';
+    note.inert = true;
     note.__trigger = trigger;
     note.__specialConfig = special || null;
 
@@ -731,6 +735,7 @@
     if (window.AssemblyProgram?.selectTab(panel.id, { scroll: false }) === false) return;
     clearMarker();
     note.classList.add('ativa');
+    note.inert = false;
     trigger.classList.add('ativo');
     updateBodyOpenState();
     requestAnimationFrame(() => {

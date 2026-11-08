@@ -59,8 +59,7 @@ VIEWPORT = """(() => {
 SETUP = """() => {
     window.editor = document.querySelector('.clickable-asmb[contenteditable="true"]');
     window.note = editor.closest('.anotacao-asmb');
-    note.classList.add('ativa');
-    note.previousElementSibling.classList.add('ativo');
+    note.previousElementSibling.click();
     window.selectIn = (node, offset=0, endNode=node, endOffset=offset) => {
         const range = document.createRange();
         range.setStart(node, offset); range.setEnd(endNode, endOffset);

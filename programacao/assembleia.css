@@ -6,6 +6,10 @@
 }
 html, body { overflow-x: clip; }
 .assembly-home { --accent: var(--cor-global); font-family: 'Noto Sans', sans-serif; }
+/* Hiding the dock must not shorten the document during WebKit's native
+   keyboard reveal. At the end of the page that would clamp scrollY and move
+   the tapped line down by the dock's height. Keep its layout space reserved. */
+body.assembly-home.with-bottom-navbar { padding-bottom: var(--navbar-real-height, 70px) !important; }
 .assembly-heading {
   padding: 20px;
   border-bottom: 1px solid var(--border-color);
@@ -44,7 +48,15 @@ html, body { overflow-x: clip; }
 /* A closed note consumes no height. The open field fits one text line plus padding. */
 .program-fragment .anotacao-asmb { font-size: inherit; margin-top: 0; margin-bottom: 0; grid-template-rows: minmax(0, 0fr); }
 .program-fragment .anotacao-asmb.ativa { margin-bottom: max(12px, .65em); grid-template-rows: minmax(0, 1fr); }
-.program-fragment .anotacao-asmb-inner { padding: 4px 19px 13px 4px; margin: -4px -19px -13px -4px; }
+.program-fragment .anotacao-asmb-inner {
+  /* Clip the folding animation without introducing a second scroll container
+     that can consume the browser's attempt to reveal the caret. */
+  overflow: clip;
+  padding: 4px 19px 13px 4px; margin: -4px -19px -13px -4px;
+}
+/* A quick tap can reach the field before its opening animation finishes.
+   Settle its geometry immediately so the native reveal uses the final box. */
+.program-fragment .anotacao-asmb.ativa:focus-within { transition: none; }
 .program-fragment .clickable-asmb-wrap { padding-bottom: 0; }
 /* The compact wrapper has no bottom padding. Keep the original diagonal marks
    at the field corner, with the whole 44px target clear of the following topic. */
@@ -52,12 +64,20 @@ html, body { overflow-x: clip; }
 .program-fragment .expand-handle-asmb::before { bottom: 19px; }
 .program-fragment .expand-handle-asmb::after { bottom: 15.1px; }
 html[data-font-scope="interface"] .program-fragment .clickable-asmb {
+  position: relative;
   font: inherit; line-height: 1.45;
   min-height: max(44px, calc(2.15em + 2px)); padding: .35em 1.4em .35em .6em;
   border-radius: 8px;
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--cor-global) 8%, transparent);
 }
-.program-fragment .clickable-asmb.is-empty::before { font: inherit; line-height: inherit; }
+.program-fragment .clickable-asmb.is-empty::before {
+  /* Like a native placeholder, this must not become a line in the editable
+     layout or change the field's height when the first character is typed. */
+  position: absolute; inset: .35em 1.4em auto .6em;
+  font: inherit; line-height: inherit;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  user-select: none;
+}
 .program-fragment .clickable-asmb:focus { box-shadow: 0 0 0 2px color-mix(in srgb, var(--cor-global) 18%, transparent); }
 .program-fragment .clickable-asmb :is(.toggle-title, .text-content, .paragraph-content) { font-size: inherit; line-height: 1.45; }
 .assembly-info { margin-top: 1em; padding-top: .8em; border-top: 1px solid var(--border-color); font-size: 16px; }
