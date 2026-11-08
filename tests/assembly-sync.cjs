@@ -321,7 +321,7 @@ async function test(name, run) { await run(); count++; console.log('PASS', name)
         let payload, writing = false;
         const builder = { select() { return this; }, eq(key, value) { filters.push([key, value]); return this; },
             update(value) { payload = value; writing = true; return this; },
-            maybeSingle: async () => ({ data: writing ? { id: 'row1', conteudo_html: payload.conteudo_html } : { id: 'row1', conteudo_html: JSON.stringify(previous) }, error: null }) };
+            maybeSingle: async () => ({ data: writing ? { id: 'row1', conteudo_html: payload.conteudo_html, xmin: '102' } : { id: 'row1', conteudo_html: JSON.stringify(previous), xmin: '101' }, error: null }) };
         const ctx = { window: { SupabaseSync: {} }, navigator: {}, console };
         vm.createContext(ctx); vm.runInContext(fs.readFileSync(path.join(root, 'save/supabase.js'), 'utf8') + '\nwindow.TestClass = SupabaseSync;', ctx);
         const client = Object.create(ctx.window.TestClass.prototype);
@@ -331,6 +331,7 @@ async function test(name, run) { await run(); count++; console.log('PASS', name)
         assert.equal(result.success, true);
         assert.ok(payload.conteudo_html.length > 100000);
         assert.ok(filters.every(([key, value]) => key !== 'conteudo_html' && String(value).length < 100));
+        assert.ok(filters.some(([key, value]) => key === 'xmin' && value === '101'));
     });
     await test('Congress keys and archives never enter current assembly cloud payload', async () => {
         const h = harness();
@@ -350,13 +351,13 @@ async function test(name, run) { await run(); count++; console.log('PASS', name)
         const ctx = { window: { SupabaseSync: {} }, navigator: {}, console };
         vm.createContext(ctx); vm.runInContext(fs.readFileSync(path.join(root, 'save/supabase.js'), 'utf8') + '\nwindow.TestClass = SupabaseSync;', ctx);
         const builder = { select() { return this; }, eq(key, value) { if (key === 'tipo') filters.push(value); return this; },
-            maybeSingle: async () => ({data: filters.at(-1)==='assembleia2026:richtext' ? {id:'row1',conteudo_html:'preserved note'} : response, error:null}) };
+            maybeSingle: async () => ({data: filters.at(-1)==='assembleia2026:richtext' ? {id:'row1',conteudo_html:'preserved note',xmin:'101'} : response, error:null}) };
         const client = Object.create(ctx.window.TestClass.prototype);
         Object.assign(client, {currentUser:{id:'qa-user'},isOnline:true,supabase:{from:()=>builder},ensureInitialized:async()=>true,
             checkExistingSession(){ return {status:'signed-in',raw:'qa-session',user:{id:'qa-user'}}; }});
         assert.equal(await client.carregarRichtextAnotacoes('07-11'), 'preserved note');
         assert.deepEqual(filters,['ass26:richtext','assembleia2026:richtext']);
-        filters.length=0;response={id:'row1',conteudo_html:''};
+        filters.length=0;response={id:'row1',conteudo_html:'',xmin:'102'};
         assert.equal(await client.carregarRichtextAnotacoes('07-11'), '');
         assert.deepEqual(filters,['ass26:richtext']);
         assert.equal((await client.salvarAssembleiaAnotacoes('2026', {})).success,false);

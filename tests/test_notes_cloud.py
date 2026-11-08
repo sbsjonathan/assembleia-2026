@@ -20,13 +20,18 @@ def check(engine, executable, origin):
         context.route('**/*', lambda route: route.continue_() if route.request.url.startswith(origin + '/') else route.abort())
         context.add_init_script('''
             localStorage.setItem('ass26:supabase_user', JSON.stringify({id:'synthetic',loginId:'one'}));
-            window.fakeCloud = { raw: null, writes: [], fail: false };
+            window.fakeCloud = JSON.parse(sessionStorage.getItem('ass26:qa-cloud') || 'null') || { raw: null, writes: [], fail: false };
             window.SupabaseSync = {
                 isLoggedIn: () => !!localStorage.getItem('supabase_user'),
                 carregarRichtextAnotacoes: async () => fakeCloud.raw,
                 salvarRichtextAnotacoes: async (week, raw, options) => {
                     if (fakeCloud.fail) return {success:false,error:'synthetic failure'};
-                    if (options.expectedRemote !== fakeCloud.raw) return {success:false,error:'conflict'};
+                    if (fakeCloud.race) {
+                        fakeCloud.race=false;
+                        fakeCloud.raw=JSON.stringify({html:'<div class="node-paragraph"><div class="row"><div class="paragraph-content editable" contenteditable="true">Versão do outro aparelho</div></div></div>',formato:'legacy-html'});
+                        return {success:false,code:'SYNC_CONFLICT',error:'Outro aparelho gravou primeiro'};
+                    }
+                    if (options.expectedRemote !== fakeCloud.raw) return {success:false,code:'SYNC_CONFLICT',error:'conflict'};
                     fakeCloud.writes.push(raw); fakeCloud.raw = raw; return {success:true};
                 }
             };
@@ -52,8 +57,44 @@ def check(engine, executable, origin):
         page.wait_for_function("!document.getElementById('editor').textContent.trim() && !window.UnifiedLoadManager.syncing")
         assert page.evaluate('fakeCloud.writes.length') == 1
         assert page.evaluate("Array.from({length:localStorage.length},(_,i)=>localStorage.key(i)).some(k=>k.startsWith('richtext_recovery_02-11_'))")
+        # A true CAS collision leaves local typing untouched and asks for a choice.
+        page.evaluate('fakeCloud.race=true')
+        editor = page.locator('#editor .paragraph-content').first
+        editor.fill('Minha edição durante a disputa')
+        editor.focus()
+        page.evaluate("window.qaFocused = document.activeElement; window.qaSelection = {node:getSelection().anchorNode,offset:getSelection().anchorOffset}")
+        page.evaluate('window.cacheRichText.flush(); window.AutoSaveManager.forceAutoSave()')
+        page.wait_for_function('window.AutoSaveManager.getCloudConflict() && !window.AutoSaveManager.sending')
+        assert page.evaluate("document.activeElement === window.qaFocused && getSelection().anchorNode === window.qaSelection.node && getSelection().anchorOffset === window.qaSelection.offset")
+        assert 'Minha edição durante a disputa' in page.locator('#editor').inner_text()
+        page.locator('#notes-save-status[data-type="conflict"]').wait_for(state='visible')
+        assert page.evaluate('fakeCloud.writes.length') == 1
+        page.evaluate("sessionStorage.setItem('qa-cloud',JSON.stringify(fakeCloud))")
+        page.reload()
+        page.wait_for_function('window.AutoSaveManager?.getCloudConflict()')
+        page.locator('#notes-save-status[data-type="conflict"]').wait_for(state='visible')
+        page.evaluate('window.AutoSaveManager.forceAutoSave()')
+        assert page.evaluate('fakeCloud.writes.length') == 1
+        assert 'Minha edição durante a disputa' in page.locator('#editor').inner_text()
+        page.get_by_role('button', name='Usar da nuvem', exact=True).click()
+        page.wait_for_function('!window.AutoSaveManager.getCloudConflict()')
+        assert 'Versão do outro aparelho' in page.locator('#editor').inner_text()
+        assert page.evaluate('fakeCloud.writes.length') == 1
+        # A later normal edit uses the acknowledged baseline without another prompt.
+        page.locator('#editor .paragraph-content').first.fill('Edição após a escolha')
+        page.evaluate('window.cacheRichText.flush(); window.AutoSaveManager.forceAutoSave()')
+        page.wait_for_function('fakeCloud.writes.length === 2 && !window.AutoSaveManager.sending')
+        assert page.evaluate('window.AutoSaveManager.getCloudConflict()') is None
+        # Keeping local also confirms the current cloud copy with CAS.
+        page.evaluate("fakeCloud.raw = JSON.stringify({html:'Nova alteração na nuvem',formato:'legacy-html'})")
+        page.locator('#editor .paragraph-content').first.fill('Versão que escolho manter')
+        page.evaluate('window.cacheRichText.flush(); window.AutoSaveManager.forceAutoSave()')
+        page.wait_for_function('window.AutoSaveManager.getCloudConflict() && !window.AutoSaveManager.sending')
+        page.get_by_role('button', name='Usar deste aparelho', exact=True).click()
+        page.wait_for_function('!window.AutoSaveManager.getCloudConflict() && fakeCloud.writes.length === 3')
+        assert 'Versão que escolho manter' in page.locator('#editor').inner_text()
         assert not errors, errors
-        print(json.dumps({'engine': engine.name, 'version': version, 'local_failure_and_retry': 'passed', 'empty_cloud_and_recovery': 'passed'}), flush=True)
+        print(json.dumps({'engine': engine.name, 'version': version, 'local_failure_and_retry': 'passed', 'empty_cloud_and_recovery': 'passed', 'atomic_conflict_reload_and_choices': 'passed', 'conflict_preserves_focus': 'passed'}), flush=True)
         context.close()
     browser.close()
 

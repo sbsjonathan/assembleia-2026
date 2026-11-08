@@ -46,6 +46,12 @@ window.assembleiaSync = Object.fromEntries([
 </script><script src="/assembleia/menu/menu.js"></script></body></html>'''
 
 
+SENTINELA_FIXTURE = FIXTURE.replace('/assembleia/menu/menu.css', '/sentinela/menu/menu.css').replace(
+    '<button class="dia">Assembleia</button><div id="menu-container"></div>',
+    '<div class="barra-estudo">Estudo sintético</div><main></main>').replace(
+    '/assembleia/menu/menu.js', '/sentinela/menu/menu.js').replace('window.assembleiaSync', 'window.sentinelaSync')
+
+
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT), **kwargs)
@@ -54,8 +60,8 @@ class Handler(SimpleHTTPRequestHandler):
         pass
 
     def do_GET(self):
-        if self.path == '/qa-cloud-menu.html':
-            data = FIXTURE.encode()
+        if self.path.split('?', 1)[0] in ['/qa-cloud-menu.html', '/qa-sentinela-menu.html']:
+            data = (SENTINELA_FIXTURE if 'sentinela' in self.path else FIXTURE).encode()
             self.send_response(200)
             self.send_header('Content-Type', 'text/html; charset=utf-8')
             self.send_header('Content-Length', str(len(data)))
@@ -63,6 +69,43 @@ class Handler(SimpleHTTPRequestHandler):
             self.wfile.write(data)
         else:
             super().do_GET()
+
+
+
+def check_conflict_notice(page, event, manager, overlay):
+    page.evaluate('''manager => {
+      document.body.style.minHeight='2500px';
+      const input=document.createElement('textarea');input.id='qa-conflict-focus';input.value='texto em edição';
+      document.body.append(input);input.focus({preventScroll:true});input.setSelectionRange(2,5);
+      window.scrollTo(0,75);
+      window[manager].lastObservedLocalJSON='local';window[manager].lastSavedDataJSON='cloud';
+    }''', manager)
+    before = page.evaluate('({focus:document.activeElement.id,start:document.activeElement.selectionStart,end:document.activeElement.selectionEnd,y:scrollY})')
+    page.evaluate("event => dispatchEvent(new CustomEvent(event+':syncstatus',{detail:{status:'error',code:'NETWORK_ERROR'}}))", event)
+    assert not page.locator(f'#{event}-cloud-conflict-notice').count()
+    page.evaluate("event => dispatchEvent(new CustomEvent(event+':syncstatus',{detail:{status:'conflict',code:'SYNC_CONFLICT'}}))", event)
+    notice = page.locator(f'#{event}-cloud-conflict-notice')
+    assert notice.is_visible()
+    assert page.evaluate('({focus:document.activeElement.id,start:document.activeElement.selectionStart,end:document.activeElement.selectionEnd,y:scrollY})') == before
+    page.evaluate("event => dispatchEvent(new CustomEvent(event+':syncstatus',{detail:{status:'saved'}}))", event)
+    assert notice.is_visible()  # A saved checkpoint can still preserve a divergent local draft.
+    page.reload()
+    notice.wait_for(state='visible')
+    notice.get_by_role('button', name='Abrir Nuvem', exact=True).click()
+    assert page.locator(overlay).evaluate("node => node.classList.contains('is-open')")
+    assert not notice.is_visible()
+    page.evaluate("event => dispatchEvent(new CustomEvent(event+':cloudresolved'))", event)
+    page.reload()
+    assert not page.locator(f'#{event}-cloud-conflict-notice').count()
+    page.evaluate("event => dispatchEvent(new CustomEvent(event+':syncstatus',{detail:{status:'conflict',code:'SYNC_CONFLICT'}}))", event)
+    notice.wait_for(state='visible')
+    page.evaluate('''({event,manager}) => {
+      window[manager].lastObservedLocalJSON='same';window[manager].lastSavedDataJSON='same';
+      dispatchEvent(new CustomEvent(event+':syncstatus',{detail:{status:'saved'}}));
+    }''', {'event': event, 'manager': manager})
+    assert not notice.is_visible()
+    page.reload()
+    assert not page.locator(f'#{event}-cloud-conflict-notice').count()
 
 
 def check(engine, executable, origin):
@@ -233,9 +276,13 @@ def check(engine, executable, origin):
     assert page.locator('#range-tamanho-fonte').input_value() == '3'
     assert page.evaluate('GlobalFontScale.getLevel()') == 3
     assert page.evaluate('["tema-interface","editor-performance-mode","cor-assembleia","tamanho-fonte-global"].every(key => localStorage.getItem(key) === null)')
+    check_conflict_notice(page, 'assembleia', 'assembleiaSync', '#asmbSyncOverlay')
+    page.goto(origin + '/qa-sentinela-menu.html?semana=02-11')
+    page.wait_for_function("document.querySelector('#sentinelaSyncOverlay')")
+    check_conflict_notice(page, 'sentinela', 'sentinelaSync', '#sentinelaSyncOverlay')
     assert not errors, errors
     browser.close()
-    print(f'PASS {engine.name}: seven modes, permission lifecycle, duplicate taps, account changes, failures and synchronized deletion')
+    print(f'PASS {engine.name}: seven modes, permission lifecycle, duplicate taps, account changes, failures, synchronized deletion and persistent conflict notices')
 
 
 def main():

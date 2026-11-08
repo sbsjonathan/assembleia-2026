@@ -160,9 +160,14 @@ async function test(name, run) { await run(); count++; console.log('PASS', name)
     await test('richtext malformed save response is not acknowledged', async () => {
         const h = notes(); h.api.salvarRichtextAnotacoes = async () => ({}); h.run('save/auto-save.js'); await h.context.window.AutoSaveManager.ready; await tick(); assert.equal(h.dirty(), true); assert.ok(h.context.window.AutoSaveManager.pending);
     });
-    await test('richtext offline draft keeps divergent cloud recovery and uses expected remote', async () => {
+    await test('richtext offline draft keeps both versions and requires an explicit choice', async () => {
         const h = notes(); const raw = JSON.stringify({ html: 'other device' }); h.remote(raw); h.run('save/auto-save.js'); await h.context.window.AutoSaveManager.ready; await tick();
-        assert.equal(h.writes.length, 1); assert.equal(h.writes[0].options.expectedRemote, raw); assert.equal(h.dirty(), false); assert.ok([...h.data.values()].some(value => value.includes('notes-cloud-recovery') && value.includes('other device')));
+        const manager = h.context.window.AutoSaveManager;
+        assert.equal(h.writes.length, 0); assert.equal(h.dirty(), true); assert.ok(manager.getCloudConflict());
+        assert.ok([...h.data.values()].some(value => value.includes('notes-cloud-recovery') && value.includes('other device')));
+        await manager.forceAutoSave(); assert.equal(h.writes.length, 0);
+        assert.equal(await manager.resolveCloudConflict('local'), true);
+        assert.equal(h.writes.length, 1); assert.equal(h.writes[0].options.expectedRemote, raw); assert.equal(h.dirty(), false); assert.equal(manager.getCloudConflict(), null);
     });
     await test('richtext existing empty cloud clears acknowledged local content rather than resurrecting it', async () => {
         const h = notes('old local', false); h.remote(''); h.run('save/auto-save.js'); await h.context.window.AutoSaveManager.ready; h.run('save/unified-load.js'); await h.context.window.UnifiedLoadManager.ready; await tick();
@@ -177,7 +182,68 @@ async function test(name, run) { await run(); count++; console.log('PASS', name)
         h.api.carregarRichtextAnotacoes = () => new Promise(r => resolve = r); h.run('save/unified-load.js'); await h.context.window.UnifiedLoadManager.ready; await tick();
         h.context.window.AutoSaveManager.pauseAutoSave(); h.edit('typed'); resolve(JSON.stringify({ html: 'cloud' })); await tick();
         assert.equal(h.value(), 'typed'); assert.equal(h.writes.length, 0);
-        h.api.carregarRichtextAnotacoes = async () => JSON.stringify({ html: 'cloud' }); await h.context.window.AutoSaveManager.resumeAutoSave(); assert.equal(JSON.parse(h.writes[0].raw).html, 'typed');
+        h.api.carregarRichtextAnotacoes = async () => JSON.stringify({ html: 'cloud' }); await h.context.window.AutoSaveManager.resumeAutoSave();
+        assert.equal(h.writes.length, 0); assert.ok(h.context.window.AutoSaveManager.getCloudConflict());
+        await h.context.window.AutoSaveManager.resolveCloudConflict('local'); assert.equal(JSON.parse(h.writes[0].raw).html, 'typed');
+    });
+    await test('richtext atomic conflict persists and blocks automatic retries after reload', async () => {
+        const h = notes('draft'); let cloud = null, attempts = 0;
+        h.api.carregarRichtextAnotacoes = async () => cloud;
+        h.api.salvarRichtextAnotacoes = async () => { attempts++; cloud = JSON.stringify({ html: 'winning device' }); return { success: false, code: 'SYNC_CONFLICT', error: 'changed' }; };
+        h.run('save/auto-save.js'); await h.context.window.AutoSaveManager.ready; await tick();
+        assert.equal(attempts, 1); assert.ok(h.context.window.AutoSaveManager.getCloudConflict()); assert.equal(h.value(), 'draft');
+        await h.context.window.AutoSaveManager.forceAutoSave(); assert.equal(attempts, 1);
+        const reopened = notes('draft'); for (const [key, value] of h.data) reopened.data.set(key, value);
+        reopened.remote(cloud); reopened.run('save/auto-save.js'); await reopened.context.window.AutoSaveManager.ready; await tick();
+        reopened.run('save/unified-load.js'); await reopened.context.window.UnifiedLoadManager.ready; await tick();
+        assert.ok(reopened.context.window.AutoSaveManager.getCloudConflict()); assert.equal(reopened.writes.length, 0); assert.equal(reopened.value(), 'draft');
+    });
+    await test('richtext comparison refreshes before a choice when the cloud changed again', async () => {
+        const h = notes('local draft'); h.remote(JSON.stringify({ html: 'remote first' })); h.run('save/auto-save.js');
+        const manager = h.context.window.AutoSaveManager; await manager.ready; await tick();
+        h.remote(JSON.stringify({ html: 'remote second' }));
+        assert.equal(await manager.resolveCloudConflict('local'), false); assert.equal(h.writes.length, 0);
+        assert.equal(manager.getCloudConflict().external.html, 'remote second');
+        h.edit('typed while comparison was open');
+        assert.equal(await manager.resolveCloudConflict('external'), true); assert.equal(h.value(), 'remote second'); assert.equal(h.writes.length, 0);
+        assert.ok([...h.data.values()].some(value => value.includes('typed while comparison was open') && value.includes('remote second')));
+    });
+    await test('richtext stores acknowledged cloud baseline and does not prompt for an ordinary local edit', async () => {
+        const h = notes('baseline', false); h.remote(JSON.stringify({ html: 'baseline' })); h.run('save/auto-save.js');
+        const manager = h.context.window.AutoSaveManager; await manager.ready; manager.acknowledgeRemote(h.store.snapshot());
+        h.edit('next edit'); await tick();
+        assert.equal(h.writes.length, 1); assert.equal(manager.getCloudConflict(), null); assert.equal(h.dirty(), false);
+        assert.ok([...h.data.keys()].some(key => key.includes('cloud_baseline')));
+    });
+    await test('richtext conflict choice cannot affect a new login during its read', async () => {
+        const h = notes('draft'); const raw = JSON.stringify({ html: 'cloud' }); h.remote(raw); h.run('save/auto-save.js');
+        const manager = h.context.window.AutoSaveManager; await manager.ready; await tick();
+        h.api.carregarRichtextAnotacoes = async () => { h.storage.setItem('supabase_user', JSON.stringify({ id: 'test-user', loginId: 'two' })); return raw; };
+        assert.equal(await manager.resolveCloudConflict('external'), false); assert.equal(h.value(), 'draft'); assert.equal(h.writes.length, 0);
+    });
+    await test('richtext cloud choice cannot replace typing made while its read was pending', async () => {
+        const h = notes('draft'); const raw = JSON.stringify({ html: 'cloud' }); h.remote(raw); h.run('save/auto-save.js');
+        const manager = h.context.window.AutoSaveManager; await manager.ready; await tick();
+        let finish; h.api.carregarRichtextAnotacoes = () => new Promise(resolve => { finish = resolve; });
+        const choosing = manager.resolveCloudConflict('external'); await tick(); h.edit('new typing after choice'); finish(raw);
+        assert.equal(await choosing, false); assert.equal(h.value(), 'new typing after choice'); assert.equal(h.writes.length, 0);
+        assert.equal(manager.getCloudConflict().local.html, 'new typing after choice');
+    });
+    await test('richtext adopting an absent cloud document allows the next deliberate edit', async () => {
+        const h = notes('draft'); h.remote(JSON.stringify({ html: 'remote' })); h.run('save/auto-save.js');
+        const manager = h.context.window.AutoSaveManager; await manager.ready; await tick();
+        h.remote(null); assert.equal(await manager.resolveCloudConflict('external'), false);
+        assert.equal(await manager.resolveCloudConflict('external'), true); assert.equal(h.value(), ''); assert.equal(manager.lastCloudKey, null);
+        h.edit('new deliberate note'); await tick();
+        assert.equal(h.writes.length, 1); assert.equal(manager.getCloudConflict(), null);
+    });
+    await test('richtext account switch clears the old notice without deleting that accounts recovery', async () => {
+        const h = notes('draft'); h.remote(JSON.stringify({ html: 'remote' })); h.run('save/auto-save.js');
+        const manager = h.context.window.AutoSaveManager; await manager.ready; await tick();
+        const marker = manager.cloudStateKey('conflict'); assert.ok(h.storage.getItem(marker));
+        h.storage.setItem('supabase_user', JSON.stringify({ id: 'other', loginId: 'new' })); manager.checkLoginStatus();
+        assert.equal(manager.getCloudConflict(), null); assert.ok(h.storage.getItem(marker));
+        assert.ok(h.events.some(event => event.type === 'notes:cloud-conflict-resolved'));
     });
     console.log(`${count} article and notes sync cases passed`);
 })().catch(error => { console.error(error); process.exitCode = 1; });

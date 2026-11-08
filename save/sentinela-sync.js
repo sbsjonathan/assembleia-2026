@@ -33,7 +33,7 @@ class SentinelaSync {
     checkLoginStatus() {
         const account = this.account();
         if (account !== this.accountId) {
-            this.accountId = account; this.initialLoadComplete = false; this.lastSavedDataJSON = '{}'; this.lastObservedLocalJSON = null;
+            this.accountId = account; this.initialLoadComplete = false; this.lastSavedDataJSON = '{}'; this.lastObservedLocalJSON = null; this.pendingConflict = null;
             if (account) {
                 try {
                     const state = JSON.parse(localStorage.getItem(this.manualKey()) || 'null');
@@ -106,8 +106,40 @@ class SentinelaSync {
     assertAccount(account) { if (!account || this.account() !== account) throw new Error('A conta mudou. As anotações locais foram mantidas.'); }
     fail(error) {
         const message = error?.message || String(error || 'Não foi possível sincronizar.');
-        window.dispatchEvent(new CustomEvent('sentinela:syncstatus', { detail: { status: 'error', message } }));
-        return { success: false, error: message };
+        const code = error?.code;
+        window.dispatchEvent(new CustomEvent('sentinela:syncstatus', { detail: { status: code === 'SYNC_CONFLICT' ? 'conflict' : 'error', message, code } }));
+        return { success: false, error: message, ...(code ? { code } : {}) };
+    }
+    syncError(result, fallback) { return Object.assign(new Error(result?.error || fallback), { code: result?.code }); }
+    conflictKey() { return this.manualKey() + '_conflict'; }
+    recordConflict(local, remote, manual = false) {
+        const value = { local, remote, manual };
+        this.pendingConflict = value;
+        localStorage.setItem(this.conflictKey(), JSON.stringify(value));
+    }
+    clearConflict() { localStorage.removeItem(this.conflictKey()); this.pendingConflict = null; }
+    hasConflict() { const key = this.conflictKey(); return !!this.pendingConflict || !!(key && localStorage.getItem(key)); }
+    async reconcileConflict(account) {
+        const conflict = this.pendingConflict || JSON.parse(localStorage.getItem(this.conflictKey()) || 'null');
+        if (!conflict) return null;
+        const attempted = this.validateAnnotations(conflict.local), prior = this.validateAnnotations(conflict.remote);
+        const { values: remote } = await this.readRemote(account);
+        const local = this.collectAnnotationsFromLocalStorage();
+        const baseline = JSON.parse(this.lastSavedDataJSON), observed = JSON.parse(this.lastObservedLocalJSON ?? this.lastSavedDataJSON);
+        const preserved = {};
+        for (const [name, value] of Object.entries(local)) {
+            if (value !== attempted[name] || value === remote[name] || (!conflict.manual && (prior[name] === remote[name] || value === prior[name]))) continue;
+            preserved[name] = value;
+            observed[name] = value;
+            if (name in remote) baseline[name] = remote[name]; else delete baseline[name];
+        }
+        this.backup(preserved, 'Edição local preservada após alteração simultânea em outro aparelho');
+        this.remember(observed, baseline);
+        this.clearConflict();
+        return { preserved: Object.keys(preserved).length };
+    }
+    conflictNotice() {
+        return this.syncError({ code: 'SYNC_CONFLICT', error: 'Outro aparelho alterou a mesma anotação. Sua versão ficou neste aparelho e a outra foi mantida na nuvem. Use Enviar / Substituir se quiser escolher sua versão.' });
     }
     success() { return { success: true }; }
     backup(values, reason) {
@@ -125,6 +157,7 @@ class SentinelaSync {
         const baseline = JSON.parse(this.lastSavedDataJSON), merged = { ...remote };
         for (const [key, value] of Object.entries(local)) {
             if (this.acknowledgedDifference(key, value, remote)) continue;
+            if (key in baseline && !(key in remote) && value === baseline[key]) continue;
             // Only a known, unchanged local version may be refreshed remotely.
             merged[key] = key in remote && value === baseline[key] ? remote[key] : value;
         }
@@ -156,19 +189,21 @@ class SentinelaSync {
     async loadFromSupabase() {
         if (this.isSyncing || !this.checkLoginStatus()) return;
         this.isSyncing = true;
-        const account = this.account(), before = this.collectAnnotationsFromLocalStorage();
+        const account = this.account();
         try {
+            const resolved = this.hasConflict() ? await this.reconcileConflict(account) : null;
+            const before = this.collectAnnotationsFromLocalStorage();
             const { values: remote } = await this.readRemote(account);
             const current = this.collectAnnotationsFromLocalStorage();
             const merged = this.merge(current, remote);
             this.backup(Object.fromEntries(Object.entries(remote).filter(([key, value]) => key in current && value !== merged[key])), 'Cópia da nuvem antes de mesclar');
-            this.apply(this.preserveAcknowledgedLocal(merged, current, remote), before);
+            this.apply(this.preserveAcknowledgedLocal(merged, current, remote), before, true);
             const after = this.collectAnnotationsFromLocalStorage();
             this.lastSavedDataJSON = this.stable(remote); this.initialLoadComplete = true;
             this.dirty = this.stable(merged) !== this.stable(remote);
             if (!this.dirty) this.remember(after, remote);
             if (this.dirty) this.scheduleAutoSave();
-            return this.success();
+            return resolved?.preserved ? this.fail(this.conflictNotice()) : this.success();
         } catch (error) { return this.fail(error); }
         finally { this.isSyncing = false; }
     }
@@ -176,24 +211,39 @@ class SentinelaSync {
         if (this.isSyncing) { this.dirty = true; return; }
         if (!this.checkLoginStatus() || !this.initialLoadComplete || navigator.onLine === false) return;
         clearTimeout(this.autoSaveTimeout); this.isSyncing = true;
+        const account = this.account();
+        let conflicts = 0, preserved = 0, forceMerge = false;
         try {
+            const resolved = this.hasConflict() ? await this.reconcileConflict(account) : null;
+            if (resolved) { preserved += resolved.preserved; forceMerge = true; }
             do {
                 this.dirty = false;
-                const account = this.account(), before = this.collectAnnotationsFromLocalStorage();
-                if (this.stable(before) === (this.lastObservedLocalJSON ?? this.lastSavedDataJSON)) continue;
+                this.assertAccount(account);
+                const before = this.collectAnnotationsFromLocalStorage();
+                if (!forceMerge && this.stable(before) === (this.lastObservedLocalJSON ?? this.lastSavedDataJSON)) continue;
+                forceMerge = false;
                 const { raw, values: remote } = await this.readRemote(account);
                 const local = this.collectAnnotationsFromLocalStorage(), merged = this.merge(local, remote);
                 this.backup(Object.fromEntries(Object.entries(remote).filter(([key, value]) => key in local && value !== merged[key])), 'Cópia da nuvem antes de enviar');
                 const result = await window.SupabaseSync.salvarSentinelaAnotacoes(this.semanaAtual, this.estudoId, merged, { expectedRemote: raw });
-                if (result?.success !== true) throw new Error(result?.error || 'Não foi possível enviar as anotações.');
                 this.assertAccount(account);
-                this.apply(this.preserveAcknowledgedLocal(merged, local, remote), local);
+                if (result?.success !== true) {
+                    const error = this.syncError(result, 'Não foi possível enviar as anotações.');
+                    if (error.code !== 'SYNC_CONFLICT') throw error;
+                    this.recordConflict(local, remote);
+                    const resolved = this.hasConflict() ? await this.reconcileConflict(account) : null;
+                    preserved += resolved?.preserved || 0;
+                    if (++conflicts >= 3) throw error;
+                    this.dirty = true; forceMerge = true;
+                    continue;
+                }
+                this.apply(this.preserveAcknowledgedLocal(merged, local, remote), local, true);
                 const after = this.collectAnnotationsFromLocalStorage();
                 const observed = this.preserveAcknowledgedLocal(merged, local, remote);
                 this.remember(observed, merged);
                 this.dirty = this.stable(after) !== this.lastObservedLocalJSON;
             } while (this.dirty);
-            return this.success();
+            return preserved ? this.fail(this.conflictNotice()) : this.success();
         } catch (error) { this.dirty = true; return this.fail(error); }
         finally { this.isSyncing = false; }
     }
@@ -203,6 +253,7 @@ class SentinelaSync {
         clearTimeout(this.autoSaveTimeout); this.isSyncing = true;
         const account = this.account(), before = this.collectAnnotationsFromLocalStorage();
         let completed = false;
+        let attemptedLocal, attemptedRemote;
         try {
             const { raw, values: remote } = await this.readRemote(account);
             const local = this.collectAnnotationsFromLocalStorage();
@@ -214,19 +265,27 @@ class SentinelaSync {
                 this.remember(this.collectAnnotationsFromLocalStorage(), remote);
             } else {
                 const values = action === 'delete' ? {} : replace ? local : { ...local, ...remote };
+                attemptedLocal = local; attemptedRemote = remote;
                 this.backup(remote, action === 'delete' ? 'Antes de apagar da nuvem' : 'Antes de enviar manualmente');
                 const result = await window.SupabaseSync.salvarSentinelaAnotacoes(this.semanaAtual, this.estudoId, values, { expectedRemote: raw });
-                if (result?.success !== true) throw new Error(result?.error || 'Não foi possível concluir.');
                 this.assertAccount(account);
+                if (result?.success !== true) throw this.syncError(result, 'Não foi possível concluir.');
                 // A manual command changes only its chosen destination. Avoid
                 // automatically reversing a cloud deletion/missing-only upload.
                 this.remember(local, values);
             }
             this.initialLoadComplete = true;
+            this.clearConflict();
             this.dirty = this.stable(this.collectAnnotationsFromLocalStorage()) !== this.lastObservedLocalJSON;
             completed = true;
             return this.success();
-        } catch (error) { return this.fail(error); }
+        } catch (error) {
+            if (error.code === 'SYNC_CONFLICT' && this.account() === account && attemptedLocal) {
+                try { this.recordConflict(attemptedLocal, attemptedRemote, true); await this.reconcileConflict(account); } catch (_) {}
+                this.dirty = false;
+            }
+            return this.fail(error);
+        }
         finally { this.isSyncing = false; if (completed && this.dirty) this.scheduleAutoSave(); }
     }
     pushOverwrite() { return this.manual('push', true); }

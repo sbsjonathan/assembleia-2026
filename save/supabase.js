@@ -224,9 +224,31 @@ class SupabaseSync {
     }
 
     documentError(error) {
-        if (error?.code === '23505') return 'As notas da nuvem mudaram. Tente sincronizar novamente.';
+        if (['SYNC_CONFLICT', '23505', '40001', '40P01'].includes(error?.code)) return 'Outro aparelho alterou esta anotação. Sua cópia local foi preservada.';
         if (error?.code === '22001') return 'O banco recusou o identificador deste documento. Atualize o aplicativo.';
         return error?.message || 'Não foi possível confirmar a operação na nuvem. Tente novamente.';
+    }
+
+    documentConflict() {
+        const error = new Error('Outro aparelho alterou esta anotação. Sua cópia local foi preservada.');
+        error.code = 'SYNC_CONFLICT';
+        return error;
+    }
+
+    documentFailure(error) {
+        const conflict = ['SYNC_CONFLICT', '23505', '40001', '40P01'].includes(error?.code);
+        return { success: false, error: this.documentError(error), ...(conflict ? { code: 'SYNC_CONFLICT' } : {}) };
+    }
+
+    documentRevision(row) {
+        // PostgreSQL changes xmin for every row version, including writes by older
+        // clients. Use it only for this fresh read→write, never as an offline clock.
+        const revision = row?.xmin;
+        if ((typeof revision !== 'string' && typeof revision !== 'number') ||
+            !/^(0|[1-9]\d*)$/.test(String(revision)) || Number(revision) > 4294967295) {
+            throw new Error('Não foi possível verificar a versão da anotação na nuvem. Sua cópia local foi mantida.');
+        }
+        return String(revision);
     }
 
     documentScope(semana, tipo, aliases = [], decode = value => value) {
@@ -254,7 +276,7 @@ class SupabaseSync {
     async readDocumentRow(session, scope, tipo) {
         this.assertDocumentSession(session);
         const { data, error } = await this.supabase.from('richtext_anotacoes')
-            .select('id, conteudo_html').eq('usuario_id', session.user.id)
+            .select('id, conteudo_html, xmin').eq('usuario_id', session.user.id)
             .eq('semana', scope.semana).eq('tipo', tipo).maybeSingle();
         this.assertDocumentSession(session);
         if (error) throw new Error(this.documentError(error));
@@ -262,6 +284,7 @@ class SupabaseSync {
         if (data !== null && (!data || data.id == null || typeof data.conteudo_html !== 'string')) {
             throw new Error('A nuvem retornou um documento inválido. Tente novamente.');
         }
+        if (data !== null) this.documentRevision(data);
         return data;
     }
 
@@ -295,23 +318,32 @@ class SupabaseSync {
             const { canonical, value } = await this.readDocument(session, scope);
             if (Object.prototype.hasOwnProperty.call(options, 'expectedRemote') &&
                 this.stableDocument(value) !== this.stableDocument(options.expectedRemote)) {
-                throw new Error('As notas da nuvem mudaram. Tente sincronizar novamente.');
+                throw this.documentConflict();
             }
             this.assertDocumentSession(session);
-            // Preflight catches known conflicts. Cross-device compare-and-swap needs
-            // a server revision/RPC; never put full note content into URL filters.
+            // The xmin predicate is evaluated atomically by PostgreSQL. A competing
+            // update makes this affect zero rows, even after waiting for its lock.
+            // Creation uses the verified unique account/week/type constraint and
+            // DO NOTHING, never an upsert that overwrites the competing first copy.
             const query = canonical
                 ? this.supabase.from('richtext_anotacoes').update({ conteudo_html: content })
                     .eq('id', canonical.id).eq('usuario_id', session.user.id)
                     .eq('semana', scope.semana).eq('tipo', scope.tipo)
-                : this.supabase.from('richtext_anotacoes').insert({ usuario_id: session.user.id,
-                    semana: scope.semana, tipo: scope.tipo, conteudo_html: content });
-            const { data, error } = await query.select('id, conteudo_html').maybeSingle();
+                    .eq('xmin', this.documentRevision(canonical))
+                : this.supabase.from('richtext_anotacoes').upsert({ usuario_id: session.user.id,
+                    semana: scope.semana, tipo: scope.tipo, conteudo_html: content },
+                    { onConflict: 'usuario_id,semana,tipo', ignoreDuplicates: true });
+            const { data, error } = await query.select('id, conteudo_html, xmin').maybeSingle();
             this.assertDocumentSession(session);
-            if (error) throw new Error(this.documentError(error));
+            if (error) {
+                if (['23505', '40001', '40P01'].includes(error.code)) throw this.documentConflict();
+                throw new Error(this.documentError(error));
+            }
+            if (data === null) throw this.documentConflict();
             if (!data || data.id == null || data.conteudo_html !== content) {
                 throw new Error('A nuvem não confirmou o salvamento. As anotações locais foram mantidas.');
             }
+            this.documentRevision(data);
             return { success: true, data };
         });
         this.documentWrites.set(key, operation);
@@ -350,7 +382,7 @@ class SupabaseSync {
 
     async salvarRichtextAnotacoes(semana, conteudo, options = {}) {
         try { return await this.writeDocument(this.richtextScope(semana), conteudo, options); }
-        catch (error) { return { success: false, error: this.documentError(error) }; }
+        catch (error) { return this.documentFailure(error); }
     }
 
     async carregarSentinelaAnotacoes(semana, estudoId) {
@@ -361,7 +393,7 @@ class SupabaseSync {
         try {
             const content = JSON.stringify({ estudo: estudoId, anotacoes, timestamp: new Date().toISOString() });
             return await this.writeDocument(this.sentinelaScope(semana, estudoId), content, options);
-        } catch (error) { return { success: false, error: this.documentError(error) }; }
+        } catch (error) { return this.documentFailure(error); }
     }
 
     async carregarAssembleiaAnotacoes(ano) {
@@ -370,7 +402,7 @@ class SupabaseSync {
 
     async salvarAssembleiaAnotacoes(ano, anotacoesObj, options = {}) {
         try { return await this.writeDocument(this.assembleiaScope(ano), JSON.stringify(anotacoesObj), options); }
-        catch (error) { return { success: false, error: this.documentError(error) }; }
+        catch (error) { return this.documentFailure(error); }
     }
 
     async apagarAssembleiaCompleto(ano, options = {}) {
@@ -391,7 +423,7 @@ class SupabaseSync {
             this.assertDocumentSession(session);
             const result = await this.salvarAssembleiaAnotacoes(ano, next, { expectedRemote: remote });
             return { ...result, removidos: result.success ? keys.length : 0 };
-        } catch (error) { return { success: false, error: error.message }; }
+        } catch (error) { return this.documentFailure(error); }
     }
 
 }

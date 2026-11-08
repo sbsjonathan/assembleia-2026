@@ -22,7 +22,7 @@ Os seis cânticos do programa abrem as respectivas páginas oficiais do JW.org, 
 
 O ícone próprio representa as fileiras e o palco de um auditório, em roxo sobre lavanda clara. O manifesto mantém a identidade da instalação `assembleia-2026`, enquanto a versão desta linha começa por `ass26-`.
 
-Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v10`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
+Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v11`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
 
 Na atualização da variante anterior, os dados do namespace `assembleia-2026:` são copiados sem apagar os originais. Notas do antigo congresso ficam separadas como `legacy-congresso:` e não são associadas aos novos discursos. Os dados do aplicativo Sentinela não são importados nem apagados.
 
@@ -36,6 +36,8 @@ Sirva esta pasta com um servidor HTTP, por exemplo `python -m http.server 8000`.
 
 Testes de persistência: `node tests/assembly-sync.cjs`.
 Contratos de documentos do Supabase: `node tests/document-api.cjs`.
+Disputas entre aparelhos no Programa/Sentinela: `node tests/programme-article-conflicts.cjs`.
+Concorrência em PostgreSQL real descartável: `python tests/test_postgres_concurrency.py` (requer Docker local).
 Sincronização de Anotações e do estudo atual: `node tests/notes-article-sync.cjs` e `python tests/test_notes_cloud.py` (editores v1/v2).
 Modos do menu Nuvem e compartilhamento por sessão: `python tests/test_assembly_cloud_menu.py` e `python tests/test_peer_session.py`.
 Testes da sessão salva, falhas temporárias e respostas atrasadas: `node tests/auth-session.cjs` e `python tests/test_auth_session.py` (este último usa contas e serviço sintéticos em páginas reais).
@@ -52,7 +54,7 @@ Testes de listas numeradas, continuação com Enter, conversão e histórico: `p
 
 GitHub Pages publica a raiz da branch `main` em https://sbsjonathan.github.io/assembleia-2026/.
 
-Versão atual: `ass26-2026.11.08.4`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
+Versão atual: `ass26-2026.11.08.5`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
 
 O catálogo bíblico incluído permanece disponível no pacote. Cânticos externos, áudios, serviços de IA e sincronização precisam de conexão. A Sentinela consulta primeiro o estudo semanal já baixado; sem download nem conexão, informa que o estudo está indisponível.
 
@@ -60,4 +62,4 @@ A base vem do commit `d6a893c6bd388a7fefe2fe1949259e4091dd63a9` de Sentinela 202
 
 Programa e perguntas oficiais: https://www.jw.org/pt/biblioteca/programas/Programa-da-Assembleia-de-Circuito-de-2026-2027-com-o-Superintendente-de-Circuito/ . A conferência da base mais recente foi feita em 7 de novembro de 2026.
 
-A sincronização compara as versões antes de gravar e guarda cópias locais das divergências conhecidas. Gravações exatamente simultâneas em aparelhos diferentes ainda exigem suporte atômico no backend para garantia completa.
+A sincronização usa uma condição atômica de versão (`xmin`) no PostgreSQL para impedir que duas gravações atualizem a mesma versão da nota. A primeira inserção usa a unicidade do documento sem sobrescrever um registro concorrente. Atualize todos os aparelhos para receber essa proteção. As divergências preservam a edição local.

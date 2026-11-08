@@ -31,6 +31,8 @@ class UnifiedLoadManager {
         if (!this.isLoggedIn || navigator.onLine === false || typeof window.SupabaseSync?.carregarRichtextAnotacoes !== 'function') return;
         // Pending drafts use the upload queue, which reads and preserves a
         // divergent cloud copy before sending. Never replace them during loading.
+        await window.AutoSaveManager?.ready;
+        if (window.AutoSaveManager?.getCloudConflict?.()) { window.AutoSaveManager.announceCloudConflict(); return; }
         const before = this.store.flush();
         if (!before || this.store.getConflict?.()) return;
         if (this.store.hasPending(before)) {
@@ -68,7 +70,7 @@ class UnifiedLoadManager {
                 }
                 const applied = this.store.snapshot();
                 if (!this.store.isStored(applied)) throw new Error('Não foi possível salvar a cópia da nuvem neste aparelho.');
-                window.AutoSaveManager?.acknowledgeRemote(applied);
+                window.AutoSaveManager?.acknowledgeRemote(applied, this.store.contentKey(data));
                 this.showFeedback('✅ Sincronizado', 'success');
             } catch (_) { this.showFeedback('Não foi possível ler a nuvem. Sua cópia local foi mantida.', 'error'); }
         })();

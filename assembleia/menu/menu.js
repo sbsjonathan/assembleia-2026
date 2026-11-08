@@ -398,6 +398,57 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const syncOverlay = document.getElementById('asmbSyncOverlay');
+
+    // Keep a cloud collision visible without taking focus away from the note.
+    let cloudConflictNotice;
+    const cloudNoticeKey = () => {
+      try {
+        const account = JSON.parse(localStorage.getItem('supabase_user'))?.id;
+        return account == null ? null : `cloud_conflict_notice_assembleia_${encodeURIComponent(account)}_ca-copgm27`;
+      } catch (_) { return null; }
+    };
+    function hideCloudConflictNotice(clear = false) {
+      if (cloudConflictNotice) cloudConflictNotice.hidden = true;
+      if (clear) { try { const key = cloudNoticeKey(); if (key) localStorage.removeItem(key); } catch (_) {} }
+    }
+    function showCloudConflictNotice() {
+      if (!cloudConflictNotice) {
+        const notice = document.createElement('aside'); notice.id = 'assembleia-cloud-conflict-notice';
+        notice.setAttribute('role', 'status'); notice.setAttribute('aria-live', 'polite');
+        notice.style.cssText = 'position:fixed;z-index:12080;top:calc(var(--app-statusbar-height,env(safe-area-inset-top,0px)) + 8px);left:12px;right:12px;max-width:480px;margin:auto;padding:10px 12px;border:1px solid #b9a8c7;border-radius:10px;background:var(--bg-body,#fff);color:var(--text-primary,#39333e);box-shadow:0 3px 16px #00000014;font:13px/1.4 system-ui,-apple-system,sans-serif';
+        const text = document.createElement('p'); text.style.margin = '0 0 7px';
+        text.textContent = 'Outra versão está na nuvem. Sua edição está salva aqui. Abra Nuvem para escolher.';
+        const actions = document.createElement('div'); actions.style.cssText = 'display:flex;gap:8px';
+        const addButton = (label, action) => {
+          const button = document.createElement('button'); button.type = 'button'; button.textContent = label;
+          button.style.cssText = 'border:0;border-radius:5px;padding:7px 10px;min-height:34px;background:#f2eef6;color:#604184;font:600 12px/1.4 system-ui';
+          button.onclick = action; actions.append(button);
+        };
+        addButton('Abrir Nuvem', () => { hideCloudConflictNotice(); btnAbrirSync.click(); });
+        addButton('Fechar aviso', () => hideCloudConflictNotice());
+        notice.append(text, actions); document.body.append(notice); cloudConflictNotice = notice;
+      }
+      cloudConflictNotice.hidden = false;
+    }
+    function restoreCloudConflictNotice() {
+      hideCloudConflictNotice();
+      try { const key = cloudNoticeKey(); if (key && localStorage.getItem(key)) showCloudConflictNotice(); } catch (_) {}
+    }
+    window.addEventListener('assembleia:syncstatus', event => {
+      const detail = event.detail || {};
+      if (detail.code === 'SYNC_CONFLICT') {
+        try { const key = cloudNoticeKey(); if (key) localStorage.setItem(key, '1'); } catch (_) {}
+        showCloudConflictNotice();
+      } else if (detail.status === 'saved') {
+        const sync = window.assembleiaSync;
+        if (typeof sync?.lastObservedLocalJSON === 'string' && sync.lastObservedLocalJSON === sync.lastSavedDataJSON) hideCloudConflictNotice(true);
+      }
+    });
+    window.addEventListener('assembleia:cloudresolved', () => hideCloudConflictNotice(true));
+    window.addEventListener('supabaseSessionChanged', restoreCloudConflictNotice);
+    window.addEventListener('supabaseLogout', restoreCloudConflictNotice);
+    restoreCloudConflictNotice();
+
     const syncTabs = document.querySelectorAll('[data-sync-tab]');
     const syncPanels = document.querySelectorAll('[data-sync-panel]');
     const syncRun = document.getElementById('asmbSyncRun');
@@ -510,6 +561,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!navigator.onLine) throw new Error('Você precisa de internet para sincronizar.');
       const result = await sync[method]();
       if (!result?.success) throw new Error(result?.error || 'Não foi possível confirmar a operação.');
+      window.dispatchEvent(new CustomEvent('assembleia:cloudresolved'));
       if (tab === 'apagar') alert(result.preservedLocalChanges
         ? 'A cópia anterior foi apagada. As alterações feitas durante a operação foram mantidas neste aparelho.'
         : 'Anotações apagadas da nuvem e do aparelho.');

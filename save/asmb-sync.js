@@ -57,6 +57,7 @@ class AssembleiaSync {
             this.lastAccount = account || this.lastAccount;
             this.lastSavedDataJSON = '{}';
             this.lastObservedLocalJSON = null;
+            this.pendingConflict = null;
             this.initialLoadComplete = false;
             this.dirty = false;
             this.restoreState();
@@ -80,8 +81,45 @@ class AssembleiaSync {
     clearTimer() { clearTimeout(this.autoSaveTimeout); this.autoSaveTimeout = null; }
     fail(error) {
         this.lastError = error?.message || String(error || 'Não foi possível sincronizar.');
-        window.dispatchEvent(new CustomEvent('assembleia:syncstatus', { detail: { status: 'error', message: this.lastError } }));
-        return { success: false, error: this.lastError };
+        const code = error?.code;
+        window.dispatchEvent(new CustomEvent('assembleia:syncstatus', { detail: { status: code === 'SYNC_CONFLICT' ? 'conflict' : 'error', message: this.lastError, code } }));
+        return { success: false, error: this.lastError, ...(code ? { code } : {}) };
+    }
+    syncError(result, fallback) { return Object.assign(new Error(result?.error || fallback), { code: result?.code }); }
+    conflictKey() { const key = this.stateKey(); return key && key + '_conflict'; }
+    recordConflict(local, remote, manual = false) {
+        const value = { local, remote, manual };
+        this.pendingConflict = value;
+        localStorage.setItem(this.conflictKey(), JSON.stringify(value));
+    }
+    clearConflict() {
+        const key = this.conflictKey();
+        if (key) localStorage.removeItem(key);
+        this.pendingConflict = null;
+    }
+    hasConflict() { const key = this.conflictKey(); return !!this.pendingConflict || !!(key && localStorage.getItem(key)); }
+    async reconcileConflict(session) {
+        const key = this.conflictKey();
+        const conflict = this.pendingConflict || (key && JSON.parse(localStorage.getItem(key) || 'null'));
+        if (!conflict) return null;
+        const attempted = this.validateRemote(conflict.local), prior = this.validateRemote(conflict.remote);
+        const { values: remote } = await this.readRemote(session);
+        const local = this.collectAnnotationsFromLocalStorage();
+        const baseline = JSON.parse(this.lastSavedDataJSON), observed = JSON.parse(this.lastObservedLocalJSON ?? this.lastSavedDataJSON);
+        const preserved = {};
+        for (const [name, value] of Object.entries(local)) {
+            if (value !== attempted[name] || value === remote[name] || (!conflict.manual && (prior[name] === remote[name] || value === prior[name]))) continue;
+            preserved[name] = value;
+            observed[name] = value;
+            if (name in remote) baseline[name] = remote[name]; else delete baseline[name];
+        }
+        this.backup(preserved, 'Edição local preservada após alteração simultânea em outro aparelho');
+        this.remember(baseline, observed);
+        this.clearConflict();
+        return { preserved: Object.keys(preserved).length };
+    }
+    conflictNotice() {
+        return this.syncError({ code: 'SYNC_CONFLICT', error: 'Outro aparelho alterou a mesma anotação. Sua versão ficou neste aparelho e a outra foi mantida na nuvem. Use Enviar / Substituir se quiser escolher sua versão.' });
     }
     success(extra = {}) {
         this.lastError = '';
@@ -207,7 +245,7 @@ class AssembleiaSync {
         this.assertSession(session);
         const result = await window.SupabaseSync.salvarAssembleiaAnotacoes(this.ano, values, { expectedRemote: raw });
         this.assertSession(session);
-        if (!result?.success) throw new Error(result?.error || 'Não foi possível enviar as notas.');
+        if (result?.success !== true) throw this.syncError(result, 'Não foi possível enviar as notas.');
     }
     async loadFromSupabase(force = false) {
         if (force) return this.pullMerge();
@@ -216,7 +254,9 @@ class AssembleiaSync {
         this.clearTimer();
         this.isSyncing = true;
         try {
-            const session = this.identity(), before = this.collectAnnotationsFromLocalStorage();
+            const session = this.identity();
+            const resolved = this.hasConflict() ? await this.reconcileConflict(session) : null;
+            const before = this.collectAnnotationsFromLocalStorage();
             const { values: remote } = await this.readRemote(session);
             const current = this.collectAnnotationsFromLocalStorage();
             const merged = this.merge(current, remote, before, true);
@@ -235,7 +275,7 @@ class AssembleiaSync {
             this.remember(remote, observed);
             this.suppressInitialUpload = false;
             this.dirty = this.stable(local) !== this.lastObservedLocalJSON;
-            return this.success();
+            return resolved?.preserved ? this.fail(this.conflictNotice()) : this.success();
         } catch (error) { return this.fail(error); }
         finally { this.isSyncing = false; if (this.dirty && this.initialLoadComplete) this.scheduleAutoSave(); }
     }
@@ -245,17 +285,30 @@ class AssembleiaSync {
         this.clearTimer();
         this.isSyncing = true;
         const session = this.identity();
+        let conflicts = 0, preserved = 0, forceMerge = false;
         try {
+            const resolved = this.hasConflict() ? await this.reconcileConflict(session) : null;
+            if (resolved) { preserved += resolved.preserved; forceMerge = true; }
             do {
                 this.dirty = false;
                 this.assertSession(session);
                 const before = this.collectAnnotationsFromLocalStorage();
-                if (this.stable(before) === (this.lastObservedLocalJSON ?? this.lastSavedDataJSON)) continue;
+                if (!forceMerge && this.stable(before) === (this.lastObservedLocalJSON ?? this.lastSavedDataJSON)) continue;
+                forceMerge = false;
                 const { raw, values: remote } = await this.readRemote(session);
                 const local = this.collectAnnotationsFromLocalStorage();
                 const merged = this.merge(local, remote, before, true);
                 this.backupRemote(remote, merged);
-                await this.writeRemote(merged, raw, session);
+                try { await this.writeRemote(merged, raw, session); }
+                catch (error) {
+                    if (error.code !== 'SYNC_CONFLICT') throw error;
+                    this.recordConflict(local, remote);
+                    const resolved = this.hasConflict() ? await this.reconcileConflict(session) : null;
+                    preserved += resolved?.preserved || 0;
+                    if (++conflicts >= 3) throw error;
+                    this.dirty = true; forceMerge = true;
+                    continue;
+                }
                 // Keep an intentional local/cloud difference until that note itself
                 // changes; editing another field must not undo an additions-only action.
                 const localValues = this.preserveAcknowledgedLocal(merged, local, remote);
@@ -264,7 +317,7 @@ class AssembleiaSync {
                 this.remember(merged, localValues);
                 this.dirty = this.stable(after) !== this.lastObservedLocalJSON;
             } while (this.dirty);
-            return this.success();
+            return preserved ? this.fail(this.conflictNotice()) : this.success();
         } catch (error) {
             if (this.identity() === session) this.dirty = true;
             else this.checkLoginStatus();
@@ -279,20 +332,30 @@ class AssembleiaSync {
         this.clearTimer();
         this.isSyncing = true;
         let completed = false;
+        const session = this.identity();
+        let attemptedLocal, attemptedRemote;
         try {
-            const session = this.identity(), before = this.collectAnnotationsFromLocalStorage();
+            const before = this.collectAnnotationsFromLocalStorage();
             const { raw, values: remote } = await this.readRemote(session);
             const local = this.collectAnnotationsFromLocalStorage();
             const merged = mode === 'overwrite' ? local : mode === 'missing' ? { ...local, ...remote } : this.merge(local, remote, before);
+            attemptedLocal = local; attemptedRemote = remote;
             this.backupRemote(remote, merged);
             await this.writeRemote(merged, raw, session);
             if (mode !== 'missing') this.apply(merged, local);
             const expectedLocal = mode === 'missing' ? local : { ...local, ...merged };
             this.remember(merged, expectedLocal);
+            this.clearConflict();
             this.dirty = this.stable(this.collectAnnotationsFromLocalStorage()) !== this.lastObservedLocalJSON;
             completed = true;
             return this.success();
-        } catch (error) { return this.fail(error); }
+        } catch (error) {
+            if (error.code === 'SYNC_CONFLICT' && this.identity() === session && attemptedLocal) {
+                try { this.recordConflict(attemptedLocal, attemptedRemote, true); await this.reconcileConflict(session); } catch (_) {}
+                this.dirty = false;
+            }
+            return this.fail(error);
+        }
         finally { this.isSyncing = false; if (completed && this.dirty) this.scheduleAutoSave(); }
     }
     pushOverwrite() { return this.push('overwrite'); }
@@ -315,6 +378,7 @@ class AssembleiaSync {
             if (mode === 'merge') this.backupRemote(remote, merged);
             this.apply(merged, local, mode === 'overwrite');
             this.remember(remote, this.collectAnnotationsFromLocalStorage());
+            this.clearConflict();
             return this.success();
         } catch (error) { return this.fail(error); }
         finally { this.isSyncing = false; }
@@ -327,22 +391,32 @@ class AssembleiaSync {
         if (this.notReady() || !window.SupabaseSync?.apagarAssembleiaCompleto) return this.fail('Nuvem indisponível.');
         this.clearTimer();
         this.isSyncing = true;
+        const session = this.identity();
+        let attemptedLocal, attemptedRemote;
         try {
-            const session = this.identity(), before = this.collectAnnotationsFromLocalStorage();
+            const before = this.collectAnnotationsFromLocalStorage();
             const { raw, values: remote } = await this.readRemote(session);
             if (this.stable(before) !== this.stable(this.collectAnnotationsFromLocalStorage())) throw new Error('Você editou as notas durante a operação. Tente novamente.');
             this.backupRemote(remote, {});
             this.backup(before, 'Antes de apagar as anotações da Assembleia');
+            attemptedLocal = before; attemptedRemote = remote;
             this.assertSession(session);
             const result = await window.SupabaseSync.apagarAssembleiaCompleto(this.ano, { expectedRemote: raw });
             this.assertSession(session);
-            if (!result?.success) throw new Error(result?.error || 'Não foi possível apagar as notas da nuvem.');
+            if (result?.success !== true) throw this.syncError(result, 'Não foi possível apagar as notas da nuvem.');
             const preferences = Object.fromEntries(Object.entries(before).filter(([key]) => this.prefs.includes(key)));
             this.apply(preferences, before, true, true);
             const after = this.collectAnnotationsFromLocalStorage();
             this.remember({}, after);
+            this.clearConflict();
             return this.success({ preservedLocalChanges: Object.keys(after).some(key => key.startsWith(`${this.ano}:`)) });
-        } catch (error) { return this.fail(error); }
+        } catch (error) {
+            if (error.code === 'SYNC_CONFLICT' && this.identity() === session && attemptedLocal) {
+                try { this.recordConflict(attemptedLocal, attemptedRemote, true); await this.reconcileConflict(session); } catch (_) {}
+                this.dirty = false;
+            }
+            return this.fail(error);
+        }
         finally { this.isSyncing = false; }
     }
 }

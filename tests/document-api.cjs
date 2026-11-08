@@ -14,10 +14,13 @@ const clone = value => value === undefined ? undefined : JSON.parse(JSON.stringi
 function deferred() { let resolve, reject; const promise = new Promise((a, b) => { resolve = a; reject = b; }); return { promise, resolve, reject }; }
 const tick = () => new Promise(setImmediate);
 
-function harness(initialRows = []) {
-    const rows = clone(initialRows), requests = [], mutations = [];
+function database(initialRows = []) {
+    return { rows: clone(initialRows), nextId: 1, nextVersion: 200 };
+}
+function harness(initialRows = [], shared = database(initialRows)) {
+    const rows = shared.rows, requests = [], mutations = [];
     const storage = new Map([['supabase_user', JSON.stringify(USER)]]);
-    let nextId = 1, interceptor = null, failStorageRead = false;
+    let interceptor = null, failStorageRead = false;
     const listeners = new Map();
     const localStorage = {
         getItem(key) { if (failStorageRead) throw new Error('temporary storage failure'); return storage.get(key) ?? null; },
@@ -31,33 +34,41 @@ function harness(initialRows = []) {
         in(key, value) { this.filters.push({ key, value, op: 'in' }); return this; }
         limit(value) { this.rowLimit = value; return this; }
         insert(value) { this.op = 'insert'; this.payload = clone(value); return this; }
+        upsert(value, options) { this.op = 'upsert'; this.payload = clone(value); this.options = clone(options); return this; }
         update(value) { this.op = 'update'; this.payload = clone(value); return this; }
         delete() { this.op = 'delete'; return this; }
         single() { this.cardinality = 'single'; return this.execute(); }
         maybeSingle() { this.cardinality = 'maybeSingle'; return this.execute(); }
         then(resolve, reject) { return this.execute().then(resolve, reject); }
         async execute() {
-            const request = clone({ table: this.table, op: this.op, filters: this.filters, payload: this.payload, columns: this.columns });
+            const request = clone({ table: this.table, op: this.op, filters: this.filters, payload: this.payload, columns: this.columns, options: this.options });
             requests.push(request);
             if (interceptor) {
                 const override = await interceptor(request);
                 if (override !== undefined) return clone(override);
             }
-            const matching = rows.filter(row => this.filters.every(filter => filter.op === 'in' ? filter.value.includes(row[filter.key]) : row[filter.key] === filter.value));
+            const matching = rows.filter(row => this.filters.every(filter => filter.op === 'in' ? filter.value.includes(row[filter.key]) : filter.key === 'xmin' ? String(row[filter.key]) === String(filter.value) : row[filter.key] === filter.value));
             let result = matching;
             if (this.op !== 'read') {
                 assert.equal(this.table, 'richtext_anotacoes', 'unexpected table mutation');
                 const check = candidate => {
                     for (const key of ['tipo', 'semana']) if (typeof candidate[key] === 'string' && candidate[key].length > 20) return { data: null, error: { code: '22001', message: 'value too long for type character varying(20)' } };
                 };
-                if (this.op === 'insert') {
-                    const candidate = { id: `synthetic-row-${nextId++}`, ...this.payload };
+                if (this.op === 'insert' || this.op === 'upsert') {
+                    const candidate = { id: `synthetic-row-${shared.nextId++}`, ...this.payload, xmin: String(shared.nextVersion++) };
                     const failure = check(candidate); if (failure) return failure;
-                    if (rows.some(row => row.usuario_id === candidate.usuario_id && row.tipo === candidate.tipo && row.semana === candidate.semana)) return { data: null, error: { code: '23505', message: 'duplicate synthetic document' } };
-                    rows.push(candidate); result = [candidate];
+                    if (this.op === 'upsert') {
+                        assert.equal(this.options?.onConflict, 'usuario_id,semana,tipo');
+                        assert.equal(this.options?.ignoreDuplicates, true, 'first-insert races must never become overwrite upserts');
+                    }
+                    const duplicate = rows.some(row => row.usuario_id === candidate.usuario_id && row.tipo === candidate.tipo && row.semana === candidate.semana);
+                    if (duplicate && this.op !== 'upsert') return { data: null, error: { code: '23505', message: 'duplicate synthetic document' } };
+                    if (duplicate) result = [];
+                    else { rows.push(candidate); result = [candidate]; }
                 } else if (this.op === 'update') {
                     for (const row of matching) { const failure = check({ ...row, ...this.payload }); if (failure) return failure; }
-                    matching.forEach(row => Object.assign(row, this.payload));
+                    const xmin = String(shared.nextVersion++);
+                    matching.forEach(row => Object.assign(row, this.payload, { xmin }));
                 } else if (this.op === 'delete') {
                     matching.forEach(row => rows.splice(rows.indexOf(row), 1));
                 }
@@ -89,7 +100,7 @@ function harness(initialRows = []) {
     };
 }
 function document(tipo, semana, value, extra = {}) {
-    return { id: `row-${tipo}-${semana}`, usuario_id: USER.id, tipo, semana, conteudo_html: typeof value === 'string' ? value : JSON.stringify(value), ...extra };
+    return { id: `row-${tipo}-${semana}`, usuario_id: USER.id, tipo, semana, conteudo_html: typeof value === 'string' ? value : JSON.stringify(value), xmin: '100', ...extra };
 }
 const wrapper = (annotations = {}, estudo = STUDY) => ({ estudo, anotacoes: annotations, timestamp: '2026-11-08T00:00:00.000Z' });
 const readSpecs = [
@@ -325,6 +336,126 @@ async function test(name, fn) { await fn(); count++; console.log('PASS', name); 
         assert.equal((await h.client.cadastrarUsuario('synthetic-new', 'synthetic-password', 'Synthetic Person')).success, false);
         assert.equal(h.requests.filter(query => query.op !== 'read').length, 0);
         assert.equal(h.storage.get('supabase_user'), before);
+    });
+    await test('existing writes carry the exact row version in the atomic mutation filters', async () => {
+        for (const spec of readSpecs) {
+            const h = harness([document(spec.tipo, spec.semana, spec.encode(spec.value), { xmin: '4294967294' })]);
+            assert.equal((await spec.save(h.client, spec.empty, { expectedRemote: spec.value })).success, true);
+            const request = h.requests.find(query => query.op === 'update');
+            assert.ok(request, spec.name);
+            assert.ok(request.filters.some(filter => filter.key === 'xmin' && String(filter.value) === '4294967294'));
+            for (const key of ['usuario_id', 'semana', 'tipo', 'id']) assert.ok(request.filters.some(filter => filter.key === key));
+            assert.ok(request.columns.split(',').map(part => part.trim()).includes('xmin'));
+            assert.equal(h.requests.some(query => query.op === 'upsert' || query.op === 'insert'), false);
+        }
+    });
+    await test('missing or malformed row versions fail closed without an unconditional update', async () => {
+        for (const spec of readSpecs) for (const xmin of [undefined, null, '', '1.5', '-1', 'not-a-version', {}, [], 1.5, -1, 4294967296, '4294967296']) {
+            const h = harness([document(spec.tipo, spec.semana, spec.encode(spec.value), { xmin })]);
+            await assert.rejects(() => spec.read(h.client), `${spec.name}: ${String(xmin)}`);
+            assert.equal((await spec.save(h.client, spec.empty)).success, false);
+            assert.equal(h.requests.filter(query => query.op !== 'read').length, 0);
+        }
+    });
+    await test('mutation acknowledgement requires a valid database row version', async () => {
+        for (const spec of readSpecs) for (const xmin of [undefined, null, '', 'bad']) {
+            const h = harness();
+            h.intercept(query => query.op === 'read' ? undefined : { data: { id: 'synthetic-row', conteudo_html: query.payload.conteudo_html, xmin }, error: null });
+            assert.equal((await spec.save(h.client, spec.value)).success, false);
+        }
+    });
+    await test('two independent devices updating one version cannot overwrite each other', async () => {
+        for (const spec of readSpecs) {
+            const shared = database([document(spec.tipo, spec.semana, spec.encode(spec.empty))]);
+            const devices = [harness([], shared), harness([], shared)], released = deferred();
+            let arrivals = 0;
+            const intercept = async query => {
+                if (query.op === 'read') return;
+                arrivals++;
+                if (arrivals === 2) released.resolve();
+                await released.promise;
+            };
+            devices.forEach(device => device.intercept(intercept));
+            const second = spec.name === 'richtext' ? '<p>Second synthetic device</p>' : { ...spec.value, second: 'Second synthetic device' };
+            const versions = [spec.value, second];
+            const results = await Promise.all(devices.map((device, index) => spec.save(device.client, versions[index], { expectedRemote: spec.empty })));
+            assert.equal(results.filter(result => result.success).length, 1, spec.name);
+            const loser = results.find(result => !result.success);
+            assert.equal(loser.code, 'SYNC_CONFLICT', spec.name);
+            const winner = results.findIndex(result => result.success);
+            assert.deepEqual(clone(await spec.read(devices[0].client)), versions[winner]);
+            assert.equal(shared.rows.length, 1);
+            for (const device of devices) assert.equal(device.requests.filter(query => query.op !== 'read').length, 1, 'no blind retry after a rejected CAS');
+        }
+    });
+    await test('two independent first inserts cannot turn into an overwrite upsert', async () => {
+        for (const spec of readSpecs) {
+            const shared = database(), devices = [harness([], shared), harness([], shared)], released = deferred();
+            let arrivals = 0;
+            const intercept = async query => {
+                if (query.op === 'read') return;
+                arrivals++;
+                if (arrivals === 2) released.resolve();
+                await released.promise;
+            };
+            devices.forEach(device => device.intercept(intercept));
+            const second = spec.name === 'richtext' ? '<p>Second new document</p>' : { ...spec.value, second: 'Second new document' };
+            const versions = [spec.value, second];
+            const results = await Promise.all(devices.map((device, index) => spec.save(device.client, versions[index], { expectedRemote: null })));
+            assert.equal(results.filter(result => result.success).length, 1, spec.name);
+            assert.equal(results.find(result => !result.success).code, 'SYNC_CONFLICT', spec.name);
+            assert.equal(shared.rows.length, 1);
+            assert.deepEqual(clone(await spec.read(devices[0].client)), versions[results.findIndex(result => result.success)]);
+            for (const device of devices) {
+                const writes = device.requests.filter(query => query.op !== 'read');
+                assert.equal(writes.length, 1);
+                assert.equal(writes[0].op, 'upsert');
+                assert.deepEqual(writes[0].options, { onConflict: 'usuario_id,semana,tipo', ignoreDuplicates: true });
+            }
+        }
+    });
+    await test('simultaneous programme deletion and editing share the same atomic guard', async () => {
+        const shared = database([document('ass26:programacao', PROGRAM, NOTE)]);
+        const remove = harness([], shared), edit = harness([], shared), released = deferred(); let arrivals = 0;
+        const intercept = async query => { if (query.op === 'read') return; if (++arrivals === 2) released.resolve(); await released.promise; };
+        remove.intercept(intercept); edit.intercept(intercept);
+        const changed = { ...NOTE, second: 'New edit while clearing' };
+        const results = await Promise.all([
+            remove.client.apagarAssembleiaCompleto(PROGRAM, { expectedRemote: NOTE }),
+            edit.client.salvarAssembleiaAnotacoes(PROGRAM, changed, { expectedRemote: NOTE })
+        ]);
+        assert.equal(results.filter(result => result.success).length, 1);
+        assert.equal(results.find(result => !result.success).code, 'SYNC_CONFLICT');
+        assert.deepEqual(clone(await remove.client.carregarAssembleiaAnotacoes(PROGRAM)), results[0].success ? {} : changed);
+    });
+    await test('an intervening update is detected even if the document text stayed equal', async () => {
+        for (const spec of readSpecs) {
+            const h = harness([document(spec.tipo, spec.semana, spec.encode(spec.value))]);
+            h.intercept(query => { if (query.op === 'update') h.rows[0].xmin = '199'; });
+            const result = await spec.save(h.client, spec.empty, { expectedRemote: spec.value });
+            assert.equal(result.success, false); assert.equal(result.code, 'SYNC_CONFLICT');
+            assert.deepEqual(clone(await spec.read(h.client)), spec.value);
+            assert.equal(h.requests.filter(query => query.op !== 'read').length, 1);
+        }
+    });
+    await test('a row removed during the write is never silently recreated', async () => {
+        for (const spec of readSpecs) {
+            const h = harness([document(spec.tipo, spec.semana, spec.encode(spec.value))]);
+            h.intercept(query => { if (query.op === 'update') h.rows.length = 0; });
+            const result = await spec.save(h.client, spec.empty, { expectedRemote: spec.value });
+            assert.equal(result.success, false); assert.equal(result.code, 'SYNC_CONFLICT');
+            assert.equal(h.rows.length, 0); assert.equal(h.requests.filter(query => query.op !== 'read').length, 1);
+        }
+    });
+    await test('database concurrency errors surface as conflicts without any unconditional retry', async () => {
+        for (const spec of readSpecs) for (const code of ['23505', '40001', '40P01']) {
+            const h = harness([document(spec.tipo, spec.semana, spec.encode(spec.value))]);
+            h.intercept(query => query.op === 'read' ? undefined : { data: null, error: { code, message: 'Synthetic concurrent write' } });
+            const result = await spec.save(h.client, spec.empty, { expectedRemote: spec.value });
+            assert.equal(result.success, false); assert.equal(result.code, 'SYNC_CONFLICT');
+            assert.deepEqual(clone(await spec.read(h.client)), spec.value);
+            assert.equal(h.requests.filter(query => query.op !== 'read').length, 1);
+        }
     });
     console.log(`${count} document API regression checks passed`);
 })().catch(error => { console.error(error); process.exitCode = 1; });

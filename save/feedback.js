@@ -36,7 +36,7 @@
     return node.content.textContent || '(Nota vazia)';
   }
   function showConflict() {
-    const conflict = window.cacheRichText?.getConflict(); if (!conflict) return;
+    const conflict = window.cacheRichText?.getConflict?.(); if (!conflict) return;
     ensure(); clearTimeout(hideTimer); clearTimeout(showTimer);
     currentType = 'conflict'; host.dataset.type = 'conflict'; host.hidden = false;
     message.textContent = conflict.saved
@@ -56,8 +56,39 @@
     actions.append(button('Usar desta aba', () => choose('local')), button('Usar da outra aba', () => choose('external')),
       button('Baixar as duas', () => { window.cacheRichText.downloadRecovery(); showConflict(); }));
   }
+  function showCloudConflict() {
+    if (window.cacheRichText?.getConflict?.()) { showConflict(); return; }
+    const manager = window.AutoSaveManager, conflict = manager?.getCloudConflict?.();
+    if (!conflict) { hide(); return; }
+    ensure(); clearTimeout(hideTimer); clearTimeout(showTimer);
+    currentType = 'conflict'; host.dataset.type = 'conflict'; host.hidden = false;
+    message.textContent = conflict.unavailable
+      ? 'Há uma comparação pendente. Reconecte para conferir a versão da nuvem antes de continuar.'
+      : 'Esta nota também mudou em outro aparelho. Sua edição está salva aqui. Compare as versões e escolha qual usar.';
+    const wasOpen = comparison.querySelector('details')?.open;
+    comparison.replaceChildren(); actions.replaceChildren();
+    if (!conflict.unavailable) {
+      const details = document.createElement('details'); details.open = !!wasOpen;
+      const summary = document.createElement('summary'); summary.textContent = 'Comparar versões'; details.append(summary);
+      for (const [title, value] of [['Neste aparelho', manager.store?.snapshot()?.payload || conflict.local], ['Na nuvem', conflict.external]]) {
+        const box = document.createElement('div'); box.className = 'notes-compare-copy';
+        const heading = document.createElement('strong'); heading.textContent = title;
+        const preview = document.createElement('pre'); preview.textContent = textOf(value);
+        box.append(heading, preview); details.append(box);
+      }
+      comparison.append(details);
+    }
+    const choose = async choice => {
+      actions.querySelectorAll('button').forEach(node => { node.disabled = true; });
+      await manager.resolveCloudConflict(choice);
+      if (manager.getCloudConflict()) showCloudConflict();
+    };
+    actions.append(button('Usar deste aparelho', () => choose('local')), button('Usar da nuvem', () => choose('external')),
+      button('Baixar as duas', () => manager.downloadCloudConflict()));
+  }
   function show(detail = {}) {
-    if (window.cacheRichText?.getConflict()) { showConflict(); return; }
+    if (window.cacheRichText?.getConflict?.()) { showConflict(); return; }
+    if (window.AutoSaveManager?.getCloudConflict?.()) { showCloudConflict(); return; }
     const type = detail.type || 'local';
     if (currentType === 'error' && type !== 'error' && window.cacheRichText?.stats().saveError) return;
     ensure(); clearTimeout(hideTimer); clearTimeout(showTimer);
@@ -67,10 +98,10 @@
       if (type === 'error') {
         actions.append(button('Tentar novamente', async () => {
           const saved = window.cacheRichText?.flush();
-          if (!saved || window.cacheRichText?.getConflict()) return;
+          if (!saved || window.cacheRichText?.getConflict?.()) return;
           await window.UnifiedLoadManager?.syncWithSupabase();
           await window.AutoSaveManager?.forceAutoSave();
-        }), button('Baixar cópia', () => window.cacheRichText?.downloadRecovery()), button('Fechar aviso', hide));
+        }), button('Baixar cópia', () => { if (window.cacheRichText?.downloadRecovery) window.cacheRichText.downloadRecovery(); else window.AutoSaveManager?.downloadCloudConflict(); }), button('Fechar aviso', hide));
       } else hideTimer = setTimeout(hide, Number(detail.duration) || 1600);
     };
     // Routine confirmations appear after typing pauses; only problems appear at once.
@@ -78,5 +109,8 @@
   }
   window.addEventListener('editor:save-status', event => show(event.detail));
   window.addEventListener('notes:conflict', showConflict);
-  window.addEventListener('notes:conflict-resolved', hide);
+  window.addEventListener('notes:conflict-resolved', () => { if (window.AutoSaveManager?.getCloudConflict?.()) showCloudConflict(); else hide(); });
+  window.addEventListener('notes:cloud-conflict', showCloudConflict);
+  window.addEventListener('notes:cloud-conflict-resolved', () => { if (window.cacheRichText?.getConflict?.()) showConflict(); else hide(); });
+  window.AutoSaveManager?.ready?.then(() => { if (window.AutoSaveManager?.getCloudConflict?.()) showCloudConflict(); });
 })();
