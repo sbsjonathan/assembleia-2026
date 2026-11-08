@@ -152,13 +152,15 @@ class ZoomModal {
         clearTimeout(this.hideTimeout);
         clearTimeout(this.singleTapTimer);
         clearTimeout(this.transformTimer);
-        this.container.style.backgroundColor = 'black';
+        // A swipe already revealed part of the article. Keep that backdrop
+        // level until the close fade; restoring black here flashes on release.
+        if (!this.isDismissing || this.dismissCurrentY <= 0) this.container.style.backgroundColor = 'black';
         this.container.classList.add('closing');
         document.documentElement.classList.add('zoom-viewer-closing');
 
-        // Unlock and restore first, while black still covers every pixel. The
-        // navbar restores its snapshot synchronously, then drains two frames of
-        // scroll/viewport events before this viewer starts revealing the page.
+        // Restore the article at the same position beneath the current viewer.
+        // The navbar restores its snapshot synchronously, then drains two
+        // frames of scroll/viewport events before the closing fade starts.
         this.releaseScrollLock();
         this.notifyNavigation(false);
         this.closeFrame = requestAnimationFrame(() => {
