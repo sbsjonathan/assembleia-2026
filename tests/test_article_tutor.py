@@ -378,52 +378,240 @@ def check_stop_retry_reset_and_keyboard(page):
     open_question(page, '1')
 
 
-def check_fullscreen_and_viewport(page):
-    anchor = document_rect(page, '#modal-agente')
-    page.locator('#agente-expandir').click()
-    page.wait_for_function("document.querySelector('#modal-agente').dataset.mode === 'fullscreen'")
-    assert_within_viewport(page)
-    page.locator('#agente-pergunta').fill('Texto durante o teclado virtual')
-    page.locator('#agente-pergunta').evaluate('el=>el.setSelectionRange(6,6)')
-    page.evaluate("""() => {
-      window.qaViewportManual=true;
-      qaUpdateViewport({height:375,offsetTop:43,pageTop:scrollY+43});
-    }""")
-    page.wait_for_timeout(220)
-    assert_within_viewport(page)
-    assert_within_viewport(page, '#agente-pergunta')
-    assert page.evaluate('document.activeElement.id') == 'agente-pergunta'
-    assert page.locator('#agente-pergunta').evaluate('el=>el.selectionStart') == 6
-    page.evaluate('qaUpdateViewport({height:innerHeight,offsetTop:0,pageTop:scrollY});qaViewportManual=false')
-    page.wait_for_timeout(220)
-    page.locator('#agente-expandir').click()
-    page.wait_for_function("document.querySelector('#modal-agente').dataset.mode === 'window'")
-    restored = document_rect(page, '#modal-agente')
-    assert abs(restored['top'] - anchor['top']) <= 1 and abs(restored['left'] - anchor['left']) <= 1, (anchor, restored)
-    assert page.locator('#modal-agente').evaluate('el=>getComputedStyle(el).position') == 'absolute'
-    # Keyboard fitting is temporary: the document anchor must return unchanged.
+def assert_native_composer_reachable(page):
+    # A short landscape viewport can make the article-style modal body scroll.
+    # Controls must be reachable through that native ancestor, not merely have
+    # bounding boxes inside the viewport while hidden behind overflow clipping.
+    anchor=document_rect(page,'#modal-agente')
+    result=page.locator('#modal-agente .agente-modal-body').evaluate('''body => {
+      const before=body.scrollTop;
+      body.scrollTop=body.scrollHeight;
+      const port=body.getBoundingClientRect();
+      const field=document.querySelector('#agente-pergunta').getBoundingClientRect();
+      const send=document.querySelector('#agente-enviar').getBoundingClientRect();
+      const target=document.elementFromPoint(send.left+send.width/2,send.top+send.height/2);
+      return {port:port.toJSON(),field:field.toJSON(),send:send.toJSON(),
+        hit:Boolean(target?.closest('#agente-enviar')),before,after:body.scrollTop,
+        overflow:getComputedStyle(body).overflowY};
+    }''')
+    assert result['overflow'] in ('auto','scroll'), result
+    assert result['field']['top']>=result['port']['top']-1 and result['field']['bottom']<=result['port']['bottom']+1, result
+    assert result['send']['top']>=result['port']['top']-1 and result['send']['bottom']<=result['port']['bottom']+1, result
+    assert result['hit'], 'Send button must be hit-testable after native body scrolling: '+str(result)
+    assert_same_document_rect(document_rect(page,'#modal-agente'),anchor)
+
+
+def keyboard_snapshot(page):
+    return page.evaluate('''() => {
+      const panel=document.querySelector('#modal-agente');
+      const field=document.querySelector('#agente-pergunta');
+      const box=panel.getBoundingClientRect();
+      return {
+        style:Object.fromEntries(['top','left','width','height','max-height'].map(name=>[name,panel.style.getPropertyValue(name)])),
+        anchor:{left:box.left+scrollX,top:box.top+scrollY,width:box.width,height:box.height},
+        focus:document.activeElement?.id,selection:[field.selectionStart,field.selectionEnd],
+        scroll:scrollY
+      };
+    }''')
+
+
+def keyboard_trace(page, steps, *, inner_height_changes=False):
+    """Replay resize/pan events without pretending to create an iOS keyboard.
+
+    Native focus reveal is represented by a captured browser scroll method.
+    Application scrolling/focus calls are recorded separately. End-state-only
+    viewport-fit assertions previously missed the repeated relocation bug.
+    """
+    return page.evaluate('''async ({steps,innerHeightChanges}) => {
+      const panel=document.querySelector('#modal-agente');
+      const viewportHeight=innerHeight;
+      const descriptor=Object.getOwnPropertyDescriptor(window,'innerHeight');
+      const scrollMethods={scrollTo:window.scrollTo,scrollBy:window.scrollBy};
+      const nativeScrollTo=window.scrollTo.bind(window);
+      const nativeFocus=HTMLElement.prototype.focus;
+      const nativeIntoView=Element.prototype.scrollIntoView;
+      const startScroll=scrollY;
+      const writes=[],calls=[],frames=[];
+      const observer=new MutationObserver(records=>records.forEach(record=>writes.push({
+        name:record.attributeName,before:record.oldValue,after:panel.getAttribute(record.attributeName)
+      })));
+      observer.observe(panel,{attributes:true,attributeOldValue:true,attributeFilter:['style','data-compact']});
+      window.scrollTo=function(...args){calls.push('scrollTo');return scrollMethods.scrollTo.apply(this,args)};
+      window.scrollBy=function(...args){calls.push('scrollBy');return scrollMethods.scrollBy.apply(this,args)};
+      HTMLElement.prototype.focus=function(...args){calls.push('focus:'+this.id);return nativeFocus.apply(this,args)};
+      Element.prototype.scrollIntoView=function(...args){calls.push('scrollIntoView:'+this.id);return nativeIntoView.apply(this,args)};
+      const tick=()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+      qaViewportManual=true;
+      try {
+        for(const step of steps) {
+          if(innerHeightChanges) Object.defineProperty(window,'innerHeight',{configurable:true,get:()=>step.height});
+          if(step.pan!==undefined) nativeScrollTo(0,startScroll+step.pan);
+          if(step.reveal) {
+            const field=document.querySelector('#agente-pergunta').getBoundingClientRect();
+            nativeScrollTo(0,scrollY+field.bottom-step.height+20);
+          }
+          qaUpdateViewport({height:step.height,width:step.width||innerWidth,offsetTop:step.offsetTop||0,
+            offsetLeft:step.offsetLeft||0,pageTop:scrollY+(step.offsetTop||0),pageLeft:scrollX+(step.offsetLeft||0),scale:step.scale||1});
+          // WebKit may also dispatch a same-width window resize while animating
+          // keyboard/accessory bars; it must not be treated as device rotation.
+          dispatchEvent(new Event('resize'));
+          await tick();
+          const rect=panel.getBoundingClientRect(),field=document.querySelector('#agente-pergunta');
+          frames.push({
+            style:Object.fromEntries(['top','left','width','height','max-height'].map(name=>[name,panel.style.getPropertyValue(name)])),
+            anchor:{left:rect.left+scrollX,top:rect.top+scrollY,width:rect.width,height:rect.height},
+            focus:document.activeElement?.id,selection:[field.selectionStart,field.selectionEnd],
+            scroll:scrollY,
+            field:field.getBoundingClientRect().toJSON(),
+            viewport:{height:step.height,top:step.offsetTop||0},reveal:Boolean(step.reveal)
+          });
+        }
+      } finally {
+        observer.disconnect();
+        window.scrollTo=scrollMethods.scrollTo;window.scrollBy=scrollMethods.scrollBy;
+        HTMLElement.prototype.focus=nativeFocus;Element.prototype.scrollIntoView=nativeIntoView;
+        if(descriptor) Object.defineProperty(window,'innerHeight',descriptor);
+        else delete window.innerHeight;
+        qaViewportManual=false;
+        qaUpdateViewport({height:viewportHeight,width:innerWidth,offsetTop:0,offsetLeft:0,pageTop:scrollY,pageLeft:scrollX,scale:1});
+      }
+      return {writes,calls,frames};
+    }''', {'steps':steps,'innerHeightChanges':inner_height_changes})
+
+
+def assert_keyboard_stability(page, *, inner_height_changes=False):
+    field=page.locator('#agente-pergunta')
+    field.fill('Texto com seleção preservada durante o teclado')
+    field.evaluate('el=>el.setSelectionRange(6,18)')
+    page.wait_for_timeout(100)
+    before=keyboard_snapshot(page)
+    full_height=page.viewport_size['height']
+    steps=[
+        {'height':full_height-90,'offsetTop':0,'pan':0},
+        {'height':full_height-210,'offsetTop':18,'pan':45},
+        {'height':450,'offsetTop':42,'pan':95},
+        {'height':375,'offsetTop':70,'pan':130},
+        # Suggestion/accessory-bar changes and native pan occur with focus held.
+        {'height':401,'offsetTop':58,'pan':145},
+        {'height':375,'offsetTop':70,'pan':155},
+        {'height':375,'offsetTop':0,'reveal':True},
+        {'height':450,'offsetTop':42,'pan':95},
+        {'height':full_height-120,'offsetTop':12,'pan':35},
+        {'height':full_height,'offsetTop':0,'pan':0},
+    ]
+    trace=keyboard_trace(page,steps,inner_height_changes=inner_height_changes)
+    for frame in trace['frames']:
+        assert frame['style']==before['style'], ('Keyboard event rewrote panel geometry',before,frame)
+        assert_same_document_rect(frame['anchor'],before['anchor'])
+        assert frame['focus']=='agente-pergunta' and frame['selection']==[6,18], frame
+        if frame['reveal']:
+            assert frame['field']['top']>=0 and frame['field']['bottom']<=frame['viewport']['height'], ('Native focus scroll must expose the field',frame)
+    assert not trace['writes'], 'Keyboard resize/scroll must not write modal layout: '+str(trace['writes'])
+    assert not trace['calls'], 'The browser owns keyboard scrolling/focus: '+str(trace['calls'])
+    assert any(frame['scroll']>before['scroll']+100 for frame in trace['frames']), 'Native pan must remain possible.'
+
+    # A hardware/floating keyboard may leave the viewport unchanged. Pinch zoom
+    # reduces only the visual viewport width; neither is a reason to recenter.
+    before=keyboard_snapshot(page)
+    trace=keyboard_trace(page,[
+        {'height':full_height,'pan':0},
+        {'height':full_height-18,'offsetTop':6,'pan':15},
+        {'height':full_height/1.25,'width':page.viewport_size['width']/1.25,'scale':1.25,'offsetTop':45,'offsetLeft':20,'pan':30},
+        {'height':full_height,'pan':0},
+    ])
+    assert not trace['writes'] and not trace['calls'], trace
+    for frame in trace['frames']:
+        assert frame['style']==before['style'], frame
+        assert_same_document_rect(frame['anchor'],before['anchor'])
+        assert frame['focus']=='agente-pergunta' and frame['selection']==[6,18], frame
+    # Text input itself must not resize or recenter the modal while the caret is
+    # active. Long drafts scroll inside the textarea, as in the original modal.
+    field_box=rect(page,'#agente-pergunta')
+    field.fill('Linha de teste com conteúdo suficiente para preencher a largura.\n'*12)
+    field.evaluate('el=>{el.setSelectionRange(el.value.length,el.value.length);el.scrollTop=el.scrollHeight}')
+    page.wait_for_timeout(60)
+    assert abs(rect(page,'#agente-pergunta')['height']-field_box['height'])<=1
+    assert page.locator('#agente-pergunta').evaluate('el=>el.scrollHeight>el.clientHeight && el.scrollTop>0'), 'Long drafts must scroll inside their stable input.'
+    assert_same_document_rect(document_rect(page,'#modal-agente'),before['anchor'])
+    field.blur()
+    page.wait_for_timeout(100)
+    assert_same_document_rect(document_rect(page,'#modal-agente'),before['anchor'])
+
+
+def assert_fullscreen_entry_during_keyboard(page):
+    # The user can expand while typing. Some WebKit configurations shorten
+    # innerHeight as well as visualViewport; capturing it would leave fullscreen
+    # permanently keyboard-sized after the same-width keyboard-close resize.
+    window_anchor=document_rect(page,'#modal-agente')
     page.locator('#agente-pergunta').focus()
-    page.evaluate('qaViewportManual=true;qaUpdateViewport({height:375,offsetTop:43,pageTop:scrollY+43})')
-    page.wait_for_timeout(220)
-    assert_within_viewport(page, '#agente-pergunta')
-    assert page.evaluate('document.activeElement.id') == 'agente-pergunta'
-    page.evaluate('qaUpdateViewport({height:innerHeight,offsetTop:0,pageTop:scrollY});qaViewportManual=false')
-    page.wait_for_timeout(220)
-    assert_same_document_rect(document_rect(page, '#modal-agente'), restored)
-    assert_document_anchor(page, '#modal-agente')
-    page.locator('#agente-pergunta').blur()
-    page.set_viewport_size({'width': 320, 'height': 568})
+    result=page.evaluate('''async () => {
+      const panel=document.querySelector('#modal-agente'),height=innerHeight;
+      const descriptor=Object.getOwnPropertyDescriptor(window,'innerHeight');
+      const writes=[];
+      const observer=new MutationObserver(records=>records.forEach(record=>writes.push(record.attributeName)));
+      const tick=()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+      qaViewportManual=true;
+      let opened,settled;
+      try {
+        Object.defineProperty(window,'innerHeight',{configurable:true,get:()=>375});
+        qaUpdateViewport({height:375,width:innerWidth,offsetTop:55,pageTop:scrollY+55});
+        dispatchEvent(new Event('resize'));
+        await tick();
+        document.querySelector('#agente-expandir').click();
+        await tick();
+        opened={height:panel.getBoundingClientRect().height,style:panel.getAttribute('style'),mode:panel.dataset.mode};
+        observer.observe(panel,{attributes:true,attributeFilter:['style','data-compact']});
+        if(descriptor) Object.defineProperty(window,'innerHeight',descriptor);
+        else delete window.innerHeight;
+        qaUpdateViewport({height,width:innerWidth,offsetTop:0,pageTop:scrollY});
+        dispatchEvent(new Event('resize'));
+        await tick();
+        settled={height:panel.getBoundingClientRect().height,style:panel.getAttribute('style'),mode:panel.dataset.mode};
+      } finally {
+        observer.disconnect();
+        if(descriptor) Object.defineProperty(window,'innerHeight',descriptor);
+        else delete window.innerHeight;
+        qaViewportManual=false;
+        qaUpdateViewport({height,width:innerWidth,offsetTop:0,pageTop:scrollY});
+      }
+      return {height,opened,settled,writes};
+    }''')
+    assert result['opened']['mode']=='fullscreen' and result['settled']['mode']=='fullscreen', result
+    assert abs(result['opened']['height']-result['height'])<=1, 'Expanding during typing must use the resting layout height: '+str(result)
+    assert result['settled']['style']==result['opened']['style'] and not result['writes'], result
+    page.locator('#agente-expandir').click()
+    assert_same_document_rect(document_rect(page,'#modal-agente'),window_anchor)
+
+
+def check_fullscreen_and_viewport(page):
+    anchor=document_rect(page,'#modal-agente')
+    for full in (False,True):
+        if full:
+            page.locator('#agente-expandir').click()
+            page.wait_for_function("document.querySelector('#modal-agente').dataset.mode === 'fullscreen'")
+            assert_within_viewport(page)
+        assert page.evaluate("!['hidden','clip'].includes(getComputedStyle(document.documentElement).overflowY)"), 'Fullscreen must leave native document focus scrolling available.'
+        assert_keyboard_stability(page)
+        assert_keyboard_stability(page,inner_height_changes=True)
+        if full:
+            page.locator('#agente-expandir').click()
+            page.wait_for_function("document.querySelector('#modal-agente').dataset.mode === 'window'")
+            assert_same_document_rect(document_rect(page,'#modal-agente'),anchor)
+    assert_fullscreen_entry_during_keyboard(page)
+    assert_document_anchor(page,'#modal-agente')
+    page.set_viewport_size({'width':320,'height':568})
     page.wait_for_timeout(220)
     assert_within_viewport(page)
-    assert_within_viewport(page, '#agente-pergunta')
-    assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Narrow screens must not gain horizontal scrolling.'
+    assert_within_viewport(page,'#agente-pergunta')
+    assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'), 'Narrow screens must not gain horizontal scrolling.'
     page.locator('#agente-minimizar').click()
-    page.set_viewport_size({'width': 568, 'height': 320})
+    page.set_viewport_size({'width':568,'height':320})
     page.wait_for_timeout(220)
-    assert_within_viewport(page, '#agente-bolinha')
+    assert_within_viewport(page,'#agente-bolinha')
     page.locator('#agente-bolinha').click()
     assert_within_viewport(page)
-    assert_within_viewport(page, '#agente-pergunta')
+    assert_within_viewport(page,'#agente-pergunta')
+    assert_native_composer_reachable(page)
 
 
 def check_cancelled_drag(page):
@@ -533,6 +721,7 @@ def check_layout_matrix(browser, engine_name, origin):
         open_question(page, '3-5')
         assert_initial_clearance(page)
         assert_within_viewport(page, '#agente-pergunta')
+        assert_native_composer_reachable(page)
         assert_document_anchor(page, '#modal-agente')
         if engine_name == 'chromium' and width in (375, 430) and level == 3:
             check_touch_drag(page, context)
@@ -550,6 +739,7 @@ def check_layout_matrix(browser, engine_name, origin):
         page.locator('#agente-expandir').click()
         assert_within_viewport(page)
         assert_within_viewport(page, '#agente-pergunta')
+        assert_native_composer_reachable(page)
         page.locator('#agente-expandir').click()
         assert_initial_clearance(page)
         assert not errors, errors
@@ -590,7 +780,7 @@ def check(engine, executable, origin):
                           'draftAndHistoryRetention': 'passed', 'documentAnchoredWindowAndOrb': 'passed',
                           'freeHorizontalDragAndCancellation': 'passed', 'globalThemeColor': 'passed',
                           'stopRetryResetAndSafeRendering': 'passed', 'keyboardAccessibility': 'passed',
-                          'focusPreservation': 'passed', 'fullscreenAndKeyboardGeometry': 'passed',
+                          'focusPreservation': 'passed', 'nativeKeyboardTimelineAndStableAnchors': 'passed',
                           'narrowAndLandscapeClamping': 'passed', 'layoutCases': cases}), flush=True)
     finally:
         browser.close()

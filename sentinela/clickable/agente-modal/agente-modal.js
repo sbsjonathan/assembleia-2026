@@ -31,10 +31,10 @@
   const sessions = new Map();
   let activeId = null, mode = 'closed', restoreMode = 'window', openToken = 0;
   let overlay, bubble, documentLayer, probe, area, thread, status, sendButton;
-  // These anchors belong to the article, just like its footnote popovers.
-  // Visual-viewport coordinates are used only in fullscreen/keyboard fitting.
+  // As in the original tutor, both window sizes use document anchors. WebKit
+  // owns keyboard scrolling; keyboard animation never rewrites these boxes.
   let preferredPosition = null, bubblePosition = null, bubbleMoved = false, layoutFrame = 0;
-  let windowSize = null, keyboardBaseHeight = 0, bubbleViewportWidth = 0;
+  let windowSize = null, fullscreenBox = null, bubbleViewportWidth = 0, layoutWidth = 0;
   let fullscreenRestore = null;
   const active = () => sessions.get(activeId);
 
@@ -56,13 +56,15 @@
           <button type="button" id="agente-fechar" class="agente-icon-button" aria-label="Fechar tutor" title="Fechar">${svg('close')}</button>
         </div>
       </header>
+      <div class="agente-modal-body">
       <div id="agente-thread" class="agente-thread" role="log" aria-label="Conversa com o tutor" aria-live="polite" aria-relevant="additions text" tabindex="0"></div>
       <form id="agente-composer">
-        <div class="agente-input-row"><textarea id="agente-pergunta" rows="1" maxlength="8000" aria-label="Mensagem para o tutor" placeholder="Pergunte sobre este trecho…" autocomplete="off" autocapitalize="sentences" spellcheck="true"></textarea>
+        <div class="agente-input-row"><textarea id="agente-pergunta" rows="2" maxlength="8000" aria-label="Mensagem para o tutor" placeholder="Pergunte sobre este trecho…" autocomplete="off" autocapitalize="sentences" spellcheck="true"></textarea>
           <button id="agente-enviar" type="submit" class="agente-send" aria-label="Enviar mensagem" title="Enviar mensagem">${svg('send')}</button></div>
         <div class="agente-composer-meta"><button id="agente-reset" type="button">${svg('reset')}<span>Nova conversa</span></button><span class="agente-scope-hint">Conversa deste parágrafo</span></div>
         <div id="agente-status" role="status" hidden></div>
       </form>
+      </div>
     </div>`;
     bubble = document.createElement('button');
     bubble.id = 'agente-bolinha';
@@ -71,7 +73,7 @@
     bubble.innerHTML = `${svg('chat')}<span class="agente-bubble-label"></span><span class="agente-bubble-dot" aria-hidden="true"></span>`;
     probe = document.createElement('div');
     probe.setAttribute('aria-hidden', 'true');
-    probe.style.cssText = 'position:fixed;pointer-events:none;visibility:hidden;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);width:0;height:0;';
+    probe.style.cssText = 'position:fixed;pointer-events:none;visibility:hidden;box-sizing:content-box;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);width:0;height:100vh;height:100svh;';
     documentLayer = document.createElement('div');
     documentLayer.id = 'agente-document-layer';
     documentLayer.append(overlay, bubble);
@@ -101,7 +103,6 @@
     });
     area.addEventListener('input', () => {
       if (active()) active().draft = area.value;
-      resizeComposer();
       updateControls();
     });
     area.addEventListener('keydown', event => {
@@ -111,8 +112,6 @@
         if (!active()?.request) send();
       }
     });
-    area.addEventListener('focus', () => { keyboardBaseHeight = viewport().height; });
-    area.addEventListener('blur', scheduleLayout);
     makeDraggable(overlay.querySelector('.modal-agente-header'), overlay, false);
     makeDraggable(bubble, bubble, true);
     overlay.querySelector('#agente-drag').addEventListener('keydown', moveByKey);
@@ -126,20 +125,21 @@
       }
       if (event.key === 'Tab' && mode === 'fullscreen') trapFocus(event);
     });
-    window.addEventListener('resize', scheduleLayout, {passive: true});
-    window.addEventListener('pageshow', scheduleLayout);
-    window.visualViewport?.addEventListener('resize', scheduleLayout, {passive: true});
-    window.visualViewport?.addEventListener('scroll', () => {
-      if (mode === 'fullscreen') scheduleLayout();
-    }, {passive: true});
+    // The keyboard can emit many resize events while the browser pans toward
+    // the caret. Only an actual layout-width change needs a new arrangement.
+    const widthChanged = () => {
+      if (Math.abs(document.documentElement.clientWidth - layoutWidth) > 1) scheduleLayout();
+    };
+    window.addEventListener('resize', widthChanged, {passive: true});
+    window.addEventListener('pageshow', widthChanged);
+    layoutWidth = document.documentElement.clientWidth;
   }
 
   function viewport() {
-    const vv = window.visualViewport;
     const css = getComputedStyle(probe);
-    return {x: vv?.offsetLeft || 0, y: vv?.offsetTop || 0,
-      pageX: window.scrollX + (vv?.offsetLeft || 0), pageY: window.scrollY + (vv?.offsetTop || 0),
-      width: vv?.width || window.innerWidth, height: vv?.height || window.innerHeight,
+    return {pageX: window.scrollX, pageY: window.scrollY,
+      width: document.documentElement.clientWidth || window.innerWidth, height: window.innerHeight,
+      layoutHeight: parseFloat(css.height) || document.documentElement.clientHeight || window.innerHeight,
       top: parseFloat(css.paddingTop) || 0, right: parseFloat(css.paddingRight) || 0,
       bottom: parseFloat(css.paddingBottom) || 0, left: parseFloat(css.paddingLeft) || 0};
   }
@@ -159,17 +159,15 @@
     element.style.left = `${position.x - originX}px`;
     element.style.top = `${position.y - originY}px`;
   }
-  function availableBounds(v, keyboard = false) {
-    const gap = keyboard ? 12 : 20;
+  function availableBounds(v) {
+    const gap = 20;
     const bounds = {left: v.pageX + v.left + gap, top: v.pageY + v.top + gap,
       right: v.pageX + v.width - v.right - gap,
-      bottom: v.pageY + v.height - (keyboard ? 0 : v.bottom) - gap};
-    if (!keyboard) {
-      const nav = document.querySelector('.bottom-navbar');
-      const rect = nav?.getBoundingClientRect();
-      if (rect && rect.top > v.y && rect.top < v.y + v.height && getComputedStyle(nav).visibility !== 'hidden') {
-        bounds.bottom = Math.min(bounds.bottom, window.scrollY + rect.top - gap);
-      }
+      bottom: v.pageY + v.height - v.bottom - gap};
+    const nav = document.querySelector('.bottom-navbar');
+    const rect = nav?.getBoundingClientRect();
+    if (rect && rect.top > 0 && rect.top < v.height && getComputedStyle(nav).visibility !== 'hidden') {
+      bounds.bottom = Math.min(bounds.bottom, window.scrollY + rect.top - gap);
     }
     return bounds;
   }
@@ -193,6 +191,8 @@
   function layout() {
     if (!overlay || mode === 'closed') return;
     const v = viewport();
+    const changedWidth = Math.abs(v.width - layoutWidth) > 1;
+    layoutWidth = v.width;
     if (mode === 'minimized') {
       if (bubblePosition && Math.abs(v.width - bubbleViewportWidth) > 1) {
         const size = bubble.offsetWidth || 54;
@@ -204,53 +204,46 @@
     }
     const fullscreen = mode === 'fullscreen';
     if (!preferredPosition || !windowSize) placeNewWindow();
-    const keyboard = !fullscreen && document.activeElement === area &&
-      Math.max(keyboardBaseHeight, window.innerHeight) - v.height > 100 && (!window.visualViewport || window.visualViewport.scale === 1);
-    const bounds = availableBounds(v, keyboard);
+    const bounds = availableBounds(v);
     // Resize for a changed device width, never for an ordinary article scroll.
-    if (!fullscreen && !keyboard && Math.abs(v.width - windowSize.viewportWidth) > 1) {
+    if (!fullscreen && Math.abs(v.width - windowSize.viewportWidth) > 1) {
       windowSize = sizeWindow(v);
       preferredPosition = fitPosition(preferredPosition, windowSize, bounds);
     }
-    const width = fullscreen ? v.width : Math.min(windowSize.width, Math.max(0, bounds.right - bounds.left));
-    const height = fullscreen ? v.height : keyboard ? Math.min(windowSize.height, bounds.bottom - bounds.top) : windowSize.height;
+    if (fullscreen && (!fullscreenBox || changedWidth)) {
+      // CSS small-viewport height is stable across keyboard animation, even
+      // when entering fullscreen from a textarea that is already focused.
+      fullscreenBox = {x: v.pageX, y: v.pageY, width: v.width, height: v.layoutHeight};
+    }
+    const width = fullscreen ? fullscreenBox.width : windowSize.width;
+    const height = fullscreen ? fullscreenBox.height : windowSize.height;
     overlay.style.width = `${Math.max(0, width)}px`;
     overlay.style.height = `${Math.max(0, height)}px`;
     overlay.style.maxHeight = `${Math.max(0, height)}px`;
     overlay.dataset.compact = String(height < 340);
-    if (fullscreen) {
-      overlay.style.left = `${v.x}px`;
-      overlay.style.top = `${v.y}px`;
-    } else {
-      placeInDocument(overlay, keyboard ? fitPosition(preferredPosition, {width, height}, bounds) : preferredPosition);
-    }
-    // Keyboard compensation never overwrites the page anchor or refocuses input.
+    placeInDocument(overlay, fullscreen ? fullscreenBox : preferredPosition);
   }
   function scheduleLayout() {
     if (!layoutFrame) layoutFrame = requestAnimationFrame(() => {layoutFrame = 0; layout();});
   }
-  function resizeComposer() {
-    area.style.height = 'auto';
-    area.style.height = `${Math.min(112, area.scrollHeight)}px`;
-  }
   function fullscreenIsolation(enable) {
     if (enable && !fullscreenRestore) {
       const siblings = [...document.body.children].filter(node => node !== documentLayer && node !== probe);
-      fullscreenRestore = {overflow: document.documentElement.style.overflow, siblings: siblings.map(node => [node, node.inert])};
-      document.documentElement.style.overflow = 'hidden';
+      fullscreenRestore = {siblings: siblings.map(node => [node, node.inert])};
       siblings.forEach(node => {node.inert = true;});
     } else if (!enable && fullscreenRestore) {
-      document.documentElement.style.overflow = fullscreenRestore.overflow;
       fullscreenRestore.siblings.forEach(([node, inert]) => {node.inert = inert;});
       fullscreenRestore = null;
     }
   }
   function applyMode(next) {
+    if (next === 'fullscreen' && mode !== 'fullscreen') fullscreenBox = null;
     mode = next;
     fullscreenIsolation(next === 'fullscreen');
     overlay.hidden = next === 'closed' || next === 'minimized';
     bubble.hidden = next !== 'minimized';
     overlay.dataset.mode = next;
+    documentLayer.dataset.mode = next;
     overlay.setAttribute('aria-modal', String(next === 'fullscreen'));
     const full = next === 'fullscreen';
     const expand = overlay.querySelector('#agente-expandir');
@@ -259,7 +252,6 @@
     expand.title = full ? 'Restaurar janela' : 'Tela cheia';
     overlay.querySelector('#agente-drag').tabIndex = full ? -1 : 0;
     layout();
-    if (!overlay.hidden) resizeComposer();
   }
   async function open(trigger) {
     ensureUI();
@@ -381,7 +373,6 @@
       thread.innerHTML = session.messages.map(message => `<article class="agente-message agente-message--${message.role === 'assistant' ? 'assistant' : 'user'}"><div class="agente-message-meta">${message.role === 'assistant' ? 'Tutor IA' : 'Você'}</div><div class="agente-message-text">${richText(message.text)}</div>${message.failed ? '<span class="agente-message-status">Sem resposta</span>' : ''}</article>`).join('');
     }
     updateControls();
-    resizeComposer();
     thread.scrollTop = scrollToEnd || atEnd ? thread.scrollHeight : previousScroll;
   }
 

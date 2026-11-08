@@ -22,7 +22,7 @@ Os seis cânticos do programa abrem as respectivas páginas oficiais do JW.org, 
 
 O ícone próprio representa as fileiras e o palco de um auditório, em roxo sobre lavanda clara. O manifesto mantém a identidade da instalação `assembleia-2026`, enquanto a versão desta linha começa por `ass26-`.
 
-Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v15`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
+Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v16`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
 
 Na atualização da variante anterior, os dados do namespace `assembleia-2026:` são copiados sem apagar os originais. Notas do antigo congresso ficam separadas como `legacy-congresso:` e não são associadas aos novos discursos. Os dados do aplicativo Sentinela não são importados nem apagados.
 
@@ -50,15 +50,15 @@ Testes de ida e volta da anotação, resumo e recuperação de falhas: `python t
 Testes do menu compacto de Anotações, formatação, fonte global e persistência: `python tests/test_notes_menu.py`.
 Testes de listas numeradas, continuação com Enter, conversão e histórico: `python tests/test_notes_lists.py`.
 Testes dos destaques de perguntas: `python tests/test_question_highlight_core.py` e `python tests/test_question_highlights.py` (Chromium e WebKit opcional). Regras e fontes dos modelos em [Destaques das perguntas](docs/question-highlights.md).
-Testes do Tutor IA: `python tests/test_tutor_context.py` e `python tests/test_article_tutor.py` (Chromium; `WEBKIT_EXECUTABLE` habilita WebKit). Usam respostas simuladas, sem acessar o serviço de IA.
+Testes do Tutor IA: `python tests/test_tutor_context.py` e `python tests/test_article_tutor.py` (Chromium; `WEBKIT_EXECUTABLE` habilita WebKit). Usam respostas simuladas, sem acessar o serviço de IA. As sequências de eventos do teclado verificam também as etapas intermediárias, ausência de reposicionamentos, foco/seleção e acesso aos controles por rolagem nativa. O teclado virtual real do iPhone não é reproduzido pelo navegador automatizado.
 
-O Tutor IA abre ao segurar o número da pergunta. Cada pergunta ou grupo mantém sua conversa e rascunho em memória durante a página, com somente uma janela ou bolinha visível. A janela e a bolinha ficam ancoradas ao ponto do artigo onde foram colocadas: rolam com a página, como as notas do artigo. O cabeçalho permite arrastar a janela para os lados, e a bolinha também pode ser movida sem voltar sozinha à lateral. A abertura respeita margens e a barra inferior; somente a tela cheia acompanha a área visível. O teclado ajusta temporariamente a janela sem apagar sua posição no artigo. As cores acompanham o destaque e o tema do estudo. O contexto enviado inclui somente a pergunta e os parágrafos correspondentes, sem anotações pessoais. O histórico no pedido é limitado aos últimos turnos, sem limitar a continuidade da interface. Ao navegar ou recarregar, essas conversas temporárias são descartadas.
+O Tutor IA abre ao segurar o número da pergunta. Cada pergunta ou grupo mantém sua conversa e rascunho em memória durante a página, com somente uma janela ou bolinha visível. A janela e a bolinha ficam ancoradas ao ponto do artigo onde foram colocadas: rolam com a página, como as notas do artigo. O cabeçalho permite arrastar a janela para os lados, e a bolinha também pode ser movida sem voltar sozinha à lateral. A abertura respeita margens e a barra inferior. A tela cheia amplia a janela uma vez, mantendo a mesma lógica de posição estável no documento. Como no modal original do commit `1dad8f2`, a rolagem nativa pode revelar o campo sem disputar sua posição com correções de JavaScript: o corpo rolável contém a conversa e o campo, o textarea mantém sua altura enquanto se digita e a página continua rolável. Somente uma mudança real de largura reorganiza a janela; a animação do teclado não altera sua geometria. As cores acompanham o destaque e o tema do estudo. O contexto enviado inclui somente a pergunta e os parágrafos correspondentes, sem anotações pessoais. O histórico no pedido é limitado aos últimos turnos, sem limitar a continuidade da interface. Ao navegar ou recarregar, essas conversas temporárias são descartadas.
 
 ## Publicação
 
 GitHub Pages publica a raiz da branch `main` em https://sbsjonathan.github.io/assembleia-2026/.
 
-Versão atual: `ass26-2026.11.08.9`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
+Versão atual: `ass26-2026.11.08.10`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
 
 O catálogo bíblico incluído permanece disponível no pacote. Cânticos externos, áudios, serviços de IA e sincronização precisam de conexão. A Sentinela consulta primeiro o estudo semanal já baixado; sem download nem conexão, informa que o estudo está indisponível.
 
