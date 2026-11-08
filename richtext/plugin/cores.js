@@ -673,6 +673,12 @@ document.addEventListener('DOMContentLoaded', () => {
   window.visualViewport?.addEventListener('resize', queuePickerViewport, {passive:true});
   window.visualViewport?.addEventListener('scroll', queuePickerViewport, {passive:true});
   setColorState(255, 59, 48, 'init');
+  Object.assign(window.NotesEditorActions ||= {}, {
+    textColor: () => openPicker('text'),
+    backgroundColor: () => openPicker('bg'),
+    reset: applyReset
+  });
+
   bindTapIntent(textBtn, () => openPicker('text'));
   bindTapIntent(bgBtn, () => openPicker('bg'));
   bindTapIntent(resetBtn, applyReset);

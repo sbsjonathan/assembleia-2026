@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menuContainer = document.getElementById('menu-container');
     const diaElemento = document.querySelector('.dia');
-    const settingsToggle = document.getElementById('assembly-settings-toggle');
+    const titleToggle = document.getElementById('assembly-title-toggle');
+    let menuTrigger = diaElemento;
 
     if (!menuContainer || !diaElemento) return;
 
@@ -755,7 +756,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function setMenuVisible(visible) {
         menuVisivel = visible;
-        [diaElemento, settingsToggle].filter(Boolean).forEach((trigger) => {
+        [diaElemento, titleToggle].filter(Boolean).forEach((trigger) => {
             trigger.setAttribute('aria-expanded', String(menuVisivel));
         });
         menuControles.hidden = !menuVisivel;
@@ -763,19 +764,20 @@ document.addEventListener("DOMContentLoaded", () => {
         else resetarGlowPadrao();
     }
 
-    function toggleMenu() {
+    function toggleMenu(event) {
+        menuTrigger = event.currentTarget;
         setMenuVisible(!menuVisivel);
     }
 
     diaElemento.setAttribute('aria-expanded', 'false');
     diaElemento.setAttribute('aria-controls', 'controles');
     diaElemento.addEventListener('click', toggleMenu);
-    settingsToggle?.addEventListener('click', toggleMenu);
+    titleToggle?.addEventListener('click', toggleMenu);
     menuControles.addEventListener('keydown', (event) => {
         if (event.key !== 'Escape') return;
         event.preventDefault();
         setMenuVisible(false);
-        (settingsToggle || diaElemento).focus({preventScroll:true});
+        menuTrigger.focus({preventScroll:true});
     });
     
     if (corPicker) {

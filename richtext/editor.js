@@ -47,7 +47,14 @@ const M3_TextModel = {
     if (el.querySelector?.('ul, ol')) return false;
     return !el.textContent.replace(/\u200B/g, '').trim();
   },
-  sync(el) { if (el) el.dataset.empty = this.isEmpty(el) ? 'true' : 'false'; },
+  sync(el) {
+    if (!el) return;
+    el.dataset.empty = this.isEmpty(el) ? 'true' : 'false';
+    if (el.classList.contains('paragraph-content')) {
+      const placeholder = M4A_Placeholder.main();
+      if (el.dataset.placeholder !== placeholder) el.dataset.placeholder = placeholder;
+    }
+  },
   syncAll() {
     M1_Config.editor.querySelectorAll('.editable').forEach(e => this.sync(e));
     M1_Config.editor.querySelectorAll('.node-text').forEach(n => {
@@ -205,7 +212,7 @@ const M4A_Placeholder = {
   },
 
   main() {
-    return `Anotie aqui o discurso da semana de ${this.formatSemanaAmigavel()}`;
+    return `Semana de ${this.formatSemanaAmigavel()}`;
   }
 };
 

@@ -218,6 +218,8 @@ const bindTapIntent = (el, handler, { delay = 240, slop = 10, preventFocus = tru
     });
   };
 
+  Object.assign(window.NotesEditorActions ||= {}, {list: applyList});
+
   bindTapIntent(bulletBtn, e => {
     if (e) e.preventDefault();
     applyList();

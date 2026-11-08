@@ -321,6 +321,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  Object.assign(window.NotesEditorActions ||= {}, {
+    bold: () => applyCommand('bold'),
+    italic: () => applyCommand('italic')
+  });
+
   bindAction(boldBtn, 'bold');
   bindAction(italicBtn, 'italic');
 

@@ -83,6 +83,13 @@
     const raw = snapshot ? JSON.stringify(snapshot.payload, null, 2) : localStorage.getItem(cacheKey);
     if (raw) download(raw, `anotacoes-${initialWeek}.json`);
   }
+  async function exportOriginal() {
+    const backup = await getBackup().catch(() => null);
+    if (backup?.raw) download(backup.raw, `anotacoes-antes-v2-${initialWeek}.json`);
+  }
+  function exportRecovery() {
+    download(JSON.stringify({type:'notes-recovery', semana:initialWeek, copies:recoveryCopies()}, null, 2), `anotacoes-recuperadas-${initialWeek}.json`);
+  }
   function recoveryCopies() {
     if (window.cacheRichText?.listRecovery) return window.cacheRichText.listRecovery();
     const copies = [];
@@ -180,13 +187,8 @@
       button.onclick = () => switchTo(version);
     }
     overlay.querySelector('#notes-export-current').onclick = exportCurrent;
-    overlay.querySelector('#notes-export-original').onclick = async () => {
-      const backup = await getBackup().catch(() => null);
-      if (backup?.raw) download(backup.raw, `anotacoes-antes-v2-${initialWeek}.json`);
-    };
-    overlay.querySelector('#notes-export-recovery').onclick = () => {
-      download(JSON.stringify({type:'notes-recovery', semana:initialWeek, copies:recoveryCopies()}, null, 2), `anotacoes-recuperadas-${initialWeek}.json`);
-    };
+    overlay.querySelector('#notes-export-original').onclick = exportOriginal;
+    overlay.querySelector('#notes-export-recovery').onclick = exportRecovery;
     overlay.addEventListener('click', event => { if (event.target === overlay) close(); });
     overlay.addEventListener('keydown', event => {
       if (event.key === 'Escape') { event.preventDefault(); close(); }
@@ -208,5 +210,5 @@
     getBackup().then(backup => { overlay.querySelector('#notes-export-original').hidden = !backup?.raw; }).catch(() => {});
   }
   window.addEventListener('globalfont:changed', syncFontControl);
-  window.NotesVersions = {current, ready, open, close, switchTo, getBackup, exportCurrent};
+  window.NotesVersions = {current, ready, open, close, switchTo, getBackup, exportCurrent, exportOriginal, exportRecovery, recoveryCopies};
 })();

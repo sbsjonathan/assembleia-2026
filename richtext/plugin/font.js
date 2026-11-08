@@ -285,6 +285,14 @@ const bindTapIntent = (el, handler, { delay = 240, slop = 10, preventFocus = tru
     });
   };
 
+  Object.assign(window.NotesEditorActions ||= {}, {
+    blockStyle: size => {
+      if (!SIZES.some(entry => entry.key === size)) return;
+      closeDropdown();
+      applySize(size);
+    }
+  });
+
 // ── Botão principal ───────────────────────────────────────────────────────
 bindTapIntent(fontBtn, e => {
   if (e) e.preventDefault();

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <script src="versions.js"></script>
   <link rel="stylesheet" href="versions.css">
+  <link rel="stylesheet" href="notes-menu.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -79,7 +80,7 @@
         <div class="navbar-icon icon-bible"></div>
         <span class="navbar-label">Bíblia</span>
     </a>
-    <a href="#" class="navbar-item active" data-page="notes" onclick="NotesVersions.open(event)">
+    <a href="#" class="navbar-item active" data-page="notes" onclick="NotesMenu.toggle(event)" aria-controls="notes-tools" aria-expanded="false">
         <div class="navbar-icon icon-notes"></div>
         <span class="navbar-label">Anotações</span>
     </a>
@@ -244,6 +245,7 @@
   <script src="biblia/scriptbbl-container.js"></script>
   <script src="plugin/leitor.js"></script>
   <script src="barra.js"></script>
+  <script src="notes-menu.js"></script>
   <script src="liquid-glass.js"></script>
   <script src="cache-r.js"></script>
   <script src="../save/config.js"></script>

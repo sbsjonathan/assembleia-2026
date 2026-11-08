@@ -4,13 +4,15 @@ Aplicativo da Assembleia de Circuito de 2026–2027 com o superintendente de cir
 
 - Início: abas Manhã, Tarde e Perguntas; 11 notas por discurso, cinco respostas de revisão e atalho para A Sentinela.
 - Bíblia: leitor, busca e referências da versão atual do sistema de estudo.
-- Anotações: editor atual, com opção de versão anterior e cópias de recuperação. Tocar novamente em Anotações abre as opções, incluindo os 11 níveis de fonte global e a exportação da nota.
+- Anotações: tocar novamente no ícone abre ou recolhe as ferramentas no topo do editor, deslocando o texto sem sobreposição. Inclui desfazer/refazer, negrito, itálico, listas, blocos, cores, estilos, leitura e os 11 níveis de fonte global. Versões e exportação ficam em uma seção secundária do painel.
 - A Sentinela: abre diretamente o estudo da semana corrente, calculada no momento do toque. O catálogo continua disponível em `estudos.html`.
 - Salvar: conta, sincronização e preparação para uso offline.
 
 Ao abrir, a aba acompanha o período da parte marcada no programa. Durante o uso, uma escolha manual de aba ou edição de anotação é preservada.
 
-O menu expansível do Início abre em **Configurações**, no cabeçalho, ou ao tocar em **ASSEMBLEIA DE CIRCUITO**. Mantém fonte, tema, cor de destaque, exportação, nuvem, desempenho e gerenciamento dos dados locais. A barra inferior permanece visível ao rolar o Início; durante a digitação, continua cedendo espaço ao teclado.
+O menu do Início fica oculto e abre ao tocar no título principal ou em **ASSEMBLEIA DE CIRCUITO**. Mantém fonte, tema, cor de destaque, exportação, nuvem, desempenho e gerenciamento dos dados locais. A barra inferior permanece visível ao rolar o Início; durante a digitação, continua cedendo espaço ao teclado.
+
+O placeholder do editor usa “Semana de…” com a data por extenso; tamanhos grandes permitem quebra natural da linha. O painel usa as mesmas ações e o mesmo histórico da barra de edição, sem incluir ferramentas no conteúdo salvo.
 
 Ao sair da anotação em tela cheia, o programa retorna à aba e ao campo editado e gera o resumo. O texto integral, incluindo blocos recolhidos, continua disponível ao expandir novamente. Anotações de até 50 caracteres são reproduzidas sem IA; a partir de 51 caracteres, o resumidor pode ser acionado. Falhas do serviço permitem uma nova tentativa ao reabrir e sair da anotação.
 
@@ -20,7 +22,7 @@ Os seis cânticos do programa abrem as respectivas páginas oficiais do JW.org, 
 
 O ícone próprio representa as fileiras e o palco de um auditório, em roxo sobre lavanda clara. O manifesto mantém a identidade da instalação `assembleia-2026`, enquanto a versão desta linha começa por `ass26-`.
 
-Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v6`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
+Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v7`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
 
 Na atualização da variante anterior, os dados do namespace `assembleia-2026:` são copiados sem apagar os originais. Notas do antigo congresso ficam separadas como `legacy-congresso:` e não são associadas aos novos discursos. Os dados do aplicativo Sentinela não são importados nem apagados.
 
@@ -40,7 +42,7 @@ Testes das opções de Anotações, fonte global, exportação e troca entre v1 
 
 GitHub Pages publica a raiz da branch `main` em https://sbsjonathan.github.io/assembleia-2026/.
 
-Versão atual: `ass26-2026.11.07.6`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
+Versão atual: `ass26-2026.11.08.1`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
 
 O catálogo bíblico incluído permanece disponível no pacote. Cânticos externos, áudios, serviços de IA e sincronização precisam de conexão. A Sentinela consulta primeiro o estudo semanal já baixado; sem download nem conexão, informa que o estudo está indisponível.
 
