@@ -351,6 +351,7 @@
     try {
       const prompt = buildPrompt(bundle);
       const result = await requestWithFallback(prompt);
+      if (window.sentinelaSync?.localClearInProgress) return;
       const parsed = safeJSONParse(result.text);
       
       let visaoGeral = parsed ? (parsed.visao_geral || parsed.visaoGeral || parsed.VisaoGeral) : null;

@@ -25,6 +25,7 @@
   }
   function blocked() {
     if (!document.body || editing()) return true;
+    if (document.documentElement.hasAttribute('data-article-tutor-fullscreen')) return true;
     const body = getComputedStyle(document.body), view = window.visualViewport;
     if (body.position === 'fixed' || body.overflowY === 'hidden' || body.overflowY === 'clip') return true;
     if (view && (view.scale > 1.01 || view.height < innerHeight - 120)) return true;

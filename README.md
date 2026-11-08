@@ -22,13 +22,15 @@ Os seis cânticos do programa abrem as respectivas páginas oficiais do JW.org, 
 
 O ícone próprio representa as fileiras e o palco de um auditório, em roxo sobre lavanda clara. O manifesto mantém a identidade da instalação `assembleia-2026`, enquanto a versão desta linha começa por `ass26-`.
 
-Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v16`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
+Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v17`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
 
 Na atualização da variante anterior, os dados do namespace `assembleia-2026:` são copiados sem apagar os originais. Notas do antigo congresso ficam separadas como `legacy-congresso:` e não são associadas aos novos discursos. Os dados do aplicativo Sentinela não são importados nem apagados.
 
 O login salvo é restaurado antes de carregar o serviço de nuvem. Falhas de rede, respostas ambíguas e erros de interface não apagam a identidade local. Uma resposta atrasada também não pode remover uma entrada mais recente; a saída explícita continua sendo respeitada entre as páginas da Assembleia.
 
 Os modos de nuvem distinguem acrescentar apenas campos ausentes, mesclar e substituir o destino. Downloads não provocam envios de volta por si só; falhas de consulta não são tratadas como backup vazio. A análise dos contextos, compatibilidade, recuperação e limites do backend está em [Comunicação com o Supabase](docs/supabase-sync.md).
+
+No menu do artigo, Apagar Local remove comentários, respostas e destaques de todos os parágrafos do escopo escolhido, incluindo perguntas agrupadas. A limpeza fica registrada para impedir que a sincronização automática traga de volta a cópia da nuvem; novas edições continuam sincronizando. Baixar manualmente permite restaurar a cópia remota. Apagar da Nuvem atua no destino indicado pelo próprio menu.
 
 ## Desenvolvimento
 
@@ -39,6 +41,7 @@ Contratos de documentos do Supabase: `node tests/document-api.cjs`.
 Disputas entre aparelhos no Programa/Sentinela: `node tests/programme-article-conflicts.cjs`.
 Concorrência em PostgreSQL real descartável: `python tests/test_postgres_concurrency.py` (requer Docker local).
 Sincronização de Anotações e do estudo atual: `node tests/notes-article-sync.cjs` e `python tests/test_notes_cloud.py` (editores v1/v2).
+Limpeza pelo menu do artigo, recarga e sincronização: `python tests/test_article_clear.py` (serviço de nuvem simulado; `WEBKIT_EXECUTABLE` habilita WebKit).
 Modos do menu Nuvem e compartilhamento por sessão: `python tests/test_assembly_cloud_menu.py` e `python tests/test_peer_session.py`.
 Testes da sessão salva, falhas temporárias e respostas atrasadas: `node tests/auth-session.cjs` e `python tests/test_auth_session.py` (este último usa contas e serviço sintéticos em páginas reais).
 Testes de atualização dos downloads: `node tests/assembly-cache-migration.cjs`.
@@ -52,13 +55,13 @@ Testes de listas numeradas, continuação com Enter, conversão e histórico: `p
 Testes dos destaques de perguntas: `python tests/test_question_highlight_core.py` e `python tests/test_question_highlights.py` (Chromium e WebKit opcional). Regras e fontes dos modelos em [Destaques das perguntas](docs/question-highlights.md).
 Testes do Tutor IA: `python tests/test_tutor_context.py` e `python tests/test_article_tutor.py` (Chromium; `WEBKIT_EXECUTABLE` habilita WebKit). Usam respostas simuladas, sem acessar o serviço de IA. As sequências de eventos do teclado verificam também as etapas intermediárias, ausência de reposicionamentos, foco/seleção e acesso aos controles por rolagem nativa. O teclado virtual real do iPhone não é reproduzido pelo navegador automatizado.
 
-O Tutor IA abre ao segurar o número da pergunta. Cada pergunta ou grupo mantém sua conversa e rascunho em memória durante a página, com somente uma janela ou bolinha visível. A janela e a bolinha ficam ancoradas ao ponto do artigo onde foram colocadas: rolam com a página, como as notas do artigo. O cabeçalho permite arrastar a janela para os lados, e a bolinha também pode ser movida sem voltar sozinha à lateral. A abertura respeita margens e a barra inferior. A tela cheia amplia a janela uma vez, mantendo a mesma lógica de posição estável no documento. Como no modal original do commit `1dad8f2`, a rolagem nativa pode revelar o campo sem disputar sua posição com correções de JavaScript: o corpo rolável contém a conversa e o campo, o textarea mantém sua altura enquanto se digita e a página continua rolável. Somente uma mudança real de largura reorganiza a janela; a animação do teclado não altera sua geometria. As cores acompanham o destaque e o tema do estudo. O contexto enviado inclui somente a pergunta e os parágrafos correspondentes, sem anotações pessoais. O histórico no pedido é limitado aos últimos turnos, sem limitar a continuidade da interface. Ao navegar ou recarregar, essas conversas temporárias são descartadas.
+O Tutor IA abre ao segurar o número da pergunta. Cada pergunta ou grupo mantém sua conversa e rascunho em memória durante a página, com somente uma janela ou bolinha visível. A janela e a bolinha ficam ancoradas ao ponto do artigo onde foram colocadas: rolam com a página, como as notas do artigo. O cabeçalho permite arrastar a janela para os lados, e a bolinha também pode ser movida sem voltar sozinha à lateral. A abertura respeita margens e a barra inferior. A tela cheia usa uma superfície do tamanho da tela e retira temporariamente o artigo do layout, para sua altura não gerar rolagem vazia. Ao restaurar, minimizar ou fechar, o artigo volta à posição de leitura anterior; sua posição salva não é substituída pela rolagem temporária do Tutor. Como no modal original do commit `1dad8f2`, a rolagem nativa pode revelar o campo sem disputar sua posição com correções de JavaScript: o corpo rolável contém a conversa e o campo, o textarea mantém sua altura enquanto se digita e a página continua rolável. Somente uma mudança real de largura reorganiza a janela; a animação do teclado não altera sua geometria. As cores acompanham o destaque e o tema do estudo. O contexto enviado inclui somente a pergunta e os parágrafos correspondentes, sem anotações pessoais. O histórico no pedido é limitado aos últimos turnos, sem limitar a continuidade da interface. Ao navegar ou recarregar, essas conversas temporárias são descartadas.
 
 ## Publicação
 
 GitHub Pages publica a raiz da branch `main` em https://sbsjonathan.github.io/assembleia-2026/.
 
-Versão atual: `ass26-2026.11.08.10`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
+Versão atual: `ass26-2026.11.08.11`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
 
 O catálogo bíblico incluído permanece disponível no pacote. Cânticos externos, áudios, serviços de IA e sincronização precisam de conexão. A Sentinela consulta primeiro o estudo semanal já baixado; sem download nem conexão, informa que o estudo está indisponível.
 

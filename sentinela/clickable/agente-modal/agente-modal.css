@@ -46,6 +46,24 @@
   overflow-y: visible;
   pointer-events: none;
 }
+/* Fullscreen temporarily replaces the article's layout, without locking the
+   document or fixing the editable surface. Native keyboard reveal stays free
+   to pan the viewport, but cannot scroll through the article underneath. */
+html[data-article-tutor-fullscreen] { overflow-anchor: none; }
+html[data-article-tutor-fullscreen] body,
+html[data-article-tutor-fullscreen] body.with-bottom-navbar {
+  min-height: 0;
+  height: auto;
+  margin: 0;
+  padding: 0 !important;
+}
+html[data-article-tutor-fullscreen] body > :not(#agente-document-layer):not(#agente-viewport-probe) {
+  display: none !important;
+}
+#agente-document-layer[data-mode="fullscreen"] {
+  position: relative;
+  height: var(--tutor-fullscreen-height, 100svh);
+}
 #agente-document-layer[data-mode="fullscreen"]::before {
   content: '';
   position: fixed;

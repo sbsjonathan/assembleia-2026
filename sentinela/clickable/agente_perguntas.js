@@ -574,7 +574,7 @@
     let highlightResult = null;
     let lastRenderedHTML = '';
     const renderCurrentResponse = () => {
-      if (!textParsed) return;
+      if (!textParsed || window.sentinelaSync?.localClearInProgress) return;
       textParsed.highlightWarning = highlightResult?.highlightWarning || '';
       const html = renderResponseHTML(textParsed);
       if (html === lastRenderedHTML) return;
@@ -595,6 +595,7 @@
     const highlightJob = (async () => {
       try {
         const result = await requestWithFallback(buildPrompt(bundle), null, true, true);
+        if (window.sentinelaSync?.localClearInProgress) return;
         highlightResult = highlighter.applyHighlights(idPergunta, {parts: result.payload.sub_questions, model: result.model}, bundle);
       } catch (_) {
         highlightResult = {highlightWarning: 'Não foi possível atualizar os destaques. As marcações anteriores foram mantidas.'};
@@ -603,6 +604,7 @@
     })();
     try {
       const result = await requestWithFallback(buildNaturalPrompt(bundle), null, true);
+      if (window.sentinelaSync?.localClearInProgress) return;
       textParsed = highlighter.validateQuestionParts(result.payload.sub_questions, bundle.questionText);
       textParsed.model = result.model;
       textParsed.has_image = !!imageInfo;

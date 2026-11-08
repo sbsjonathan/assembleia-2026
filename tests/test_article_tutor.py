@@ -33,7 +33,7 @@ body {color:var(--text-main);padding-bottom:100px}
 #outside-focus {width:1px;height:1px;position:absolute;top:0;left:0;opacity:0}
 </style>
 <script>window.estudoId='2026522';</script>
-</head><body data-estudo="02-11">
+</head><body data-estudo="02-11" class="with-bottom-navbar is-pwa">
 <div class="container" data-hope4-article="2026522">
 <header class="barra-estudo">2 A 8 DE NOVEMBRO DE 2026</header>
 <main>
@@ -62,7 +62,7 @@ body {color:var(--text-main);padding-bottom:100px}
 <a class="navbar-item active" href="#"><div class="navbar-icon icon-watchtower"></div><span class="navbar-label">A Sentinela</span></a>
 <a class="navbar-item" href="#"><div class="navbar-icon icon-save"></div><span class="navbar-label">Salvar</span></a>
 </nav>
-<script id="sentinela-reading-position" data-study-date="2026-11-02"></script>
+<script id="sentinela-reading-position" data-study-date="2026-11-02" src="/sentinela/artigos/reading-position.js"></script>
 <script src="/shared/typography.js"></script>
 <script src="/sentinela/mark.js"></script>
 <script src="/sentinela/imagem.js"></script>
@@ -431,6 +431,7 @@ def keyboard_trace(page, steps, *, inner_height_changes=False):
       const nativeFocus=HTMLElement.prototype.focus;
       const nativeIntoView=Element.prototype.scrollIntoView;
       const startScroll=scrollY;
+      const isolatedFullscreen=panel.dataset.mode==='fullscreen';
       const writes=[],calls=[],frames=[];
       const observer=new MutationObserver(records=>records.forEach(record=>writes.push({
         name:record.attributeName,before:record.oldValue,after:panel.getAttribute(record.attributeName)
@@ -445,13 +446,26 @@ def keyboard_trace(page, steps, *, inner_height_changes=False):
       try {
         for(const step of steps) {
           if(innerHeightChanges) Object.defineProperty(window,'innerHeight',{configurable:true,get:()=>step.height});
-          if(step.pan!==undefined) nativeScrollTo(0,startScroll+step.pan);
-          if(step.reveal) {
-            const field=document.querySelector('#agente-pergunta').getBoundingClientRect();
-            nativeScrollTo(0,scrollY+field.bottom-step.height+20);
+          // Fullscreen has only one layout viewport of document content. iOS
+          // can pan its smaller visual viewport within that surface even when
+          // root scrollY remains zero. Keep window-mode document pan unchanged.
+          let visualTop=step.offsetTop||0;
+          if(isolatedFullscreen) {
+            const maxPan=Math.max(0,viewportHeight-step.height);
+            visualTop=Math.min(maxPan,visualTop+(step.pan||0));
+            if(step.reveal) {
+              const field=document.querySelector('#agente-pergunta').getBoundingClientRect();
+              visualTop=Math.min(maxPan,Math.max(0,field.bottom-step.height+20));
+            }
+          } else {
+            if(step.pan!==undefined) nativeScrollTo(0,startScroll+step.pan);
+            if(step.reveal) {
+              const field=document.querySelector('#agente-pergunta').getBoundingClientRect();
+              nativeScrollTo(0,scrollY+field.bottom-step.height+20);
+            }
           }
-          qaUpdateViewport({height:step.height,width:step.width||innerWidth,offsetTop:step.offsetTop||0,
-            offsetLeft:step.offsetLeft||0,pageTop:scrollY+(step.offsetTop||0),pageLeft:scrollX+(step.offsetLeft||0),scale:step.scale||1});
+          qaUpdateViewport({height:step.height,width:step.width||innerWidth,offsetTop:visualTop,
+            offsetLeft:step.offsetLeft||0,pageTop:scrollY+visualTop,pageLeft:scrollX+(step.offsetLeft||0),scale:step.scale||1});
           // WebKit may also dispatch a same-width window resize while animating
           // keyboard/accessory bars; it must not be treated as device rotation.
           dispatchEvent(new Event('resize'));
@@ -463,7 +477,7 @@ def keyboard_trace(page, steps, *, inner_height_changes=False):
             focus:document.activeElement?.id,selection:[field.selectionStart,field.selectionEnd],
             scroll:scrollY,
             field:field.getBoundingClientRect().toJSON(),
-            viewport:{height:step.height,top:step.offsetTop||0},reveal:Boolean(step.reveal)
+            viewport:{height:step.height,top:visualTop},reveal:Boolean(step.reveal)
           });
         }
       } finally {
@@ -505,10 +519,14 @@ def assert_keyboard_stability(page, *, inner_height_changes=False):
         assert_same_document_rect(frame['anchor'],before['anchor'])
         assert frame['focus']=='agente-pergunta' and frame['selection']==[6,18], frame
         if frame['reveal']:
-            assert frame['field']['top']>=0 and frame['field']['bottom']<=frame['viewport']['height'], ('Native focus scroll must expose the field',frame)
+            assert frame['field']['top']>=frame['viewport']['top'] and frame['field']['bottom']<=frame['viewport']['top']+frame['viewport']['height'], ('Native focus scroll must expose the field',frame)
     assert not trace['writes'], 'Keyboard resize/scroll must not write modal layout: '+str(trace['writes'])
     assert not trace['calls'], 'The browser owns keyboard scrolling/focus: '+str(trace['calls'])
-    assert any(frame['scroll']>before['scroll']+100 for frame in trace['frames']), 'Native pan must remain possible.'
+    if page.locator('#modal-agente').get_attribute('data-mode') == 'fullscreen':
+        assert any(frame['viewport']['top']>100 for frame in trace['frames']), 'Visual viewport pan must remain possible within fullscreen.'
+        assert all(abs(frame['scroll'])<=1 for frame in trace['frames']), 'Fullscreen must not inherit article-length document scrolling.'
+    else:
+        assert any(frame['scroll']>before['scroll']+100 for frame in trace['frames']), 'Native pan must remain possible.'
 
     # A hardware/floating keyboard may leave the viewport unchanged. Pinch zoom
     # reduces only the visual viewport width; neither is a reason to recenter.
@@ -581,6 +599,90 @@ def assert_fullscreen_entry_during_keyboard(page):
     assert result['settled']['style']==result['opened']['style'] and not result['writes'], result
     page.locator('#agente-expandir').click()
     assert_same_document_rect(document_rect(page,'#modal-agente'),window_anchor)
+
+
+
+def assert_fullscreen_document_isolated(page):
+    result=page.evaluate('''() => {
+      const root=document.documentElement,body=document.body,panel=document.querySelector('#modal-agente');
+      return {height:innerHeight,root:root.scrollHeight,body:body.scrollHeight,scroll:scrollY,
+        panel:panel.getBoundingClientRect().toJSON(),rootOverflow:getComputedStyle(root).overflowY,
+        bodyPosition:getComputedStyle(body).position,articleDisplay:getComputedStyle(document.querySelector('.container')).display};
+    }''')
+    assert result['root']<=result['height']+2, 'Fullscreen must not retain the article-sized document: '+str(result)
+    assert abs(result['scroll'])<=1 and abs(result['panel']['top'])<=1, result
+    assert result['articleDisplay']=='none', 'The hidden article must leave the fullscreen layout.'
+    assert result['rootOverflow'] not in ('hidden','clip'), 'Keep native keyboard viewport panning available.'
+    assert result['bodyPosition']!='fixed', 'Do not reintroduce a fixed-body keyboard lock.'
+
+
+def check_fullscreen_scroll_isolation(page):
+    page.evaluate("ArticleTutor.close();scrollTo(0,1150)")
+    page.wait_for_timeout(100)
+    open_question(page,'3-5')
+    page.evaluate("SentinelaReadingPosition.save();document.querySelector('#outside-focus').inert=true")
+    baseline=page.evaluate('''() => ({scroll:scrollY,height:document.documentElement.scrollHeight,
+      rootStyle:document.documentElement.getAttribute('style')||'',bodyStyle:document.body.getAttribute('style')||'',
+      articleStyle:document.querySelector('.container').getAttribute('style'),articleInert:document.querySelector('.container').inert})''')
+    anchor=document_rect(page,'#modal-agente')
+    assert baseline['height']>page.viewport_size['height']*2, baseline
+    assert baseline['scroll']>500, 'Exercise a modal opened deep inside a long article.'
+
+    def restored():
+        result=page.evaluate('''() => ({scroll:scrollY,height:document.documentElement.scrollHeight,
+          rootStyle:document.documentElement.getAttribute('style')||'',bodyStyle:document.body.getAttribute('style')||'',
+          articleStyle:document.querySelector('.container').getAttribute('style'),articleInert:document.querySelector('.container').inert})''')
+        assert abs(result['scroll']-baseline['scroll'])<=1, ('Fullscreen must restore the exact article position',baseline,result)
+        assert abs(result['height']-baseline['height'])<=1, (baseline,result)
+        assert page.locator('#outside-focus').evaluate('el=>el.inert'), 'Originally inert siblings must remain inert.'
+        for key in ('rootStyle','bodyStyle','articleStyle','articleInert'):
+            assert result[key]==baseline[key], (key,baseline,result)
+
+    for cycle in range(2):
+        page.locator('#agente-expandir').click()
+        assert_fullscreen_document_isolated(page)
+        page.evaluate('SentinelaReadingPosition.save()')
+        page.wait_for_timeout(230)
+        saved=page.evaluate('JSON.parse(localStorage.getItem(SentinelaReadingPosition.key))')
+        assert abs(saved['y']-baseline['scroll'])<=1, ('Fullscreen must not overwrite the saved reading anchor',saved,baseline)
+        # App modules may append UI while the tutor is open. Such a sibling
+        # must not reintroduce the article's scroll or create an empty canvas.
+        page.evaluate('''() => {
+          const node=document.createElement('div');node.id='qa-late-sibling';
+          node.style.height='9000px';document.body.append(node);
+        }''')
+        assert_fullscreen_document_isolated(page)
+        page.evaluate("document.querySelector('#qa-late-sibling').remove()")
+        page.evaluate('scrollBy(0,1500)')
+        if page.context.browser.browser_type.name == 'chromium':
+            page.mouse.move(210,300)
+            page.mouse.wheel(0,1500)
+        page.wait_for_timeout(100)
+        assert_fullscreen_document_isolated(page)
+        if cycle==0:
+            index=send(page,'Verificar uma conversa longa em tela cheia')
+            resolve(page,index,('Resposta de teste para a rolagem da conversa. '*180).strip())
+            assert page.locator('#agente-thread').evaluate('el=>el.scrollHeight>el.clientHeight+200'), 'Long chat must scroll inside its own transcript.'
+            page.locator('#agente-thread').evaluate('el=>el.scrollTop=el.scrollHeight')
+            assert page.locator('#agente-thread').evaluate('el=>el.scrollTop>100')
+            assert_fullscreen_document_isolated(page)
+            assert_native_composer_reachable(page)
+        page.locator('#agente-expandir').click()
+        restored()
+        assert_same_document_rect(document_rect(page,'#modal-agente'),anchor)
+
+    page.locator('#agente-expandir').click()
+    page.locator('#agente-minimizar').click()
+    restored()
+    assert_within_viewport(page,'#agente-bolinha')
+    assert_document_anchor(page,'#agente-bolinha')
+    page.locator('#agente-bolinha').click()
+    assert_fullscreen_document_isolated(page)
+    page.locator('#agente-fechar').click()
+    restored()
+    assert not page.locator('#modal-agente').is_visible()
+    page.evaluate("document.querySelector('#outside-focus').inert=false")
+    open_question(page,'3-5')
 
 
 def check_fullscreen_and_viewport(page):
@@ -772,6 +874,7 @@ def check(engine, executable, origin):
         check_cancelled_drag(page)
         check_stop_retry_reset_and_keyboard(page)
         check_theme(page)
+        check_fullscreen_scroll_isolation(page)
         check_fullscreen_and_viewport(page)
         assert not errors, errors
         cases = check_layout_matrix(browser, engine.name, origin)
@@ -781,6 +884,7 @@ def check(engine, executable, origin):
                           'freeHorizontalDragAndCancellation': 'passed', 'globalThemeColor': 'passed',
                           'stopRetryResetAndSafeRendering': 'passed', 'keyboardAccessibility': 'passed',
                           'focusPreservation': 'passed', 'nativeKeyboardTimelineAndStableAnchors': 'passed',
+                          'fullscreenDocumentIsolationAndRestore': 'passed',
                           'narrowAndLandscapeClamping': 'passed', 'layoutCases': cases}), flush=True)
     finally:
         browser.close()

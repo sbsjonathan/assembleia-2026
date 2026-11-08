@@ -13,7 +13,7 @@ function base() {
     context.window = { addEventListener(name, fn) { const list = handlers.get(name) || []; list.push(fn); handlers.set(name, list); },
         dispatchEvent(event) { events.push(event); for (const fn of handlers.get(event.type) || []) fn(event); },
         location: { search: '' }, semanaAtual: '02-11', estudoId: '35', SupabaseSync: { isLoggedIn: () => !!storage.getItem('supabase_user') } };
-    context.document = { readyState: 'loading', body: { dataset: {} }, activeElement: null, getElementById() { return null; }, addEventListener() {}, dispatchEvent() {} };
+    context.document = { readyState: 'loading', body: { dataset: {} }, activeElement: null, getElementById() { return null; }, querySelectorAll() { return []; }, addEventListener() {}, dispatchEvent() {} };
     vm.createContext(context);
     const run = file => vm.runInContext(fs.readFileSync(path.join(root, file), 'utf8'), context);
     return { data, storage, context, events, run };
@@ -48,6 +48,72 @@ async function test(name, run) { await run(); count++; console.log('PASS', name)
         const h = article(); for (const key of ['c-35-1', 'r-35-1', 'p-35-1-pg-0', 'c-rcp-1-35', 'obj-35', 'r-obj-35', 'r-sub-h1-35', 'r-sub-h2-2-35']) h.storage.setItem(key, key);
         h.storage.setItem('c-350-1', 'other'); h.storage.setItem('c-34-1', 'other');
         const values = h.sync.collectAnnotationsFromLocalStorage(); assert.equal(Object.keys(values).length, 8); assert.equal(values['c-34-1'], undefined);
+    });
+    await test('article grouped questions and their source marks belong to the cloud document', async () => {
+        const h = article();
+        for (const key of ['c-35-1-2', 'r-35-3–5', 'p-35-1-2-pg-0', 'p-35-1-2-pg-1', 'p-35-1-2-pg-extra-2', 'c-35-1 e 2']) {
+            assert.equal(h.sync.validKey(key), true, key); h.storage.setItem(key, key);
+        }
+        assert.equal(h.sync.validKey('p-350-1-2-pg-0'), false);
+        assert.equal((await h.sync.pushOverwrite()).success, true);
+        assert.equal(Object.keys(h.cloud()).length, 6);
+    });
+    await test('local clear removes all article kinds, not another study, programme, login or preferences', async () => {
+        const h = article();
+        const deleted = ['c-35-1-2', 'r-35-1-2', 'p-35-1-2-pg-0', 'p-35-1-2-pg-1', 'c-35-3',
+            'p-35-3-pg-0', 'c-rcp-1-35', 'r-obj-35', 'sub-h1-35', 'r-sub-h2-2-35', 'qa:obj:35',
+            'qa:recap:35:p-rcp-1-35', 'qa:sub:sub-h2-2-35', 'paragrafo-geral-0',
+            'ass26_sentinela_manual_test-user_02-11_35', 'ass26_recovery_sentinela_02-11_35_123_a',
+            'cloud_conflict_notice_sentinela_test-user_02-11_35'];
+        const kept = ['c-350-1-2', 'p-36-1-pg-0', 'qa:obj:350', 'ca-copgm27:note-1', 'richtext_cache_02-11', 'tema-interface'];
+        h.context.document.querySelectorAll = () => [{id:'paragrafo-geral-0'}];
+        for (const key of [...deleted, ...kept]) h.storage.setItem(key, 'saved');
+        h.sync.clearLocal();
+        for (const key of deleted) assert.equal(h.storage.getItem(key), null, key);
+        for (const key of kept) assert.equal(h.storage.getItem(key), 'saved', key);
+        assert.ok(h.storage.getItem('supabase_user'));
+        assert.equal(h.sync.localClearInProgress, true);
+    });
+    await test('local clear survives cloud startup and new edits sync without restoring deleted fields', async () => {
+        const remote = {'c-35-1-2':'old comment','p-35-1-2-pg-0':'old mark','p-35-3-pg-0':'old single mark'};
+        const h = article(remote); for (const [key,value] of Object.entries(remote)) h.storage.setItem(key,value);
+        h.sync.clearLocal();
+        const sync = vm.runInContext('new SentinelaSync()',h.context);
+        sync.detectSemanaEEstudo(); await sync.loadFromSupabase(); await sync.executeAutoSave();
+        assert.equal(Object.keys(sync.collectAnnotationsFromLocalStorage()).length, 0); assert.equal(h.writes.length, 0);
+        h.storage.setItem('c-35-7','new deliberate note'); await sync.executeAutoSave();
+        assert.equal(h.cloud()['c-35-7'],'new deliberate note'); assert.equal(h.cloud()['p-35-3-pg-0'],'old single mark');
+        assert.equal(h.storage.getItem('p-35-3-pg-0'), null); assert.equal(h.storage.getItem('c-35-7'),'new deliberate note');
+        h.storage.setItem('c-35-1-2','new comment at cleared question'); await sync.executeAutoSave();
+        assert.equal(h.cloud()['c-35-1-2'],'new comment at cleared question');
+        assert.equal((await sync.pullMissing()).success,true); assert.equal(h.storage.getItem('p-35-3-pg-0'),'old single mark');
+        assert.equal(sync.locallyCleared(),false);
+    });
+    await test('global local clear covers future article visits and explicit restore applies only to chosen article', async () => {
+        const h = article(); h.storage.setItem('c-35-1','this'); h.storage.setItem('c-36-2','other'); h.storage.setItem('ca-copgm27:note-1','programme');
+        h.sync.clearLocal(true); assert.equal(h.storage.getItem('c-36-2'),null);
+        const next = vm.runInContext('new SentinelaSync()',h.context);
+        next.estudoId='36'; next.semanaAtual='09-11';
+        h.api.carregarSentinelaAnotacoes=async()=>({'c-36-2':'cloud old'});
+        await next.loadFromSupabase(); assert.equal(h.storage.getItem('c-36-2'),null);
+        await next.pullOverwrite(); assert.equal(h.storage.getItem('c-36-2'),'cloud old'); assert.equal(next.locallyCleared(),false);
+        const first = vm.runInContext('new SentinelaSync()',h.context);
+        first.detectSemanaEEstudo(); assert.equal(first.locallyCleared(),true);
+        h.storage.setItem('ass26_sentinela_restore_36', String(Date.now()+100));
+        first.clearLocal(true); assert.equal(next.locallyCleared(),true);
+        assert.equal(h.storage.getItem('ca-copgm27:note-1'),'programme');
+    });
+    await test('local clear stops in-flight download and unload upload from repopulating cache', async () => {
+        const h=article({'c-35-1':'old cloud'}); let finish;
+        h.storage.setItem('c-35-1','old local'); h.api.carregarSentinelaAnotacoes=()=>new Promise(resolve=>finish=resolve);
+        const loading=h.sync.loadFromSupabase(); h.sync.clearLocal(); finish({'c-35-1':'old cloud'});
+        assert.equal((await loading).success,false); assert.equal(h.storage.getItem('c-35-1'),null);
+        h.sync.dirty=true; h.sync.flushPendingSave(); await tick(); assert.equal(h.writes.length,0);
+    });
+    await test('failed explicit restore leaves local deletion active', async () => {
+        const h=article(); h.sync.clearLocal(); const sync=vm.runInContext('new SentinelaSync()',h.context);
+        sync.detectSemanaEEstudo(); h.api.carregarSentinelaAnotacoes=async()=>{throw Error('offline');};
+        assert.equal((await sync.pullOverwrite()).success,false); assert.equal(sync.locallyCleared(),true);
     });
     await test('article upload missing keeps existing remote; overwrite replaces it', async () => {
         const h = article({ 'c-35-1': 'cloud' }); h.storage.setItem('c-35-1', 'local'); h.storage.setItem('c-35-2', 'added');

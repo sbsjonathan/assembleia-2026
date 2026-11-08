@@ -453,6 +453,7 @@
       
       for (const p of paragraphs) {
         await new Promise(r => setTimeout(r, 0));
+        if (window.sentinelaSync?.localClearInProgress) return parsed;
         const idx = buildNormalizedIndex(p.element);
         const match = fuzzyFindInIndex(idx, highlight.literal_text, highlight.anchor_start, highlight.anchor_end);
         if (!match) continue;
@@ -589,11 +590,13 @@
     try {
       const prompt = buildPrompt(bundle);
       const result = await requestWithFallback(prompt);
+      if (window.sentinelaSync?.localClearInProgress) return;
       const parsed = safeJSONParse(result.text);
       if (!parsed || !parsed.natural_answer) throw new Error('Formato de resposta inválido.');
 
       parsed.model = result.model;
       const applied = await applyRecapHighlights(idPergunta, parsed, bundle);
+      if (window.sentinelaSync?.localClearInProgress) return;
       const html = renderRecapHTML(applied, bundle);
       
       respostaDiv.innerHTML = html;

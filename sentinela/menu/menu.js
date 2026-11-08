@@ -195,14 +195,14 @@ document.addEventListener("DOMContentLoaded", () => {
                   <input type="radio" name="local-delete-opt" value="day" checked>
                   <span class="sync-choice__body">
                     <span class="sync-choice__title">Apagar anotações deste artigo</span>
-                    <span class="sync-choice__desc">Remove respostas da IA, comentários e destaques deste estudo da Sentinela.</span>
+                    <span class="sync-choice__desc">Remove respostas da IA, comentários e destaques deste estudo. A cópia da nuvem só volta ao baixar manualmente.</span>
                   </span>
                 </label>
                 <label class="sync-choice sync-choice--danger">
                   <input type="radio" name="local-delete-opt" value="all-notes">
                   <span class="sync-choice__body">
                     <span class="sync-choice__title">Apagar de TODAS as Sentinelas</span>
-                    <span class="sync-choice__desc">Esvazia todas as anotações de todos os artigos locais (Assembleia é mantida).</span>
+                    <span class="sync-choice__desc">Esvazia todos os artigos locais. A Assembleia e a nuvem são mantidas; baixar manualmente restaura as notas.</span>
                   </span>
                 </label>
                 <label class="sync-choice sync-choice--danger">
@@ -626,18 +626,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         if (window.confirm(msg)) {
-          if (opt === 'day') {
-            Object.keys(localStorage).forEach(key => {
-              if (isSentinelaKey(key) && (key.includes(semanaAtual) || key.includes(estudoId))) {
-                localStorage.removeItem(key);
-              }
-            });
-            location.reload();
-          } else if (opt === 'all-notes') {
-            Object.keys(localStorage).forEach(key => {
-              if (isSentinelaKey(key)) localStorage.removeItem(key);
-            });
-            location.reload();
+          if (opt === 'day' || opt === 'all-notes') {
+            try {
+              if (!window.sentinelaSync?.clearLocal) throw new Error('A limpeza não está disponível. Atualize a página e tente novamente.');
+              window.sentinelaSync.clearLocal(opt === 'all-notes');
+              location.reload();
+            } catch (error) { alert(error.message || 'Não foi possível apagar todas as anotações. Tente novamente.'); }
           } else if (opt === 'nuclear') {
             localStorage.clear();
             sessionStorage.clear();

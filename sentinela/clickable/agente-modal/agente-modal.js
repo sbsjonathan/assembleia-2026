@@ -72,6 +72,7 @@
     bubble.hidden = true;
     bubble.innerHTML = `${svg('chat')}<span class="agente-bubble-label"></span><span class="agente-bubble-dot" aria-hidden="true"></span>`;
     probe = document.createElement('div');
+    probe.id = 'agente-viewport-probe';
     probe.setAttribute('aria-hidden', 'true');
     probe.style.cssText = 'position:fixed;pointer-events:none;visibility:hidden;box-sizing:content-box;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);width:0;height:100vh;height:100svh;';
     documentLayer = document.createElement('div');
@@ -213,7 +214,8 @@
     if (fullscreen && (!fullscreenBox || changedWidth)) {
       // CSS small-viewport height is stable across keyboard animation, even
       // when entering fullscreen from a textarea that is already focused.
-      fullscreenBox = {x: v.pageX, y: v.pageY, width: v.width, height: v.layoutHeight};
+      fullscreenBox = {x: 0, y: 0, width: v.width, height: v.layoutHeight};
+      documentLayer.style.setProperty('--tutor-fullscreen-height', `${v.layoutHeight}px`);
     }
     const width = fullscreen ? fullscreenBox.width : windowSize.width;
     const height = fullscreen ? fullscreenBox.height : windowSize.height;
@@ -229,12 +231,28 @@
   function fullscreenIsolation(enable) {
     if (enable && !fullscreenRestore) {
       const siblings = [...document.body.children].filter(node => node !== documentLayer && node !== probe);
-      fullscreenRestore = {siblings: siblings.map(node => [node, node.inert])};
+      fullscreenRestore = {x: window.scrollX, y: window.scrollY, siblings: siblings.map(node => [node, node.inert])};
+      // Save the reading anchor before taking the article out of layout. Inert
+      // alone blocks interaction but leaves its entire scroll height behind.
+      window.SentinelaReadingPosition?.save();
       siblings.forEach(node => {node.inert = true;});
+      document.documentElement.setAttribute('data-article-tutor-fullscreen', '');
+      scrollDocumentTo(0, 0);
     } else if (!enable && fullscreenRestore) {
-      fullscreenRestore.siblings.forEach(([node, inert]) => {node.inert = inert;});
+      const previous = fullscreenRestore;
+      previous.siblings.forEach(([node, inert]) => {node.inert = inert;});
+      document.documentElement.removeAttribute('data-article-tutor-fullscreen');
       fullscreenRestore = null;
+      scrollDocumentTo(previous.x, previous.y);
     }
+  }
+  function scrollDocumentTo(x, y) {
+    // Only an explicit enter/leave action changes the document position. No
+    // keyboard, focus, visual-viewport or typing event calls this helper.
+    const style = document.documentElement.style, previous = style.scrollBehavior;
+    style.scrollBehavior = 'auto';
+    window.scrollTo(x, y);
+    style.scrollBehavior = previous;
   }
   function applyMode(next) {
     if (next === 'fullscreen' && mode !== 'fullscreen') fullscreenBox = null;
@@ -284,8 +302,13 @@
     if (!active() || mode === 'closed' || mode === 'minimized') return;
     active().draft = area.value;
     restoreMode = mode;
-    const v = viewport(), bounds = availableBounds(v), size = 54;
-    bubblePosition = fitPosition({x: bounds.right - size, y: documentPosition(overlay).y + 32}, {width: size, height: size}, bounds);
+    const v = viewport(), size = 54;
+    // Fullscreen has its own origin; the minimized bubble belongs to the
+    // article viewport that will be restored, not to that temporary surface.
+    if (fullscreenRestore) { v.pageX = fullscreenRestore.x; v.pageY = fullscreenRestore.y; }
+    const bounds = availableBounds(v);
+    const y = fullscreenRestore ? v.pageY + 32 : documentPosition(overlay).y + 32;
+    bubblePosition = fitPosition({x: bounds.right - size, y}, {width: size, height: size}, bounds);
     bubbleViewportWidth = v.width;
     bubbleMoved = false;
     blurComposer();

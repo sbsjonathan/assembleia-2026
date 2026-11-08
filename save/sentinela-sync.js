@@ -13,7 +13,9 @@ class SentinelaSync {
         ['online', 'pageshow', 'supabaseSessionChanged', 'supabaseLogout'].forEach(name => window.addEventListener(name, () => this.resume()));
         window.addEventListener('storage', event => {
             if (event.key === 'supabase_user') this.resume();
-            else if (this.validKey(event.key)) this.scheduleAutoSave();
+            else if (event.key === 'ass26_sentinela_clear_all' || event.key === this.localClearKey()) {
+                this.stopForLocalClear(); window.location.reload();
+            } else if (this.validKey(event.key)) this.scheduleAutoSave();
         });
         window.addEventListener('pagehide', () => this.flushPendingSave());
         document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') this.flushPendingSave(); });
@@ -44,10 +46,41 @@ class SentinelaSync {
         }
         this.isLoggedIn = !!account; return this.isLoggedIn;
     }
+    localClearKey() { return `ass26_sentinela_clear_${encodeURIComponent(this.estudoId)}`; }
+    localRestoreKey() { return `ass26_sentinela_restore_${encodeURIComponent(this.estudoId)}`; }
+    localClearEpoch() {
+        return Math.max(Number(localStorage.getItem('ass26_sentinela_clear_all')) || 0,
+            Number(localStorage.getItem(this.localClearKey())) || 0);
+    }
+    locallyCleared() { return this.localClearEpoch() > (Number(localStorage.getItem(this.localRestoreKey())) || 0); }
+    stopForLocalClear() { this.localClearInProgress = true; this.dirty = false; clearTimeout(this.autoSaveTimeout); }
+    clearLocal(all = false) {
+        if (!this.estudoId) throw new Error('Estudo não identificado. Atualize a página.');
+        // Persist the choice before removing notes or navigating: startup and
+        // other open tabs must not treat the empty cache as a first download.
+        const keys = Array.from({ length: localStorage.length }, (_, index) => localStorage.key(index));
+        const restored = all ? keys.filter(key => key.startsWith('ass26_sentinela_restore_')).map(key => Number(localStorage.getItem(key)) || 0)
+            : [Number(localStorage.getItem(this.localRestoreKey())) || 0];
+        const epoch = Math.max(Date.now(), this.localClearEpoch() + 1, ...restored.map(value => value + 1));
+        localStorage.setItem(all ? 'ass26_sentinela_clear_all' : this.localClearKey(), String(epoch));
+        this.stopForLocalClear();
+        const currentIds = new Set([...document.querySelectorAll('.paragrafo[id]')].map(node => node.id));
+        const study = this.estudoId.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const qa = new RegExp(`^qa:(?:obj:${study}$|recap:${study}:|sub:sub-(?:h1-${study}|h2-\\d+-${study})$)`);
+        for (const key of keys) {
+            const annotation = all
+                ? /^(?:[crp]-|(?:r-)?obj-|(?:r-)?sub-h[12]-|qa:|paragrafo-geral-)/.test(key)
+                : this.validKey(key) || qa.test(key) || currentIds.has(key);
+            const metadata = /^(?:ass26_sentinela_manual_|ass26_recovery_sentinela_|cloud_conflict_notice_sentinela_)/.test(key) &&
+                (all || key.endsWith(`_${this.estudoId}`) || key.endsWith(`_${this.estudoId}_conflict`) || key.includes(`_${this.estudoId}_`));
+            if (annotation || metadata || (all && key.startsWith('sentinela_loaded_'))) localStorage.removeItem(key);
+        }
+        return this.success();
+    }
     validKey(key) {
         if (!key || !this.estudoId) return false;
         const study = this.estudoId.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        return new RegExp(`^(?:[crp]-${study}-\\d+(?:-pg-\\d+)?|[crp]-rcp-\\d+-${study}|(?:r-)?obj-${study}|(?:r-)?sub-h1-${study}|(?:r-)?sub-h2-\\d+-${study})$`).test(key);
+        return new RegExp(`^(?:[crp]-${study}-\\d+(?:\\s*(?:[-–—,]|e)\\s*\\d+)*(?:-pg-(?:extra-)?\\d+)?|[crp]-rcp-\\d+-${study}|(?:r-)?obj-${study}|(?:r-)?sub-h1-${study}|(?:r-)?sub-h2-\\d+-${study})$`).test(key);
     }
     stable(value) { return JSON.stringify(Object.fromEntries(Object.entries(value || {}).sort(([a], [b]) => a.localeCompare(b)))); }
     manualKey() {
@@ -85,6 +118,7 @@ class SentinelaSync {
         if (cache.salvar.sentinelaSync) return;
         const original = cache.salvar.bind(cache);
         const wrapper = (id, content) => {
+            if (this.localClearInProgress) return;
             const result = original(id, content);
             if (this.validKey(id) && localStorage.getItem(id) === String(content)) this.scheduleAutoSave();
             return result;
@@ -92,18 +126,20 @@ class SentinelaSync {
         wrapper.sentinelaSync = true; cache.salvar = wrapper;
     }
     resume() {
+        if (this.localClearInProgress) return;
         if (!this.checkLoginStatus() || navigator.onLine === false) return;
         if (!this.initialLoadComplete) return this.loadFromSupabase();
         if (this.dirty) this.scheduleAutoSave();
     }
     scheduleAutoSave() {
+        if (this.localClearInProgress) return;
         this.dirty = true;
         if (!this.checkLoginStatus() || !this.initialLoadComplete) return;
         clearTimeout(this.autoSaveTimeout);
         this.autoSaveTimeout = setTimeout(() => this.executeAutoSave(), this.SAVE_DELAY);
     }
-    flushPendingSave() { clearTimeout(this.autoSaveTimeout); if (this.dirty) this.executeAutoSave(); }
-    assertAccount(account) { if (!account || this.account() !== account) throw new Error('A conta mudou. As anotações locais foram mantidas.'); }
+    flushPendingSave() { if (this.localClearInProgress) return; clearTimeout(this.autoSaveTimeout); if (this.dirty) this.executeAutoSave(); }
+    assertAccount(account) { if (this.localClearInProgress) throw new Error('As anotações locais foram apagadas.'); if (!account || this.account() !== account) throw new Error('A conta mudou. As anotações locais foram mantidas.'); }
     fail(error) {
         const message = error?.message || String(error || 'Não foi possível sincronizar.');
         const code = error?.code;
@@ -171,9 +207,12 @@ class SentinelaSync {
     preserveAcknowledgedLocal(merged, local, remote) {
         const values = { ...merged };
         for (const [key, value] of Object.entries(local)) if (this.acknowledgedDifference(key, value, remote)) values[key] = value;
-        return values;
+        // Local deletion is a deliberate one-way action. Keep cloud-only
+        // values remotely, but restore them here only after an explicit pull.
+        return this.locallyCleared() ? Object.fromEntries(Object.entries(values).filter(([key]) => key in local)) : values;
     }
     apply(values, before, replace = false) {
+        if (this.localClearInProgress) return;
         const current = this.collectAnnotationsFromLocalStorage();
         const changes = Object.keys(values).filter(key => current[key] !== values[key] && current[key] === before[key]);
         const removals = replace ? Object.keys(current).filter(key => !(key in values) && current[key] === before[key]) : [];
@@ -187,7 +226,7 @@ class SentinelaSync {
         if (changes.length || removals.length) document.dispatchEvent(new CustomEvent('cacheRestored'));
     }
     async loadFromSupabase() {
-        if (this.isSyncing || !this.checkLoginStatus()) return;
+        if (this.localClearInProgress || this.isSyncing || !this.checkLoginStatus()) return;
         this.isSyncing = true;
         const account = this.account();
         try {
@@ -208,6 +247,7 @@ class SentinelaSync {
         finally { this.isSyncing = false; }
     }
     async executeAutoSave() {
+        if (this.localClearInProgress) return;
         if (this.isSyncing) { this.dirty = true; return; }
         if (!this.checkLoginStatus() || !this.initialLoadComplete || navigator.onLine === false) return;
         clearTimeout(this.autoSaveTimeout); this.isSyncing = true;
@@ -248,6 +288,7 @@ class SentinelaSync {
         finally { this.isSyncing = false; }
     }
     async manual(action, replace = false) {
+        if (this.localClearInProgress) return this.fail('Atualize a página após apagar as anotações.');
         if (this.isSyncing) return this.fail('Aguarde a sincronização em andamento.');
         if (!this.checkLoginStatus()) return this.fail('Entre na sua conta antes de sincronizar.');
         clearTimeout(this.autoSaveTimeout); this.isSyncing = true;
@@ -262,6 +303,7 @@ class SentinelaSync {
                 if (raw === null) throw new Error('Nenhuma anotação encontrada na nuvem para este artigo.');
                 const values = replace ? remote : { ...remote, ...local };
                 this.apply(values, local, replace);
+                localStorage.setItem(this.localRestoreKey(), String(this.localClearEpoch()));
                 this.remember(this.collectAnnotationsFromLocalStorage(), remote);
             } else {
                 const values = action === 'delete' ? {} : replace ? local : { ...local, ...remote };
