@@ -458,7 +458,8 @@ html[data-article-tutor-fullscreen] body > :not(#agente-document-layer):not(#age
 #agente-bolinha.has-unread .agente-bubble-dot, #agente-bolinha.is-pending .agente-bubble-dot { display: block; }
 #agente-bolinha.is-pending .agente-bubble-dot { animation: agente-pulse 1.25s ease-in-out infinite; }
 #agente-bolinha.is-dragging { cursor: grabbing; }
-#modal-agente.is-dragging .modal-agente-content, #agente-bolinha.is-dragging { animation: none; }
+/* Keep the entrance animation attached during drag. Toggling it to none
+   restarts the opacity fade from zero when the pointer is released. */
 
 html[data-theme="dark"] :is(#modal-agente, #agente-bolinha) {
   --tutor-ink: color-mix(in srgb, var(--tutor-accent) 52%, #fff);

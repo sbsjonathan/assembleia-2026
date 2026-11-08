@@ -200,7 +200,52 @@ def assert_within_viewport(page, selector='#modal-agente', margin=1):
     assert box['bottom'] <= view['top'] + view['height'] + margin, (selector, box, view)
 
 
+def start_drag_visual_trace(page, selector):
+    visual = selector if selector == '#agente-bolinha' else '#modal-agente .modal-agente-content'
+    page.wait_for_function('selector=>!document.querySelector(selector).getAnimations().some(a=>a.playState==="running")', arg=visual)
+    page.evaluate('''([selector,visualSelector])=>{
+      const target=document.querySelector(selector),visual=document.querySelector(visualSelector);
+      const trace=window.qaDragPaint={starts:[],frames:[],release:false};
+      const onAnimation=event=>{
+        if(event.target===visual && event.animationName==='agente-reveal') trace.starts.push(event.animationName);
+      };
+      const onRelease=()=>{
+        if(trace.release) return;
+        trace.release=true;
+        const until=performance.now()+220;
+        const sample=()=>{
+          const rect=target.getBoundingClientRect();
+          trace.frames.push({opacity:Number(getComputedStyle(visual).opacity),
+            anchor:{left:rect.left+scrollX,top:rect.top+scrollY,width:rect.width,height:rect.height}});
+          if(performance.now()<until) requestAnimationFrame(sample);
+        };
+        sample();
+      };
+      document.addEventListener('animationstart',onAnimation);
+      for(const type of ['pointerup','pointercancel','lostpointercapture']) document.addEventListener(type,onRelease);
+      trace.cleanup=()=>{
+        document.removeEventListener('animationstart',onAnimation);
+        for(const type of ['pointerup','pointercancel','lostpointercapture']) document.removeEventListener(type,onRelease);
+      };
+    }''', [selector, visual])
+
+
+def assert_drag_visual_trace(page, expected):
+    page.wait_for_timeout(250)
+    trace=page.evaluate('''()=>{
+      qaDragPaint.cleanup();
+      return {starts:qaDragPaint.starts,frames:qaDragPaint.frames,release:qaDragPaint.release};
+    }''')
+    assert trace['release'] and len(trace['frames']) >= 2, trace
+    assert not trace['starts'], 'Drag release must not replay the entrance animation: '+str(trace)
+    assert all(frame['opacity'] >= .999 for frame in trace['frames']), 'Drag release must not fade the surface: '+str(trace)
+    for frame in trace['frames']:
+        assert_same_document_rect(frame['anchor'], expected)
+
+
 def drag(page, selector, dx, dy):
+    target = '#agente-bolinha' if selector == '#agente-bolinha' else '#modal-agente'
+    start_drag_visual_trace(page, target)
     box = rect(page, selector)
     # Header centre is the text/drag region, not its right-side action buttons.
     x = box['left'] + min(box['width'] / 2, 90)
@@ -208,8 +253,9 @@ def drag(page, selector, dx, dy):
     page.mouse.move(x, y)
     page.mouse.down()
     page.mouse.move(x + dx, y + dy, steps=8)
+    expected = document_rect(page, target)
     page.mouse.up()
-    page.wait_for_timeout(280)
+    assert_drag_visual_trace(page, expected)
 
 
 def check_longpress(page):
@@ -717,22 +763,25 @@ def check_fullscreen_and_viewport(page):
 
 
 def check_cancelled_drag(page):
-    page.locator('#agente-minimizar').click()
-    for event_name in ('pointercancel', 'lostpointercapture'):
-        box = rect(page, '#agente-bolinha')
-        x, y = box['left'] + box['width'] / 2, box['top'] + box['height'] / 2
-        page.mouse.move(x, y)
-        page.mouse.down()
-        page.mouse.move(x - 12, y - 12, steps=3)
-        pointer_id = page.evaluate("qaPointerEvents.filter(e=>e.type==='pointerdown').at(-1).pointerId")
-        page.locator('#agente-bolinha').evaluate('''(el,values)=>{
-          if(values[0]==='lostpointercapture') el.releasePointerCapture(values[1]);
-          else el.dispatchEvent(new PointerEvent('pointercancel',{pointerId:values[1],pointerType:'mouse',bubbles:true}));
-        }''', [event_name, pointer_id])
-        page.mouse.up()
-        page.wait_for_timeout(150)
-        assert page.locator('#agente-bolinha').is_visible(), f'{event_name} must not restore the window.'
-        assert not page.locator('.is-dragging').count(), f'{event_name} must clean up drag state.'
+    for handle, target in [('.modal-agente-header', '#modal-agente'), ('#agente-bolinha', '#agente-bolinha')]:
+        if target == '#agente-bolinha': page.locator('#agente-minimizar').click()
+        for event_name in ('pointercancel', 'lostpointercapture'):
+            start_drag_visual_trace(page, target)
+            box = rect(page, handle)
+            x, y = box['left'] + min(50, box['width'] / 2), box['top'] + box['height'] / 2
+            page.mouse.move(x, y)
+            page.mouse.down()
+            page.mouse.move(x - 12, y - 12, steps=3)
+            expected = document_rect(page, target)
+            pointer_id = page.evaluate("qaPointerEvents.filter(e=>e.type==='pointerdown').at(-1).pointerId")
+            page.locator(handle).evaluate('''(el,values)=>{
+              if(values[0]==='lostpointercapture') el.releasePointerCapture(values[1]);
+              else el.dispatchEvent(new PointerEvent('pointercancel',{pointerId:values[1],pointerType:'mouse',bubbles:true}));
+            }''', [event_name, pointer_id])
+            page.mouse.up()
+            assert_drag_visual_trace(page, expected)
+            assert page.locator(target).is_visible(), f'{event_name} must keep the current mode.'
+            assert not page.locator('.is-dragging').count(), f'{event_name} must clean up drag state.'
     page.wait_for_timeout(350)
     page.locator('#agente-bolinha').click()
     assert page.locator('#modal-agente').is_visible()
@@ -741,6 +790,7 @@ def check_cancelled_drag(page):
 def check_touch_drag(page, context):
     session = context.new_cdp_session(page)
     def move(handle, target, dx, dy):
+        start_drag_visual_trace(page, target)
         box = rect(page, handle)
         before = rect(page, target)
         scroll = page.evaluate('scrollY')
@@ -750,8 +800,15 @@ def check_touch_drag(page, context):
         session.send('Input.dispatchTouchEvent', {'type': 'touchStart', 'touchPoints': [{'x': x, 'y': y}]})
         for step in range(1, 9):
             session.send('Input.dispatchTouchEvent', {'type': 'touchMove', 'touchPoints': [{'x': x + dx * step / 8, 'y': y + dy * step / 8}]})
+        # CDP can acknowledge the final move before its coalesced pointermove
+        # reaches the page. Observe that move before comparing release frames.
+        page.wait_for_function('''({target,x,y})=>{
+          const box=document.querySelector(target).getBoundingClientRect();
+          return Math.abs(box.left-x)<=2 && Math.abs(box.top-y)<=2;
+        }''', arg={'target':target,'x':before['left']+dx,'y':before['top']+dy})
+        expected = document_rect(page, target)
         session.send('Input.dispatchTouchEvent', {'type': 'touchEnd', 'touchPoints': []})
-        page.wait_for_timeout(150)
+        assert_drag_visual_trace(page, expected)
         after = rect(page, target)
         events = page.evaluate('start=>qaPointerEvents.slice(start)', start)
         assert any(event['type'] == 'pointerup' and event['pointerType'] == 'touch' for event in events), events
@@ -882,6 +939,7 @@ def check(engine, executable, origin):
                           'paragraphAndArticleIsolation': 'passed', 'pendingAnswerRouting': 'passed',
                           'draftAndHistoryRetention': 'passed', 'documentAnchoredWindowAndOrb': 'passed',
                           'freeHorizontalDragAndCancellation': 'passed', 'globalThemeColor': 'passed',
+                          'dragReleaseOpacityAndNoAnimationReplay': 'passed',
                           'stopRetryResetAndSafeRendering': 'passed', 'keyboardAccessibility': 'passed',
                           'focusPreservation': 'passed', 'nativeKeyboardTimelineAndStableAnchors': 'passed',
                           'fullscreenDocumentIsolationAndRestore': 'passed',
