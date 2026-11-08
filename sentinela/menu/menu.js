@@ -126,8 +126,8 @@ document.addEventListener("DOMContentLoaded", () => {
                   <label class="sync-choice">
                     <input type="radio" name="sync-enviar" value="merge" checked>
                     <span class="sync-choice__body">
-                      <span class="sync-choice__title">Juntar tudo (Recomendado)</span>
-                      <span class="sync-choice__desc">Junta as anotações deste aparelho com as da nuvem. Nenhuma nota é perdida.</span>
+                      <span class="sync-choice__title">Enviar apenas o que falta</span>
+                      <span class="sync-choice__desc">Adiciona as notas que ainda não estão na nuvem e mantém as que já existem lá.</span>
                     </span>
                   </label>
                   <label class="sync-choice">
@@ -146,8 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
                   <label class="sync-choice">
                     <input type="radio" name="sync-baixar" value="merge" checked>
                     <span class="sync-choice__body">
-                      <span class="sync-choice__title">Baixar e Misturar</span>
-                      <span class="sync-choice__desc">Traz da nuvem e soma com o que você já fez hoje. Nenhuma nota local é apagada.</span>
+                      <span class="sync-choice__title">Baixar apenas o que falta</span>
+                      <span class="sync-choice__desc">Baixa as notas que ainda não estão neste aparelho e mantém as notas locais.</span>
                     </span>
                   </label>
                   <label class="sync-choice">
@@ -470,6 +470,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const syncTabs = document.querySelectorAll('[data-sync-tab]');
     const syncPanels = document.querySelectorAll('[data-sync-panel]');
     let activeSyncTab = 'enviar';
+    let syncActionRunning = false;
 
     function setSyncTab(tab) {
       activeSyncTab = tab;
@@ -500,47 +501,53 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.getElementById('sentinelaSyncRun').addEventListener('click', async () => {
+      if (syncActionRunning) return;
+      syncActionRunning = true;
+      const action = activeSyncTab;
+      const runButton = document.getElementById('sentinelaSyncRun');
+      runButton.disabled = true;
+      try {
+      const requestSession = localStorage.getItem('supabase_user');
+      if (!JSON.parse(requestSession)?.id || window.SupabaseSync?.isLoggedIn?.() === false) {
+        throw new Error('Entre na sua conta antes de sincronizar.');
+      }
       syncOverlay.classList.remove('is-open');
-      const actionValue = document.querySelector(`input[name="sync-${activeSyncTab}"]:checked`).value;
+      const actionValue = document.querySelector(`input[name="sync-${action}"]:checked`).value;
 
       const runSync = async () => {
-        if (!window.SupabaseSync) { alert('Erro: Supabase não inicializado.'); return; }
-        
+        const sync = window.sentinelaSync;
+        if (!sync) { alert('A sincronização ainda está iniciando. Tente novamente.'); return; }
+        const button = document.getElementById('sentinelaSyncRun');
+        button.disabled = true;
         try {
-          if (activeSyncTab === 'apagar') {
-            await window.SupabaseSync.salvarSentinelaAnotacoes(semanaAtual, estudoId, {});
-            alert('Anotações apagadas da nuvem com sucesso.');
-          } else if (activeSyncTab === 'enviar') {
-            const anotacoes = window.sentinelaSync?.collectAnnotationsFromLocalStorage() || {};
-            await window.SupabaseSync.salvarSentinelaAnotacoes(semanaAtual, estudoId, anotacoes);
-            alert('Anotações enviadas para a nuvem.');
-          } else if (activeSyncTab === 'baixar') {
-            const anotacoes = await window.SupabaseSync.carregarSentinelaAnotacoes(semanaAtual, estudoId);
-            if (anotacoes) {
-              Object.entries(anotacoes).forEach(([k, v]) => localStorage.setItem(k, v));
-              alert('Anotações baixadas com sucesso. A página será recarregada.');
-              location.reload();
-            } else {
-              alert('Nenhuma anotação encontrada na nuvem para este artigo.');
-            }
+          if (localStorage.getItem('supabase_user') !== requestSession || window.SupabaseSync?.isLoggedIn?.() === false) {
+            throw new Error('A conta mudou durante a confirmação. Abra a Nuvem novamente.');
           }
-        } catch (e) {
-          alert('Erro de comunicação com a nuvem.');
-        }
+          let result;
+          if (action === 'apagar') result = await sync.deleteRemote();
+          else if (action === 'enviar') result = await (actionValue === 'overwrite' ? sync.pushOverwrite() : sync.pushMissing());
+          else result = await (actionValue === 'overwrite' ? sync.pullOverwrite() : sync.pullMissing());
+          if (result?.success !== true) throw new Error(result?.error || 'Não foi possível concluir.');
+          alert(action === 'apagar' ? 'Anotações deste artigo apagadas da nuvem.' :
+            action === 'enviar' ? 'Anotações enviadas para a nuvem.' : 'Anotações baixadas com sucesso.');
+        } catch (error) { alert(error.message || 'Erro de comunicação com a nuvem.'); }
+        finally { button.disabled = false; }
       };
 
-      if (activeSyncTab === 'apagar') {
+      if (action === 'apagar') {
         const res = await showCustomAlert({ title: "Apagar da nuvem?", text: "Isso removerá apenas as notas deste artigo do servidor.", left: "Cancelar", right: "Apagar", rightDanger: true, rightBold: true });
-        if (res === 'right') runSync();
-      } else if (activeSyncTab === 'enviar' && actionValue === 'overwrite') {
+        if (res === 'right') await runSync();
+      } else if (action === 'enviar' && actionValue === 'overwrite') {
         const res = await showCustomAlert({ title: "Substituir nuvem?", text: "A cópia da nuvem será sobrescrita pela versão deste aparelho.", left: "Cancelar", right: "Substituir", rightBold: true });
-        if (res === 'right') runSync();
-      } else if (activeSyncTab === 'baixar' && actionValue === 'overwrite') {
+        if (res === 'right') await runSync();
+      } else if (action === 'baixar' && actionValue === 'overwrite') {
         const res = await showCustomAlert({ title: "Restaurar aparelho?", text: "Suas notas locais que não estiverem na nuvem serão perdidas.", left: "Cancelar", right: "Restaurar", rightBold: true });
-        if (res === 'right') runSync();
+        if (res === 'right') await runSync();
       } else {
-        runSync();
+        await runSync();
       }
+      } catch (error) { alert(error.message || 'Não foi possível confirmar a conta. Tente novamente.'); }
+      finally { syncActionRunning = false; runButton.disabled = false; }
     });
 
     // --- LOGIC: Limpeza Local ---

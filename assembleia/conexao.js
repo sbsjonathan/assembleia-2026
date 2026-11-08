@@ -1,7 +1,7 @@
 (function() {
   if (window.conexaoInicializada) return;
   window.conexaoInicializada = true;
-  window.CONEXAO_VERSAO = 'conexao-v8-etapa3';
+  window.CONEXAO_VERSAO = 'conexao-v9-sessao';
   const tokensVistos = {};
   function jaVisto(token) {
     if (!token) return false;
@@ -41,6 +41,9 @@
   }
 
   let canal = null;
+  let sessaoCanal = null;
+  let geracaoCanal = 0;
+  let pedidoEnviado = null;
   let conectado = false;
   let conectando = false;
   let travaSeguranca = null;
@@ -56,17 +59,33 @@
 
   function enviarAck(para_id, token, tipo) {
     const eu = obterUsuario();
-    if (!eu || !canal) return;
-    canal.send({
-      type: 'broadcast',
-      event: 'envio-ack',
-      payload: { para_id: para_id, de_id: eu.id, token: token, tipo: tipo }
-    });
+    if (!eu) return;
+    enviarMensagem('envio-ack', { para_id, de_id: eu.id, token, tipo });
   }
 
   function obterUsuario() {
     if (!window.SupabaseSync || typeof window.SupabaseSync.getCurrentUser !== 'function') return null;
-    return window.SupabaseSync.getCurrentUser();
+    try {
+      const user = window.SupabaseSync.getCurrentUser();
+      return window.SupabaseSync.sessionUnavailable ? null : user;
+    } catch (_) { return null; }
+  }
+
+  function sessaoAtual() {
+    const eu = obterUsuario();
+    return eu && eu.id != null ? JSON.stringify([String(eu.id), eu.loginId || null]) : null;
+  }
+
+  function canalAtual() {
+    return !!(canal && sessaoCanal && sessaoCanal === sessaoAtual());
+  }
+
+  function enviarMensagem(event, payload) {
+    if (!canalAtual() || !conectado) return false;
+    try {
+      Promise.resolve(canal.send({ type: 'broadcast', event, payload })).catch(() => {});
+      return true;
+    } catch (_) { return false; }
   }
 
   function obterCliente() {
@@ -77,14 +96,15 @@
   // --- Persistencia do par (so um registro do ultimo par aceito; NAO reconecta sozinho) ---
   function salvarPar(par) {
     try {
-      if (par) localStorage.setItem(CHAVE_PAR, JSON.stringify(par));
+      if (par) localStorage.setItem(CHAVE_PAR, JSON.stringify({ ...par, conta: sessaoAtual() }));
       else localStorage.removeItem(CHAVE_PAR);
     } catch (e) {}
   }
   function lerParSalvo() {
     try {
       const raw = localStorage.getItem(CHAVE_PAR);
-      return raw ? JSON.parse(raw) : null;
+      const par = raw ? JSON.parse(raw) : null;
+      return par && par.conta === sessaoAtual() ? par : null;
     } catch (e) { return null; }
   }
 
@@ -216,23 +236,34 @@
     const cliente = obterCliente();
     const eu = obterUsuario();
     if (!cliente || !eu) { mostrarStatus('Faça login primeiro.'); return; }
-    if (conectado || conectando) return;
+    if ((conectado || conectando) && sessaoCanal === sessaoAtual()) return;
+    const sessao = sessaoAtual();
+    if (sessaoCanal && sessaoCanal !== sessao) await desconectar();
+    if (sessao !== sessaoAtual()) return;
+    const anterior = canal;
+    const geracao = ++geracaoCanal;
+    canal = null;
+    sessaoCanal = sessao;
+    conectado = false;
     conectando = true;
-
-    // Limpa qualquer canal anterior para nao duplicar presenca
-    await limparCanal();
+    await liberarCanal(anterior);
+    if (geracao !== geracaoCanal || sessao !== sessaoAtual()) return;
 
     mostrarStatus('Conectando...');
-
-    canal = cliente.channel(NOME_CANAL, {
+    const novoCanal = cliente.channel(NOME_CANAL, {
       config: { presence: { key: String(eu.id) } }
     });
+    canal = novoCanal;
+    const vigente = () => geracao === geracaoCanal && canal === novoCanal && sessao === sessaoAtual();
+    const escutar = (tipo, filtro, callback) => novoCanal.on(tipo, filtro, (...args) => {
+      if (vigente()) callback(...args);
+    });
 
-    canal.on('presence', { event: 'sync' }, () => {
+    escutar('presence', { event: 'sync' }, () => {
       renderLista(coletarPresentes());
     });
 
-    canal.on('broadcast', { event: 'encerrar-conexao' }, ({ payload }) => {
+    escutar('broadcast', { event: 'encerrar-conexao' }, ({ payload }) => {
       const me = obterUsuario();
       if (!me || !payload) return;
       if (payload.para_id !== me.id) return;
@@ -241,34 +272,31 @@
         parDe = null;
         salvarPar(null);
         esconderBubble();
+        window.dispatchEvent(new Event('conexao:contextchange'));
       }
     });
 
-    canal.on('broadcast', { event: 'pedido-pareamento' }, ({ payload }) => {
+    escutar('broadcast', { event: 'pedido-pareamento' }, ({ payload }) => {
       const me = obterUsuario();
       if (!me || !payload) return;
       if (payload.para_id !== me.id) return;
       // Consentimento: so aceita receber pedido se a caixinha estiver ligada
-      if (!permitirConexoes) {
-        if (canal) canal.send({
-          type: 'broadcast',
-          event: 'resposta-pareamento',
-          payload: { para_id: payload.de_id, de_id: me.id, de_nome: me.nome_completo || me.usuario, aceito: false, motivo: 'bloqueado' }
-        });
+      if (!permitirConexoes || (parDe && parDe.id !== payload.de_id)) {
+        enviarMensagem('resposta-pareamento', { para_id: payload.de_id, de_id: me.id, de_nome: me.nome_completo || me.usuario, aceito: false, motivo: 'bloqueado', codigo: payload.codigo });
         return;
       }
       pedidoPendente = payload;
       mostrarPedidoRecebido(payload);
     });
 
-    canal.on('broadcast', { event: 'resposta-pareamento' }, ({ payload }) => {
+    escutar('broadcast', { event: 'resposta-pareamento' }, ({ payload }) => {
       const me = obterUsuario();
       if (!me || !payload) return;
       if (payload.para_id !== me.id) return;
       tratarResposta(payload);
     });
 
-    canal.on('broadcast', { event: 'envio-texto' }, ({ payload }) => {
+    escutar('broadcast', { event: 'envio-texto' }, ({ payload }) => {
       const me = obterUsuario();
       if (!me || !payload) return;
       if (payload.para_id !== me.id) return;
@@ -281,35 +309,38 @@
       }
     });
 
-    canal.on('broadcast', { event: 'envio-ack' }, ({ payload }) => {
+    escutar('broadcast', { event: 'envio-ack' }, ({ payload }) => {
       const me = obterUsuario();
       if (!me || !payload) return;
       if (payload.para_id !== me.id) return;
+      if (!parDe || parDe.id !== payload.de_id) return;
       if (typeof window.EnvioTextoAck === 'function') {
         window.EnvioTextoAck(payload);
       }
     });
 
-    canal.on('broadcast', { event: 'envio-resposta' }, ({ payload }) => {
+    escutar('broadcast', { event: 'envio-resposta' }, ({ payload }) => {
       const me = obterUsuario();
       if (!me || !payload) return;
       if (payload.para_id !== me.id) return;
+      if (!parDe || parDe.id !== payload.de_id) return;
       if (typeof window.EnvioTextoConfirmacao === 'function') {
         window.EnvioTextoConfirmacao(payload);
       }
     });
 
-    canal.subscribe((status) => {
+    novoCanal.subscribe((status) => {
+      if (!vigente()) return;
       if (status === 'SUBSCRIBED') {
         conectado = true;
         conectando = false;
         if (travaSeguranca) { clearTimeout(travaSeguranca); travaSeguranca = null; }
         mostrarStatus('Online');
-        canal.track({
+        Promise.resolve(novoCanal.track({
           id: eu.id,
           usuario: eu.usuario,
           nome: eu.nome_completo || eu.usuario
-        });
+        })).catch(() => { if (vigente()) mostrarStatus('Não foi possível atualizar a presença.'); });
         renderLista(coletarPresentes());
         if (parDe) mostrarBubble(parDe.nome);
         atualizarBotaoVer();
@@ -328,7 +359,7 @@
     if (travaSeguranca) clearTimeout(travaSeguranca);
     travaSeguranca = setTimeout(() => {
       travaSeguranca = null;
-      if (!conectado) {
+      if (vigente() && !conectado) {
         conectando = false;
         if (parDe) mostrarBubbleCaiu();
         mostrarStatus('Não foi possível conectar.');
@@ -336,31 +367,33 @@
     }, 10000);
   }
 
-  async function limparCanal() {
+  async function liberarCanal(anterior) {
+    if (!anterior) return;
     const cliente = obterCliente();
-    if (canal) {
-      try { await canal.untrack(); } catch (e) {}
-      try { await canal.unsubscribe(); } catch (e) {}
-      canal = null;
-    }
-    // Remove canais orfaos com o mesmo nome
+    try { await anterior.untrack(); } catch (_) {}
     try {
-      if (cliente && cliente.getChannels) {
-        cliente.getChannels().forEach((ch) => {
-          if (ch && ch.topic && ch.topic.indexOf(NOME_CANAL) !== -1) {
-            try { cliente.removeChannel(ch); } catch (e) {}
-          }
-        });
-      }
-    } catch (e) {}
+      if (cliente && cliente.removeChannel) await cliente.removeChannel(anterior);
+      else await anterior.unsubscribe();
+    } catch (_) {}
   }
 
-  async function desconectar() {
-    await limparCanal();
+  function desconectar() {
+    const eu = obterUsuario();
+    if (parDe && eu && canalAtual()) {
+      enviarMensagem('encerrar-conexao', { para_id: parDe.id, de_id: eu.id });
+    }
+    // Invalidate synchronously: late subscribe/ACK callbacks cannot revive this session.
+    const anterior = canal;
+    geracaoCanal++;
+    canal = null;
+    sessaoCanal = null;
+    if (travaSeguranca) { clearTimeout(travaSeguranca); travaSeguranca = null; }
     conectado = false;
     conectando = false;
     parDe = null;
     pedidoPendente = null;
+    pedidoEnviado = null;
+    Object.keys(tokensVistos).forEach(token => delete tokensVistos[token]);
     salvarPar(null);
     salvarAtivo(false);
     salvarVerOnline(false);
@@ -372,12 +405,14 @@
     const chk = document.getElementById('online-permitir');
     if (chk) chk.checked = false;
     atualizarBotaoVer();
+    window.dispatchEvent(new Event('conexao:contextchange'));
+    return liberarCanal(anterior);
   }
 
   // --- Handshake de pareamento ---
   function enviarPedido(usuarioDestino) {
     const eu = obterUsuario();
-    if (!eu || !canal) return;
+    if (!eu || !canalAtual() || !conectado) return;
     if (parDe) { mostrarStatus('Você já está pareado. Desconecte primeiro.'); return; }
     if (!permitirConexoes) {
       mostrarStatus('Marque "Permitir que outros se conectem comigo" para poder parear.');
@@ -385,17 +420,14 @@
     }
 
     const codigo = gerarCodigo();
-    canal.send({
-      type: 'broadcast',
-      event: 'pedido-pareamento',
-      payload: {
+    pedidoEnviado = { id: usuarioDestino.id, codigo };
+    enviarMensagem('pedido-pareamento', {
         de_id: eu.id,
         de_usuario: eu.usuario,
         de_nome: eu.nome_completo || eu.usuario,
         para_id: usuarioDestino.id,
         codigo: codigo
-      }
-    });
+      });
     mostrarStatus('Solicitação enviada para ' + (usuarioDestino.nome || usuarioDestino.usuario) + ' (código ' + codigo + '). Aguardando...');
   }
 
@@ -428,20 +460,16 @@
 
   function responder(aceito) {
     const eu = obterUsuario();
-    if (!eu || !canal || !pedidoPendente) return;
+    if (!eu || !canalAtual() || !conectado || !permitirConexoes || !pedidoPendente) return;
 
-    canal.send({
-      type: 'broadcast',
-      event: 'resposta-pareamento',
-      payload: {
+    enviarMensagem('resposta-pareamento', {
         para_id: pedidoPendente.de_id,
         de_id: eu.id,
         de_usuario: eu.usuario,
         de_nome: eu.nome_completo || eu.usuario,
         aceito: aceito,
         codigo: pedidoPendente.codigo
-      }
-    });
+      });
 
     if (aceito) {
       parDe = { id: pedidoPendente.de_id, usuario: pedidoPendente.de_usuario, nome: pedidoPendente.de_nome };
@@ -459,6 +487,8 @@
   }
 
   function tratarResposta(payload) {
+    if (!permitirConexoes || !pedidoEnviado || pedidoEnviado.id !== payload.de_id || pedidoEnviado.codigo !== payload.codigo) return;
+    pedidoEnviado = null;
     if (payload.motivo === 'bloqueado') {
       const nome = payload.de_nome || 'Esse usuário';
       mostrarStatus(nome + ' ainda não permite conexões.');
@@ -539,18 +569,17 @@
 
   // Encerra o pareamento atual sem desligar a presenca (usado ao desmarcar "permitir")
   function encerrarPareamento() {
-    if (parDe && canal) {
+    if (parDe && canalAtual()) {
       // Avisa o par que a conexao foi encerrada (sinal intencional)
       const eu = obterUsuario();
-      if (eu) canal.send({
-        type: 'broadcast',
-        event: 'encerrar-conexao',
-        payload: { para_id: parDe.id, de_id: eu.id }
-      });
+      if (eu) enviarMensagem('encerrar-conexao', { para_id: parDe.id, de_id: eu.id });
     }
     parDe = null;
+    pedidoPendente = null;
+    pedidoEnviado = null;
     salvarPar(null);
     esconderBubble();
+    window.dispatchEvent(new Event('conexao:contextchange'));
   }
 
   // Reconexao automatica: reconecta a PRESENCA se "ver online" estava ligado.
@@ -569,7 +598,9 @@
     }
 
     let tentativas = 0;
+    const geracao = geracaoCanal;
     const tentar = () => {
+      if (geracao !== geracaoCanal) return;
       if (conectado || conectando) return;
       const cliente = obterCliente();
       const eu = obterUsuario();
@@ -584,6 +615,18 @@
     tentar();
   }
 
+  function verificarSessao() {
+    // A transient storage read failure is not a logout; sending remains blocked meanwhile.
+    const sessao = sessaoAtual();
+    if (window.SupabaseSync && window.SupabaseSync.sessionUnavailable) return;
+    if ((sessaoCanal && sessao !== sessaoCanal) || (parDe?.conta && parDe.conta !== sessao)) desconectar();
+  }
+  window.addEventListener('supabaseLogout', desconectar);
+  window.addEventListener('supabaseSessionChanged', verificarSessao);
+  window.addEventListener('storage', event => {
+    if (event.key === null || event.key === 'supabase_user') verificarSessao();
+  });
+
   document.addEventListener('DOMContentLoaded', () => {
     montarUI();
     autoReconectar();
@@ -592,20 +635,24 @@
   window.ConexaoPresenca = {
     conectar: conectar,
     desconectar: desconectar,
-    estaConectado: function() { return conectado; },
+    estaConectado: function() { return conectado && canalAtual(); },
+    contextoAtual: function() {
+      const eu = obterUsuario();
+      return eu && canalAtual() && conectado && parDe ? { sessao: sessaoCanal, contaId: eu.id, parId: parDe.id, parNome: parDe.nome, geracao: geracaoCanal } : null;
+    },
+    contextoValido: function(contexto) {
+      return !!(contexto && canalAtual() && parDe && contexto.sessao === sessaoCanal && contexto.geracao === geracaoCanal && contexto.parId === parDe.id);
+    },
     parAtual: function() { return parDe; },
     podeEnviar: function() {
-      return !!(obterCliente() && obterUsuario() && canal && conectado && parDe);
+      return !!(canalAtual() && conectado && parDe);
     },
-    enviarTexto: function(dados) {
+    enviarTexto: function(dados, contexto) {
       const eu = obterUsuario();
-      if (!eu || !canal || !conectado || !parDe) {
+      if (!eu || !canalAtual() || !conectado || !parDe || (contexto && !this.contextoValido(contexto))) {
         return false;
       }
-      canal.send({
-        type: 'broadcast',
-        event: 'envio-texto',
-        payload: {
+      return enviarMensagem('envio-texto', {
           de_id: eu.id,
           de_nome: eu.nome_completo || eu.usuario,
           para_id: parDe.id,
@@ -614,25 +661,18 @@
           quadro_id: dados.quadroId,
           quadro_nome: dados.quadroNome,
           token: dados.token
-        }
-      });
-      return true;
+        });
     },
     responderTexto: function(de_id, token, aceito) {
       const eu = obterUsuario();
-      if (!eu || !canal || !conectado) return false;
-      canal.send({
-        type: 'broadcast',
-        event: 'envio-resposta',
-        payload: {
+      if (!eu || !canalAtual() || !conectado || !parDe || parDe.id !== de_id) return false;
+      return enviarMensagem('envio-resposta', {
           de_id: eu.id,
           de_nome: eu.nome_completo || eu.usuario,
           para_id: de_id,
           token: token,
           aceito: aceito
-        }
-      });
-      return true;
+        });
     }
   };
 })();

@@ -5,7 +5,7 @@ class AutoSaveManager {
         this.editor = null; this.currentSemana = null; this.isLoggedIn = false;
         this.lastSavedContent = ''; this.lastCloudKey = null;
         this.saveInProgress = false; this.isPaused = false; this.SAVE_DELAY = 350;
-        this.pending = null; this.sending = null;
+        this.pending = null; this.sending = null; this.accountId = null;
         this.ready = this.setup();
     }
     async setup() {
@@ -16,7 +16,6 @@ class AutoSaveManager {
         this.currentSemana = this.store.semanaAtual();
         this.checkLoginStatus();
         const initial = this.store.snapshot();
-        if (!this.store.hasPending(initial)) this.lastCloudKey = initial.key;
         this.lastSavedContent = JSON.stringify(initial.payload);
         window.addEventListener('notes:stored', event => this.acceptSnapshot(event.detail));
         window.addEventListener('notes:save-error', () => this.triggerFeedbackEvent('Não foi possível salvar neste aparelho. Mantenha esta página aberta ou baixe uma cópia.', 'error', 0));
@@ -26,6 +25,8 @@ class AutoSaveManager {
         const retry = () => { this.checkLoginStatus(); this.executeAutoSave('resume'); };
         window.addEventListener('online', retry);
         window.addEventListener('pageshow', retry);
+        window.addEventListener('supabaseSessionChanged', retry);
+        window.addEventListener('supabaseLogout', () => this.checkLoginStatus());
         window.addEventListener('storage', event => { if (event.key === 'supabase_user') retry(); });
         for (const name of ['pagehide', 'beforeunload', 'blur']) window.addEventListener(name, () => this.onPageUnload());
         document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') this.onPageUnload(); });
@@ -34,7 +35,21 @@ class AutoSaveManager {
     checkLoginStatus() {
         try { this.isLoggedIn = typeof window.SupabaseSync?.isLoggedIn === 'function' ? window.SupabaseSync.isLoggedIn() : !!localStorage.getItem('supabase_user'); }
         catch (_) { this.isLoggedIn = false; }
+        let account = null;
+        try { if (this.isLoggedIn) account = JSON.parse(localStorage.getItem('supabase_user'))?.id || null; } catch (_) {}
+        if (account !== this.accountId) { this.accountId = account; this.lastCloudKey = null; }
         return this.isLoggedIn;
+    }
+    parseRemote(raw) {
+        if (raw === null) return null;
+        if (typeof raw !== 'string') throw new Error('A anotação da nuvem está inválida.');
+        // An existing empty document is an intentional deletion, not a missing row.
+        return raw.trim() ? this.store.parse(raw) : { html: '', formato: 'legacy-html' };
+    }
+    preserveCopy(local, external, reason) {
+        const id = `richtext_recovery_${this.currentSemana}_${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+        localStorage.setItem(id, JSON.stringify({ type: 'notes-cloud-recovery', semana: this.currentSemana,
+            createdAt: Date.now(), reason, local, external }));
     }
     obterRaizesEditor() { return Array.from(this.editor?.children || []).filter(node => node.matches('.node-paragraph,.node-text,.node-toggle')); }
     exportTree() { return this.store?.snapshot()?.payload.tree || []; }
@@ -72,7 +87,8 @@ class AutoSaveManager {
     }
     async drain() {
         if (this.sending || this.isPaused || this.store.getConflict?.() || navigator.onLine === false || !this.checkLoginStatus()) return this.sending;
-        if (!this.pending || typeof window.SupabaseSync?.salvarRichtextAnotacoes !== 'function') return;
+        if (!this.pending || typeof window.SupabaseSync?.salvarRichtextAnotacoes !== 'function' ||
+            typeof window.SupabaseSync?.carregarRichtextAnotacoes !== 'function') return;
         this.saveInProgress = true;
         let failed = false;
         this.sending = (async () => {
@@ -84,16 +100,24 @@ class AutoSaveManager {
                 try {
                     const user = localStorage.getItem('supabase_user');
                     const send = async () => {
-                        if (!this.store.isStored(next) || user !== localStorage.getItem('supabase_user')) return null;
-                        return window.SupabaseSync.salvarRichtextAnotacoes(this.currentSemana, JSON.stringify(next.payload));
+                        if (!this.store.isStored(next) || user !== localStorage.getItem('supabase_user')) return { skipped: true };
+                        const raw = await window.SupabaseSync.carregarRichtextAnotacoes(this.currentSemana);
+                        if (!this.store.isStored(next) || user !== localStorage.getItem('supabase_user')) return { skipped: true };
+                        const remote = this.parseRemote(raw);
+                        const remoteKey = remote && this.store.contentKey(remote);
+                        if (remoteKey === next.key) return { success: true };
+                        // An offline draft may coexist with a newer document on
+                        // another device. Preserve that document before sending.
+                        if (remote && remoteKey !== this.lastCloudKey) this.preserveCopy(next.payload, remote, 'Antes de enviar alterações locais');
+                        return window.SupabaseSync.salvarRichtextAnotacoes(this.currentSemana, JSON.stringify(next.payload), { expectedRemote: raw });
                     };
                     // Serialize uploads by week across v2 tabs when Web Locks is
                     // available; recheck the stored revision after acquiring it.
                     const result = navigator.locks?.request
                         ? await navigator.locks.request('notes-cloud-' + this.currentSemana, send)
                         : await send();
-                    if (!result) continue;
-                    if (result.success === false) throw new Error(result.error || 'Falha na sincronização.');
+                    if (result?.skipped) continue;
+                    if (result?.success !== true) throw new Error(result?.error || 'Falha na sincronização.');
                     if (user !== localStorage.getItem('supabase_user') || !this.store.isStored(next)) continue;
                     this.lastCloudKey = next.key;
                     this.store.acknowledge(next);
@@ -126,9 +150,10 @@ class AutoSaveManager {
     onPageUnload() { return this.executeAutoSave('unload'); }
     saveToLocal() { return this.store?.flush(); }
     async saveToSupabase(content) {
-        const result = await window.SupabaseSync?.salvarRichtextAnotacoes(this.currentSemana, content);
-        if (result?.success === false) throw new Error(result.error || 'Falha na sincronização.');
-        return result;
+        // Compatibility callers must use the same guarded queue as editor input.
+        const snapshot = this.store?.flush();
+        if (!snapshot || content !== JSON.stringify(snapshot.payload)) throw new Error('O conteúdo mudou. Salve a versão atual do editor.');
+        return this.uploadCurrent();
     }
     triggerFeedbackEvent(message, type, duration = null) {
         window.dispatchEvent(new CustomEvent('editor:save-status', { detail: { message, type, duration } }));

@@ -29,8 +29,8 @@ class UnifiedLoadManager {
         if (!this.store || this.syncing) return this.syncing;
         this.checkLoginStatus();
         if (!this.isLoggedIn || navigator.onLine === false || typeof window.SupabaseSync?.carregarRichtextAnotacoes !== 'function') return;
-        // An unsent local revision is authoritative. Send it instead of replacing
-        // it with an older server document during startup or reconnection.
+        // Pending drafts use the upload queue, which reads and preserves a
+        // divergent cloud copy before sending. Never replace them during loading.
         const before = this.store.flush();
         if (!before || this.store.getConflict?.()) return;
         if (this.store.hasPending(before)) {
@@ -41,6 +41,7 @@ class UnifiedLoadManager {
         this.showFeedback('Sincronizando...', 'saving');
         this.syncing = (async () => {
             try {
+                await window.AutoSaveManager?.ready;
                 const raw = await window.SupabaseSync.carregarRichtextAnotacoes(this.currentSemana);
                 const current = this.store.snapshot();
                 if (requestUser !== localStorage.getItem('supabase_user') || this.store.getConflict?.()) return;
@@ -48,7 +49,7 @@ class UnifiedLoadManager {
                     this.showFeedback('Alterações locais preservadas', 'local');
                     window.AutoSaveManager?.forceAutoSave(); return;
                 }
-                if (!raw || !String(raw).trim()) {
+                if (raw === null) {
                     this.showFeedback('Salvo localmente', 'local');
                     if (this.editor.textContent.trim()) {
                         await window.AutoSaveManager?.ready;
@@ -56,12 +57,18 @@ class UnifiedLoadManager {
                     }
                     return;
                 }
-                const data = this.store.parse(raw);
-                if (!data) return;
+                const data = typeof raw === 'string' && !raw.trim()
+                    ? { html: '', formato: 'legacy-html' } : this.store.parse(raw);
+                if (!data || typeof raw !== 'string') throw new Error('Anotação da nuvem inválida.');
                 if (this.store.contentKey(data) !== current.key) {
+                    // Keep a recoverable local copy before adopting a different
+                    // device's document, including an intentionally empty one.
+                    window.AutoSaveManager?.preserveCopy(current.payload, data, 'Antes de restaurar a nuvem');
                     if (!this.store.applyContent(data, { remote: true })) return;
                 }
-                window.AutoSaveManager?.acknowledgeRemote(this.store.snapshot());
+                const applied = this.store.snapshot();
+                if (!this.store.isStored(applied)) throw new Error('Não foi possível salvar a cópia da nuvem neste aparelho.');
+                window.AutoSaveManager?.acknowledgeRemote(applied);
                 this.showFeedback('✅ Sincronizado', 'success');
             } catch (_) { this.showFeedback('Não foi possível ler a nuvem. Sua cópia local foi mantida.', 'error'); }
         })();
@@ -70,6 +77,8 @@ class UnifiedLoadManager {
     setupListeners() {
         window.addEventListener('storage', event => { if (event.key === 'supabase_user') this.syncWithSupabase(); });
         window.addEventListener('online', () => this.syncWithSupabase());
+        window.addEventListener('pageshow', () => this.syncWithSupabase());
+        window.addEventListener('supabaseSessionChanged', () => this.syncWithSupabase());
     }
     updateSemanaIndicator() {
         const node = document.getElementById('semana-indicator');

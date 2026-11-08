@@ -16,14 +16,15 @@ function harness(remote = null) {
         CustomEvent: class { constructor(type, init) { this.type = type; this.detail = init?.detail; } },
         window: { addEventListener() {}, dispatchEvent: event => events.push(event), SupabaseSync: {} }
     };
-    let cloud = remote, writes = [];
+    let cloud = remote, writes = [], deletions = [];
     context.window.SupabaseSync.carregarAssembleiaAnotacoes = async () => cloud;
     context.window.SupabaseSync.salvarAssembleiaAnotacoes = async (year, value) => { cloud = { ...value }; writes.push(value); return { success: true }; };
+    context.window.SupabaseSync.apagarAssembleiaCompleto = async (year, options) => { cloud = {}; deletions.push({ year, options }); return { success: true }; };
     vm.createContext(context);
     vm.runInContext(fs.readFileSync(path.join(root, 'save/asmb-sync.js'), 'utf8'), context);
     const sync = context.window.assembleiaSync;
     sync.initialLoadComplete = true; sync.isLoggedIn = true;
-    return { context, sync, storage, data, timers, events, writes, cloud: () => cloud };
+    return { context, sync, storage, data, timers, events, writes, deletions, cloud: () => cloud };
 }
 let count = 0;
 async function test(name, run) { await run(); count++; console.log('PASS', name); }
@@ -88,15 +89,231 @@ async function test(name, run) { await run(); count++; console.log('PASS', name)
         assert.equal((await h.sync.loadFromSupabase()).success, false);
         assert.equal(h.sync.account(), 'qa-user');
     });
+    await test('manual merge download clears pending upload and remains read-only on resume', async () => {
+        const key = 'ca-copgm27:nota:confiar-de-todo-coracao';
+        const h = harness({ [key]: note('older cloud', 1) });
+        h.storage.setItem(key, note('new local', 2));
+        h.sync.scheduleAutoSave(); assert.equal(h.timers.size, 1);
+        assert.equal((await h.sync.loadFromSupabase(true)).success, true);
+        assert.equal(h.timers.size, 0); assert.equal(h.writes.length, 0);
+        h.sync.resume(); await h.sync.executeAutoSave();
+        assert.equal(h.writes.length, 0);
+        assert.ok(h.storage.getItem(key).includes('new local'));
+        assert.ok(h.cloud()[key].includes('older cloud'));
+    });
+    await test('intentional local/cloud differences survive reopening the page', async () => {
+        for (const operation of ['pullMerge', 'pullMissing', 'pushMissing']) {
+            const h = harness({ 'ca-copgm27:nota:a': note('cloud', 1) });
+            h.storage.setItem('ca-copgm27:nota:a', note('local', 10));
+            h.storage.setItem('ca-copgm27:nota:b', note('local only', 10));
+            assert.equal((await h.sync[operation]()).success, true);
+            const writes = h.writes.length;
+            const reopened = vm.runInContext('new AssembleiaSync()', h.context);
+            assert.equal((await reopened.loadFromSupabase()).success, true);
+            await reopened.executeAutoSave();
+            assert.equal(h.writes.length, writes, operation);
+            assert.ok(h.storage.getItem('ca-copgm27:nota:a').includes('local'));
+            assert.ok(h.cloud()['ca-copgm27:nota:a'].includes('cloud'));
+            h.storage.setItem('ca-copgm27:nota:a', note('new edit after reopening', 20));
+            await reopened.executeAutoSave();
+            assert.ok(h.cloud()['ca-copgm27:nota:a'].includes('new edit after reopening'));
+        }
+    });
+    await test('persisted checkpoint does not hide a genuine offline edit or newer remote update', async () => {
+        const h = harness({ 'ca-copgm27:nota:a': note('cloud', 1) });
+        h.storage.setItem('ca-copgm27:nota:a', note('local', 10));
+        await h.sync.pushMissing();
+        h.storage.setItem('ca-copgm27:nota:a', note('offline newer', 20));
+        const reopened = vm.runInContext('new AssembleiaSync()', h.context);
+        await reopened.loadFromSupabase(); await reopened.executeAutoSave();
+        assert.ok(h.cloud()['ca-copgm27:nota:a'].includes('offline newer'));
+        h.cloud()['ca-copgm27:nota:a'] = note('newest remote', 30);
+        const secondReopen = vm.runInContext('new AssembleiaSync()', h.context);
+        await secondReopen.loadFromSupabase();
+        assert.ok(h.storage.getItem('ca-copgm27:nota:a').includes('newest remote'));
+    });
+    await test('a remote deletion of unchanged synced notes is not resurrected on reopen', async () => {
+        const h = harness({ 'ca-copgm27:nota:a': note('cloud', 1) });
+        await h.sync.pullOverwrite();
+        delete h.cloud()['ca-copgm27:nota:a'];
+        const reopened = vm.runInContext('new AssembleiaSync()', h.context);
+        assert.equal((await reopened.loadFromSupabase()).success, true);
+        await reopened.executeAutoSave();
+        assert.equal(h.storage.getItem('ca-copgm27:nota:a'), null);
+        assert.equal(h.writes.length, 0);
+        assert.ok(reopened.getRecoveries().some(copy => copy.values['ca-copgm27:nota:a']?.includes('cloud')));
+    });
+    await test('missing-only download preserves existing and explicitly empty local entries', async () => {
+        const h = harness({ 'ca-copgm27:nota:a': note('remote', 5), 'ca-copgm27:nota:b': note('remote B', 5), 'cor-assembleia': '#111111' });
+        h.storage.setItem('ca-copgm27:nota:a', ''); h.storage.setItem('cor-assembleia', '#222222');
+        assert.equal((await h.sync.pullMissing()).success, true);
+        assert.equal(h.storage.getItem('ca-copgm27:nota:a'), '');
+        assert.ok(h.storage.getItem('ca-copgm27:nota:b').includes('remote B'));
+        assert.equal(h.storage.getItem('cor-assembleia'), '#222222');
+        await h.sync.executeAutoSave(); assert.equal(h.writes.length, 0);
+    });
+    await test('missing-only upload preserves cloud contents even after an unrelated later edit', async () => {
+        const h = harness({ 'ca-copgm27:nota:a': '', 'ca-copgm27:nota:b': note('cloud B', 1) });
+        h.storage.setItem('ca-copgm27:nota:a', note('local A', 10));
+        h.storage.setItem('ca-copgm27:nota:b', note('local B', 10));
+        h.storage.setItem('ca-copgm27:nota:c', note('new C', 10));
+        assert.equal((await h.sync.pushMissing()).success, true);
+        assert.equal(h.cloud()['ca-copgm27:nota:a'], '');
+        assert.ok(h.cloud()['ca-copgm27:nota:b'].includes('cloud B'));
+        assert.ok(h.cloud()['ca-copgm27:nota:c'].includes('new C'));
+        await h.sync.executeAutoSave(); assert.equal(h.writes.length, 1);
+        h.storage.setItem('ca-copgm27:nota:c', note('edited C', 20));
+        await h.sync.executeAutoSave();
+        assert.equal(h.cloud()['ca-copgm27:nota:a'], '');
+        assert.ok(h.cloud()['ca-copgm27:nota:b'].includes('cloud B'));
+        assert.ok(h.cloud()['ca-copgm27:nota:c'].includes('edited C'));
+        assert.ok(h.storage.getItem('ca-copgm27:nota:b').includes('local B'));
+        h.storage.setItem('ca-copgm27:nota:b', note('deliberately edited B', 30));
+        await h.sync.executeAutoSave();
+        assert.ok(h.cloud()['ca-copgm27:nota:b'].includes('deliberately edited B'));
+    });
+    await test('manual merge chooses newer conflicting note and backs up replaced local text', async () => {
+        const h = harness({ 'ca-copgm27:nota:a': note('new cloud', 20), 'ca-copgm27:nota:b': note('cloud only', 20) });
+        h.storage.setItem('ca-copgm27:nota:a', note('old local', 10));
+        h.storage.setItem('ca-copgm27:nota:c', note('local only', 10));
+        assert.equal((await h.sync.pushMerge()).success, true);
+        assert.ok(h.cloud()['ca-copgm27:nota:a'].includes('new cloud'));
+        assert.ok(h.cloud()['ca-copgm27:nota:b'].includes('cloud only'));
+        assert.ok(h.cloud()['ca-copgm27:nota:c'].includes('local only'));
+        assert.ok(h.sync.getRecoveries().some(copy => copy.values['ca-copgm27:nota:a']?.includes('old local')));
+    });
+    await test('overwrite uploads exact current programme snapshot and keeps displaced cloud backup', async () => {
+        const h = harness({ 'ca-copgm27:nota:old': note('only cloud', 20) });
+        h.storage.setItem('ca-copgm27:nota:new', note('only local', 10));
+        h.storage.setItem('foreign-app', 'never send');
+        assert.equal((await h.sync.pushOverwrite()).success, true);
+        assert.deepEqual(Object.keys(h.cloud()), ['ca-copgm27:nota:new']);
+        assert.ok(h.sync.getRecoveries().some(copy => copy.values['ca-copgm27:nota:old']?.includes('only cloud')));
+    });
+    await test('explicit empty cloud is an intentional restore, unlike absent cloud', async () => {
+        const h = harness({}); h.storage.setItem('ca-copgm27:nota:a', note('local', 20));
+        h.storage.setItem('foreign-app', 'keep');
+        assert.equal((await h.sync.pullOverwrite()).success, true);
+        assert.equal(h.storage.getItem('ca-copgm27:nota:a'), null);
+        assert.equal(h.storage.getItem('foreign-app'), 'keep');
+        assert.equal(h.sync.getRecoveries().length, 1);
+        assert.equal(h.writes.length, 0);
+    });
+    await test('an explicitly cleared newer note remains authoritative during merge', async () => {
+        const h = harness({ 'ca-copgm27:nota:a': note('old text', 10) });
+        h.storage.setItem('ca-copgm27:nota:a', note('', 20));
+        assert.equal((await h.sync.pushMerge()).success, true);
+        assert.equal(JSON.parse(h.cloud()['ca-copgm27:nota:a']).fullText, '');
+    });
+    await test('delete is serialized against an ongoing upload', async () => {
+        const h = harness(); let release;
+        h.storage.setItem('ca-copgm27:nota:a', note('local', 1));
+        h.context.window.SupabaseSync.salvarAssembleiaAnotacoes = () => new Promise(resolve => { release = () => resolve({ success: true }); });
+        const pending = h.sync.executeAutoSave(); await new Promise(setImmediate);
+        assert.equal((await h.sync.deleteAll()).success, false);
+        assert.equal(h.deletions.length, 0);
+        release(); await pending;
+    });
+    await test('delete clears pending automatic uploads, preserves preferences, and does not recreate cloud notes', async () => {
+        const remote = { 'ca-copgm27:nota:a': note('cloud', 1) };
+        const h = harness(remote);
+        h.storage.setItem('ca-copgm27:nota:a', note('local', 2)); h.storage.setItem('cor-assembleia', '#604184');
+        h.storage.setItem('other-system', 'untouched'); h.sync.scheduleAutoSave();
+        assert.equal((await h.sync.deleteAll()).success, true);
+        assert.equal(h.storage.getItem('ca-copgm27:nota:a'), null);
+        assert.equal(h.storage.getItem('cor-assembleia'), '#604184');
+        assert.equal(h.storage.getItem('other-system'), 'untouched');
+        assert.equal(h.timers.size, 0);
+        assert.deepEqual(JSON.parse(JSON.stringify(h.deletions[0].options.expectedRemote)), remote);
+        h.sync.resume(); await h.sync.executeAutoSave();
+        assert.equal(h.writes.length, 0); assert.deepEqual(h.cloud(), {});
+        const backups = JSON.stringify(h.sync.getRecoveries());
+        assert.ok(backups.includes('cloud')); assert.ok(backups.includes('local'));
+    });
+    await test('failed cloud deletion never removes local notes', async () => {
+        const h = harness({ 'ca-copgm27:nota:a': note('cloud', 1) });
+        h.storage.setItem('ca-copgm27:nota:a', note('local', 2));
+        h.context.window.SupabaseSync.apagarAssembleiaCompleto = async () => ({ success: false, error: 'offline' });
+        assert.equal((await h.sync.deleteAll()).success, false);
+        assert.ok(h.storage.getItem('ca-copgm27:nota:a').includes('local'));
+        assert.equal(h.sync.isSyncing, false);
+    });
+    await test('edits made during cloud deletion stay local without automatically recreating the deleted backup', async () => {
+        const h = harness({ 'ca-copgm27:nota:a': note('cloud', 1) }); let release;
+        h.storage.setItem('ca-copgm27:nota:a', note('local', 2));
+        h.context.window.SupabaseSync.apagarAssembleiaCompleto = () => new Promise(resolve => { release = () => resolve({ success: true }); });
+        const pending = h.sync.deleteAll(); await new Promise(setImmediate);
+        h.storage.setItem('ca-copgm27:nota:a', note('new editing', 3)); h.sync.scheduleAutoSave();
+        release(); const result = await pending;
+        assert.equal(result.success, true); assert.equal(result.preservedLocalChanges, true);
+        assert.ok(h.storage.getItem('ca-copgm27:nota:a').includes('new editing'));
+        await h.sync.executeAutoSave(); assert.equal(h.writes.length, 0);
+    });
+    await test('switching account or login generation during reads cannot apply or send another session data', async () => {
+        for (const user of [{ id: 'new-user' }, { id: 'qa-user', loginId: 'new-login' }]) {
+            const h = harness(); let release;
+            h.storage.setItem('ca-copgm27:nota:a', note('local', 1));
+            h.context.window.SupabaseSync.carregarAssembleiaAnotacoes = () => new Promise(resolve => release = resolve);
+            const pending = h.sync.pushOverwrite();
+            h.storage.setItem('supabase_user', JSON.stringify(user));
+            release({ 'ca-copgm27:nota:a': note('remote', 2) });
+            assert.equal((await pending).success, false);
+            assert.equal(h.writes.length, 0); assert.ok(h.storage.getItem('ca-copgm27:nota:a').includes('local'));
+        }
+    });
+    await test('account switch resets sync baseline and does not automatically upload the previous account notes', async () => {
+        const h = harness({ 'ca-copgm27:nota:a': note('other account cloud', 1) });
+        h.storage.setItem('ca-copgm27:nota:a', note('previous account local', 10));
+        h.sync.lastSavedDataJSON = h.sync.stable({ 'ca-copgm27:nota:a': note('previous account local', 10) });
+        h.storage.setItem('supabase_user', JSON.stringify({ id: 'new-user' }));
+        h.sync.checkLoginStatus(); assert.equal(h.sync.initialLoadComplete, false);
+        assert.equal(h.sync.lastSavedDataJSON, '{}');
+        assert.equal((await h.sync.loadFromSupabase()).success, true);
+        await h.sync.executeAutoSave(); assert.equal(h.writes.length, 0);
+        assert.ok(h.storage.getItem('ca-copgm27:nota:a').includes('previous account local'));
+    });
+    await test('unsaved in-memory draft blocks upload, restore, and deletion safely', async () => {
+        for (const operation of ['pushOverwrite', 'pullOverwrite', 'deleteAll', 'executeAutoSave']) {
+            const h = harness({ 'ca-copgm27:nota:a': note('remote', 1) });
+            h.storage.setItem('ca-copgm27:nota:a', note('outdated storage', 1));
+            h.context.window.AssembleiaIA = { flushPendingWrites: () => false };
+            assert.equal((await h.sync[operation]()).success, false);
+            assert.equal(h.writes.length, 0); assert.equal(h.deletions.length, 0);
+            assert.equal(h.sync.isSyncing, false);
+            assert.ok(h.storage.getItem('ca-copgm27:nota:a').includes('outdated storage'));
+        }
+    });
+    await test('pending local draft is flushed before the cloud snapshot is assembled', async () => {
+        const h = harness(); let pending = true;
+        h.storage.setItem('ca-copgm27:nota:a', note('outdated storage', 1));
+        h.context.window.AssembleiaIA = { flushPendingWrites() {
+            if (pending) h.storage.setItem('ca-copgm27:nota:a', note('latest in-memory draft', 2));
+            pending = false; return true;
+        } };
+        assert.equal((await h.sync.pushOverwrite()).success, true);
+        assert.ok(h.cloud()['ca-copgm27:nota:a'].includes('latest in-memory draft'));
+    });
+    await test('storage failure while collecting notes releases operation lock', async () => {
+        const h = harness(); h.storage.key = () => { throw new Error('storage unavailable'); };
+        assert.equal((await h.sync.loadFromSupabase()).success, false); assert.equal(h.sync.isSyncing, false);
+        assert.equal((await h.sync.pullOverwrite()).success, false); assert.equal(h.sync.isSyncing, false);
+    });
+    await test('unknown manual modes never mutate cloud or local data', async () => {
+        const h = harness({ 'ca-copgm27:nota:a': note('cloud', 1) });
+        assert.equal((await h.sync.push('unknown')).success, false);
+        assert.equal((await h.sync.pull('unknown')).success, false);
+        assert.equal(h.writes.length, 0); assert.equal(h.sync.getRecoveries().length, 0);
+    });
     await test('failed Supabase preflight prevents writing and uses assembly cloud type', async () => {
         const filters = []; let mutated = false;
         const builder = { select() { return this; }, eq(key, value) { filters.push([key, value]); return this; }, maybeSingle: async () => ({ data: null, error: new Error('query failed') }), update() { mutated = true; return this; }, insert() { mutated = true; return this; } };
         const ctx = { window: { SupabaseSync: {} }, navigator: {}, console };
         vm.createContext(ctx); vm.runInContext(fs.readFileSync(path.join(root, 'save/supabase.js'), 'utf8') + '\nwindow.TestClass = SupabaseSync;', ctx);
         const client = Object.create(ctx.window.TestClass.prototype);
-        Object.assign(client, { currentUser: { id: 'qa-user' }, isOnline: true, supabase: { from: () => builder }, ensureInitialized: async () => true, checkExistingSession() {} });
+        Object.assign(client, { currentUser: { id: 'qa-user' }, isOnline: true, supabase: { from: () => builder }, ensureInitialized: async () => true,
+            checkExistingSession() { return { status: 'signed-in', raw: 'qa-session', user: { id: 'qa-user' } }; } });
         assert.equal((await client.salvarAssembleiaAnotacoes('ca-copgm27', {})).success, false);
-        assert.equal(mutated, false); assert.ok(filters.some(([key, val]) => key === 'tipo' && val === 'ass26:programacao:ca-copgm27'));
+        assert.equal(mutated, false); assert.ok(filters.some(([key, val]) => key === 'tipo' && val === 'ass26:programacao'));
         await assert.rejects(() => client.carregarAssembleiaAnotacoes('ca-copgm27'), /query failed/);
     });
     await test('100 KB notes are sent in the body, never in query filters', async () => {
@@ -104,11 +321,12 @@ async function test(name, run) { await run(); count++; console.log('PASS', name)
         let payload, writing = false;
         const builder = { select() { return this; }, eq(key, value) { filters.push([key, value]); return this; },
             update(value) { payload = value; writing = true; return this; },
-            maybeSingle: async () => ({ data: writing ? { id: 'row1' } : { id: 'row1', conteudo_html: JSON.stringify(previous) }, error: null }) };
+            maybeSingle: async () => ({ data: writing ? { id: 'row1', conteudo_html: payload.conteudo_html } : { id: 'row1', conteudo_html: JSON.stringify(previous) }, error: null }) };
         const ctx = { window: { SupabaseSync: {} }, navigator: {}, console };
         vm.createContext(ctx); vm.runInContext(fs.readFileSync(path.join(root, 'save/supabase.js'), 'utf8') + '\nwindow.TestClass = SupabaseSync;', ctx);
         const client = Object.create(ctx.window.TestClass.prototype);
-        Object.assign(client, { currentUser: { id: 'qa-user' }, isOnline: true, supabase: { from: () => builder }, ensureInitialized: async () => true, checkExistingSession() {} });
+        Object.assign(client, { currentUser: { id: 'qa-user' }, isOnline: true, supabase: { from: () => builder }, ensureInitialized: async () => true,
+            checkExistingSession() { return { status: 'signed-in', raw: 'qa-session', user: { id: 'qa-user' } }; } });
         const result = await client.salvarAssembleiaAnotacoes('ca-copgm27', previous, { expectedRemote: previous });
         assert.equal(result.success, true);
         assert.ok(payload.conteudo_html.length > 100000);
@@ -132,12 +350,13 @@ async function test(name, run) { await run(); count++; console.log('PASS', name)
         const ctx = { window: { SupabaseSync: {} }, navigator: {}, console };
         vm.createContext(ctx); vm.runInContext(fs.readFileSync(path.join(root, 'save/supabase.js'), 'utf8') + '\nwindow.TestClass = SupabaseSync;', ctx);
         const builder = { select() { return this; }, eq(key, value) { if (key === 'tipo') filters.push(value); return this; },
-            maybeSingle: async () => ({data: filters.at(-1)==='assembleia2026:richtext' ? {conteudo_html:'preserved note'} : response, error:null}) };
+            maybeSingle: async () => ({data: filters.at(-1)==='assembleia2026:richtext' ? {id:'row1',conteudo_html:'preserved note'} : response, error:null}) };
         const client = Object.create(ctx.window.TestClass.prototype);
-        Object.assign(client, {currentUser:{id:'qa-user'},isOnline:true,supabase:{from:()=>builder},ensureInitialized:async()=>true,checkExistingSession(){}});
+        Object.assign(client, {currentUser:{id:'qa-user'},isOnline:true,supabase:{from:()=>builder},ensureInitialized:async()=>true,
+            checkExistingSession(){ return {status:'signed-in',raw:'qa-session',user:{id:'qa-user'}}; }});
         assert.equal(await client.carregarRichtextAnotacoes('07-11'), 'preserved note');
         assert.deepEqual(filters,['ass26:richtext','assembleia2026:richtext']);
-        filters.length=0;response={conteudo_html:''};
+        filters.length=0;response={id:'row1',conteudo_html:''};
         assert.equal(await client.carregarRichtextAnotacoes('07-11'), '');
         assert.deepEqual(filters,['ass26:richtext']);
         assert.equal((await client.salvarAssembleiaAnotacoes('2026', {})).success,false);

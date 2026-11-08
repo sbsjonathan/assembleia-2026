@@ -149,17 +149,24 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="sync-card">
                 <div class="sync-options">
                   <label class="sync-choice">
-                    <input type="radio" name="sync-enviar" value="merge" checked>
+                    <input type="radio" name="sync-enviar" value="missing" checked>
                     <span class="sync-choice__body">
-                      <span class="sync-choice__title">Juntar tudo (Recomendado)</span>
-                      <span class="sync-choice__desc">Junta as anotações deste aparelho com as da nuvem. Nada é perdido.</span>
+                      <span class="sync-choice__title">Enviar só o que falta</span>
+                      <span class="sync-choice__desc">Adiciona as notas que ainda não estão na nuvem. Mantém as que já estão lá.</span>
+                    </span>
+                  </label>
+                  <label class="sync-choice">
+                    <input type="radio" name="sync-enviar" value="merge">
+                    <span class="sync-choice__body">
+                      <span class="sync-choice__title">Mesclar versões</span>
+                      <span class="sync-choice__desc">Junta as notas e usa a versão mais recente quando possível. Guarda uma cópia local das versões substituídas.</span>
                     </span>
                   </label>
                   <label class="sync-choice">
                     <input type="radio" name="sync-enviar" value="overwrite">
                     <span class="sync-choice__body">
                       <span class="sync-choice__title">Cópia exata (Substituir nuvem)</span>
-                      <span class="sync-choice__desc">Apaga o que está na nuvem e guarda exatamente como este aparelho está agora.</span>
+                      <span class="sync-choice__desc">Substitui o programa salvo na nuvem pelas notas e preferências deste aparelho.</span>
                     </span>
                   </label>
                 </div>
@@ -170,17 +177,24 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="sync-card">
                 <div class="sync-options">
                   <label class="sync-choice">
-                    <input type="radio" name="sync-baixar" value="merge" checked>
+                    <input type="radio" name="sync-baixar" value="missing" checked>
                     <span class="sync-choice__body">
-                      <span class="sync-choice__title">Baixar e misturar</span>
-                      <span class="sync-choice__desc">Traz da nuvem e soma com suas anotações desta assembleia. Nenhuma nota local é apagada.</span>
+                      <span class="sync-choice__title">Baixar só o que falta</span>
+                      <span class="sync-choice__desc">Traz as notas que ainda não estão neste aparelho. Mantém as que já estão aqui.</span>
+                    </span>
+                  </label>
+                  <label class="sync-choice">
+                    <input type="radio" name="sync-baixar" value="merge">
+                    <span class="sync-choice__body">
+                      <span class="sync-choice__title">Mesclar versões</span>
+                      <span class="sync-choice__desc">Junta as notas neste aparelho e usa a versão mais recente quando possível. Guarda uma cópia local das versões substituídas.</span>
                     </span>
                   </label>
                   <label class="sync-choice">
                     <input type="radio" name="sync-baixar" value="overwrite">
                     <span class="sync-choice__body">
                       <span class="sync-choice__title">Restaurar aparelho (Substituir)</span>
-                      <span class="sync-choice__desc">Apaga as anotações deste aparelho e deixa ele idêntico ao que está salvo na nuvem.</span>
+                      <span class="sync-choice__desc">Substitui as notas e preferências do programa neste aparelho pelo que está na nuvem.</span>
                     </span>
                   </label>
                 </div>
@@ -298,6 +312,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let menuVisivel = false;
 
+    function setOverlayOpen(overlay, open) {
+      overlay.classList.toggle('is-open', open);
+      overlay.setAttribute('aria-hidden', String(!open));
+    }
+
     function showCustomAlert({ title, text, left, right, leftDanger, rightDanger, leftBold, rightBold }) {
       return new Promise((resolve) => {
         const overlay = document.getElementById('asmbAlertOverlay');
@@ -320,7 +339,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (rightBold) btnRight.classList.add('is-bold');
 
         const cleanup = () => {
-          overlay.classList.remove('is-open');
+          setOverlayOpen(overlay, false);
           btnLeft.removeEventListener('click', onLeft);
           btnRight.removeEventListener('click', onRight);
         };
@@ -331,7 +350,7 @@ document.addEventListener("DOMContentLoaded", () => {
         btnLeft.addEventListener('click', onLeft);
         btnRight.addEventListener('click', onRight);
 
-        overlay.classList.add('is-open');
+        setOverlayOpen(overlay, true);
       });
     }
 
@@ -345,9 +364,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         input.value = '';
         erro.style.display = 'none';
+        let focusTimer;
 
         const cleanup = () => {
-          overlay.classList.remove('is-open');
+          clearTimeout(focusTimer);
+          input.blur();
+          input.value = '';
+          setOverlayOpen(overlay, false);
           btnOk.removeEventListener('click', onOk);
           btnCancel.removeEventListener('click', onCancel);
           input.removeEventListener('keydown', onKey);
@@ -369,15 +392,37 @@ document.addEventListener("DOMContentLoaded", () => {
         btnCancel.addEventListener('click', onCancel);
         input.addEventListener('keydown', onKey);
 
-        overlay.classList.add('is-open');
-        setTimeout(() => input.focus(), 100);
+        setOverlayOpen(overlay, true);
+        focusTimer = setTimeout(() => input.focus({ preventScroll: true }), 100);
       });
     }
 
     const syncOverlay = document.getElementById('asmbSyncOverlay');
     const syncTabs = document.querySelectorAll('[data-sync-tab]');
     const syncPanels = document.querySelectorAll('[data-sync-panel]');
+    const syncRun = document.getElementById('asmbSyncRun');
     let activeSyncTab = 'enviar';
+    let cloudOperationPending = false;
+
+    function cloudAccount() {
+      const session = window.SupabaseSync?.checkExistingSession?.();
+      if (!session || session.status === 'unavailable') {
+        throw new Error('Não foi possível ler sua sessão agora. Tente novamente; seus dados foram mantidos.');
+      }
+      if (session.status !== 'signed-in') {
+        throw new Error("Você precisa fazer login em 'Salvar' antes de usar a Nuvem.");
+      }
+      return session.raw;
+    }
+
+    function setCloudBusy(busy) {
+      cloudOperationPending = busy;
+      syncRun.disabled = busy;
+      btnAbrirSync.disabled = busy;
+      btnLimparCache.disabled = busy;
+      syncTabs.forEach(button => { button.disabled = busy; });
+      syncOverlay.setAttribute('aria-busy', String(busy));
+    }
 
     function setSyncTab(tab) {
       activeSyncTab = tab;
@@ -393,146 +438,83 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    syncTabs.forEach(btn => btn.addEventListener('click', () => setSyncTab(btn.dataset.syncTab)));
+    syncTabs.forEach(btn => btn.addEventListener('click', () => {
+      if (!cloudOperationPending) setSyncTab(btn.dataset.syncTab);
+    }));
     
-    document.getElementById('asmbSyncClose').addEventListener('click', () => syncOverlay.classList.remove('is-open'));
-    document.getElementById('asmbSyncCancel').addEventListener('click', () => syncOverlay.classList.remove('is-open'));
+    document.getElementById('asmbSyncClose').addEventListener('click', () => setOverlayOpen(syncOverlay, false));
+    document.getElementById('asmbSyncCancel').addEventListener('click', () => setOverlayOpen(syncOverlay, false));
     
     btnAbrirSync.addEventListener('click', () => {
-      const isLoggedIn = !!localStorage.getItem('supabase_user');
-      if (!isLoggedIn) {
-        alert("Você precisa fazer login em 'Salvar' antes de usar a Nuvem.");
-        return;
-      }
+      if (cloudOperationPending) return;
+      try { cloudAccount(); }
+      catch (error) { alert(error.message); return; }
       setSyncTab('enviar');
       updateDynamicDayTexts(getActiveDay());
-      syncOverlay.classList.add('is-open');
+      setOverlayOpen(syncOverlay, true);
     });
 
-    document.getElementById('asmbSyncRun').addEventListener('click', async () => {
-      syncOverlay.classList.remove('is-open');
-      const actionValue = document.querySelector(`input[name="sync-${activeSyncTab}"]:checked`).value;
-      const day = getActiveDay();
-
-      if (activeSyncTab === 'apagar') {
-        const res1 = await showCustomAlert({
-          title: "Apagar anotações?",
-          text: "Tem certeza que deseja remover os dados da nuvem?",
-          left: "Não", right: "Sim", rightBold: true
-        });
-
-        if (res1 === 'right') {
-          setTimeout(async () => {
-            const res2 = await showCustomAlert({
-              title: "Último aviso!",
-              text: "Esta ação não pode ser desfeita. Tem certeza MESMO?",
-              left: "Apagar", leftDanger: true, leftBold: true,
-              right: "Não", rightBold: true
-            });
-
-            if (res2 === 'left') {
-              executeSyncCall('apagar', actionValue, day);
-            }
-          }, 300);
+    syncRun.addEventListener('click', async () => {
+      if (cloudOperationPending) return;
+      const tab = activeSyncTab;
+      const option = document.querySelector(`input[name="sync-${tab}"]:checked`)?.value;
+      setCloudBusy(true);
+      setOverlayOpen(syncOverlay, false);
+      try {
+        const account = cloudAccount();
+        if (!navigator.onLine) throw new Error('Você precisa de internet para sincronizar.');
+        if (tab === 'apagar') {
+          const first = await showCustomAlert({
+            title: 'Apagar anotações?',
+            text: 'Remover as notas e respostas do programa da nuvem e deste aparelho?',
+            left: 'Não', right: 'Sim', rightBold: true
+          });
+          if (first !== 'right') return;
+          const second = await showCustomAlert({
+            title: 'Confirmar exclusão',
+            text: 'As notas do programa serão removidas dos dois lugares. Deseja continuar?',
+            left: 'Apagar', leftDanger: true, leftBold: true,
+            right: 'Não', rightBold: true
+          });
+          if (second !== 'left') return;
+        } else if (option === 'overwrite') {
+          const answer = await showCustomAlert({
+            title: tab === 'enviar' ? 'Substituir nuvem?' : 'Restaurar aparelho?',
+            text: tab === 'enviar'
+              ? 'As notas e preferências do programa na nuvem serão substituídas pela cópia deste aparelho.'
+              : 'As notas e preferências do programa neste aparelho serão substituídas pela cópia da nuvem.',
+            left: 'Cancelar', right: 'Continuar', rightBold: true
+          });
+          if (answer !== 'right') return;
         }
-      } else if (activeSyncTab === 'enviar' && actionValue === 'overwrite') {
-        const res = await showCustomAlert({
-          title: "Tem certeza?",
-          text: "Isso vai apagar a nuvem atual e enviar a cópia exata deste aparelho.",
-          left: "Cancelar", right: "Continuar", rightBold: true
-        });
-        if (res === 'right') executeSyncCall('enviar', actionValue, day);
-      } else if (activeSyncTab === 'baixar' && actionValue === 'overwrite') {
-        const res = await showCustomAlert({
-          title: "Tem certeza?",
-          text: "Suas notas atuais não salvas serão apagadas e substituídas pelas da nuvem.",
-          left: "Cancelar", right: "Continuar", rightBold: true
-        });
-        if (res === 'right') executeSyncCall('baixar', actionValue, day);
-      } else {
-        executeSyncCall(activeSyncTab, actionValue, day);
+        await executeSyncCall(tab, option, account);
+      } catch (error) {
+        alert('Não foi possível concluir: ' + (error.message || 'erro desconhecido'));
+      } finally {
+        setCloudBusy(false);
       }
     });
 
-    async function executeSyncCall(tab, option, day) {
-       const year = PROGRAM_ID;
-       const sync = window.assembleiaSync;
-
-       const autorizado = await pedirSenha();
-       if (!autorizado) return;
-
-       if (tab === 'apagar') {
-         if (!window.SupabaseSync || typeof window.SupabaseSync.apagarAssembleiaCompleto !== 'function') {
-           alert('Nuvem indisponível no momento. Tente novamente.');
-           return;
-         }
-         let result;
-         result = await window.SupabaseSync.apagarAssembleiaCompleto(year);
-         if (result && result.success) {
-           apagarLocalAssembleia();
-           if (sync) sync.lastSavedDataJSON = '{}';
-           if (window.AssembleiaClickables && typeof window.AssembleiaClickables.refresh === 'function') {
-             window.AssembleiaClickables.refresh();
-             alert('Anotações apagadas da nuvem e do aparelho.');
-           } else {
-             alert('Anotações apagadas. Atualizando a tela...');
-             location.reload();
-           }
-         } else {
-           alert('Não foi possível apagar: ' + ((result && result.error) || 'erro desconhecido'));
-         }
-         return;
-       }
-
-       if (!sync) {
-         alert('Sincronização indisponível no momento. Tente novamente em instantes.');
-         return;
-       }
-       if (!localStorage.getItem('supabase_user')) {
-         alert('Você precisa estar logado para usar a nuvem da assembleia.');
-         return;
-       }
-       if (!navigator.onLine) {
-         alert('Você precisa de internet para sincronizar.');
-         return;
-       }
-
-       let result;
-       try {
-         if (tab === 'enviar') {
-           if (option === 'overwrite') result = await sync.pushOverwrite();
-           else result = await sync.pushMerge();
-         } else if (tab === 'baixar') {
-           if (option === 'overwrite') {
-             result = await sync.pullOverwrite();
-             if (result && result.success) {
-               alert('Conteúdo baixado da nuvem. Atualizando a tela...');
-               location.reload();
-               return;
-             }
-           } else {
-             result = await sync.loadFromSupabase(true);
-           }
-         }
-       } catch (e) {
-         result = { success: false, error: e.message };
-       }
-
-       if (result && result.success) {
-         alert(tab === 'enviar' ? 'Anotações enviadas para a nuvem com sucesso.' : 'Anotações baixadas da nuvem com sucesso.');
-       } else {
-         alert('Não foi possível concluir: ' + ((result && result.error) || 'erro desconhecido'));
-       }
-    }
-
-    function apagarLocalAssembleia() {
-       const prefixo = PROGRAM_PREFIX;
-       const remover = [];
-       for (let i = 0; i < localStorage.length; i++) {
-         const key = localStorage.key(i);
-         if (key && key.startsWith(prefixo)) remover.push(key);
-       }
-       for (const k of remover) localStorage.removeItem(k);
+    async function executeSyncCall(tab, option, account) {
+      const sync = window.assembleiaSync;
+      const method = tab === 'apagar' ? 'deleteAll' : {
+        enviar: { missing: 'pushMissing', merge: 'pushMerge', overwrite: 'pushOverwrite' },
+        baixar: { missing: 'pullMissing', merge: 'pullMerge', overwrite: 'pullOverwrite' }
+      }[tab]?.[option];
+      if (!method || typeof sync?.[method] !== 'function') {
+        throw new Error('Sincronização indisponível no momento. Tente novamente em instantes.');
+      }
+      if (!await pedirSenha()) return;
+      // The permission dialog belongs to this login, not a later account.
+      if (cloudAccount() !== account) throw new Error('A conta mudou. Abra a Nuvem novamente.');
+      if (!navigator.onLine) throw new Error('Você precisa de internet para sincronizar.');
+      const result = await sync[method]();
+      if (!result?.success) throw new Error(result?.error || 'Não foi possível confirmar a operação.');
+      if (tab === 'apagar') alert(result.preservedLocalChanges
+        ? 'A cópia anterior foi apagada. As alterações feitas durante a operação foram mantidas neste aparelho.'
+        : 'Anotações apagadas da nuvem e do aparelho.');
+      else if (tab === 'enviar') alert('Anotações enviadas para a nuvem com sucesso.');
+      else alert('Anotações baixadas da nuvem com sucesso.');
     }
 
     // LÓGICA DE LIMPEZA LOCAL (TRASH)
@@ -542,11 +524,13 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('asmbDeleteCancel').addEventListener('click', () => deleteOverlay.classList.remove('is-open'));
 
     btnLimparCache.addEventListener('click', () => {
+      if (cloudOperationPending) return;
       updateDynamicDayTexts(getActiveDay());
       deleteOverlay.classList.add('is-open');
     });
 
     document.getElementById('asmbDeleteRun').addEventListener('click', async () => {
+      if (cloudOperationPending) return;
       deleteOverlay.classList.remove('is-open');
       const opt = document.querySelector('input[name="local-delete-opt"]:checked').value;
       const day = getActiveDay();
@@ -634,23 +618,26 @@ document.addEventListener("DOMContentLoaded", () => {
         btnFonteToggle.addEventListener('click', () => toggleExpandable(btnFonteToggle, fontOptionsArea, btnTemaToggle, themeOptionsArea));
     }
 
+    function applyPerformanceMode(nextMode) {
+        window.__EDITOR_PERF_BOOT__ = nextMode;
+        document.documentElement.dataset.performanceMode = nextMode;
+        document.documentElement.classList.toggle('perf-low', nextMode === 'low');
+        document.documentElement.classList.toggle('perf-normal', nextMode !== 'low');
+        if (document.body) {
+            document.body.classList.toggle('perf-low', nextMode === 'low');
+            document.body.classList.toggle('perf-normal', nextMode !== 'low');
+        }
+        updatePerfIcon();
+    }
+
     if (btnPerfToggle) {
         btnPerfToggle.addEventListener('click', () => {
-            const isLow = isPerfLowMode();
-            const nextMode = isLow ? 'normal' : 'low';
+            const nextMode = isPerfLowMode() ? 'normal' : 'low';
             localStorage.setItem('editor-performance-mode', nextMode);
-            window.__EDITOR_PERF_BOOT__ = nextMode;
-            document.documentElement.dataset.performanceMode = nextMode;
-            document.documentElement.classList.toggle('perf-low', nextMode === 'low');
-            document.documentElement.classList.toggle('perf-normal', nextMode !== 'low');
-            if (document.body) {
-                document.body.classList.toggle('perf-low', nextMode === 'low');
-                document.body.classList.toggle('perf-normal', nextMode !== 'low');
-            }
             if (window.EditorPerfProfile?.setMode) {
                 window.EditorPerfProfile.setMode(nextMode, { reload: false });
             }
-            updatePerfIcon();
+            applyPerformanceMode(nextMode);
         });
     }
 
@@ -817,6 +804,17 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('programacao:daychange', (event) => {
         const dia = event?.detail?.dia;
         if (dia) applyColorForDay(dia);
+    });
+
+    window.addEventListener('assembleia:cloudapplied', (event) => {
+        const preferences = ['tema-interface', 'tamanho-fonte-global', 'editor-performance-mode', 'cor-assembleia'];
+        if (!event.detail?.keys?.some(key => preferences.includes(key))) return;
+        // Apply restored values without reloading, changing focus, or writing
+        // defaults back into a deliberately empty cloud snapshot.
+        const mode = localStorage.getItem('editor-performance-mode') === 'normal' ? 'normal' : 'low';
+        applyPerformanceMode(mode);
+        window.GlobalFontScale?.refresh?.();
+        carregarPreferencias();
     });
 
     carregarPreferencias();

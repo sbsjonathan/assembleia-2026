@@ -150,7 +150,8 @@ class SupabaseSync {
         const generation = ++this.authGeneration;
         if (!await this.ensureInitialized()) return { success: false, error: 'Não foi possível conectar. Tente novamente.' };
         try {
-            const { data: existing } = await this.supabase.from('usuarios').select('id').eq('usuario', usuario).single();
+            const { data: existing, error: readError } = await this.supabase.from('usuarios').select('id').eq('usuario', usuario).maybeSingle();
+            if (readError) return { success: false, error: 'Não foi possível verificar o cadastro. Tente novamente.' };
             if (existing) return { success: false, error: 'Usuário já existe' };
 
             const senhaHash = await this.hashPassword(senha);
@@ -203,160 +204,191 @@ class SupabaseSync {
         return this.currentUser;
     }
 
-    async readAssemblyDocument(semana, tipo, legacyTipo) {
-        const initialized = await this.ensureInitialized();
-        this.checkExistingSession();
-        if (!initialized || this.sessionUnavailable || !this.currentUser || !this.isOnline) throw new Error('Não foi possível consultar a nuvem.');
-        const userId = this.currentUser.id;
-        const read = async name => {
-            const { data, error } = await this.supabase.from('richtext_anotacoes').select('conteudo_html').eq('usuario_id', userId).eq('semana', semana).eq('tipo', name).maybeSingle();
-            if (error) throw error;
-            this.checkExistingSession();
-            if (this.sessionUnavailable || this.currentUser?.id !== userId) throw new Error('A conta mudou durante a consulta.');
-            return data;
-        };
-        // A stored empty document is authoritative. Only an absent new document
-        // can read the former Assembly copy; writes always use the new identity.
-        const current = await read(tipo);
-        return current === null && legacyTipo ? await read(legacyTipo) : current;
-    }
-
-    async carregarRichtextAnotacoes(semana) {
-        const data = await this.readAssemblyDocument(semana, 'ass26:richtext', 'assembleia2026:richtext');
-        return data?.conteudo_html ?? null;
-    }
-
-    async salvarRichtextAnotacoes(semana, conteudo) {
-        await this.ensureInitialized();
-        this.checkExistingSession();
-        if (this.sessionUnavailable || !this.currentUser || !this.isOnline) return { success: false, error: 'Não conectado' };
-
-        const userId = this.currentUser.id;
-        try {
-            const { data: existing, error: readError } = await this.supabase.from('richtext_anotacoes').select('id').eq('usuario_id', userId).eq('semana', semana).eq('tipo', 'ass26:richtext').maybeSingle();
-            if (readError) throw readError;
-            this.checkExistingSession();
-            if (this.sessionUnavailable || this.currentUser?.id !== userId) throw new Error('A conta mudou durante o salvamento.');
-            
-            const { data, error } = existing
-                ? await this.supabase.from('richtext_anotacoes').update({ conteudo_html: conteudo }).eq('id', existing.id).eq('usuario_id', userId).select().single()
-                : await this.supabase.from('richtext_anotacoes').insert({ usuario_id: userId, semana, tipo: 'ass26:richtext', conteudo_html: conteudo }).select().single();
-
-            if (error) throw error;
-            return { success: true, data };
-        } catch (error) {
-            return { success: false, error: error.message };
+    assertDocumentSession(session) {
+        const current = this.checkExistingSession();
+        if (current.status !== 'signed-in' || current.raw !== session.raw) {
+            throw new Error('A conta mudou ou ficou indisponível. As anotações locais foram mantidas.');
         }
+        if (!this.isOnline) throw new Error('Sem conexão. As anotações continuam salvas neste aparelho.');
     }
 
-    async carregarSentinelaAnotacoes(semana, estudoId) {
-        await this.ensureInitialized();
-        this.checkExistingSession();
-        if (this.sessionUnavailable || !this.currentUser || !this.isOnline) return null;
+    async documentSession() {
+        // Capture identity before the first await, including a same-account relogin.
+        const session = this.checkExistingSession();
+        if (session.status !== 'signed-in') throw new Error('Entre na sua conta para sincronizar.');
+        this.assertDocumentSession(session);
+        const ready = await this.ensureInitialized();
+        this.assertDocumentSession(session);
+        if (!ready) throw new Error('Não foi possível conectar à nuvem. Tente novamente.');
+        return session;
+    }
 
-        try {
-            const data = await this.readAssemblyDocument(semana, 'ass26:sentinela_anotacoes', 'assembleia2026:sentinela_anotacoes');
+    documentError(error) {
+        if (error?.code === '23505') return 'As notas da nuvem mudaram. Tente sincronizar novamente.';
+        if (error?.code === '22001') return 'O banco recusou o identificador deste documento. Atualize o aplicativo.';
+        return error?.message || 'Não foi possível confirmar a operação na nuvem. Tente novamente.';
+    }
 
-            if (data?.conteudo_html) {
-                const wrapper = JSON.parse(data.conteudo_html);
-                return wrapper.anotacoes || null;
-            }
-            return null;
-        } catch (error) {
-            return null;
+    documentScope(semana, tipo, aliases = [], decode = value => value) {
+        // Keep both identifiers within the reported varchar(20) limit. Programme
+        // identity belongs in semana, not appended to tipo; no truncation needed.
+        if (typeof semana !== 'string' || !semana.trim() || semana.length > 20 || tipo.length > 20) {
+            throw new Error('Identificador do documento inválido. Atualize a página.');
         }
+        return { semana, tipo, aliases, decode };
     }
-    
-    async salvarSentinelaAnotacoes(semana, estudoId, anotacoes) {
-        await this.ensureInitialized();
-        this.checkExistingSession();
-        if (this.sessionUnavailable || !this.currentUser || !this.isOnline) return { success: false, error: 'Não conectado' };
 
-        try {
-            const conteudoJSON = JSON.stringify({ estudo: estudoId, anotacoes, timestamp: new Date().toISOString() });
-            const { data: existing } = await this.supabase.from('richtext_anotacoes').select('id').eq('usuario_id', this.currentUser.id).eq('semana', semana).eq('tipo', 'ass26:sentinela_anotacoes').maybeSingle();
-
-            const { data, error } = existing
-                ? await this.supabase.from('richtext_anotacoes').update({ conteudo_html: conteudoJSON }).eq('id', existing.id).select().single()
-                : await this.supabase.from('richtext_anotacoes').insert({ usuario_id: this.currentUser.id, semana, tipo: 'ass26:sentinela_anotacoes', conteudo_html: conteudoJSON }).select().single();
-
-            if (error) throw error;
-            return { success: true, data };
-        } catch (error) {
-            return { success: false, error: error.message };
+    documentObject(value) {
+        if (!value || typeof value !== 'object' || Array.isArray(value)) {
+            throw new Error('O backup da nuvem está inválido. Nenhuma anotação foi substituída.');
         }
-    }
-
-    async carregarAssembleiaAnotacoes(ano) {
-        if (ano !== 'ca-copgm27') throw new Error('Programa da assembleia incompatível. Atualize a página.');
-        const initialized = await this.ensureInitialized();
-        this.checkExistingSession();
-        if (!initialized || this.sessionUnavailable || !this.currentUser || !this.isOnline) throw new Error('Não foi possível consultar a nuvem.');
-        const userId = this.currentUser.id;
-        const tipo = `ass26:programacao:${ano}`;
-        const { data, error } = await this.supabase.from('richtext_anotacoes').select('conteudo_html').eq('usuario_id', userId).eq('tipo', tipo).maybeSingle();
-        if (error) throw error;
-        this.checkExistingSession();
-        if (this.sessionUnavailable || this.currentUser?.id !== userId) throw new Error('A conta mudou durante a consulta.');
-        // A missing document is different from a failed query or invalid JSON.
-        if (!data) return null;
-        const value = JSON.parse(data.conteudo_html);
-        if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error('O backup da nuvem está inválido.');
         return value;
     }
 
-    async salvarAssembleiaAnotacoes(ano, anotacoesObj, options = {}) {
-        try {
-            if (ano !== 'ca-copgm27') throw new Error('Programa da assembleia incompatível. Atualize a página.');
-            const initialized = await this.ensureInitialized();
-            this.checkExistingSession();
-            if (!initialized || this.sessionUnavailable || !this.currentUser || !this.isOnline) throw new Error('Não conectado');
-            const userId = this.currentUser.id;
-            const tipo = `ass26:programacao:${ano}`;
-            const { data: existing, error: readError } = await this.supabase.from('richtext_anotacoes').select('id, conteudo_html').eq('usuario_id', userId).eq('tipo', tipo).maybeSingle();
-            if (readError) throw readError;
-            if (Object.prototype.hasOwnProperty.call(options, 'expectedRemote')) {
-                const current = existing ? JSON.parse(existing.conteudo_html) : null;
-                const stable = value => JSON.stringify(Object.entries(value || {}).sort(([a], [b]) => a.localeCompare(b)));
-                if (stable(current) !== stable(options.expectedRemote)) throw new Error('As notas da nuvem mudaram. Tente sincronizar novamente.');
-            }
-            this.checkExistingSession();
-            if (this.sessionUnavailable || this.currentUser?.id !== userId) throw new Error('A conta mudou durante o salvamento.');
-            const conteudoJSON = JSON.stringify(anotacoesObj);
-            // Preflight detects known conflicts. This backend has no verified revision
-            // column, so simultaneous writes from different devices are not atomic.
-            // Never put the full notes payload in a URL filter.
-            const { data, error } = existing
-                ? await this.supabase.from('richtext_anotacoes').update({ conteudo_html: conteudoJSON, semana: ano }).eq('id', existing.id).eq('usuario_id', userId).select().maybeSingle()
-                : await this.supabase.from('richtext_anotacoes').insert({ usuario_id: userId, semana: ano, tipo, conteudo_html: conteudoJSON }).select().single();
-            if (error) throw error;
-            if (!data) throw new Error('As notas da nuvem mudaram. Tente sincronizar novamente.');
-            return { success: true, data };
-        } catch (error) {
-            return { success: false, error: error.message };
-        }
+    stableDocument(value) {
+        if (value === null || typeof value !== 'object') return JSON.stringify(value);
+        if (Array.isArray(value)) return '[' + value.map(item => this.stableDocument(item)).join(',') + ']';
+        return '{' + Object.keys(value).sort().map(key => JSON.stringify(key) + ':' + this.stableDocument(value[key])).join(',') + '}';
     }
 
-    async apagarAssembleiaCompleto(ano) {
+    async readDocumentRow(session, scope, tipo) {
+        this.assertDocumentSession(session);
+        const { data, error } = await this.supabase.from('richtext_anotacoes')
+            .select('id, conteudo_html').eq('usuario_id', session.user.id)
+            .eq('semana', scope.semana).eq('tipo', tipo).maybeSingle();
+        this.assertDocumentSession(session);
+        if (error) throw new Error(this.documentError(error));
+        // Undefined/malformed responses are failures, never an empty cloud.
+        if (data !== null && (!data || data.id == null || typeof data.conteudo_html !== 'string')) {
+            throw new Error('A nuvem retornou um documento inválido. Tente novamente.');
+        }
+        return data;
+    }
+
+    async readDocument(session, scope) {
+        const canonical = await this.readDocumentRow(session, scope, scope.tipo);
+        let row = canonical;
+        for (const alias of scope.aliases) {
+            if (row !== null) break;
+            row = await this.readDocumentRow(session, scope, alias);
+        }
+        // Explicit empty content is authoritative and suppresses legacy fallback.
+        return { canonical, row, value: row === null ? null : scope.decode(row.conteudo_html) };
+    }
+
+    async loadDocument(scope) {
+        return (await this.readDocument(await this.documentSession(), scope)).value;
+    }
+
+    async writeDocument(scope, content, options = {}) {
+        // Validate the payload before any write. Encode/decode has the same contract
+        // as loading, including study identity checks and empty-document semantics.
+        scope.decode(content);
+        const session = await this.documentSession();
+        // A new login to the same account must wait for an already-sent write
+        // to that same row, while its own raw-session guard remains independent.
+        const key = JSON.stringify([session.user.id, scope.tipo, scope.semana]);
+        this.documentWrites ||= new Map();
+        const previous = this.documentWrites.get(key) || Promise.resolve();
+        const operation = previous.catch(() => {}).then(async () => {
+            this.assertDocumentSession(session);
+            const { canonical, value } = await this.readDocument(session, scope);
+            if (Object.prototype.hasOwnProperty.call(options, 'expectedRemote') &&
+                this.stableDocument(value) !== this.stableDocument(options.expectedRemote)) {
+                throw new Error('As notas da nuvem mudaram. Tente sincronizar novamente.');
+            }
+            this.assertDocumentSession(session);
+            // Preflight catches known conflicts. Cross-device compare-and-swap needs
+            // a server revision/RPC; never put full note content into URL filters.
+            const query = canonical
+                ? this.supabase.from('richtext_anotacoes').update({ conteudo_html: content })
+                    .eq('id', canonical.id).eq('usuario_id', session.user.id)
+                    .eq('semana', scope.semana).eq('tipo', scope.tipo)
+                : this.supabase.from('richtext_anotacoes').insert({ usuario_id: session.user.id,
+                    semana: scope.semana, tipo: scope.tipo, conteudo_html: content });
+            const { data, error } = await query.select('id, conteudo_html').maybeSingle();
+            this.assertDocumentSession(session);
+            if (error) throw new Error(this.documentError(error));
+            if (!data || data.id == null || data.conteudo_html !== content) {
+                throw new Error('A nuvem não confirmou o salvamento. As anotações locais foram mantidas.');
+            }
+            return { success: true, data };
+        });
+        this.documentWrites.set(key, operation);
+        try { return await operation; }
+        finally { if (this.documentWrites.get(key) === operation) this.documentWrites.delete(key); }
+    }
+
+    richtextScope(semana) {
+        return this.documentScope(semana, 'ass26:richtext', ['assembleia2026:richtext'], value => {
+            if (typeof value !== 'string') throw new Error('Conteúdo da anotação inválido.');
+            return value;
+        });
+    }
+
+    sentinelaScope(semana, estudoId) {
+        if (estudoId == null || !String(estudoId).trim()) throw new Error('Estudo não identificado. Atualize a página.');
+        return this.documentScope(semana, 'ass26:sentinela',
+            ['ass26:sentinela_anotacoes', 'assembleia2026:sentinela_anotacoes'], value => {
+                const wrapper = this.documentObject(JSON.parse(value));
+                if (wrapper.estudo == null || String(wrapper.estudo) !== String(estudoId)) {
+                    throw new Error('O backup pertence a outro estudo. Nenhuma anotação foi substituída.');
+                }
+                return this.documentObject(wrapper.anotacoes);
+            });
+    }
+
+    assembleiaScope(ano) {
+        if (ano !== 'ca-copgm27') throw new Error('Programa da assembleia incompatível. Atualize a página.');
+        return this.documentScope(ano, 'ass26:programacao', [`ass26:programacao:${ano}`],
+            value => this.documentObject(JSON.parse(value)));
+    }
+
+    async carregarRichtextAnotacoes(semana) {
+        return this.loadDocument(this.richtextScope(semana));
+    }
+
+    async salvarRichtextAnotacoes(semana, conteudo, options = {}) {
+        try { return await this.writeDocument(this.richtextScope(semana), conteudo, options); }
+        catch (error) { return { success: false, error: this.documentError(error) }; }
+    }
+
+    async carregarSentinelaAnotacoes(semana, estudoId) {
+        return this.loadDocument(this.sentinelaScope(semana, estudoId));
+    }
+
+    async salvarSentinelaAnotacoes(semana, estudoId, anotacoes, options = {}) {
         try {
-            if (ano !== 'ca-copgm27') throw new Error('Programa da assembleia incompatível. Atualize a página.');
-            const initialized = await this.ensureInitialized();
-            this.checkExistingSession();
-            if (!initialized || this.sessionUnavailable || !this.currentUser || !this.isOnline) throw new Error('Não conectado');
-            const { error } = await this.supabase.from('richtext_anotacoes').delete().eq('usuario_id', this.currentUser.id).eq('tipo', `ass26:programacao:${ano}`);
-            if (error) throw error;
-            return { success: true };
-        } catch (error) { return { success: false, error: error.message }; }
+            const content = JSON.stringify({ estudo: estudoId, anotacoes, timestamp: new Date().toISOString() });
+            return await this.writeDocument(this.sentinelaScope(semana, estudoId), content, options);
+        } catch (error) { return { success: false, error: this.documentError(error) }; }
+    }
+
+    async carregarAssembleiaAnotacoes(ano) {
+        return this.loadDocument(this.assembleiaScope(ano));
+    }
+
+    async salvarAssembleiaAnotacoes(ano, anotacoesObj, options = {}) {
+        try { return await this.writeDocument(this.assembleiaScope(ano), JSON.stringify(anotacoesObj), options); }
+        catch (error) { return { success: false, error: this.documentError(error) }; }
+    }
+
+    async apagarAssembleiaCompleto(ano, options = {}) {
+        // Keep an explicit empty current document so old names cannot restore
+        // cleared contents on the next download. This never clears local storage.
+        return this.salvarAssembleiaAnotacoes(ano, {}, options);
     }
 
     async apagarAssembleiaDia(ano, dia) {
         try {
             if (dia !== 'unico') throw new Error('Dia inválido');
-            const remote = await this.carregarAssembleiaAnotacoes(ano);
+            const scope = this.assembleiaScope(ano), session = await this.documentSession();
+            const { value: remote } = await this.readDocument(session, scope);
             if (!remote) return { success: true, removidos: 0 };
             const next = { ...remote };
             const keys = Object.keys(next).filter(key => key.startsWith(`${ano}:`));
             keys.forEach(key => delete next[key]);
+            this.assertDocumentSession(session);
             const result = await this.salvarAssembleiaAnotacoes(ano, next, { expectedRemote: remote });
             return { ...result, removidos: result.success ? keys.length : 0 };
         } catch (error) { return { success: false, error: error.message }; }

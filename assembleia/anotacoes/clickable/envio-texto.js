@@ -1,7 +1,7 @@
 (function() {
   if (window.envioTextoInicializado) return;
   window.envioTextoInicializado = true;
-  window.ENVIO_TEXTO_VERSAO = 'envio-texto-v5-final';
+  window.ENVIO_TEXTO_VERSAO = 'envio-texto-v6-contexto';
   try { console.log('[EnvioTexto] versao carregada:', window.ENVIO_TEXTO_VERSAO); } catch (e) {}
 
   let balao = null;
@@ -168,6 +168,8 @@
   }
 
   function confirmarEnvio(html, texto, quadro) {
+    const contexto = window.ConexaoPresenca?.contextoAtual?.();
+    if (!contexto) { mostrarToast('Sem conexão ativa. Não foi enviado.'); return; }
     injetarEstilo();
     // Fecha o teclado para o modal ficar centralizado e visivel
     if (document.activeElement && document.activeElement.blur) {
@@ -175,6 +177,7 @@
     }
 
     setTimeout(() => {
+      if (!contextoValido(contexto)) return;
       const overlay = document.createElement('div');
       overlay.className = 'envio-modal-overlay';
       overlay.innerHTML =
@@ -187,7 +190,7 @@
           '</div>' +
         '</div>';
       overlay.querySelector('.envio-modal-destino').textContent =
-        'Para ' + parNome() + ' · ' + (quadro.nome || 'anotação');
+        'Para ' + (contexto.parNome || 'usuário') + ' · ' + (quadro.nome || 'anotação');
       document.body.appendChild(overlay);
 
       const fechar = () => { if (overlay.parentNode) overlay.remove(); };
@@ -196,14 +199,18 @@
 
       overlay.querySelector('.envio-modal-enviar').addEventListener('click', () => {
         fechar();
-        dispararEnvio(html, texto, quadro);
+        dispararEnvio(html, texto, quadro, contexto);
       });
     }, 250);
   }
 
-  function dispararEnvio(html, texto, quadro) {
+  function contextoValido(contexto) {
+    return !!window.ConexaoPresenca?.contextoValido?.(contexto);
+  }
+
+  function dispararEnvio(html, texto, quadro, contexto) {
     const C = window.ConexaoPresenca;
-    if (!C || !C.enviarTexto) {
+    if (!C || !C.enviarTexto || !contextoValido(contexto)) {
       mostrarToast('Sem conexão ativa. Não foi enviado.');
       return;
     }
@@ -213,6 +220,7 @@
     const dados = { html: html, texto: texto, quadroId: quadro.id, quadroNome: quadro.nome, token: token };
 
     enviosPendentes[token] = {
+      contexto,
       quadroNome: quadro.nome,
       onAck: () => { confirmado = true; }
     };
@@ -225,12 +233,17 @@
     function tentar() {
       if (confirmado) return;
       if (!enviosPendentes[token]) return;
+      if (!contextoValido(contexto)) {
+        delete enviosPendentes[token];
+        mostrarToast('A conexão mudou. O envio foi cancelado.');
+        return;
+      }
       tentativa++;
 
       // Se nao da pra enviar agora (canal caiu), espera e tenta de novo
       const pode = C.podeEnviar && C.podeEnviar();
       if (pode) {
-        C.enviarTexto(dados);
+        C.enviarTexto(dados, contexto);
       }
 
       if (tentativa >= MAX) {
@@ -238,7 +251,7 @@
         setTimeout(() => {
           if (!confirmado && enviosPendentes[token]) {
             delete enviosPendentes[token];
-            mostrarToast('Falhou: ' + parNome() + ' não recebeu. Tente de novo.');
+            mostrarToast('Falhou: ' + (contexto.parNome || 'usuário') + ' não recebeu. Tente de novo.');
           }
         }, 2000);
         return;
@@ -251,11 +264,6 @@
     }
 
     tentar();
-  }
-
-  function parNome() {
-    const p = window.ConexaoPresenca && window.ConexaoPresenca.parAtual && window.ConexaoPresenca.parAtual();
-    return p ? (p.nome || 'usuário') : 'usuário';
   }
 
   const enviosPendentes = {};
@@ -313,6 +321,8 @@
 
   // --- RECEBIMENTO: mostra o pop-up quando um texto chega ---
   window.EnvioTextoReceber = function(payload) {
+    const contexto = window.ConexaoPresenca?.contextoAtual?.();
+    if (!contexto || !payload || contexto.parId !== payload.de_id || contexto.contaId !== payload.para_id) return;
     injetarEstilo();
     const overlay = document.createElement('div');
     overlay.className = 'envio-modal-overlay';
@@ -343,6 +353,11 @@
     });
 
     overlay.querySelector('.envio-modal-enviar').addEventListener('click', () => {
+      if (!contextoValido(contexto)) {
+        fechar();
+        mostrarToast('A conexão mudou. O texto não foi salvo.');
+        return;
+      }
       const r = gravarTextoRecebido(payload);
       if (window.ConexaoPresenca && window.ConexaoPresenca.responderTexto) {
         window.ConexaoPresenca.responderTexto(payload.de_id, payload.token, !!r);
@@ -445,18 +460,25 @@
   }
 
   // ACK: o destinatario confirmou que a mensagem CHEGOU (entrega garantida)
+  function envioDaResposta(payload) {
+    const pend = payload && enviosPendentes[payload.token];
+    return pend && contextoValido(pend.contexto) && pend.contexto.parId === payload.de_id && pend.contexto.contaId === payload.para_id ? pend : null;
+  }
+
   window.EnvioTextoAck = function(payload) {
-    const pend = enviosPendentes[payload.token];
+    const pend = envioDaResposta(payload);
     if (!pend) return;
     if (pend.jaConfirmou) return;
     pend.jaConfirmou = true;
     if (pend.onAck) pend.onAck();
-    mostrarToast('Entregue a ' + parNome() + '!');
+    mostrarToast('Entregue a ' + (pend.contexto.parNome || 'usuário') + '!');
+    setTimeout(() => { delete enviosPendentes[payload.token]; }, 120000);
     // A resposta final (aceitou/recusou) ainda pode chegar via EnvioTextoConfirmacao
   };
 
   // CONFIRMACAO FINAL: o destinatario aceitou ou recusou
   window.EnvioTextoConfirmacao = function(payload) {
+    if (!envioDaResposta(payload)) return;
     if (payload.aceito) {
       mostrarToast('Enviado com sucesso a ' + (payload.de_nome || 'usuário') + '!');
     } else {
@@ -464,4 +486,9 @@
     }
     if (enviosPendentes[payload.token]) delete enviosPendentes[payload.token];
   };
+  window.addEventListener('conexao:contextchange', () => {
+    Object.keys(enviosPendentes).forEach(token => delete enviosPendentes[token]);
+    document.querySelectorAll('.envio-modal-overlay').forEach(overlay => overlay.remove());
+    esconderBalao();
+  });
 })();
