@@ -249,6 +249,12 @@
     let scope = null;
     marks.forEach(m => {
       m.className = `hl-color-${color}`;
+      // A manual color choice belongs to the reader from this point onward.
+      // A later AI refresh must preserve it instead of treating it as generated.
+      delete m.dataset.iaOwner;
+      delete m.dataset.iaGroup;
+      delete m.dataset.iaPart;
+      delete m.dataset.iaMode;
       if (!scope) scope = m.closest('.paragrafo');
     });
     if (scope) saveState(scope);

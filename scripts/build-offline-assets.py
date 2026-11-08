@@ -34,7 +34,8 @@ shell=[
     'biblia/fonts/fonts.css',
 ]
 shell+=['sentinela/style.css','sentinela/imagem.js','sentinela/imagem/swiper-zoom.js','sentinela/imagem/swiper-zoom.css','worker/worker.html','worker/worker.js','sentinela/biblia/scriptbbl.js','sentinela/biblia/stylebbl.css','shared/typography.js','shared/typography.css','shared/statusbar.js','shared/statusbar.css','shared/statusbar-diagnostics.js','shared/statusbar-diagnostics.css','shared/statusbar-diagnostics-data.js','diagnostico-statusbar.html','diagnostico-pwa/index.html','diagnostico-pwa/manifest.json','diagnostico-pwa/teste.js','diagnostico-pwa/teste.css','biblia/dialog-motion.js','biblia/interaction-motion.js','biblia/interaction-motion.css','sentinela/menu/menu.js']
-shell+=['sentinela/clickable/'+name for name in ['clickable.js','clickable.css','agente_perguntas.js','agente_recap.js','agente-obj.js','agente-sub.js']]
+shell+=['sentinela/clickable/'+name for name in ['clickable.js','clickable.css','agente_perguntas.js','agente_recap.js','agente-obj.js','agente-sub.js','perguntas-highlights.js']]
+shell+=['sentinela/mark.js']
 # Tutor UI and its context parser must upgrade together, including downloaded articles.
 shell+=['sentinela/clickable/agente-modal/'+name for name in ['agente-modal.js','agente-modal.css','agente-contexto.js']]
 # Notes code and its persistence bridge must upgrade atomically with the new shell.

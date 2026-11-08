@@ -22,7 +22,7 @@ Os seis cânticos do programa abrem as respectivas páginas oficiais do JW.org, 
 
 O ícone próprio representa as fileiras e o palco de um auditório, em roxo sobre lavanda clara. O manifesto mantém a identidade da instalação `assembleia-2026`, enquanto a versão desta linha começa por `ass26-`.
 
-Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v12`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
+Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v13`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
 
 Na atualização da variante anterior, os dados do namespace `assembleia-2026:` são copiados sem apagar os originais. Notas do antigo congresso ficam separadas como `legacy-congresso:` e não são associadas aos novos discursos. Os dados do aplicativo Sentinela não são importados nem apagados.
 
@@ -49,6 +49,7 @@ Testes da página completa durante o foco, no navegador e no modo PWA: `python t
 Testes de ida e volta da anotação, resumo e recuperação de falhas: `python tests/test_program_summary.py`.
 Testes do menu compacto de Anotações, formatação, fonte global e persistência: `python tests/test_notes_menu.py`.
 Testes de listas numeradas, continuação com Enter, conversão e histórico: `python tests/test_notes_lists.py`.
+Testes dos destaques de perguntas: `python tests/test_question_highlight_core.py` e `python tests/test_question_highlights.py` (Chromium e WebKit opcional). Regras e fontes dos modelos em [Destaques das perguntas](docs/question-highlights.md).
 Testes do Tutor IA: `python tests/test_tutor_context.py` e `python tests/test_article_tutor.py` (Chromium; `WEBKIT_EXECUTABLE` habilita WebKit). Usam respostas simuladas, sem acessar o serviço de IA.
 
 O Tutor IA abre ao segurar o número da pergunta. Cada pergunta ou grupo mantém sua conversa e rascunho em memória durante a página, com somente uma janela ou bolinha visível. A bolinha fica presa à lateral da tela, pode ser movida e restaura a conversa; o controle de tela cheia expande o chat. O contexto enviado inclui somente a pergunta e os parágrafos correspondentes, sem anotações pessoais. O histórico no pedido é limitado aos últimos turnos, sem limitar a continuidade da interface. Ao navegar ou recarregar, essas conversas temporárias são descartadas.
@@ -57,7 +58,7 @@ O Tutor IA abre ao segurar o número da pergunta. Cada pergunta ou grupo mantém
 
 GitHub Pages publica a raiz da branch `main` em https://sbsjonathan.github.io/assembleia-2026/.
 
-Versão atual: `ass26-2026.11.08.6`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
+Versão atual: `ass26-2026.11.08.7`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
 
 O catálogo bíblico incluído permanece disponível no pacote. Cânticos externos, áudios, serviços de IA e sincronização precisam de conexão. A Sentinela consulta primeiro o estudo semanal já baixado; sem download nem conexão, informa que o estudo está indisponível.
 
