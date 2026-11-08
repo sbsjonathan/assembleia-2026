@@ -3,11 +3,88 @@ import { buildContext } from './agente-modal/agente-contexto.js';
 const PRIVATE = '.anotacao,.comentarios,.ia-wrapper,.clickable,[contenteditable]:not([contenteditable="false"]),button,input,textarea,select,script,style,template';
 const NOTE_PIN = 'a.footnote-link,a.footnote-ref,.simbolo-rodape,sup';
 const COLORS = ['yellow', 'green', 'blue'];
+const activeSweeps = new Map();
+const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+let sweepObserver;
 const prose = value => String(value ?? '').replace(/\u200B/g, '').replace(/\r\n?/g, '\n').replace(/[\t\f\v ]+/g, ' ').replace(/\n{3,}/g, '\n\n').trim();
 const clean = value => String(value ?? '').replace(/[\u200B\uFEFF]/g, '').replace(/\s+/g, ' ').trim();
 const canonical = value => clean(value).replace(/[“”]/g, '"').replace(/[‘’]/g, "'").replace(/[–—−]/g, '-');
 const clause = value => canonical(value).replace(/^\([a-z]\)\s*/i, '').replace(/^(?:e|ou)\s+/i, '').replace(/[?!.;:]+$/, '').trim();
 const questionWord = /\b(?:por\s+qu[eê]|como|o\s+que|que|qual|quais|quem|quando|onde|aonde|quanto|quantos|quantas)\b/i;
+
+function cancelSweep(mark) {
+  const animation = activeSweeps.get(mark);
+  if (!animation) return;
+  activeSweeps.delete(mark);
+  animation.cancel();
+  if (!activeSweeps.size) sweepObserver?.disconnect();
+}
+
+function ensureHighlightPaint() {
+  if (document.getElementById('ia-extractive-highlight-paint')) return;
+  const style = document.createElement('style');
+  style.id = 'ia-extractive-highlight-paint';
+  // mark.js intentionally disables animations on manually colored marks.
+  // Override its solid background only on marks still owned by this agent.
+  // The steady state is already fully painted, including cached HTML; only
+  // Web Animations supplies the temporary reveal, never persisted attributes.
+  const selector = 'mark[data-ia-owner][data-ia-mode="owned"]';
+  style.textContent = `
+    ${selector}.hl-color-yellow { --ia-sweep-color: #FFEC0D66; }
+    ${selector}.hl-color-green { --ia-sweep-color: #B7E49266; }
+    ${selector}.hl-color-blue { --ia-sweep-color: #98D8FF66; }
+    ${selector}:is(.ia-highlight,.ia-highlight-b) {
+      background-color: transparent !important;
+      background-image: linear-gradient(to right, var(--ia-sweep-color), var(--ia-sweep-color));
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 100% 100%;
+      box-decoration-break: slice;
+      -webkit-box-decoration-break: slice;
+      animation: none !important;
+    }
+  `;
+  document.head.append(style);
+  reducedMotion?.addEventListener('change', event => {
+    if (event.matches) [...activeSweeps.keys()].forEach(cancelSweep);
+  });
+}
+
+function revealHighlights(marks) {
+  if (reducedMotion?.matches || !Element.prototype.animate || !marks.length) return;
+  const ordered = marks.filter(mark => mark.isConnected).sort((a, b) =>
+    a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1);
+  const weights = ordered.map(mark => Math.max(5, mark.textContent.length));
+  const total = weights.reduce((sum, weight) => sum + weight, 0);
+  const duration = Math.max(900, Math.min(2200, total * 2.4));
+  let delay = 100;
+  sweepObserver ||= new MutationObserver(() => {
+    // Recoloring is a user's manual decision. Stop the reveal immediately;
+    // mark.js then owns the new solid color and the marker is no longer ours.
+    [...activeSweeps.keys()].forEach(mark => {
+      if (!mark.isConnected || !mark.dataset.iaOwner || !ownedMark(mark, mark.dataset.iaOwner)) cancelSweep(mark);
+    });
+  });
+  ordered.forEach((mark, i) => {
+    const partDuration = duration * weights[i] / total;
+    const animation = mark.animate([{backgroundSize: '0% 100%'}, {backgroundSize: '100% 100%'}],
+      {duration: partDuration, delay, easing: 'linear', fill: 'backwards'});
+    activeSweeps.set(mark, animation);
+    animation.onfinish = animation.oncancel = () => {
+      if (activeSweeps.get(mark) === animation) activeSweeps.delete(mark);
+      if (!activeSweeps.size) sweepObserver.disconnect();
+    };
+    sweepObserver.observe(mark, {attributes: true, attributeFilter: ['class', 'data-ia-owner', 'data-ia-mode']});
+    delay += partDuration;
+  });
+}
+
+function hasWholeWordBoundaries(text, start, end) {
+  const left = /[\p{L}\p{N}\p{M}]$/u;
+  const right = /^[\p{L}\p{N}\p{M}]/u;
+  return !(left.test(text.slice(0, start)) && right.test(text.slice(start))) &&
+    !(left.test(text.slice(0, end)) && right.test(text.slice(end)));
+}
 
 // Mask quoted examples and parenthetical asides before interpreting punctuation.
 // The returned text keeps exactly the original UTF-16 offsets.
@@ -206,7 +283,7 @@ export function applyHighlights(ownerId, parsed, bundle) {
     const index = indexParagraph(paragraph.element);
     const quote = canonical(highlight.literal_text);
     const start = index.text.indexOf(quote);
-    if (start < 0 || index.text.indexOf(quote, start + 1) !== -1 || !index.map.slice(start, start + quote.length).some(item => canReplaceColor(item, ownerId))) {invalid++; return;}
+    if (start < 0 || index.text.indexOf(quote, start + 1) !== -1 || !hasWholeWordBoundaries(index.text, start, start + quote.length) || !index.map.slice(start, start + quote.length).some(item => canReplaceColor(item, ownerId))) {invalid++; return;}
     plans.push({paragraph, start, end: start + quote.length, partNumber, highlight, color: COLORS[part.partIndex]});
   }));
   if (invalid || !plans.length) return {...parsed, parts, questionCount: classified.questionCount, appliedCount: 0,
@@ -220,9 +297,11 @@ export function applyHighlights(ownerId, parsed, bundle) {
     selected.push(plan);
   });
   const touched = new Set();
+  const createdMarks = [];
+  ensureHighlightPaint();
   bundle.paragraphs.forEach(paragraph => {
     paragraph.element.querySelectorAll('mark').forEach(mark => {
-      if (ownedMark(mark, ownerId)) {unwrap(mark); touched.add(paragraph);}
+      if (ownedMark(mark, ownerId)) {cancelSweep(mark); unwrap(mark); touched.add(paragraph);}
     });
   });
   const nodePlans = new Map();
@@ -257,10 +336,12 @@ export function applyHighlights(ownerId, parsed, bundle) {
       mark.className = `hl-color-${range.plan.color} ${range.plan.color === 'yellow' ? 'ia-highlight' : 'ia-highlight-b'}`;
       Object.assign(mark.dataset, {hlId: range.group, iaOwner: ownerId, iaGroup: range.group, iaPart: parts[range.plan.partNumber].hexKey, iaMode: 'owned'});
       selectedNode.replaceWith(mark); mark.append(selectedNode);
+      createdMarks.push(mark);
       touched.add(range.plan.paragraph); applied.add(range.plan);
     });
   }
   touched.forEach(paragraph => window.CacheAnotacao?.salvar(paragraph.id, paragraph.element.innerHTML));
+  revealHighlights(createdMarks);
   const resultParts = parts.map((part, i) => ({...part, highlights: selected.filter(plan => plan.partNumber === i && applied.has(plan)).map(plan => ({...plan.highlight, appliedParagraph: plan.paragraph.number, appliedMode: 'exact'}))}));
   return {...parsed, parts: resultParts, questionCount: classified.questionCount, appliedCount: applied.size,
     highlightWarning: invalid ? 'Alguns trechos não foram destacados porque não correspondem exatamente ao texto.' : ''};

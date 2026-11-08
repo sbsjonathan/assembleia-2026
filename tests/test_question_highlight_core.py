@@ -5,10 +5,12 @@ Set WEBKIT_EXECUTABLE to add WebKit.
 """
 import json
 import os
+from io import BytesIO
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Thread
 from playwright.sync_api import sync_playwright
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 MODULE = '/sentinela/clickable/perguntas-highlights.js'
@@ -59,6 +61,91 @@ def part(question, paragraph, literal, **extra):
 
 def apply(page, question_id, parts):
     return page.evaluate('a=>apply(a.id,a.parts)',dict(id=question_id,parts=parts))
+
+def check_animation(page, origin):
+    page.emulate_media(reduced_motion='no-preference')
+    load(page, origin)
+    pieces = [part('Em breve, que acontecimentos vão abalar a Terra?', 2, 'As nações atacarão o povo de Jeová.'),
+              part('Em breve, que acontecimentos vão abalar a Terra?', 1, 'A fera acabará com as organizações religiosas falsas.')]
+    # The provider's order differs from reading order, and paragraph1 is split
+    # around an em node. Every visible fragment must reveal in reading order.
+    timings = page.evaluate('''parts=>{
+      apply('q-1-2',parts);
+      window.qaSweepMarks=[...document.querySelectorAll('mark[data-ia-owner="q-1-2"]')];
+      window.qaSweepAnimations=qaSweepMarks.flatMap(mark=>mark.getAnimations());
+      qaSweepAnimations.forEach(animation=>animation.pause());
+      return qaSweepAnimations.map(animation=>animation.effect.getTiming());
+    }''', pieces)
+    assert len(timings) >= 4, 'Fragmented source text must still receive its reveal animation.'
+    assert all(timing['duration'] > 0 for timing in timings)
+    assert all(timings[i + 1]['delay'] >= timing['delay'] + timing['duration'] - 1
+               for i, timing in enumerate(timings[:-1])), timings
+    assert page.evaluate("qaWrites.every(row=>row.html===document.getElementById(row.id).innerHTML)"), 'Cache must contain final HTML during animation.'
+    assert not page.locator('mark[data-ia-owner][style]').count(), 'Transient reveal state must never be persisted inline.'
+    # Regenerating while an earlier sweep is paused must cancel its detached
+    # animations, and retain only the newly requested owned marks.
+    apply(page, 'q-1-2', [pieces[0]])
+    assert page.evaluate("qaSweepAnimations.every(animation=>animation.playState==='idle')")
+    assert page.evaluate('qaSweepMarks.every(mark=>!mark.isConnected)')
+
+    load(page, origin)
+    animation = page.evaluate('''parts=>{
+      apply('q-3',parts);
+      window.qaVisualMark=document.querySelector('#source-3 mark[data-ia-owner]');
+      window.qaVisualAnimation=qaVisualMark.getAnimations()[0];
+      qaVisualAnimation.pause();
+      const timing=qaVisualAnimation.effect.getTiming();
+      qaVisualAnimation.currentTime=timing.delay+timing.duration/2;
+      return {duration:timing.duration,delay:timing.delay};
+    }''', [part('O que ajuda nossa fé?', 3, 'Estudar fortalece nossa fé.')])
+    assert animation['duration'] > 0
+    mark = page.locator('#source-3 mark[data-ia-owner]')
+    mark.scroll_into_view_if_needed()
+    page.evaluate('()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))')
+    paint = mark.evaluate('''el=>{
+      const style=getComputedStyle(el);
+      return {size:style.backgroundSize,position:style.backgroundPosition,repeat:style.backgroundRepeat};
+    }''')
+    assert paint['size'].startswith('50%'), paint
+    assert paint['position'].startswith('0%') and paint['repeat'] == 'no-repeat', paint
+    # Inspect rendered pixels, not just animation metadata: at halfway the
+    # left part is yellow, while the right part still has no highlight.
+    box = mark.bounding_box()
+    image = Image.open(BytesIO(page.screenshot(clip=box))).convert('RGB')
+    def yellow_fraction(start, end):
+        pixels = [image.getpixel((x, y)) for x in range(start, end)
+                  for y in range(1, image.height - 1)]
+        return sum(r > 210 and g > 190 and b < 200 for r, g, b in pixels) / len(pixels)
+    assert yellow_fraction(2, image.width // 3) > .35, 'Left side must already be painted.'
+    assert yellow_fraction(image.width * 2 // 3, image.width - 2) < .05, 'Right side must still be unpainted.'
+
+    page.evaluate('qaVisualAnimation.finish()')
+    page.wait_for_function("qaVisualMark.getAnimations().length===0")
+    assert mark.evaluate('el=>getComputedStyle(el).backgroundSize') == '100% 100%'
+    assert page.evaluate("qaWrites.at(-1).html===document.querySelector('#source-3').innerHTML")
+
+    # Changing a live generated mark to a manual color ends the reveal and
+    # immediately hands paint/ownership back to the user's marker.
+    page.evaluate('''parts=>{
+      apply('q-3',parts);
+      window.qaManualMark=document.querySelector('#source-3 mark[data-ia-owner]');
+      window.qaManualAnimation=qaManualMark.getAnimations()[0];
+      qaManualAnimation.pause();
+    }''', [part('O que ajuda nossa fé?', 3, 'Estudar fortalece nossa fé.')])
+    page.locator('#source-3 mark[data-ia-owner]').tap()
+    page.locator('#hl-custom-menu .hl-color-btn-main').click()
+    page.locator('#hl-custom-menu [data-color="pink"]').click()
+    page.wait_for_function("qaManualAnimation.playState==='idle'")
+    assert page.evaluate("qaManualMark.className==='hl-color-pink' && !qaManualMark.hasAttribute('data-ia-owner')")
+    assert page.evaluate("getComputedStyle(qaManualMark).backgroundImage==='none'")
+
+    page.emulate_media(reduced_motion='reduce')
+    load(page, origin)
+    apply(page, 'q-3', [part('O que ajuda nossa fé?', 3, 'Estudar fortalece nossa fé.')])
+    assert page.locator('#source-3 mark[data-ia-owner]').evaluate('el=>el.getAnimations().length') == 0
+    assert page.locator('#source-3 mark[data-ia-owner]').evaluate('el=>getComputedStyle(el).backgroundSize') == '100% 100%'
+    assert page.evaluate("qaWrites.at(-1).html===document.querySelector('#source-3').innerHTML")
+    page.emulate_media(reduced_motion='no-preference')
 
 def check(engine, executable, origin):
     browser=engine.launch(executable_path=executable,headless=True,args=['--no-sandbox'] if engine.name=='chromium' else [])
@@ -129,6 +216,8 @@ def check(engine, executable, origin):
         [part(questions[0],1,'A fera acabará com as organizações religiosas falsas.'),part(questions[0],2,'Texto inexistente no artigo.')],
         [part(questions[0],1,'Apo. 17:16')],
         [part(questions[0],2,'Minha marca manual')],
+        [part(questions[0],1,'A fera acabará com as organizações religiosas falsas.'),part(questions[0],2,'As nações atacarão o povo de Jeo')],
+        [part(questions[0],1,'A fera acabará com as organizações religiosas falsas.'),part(questions[0],2,'ções atacarão o povo de Jeová.')],
     ]
     for invalid_parts in invalid_sets:
         page.evaluate('qaWrites.length=0')
@@ -186,7 +275,8 @@ def check(engine, executable, origin):
     assert page.locator('#source-1 em a').get_attribute('href')=='#inline'
     assert page.locator('mark mark').count()==0
 
-    print(json.dumps(dict(engine=engine.name,sourceScope='passed',semanticQuestionColors='passed',literalMatching='passed',manualAndLinkPreservation='passed',safeReplacementAndPersistence='passed')),flush=True)
+    check_animation(page, origin)
+    print(json.dumps(dict(engine=engine.name,sourceScope='passed',semanticQuestionColors='passed',literalMatching='passed',wholeWordBoundaries='passed',manualAndLinkPreservation='passed',safeReplacementAndPersistence='passed',leftToRightRenderedAnimation='passed',animationCancellationAndReducedMotion='passed')),flush=True)
     browser.close()
 
 def main():

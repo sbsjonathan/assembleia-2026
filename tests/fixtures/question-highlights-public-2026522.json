@@ -1,0 +1,54 @@
+{
+  "description": "Recorded extraction responses for public article2026522; replayed locally without AI requests.",
+  "model": "gemini-3.5-flash-lite",
+  "cases": [
+    {
+      "question": "1-2",
+      "payload": {
+        "sub_questions": [
+          {
+            "question": "Em breve, que acontecimentos vão abalar a Terra?",
+            "highlights": [
+              {
+                "paragraph_number": 1,
+                "literal_text": "Jeová irá colocar no coração dos governantes o “pensamento dele”, ou seja, de dar “à fera [a ONU] o reino que possuem”."
+              },
+              {
+                "paragraph_number": 1,
+                "literal_text": "a fera, cheia de poder e com total apoio de todos os governos, acabará com as organizações religiosas falsas de uma vez por todas."
+              },
+              {
+                "paragraph_number": 2,
+                "literal_text": "Nações do mundo todo vão trabalhar juntas num ataque total ao povo de Jeová."
+              },
+              {
+                "paragraph_number": 2,
+                "literal_text": "Influenciadas por Satanás, as nações vão tentar eliminar da Terra os adoradores verdadeiros e, junto com eles, a adoração pura."
+              },
+              {
+                "paragraph_number": 2,
+                "literal_text": "a guerra do Armagedom. Jesus vai liderar seu exército celestial, o que inclui os 144 mil, para destruir os maus e abrir para nós as portas do novo mundo justo de Jeová."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "question": "3",
+      "payload": {
+        "sub_questions": [
+          {
+            "question": "O que vamos ver neste estudo?",
+            "highlights": [
+              {
+                "paragraph_number": 3,
+                "literal_text": "vamos analisar o Salmo 91 e responder às seguintes perguntas: Que tipo de proteção Jeová nos promete? Como Jeová nos protege hoje? E como ele vai nos proteger no futuro?"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

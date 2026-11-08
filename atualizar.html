@@ -9,7 +9,7 @@
 <body><main><h1>Atualizar Assembleia</h1><p>Confira a versão do aplicativo e conclua a atualização neste dispositivo.</p><p id="status" role="status">Conferindo a versão…</p><p class="small">Suas anotações e a Bíblia salva permanecem neste dispositivo.</p><button id="retry" disabled>Verificando…</button><a class="action" id="open" href="index.html" hidden>Abrir Assembleia</a><p id="version" class="small"></p></main>
 <script>
 'use strict';
-const target='ass26-2026.11.08.8',root=new URL('./',location.href),status=document.getElementById('status'),button=document.getElementById('retry'),open=document.getElementById('open');
+const target='ass26-2026.11.08.9',root=new URL('./',location.href),status=document.getElementById('status'),button=document.getElementById('retry'),open=document.getElementById('open');
 function version(worker){return new Promise(resolve=>{if(!worker)return resolve(null);const channel=new MessageChannel();const timer=setTimeout(()=>{channel.port1.close();resolve(null)},1500);channel.port1.onmessage=({data})=>{if(data?.type!=='APP_VERSION')return;clearTimeout(timer);channel.port1.close();resolve(data)};worker.postMessage({action:'GET_APP_VERSION'},[channel.port2]);});}
 async function update(){button.disabled=true;button.textContent='Verificando…';open.hidden=true;
  try{if(!('serviceWorker'in navigator))throw new Error('Abra este endereço no Safari atualizado.');

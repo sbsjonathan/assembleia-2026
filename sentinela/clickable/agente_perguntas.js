@@ -6,10 +6,10 @@
     throw error;
   }));
   const pendingQuestions = new Map();
-  // Literal selection is independent of explanatory prose. The other response
-  // agents retain their existing models and presentation.
+  // Literal selection remains independent of explanatory prose.
   const HIGHLIGHT_CONFIG = {
-    models: ['gemini-3.5-flash-lite', 'gemini-3.1-flash-lite'],
+    model: 'gemini-3.5-flash-lite',
+    maxAttempts: 2,
     maxInputChars: 24000,
     maxOutputTokens: 1536
   };
@@ -17,9 +17,8 @@
     enabled: true,
     workerUrl: 'https://gem.jonjonathan2-0.workers.dev',
     modelFallbacks: [
-      'gemini-3.1-flash-lite-preview',
-      'gemini-3-flash-preview',
-      'gemini-2.5-flash'
+      'gemini-3.5-flash-lite',
+      'gemini-3.1-flash-lite'
     ],
     timeoutMs: 22000,
     maxInputChars: 12000,
@@ -82,20 +81,30 @@
   }
 
   function safeJSONParse(text) {
-    if (!text) return null;
-    let cleaned = text.replace(/```json\s*/gi, '').replace(/```\s*/gi, '').trim();
-    const start = cleaned.indexOf('{');
-    const end = cleaned.lastIndexOf('}');
+    if (typeof text !== 'string' || !text.trim()) return null;
+    const cleaned = text.replace(/^\s*```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '').trim();
+    // A valid top-level array must not be sliced into its first/last objects.
+    try { return JSON.parse(cleaned); } catch (_) {}
+    const start = cleaned.search(/[\[{]/);
+    const end = cleaned.lastIndexOf(cleaned[start] === '[' ? ']' : '}');
     if (start >= 0 && end >= start) {
-      let jsonStr = cleaned.slice(start, end + 1);
-      jsonStr = jsonStr.replace(/,\s*([\]}])/g, '$1');
-      try {
-        return JSON.parse(jsonStr);
-      } catch (e) {
-        return null;
-      }
+      try { return JSON.parse(cleaned.slice(start, end + 1)); } catch (_) {}
     }
     return null;
+  }
+
+  function parseQuestionPayload(text, extractive) {
+    const parsed = safeJSONParse(text);
+    const parts = Array.isArray(parsed) ? parsed : Array.isArray(parsed?.sub_questions) ? parsed.sub_questions :
+      parsed && typeof parsed === 'object' && (extractive ? Array.isArray(parsed.highlights) : typeof parsed.natural_answer === 'string') ? [parsed] : null;
+    if (!parts?.length || parts.length > 12 || parts.some(part => {
+      if (!part || typeof part !== 'object' || Array.isArray(part) || typeof part.question !== 'string') return true;
+      if (!extractive) return typeof part.natural_answer !== 'string' || !part.natural_answer.trim() || typeof part.literal_smooth !== 'string';
+      return !Array.isArray(part.highlights) || part.highlights.some(highlight => !highlight ||
+        !Number.isInteger(Number(highlight.paragraph_number)) || Number(highlight.paragraph_number) < 1 ||
+        typeof highlight.literal_text !== 'string' || !highlight.literal_text.trim());
+    })) throw new Error('A IA devolveu uma resposta incompleta.');
+    return {sub_questions: parts};
   }
 
   function isConfigured() {
@@ -382,19 +391,17 @@
   }
 
   function buildPrompt(bundle) {
-    // A short fact label anchors each quotation to a necessary answer point;
-    // it is validation guidance, never prose shown in the response tabs.
+    // Complete source evidence, independent of written answers and model reasoning.
     return [
-      "Extraia somente as evidências literais mínimas que respondem à pergunta. Não redija resposta nem resumo.",
-      "Retorne JSON: {\"sub_questions\":[{\"question\":\"pergunta original ou cláusula independente literal\",\"highlights\":[{\"fact\":\"fato essencial em até 4 palavras\",\"paragraph_number\":1,\"literal_text\":\"trecho exato mínimo\"}]}]}.",
-      "Uma pergunta sobre vários acontecimentos ou parágrafos continua sendo uma única pergunta; vírgulas e enumerações não criam perguntas. Separe apenas solicitações realmente independentes ou partes (a)/(b)/(c).",
-      "Cada highlight deve ser uma cópia contínua da fonte, sem paráfrase. Use vários trechos quando houver lacunas. Preserve as informações necessárias, sem expandir até o fim do parágrafo automaticamente.",
-      "Selecione a resposta completa e pare. Exclua citações de apoio, notas, exemplos dispensáveis e frases que só anunciam a ordem da exposição ou repetem um tema já selecionado.",
-      "Para perguntas sobre o conteúdo que será estudado, selecione o assunto e os temas que serão respondidos. Uma frase posterior de roteiro não acrescenta outro tema quando repete o assunto.",
-      "Exemplo: pergunta \"O que estudaremos?\"; fonte \"Estudaremos X e suas aplicações hoje e no futuro. Mas antes, faremos uma visão geral de X.\"; destaque apenas \"Estudaremos X e suas aplicações hoje e no futuro.\".",
-      "Perguntas dentro do parágrafo podem enumerar os temas do estudo: nesse caso são parte da resposta, não novas sub_questions.",
-      "Não acrescente nada que não esteja na fonte. Se não houver evidência, retorne highlights: [].",
-      "Antes de cada citação, identifique o fato concreto em fact. Frases vagas como “coisas vão acontecer” não dizem QUAIS acontecimentos e ficam fora. Se a mesma ideia aparece numa preparação e numa ação concreta, selecione a ação concreta; não duplique a explicação.",
+      "Extraia somente os trechos literais que, juntos, respondem à pergunta por completo. Retorne JSON, sem resumo ou comentários.",
+      "Formato: {\"sub_questions\":[{\"question\":\"pergunta original ou cláusula independente literal\",\"highlights\":[{\"paragraph_number\":1,\"literal_text\":\"cópia contínua exata da fonte\"}]}]}.",
+      "Uma pergunta pode ter vários fatos e parágrafos. Vírgulas, enumerações e perguntas no corpo do texto não criam sub_questions. Separe apenas solicitações independentes ou partes (a)/(b)/(c).",
+      "Leia todos os parágrafos antes de selecionar. Em uma sequência de acontecimentos, mantenha a decisão que inicia a sequência, cada ação e a explicação que acrescenta agente, motivo, alvo ou desfecho. Um anúncio e uma explicação complementar não são duplicatas.",
+      "Inclua o nome do acontecimento e sua ação completa, com complementos e resultados coordenados necessários. Não corte a explicação após metade da ação. Copie a oração completa quando toda ela responde, incluindo suas ligações curtas. Separe trechos distantes, sem paráfrase, reticências ou referências de apoio.",
+      "Texto entre aspas pode ser a própria resposta; não o descarte por ser citação. Exclua introduções vagas, perguntas retóricas, indicação bibliográfica, exemplos dispensáveis e roteiro repetitivo.",
+      "Exemplo de cobertura: pergunta \"Que acontecimentos são esperados?\"; fonte \"Haverá mudanças. A prefeitura autorizará a entrada. Os bombeiros entrarão na área. O relatório explica: ‘Por causa da fumaça, eles retirarão as famílias e os animais.’ Por fim, virá a reconstrução. Equipes removerão os escombros e reconstruirão as casas.\"; selecione \"A prefeitura autorizará a entrada.\", \"Os bombeiros entrarão na área.\", \"Por causa da fumaça, eles retirarão as famílias e os animais.\" e \"Por fim, virá a reconstrução. Equipes removerão os escombros e reconstruirão as casas.\". A retirada acrescenta causa e alvo; a entrada não a substitui.",
+      "Para \"O que estudaremos?\", selecione o assunto e todos os temas propostos, mesmo em forma de perguntas. Exemplo: \"Estudaremos X e suas aplicações hoje e no futuro. Mas antes, faremos uma visão geral de X.\" → somente \"Estudaremos X e suas aplicações hoje e no futuro.\". A última frase apenas repete o roteiro.",
+      "Confira se cada informação pedida aparece nos trechos selecionados e se nenhum desfecho foi cortado. Se não houver resposta na fonte, retorne highlights: [].",
       'PERGUNTA: ' + JSON.stringify(bundle.questionText),
       'PARÁGRAFOS: ' + JSON.stringify(bundle.paragraphs.map(p => ({n: p.number, text: p.text})))
     ].join('\n');
@@ -472,7 +479,8 @@
           temperature: Number(CONFIG.temperature) || 0.15,
           topP: Number(CONFIG.topP) || 0.85,
           topK: Number(CONFIG.topK) || 24,
-          maxOutputTokens: Number(CONFIG.maxOutputTokens) || 2500
+          maxOutputTokens: Number(CONFIG.maxOutputTokens) || 2500,
+          ...(/^gemini-3\.[15]-flash-lite$/.test(modelName) ? {thinkingConfig: {thinkingLevel: 'minimal'}} : {})
         }
       };
 
@@ -488,10 +496,10 @@
       if (!response.ok) {
         const message = data?.error || `Erro ${response.status}`;
         if (response.status === 429 || /quota|rate/i.test(message)) setCooldown(modelName, extractRetryAfterMs(message, response.headers), 'rate_limit');
-        throw new Error(message);
+        throw Object.assign(new Error(message), {status: response.status});
       }
 
-      if (!data.text) throw new Error('A IA não retornou conteúdo utilizável.');
+      if (typeof data.text !== 'string' || !data.text.trim()) throw new Error('A IA não retornou conteúdo utilizável.');
       return data.text;
     } finally {
       clearTimeout(timeoutId);
@@ -500,14 +508,20 @@
 
   async function requestWithFallback(prompt, imagePart = null, isJson = true, extractive = false) {
     if (extractive && prompt.length > HIGHLIGHT_CONFIG.maxInputChars) throw new Error('Este trecho é grande demais para uma marcação segura. Abra uma pergunta menor.');
-    const models = extractive ? HIGHLIGHT_CONFIG.models : Array.isArray(CONFIG.modelFallbacks) && CONFIG.modelFallbacks.length ? CONFIG.modelFallbacks.slice() : DEFAULT_CONFIG.modelFallbacks.slice();
+    // Keep extraction on the model validated for source coverage. A transient
+    // failure may retry once; do not silently switch to a different selector.
+    const models = extractive ? Array(HIGHLIGHT_CONFIG.maxAttempts).fill(HIGHLIGHT_CONFIG.model) : Array.isArray(CONFIG.modelFallbacks) && CONFIG.modelFallbacks.length ? CONFIG.modelFallbacks.slice() : DEFAULT_CONFIG.modelFallbacks.slice();
     let lastError = null;
     for (const model of models) {
       try {
         const text = await requestGemini(prompt, model, imagePart, isJson, extractive);
-        return { text, model };
+        // HTTP 200 is not sufficient: truncated/malformed output must use the
+        // fallback before any response or source marks are replaced.
+        const payload = isJson ? parseQuestionPayload(text, extractive) : null;
+        return { text, model, payload };
       } catch (error) {
         lastError = error;
+        if (extractive && ((error.status >= 400 && error.status < 500) || getActiveCooldown(model).until)) break;
       }
     }
     throw lastError || new Error('Falha ao consultar a IA.');
@@ -553,6 +567,7 @@
     const imageInfo = findAssociatedImage(bundle);
     const bibleLinks = findBibleLinks(bundle);
 
+    const previousResponse = responseDiv.querySelector('.ia-tabs-container') ? responseDiv.innerHTML : '';
     setLoading(iaWrapper, button, responseDiv, 'Analisando o artigo para gerar a resposta...');
 
     let textParsed = null;
@@ -580,9 +595,7 @@
     const highlightJob = (async () => {
       try {
         const result = await requestWithFallback(buildPrompt(bundle), null, true, true);
-        const payload = safeJSONParse(result.text);
-        if (!Array.isArray(payload?.sub_questions) || !payload.sub_questions.length) throw new Error('A seleção veio incompleta. Os destaques anteriores foram mantidos.');
-        highlightResult = highlighter.applyHighlights(idPergunta, {parts: payload.sub_questions, model: result.model}, bundle);
+        highlightResult = highlighter.applyHighlights(idPergunta, {parts: result.payload.sub_questions, model: result.model}, bundle);
       } catch (_) {
         highlightResult = {highlightWarning: 'Não foi possível atualizar os destaques. As marcações anteriores foram mantidas.'};
       }
@@ -590,17 +603,15 @@
     })();
     try {
       const result = await requestWithFallback(buildNaturalPrompt(bundle), null, true);
-      const payload = safeJSONParse(result.text);
-      if (!Array.isArray(payload?.sub_questions) || !payload.sub_questions.length) throw new Error('Ocorreu um erro ao formatar a resposta. Tente novamente.');
-      textParsed = highlighter.validateQuestionParts(payload.sub_questions, bundle.questionText);
+      textParsed = highlighter.validateQuestionParts(result.payload.sub_questions, bundle.questionText);
       textParsed.model = result.model;
       textParsed.has_image = !!imageInfo;
       textParsed.has_bible = bibleLinks.length > 0;
       renderCurrentResponse();
     } catch (error) {
       await highlightJob;
-      const markStatus = highlightResult?.appliedCount ? 'Os destaques foram atualizados. ' : '';
-      responseDiv.innerHTML = `<div class="ia-inline-note ia-status-error">${escapeHTML(markStatus + 'Não foi possível gerar a resposta escrita. Tente novamente.')}</div>`;
+      const markStatus = highlightResult?.appliedCount ? '<div class="ia-inline-note">Os destaques foram atualizados.</div>' : '';
+      responseDiv.innerHTML = previousResponse + markStatus + '<div class="ia-inline-note ia-status-error">Não foi possível gerar a resposta escrita. Tente novamente.</div>';
       clearLoading(iaWrapper, button);
       return;
     }
