@@ -519,6 +519,8 @@ def check_layout_matrix(browser, engine_name, origin):
                       if route.request.url.startswith(origin + '/') else route.abort())
         context.add_init_script(MOCKS)
         page = context.new_page()
+        errors = []
+        page.on('pageerror', lambda error: errors.append(str(error)))
         page.goto(origin + FIXTURE_PATH)
         page.wait_for_function('window.ArticleTutor && window.GlobalFontScale')
         page.evaluate('document.fonts.ready')
@@ -550,6 +552,7 @@ def check_layout_matrix(browser, engine_name, origin):
         assert_within_viewport(page, '#agente-pergunta')
         page.locator('#agente-expandir').click()
         assert_initial_clearance(page)
+        assert not errors, errors
         context.close()
     return len(cases)
 
