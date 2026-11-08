@@ -138,23 +138,34 @@ const bindTapIntent = (el, handler, { delay = 240, slop = 10, preventFocus = tru
     return editable.classList.contains('toggle-title');
   };
 
-  const stateFromAncestors = range => {
+  const typeFromAncestors = range => {
     let node = range?.startContainer?.nodeType === 3 ? range.startContainer.parentNode : range?.startContainer;
     while (node && node !== editor) {
-      if (node.nodeType === 1 && (node.tagName === 'UL' || node.tagName === 'OL' || node.tagName === 'LI')) return true;
+      if (node.nodeType === 1 && node.tagName === 'UL') return 'unordered';
+      if (node.nodeType === 1 && node.tagName === 'OL') return 'ordered';
       node = node.parentNode;
     }
-    return false;
+    return null;
   };
 
-  const queryState = () => {
+  const getListType = () => {
     const range = getEditorRange();
-    if (!range) return false;
-    try {
-      if (document.queryCommandState('insertUnorderedList')) return true;
-    } catch (err) {}
-    return stateFromAncestors(range);
+    if (range) {
+      const ancestorType = typeFromAncestors(range);
+      if (ancestorType) return ancestorType;
+      try {
+        if (document.queryCommandState('insertOrderedList')) return 'ordered';
+        if (document.queryCommandState('insertUnorderedList')) return 'unordered';
+      } catch (err) {}
+      return null;
+    }
+    // The top panel can take focus without discarding the editor selection.
+    const saved = M1_Config.state.lastR;
+    if (!saved || !insideEditor(saved.startContainer) || !insideEditor(saved.endContainer)) return null;
+    return typeFromAncestors(saved);
   };
+
+  const queryState = () => !!getEditorRange() && getListType() === 'unordered';
 
   const setPressed = active => {
     bulletBtn.classList.toggle('is-active', !!active);
@@ -174,15 +185,13 @@ const bindTapIntent = (el, handler, { delay = 240, slop = 10, preventFocus = tru
     setPressed(queryState());
   };
 
-  const applyList = () => {
+  const applyList = (ordered = false) => {
     if (!ensureSelection()) return;
     const editable = getActiveEditable();
     if (isBlockedEditable(editable)) {
       syncButton();
       return;
     }
-
-    const wasActive = queryState();
 
     window.M12_History?.beforeChange?.();
 
@@ -195,7 +204,7 @@ const bindTapIntent = (el, handler, { delay = 240, slop = 10, preventFocus = tru
     M4_Caret.restR();
 
     try {
-      document.execCommand('insertUnorderedList', false, null);
+      document.execCommand(ordered ? 'insertOrderedList' : 'insertUnorderedList', false, null);
     } catch (err) {}
 
     M3_TextModel.sync(editable);
@@ -203,7 +212,7 @@ const bindTapIntent = (el, handler, { delay = 240, slop = 10, preventFocus = tru
     M4_Caret.updateFocus();
     window.M12_History?.afterChange?.(2);
 
-    setPressed(!wasActive);
+    syncButton();
     queueSyncUI()
     requestAnimationFrame(() => requestAnimationFrame(syncButton));
     setTimeout(syncButton, 60);
@@ -218,7 +227,11 @@ const bindTapIntent = (el, handler, { delay = 240, slop = 10, preventFocus = tru
     });
   };
 
-  Object.assign(window.NotesEditorActions ||= {}, {list: applyList});
+  Object.assign(window.NotesEditorActions ||= {}, {
+    list: () => applyList(),
+    orderedList: () => applyList(true),
+    getListType
+  });
 
   bindTapIntent(bulletBtn, e => {
     if (e) e.preventDefault();

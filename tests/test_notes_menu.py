@@ -1,4 +1,4 @@
-"""Inline notes tools, formatting, shared reading size, and preserved notes.
+"""Compact grouped notes tools, formatting, shared reading size, and persistence.
 
 Run with WEBKIT_EXECUTABLE set to also exercise WebKit. These checks use real
 notes pages and synthetic notes; they do not emulate the native iPhone keyboard.
@@ -85,11 +85,22 @@ def check(engine, executable, origin):
     navbar.tap()
     page.wait_for_timeout(350)
     after_top = page.locator('#editor').bounding_box()['y']
-    assert after_top > before_top + 200, (before_top, after_top)
+    panel_height = panel.bounding_box()['height']
+    assert 150 < panel_height <= 300, panel_height
+    assert abs(after_top - before_top - panel_height) < 2, (before_top, after_top, panel_height)
     assert panel.get_attribute('aria-hidden') == 'false'
     assert not panel.evaluate('(el) => el.inert')
     assert page.locator('#notes-versions:not([hidden])').count() == 0
     assert panel.locator('[role="dialog"]').count() == 0
+    assert panel.locator('.notes-tools-more, #notes-tools-export, #notes-tools-version-1, #notes-tools-original, #notes-tools-recovery').count() == 0
+    assert 'Versões e exportação' not in panel.inner_text()
+    assert tool('toggle').inner_text().strip() == 'Toggle'
+    assert tool('list').inner_text().strip() == 'Bullet'
+    assert tool('orderedList').count() == 1
+    assert panel.locator('[data-notes-group]').evaluate_all('(elements) => elements.map(el => el.dataset.notesGroup)') == ['history', 'format', 'colors', 'lists']
+    assert panel.locator('[data-notes-group="lists"] [data-notes-action]').count() == 3
+    assert page.locator('#kbdToolbar [data-notes-action="orderedList"]').count() == 0
+    assert page.locator('#kbdToolbar .tool-btn').count() == 11
     assert page.locator('#notes-diagnose-navbar, #notes-navbar-diagnostic-script').count() == 0
     assert page.evaluate('cacheRichText.snapshot().key') == initial_key
     navbar.tap()
@@ -128,6 +139,16 @@ def check(engine, executable, origin):
     tool('list').tap()
     page.wait_for_timeout(150)
     assert editable.locator('ul').count() == 0
+    select_word()
+    tool('orderedList').tap()
+    page.wait_for_timeout(150)
+    assert editable.locator('ol li').count() == 1
+    assert tool('orderedList').get_attribute('aria-pressed') == 'true'
+    assert tool('list').get_attribute('aria-pressed') == 'false'
+    select_word()
+    tool('orderedList').tap()
+    page.wait_for_timeout(150)
+    assert editable.locator('ol').count() == 0
     select_word()
     tool('font').tap()
     panel.locator('[data-notes-style="h1"]').tap()
@@ -215,23 +236,14 @@ def check(engine, executable, origin):
     open_panel()
     assert slider.input_value() == '7'
 
-    panel.locator('.notes-tools-more summary').tap()
-    with page.expect_download() as download_info:
-        panel.locator('#notes-tools-export').tap()
-    download = download_info.value
-    exported = json.loads(Path(download.path()).read_text())
-    assert 'Nota' in exported['html'] and 'versões' in exported['html']
-    assert download.suggested_filename == 'anotacoes-02-11.json'
-    panel.locator('#notes-tools-version-1').tap()
-    page.wait_for_url('**/container-v1.html?semana=02-11&versao=1')
-    page.wait_for_function('window.cacheRichText && window.NotesVersions')
+    # Removing version/export controls must not affect automatic note saving.
+    page.evaluate('cacheRichText.flush()')
+    page.reload()
+    page.wait_for_function('window.NotesMenu && window.cacheRichText')
+    page.evaluate('cacheRichText.ready')
     assert TEXT in page.locator('#editor').inner_text()
-    navbar.tap()
-    assert page.locator('#notes-font-level').input_value() == '7'
-    page.locator('#notes-version-2').tap()
-    page.wait_for_url('**/container.html?semana=02-11&versao=2')
-    page.wait_for_function('window.NotesMenu')
-    assert TEXT in page.locator('#editor').inner_text()
+    assert page.evaluate('GlobalFontScale.getLevel()') == 7
+    assert panel.get_attribute('aria-hidden') == 'true'
 
     # A long note is scrolled only when the tools are explicitly requested.
     set_note('\n'.join(f'Linha {index}: anotação sintética preservada.' for index in range(45)))
@@ -250,8 +262,10 @@ def check(engine, executable, origin):
     # by scrolling the existing editor scroller rather than a second modal.
     page.set_viewport_size({'width': 320, 'height': 568})
     open_panel()
-    tool('font').tap()
     page.evaluate('GlobalFontScale.setLevel(11)')
+    page.wait_for_timeout(250)
+    assert panel.bounding_box()['height'] <= 300, panel.bounding_box()
+    tool('font').tap()
     for theme in ['light', 'dark']:
         page.evaluate('(theme) => document.documentElement.dataset.theme = theme', theme)
         page.wait_for_timeout(250)
@@ -294,7 +308,7 @@ def check(engine, executable, origin):
     browser.close()
     return {'browser': engine.name, 'inline_layout_toggle': 'passed',
             'formatting_and_history': 'passed', 'color_and_reader': 'passed',
-            'font_levels': 'passed', 'export_and_versions': 'passed',
+            'font_levels': 'passed', 'removed_options_and_persistence': 'passed',
             'small_screen_and_long_note': 'passed'}
 
 

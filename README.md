@@ -4,7 +4,7 @@ Aplicativo da Assembleia de Circuito de 2026–2027 com o superintendente de cir
 
 - Início: abas Manhã, Tarde e Perguntas; 11 notas por discurso, cinco respostas de revisão e atalho para A Sentinela.
 - Bíblia: leitor, busca e referências da versão atual do sistema de estudo.
-- Anotações: tocar novamente no ícone abre ou recolhe as ferramentas no topo do editor, deslocando o texto sem sobreposição. Inclui desfazer/refazer, negrito, itálico, listas, blocos, cores, estilos, leitura e os 11 níveis de fonte global. Versões e exportação ficam em uma seção secundária do painel.
+- Anotações: tocar novamente no ícone abre ou recolhe as ferramentas no topo do editor, deslocando o texto sem sobreposição. O menu compacto agrupa histórico, texto, cores e listas, com bullets, Toggle e lista numerada sequencial. A numeração está disponível apenas nesse menu; a barra de edição mantém seus controles. Leitura, estilos e os 11 níveis de fonte global continuam disponíveis. O menu não exibe versões, exportação ou diagnósticos.
 - A Sentinela: abre diretamente o estudo da semana corrente, calculada no momento do toque. O catálogo continua disponível em `estudos.html`.
 - Salvar: conta, sincronização e preparação para uso offline.
 
@@ -22,7 +22,7 @@ Os seis cânticos do programa abrem as respectivas páginas oficiais do JW.org, 
 
 O ícone próprio representa as fileiras e o palco de um auditório, em roxo sobre lavanda clara. O manifesto mantém a identidade da instalação `assembleia-2026`, enquanto a versão desta linha começa por `ass26-`.
 
-Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v7`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
+Notas, preferências e bancos locais usam `ass26:`; caches usam `ass26-shell-v8`, `ass26-bible-v1`, `ass26-runtime-v1` e `ass26-artigos-v1`. Os registros desta programação usam o identificador permanente `ca-copgm27`, independente de horário, posição ou ano do aparelho.
 
 Na atualização da variante anterior, os dados do namespace `assembleia-2026:` são copiados sem apagar os originais. Notas do antigo congresso ficam separadas como `legacy-congresso:` e não são associadas aos novos discursos. Os dados do aplicativo Sentinela não são importados nem apagados.
 
@@ -36,13 +36,14 @@ Testes de isolamento em navegador: `python tests/test_app_scope.py` (requer Play
 Testes de abertura da semana corrente: `python tests/test_current_study.py`.
 Testes de seleção, composição e viewport do editor: `python tests/test_program_caret.py`. O teclado é simulado nesses testes; a validação nativa é feita no iPhone.
 Testes de ida e volta da anotação, resumo e recuperação de falhas: `python tests/test_program_summary.py`.
-Testes das opções de Anotações, fonte global, exportação e troca entre v1 e v2: `python tests/test_notes_menu.py`.
+Testes do menu compacto de Anotações, formatação, fonte global e persistência: `python tests/test_notes_menu.py`.
+Testes de listas numeradas, continuação com Enter, conversão e histórico: `python tests/test_notes_lists.py`.
 
 ## Publicação
 
 GitHub Pages publica a raiz da branch `main` em https://sbsjonathan.github.io/assembleia-2026/.
 
-Versão atual: `ass26-2026.11.08.1`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
+Versão atual: `ass26-2026.11.08.2`. No iPhone, abra o endereço no Safari e use Compartilhar → Adicionar à Tela de Início.
 
 O catálogo bíblico incluído permanece disponível no pacote. Cânticos externos, áudios, serviços de IA e sincronização precisam de conexão. A Sentinela consulta primeiro o estudo semanal já baixado; sem download nem conexão, informa que o estudo está indisponível.
 

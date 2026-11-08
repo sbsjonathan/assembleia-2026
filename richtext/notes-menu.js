@@ -10,20 +10,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const tools = [
     ['undo', 'Desfazer', 'Desfazer'], ['redo', 'Refazer', 'Refazer'],
     ['bold', 'Negrito', 'Negrito'], ['italic', 'Itálico', 'Itálico'],
-    ['list', 'Lista', 'Lista'], ['toggle', 'Bloco', 'Inserir Bloco de Toggle'],
+    ['list', 'Bullet', 'Lista'], ['orderedList', 'Numerada', null], ['toggle', 'Toggle', 'Inserir Bloco de Toggle'],
     ['font', 'Fonte', 'Tamanho da Fonte'], ['textColor', 'Cor do texto', 'Cor do texto'],
     ['backgroundColor', 'Destaque', 'Cor de fundo'], ['reset', 'Limpar formato', 'Resetar formatação'],
     ['reader', 'Leitura', 'Modo Bíblia']
   ];
-  const sources = new Map(tools.map(([key, , label]) => [key, toolbar.querySelector(`[aria-label="${label}"]`)]));
+  const sources = new Map(tools.map(([key, , label]) => [key, label ? toolbar.querySelector(`[aria-label="${label}"]`) : null]));
+  const numberedIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h1v4M3 7h2M3 11c0-2 3-2 3 0 0 1-3 2-3 3h3M3 18h3l-2 2c3-1 3 3-1 2M10 5h11M10 12h11M10 19h11"/></svg>';
+  function toolButton(key, iconOnly = false) {
+    const [, label] = tools.find(tool => tool[0] === key);
+    return `<button type="button" class="notes-tool${iconOnly ? ' notes-tool--icon-only' : ''}" data-notes-action="${key}" aria-label="${label}" title="${label}"><span class="notes-tool-icon" aria-hidden="true">${sources.get(key)?.innerHTML || numberedIcon}</span>${iconOnly ? '' : `<span>${label}</span>`}</button>`;
+  }
+  const groups = [
+    ['history', 'Histórico', ['undo', 'redo']],
+    ['format', 'Texto', ['bold', 'italic', 'font']],
+    ['colors', 'Cores', ['textColor', 'backgroundColor', 'reset']],
+    ['lists', 'Listas', ['list', 'orderedList', 'toggle']]
+  ];
   const panel = document.createElement('section');
   panel.id = 'notes-tools'; panel.className = 'notes-tools';
   panel.setAttribute('aria-label', 'Ferramentas de Anotações');
   panel.setAttribute('aria-hidden', 'true'); panel.inert = true;
   panel.innerHTML = `<div class="notes-tools-clip"><div class="notes-tools-card">
-    <header><span>Editar anotação</span><button type="button" id="notes-tools-close" aria-label="Recolher ferramentas">⌃</button></header>
-    <div class="notes-tools-grid" role="group" aria-label="Edição de texto">${tools.map(([key, label]) =>
-      `<button type="button" class="notes-tool" data-notes-action="${key}" aria-label="${label}"><span class="notes-tool-icon" aria-hidden="true">${sources.get(key)?.innerHTML || ''}</span><span>${label}</span></button>`).join('')}</div>
+    <header><span>Editar anotação</span><div>${toolButton('reader', true)}<button type="button" id="notes-tools-close" aria-label="Recolher ferramentas">⌃</button></div></header>
+    <div class="notes-tools-groups">${groups.map(([key, label, keys]) => `<div class="notes-tools-group" data-notes-group="${key}" role="group" aria-labelledby="notes-group-${key}">
+      <span class="notes-group-label" id="notes-group-${key}">${label}</span><div class="notes-tools-group-actions" style="--tool-count:${keys.length}">${keys.map(key => toolButton(key)).join('')}</div>
+    </div>`).join('')}</div>
     <div id="notes-tools-font" hidden>
       <div class="notes-block-styles" role="group" aria-label="Estilo do parágrafo">
         <button type="button" data-notes-style="normal">Normal</button><button type="button" data-notes-style="h1">Título</button>
@@ -36,14 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
     </div>
-    <details class="notes-tools-more"><summary>Versões e exportação</summary>
-      <p>Versão 2 · atual</p>
-      <button type="button" id="notes-tools-version-1">Abrir versão 1</button>
-      <button type="button" id="notes-tools-export">Exportar nota desta semana</button>
-      <button type="button" id="notes-tools-original" hidden>Exportar cópia anterior à v2</button>
-      <button type="button" id="notes-tools-recovery" hidden>Exportar cópias preservadas</button>
-      <p id="notes-tools-message" role="status"></p>
-    </details>
   </div></div>`;
   // Outside .page: blank-page taps intentionally move the editor's caret.
   scroller.insertBefore(panel, scroller.querySelector('.page'));
@@ -78,15 +82,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const editable = M2_Query.closest(range?.startContainer, '.editable');
     const paragraph = editable?.closest('.node-paragraph');
     const reading = !!window.LeitorMode?.isActive();
+    const listType = window.NotesEditorActions?.getListType?.();
     for (const [key] of tools) {
       const button = panel.querySelector(`[data-notes-action="${key}"]`);
       const source = sources.get(key);
       const icon = button.querySelector('.notes-tool-icon');
       if (source && icon.innerHTML !== source.innerHTML) icon.innerHTML = source.innerHTML;
       const disabled = key === 'undo' ? !window.M12_History?.canUndo() : key === 'redo' ? !window.M12_History?.canRedo() :
-        key === 'list' ? !!editable?.classList.contains('toggle-title') : false;
+        ['list', 'orderedList'].includes(key) ? !!editable?.classList.contains('toggle-title') : false;
       button.disabled = disabled || (reading && !['font', 'reader'].includes(key));
-      if (['bold', 'italic', 'list', 'reader'].includes(key)) button.setAttribute('aria-pressed', String(key === 'reader' ? reading : !!source?.classList.contains('is-active')));
+      if (['list', 'orderedList'].includes(key)) button.setAttribute('aria-pressed', String(listType === (key === 'list' ? 'unordered' : 'ordered')));
+      else if (['bold', 'italic', 'reader'].includes(key)) button.setAttribute('aria-pressed', String(key === 'reader' ? reading : !!source?.classList.contains('is-active')));
     }
     panel.querySelectorAll('[data-notes-style]').forEach(button => {
       button.disabled = reading || (!!editable && !paragraph);
@@ -113,8 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
     trigger.setAttribute('aria-expanded', 'true');
     // Only an explicit request for the tools returns to the top; never typing.
     scroller.scrollTop = 0;
-    panel.querySelector('#notes-tools-recovery').hidden = !window.NotesVersions?.recoveryCopies().length;
-    window.NotesVersions?.getBackup().then(backup => { panel.querySelector('#notes-tools-original').hidden = !backup?.raw; }).catch(() => {});
   }
   trigger.addEventListener('pointerdown', saveSelection);
   panel.addEventListener('pointerdown', event => {
@@ -144,12 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
   slider.addEventListener('input', () => window.GlobalFontScale?.setLevel(Number(slider.value)));
   panel.querySelector('#notes-tools-close').onclick = close;
   panel.addEventListener('keydown', event => { if (event.key === 'Escape') { event.preventDefault(); close(); } });
-  panel.querySelector('#notes-tools-export').onclick = () => window.NotesVersions?.exportCurrent();
-  panel.querySelector('#notes-tools-original').onclick = () => window.NotesVersions?.exportOriginal();
-  panel.querySelector('#notes-tools-recovery').onclick = () => window.NotesVersions?.exportRecovery();
-  panel.querySelector('#notes-tools-version-1').onclick = async () => {
-    if (!await window.NotesVersions?.switchTo('1')) panel.querySelector('#notes-tools-message').textContent = 'Não foi possível salvar a nota. Exporte uma cópia antes de trocar de versão.';
-  };
   new MutationObserver(queueSync).observe(toolbar, {subtree:true, childList:true, characterData:true, attributes:true, attributeFilter:['class','style','disabled','aria-pressed']});
   document.addEventListener('selectionchange', queueSync);
   document.addEventListener('history:statechange', queueSync);
