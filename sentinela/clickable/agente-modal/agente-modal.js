@@ -30,8 +30,11 @@
   const richText = value => escapeHTML(value).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
   const sessions = new Map();
   let activeId = null, mode = 'closed', restoreMode = 'window', openToken = 0;
-  let overlay, bubble, probe, area, thread, status, sendButton;
-  let preferredPosition = null, bubblePosition = {edge: 'right', y: null}, layoutFrame = 0;
+  let overlay, bubble, documentLayer, probe, area, thread, status, sendButton;
+  // These anchors belong to the article, just like its footnote popovers.
+  // Visual-viewport coordinates are used only in fullscreen/keyboard fitting.
+  let preferredPosition = null, bubblePosition = null, bubbleMoved = false, layoutFrame = 0;
+  let windowSize = null, keyboardBaseHeight = 0, bubbleViewportWidth = 0;
   let fullscreenRestore = null;
   const active = () => sessions.get(activeId);
 
@@ -69,7 +72,10 @@
     probe = document.createElement('div');
     probe.setAttribute('aria-hidden', 'true');
     probe.style.cssText = 'position:fixed;pointer-events:none;visibility:hidden;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);width:0;height:0;';
-    document.body.append(overlay, bubble, probe);
+    documentLayer = document.createElement('div');
+    documentLayer.id = 'agente-document-layer';
+    documentLayer.append(overlay, bubble);
+    document.body.append(documentLayer, probe);
     area = overlay.querySelector('#agente-pergunta');
     thread = overlay.querySelector('#agente-thread');
     status = overlay.querySelector('#agente-status');
@@ -105,7 +111,9 @@
         if (!active()?.request) send();
       }
     });
-    makeDraggable(overlay.querySelector('#agente-drag'), overlay, false);
+    area.addEventListener('focus', () => { keyboardBaseHeight = viewport().height; });
+    area.addEventListener('blur', scheduleLayout);
+    makeDraggable(overlay.querySelector('.modal-agente-header'), overlay, false);
     makeDraggable(bubble, bubble, true);
     overlay.querySelector('#agente-drag').addEventListener('keydown', moveByKey);
     bubble.addEventListener('keydown', moveByKey);
@@ -121,40 +129,102 @@
     window.addEventListener('resize', scheduleLayout, {passive: true});
     window.addEventListener('pageshow', scheduleLayout);
     window.visualViewport?.addEventListener('resize', scheduleLayout, {passive: true});
-    window.visualViewport?.addEventListener('scroll', scheduleLayout, {passive: true});
+    window.visualViewport?.addEventListener('scroll', () => {
+      if (mode === 'fullscreen') scheduleLayout();
+    }, {passive: true});
   }
 
   function viewport() {
     const vv = window.visualViewport;
     const css = getComputedStyle(probe);
     return {x: vv?.offsetLeft || 0, y: vv?.offsetTop || 0,
+      pageX: window.scrollX + (vv?.offsetLeft || 0), pageY: window.scrollY + (vv?.offsetTop || 0),
       width: vv?.width || window.innerWidth, height: vv?.height || window.innerHeight,
       top: parseFloat(css.paddingTop) || 0, right: parseFloat(css.paddingRight) || 0,
       bottom: parseFloat(css.paddingBottom) || 0, left: parseFloat(css.paddingLeft) || 0};
   }
   const clamp = (number, min, max) => Math.max(min, Math.min(number, Math.max(min, max)));
+  function documentPosition(element) {
+    const rect = element.getBoundingClientRect();
+    return {x: rect.left + window.scrollX, y: rect.top + window.scrollY};
+  }
+  function placeInDocument(element, position) {
+    const parent = element.offsetParent;
+    let originX = 0, originY = 0;
+    if (parent && (parent !== document.body || getComputedStyle(parent).position !== 'static')) {
+      const rect = parent.getBoundingClientRect();
+      originX = rect.left + window.scrollX + parent.clientLeft - parent.scrollLeft;
+      originY = rect.top + window.scrollY + parent.clientTop - parent.scrollTop;
+    }
+    element.style.left = `${position.x - originX}px`;
+    element.style.top = `${position.y - originY}px`;
+  }
+  function availableBounds(v, keyboard = false) {
+    const gap = keyboard ? 12 : 20;
+    const bounds = {left: v.pageX + v.left + gap, top: v.pageY + v.top + gap,
+      right: v.pageX + v.width - v.right - gap,
+      bottom: v.pageY + v.height - (keyboard ? 0 : v.bottom) - gap};
+    if (!keyboard) {
+      const nav = document.querySelector('.bottom-navbar');
+      const rect = nav?.getBoundingClientRect();
+      if (rect && rect.top > v.y && rect.top < v.y + v.height && getComputedStyle(nav).visibility !== 'hidden') {
+        bounds.bottom = Math.min(bounds.bottom, window.scrollY + rect.top - gap);
+      }
+    }
+    return bounds;
+  }
+  function fitPosition(position, size, bounds) {
+    return {x: clamp(position.x, bounds.left, bounds.right - size.width),
+      y: clamp(position.y, bounds.top, bounds.bottom - size.height)};
+  }
+  function sizeWindow(v) {
+    const bounds = availableBounds(v);
+    return {viewportWidth: v.width, width: Math.max(0, Math.min(540, bounds.right - bounds.left)),
+      height: Math.max(0, Math.min(v.width > 600 ? 500 : 390, bounds.bottom - bounds.top))};
+  }
+  function placeNewWindow(position) {
+    const v = viewport(), bounds = availableBounds(v);
+    windowSize = sizeWindow(v);
+    preferredPosition = fitPosition(position || {
+      x: v.pageX + (v.width - windowSize.width) / 2,
+      y: bounds.top + (bounds.bottom - bounds.top - windowSize.height) / 2
+    }, windowSize, bounds);
+  }
   function layout() {
     if (!overlay || mode === 'closed') return;
     const v = viewport();
     if (mode === 'minimized') {
-      const size = bubble.offsetWidth || 54;
-      const minY = v.y + v.top + 12;
-      const maxY = v.y + v.height - v.bottom - size - 92;
-      bubble.style.left = `${bubblePosition.edge === 'left' ? v.x + v.left + 10 : v.x + v.width - v.right - size - 10}px`;
-      bubble.style.top = `${clamp(bubblePosition.y ?? v.y + v.height * .58, minY, maxY)}px`;
+      if (bubblePosition && Math.abs(v.width - bubbleViewportWidth) > 1) {
+        const size = bubble.offsetWidth || 54;
+        bubblePosition = fitPosition(bubblePosition, {width: size, height: size}, availableBounds(v));
+        bubbleViewportWidth = v.width;
+      }
+      if (bubblePosition) placeInDocument(bubble, bubblePosition);
       return;
     }
     const fullscreen = mode === 'fullscreen';
-    const width = fullscreen ? v.width : Math.min(540, v.width - v.left - v.right - 24);
-    const height = fullscreen ? v.height : Math.min(500, v.height - v.top - v.bottom - 24);
+    if (!preferredPosition || !windowSize) placeNewWindow();
+    const keyboard = !fullscreen && document.activeElement === area &&
+      Math.max(keyboardBaseHeight, window.innerHeight) - v.height > 100 && (!window.visualViewport || window.visualViewport.scale === 1);
+    const bounds = availableBounds(v, keyboard);
+    // Resize for a changed device width, never for an ordinary article scroll.
+    if (!fullscreen && !keyboard && Math.abs(v.width - windowSize.viewportWidth) > 1) {
+      windowSize = sizeWindow(v);
+      preferredPosition = fitPosition(preferredPosition, windowSize, bounds);
+    }
+    const width = fullscreen ? v.width : Math.min(windowSize.width, Math.max(0, bounds.right - bounds.left));
+    const height = fullscreen ? v.height : keyboard ? Math.min(windowSize.height, bounds.bottom - bounds.top) : windowSize.height;
     overlay.style.width = `${Math.max(0, width)}px`;
     overlay.style.height = `${Math.max(0, height)}px`;
     overlay.style.maxHeight = `${Math.max(0, height)}px`;
     overlay.dataset.compact = String(height < 340);
-    overlay.style.left = `${fullscreen ? v.x : clamp(preferredPosition?.x ?? v.x + (v.width - width) / 2, v.x + v.left + 12, v.x + v.width - v.right - width - 12)}px`;
-    overlay.style.top = `${fullscreen ? v.y : clamp(preferredPosition?.y ?? v.y + (v.height - height) / 2, v.y + v.top + 12, v.y + v.height - v.bottom - height - 12)}px`;
-    // Only the transcript scrolls. Never scroll the article or refocus the editor
-    // to compensate for an iOS keyboard/visualViewport transition.
+    if (fullscreen) {
+      overlay.style.left = `${v.x}px`;
+      overlay.style.top = `${v.y}px`;
+    } else {
+      placeInDocument(overlay, keyboard ? fitPosition(preferredPosition, {width, height}, bounds) : preferredPosition);
+    }
+    // Keyboard compensation never overwrites the page anchor or refocuses input.
   }
   function scheduleLayout() {
     if (!layoutFrame) layoutFrame = requestAnimationFrame(() => {layoutFrame = 0; layout();});
@@ -165,7 +235,7 @@
   }
   function fullscreenIsolation(enable) {
     if (enable && !fullscreenRestore) {
-      const siblings = [...document.body.children].filter(node => node !== overlay && node !== bubble && node !== probe);
+      const siblings = [...document.body.children].filter(node => node !== documentLayer && node !== probe);
       fullscreenRestore = {overflow: document.documentElement.style.overflow, siblings: siblings.map(node => [node, node.inert])};
       document.documentElement.style.overflow = 'hidden';
       siblings.forEach(node => {node.inert = true;});
@@ -210,6 +280,7 @@
     session.unread = false;
     overlay.dataset.sessionId = context.id;
     area.value = session.draft;
+    if (mode !== 'fullscreen') placeNewWindow();
     applyMode(mode === 'fullscreen' ? 'fullscreen' : 'window');
     restoreMode = mode;
     render(true);
@@ -221,6 +292,10 @@
     if (!active() || mode === 'closed' || mode === 'minimized') return;
     active().draft = area.value;
     restoreMode = mode;
+    const v = viewport(), bounds = availableBounds(v), size = 54;
+    bubblePosition = fitPosition({x: bounds.right - size, y: documentPosition(overlay).y + 32}, {width: size, height: size}, bounds);
+    bubbleViewportWidth = v.width;
+    bubbleMoved = false;
     blurComposer();
     applyMode('minimized');
     updateBubble();
@@ -229,6 +304,7 @@
   function restore() {
     if (!active()) return;
     active().unread = false;
+    if (bubbleMoved && restoreMode !== 'fullscreen') placeNewWindow(bubblePosition);
     applyMode(restoreMode === 'fullscreen' ? 'fullscreen' : 'window');
     area.value = active().draft;
     render(false);
@@ -300,7 +376,7 @@
     const atEnd = thread.scrollHeight - previousScroll - thread.clientHeight < 60;
     overlay.querySelector('#agente-contexto').textContent = session.context.title;
     if (!session.messages.length) {
-      thread.innerHTML = `<div class="agente-thread-empty"><span class="agente-empty-icon">${svg('chat')}</span><strong>${escapeHTML(session.context.title)}</strong><p>${escapeHTML(session.context.question || 'O que você gostaria de entender melhor?')}</p><small>Explore este trecho com o tutor. Informações de fora serão diferenciadas na resposta.</small></div>`;
+      thread.innerHTML = `<div class="agente-thread-empty"><p>${escapeHTML(session.context.question || 'O que você gostaria de entender melhor?')}</p><small>Pergunte sobre este trecho.</small></div>`;
     } else {
       thread.innerHTML = session.messages.map(message => `<article class="agente-message agente-message--${message.role === 'assistant' ? 'assistant' : 'user'}"><div class="agente-message-meta">${message.role === 'assistant' ? 'Tutor IA' : 'Você'}</div><div class="agente-message-text">${richText(message.text)}</div>${message.failed ? '<span class="agente-message-status">Sem resposta</span>' : ''}</article>`).join('');
     }
@@ -401,39 +477,45 @@
     }
   }
 
+  function moveTo(element, position, isBubble) {
+    const v = viewport(), rect = element.getBoundingClientRect();
+    const bounds = availableBounds(v);
+    // A wide phone window must be able to slide sideways. Keep a usable part
+    // of its drag header accessible, instead of clamping its entire rectangle.
+    const gripWidth = overlay.querySelector('#agente-drag').getBoundingClientRect().width;
+    const x = clamp(position.x, isBubble ? bounds.left : bounds.left - Math.max(0, gripWidth - 48),
+      bounds.right - (isBubble ? rect.width : 96));
+    const y = clamp(position.y, bounds.top, bounds.bottom - (isBubble ? rect.height : 64));
+    const anchor = {x, y};
+    placeInDocument(element, anchor);
+    if (isBubble) { bubblePosition = anchor; bubbleMoved = true; }
+    else preferredPosition = anchor;
+  }
   function makeDraggable(handle, element, isBubble) {
     let drag = null, suppressClick = false;
     handle.addEventListener('pointerdown', event => {
-      if (event.button !== 0 || (!isBubble && mode !== 'window')) return;
+      if (event.button !== 0 || event.isPrimary === false || (!isBubble && (mode !== 'window' || event.target.closest('button, textarea, a')))) return;
       event.preventDefault();
-      const rect = element.getBoundingClientRect();
-      drag = {id: event.pointerId, x: event.clientX, y: event.clientY, left: rect.left, top: rect.top, moved: false};
+      const position = documentPosition(element);
+      drag = {id: event.pointerId, x: event.clientX + window.scrollX, y: event.clientY + window.scrollY, left: position.x, top: position.y, moved: false};
       suppressClick = false;
       handle.setPointerCapture(event.pointerId);
     });
     handle.addEventListener('pointermove', event => {
       if (!drag || event.pointerId !== drag.id) return;
-      const dx = event.clientX - drag.x, dy = event.clientY - drag.y;
+      const dx = event.clientX + window.scrollX - drag.x, dy = event.clientY + window.scrollY - drag.y;
       if (!drag.moved && Math.hypot(dx, dy) < 6) return;
       drag.moved = true;
       element.classList.add('is-dragging');
-      const v = viewport(), rect = element.getBoundingClientRect();
-      const x = clamp(drag.left + dx, v.x + v.left + 10, v.x + v.width - v.right - rect.width - 10);
-      const y = clamp(drag.top + dy, v.y + v.top + 10, v.y + v.height - v.bottom - rect.height - 10);
-      element.style.left = `${x}px`; element.style.top = `${y}px`;
-      if (!isBubble) preferredPosition = {x, y};
+      moveTo(element, {x: drag.left + dx, y: drag.top + dy}, isBubble);
     });
     const finish = event => {
       if (!drag || event.pointerId !== drag.id) return;
       const moved = drag.moved;
-      suppressClick = moved || event.type === 'pointercancel';
+      suppressClick = moved || event.type !== 'pointerup';
       drag = null;
       element.classList.remove('is-dragging');
-      if (isBubble && moved) {
-        const rect = element.getBoundingClientRect(), v = viewport();
-        bubblePosition = {edge: rect.left + rect.width / 2 < v.x + v.width / 2 ? 'left' : 'right', y: rect.top};
-        layout();
-      }
+      if (handle.hasPointerCapture(event.pointerId)) handle.releasePointerCapture(event.pointerId);
     };
     handle.addEventListener('pointerup', finish);
     handle.addEventListener('pointercancel', finish);
@@ -447,14 +529,12 @@
     if (!['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) return;
     if (mode !== 'window' && mode !== 'minimized') return;
     event.preventDefault();
-    const rect = event.currentTarget === bubble ? bubble.getBoundingClientRect() : overlay.getBoundingClientRect();
+    const isBubble = event.currentTarget === bubble;
+    const element = isBubble ? bubble : overlay;
+    const position = documentPosition(element);
     const step = event.shiftKey ? 40 : 16;
-    if (event.currentTarget === bubble) {
-      bubblePosition.y = rect.top + (event.key === 'ArrowUp' ? -step : event.key === 'ArrowDown' ? step : 0);
-      if (event.key === 'ArrowLeft') bubblePosition.edge = 'left';
-      if (event.key === 'ArrowRight') bubblePosition.edge = 'right';
-    } else preferredPosition = {x: rect.left + (event.key === 'ArrowLeft' ? -step : event.key === 'ArrowRight' ? step : 0), y: rect.top + (event.key === 'ArrowUp' ? -step : event.key === 'ArrowDown' ? step : 0)};
-    layout();
+    moveTo(element, {x: position.x + (event.key === 'ArrowLeft' ? -step : event.key === 'ArrowRight' ? step : 0),
+      y: position.y + (event.key === 'ArrowUp' ? -step : event.key === 'ArrowDown' ? step : 0)}, isBubble);
   }
 
   let press = null, suppressedTrigger = null, suppressUntil = 0, activatedPointer = null;

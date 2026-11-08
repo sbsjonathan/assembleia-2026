@@ -63,6 +63,9 @@ body {color:var(--text-main);padding-bottom:100px}
 <a class="navbar-item" href="#"><div class="navbar-icon icon-save"></div><span class="navbar-label">Salvar</span></a>
 </nav>
 <script id="sentinela-reading-position" data-study-date="2026-11-02"></script>
+<script src="/shared/typography.js"></script>
+<script src="/sentinela/mark.js"></script>
+<script src="/sentinela/imagem.js"></script>
 <script src="/sentinela/clickable/agente-modal/agente-modal.js"></script>
 </body></html>'''
 
@@ -88,6 +91,10 @@ MOCKS = '''(() => {
     });
   };
   window.qaResolve = (index,text) => qaPending[index].resolve(text);
+  window.qaPointerEvents = [];
+  for (const type of ['pointerdown','pointermove','pointerup','pointercancel','lostpointercapture']) {
+    addEventListener(type,event=>qaPointerEvents.push({type,pointerType:event.pointerType,pointerId:event.pointerId,target:event.target.id}),true);
+  }
   window.qaViewport = new EventTarget();
   window.qaViewportManual = false;
   window.qaUpdateViewport = (values) => {
@@ -148,6 +155,40 @@ def resolve(page, index, text, visible=True):
 
 def rect(page, selector):
     return page.locator(selector).evaluate('el => el.getBoundingClientRect().toJSON()')
+
+
+def document_rect(page, selector):
+    return page.locator(selector).evaluate('''el => {
+      const rect=el.getBoundingClientRect();
+      return {left:rect.left+scrollX,top:rect.top+scrollY,width:rect.width,height:rect.height};
+    }''')
+
+
+def assert_same_document_rect(actual, expected):
+    assert all(abs(actual[key] - expected[key]) <= 1 for key in expected), (actual, expected)
+
+
+def assert_document_anchor(page, selector):
+    before = rect(page, selector)
+    anchor = document_rect(page, selector)
+    scroll_before = page.evaluate('scrollY')
+    page.evaluate('scrollBy(0,125);qaUpdateViewport({pageTop:scrollY})')
+    page.wait_for_timeout(120)
+    scroll_delta = page.evaluate('scrollY') - scroll_before
+    after = rect(page, selector)
+    assert scroll_delta > 100, 'Fixture must have enough article to scroll.'
+    assert abs(after['top'] - before['top'] + scroll_delta) <= 1, (selector, before, after, scroll_delta)
+    assert_same_document_rect(document_rect(page, selector), anchor)
+    page.evaluate('value=>{scrollTo(0,value);qaUpdateViewport({pageTop:scrollY})}', scroll_before)
+    page.wait_for_timeout(120)
+
+
+def assert_initial_clearance(page):
+    box = rect(page, '#modal-agente')
+    assert box['left'] >= 19 and box['right'] <= page.viewport_size['width'] - 19, box
+    assert box['top'] >= 19, box
+    navbar = rect(page, '.bottom-navbar')
+    assert box['bottom'] <= navbar['top'] - 10, (box, navbar)
 
 
 def assert_within_viewport(page, selector='#modal-agente', margin=1):
@@ -267,28 +308,30 @@ def check_window_and_orb(page):
     page.locator('#agente-pergunta').focus()
     page.locator('#agente-pergunta').evaluate('el=>el.setSelectionRange(2,7)')
     before = rect(page, '#modal-agente')
-    drag(page, '#agente-drag', 30, -55)
+    document_width = page.evaluate('[document.documentElement.scrollWidth,document.documentElement.clientWidth,innerWidth]')
+    drag(page, '#agente-drag', 100, -55)
     after = rect(page, '#modal-agente')
     assert abs(after['y'] - before['y']) > 15, (before, after)
+    assert abs(after['x'] - before['x'] - 100) <= 2, 'Mobile drag must not be limited to a few pixels.'
+    assert page.evaluate('[document.documentElement.scrollWidth,document.documentElement.clientWidth,innerWidth]') == document_width, 'Moving the window must not widen the article.'
     assert page.evaluate('document.activeElement.id') == 'agente-pergunta'
     assert page.locator('#agente-pergunta').evaluate('el=>[el.selectionStart,el.selectionEnd]') == [2, 7]
-    assert_within_viewport(page)
+    assert_document_anchor(page, '#modal-agente')
+    # Move the window back so its minimise control remains visible.
+    drag(page, '#agente-drag', -100, 55)
     page.locator('#agente-minimizar').click()
     page.locator('#agente-bolinha').wait_for(state='visible')
     assert not page.locator('#modal-agente').is_visible()
+    assert page.locator('#agente-bolinha').evaluate('el=>getComputedStyle(el).position') == 'absolute'
+    assert_document_anchor(page, '#agente-bolinha')
     orb_before = rect(page, '#agente-bolinha')
-    assert page.locator('#agente-bolinha').evaluate('el=>getComputedStyle(el).position') == 'fixed'
-    page.evaluate('scrollBy(0,450)')
-    page.wait_for_timeout(100)
-    orb_after = rect(page, '#agente-bolinha')
-    assert abs(orb_before['top'] - orb_after['top']) < 1, (orb_before, orb_after)
-    width = page.viewport_size['width']
-    dx = width - orb_after['right'] - 4 if orb_after['left'] < width / 2 else -orb_after['left'] + 4
-    drag(page, '#agente-bolinha', dx, -105)
+    dx = 100 if orb_before['left'] < page.viewport_size['width'] / 2 else -100
+    drag(page, '#agente-bolinha', dx, -75)
     moved = rect(page, '#agente-bolinha')
     assert page.locator('#agente-bolinha').is_visible(), 'Dragging the orb must not expand it.'
-    assert abs(moved['top'] - orb_after['top']) > 25, (orb_after, moved)
-    assert min(moved['left'], width - moved['right']) < 24, moved
+    assert abs(moved['left'] - orb_before['left'] - dx) <= 2, (orb_before, moved)
+    assert abs(moved['top'] - orb_before['top'] + 75) <= 2, 'Bubble must not snap back to an edge.'
+    assert_document_anchor(page, '#agente-bolinha')
     assert_within_viewport(page, '#agente-bolinha')
     page.locator('#agente-bolinha').click()
     page.locator('#modal-agente').wait_for(state='visible')
@@ -336,6 +379,7 @@ def check_stop_retry_reset_and_keyboard(page):
 
 
 def check_fullscreen_and_viewport(page):
+    anchor = document_rect(page, '#modal-agente')
     page.locator('#agente-expandir').click()
     page.wait_for_function("document.querySelector('#modal-agente').dataset.mode === 'fullscreen'")
     assert_within_viewport(page)
@@ -354,6 +398,20 @@ def check_fullscreen_and_viewport(page):
     page.wait_for_timeout(220)
     page.locator('#agente-expandir').click()
     page.wait_for_function("document.querySelector('#modal-agente').dataset.mode === 'window'")
+    restored = document_rect(page, '#modal-agente')
+    assert abs(restored['top'] - anchor['top']) <= 1 and abs(restored['left'] - anchor['left']) <= 1, (anchor, restored)
+    assert page.locator('#modal-agente').evaluate('el=>getComputedStyle(el).position') == 'absolute'
+    # Keyboard fitting is temporary: the document anchor must return unchanged.
+    page.locator('#agente-pergunta').focus()
+    page.evaluate('qaViewportManual=true;qaUpdateViewport({height:375,offsetTop:43,pageTop:scrollY+43})')
+    page.wait_for_timeout(220)
+    assert_within_viewport(page, '#agente-pergunta')
+    assert page.evaluate('document.activeElement.id') == 'agente-pergunta'
+    page.evaluate('qaUpdateViewport({height:innerHeight,offsetTop:0,pageTop:scrollY});qaViewportManual=false')
+    page.wait_for_timeout(220)
+    assert_same_document_rect(document_rect(page, '#modal-agente'), restored)
+    assert_document_anchor(page, '#modal-agente')
+    page.locator('#agente-pergunta').blur()
     page.set_viewport_size({'width': 320, 'height': 568})
     page.wait_for_timeout(220)
     assert_within_viewport(page)
@@ -366,6 +424,134 @@ def check_fullscreen_and_viewport(page):
     page.locator('#agente-bolinha').click()
     assert_within_viewport(page)
     assert_within_viewport(page, '#agente-pergunta')
+
+
+def check_cancelled_drag(page):
+    page.locator('#agente-minimizar').click()
+    for event_name in ('pointercancel', 'lostpointercapture'):
+        box = rect(page, '#agente-bolinha')
+        x, y = box['left'] + box['width'] / 2, box['top'] + box['height'] / 2
+        page.mouse.move(x, y)
+        page.mouse.down()
+        page.mouse.move(x - 12, y - 12, steps=3)
+        pointer_id = page.evaluate("qaPointerEvents.filter(e=>e.type==='pointerdown').at(-1).pointerId")
+        page.locator('#agente-bolinha').evaluate('''(el,values)=>{
+          if(values[0]==='lostpointercapture') el.releasePointerCapture(values[1]);
+          else el.dispatchEvent(new PointerEvent('pointercancel',{pointerId:values[1],pointerType:'mouse',bubbles:true}));
+        }''', [event_name, pointer_id])
+        page.mouse.up()
+        page.wait_for_timeout(150)
+        assert page.locator('#agente-bolinha').is_visible(), f'{event_name} must not restore the window.'
+        assert not page.locator('.is-dragging').count(), f'{event_name} must clean up drag state.'
+    page.wait_for_timeout(350)
+    page.locator('#agente-bolinha').click()
+    assert page.locator('#modal-agente').is_visible()
+
+
+def check_touch_drag(page, context):
+    session = context.new_cdp_session(page)
+    def move(handle, target, dx, dy):
+        box = rect(page, handle)
+        before = rect(page, target)
+        scroll = page.evaluate('scrollY')
+        document_width = page.evaluate('[document.documentElement.scrollWidth,document.documentElement.clientWidth,innerWidth]')
+        start = page.evaluate('qaPointerEvents.length')
+        x, y = box['left'] + min(50, box['width'] / 2), box['top'] + box['height'] / 2
+        session.send('Input.dispatchTouchEvent', {'type': 'touchStart', 'touchPoints': [{'x': x, 'y': y}]})
+        for step in range(1, 9):
+            session.send('Input.dispatchTouchEvent', {'type': 'touchMove', 'touchPoints': [{'x': x + dx * step / 8, 'y': y + dy * step / 8}]})
+        session.send('Input.dispatchTouchEvent', {'type': 'touchEnd', 'touchPoints': []})
+        page.wait_for_timeout(150)
+        after = rect(page, target)
+        events = page.evaluate('start=>qaPointerEvents.slice(start)', start)
+        assert any(event['type'] == 'pointerup' and event['pointerType'] == 'touch' for event in events), events
+        assert not any(event['type'] == 'pointercancel' for event in events), events
+        assert abs(after['left'] - before['left'] - dx) <= 2, (before, after)
+        assert abs(after['top'] - before['top'] - dy) <= 2, (before, after)
+        assert page.evaluate('scrollY') == scroll, 'Dragging must not pan the article.'
+        assert page.evaluate('[document.documentElement.scrollWidth,document.documentElement.clientWidth,innerWidth]') == document_width, 'Touch drag must not widen the article.'
+
+    move('#agente-drag', '#modal-agente', 100, -35)
+    drag(page, '#agente-drag', -100, 35)
+    page.locator('#agente-minimizar').click()
+    move('#agente-bolinha', '#agente-bolinha', -95, 50)
+    assert page.locator('#agente-bolinha').is_visible(), 'Touch drag must not restore the window.'
+    page.locator('#agente-bolinha').click()
+    assert_initial_clearance(page)
+    session.detach()
+
+
+def check_theme(page):
+    def styles():
+        return page.evaluate('''() => Object.fromEntries(['#agente-enviar','#agente-bolinha','.modal-agente-header','.agente-input-row'].map(selector=>{
+          const style=getComputedStyle(document.querySelector(selector));
+          return [selector,{background:style.backgroundColor,color:style.color}];
+        }))''')
+
+    # The article menu applies the user's global accent on body. Its root
+    # --cor-global alias can still refer to the previous study's root value.
+    page.evaluate("document.documentElement.style.setProperty('--cor-global','#b34e21');document.body.style.setProperty('--cor-principal-estudo','#0d7669')")
+    first = styles()
+    page.evaluate("document.body.style.setProperty('--cor-principal-estudo','#b34e21')")
+    second = styles()
+    assert first['#agente-enviar'] != second['#agente-enviar'], (first, second)
+    assert first['#agente-bolinha'] != second['#agente-bolinha'], (first, second)
+    assert first['.agente-input-row'] != second['.agente-input-row'], 'Input tint must follow the global color.'
+    page.evaluate("document.body.style.removeProperty('--cor-principal-estudo');document.documentElement.style.setProperty('--cor-principal-estudo','initial')")
+    fallback = styles()
+    assert fallback == second, 'Without the article token, Tutor must follow the global accent.'
+    page.evaluate("document.documentElement.dataset.theme='dark'")
+    dark = styles()
+    assert dark['.modal-agente-header']['background'] != fallback['.modal-agente-header']['background'], (fallback, dark)
+    page.evaluate("document.documentElement.dataset.theme='light'")
+
+
+def check_layout_matrix(browser, engine_name, origin):
+    screenshots = Path(os.environ.get('TUTOR_SCREENSHOT_DIR', '/workspace/scratch/tutor-anchor-preview'))
+    screenshots.mkdir(parents=True, exist_ok=True)
+    cases = [(375, 812, 3, 'light'), (375, 812, 11, 'dark'),
+             (430, 873, 3, 'light'), (430, 873, 11, 'dark'),
+             (932, 430, 11, 'light'), (1280, 900, 11, 'dark')]
+    for width, height, level, theme in cases:
+        context = browser.new_context(viewport={'width': width, 'height': height},
+                                      is_mobile=width < 1000, has_touch=width < 1000, service_workers='block')
+        context.route('**/*', lambda route: route.continue_()
+                      if route.request.url.startswith(origin + '/') else route.abort())
+        context.add_init_script(MOCKS)
+        page = context.new_page()
+        page.goto(origin + FIXTURE_PATH)
+        page.wait_for_function('window.ArticleTutor && window.GlobalFontScale')
+        page.evaluate('document.fonts.ready')
+        page.evaluate('''([level,theme])=>{
+          GlobalFontScale.setLevel(level);
+          document.documentElement.dataset.theme=theme;
+          qaUpdateViewport({width:innerWidth,height:innerHeight});
+          scrollTo(0,700);
+        }''', [level, theme])
+        open_question(page, '3-5')
+        assert_initial_clearance(page)
+        assert_within_viewport(page, '#agente-pergunta')
+        assert_document_anchor(page, '#modal-agente')
+        if engine_name == 'chromium' and width in (375, 430) and level == 3:
+            check_touch_drag(page, context)
+        initial_size = rect(page, '#modal-agente')
+        index = send(page, 'Como aplicar essas ideias no dia a dia?')
+        resolve(page, index, 'Procure orientação antes de decidir. Ouça conselhos e coloque o que aprendeu em prática.')
+        page.locator('#agente-pergunta').blur()
+        page.screenshot(path=str(screenshots / f'{engine_name}-{width}x{height}-nivel{level}-{theme}.png'))
+        assert page.locator('#agente-thread').evaluate('el=>el.scrollWidth<=el.clientWidth+1'), 'Reading level must not create horizontal overflow.'
+        assert rect(page, '#modal-agente')['width'] == initial_size['width']
+        page.locator('#agente-minimizar').click()
+        assert_document_anchor(page, '#agente-bolinha')
+        page.locator('#agente-bolinha').click()
+        assert_initial_clearance(page)
+        page.locator('#agente-expandir').click()
+        assert_within_viewport(page)
+        assert_within_viewport(page, '#agente-pergunta')
+        page.locator('#agente-expandir').click()
+        assert_initial_clearance(page)
+        context.close()
+    return len(cases)
 
 
 def check(engine, executable, origin):
@@ -390,15 +576,19 @@ def check(engine, executable, origin):
         check_longpress(page)
         check_conversations(page)
         check_window_and_orb(page)
+        check_cancelled_drag(page)
         check_stop_retry_reset_and_keyboard(page)
+        check_theme(page)
         check_fullscreen_and_viewport(page)
         assert not errors, errors
+        cases = check_layout_matrix(browser, engine.name, origin)
         print(json.dumps({'engine': engine.name, 'longpressCancellation': 'passed',
                           'paragraphAndArticleIsolation': 'passed', 'pendingAnswerRouting': 'passed',
-                          'draftAndHistoryRetention': 'passed', 'fixedDraggableOrb': 'passed',
+                          'draftAndHistoryRetention': 'passed', 'documentAnchoredWindowAndOrb': 'passed',
+                          'freeHorizontalDragAndCancellation': 'passed', 'globalThemeColor': 'passed',
                           'stopRetryResetAndSafeRendering': 'passed', 'keyboardAccessibility': 'passed',
                           'focusPreservation': 'passed', 'fullscreenAndKeyboardGeometry': 'passed',
-                          'narrowAndLandscapeClamping': 'passed'}), flush=True)
+                          'narrowAndLandscapeClamping': 'passed', 'layoutCases': cases}), flush=True)
     finally:
         browser.close()
 
