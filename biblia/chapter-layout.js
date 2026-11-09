@@ -92,8 +92,8 @@ function parseChapterLayout(html, lookup) {
     else for (const child of node.children) walk(child);
   }
   walk(tree);
-  // Study terms are carried in the commentary itself. Mark matching words in the
-  // appropriate verse, retaining the original text and every annotation position.
+  // Link study terms without inventing emphasis in the scripture. sourceStrong
+  // distinguishes authored bold from the automatic strong flag in older caches.
   for (const block of blocks) {
     const result=[];
     for (const part of block.parts) {
@@ -111,7 +111,7 @@ function parseChapterLayout(html, lookup) {
       for (const m of matches) {
         if (m.start<at) continue;
         if(m.start>at) result.push({...part,text:part.text.slice(at,m.start)});
-        result.push({...part,text:part.text.slice(m.start,m.end),strong:true,note:m.note});at=m.end;
+        result.push({...part,text:part.text.slice(m.start,m.end),sourceStrong:!!part.strong,note:m.note});at=m.end;
       }
       if(at<part.text.length) result.push({...part,text:part.text.slice(at)});
     }

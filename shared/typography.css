@@ -43,7 +43,7 @@ html[data-font-size-global] .sentinela-bible .chapter-tile { font-size: calc(18p
 html[data-font-size-global] .sentinela-bible .section-row { font-size: calc(17px * var(--font-scale-global)); }
 html[data-font-size-global] .sentinela-bible :is(.section-row .row-label, #position, .saved-row small, .welcome .small) { font-size: calc(12px * var(--font-scale-global)); }
 html[data-font-size-global] .sentinela-bible :is(.section-list h2, .sheet-header h2, .saved-row > button:first-child, .font-setting button) { font-size: calc(19px * var(--font-scale-global)); }
-html[data-font-size-global] .sentinela-bible .reader > h2 { font-size: calc(32px * var(--font-scale-global)); }
+html[data-font-size-global] .sentinela-bible #reading-title { font-size: calc(var(--font-base-global) * 1.35); }
 html[data-font-size-global] .sentinela-bible .document > h2 { font-size: calc(28px * var(--font-scale-global)); }
 html[data-font-size-global] .sentinela-bible :is(.library h2, .saved-page h2, .welcome h2) { font-size: calc(27px * var(--font-scale-global)); }
 html[data-font-size-global] .sentinela-bible :is(.library label, #search-form label) { font-size: calc(13px * var(--font-scale-global)); }
