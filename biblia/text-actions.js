@@ -85,23 +85,34 @@ function initTextActions({root,getChapter,getName,onListen,onBookmark,onStudy,on
     // enlarged chapter number (including at the largest reading font).
     const topEdge=Math.max(viewTop+8,header?.bottom+2||0),bottomEdge=Math.min(viewBottom-8,footer?.top-8||viewBottom-8);
     const menuRect=toolbar.getBoundingClientRect(),gap=12;
-    const firstTop=topEdge+menuRect.height+gap,lastTop=bottomEdge-rect.height;
-    if(lastTop<firstTop){clear();return;}
-    if(reveal){
+    const preferred=reveal?null:toolbar.dataset.placement;
+    const placement=()=>{
+      if(rect.top<topEdge-1 || rect.bottom>bottomEdge+1)return null;
+      if(preferred!=='below'&&rect.top-menuRect.height-gap>=topEdge-1)return 'above';
+      if(preferred!=='above'&&rect.bottom+gap+menuRect.height<=bottomEdge+1)return 'below';
+      return null;
+    };
+    let side=placement();
+    if(!side&&reveal){
       // Make room once when opening, including when a long verse starts above
-      // the screen. Later scrolling must never drag the reader back here.
+      // the screen. At the start of a chapter, use the space below its number
+      // instead of trying to scroll above the beginning of the document.
+      const firstTop=topEdge+menuRect.height+gap,lastTop=bottomEdge-rect.height;
+      if(lastTop<firstTop){clear();return;}
       const targetTop=Math.max(firstTop,Math.min(lastTop,rect.top));
       if(Math.abs(rect.top-targetTop)>0.5){
         window.scrollBy({top:rect.top-targetTop,behavior:'instant'});
         rect=anchorElement.getBoundingClientRect();
       }
+      side=placement();
     }
-    const top=rect.top-menuRect.height-gap;
+    const top=side==='below'?rect.bottom+gap:rect.top-menuRect.height-gap;
     // Do not clamp the menu onto the selected text or detach it from its number.
     // WebKit can round scroll offsets to whole pixels while text rects remain fractional.
-    if(top<topEdge-1 || rect.bottom>bottomEdge+1){clear();return;}
+    if(!side){clear();return;}
     const middle=(rect.left+rect.right)/2;
     const left=Math.max(viewLeft+8,Math.min(viewLeft+viewWidth-menuRect.width-8,middle-menuRect.width/2));
+    toolbar.dataset.placement=side;
     toolbar.style.left=left+'px';toolbar.style.top=top+'px';toolbar.style.setProperty('--arrow-x',Math.max(13,Math.min(menuRect.width-13,middle-left))+'px');
   }
   function queuePosition(){if(!frame)frame=requestAnimationFrame(()=>position());}

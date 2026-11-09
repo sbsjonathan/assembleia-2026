@@ -60,9 +60,10 @@ class Handler(SimpleHTTPRequestHandler):
         self.send_response(200);self.send_header('Content-Type',kind);self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)
 
 METRICS = r'''() => {
- const body = document.querySelector('#verses'), title = document.querySelector('#reading-title');
+ const body = document.querySelector('#verses'), title = document.querySelector('#screen-title');
  const chapter = body.querySelector('.chapter-number');
  const font = el => parseFloat(getComputedStyle(el).fontSize);
+ const header=document.querySelector('.app-header');
  const links = [...body.querySelectorAll('.study-word')];
  const punctuation = links.flatMap(link => {
    const after = link.nextSibling, text = after?.firstChild;
@@ -73,8 +74,12 @@ METRICS = r'''() => {
    return [{term: link.textContent, sameLine: Math.abs(a.getBoundingClientRect().top-b.getBoundingClientRect().top)<2,
     sameFont: getComputedStyle(link).font === getComputedStyle(after).font}];
  });
- return {title:title.textContent, font:font(body), titleRatio:font(title)/font(body),
+ return {title:title.textContent, bodyHeading:!!document.querySelector('#reading-title,#reader > h2'),
+  readerLabel:document.querySelector('#reader').getAttribute('aria-labelledby'),
+  font:font(body), globalFont:GlobalFontScale.getSize(), lineHeight:parseFloat(getComputedStyle(body).lineHeight),
   chapterRatio:font(chapter)/font(body), chapterWeight:getComputedStyle(chapter).fontWeight,
+  headerHeight:header.getBoundingClientRect().height, headerTitle:font(title),
+  headerSubtitle:font(document.querySelector('#screen-subtitle')), headerBack:font(document.querySelector('#back')),
   overflowing:document.documentElement.scrollWidth>innerWidth+1,
   links:links.length, inline:links.every(el=>el.tagName==='A'&&getComputedStyle(el).display==='inline'),
   weights:links.map(el=>getComputedStyle(el).fontWeight),
@@ -107,10 +112,13 @@ def run(browser, name, base):
         page.evaluate('(level)=>GlobalFontScale.setLevel(level)',level)
         page.evaluate('document.fonts.ready')
         data=page.evaluate(METRICS)
-        assert data['title']=='Gálatas' and data['links']>=20, data
+        assert data['title']=='Gálatas 1' and data['links']>=20, data
+        assert not data['bodyHeading'] and data['readerLabel']=='screen-title', data
         assert data['inline'] and set(data['weights'])=={'400'}, data
-        assert 1.34<data['titleRatio']<1.36 and 1.39<data['chapterRatio']<1.41, data
-        assert data['chapterWeight']=='400' and not data['overflowing'], data
+        assert abs(data['font']-data['globalFont']*17.35/19.36)<.03, data
+        assert abs(data['lineHeight']/data['font']-1.5)<.01 and 1.49<data['chapterRatio']<1.51, data
+        assert data['chapterWeight']=='700' and not data['overflowing'], data
+        assert data['headerHeight']==44 and data['headerTitle']==17 and data['headerSubtitle']==13 and data['headerBack']==16, data
         assert data['punctuation'] and all(item['sameLine'] and item['sameFont'] for item in data['punctuation']), data
         if width<=430:
             assert data['multiline'], 'Study phrases must wrap within the paragraph'
@@ -139,6 +147,54 @@ def run(browser, name, base):
     page.wait_for_selector('#reader:not([hidden]) .study-word')
     assert page.evaluate('window.legacyBibleSeeded && performance.getEntriesByName("bible-local-view").length===1')
     assert set(page.evaluate(METRICS)['weights'])=={'400'}
+    # Match the supplied JW Library screenshot, not the different web reader.
+    open_chapter(page, base, 48, 5)
+    assert abs(page.evaluate(METRICS)['font']-17.35)<.03
+    galatians5=page.evaluate(r'''()=>{
+      const paragraph=document.querySelector('.bible-paragraph'),walker=document.createTreeWalker(paragraph,NodeFilter.SHOW_TEXT),lines={};
+      let firstCharacter=null;
+      while(walker.nextNode()){
+        const text=walker.currentNode;
+        if(text.parentElement.closest('.note-marker,.verse-number'))continue;
+        for(let i=0;i<text.length;i++){
+          const range=document.createRange();range.setStart(text,i);range.setEnd(text,i+1);
+          const rect=range.getBoundingClientRect(),top=Math.round(rect.top);
+          if(!firstCharacter&&text.textContent[i].trim())firstCharacter={left:rect.left,bottom:rect.bottom};
+          lines[top]=(lines[top]||'')+text.textContent[i];
+        }
+      }
+      const chapter=document.querySelector('.chapter-number').getBoundingClientRect();
+      return {lines:Object.values(lines).map(text=>text.trim()),
+        chapterInline:Math.abs(chapter.bottom-firstCharacter.bottom)<12&&firstCharacter.left>=chapter.right-1};
+    }''')
+    assert galatians5['lines']==[
+        'Para tal liberdade é que Cristo nos libertou.',
+        'Portanto, mantenham-se firmes e não se',
+        'deixem submeter novamente a um jugo de',
+        'escravidão.'
+    ],galatians5
+    assert galatians5['chapterInline'],galatians5
+    page.screenshot(path=str(ARTIFACTS/f'{name}-galatians5-original-layout.png'))
+    # Removing the redundant heading leaves the first verse close to the header.
+    # Its action menu must still fit instead of trying to scroll above page zero.
+    assert page.evaluate('scrollY')==0
+    page.locator('#verse-1').click()
+    page.wait_for_selector('.text-actions:not([hidden])')
+    assert page.locator('#verse-1').get_attribute('aria-pressed')=='true'
+    assert page.evaluate('scrollY')==0
+    assert page.locator('.text-actions').get_attribute('data-placement')=='below'
+    assert page.evaluate('''()=>{
+      const menu=document.querySelector('.text-actions').getBoundingClientRect();
+      return menu.top>=document.querySelector('.app-header').getBoundingClientRect().bottom&&menu.bottom<=innerHeight;
+    }''')
+    page.keyboard.press('Escape')
+    page.wait_for_selector('.text-actions',state='hidden')
+    page.locator('#verse-7').click()
+    page.wait_for_selector('.text-actions:not([hidden])')
+    assert page.locator('#verse-7').get_attribute('aria-pressed')=='true'
+    assert page.locator('.text-actions').get_attribute('data-placement')=='above'
+    page.keyboard.press('Escape')
+    page.wait_for_selector('.text-actions',state='hidden')
     open_chapter(page, base, 1, 1)
     page.locator('.note-marker.footnote').first.click()
     page.wait_for_function('document.querySelector("#note-dialog").open && document.querySelector("#note-body").textContent.length>8 && document.querySelector("#note-body").textContent!=="Carregando…"')
@@ -154,7 +210,7 @@ def run(browser, name, base):
     assert page.locator('.chapter-number').inner_text()=='3'
     page.screenshot(path=str(ARTIFACTS/f'{name}-psalm.png'))
     context.close()
-    return reports
+    return {'fontCases':reports,'galatians5':galatians5}
 
 if __name__=='__main__':
     ARTIFACTS.mkdir(parents=True,exist_ok=True)
@@ -169,7 +225,7 @@ if __name__=='__main__':
                 browser=engine.launch(**options)
                 report[name]=run(browser,name,base)
                 browser.close()
-                print(f'PASS {name}: real chapters, inline notes, punctuation, five font/width combinations, legacy cache, reference/footnote actions and poetry',flush=True)
+                print(f'PASS {name}: JW Library Galatians 5 line layout, compact fixed header, inline notes, five font/width combinations, legacy cache, references and poetry',flush=True)
     finally:
         server.shutdown()
         (ARTIFACTS/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))

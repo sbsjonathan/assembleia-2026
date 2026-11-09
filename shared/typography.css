@@ -15,10 +15,14 @@ html[data-font-size-global] :is(input, select, textarea) {
 
 /* Use the selected pixel size directly, without compounding relative sizes
    from a modal parent or restored article styles. */
-html[data-font-size-global] .sentinela-bible :is(.verses, .study-reference-verse),
 html[data-font-size-global] .paragrafo,
 html[data-font-size-global] #modal-biblia-corpo p {
     font-size: var(--font-base-global, 19.36px);
+}
+/* Match the native Bible's reading proportions at the default global level.
+   Changes to that preference still scale the scripture by the same ratio. */
+html[data-font-size-global] .sentinela-bible :is(.verses, .study-reference-verse) {
+    font-size: calc(var(--font-base-global, 19.36px) * 17.35 / 19.36);
 }
 html[data-font-size-global] .sentinela-bible :is(.document, .note-body) {
     font-size: var(--font-base-global);
@@ -43,7 +47,6 @@ html[data-font-size-global] .sentinela-bible .chapter-tile { font-size: calc(18p
 html[data-font-size-global] .sentinela-bible .section-row { font-size: calc(17px * var(--font-scale-global)); }
 html[data-font-size-global] .sentinela-bible :is(.section-row .row-label, #position, .saved-row small, .welcome .small) { font-size: calc(12px * var(--font-scale-global)); }
 html[data-font-size-global] .sentinela-bible :is(.section-list h2, .sheet-header h2, .saved-row > button:first-child, .font-setting button) { font-size: calc(19px * var(--font-scale-global)); }
-html[data-font-size-global] .sentinela-bible #reading-title { font-size: calc(var(--font-base-global) * 1.35); }
 html[data-font-size-global] .sentinela-bible .document > h2 { font-size: calc(28px * var(--font-scale-global)); }
 html[data-font-size-global] .sentinela-bible :is(.library h2, .saved-page h2, .welcome h2) { font-size: calc(27px * var(--font-scale-global)); }
 html[data-font-size-global] .sentinela-bible :is(.library label, #search-form label) { font-size: calc(13px * var(--font-scale-global)); }
@@ -66,6 +69,13 @@ html.large-reading-text .sentinela-bible .header-actions { grid-row: 1; grid-col
 html.large-reading-text .sentinela-bible .header-title { grid-row: 2; grid-column: 1 / -1; margin-left: 0; align-self: center; }
 html.large-reading-text .sentinela-bible .header-title h1,
 html.large-reading-text .sentinela-bible .header-title p { white-space: nowrap; }
+
+/* In the native reader, the passage grows while the chapter header stays compact. */
+html[data-font-size-global] .sentinela-bible.reading { --header: 44px; }
+html[data-font-size-global] .sentinela-bible.reading .app-header { display: flex; padding-bottom: 0; }
+html[data-font-size-global] .sentinela-bible.reading .header-title h1 { font-size: 17px; }
+html[data-font-size-global] .sentinela-bible.reading .header-title p { font-size: 13px; }
+html[data-font-size-global] .sentinela-bible.reading .header-back { font-size: 16px; }
 
 html[data-font-size-global] #search-dialog .search-panel-header h2 { font-size: calc(20px * var(--font-scale-global)); }
 html[data-font-size-global] #search-dialog :is(.search-category, .search-suggestions-title) { font-size: calc(13px * var(--font-scale-global)); }
