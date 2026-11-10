@@ -13,7 +13,7 @@ A resposta conversacional e a aba de leitura literal mantêm suas instruções e
 - As seleções são validadas antes de substituir marcas anteriores. Trechos inválidos, ambíguos, fora de contexto ou inteiramente protegidos preservam o estado anterior.
 - Marcas manuais nunca são sobrescritas. Recolorir uma marca de IA manualmente transfere seu controle ao usuário.
 - Referências de apoio entre parênteses, referências finais após travessão e notas ficam sem cor. Um link que integra a resposta — como o Salmo 91 que será estudado — pode ser marcado sem perder a interação.
-- A aplicação preserva o texto e os elementos do artigo, não aninha marcas e salva cada parágrafo alterado uma vez.
+- A aplicação preserva o texto e os elementos do artigo, não sobrepõe duas cores e salva cada parágrafo alterado uma vez. A cor e o pontilhado da recapitulação são camadas independentes: podem coexistir no mesmo trecho, em qualquer ordem de geração, sem transferir sua propriedade. Regenerar ou remover uma camada preserva a outra.
 - A revelação da cor percorre os trechos da esquerda para a direita, na ordem do texto. O cache recebe a marca final antes da animação, sem estado transitório. Regenerar, recolorir manualmente ou ativar redução de movimento cancela a animação com segurança.
 
 ## Modelos
@@ -35,3 +35,11 @@ Fontes oficiais: [modelos e descontinuação](https://ai.google.dev/gemini-api/d
 Também foram feitos ensaios pequenos no proxy real, somente com o texto público dos casos fornecidos. O caso 1–2 foi comparado com os cinco conjuntos de informações da marcação manual: decisão dos governantes, destruição das organizações religiosas, ataque das nações, objetivo de eliminar os adoradores/adoração e Armagedom com o desfecho completo. O caso 3 deve terminar nas perguntas sobre a proteção futura e deixar de fora “Mas antes…”. Os retornos reais também são reaplicados nos testes de DOM. Esses ensaios não garantem acerto em todos os estudos: novos exemplos devem ampliar a base de regressão.
 
 Marcas antigas não são apagadas automaticamente. Para aplicar a nova extração a uma pergunta já salva, gere novamente sua resposta pelo ícone de IA.
+
+## Menu de marcação
+
+Na seleção de texto, a bolinha simples aplica diretamente a última cor escolhida. Ao tocar em um trecho já colorido, o botão mostra a cor daquele trecho no centro e pequenas partes de outras bolinhas atrás; esse botão abre a paleta para recolorir. O gesto rápido de selecionar e pintar continua disponível.
+
+Selecionar texto pontilhado permite acrescentar cor. Recolorir ou apagar a cor mantém o pontilhado; tocar apenas no pontilhado permite removê-lo. As duas camadas são salvas no HTML do parágrafo. Marcas antigas que reuniam os dois estilos no mesmo elemento preservam o estilo restante ao remover uma das marcações.
+
+`python tests/test_mark_layers.py` verifica ambas as ordens, sobreposição parcial, regeneração, propriedade manual, restauração e animação. `python tests/test_mark_menu.py` verifica toques reais nos controles, seleção preservada e ações distintas da bolinha simples e do botão com bolinhas sobrepostas. `WEBKIT_EXECUTABLE` habilita WebKit em ambas as suítes; os gestos nativos de seleção são representados por ranges e eventos de toque, sem simular o seletor nativo inteiro do iPhone.

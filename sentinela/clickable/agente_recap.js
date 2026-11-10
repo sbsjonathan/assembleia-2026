@@ -161,7 +161,7 @@
       'Responda em português à pergunta de recapitulação usando somente a FONTE abaixo.',
       'Leia o título da recapitulação junto com o item perguntado: eles podem formar uma única pergunta.',
       'Procure a resposta em todos os parágrafos fornecidos. Responda a cada pedido real da pergunta, reunindo as ideias relevantes sem repetir o artigo nem acrescentar conhecimento externo.',
-      'Use um parágrafo natural e direto, em geral 2–4 frases. Prefira até 100 palavras, mas preserve as informações necessárias para responder por completo. Evite introduções, elogios, conclusões genéricas e repetir o enunciado.',
+      'Use um parágrafo natural e direto, em geral 2 frases curtas e 35–50 palavras; natural_answer nunca deve ultrapassar 60 palavras. Selecione as ideias essenciais para responder por completo, sem reproduzir todas as explicações do artigo. Evite introduções, elogios, conclusões genéricas e repetir o enunciado. Esse limite é apenas da resposta natural, não das citações em highlights.',
       'Distinga o que o artigo afirma de uma aplicação pessoal. Se a fonte não sustentar a resposta, diga isso brevemente, retorne insufficient_source:true e highlights vazio. Em uma resposta sustentada use insufficient_source:false e inclua suas citações. Não invente motivos, detalhes, citações ou números de parágrafo.',
       'Em highlights, indique de 1 a 4 citações literais curtas que, juntas, sustentem a resposta; use mais somente se indispensável para cobrir todos os pedidos. Copie cada frase/cláusula completa do parágrafo indicado, sem reticências, paráfrases ou trechos de ligação desnecessários.',
       'Uma pergunta de recapitulação pode ter apoio em parágrafos distantes. Não escolha somente a primeira ocorrência de uma palavra nem todo o parágrafo por conveniência.',
@@ -223,7 +223,8 @@
   function validateResponse(text, bundle) {
     const value = safeJSONParse(text);
     if (!value || typeof value.natural_answer !== 'string' || !normalizeSpaces(value.natural_answer) ||
-        value.natural_answer.length > 1800 || !Array.isArray(value.highlights) || value.highlights.length > 8 ||
+        value.natural_answer.length > 1800 || normalizeSpaces(value.natural_answer).split(' ').length > 60 ||
+        !Array.isArray(value.highlights) || value.highlights.length > 8 ||
         (!value.highlights.length && value.insufficient_source !== true) ||
         (value.highlights.length && value.insufficient_source === true)) throw new Error('Formato de resposta inválido.');
     const indexes = new Map(), highlights = [], seen = new Set();
@@ -252,8 +253,15 @@
     for (const mark of bundle.root.querySelectorAll(`mark[data-ia-owner="${CSS.escape(ownerId)}"]`)) {
       const scope = mark.closest('.paragrafo');
       if (!scope || !bundle.paragrafos.some(p => p.element === scope)) continue;
-      if (mark.dataset.iaMode === 'owned' && mark.classList.contains('ia-underline-recap')) unwrapMark(mark);
-      else { delete mark.dataset.iaOwner; delete mark.dataset.iaGroup; delete mark.dataset.iaMode; }
+      const hasColor = [...mark.classList].some(name => name.startsWith('hl-color-') || name === 'ia-highlight' || name === 'ia-highlight-b');
+      if (mark.dataset.iaMode === 'owned' && mark.classList.contains('ia-underline-recap') && !hasColor) unwrapMark(mark);
+      else {
+        // Legacy saved marks may combine both effects with only one owner.
+        // Release this recap's dotted effect without discarding the color or
+        // pretending to know which earlier question/reader created it.
+        mark.classList.remove('ia-underline-recap');
+        ['iaOwner', 'iaGroup', 'iaPart', 'iaMode'].forEach(key => { delete mark.dataset[key]; });
+      }
       touched.add(scope);
     }
     for (const paragraph of bundle.paragrafos) {
@@ -277,8 +285,9 @@
         }
         const groupId = `${ownerId}-recap-${paragraph.number}-${span.start}`;
         for (const part of segments.reverse()) {
-          // Manual marks and another agent's marks keep their ownership and DOM.
-          if (part.node.parentElement?.closest('mark')) continue;
+          // Recap is a separate dotted layer, including over colored answers
+          // or another recap's support. Their elements/ownership remain intact;
+          // regenerating this answer unwraps only this owner's dotted marks.
           const selected = part.node.nodeValue.slice(part.start, part.end);
           const left = (selected.match(/^\s+/) || [''])[0].length;
           const right = (selected.match(/\s+$/) || [''])[0].length;

@@ -59,8 +59,9 @@ def run_suite(browser,base):
     page.locator('.ia-ref-chip').click();assert 'paragrafo-destaque' in page.locator('#pg-2').get_attribute('class')
     page.evaluate('window.scrollTo(0,0)')
     original=page.locator('#pg-1').inner_text()
-    manual=page.locator('#manual').evaluate('(el)=>el.outerHTML')
-    other=page.locator('#other-agent').evaluate('(el)=>el.outerHTML')
+    mark_state='el=>({text:el.textContent,attributes:[...el.attributes].map(a=>[a.name,a.value])})'
+    manual=page.locator('#manual').evaluate(mark_state)
+    other=page.locator('#other-agent').evaluate(mark_state)
     queue({'payload':payload()})
     page.evaluate('qaRun()')
     request=page.evaluate('qaRequests[0]')
@@ -74,9 +75,11 @@ def run_suite(browser,base):
     assert 'Podemos confiar em Jeová.' in prompt and 'Salmo 91' in prompt
     assert page.locator('.ia-recap-answer').inner_text()==payload()['natural_answer']
     assert page.locator('#pg-1').inner_text()==original
-    assert page.locator('#manual').evaluate('(el)=>el.outerHTML')==manual
-    assert page.locator('#other-agent').evaluate('(el)=>el.outerHTML')==other
-    assert page.locator('mark mark').count()==0
+    assert page.locator('#manual').evaluate(mark_state)==manual
+    assert page.locator('#other-agent').evaluate(mark_state)==other
+    assert page.locator('#manual > mark.ia-underline-recap').count()==1
+    assert page.locator('#other-agent > mark.ia-underline-recap').count()==1
+    assert page.locator('mark.ia-underline-recap mark.ia-underline-recap').count()==0
     assert page.locator('#pg-2 mark[data-ia-owner="rcp-1"]').count()==0
     ids=[row['id'] for row in saved()];assert sorted(ids)==['pg-1','pg-2','response'],ids
 
@@ -86,6 +89,26 @@ def run_suite(browser,base):
     page.evaluate('qaRun()')
     assert page.evaluate('qaRequests.map(r=>r.modelName)')==MODELS
     assert page.locator('.ia-recap-answer').inner_text()==payload()['natural_answer']
+
+    reset()
+    # An overlong answer is retried intact rather than cut mid-sentence.
+    long_answer='A oração fortalece a fé. ' * 13
+    assert len(long_answer.split())>60
+    queue({'payload':payload(answer=long_answer)}, {'payload':payload()})
+    page.evaluate('qaRun()')
+    assert page.evaluate('qaRequests.map(r=>r.modelName)')==MODELS[:2]
+    assert page.locator('.ia-recap-answer').inner_text()==payload()['natural_answer']
+    assert '60 palavras' in page.evaluate('qaRequests[0].prompt')
+    assert page.locator('#manual > mark.ia-underline-recap').count()==1
+
+    reset()
+    # The short-answer limit does not shorten the exact supporting quotation.
+    long_quote=('Oramos antes de decidir e confiamos em Jeová. ' * 9).strip()
+    page.locator('#pg-3').evaluate('(el,text)=>{el.innerHTML="<span>3</span> ";el.append(text)}',long_quote)
+    queue({'payload':payload(quote=long_quote,number=3)})
+    page.evaluate('qaRun()')
+    assert page.evaluate('qaRequests.length')==1
+    assert page.locator('#pg-3 .ia-underline-recap').inner_text()==long_quote
 
     reset()
     # Repeated/ambiguous quotes, invented text and word fragments must never be guessed.

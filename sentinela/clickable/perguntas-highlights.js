@@ -261,14 +261,24 @@ function unwrap(mark) {
   mark.replaceWith(...mark.childNodes);
   parent?.normalize();
 }
-function canReplaceColor(item, ownerId) {
-  if (!item?.node?.parentElement || !/\S/.test(item.char) || (item.protected || item.node.parentElement.closest(PRIVATE))) return false;
-  let parent = item.node.parentElement;
+// Dotted recap and colored answers are independent layers. A recap-only mark
+// does not reserve the background; every existing colored/manual mark still
+// owns its color and must not be replaced by another question.
+function hasProtectedColorAncestor(node, ownerId) {
+  let parent = node.parentElement;
   while (parent) {
-    if (parent.tagName === 'MARK' && !ownedMark(parent, ownerId)) return false;
+    if (parent.tagName === 'MARK') {
+      const recapOnly = parent.classList.contains('ia-underline-recap') &&
+        ![...parent.classList].some(name => name.startsWith('hl-color-') || name === 'ia-highlight' || name === 'ia-highlight-b');
+      if (!recapOnly && !ownedMark(parent, ownerId)) return true;
+    }
     parent = parent.parentElement;
   }
-  return true;
+  return false;
+}
+function canReplaceColor(item, ownerId) {
+  if (!item?.node?.parentElement || !/\S/.test(item.char) || (item.protected || item.node.parentElement.closest(PRIVATE))) return false;
+  return !hasProtectedColorAncestor(item.node, ownerId);
 }
 
 /** Validate first; invalid model text never erases previously saved markings. */
@@ -301,7 +311,16 @@ export function applyHighlights(ownerId, parsed, bundle) {
   ensureHighlightPaint();
   bundle.paragraphs.forEach(paragraph => {
     paragraph.element.querySelectorAll('mark').forEach(mark => {
-      if (ownedMark(mark, ownerId)) {cancelSweep(mark); unwrap(mark); touched.add(paragraph);}
+      if (!ownedMark(mark, ownerId)) return;
+      cancelSweep(mark);
+      if (mark.classList.contains('ia-underline-recap')) {
+        // Older saved markup combined both effects in one element. Keep its
+        // dotted layer, whose original recap ownership cannot be recovered.
+        [...mark.classList].filter(name => name.startsWith('hl-color-') || name === 'ia-highlight' || name === 'ia-highlight-b')
+          .forEach(name => mark.classList.remove(name));
+        ['iaOwner', 'iaGroup', 'iaPart', 'iaMode'].forEach(key => { delete mark.dataset[key]; });
+      } else unwrap(mark);
+      touched.add(paragraph);
     });
   });
   const nodePlans = new Map();
@@ -317,7 +336,7 @@ export function applyHighlights(ownerId, parsed, bundle) {
     };
     for (let offset = plan.start; offset < plan.end; offset++) {
       const item = index.map[offset];
-      if (!item || !item.node || item.protected || item.node.parentElement?.closest(`mark,${PRIVATE}`)) {flush(); continue;}
+      if (!item || !item.node || item.protected || item.node.parentElement?.closest(PRIVATE) || hasProtectedColorAncestor(item.node, ownerId)) {flush(); continue;}
       if (segment && (segment.node !== item.node || segment.end !== item.offset)) flush();
       if (!segment) segment = {node: item.node, start: item.offset, end: item.offset + 1};
       else segment.end = item.offset + 1;

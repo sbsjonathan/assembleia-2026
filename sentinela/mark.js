@@ -29,12 +29,12 @@
     mark.hl-color-pink { background-color: #DD89A966 !important; }
     mark.hl-color-orange { background-color: #E5A77C66 !important; }
 
-    .hl-btn.hl-color-yellow { background-color: #FFEC0D !important; }
-    .hl-btn.hl-color-green { background-color: #B7E492 !important; }
-    .hl-btn.hl-color-blue { background-color: #98D8FF !important; }
-    .hl-btn.hl-color-purple { background-color: #C1A7E2 !important; }
-    .hl-btn.hl-color-pink { background-color: #DD89A9 !important; }
-    .hl-btn.hl-color-orange { background-color: #E5A77C !important; }
+    .hl-btn.hl-color-yellow, .hl-color-swatch.hl-color-yellow { background-color: #FFEC0D !important; }
+    .hl-btn.hl-color-green, .hl-color-swatch.hl-color-green { background-color: #B7E492 !important; }
+    .hl-btn.hl-color-blue, .hl-color-swatch.hl-color-blue { background-color: #98D8FF !important; }
+    .hl-btn.hl-color-purple, .hl-color-swatch.hl-color-purple { background-color: #C1A7E2 !important; }
+    .hl-btn.hl-color-pink, .hl-color-swatch.hl-color-pink { background-color: #DD89A9 !important; }
+    .hl-btn.hl-color-orange, .hl-color-swatch.hl-color-orange { background-color: #E5A77C !important; }
 
     #hl-custom-menu {
       position: absolute;
@@ -63,8 +63,10 @@
       align-items: center;
     }
     .hl-btn {
+      appearance: none;
       width: 24px;
       height: 24px;
+      padding: 0;
       border-radius: 50%;
       border: 2px solid transparent;
       cursor: pointer;
@@ -72,9 +74,23 @@
       transition: transform 0.1s;
     }
     .hl-btn:active { transform: scale(0.85); }
-    .hl-color-btn-main {
-      border: 2px solid #555;
+    .hl-btn.hl-color-btn-main {
+      position: relative;
+      width: 32px;
+      height: 32px;
+      background: transparent !important;
+      border: 0;
     }
+    .hl-color-swatch { position: absolute; border-radius: 50%; box-sizing: border-box; pointer-events: none; }
+    .hl-color-front { width: 20px; height: 20px; left: 6px; top: 6px; border: 1px solid rgba(0,0,0,.12); z-index: 2; }
+    .hl-color-peek { display: none; width: 14px; height: 14px; border: 1px solid rgba(0,0,0,.1); }
+    .hl-color-stack .hl-color-peek { display: block; }
+    .hl-color-peek:nth-child(1) { left: 9px; top: 3px; }
+    .hl-color-peek:nth-child(2) { right: 3px; top: 7px; }
+    .hl-color-peek:nth-child(3) { right: 5px; bottom: 3px; }
+    .hl-color-peek:nth-child(4) { left: 5px; bottom: 3px; }
+    .hl-color-peek:nth-child(5) { left: 3px; top: 7px; }
+    #hl-custom-menu button:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
     .hl-divider {
       width: 1px;
       height: 20px;
@@ -106,6 +122,10 @@
   document.head.appendChild(styleEl);
 
   const colors =['yellow', 'green', 'blue', 'purple', 'pink', 'orange'];
+  const colorNames = { yellow: 'amarelo', green: 'verde', blue: 'azul', purple: 'roxo', pink: 'rosa', orange: 'laranja' };
+  const colorOf = mark => colors.find(color => mark?.classList.contains(`hl-color-${color}`)) ||
+    (mark?.classList.contains('ia-highlight') ? 'yellow' : mark?.classList.contains('ia-highlight-b') ? 'green' : null);
+  const recapOnly = mark => mark?.classList.contains('ia-underline-recap') && !colorOf(mark);
   let lastColor = 'yellow';
   let activeRange = null;
   let activeHlId = null;
@@ -118,15 +138,27 @@
   const menu = document.createElement('div');
   menu.id = 'hl-custom-menu';
   
-  const mainBtn = document.createElement('div');
+  const mainBtn = document.createElement('button');
+  mainBtn.type = 'button';
   mainBtn.className = `hl-btn hl-color-btn-main hl-color-${lastColor}`;
+  const peeks = Array.from({ length: colors.length - 1 }, () => {
+    const swatch = document.createElement('span');
+    swatch.setAttribute('aria-hidden', 'true');
+    mainBtn.append(swatch);
+    return swatch;
+  });
+  const front = document.createElement('span');
+  front.setAttribute('aria-hidden', 'true');
+  mainBtn.append(front);
   
   const palette = document.createElement('div');
   palette.className = 'hl-palette';
   colors.forEach(c => {
-    const btn = document.createElement('div');
+    const btn = document.createElement('button');
+    btn.type = 'button';
     btn.className = `hl-btn hl-color-${c}`;
     btn.dataset.color = c;
+    btn.setAttribute('aria-label', `Destacar em ${colorNames[c]}`);
     palette.appendChild(btn);
   });
 
@@ -134,6 +166,8 @@
   divider.className = 'hl-divider';
 
   const trashBtn = document.createElement('button');
+  trashBtn.type = 'button';
+  trashBtn.setAttribute('aria-label', 'Remover destaque');
   trashBtn.className = 'hl-btn-trash';
   trashBtn.innerHTML = `<svg viewBox="0 0 24 24"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/></svg>`;
 
@@ -142,6 +176,14 @@
   menu.appendChild(divider);
   menu.appendChild(trashBtn);
   document.body.appendChild(menu);
+  // Keep the article selection when a pointer presses a menu control. The
+  // cloned range remains available even if WebKit hides its native handles.
+  menu.addEventListener('pointerdown', event => {
+    // Cancelling a touch pointerdown can suppress the click in WebKit. Touch
+    // uses the saved range; only mouse presses need their focus change stopped.
+    if (event.pointerType === 'mouse') event.preventDefault();
+  });
+  menu.addEventListener('mousedown', event => event.preventDefault());
 
   // Escudo Anti-Raio-X para bloquear toques quando os modais estiverem abertos
   const isAnyModalOpen = () => {
@@ -158,12 +200,22 @@
     if (window.CacheAnotacao && scope?.id) window.CacheAnotacao.salvar(scope.id, scope.innerHTML);
   };
 
-  const showMenu = (rect, isEdit, isRecapOnly = false) => {
+  const showMenu = (rect, isEdit, isRecapOnly = false, markColor = lastColor) => {
     menu.classList.remove('hl-expanded');
     menu.classList.remove('recap-only');
     if (isRecapOnly) menu.classList.add('recap-only');
 
-    mainBtn.className = `hl-btn hl-color-btn-main hl-color-${lastColor}`;
+    const displayColor = isEdit ? markColor : lastColor;
+    mainBtn.className = `hl-btn hl-color-btn-main hl-color-${displayColor}${isEdit && !isRecapOnly ? ' hl-color-stack' : ''}`;
+    front.className = `hl-color-swatch hl-color-front hl-color-${displayColor}`;
+    const alternatives = colors.filter(color => color !== displayColor);
+    peeks.forEach((swatch, index) => {
+      swatch.className = `hl-color-swatch hl-color-peek hl-color-${alternatives[index]}`;
+      swatch.dataset.swatchColor = alternatives[index];
+    });
+    mainBtn.setAttribute('aria-label', isEdit ? 'Alterar cor do destaque' : `Aplicar destaque ${colorNames[lastColor]}`);
+    if (isEdit) mainBtn.setAttribute('aria-expanded', 'false');
+    else mainBtn.removeAttribute('aria-expanded');
     
     if (isEdit) {
       trashBtn.classList.add('hl-active');
@@ -231,7 +283,14 @@
       if (lTrim > 0) node = node.splitText(lTrim);
       if (rTrim > 0) node.splitText(node.nodeValue.length - rTrim);
       
-      if (!node.nodeValue || node.parentNode.tagName === 'MARK') return;
+      // Color and recap are separate layers. An underline does not prevent
+      // painting, while an existing color still belongs to its original owner.
+      let ancestor = node.parentElement;
+      while (ancestor && ancestor !== scope) {
+        if (ancestor.tagName === 'MARK' && !recapOnly(ancestor)) return;
+        ancestor = ancestor.parentElement;
+      }
+      if (!node.nodeValue) return;
       
       const mark = document.createElement('mark');
       mark.className = `hl-color-${color}`;
@@ -248,7 +307,8 @@
     const marks = document.querySelectorAll(`mark[data-hl-id="${id}"]`);
     let scope = null;
     marks.forEach(m => {
-      m.className = `hl-color-${color}`;
+      const keepUnderline = m.classList.contains('ia-underline-recap');
+      m.className = `hl-color-${color}${keepUnderline ? ' ia-underline-recap' : ''}`;
       // A manual color choice belongs to the reader from this point onward.
       // A later AI refresh must preserve it instead of treating it as generated.
       delete m.dataset.iaOwner;
@@ -265,6 +325,16 @@
     if (!marks.length) return;
     const scope = marks[0].closest('.paragrafo');
     marks.forEach(m => {
+      // Older saved articles can put both styles on one element. Removing
+      // their color should leave the dotted reference available to the reader.
+      if (colorOf(m) && m.classList.contains('ia-underline-recap')) {
+        m.className = 'ia-underline-recap';
+        delete m.dataset.iaOwner;
+        delete m.dataset.iaGroup;
+        delete m.dataset.iaPart;
+        delete m.dataset.iaMode;
+        return;
+      }
       const p = m.parentNode;
       while (m.firstChild) p.insertBefore(m.firstChild, m);
       m.remove();
@@ -275,7 +345,17 @@
 
   mainBtn.addEventListener('click', (e) => {
     e.stopPropagation();
-    menu.classList.add('hl-expanded');
+    if (activeHlId) {
+      menu.classList.add('hl-expanded');
+      mainBtn.setAttribute('aria-expanded', 'true');
+    } else if (activeRange) {
+      const scope = activeRange.commonAncestorContainer.nodeType === 1
+        ? activeRange.commonAncestorContainer.closest('.paragrafo')
+        : activeRange.commonAncestorContainer.parentElement?.closest('.paragrafo');
+      if (scope) applyHighlight(lastColor, activeRange, scope);
+      window.getSelection()?.removeAllRanges();
+      hideMenu();
+    }
   });
 
   palette.addEventListener('click', (e) => {
@@ -333,7 +413,7 @@
       let tMark = null;
 
       if (marks.length > 0) {
-        tMark = marks.find(m => !m.classList.contains('ia-underline-recap'));
+        tMark = marks.find(m => colorOf(m));
         if (!tMark) tMark = marks.find(m => m.classList.contains('ia-underline-recap'));
       } else {
         tMark = e.target.closest('mark');
@@ -381,7 +461,7 @@
       const y = e.changedTouches[0].clientY;
       const marks = document.elementsFromPoint(x, y).filter(el => el.tagName === 'MARK');
       if (marks.length > 0) {
-        targetMark = marks.find(m => !m.classList.contains('ia-underline-recap'));
+        targetMark = marks.find(m => colorOf(m));
         if (!targetMark) {
           targetMark = marks.find(m => m.classList.contains('ia-underline-recap'));
           isRecapOnly = true;
@@ -391,10 +471,12 @@
 
     if (!targetMark) {
       targetMark = e.target.closest('mark');
-      if (targetMark && targetMark.classList.contains('ia-underline-recap')) isRecapOnly = true;
+      if (targetMark && recapOnly(targetMark)) isRecapOnly = true;
     }
 
-    if (targetMark && targetMark.dataset.hlId) {
+    const selection = window.getSelection();
+    const hasSelection = selection && !selection.isCollapsed && selection.toString().trim();
+    if (targetMark && targetMark.dataset.hlId && !hasSelection) {
       if (touchStartData.moved) {
         lastMarkTap = { id: null, time: 0 };
         return;
@@ -413,7 +495,7 @@
       activeHlId = hlId;
       activeRange = null;
       const rect = getHlBounds(activeHlId);
-      if (rect) showMenu(rect, true, isRecapOnly);
+      if (rect) showMenu(rect, true, isRecapOnly, colorOf(targetMark) || lastColor);
       return;
     }
 
@@ -446,7 +528,7 @@
         hideMenu();
       } 
       else if (distance > 10 || isQuickSwipeMode || sel.toString().trim().length > 0) {
-        activeRange = range;
+        activeRange = range.cloneRange();
         activeHlId = null;
         showMenu(range.getBoundingClientRect(), false, false);
       }
