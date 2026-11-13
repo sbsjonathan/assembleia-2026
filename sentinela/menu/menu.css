@@ -278,11 +278,14 @@
 
 .sync-sheet {
   width: min(100%, 560px);
+  max-height: 100%;
   border-radius: 28px;
   border: 1px solid rgba(0,0,0,0.08);
   background: linear-gradient(180deg, rgba(255,255,255,0.985), rgba(246,247,251,0.97));
   box-shadow: 0 22px 48px rgba(0,0,0,0.22), 0 0 0 1px rgba(255,255,255,0.34) inset;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   transform: translateY(20px) scale(0.985);
   opacity: 0;
   transition: transform 0.22s ease, opacity 0.22s ease;
@@ -426,3 +429,137 @@
 [data-theme="dark"] .sync-alert__btn { color: #0a84ff; }
 [data-theme="dark"] .sync-alert__btn.is-danger { color: #ff453a; }
 [data-theme="dark"] .sync-alert__btn:active { background: rgba(255,255,255,0.05); }
+
+/* The navbar opens two compact cards in a separate scroll surface. Neither
+   opening these cards nor expanding preferences changes the article height. */
+.sentinela-article-menu {
+  --cor-global: var(--cor-principal-estudo, #65478b);
+  --article-menu-surface: #fff;
+  --article-menu-text: #2e3035;
+  --article-menu-muted: #777981;
+  --article-menu-border: rgba(40, 36, 50, 0.09);
+  position: fixed;
+  z-index: 1100;
+  inset: 0 0 var(--navbar-real-height, calc(70px + env(safe-area-inset-bottom, 0px)));
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: calc(env(safe-area-inset-top, 0px) + 12px) max(12px, env(safe-area-inset-right, 0px)) 12px max(12px, env(safe-area-inset-left, 0px));
+  box-sizing: border-box;
+  background: rgba(25, 23, 31, 0.24);
+  color: var(--article-menu-text);
+  font: clamp(15px, var(--tamanho-fonte, 19.36px), 22px)/1.4 'Noto Sans', -apple-system, sans-serif;
+  overscroll-behavior: contain;
+}
+.sentinela-article-menu[hidden] { display: none; }
+.sentinela-article-menu * { box-sizing: border-box; }
+.article-menu__scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: min(100%, 520px);
+  max-height: 100%;
+  min-height: 0;
+  padding: 2px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.article-menu__card {
+  flex: 0 0 auto;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--article-menu-border);
+  border-radius: 20px;
+  background: var(--article-menu-surface);
+  box-shadow: 0 6px 20px rgba(20, 16, 28, 0.12);
+}
+.article-menu__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 40px;
+  margin-bottom: 8px;
+}
+.article-menu__heading h2 {
+  margin: 0;
+  color: var(--article-menu-text);
+  font: 700 0.88em/1.35 'Noto Sans', -apple-system, sans-serif;
+  text-transform: none;
+  letter-spacing: -0.02em;
+}
+.article-menu__close {
+  display: grid;
+  place-items: center;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  color: var(--cor-global);
+  background: color-mix(in srgb, var(--cor-global) 7%, var(--article-menu-surface));
+  cursor: pointer;
+}
+.article-menu__close svg { width: 21px; height: 21px; }
+.article-menu__count { color: var(--article-menu-muted); font-size: 0.66em; white-space: nowrap; }
+.article-menu__controls .menu-barra {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  animation: none;
+  overflow: visible;
+}
+.article-menu__controls .acoes-grid { gap: 7px; }
+.article-menu__controls .action-card { min-height: 68px; gap: 5px; border-radius: 13px; padding: 8px 3px; box-shadow: none; font: inherit; }
+.article-menu__controls .action-card__icon { width: 31px; height: 31px; box-shadow: none; }
+.article-menu__controls .action-card__icon svg { width: 19px; height: 19px; }
+.article-menu__controls .action-card__label { font-size: clamp(11px, 0.66em, 14px); line-height: 1.3; overflow-wrap: anywhere; }
+.article-menu__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); gap: 7px; }
+.article-menu__paragraph {
+  min-width: 0;
+  min-height: 44px;
+  padding: 7px 2px;
+  border: 1px solid var(--article-menu-border);
+  border-radius: 11px;
+  background: color-mix(in srgb, var(--cor-global) 5%, var(--article-menu-surface));
+  color: var(--cor-global);
+  font: 600 0.83em/1.3 'Noto Sans', -apple-system, sans-serif;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.article-menu__paragraph[aria-current] {
+  border-color: color-mix(in srgb, var(--cor-global) 55%, transparent);
+  background: color-mix(in srgb, var(--cor-global) 13%, var(--article-menu-surface));
+}
+.article-menu__paragraph:active { background: color-mix(in srgb, var(--cor-global) 22%, var(--article-menu-surface)); }
+.article-menu__close:focus-visible, .article-menu__paragraph:focus-visible { outline: 2px solid var(--cor-global); outline-offset: 2px; }
+.article-menu__empty { margin: 4px 0; color: var(--article-menu-muted); font-size: 0.8em; }
+.article-paragraph-arrival {
+  outline: 2px solid color-mix(in srgb, var(--cor-principal-estudo, #65478b) 45%, transparent);
+  outline-offset: 6px;
+  border-radius: 3px;
+  animation: article-paragraph-arrival 1.6s ease-out both;
+}
+@keyframes article-paragraph-arrival {
+  0%, 55% { outline-color: color-mix(in srgb, var(--cor-principal-estudo, #65478b) 45%, transparent); }
+  100% { outline-color: transparent; }
+}
+[data-theme="dark"] .sentinela-article-menu {
+  --article-menu-surface: #242428;
+  --article-menu-text: #f1f1f5;
+  --article-menu-muted: #b0afb9;
+  --article-menu-border: rgba(255, 255, 255, 0.12);
+  background: rgba(9, 8, 14, 0.5);
+}
+[data-theme="dark"] .article-menu__paragraph, [data-theme="dark"] .article-menu__close {
+  color: color-mix(in srgb, var(--cor-global) 55%, #fff);
+}
+@media (prefers-reduced-motion: reduce) {
+  .article-paragraph-arrival { animation: none; }
+  .article-menu__controls .action-card, .article-menu__controls .expandable-area { animation: none; transition: none; }
+}

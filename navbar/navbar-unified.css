@@ -108,6 +108,13 @@ body.zombie-toolbar-active .bottom-navbar {
     transition: transform 0.2s ease-out;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .bottom-navbar,
+    .bottom-navbar.transitioning {
+        transition: none;
+    }
+}
+
 .navbar-item {
     display: flex !important;
     flex-direction: column !important;

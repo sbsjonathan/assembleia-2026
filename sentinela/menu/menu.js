@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const barraEstudo = document.querySelector(".barra-estudo");
     const mainContent = document.querySelector("main");
 
-    if (!barraEstudo || !mainContent) return;
+    if (!barraEstudo || !mainContent || window.SentinelaArticleMenu) return;
 
     const FONTE_STORAGE_KEY = 'tamanho-fonte-global';
     const FONTE_PADRAO = 19.36;
@@ -287,9 +287,244 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let menuVisivel = false;
 
+    // Move the existing controls, rather than cloning them: backup, cloud,
+    // preferences and deletion keep their original state and event handlers.
+    const menuHome = document.createComment('sentinela-controls-home');
+    menuControles.before(menuHome);
+    const inlineSpace = document.createElement('div');
+    inlineSpace.hidden = true;
+    inlineSpace.setAttribute('aria-hidden', 'true');
+    menuHome.after(inlineSpace);
+    const articleMenu = document.createElement('div');
+    articleMenu.id = 'sentinela-article-menu';
+    articleMenu.className = 'sentinela-article-menu';
+    articleMenu.hidden = true;
+    articleMenu.innerHTML = `
+      <div class="article-menu__scroll" role="dialog" aria-labelledby="article-menu-title">
+        <section class="article-menu__card article-menu__settings">
+          <div class="article-menu__heading">
+            <h2 id="article-menu-title">A Sentinela</h2>
+            <button class="article-menu__close" type="button" aria-label="Fechar menu">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+            </button>
+          </div>
+          <div class="article-menu__controls"></div>
+        </section>
+        <section class="article-menu__card article-menu__paragraphs" aria-labelledby="article-paragraphs-title">
+          <div class="article-menu__heading">
+            <h2 id="article-paragraphs-title">Parágrafos</h2>
+            <span class="article-menu__count"></span>
+          </div>
+          <nav class="article-menu__grid" aria-label="Ir para o parágrafo"></nav>
+          <p class="article-menu__empty" hidden>Nenhum parágrafo numerado neste artigo.</p>
+        </section>
+      </div>`;
+    document.body.append(articleMenu);
+    const menuScroll = articleMenu.querySelector('.article-menu__scroll');
+    const paragraphGrid = articleMenu.querySelector('.article-menu__grid');
+    const menuClose = articleMenu.querySelector('.article-menu__close');
+    let menuOpener = null;
+    let inlineMenuWasVisible = false;
+    let mainWasInert = false;
+    let finishNavigation = null;
+    let highlightTimer = null;
+    let highlightedParagraph = null;
+
+    const emitMenuState = (open) => document.dispatchEvent(new CustomEvent('sentinela:article-menu-state', { bubbles: true, detail: { open } }));
+    const emitNavigationState = (active) => document.dispatchEvent(new CustomEvent('sentinela:paragraph-navigation', { bubbles: true, detail: { active } }));
+
+    function articleParagraphs() {
+      const paragraphs = new Map();
+      const excluded = '.anotacao, .comentarios, .ia-wrapper, .agente-overlay, .agente-modal, [data-tutor-generated], [contenteditable="true"], dialog, [role="dialog"], [hidden], [aria-hidden="true"]';
+      mainContent.querySelectorAll('.paragrafo').forEach((paragraph) => {
+        if (paragraph.closest(excluded) || paragraph.parentElement?.closest('.paragrafo')) return;
+        const numberNode = paragraph.firstElementChild;
+        if (!numberNode || numberNode.tagName !== 'SPAN') return;
+        // Numbered source paragraphs begin with a standalone number span.
+        // A citation or numbered question elsewhere in the text is not one.
+        for (let node = paragraph.firstChild; node && node !== numberNode; node = node.nextSibling) {
+          if (node.textContent.trim()) return;
+        }
+        const match = numberNode.textContent.trim().match(/^(\d{1,3})[.)]?$/);
+        if (!match) return;
+        const number = Number(match[1]);
+        if (number > 0 && !paragraphs.has(number)) paragraphs.set(number, paragraph);
+      });
+      return paragraphs;
+    }
+
+    function headerClearance() {
+      const headerStyle = getComputedStyle(barraEstudo);
+      const headerHeight = /^(fixed|sticky)$/.test(headerStyle.position) ? barraEstudo.getBoundingClientRect().height : 0;
+      return headerHeight + 12;
+    }
+
+    function highlightParagraph(paragraph) {
+      clearTimeout(highlightTimer);
+      highlightedParagraph?.classList.remove('article-paragraph-arrival');
+      highlightedParagraph = paragraph;
+      paragraph.classList.add('article-paragraph-arrival');
+      highlightTimer = setTimeout(() => {
+        paragraph.classList.remove('article-paragraph-arrival');
+        highlightedParagraph = null;
+      }, 1600);
+    }
+
+    function closeArticleMenu({ restoreFocus = true, restoreInline = true } = {}) {
+      if (articleMenu.hidden) return;
+      articleMenu.hidden = true;
+      articleMenu.inert = false;
+      menuHome.after(menuControles);
+      menuVisivel = restoreInline && inlineMenuWasVisible;
+      menuControles.style.display = menuVisivel ? 'block' : 'none';
+      inlineSpace.hidden = true;
+      mainContent.inert = mainWasInert;
+      barraEstudo.setAttribute('aria-expanded', String(menuVisivel));
+      if (!menuVisivel) document.documentElement.style.setProperty('--cor-glow', 'rgba(180,180,185,0.15)');
+      emitMenuState(false);
+      if (restoreFocus && menuOpener?.isConnected) menuOpener.focus({ preventScroll: true });
+    }
+
+    function goToParagraph(paragraph) {
+      if (!paragraph.isConnected) return;
+      finishNavigation?.();
+      // Pause navbar direction tracking before the menu closes or scrolling starts.
+      emitNavigationState(true);
+      closeArticleMenu({ restoreFocus: false, restoreInline: false });
+      const top = Math.max(0, Math.min(
+        window.scrollY + paragraph.getBoundingClientRect().top - headerClearance(),
+        document.documentElement.scrollHeight - window.innerHeight
+      ));
+      let settledTimer;
+      let deadline;
+      const hadTabIndex = paragraph.hasAttribute('tabindex');
+      if (!hadTabIndex) {
+        paragraph.setAttribute('tabindex', '-1');
+        paragraph.addEventListener('blur', () => paragraph.removeAttribute('tabindex'), { once: true });
+      }
+      paragraph.focus({ preventScroll: true });
+      const finish = () => {
+        clearTimeout(settledTimer);
+        clearTimeout(deadline);
+        window.removeEventListener('scroll', onScroll);
+        window.removeEventListener('scrollend', finish);
+        window.removeEventListener('touchstart', finish);
+        window.removeEventListener('wheel', finish);
+        finishNavigation = null;
+        highlightParagraph(paragraph);
+        emitNavigationState(false);
+      };
+      const onScroll = () => {
+        clearTimeout(settledTimer);
+        settledTimer = setTimeout(finish, 180);
+      };
+      finishNavigation = finish;
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('scrollend', finish, { once: true });
+      window.addEventListener('touchstart', finish, { once: true, passive: true });
+      window.addEventListener('wheel', finish, { once: true, passive: true });
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const alreadyThere = Math.abs(window.scrollY - top) < 1;
+      window.scrollTo({ top, behavior: reducedMotion ? 'instant' : 'smooth' });
+      deadline = setTimeout(finish, 2400);
+      // A zero-distance jump and browsers without scrollend still release tracking.
+      if (reducedMotion || alreadyThere) settledTimer = setTimeout(finish, 0);
+    }
+
+    function buildParagraphGrid() {
+      const paragraphs = articleParagraphs();
+      paragraphGrid.replaceChildren();
+      let currentNumber = null;
+      for (const [number, paragraph] of paragraphs) {
+        if (currentNumber === null || paragraph.getBoundingClientRect().top <= headerClearance()) currentNumber = number;
+      }
+      for (const [number, paragraph] of paragraphs) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'article-menu__paragraph';
+        button.textContent = String(number);
+        button.setAttribute('aria-label', `Parágrafo ${number}`);
+        if (number === currentNumber) button.setAttribute('aria-current', 'location');
+        // Keep the element reference: source IDs can be absent or duplicated.
+        button.addEventListener('click', () => goToParagraph(paragraph));
+        paragraphGrid.append(button);
+      }
+      articleMenu.querySelector('.article-menu__count').textContent = paragraphs.size ? `${paragraphs.size} no artigo` : '';
+      articleMenu.querySelector('.article-menu__empty').hidden = paragraphs.size > 0;
+    }
+
+    function openArticleMenu() {
+      if (!articleMenu.hidden) return;
+      menuOpener = document.activeElement;
+      // No body position/height lock or visualViewport reposition loop. The
+      // overlay has its own native scroll area, leaving the article anchored.
+      inlineMenuWasVisible = menuVisivel;
+      if (inlineMenuWasVisible) {
+        const style = getComputedStyle(menuControles);
+        inlineSpace.style.height = `${menuControles.getBoundingClientRect().height}px`;
+        inlineSpace.style.marginTop = style.marginTop;
+        inlineSpace.style.marginBottom = style.marginBottom;
+        inlineSpace.hidden = false;
+      }
+      menuVisivel = false;
+      menuControles.style.display = 'none';
+      articleMenu.querySelector('.article-menu__controls').append(menuControles);
+      buildParagraphGrid();
+      mainWasInert = mainContent.inert;
+      mainContent.inert = true;
+      menuControles.style.display = 'block';
+      articleMenu.hidden = false;
+      menuScroll.scrollTop = 0;
+      barraEstudo.setAttribute('aria-expanded', 'true');
+      aplicarGlowDaCorEstudo();
+      emitMenuState(true);
+      menuClose.focus({ preventScroll: true });
+    }
+
+    window.SentinelaArticleMenu = Object.freeze({
+      open: openArticleMenu,
+      close: closeArticleMenu,
+      toggle: () => articleMenu.hidden ? openArticleMenu() : closeArticleMenu(),
+      isOpen: () => !articleMenu.hidden
+    });
+    menuClose.addEventListener('click', () => closeArticleMenu());
+    articleMenu.addEventListener('click', (event) => {
+      if (event.target === articleMenu || event.target === menuScroll) closeArticleMenu();
+    });
+    const preventBackdropScroll = (event) => {
+      if (!menuScroll.contains(event.target)) event.preventDefault();
+    };
+    articleMenu.addEventListener('touchmove', preventBackdropScroll, { passive: false });
+    articleMenu.addEventListener('wheel', preventBackdropScroll, { passive: false });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !articleMenu.hidden && !document.querySelector('.sync-sheet-overlay.is-open, .sync-alert-overlay.is-open')) {
+        event.preventDefault();
+        closeArticleMenu();
+      }
+    });
+
+    // Existing sheets remain siblings above both cards. Do not trap their
+    // controls in the article dialog or close the cards when a sheet closes.
+    const sheets = [...document.querySelectorAll('.sync-sheet-overlay, .sync-alert-overlay')];
+    const updateSheetState = () => {
+      let nestedOpen = false;
+      sheets.forEach((sheet) => {
+        const open = sheet.classList.contains('is-open');
+        sheet.setAttribute('aria-hidden', String(!open));
+        nestedOpen ||= open;
+      });
+      articleMenu.inert = !articleMenu.hidden && nestedOpen;
+    };
+    const sheetObserver = new MutationObserver(updateSheetState);
+    sheets.forEach((sheet) => sheetObserver.observe(sheet, { attributes: true, attributeFilter: ['class'] }));
+
     barraEstudo.style.cursor = "pointer";
+    barraEstudo.setAttribute('aria-controls', 'sentinela-controles');
+    barraEstudo.setAttribute('aria-expanded', 'false');
     barraEstudo.addEventListener('click', () => {
+        if (!articleMenu.hidden) { closeArticleMenu(); return; }
         menuVisivel = !menuVisivel;
+        barraEstudo.setAttribute('aria-expanded', String(menuVisivel));
         menuControles.style.display = menuVisivel ? 'block' : 'none';
         if (menuVisivel) aplicarGlowDaCorEstudo();
         else document.documentElement.style.setProperty('--cor-glow', 'rgba(180,180,185,0.15)');
